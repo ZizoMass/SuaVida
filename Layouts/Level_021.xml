@@ -22393,7 +22393,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="SuperLightning" uid="1041">
+                <instance type="Sprite_Lightning_002" uid="1041">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -23097,7 +23097,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="SuperLightning2" uid="1049">
+                <instance type="Sprite_Lightning_003" uid="1049">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -23228,7 +23228,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="fase2" uid="471">
+                <instance type="Sprite_BG_PlayerHome_2D" uid="471">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -23355,7 +23355,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="SuperLight2ning" uid="1046">
+                <instance type="Sprite_Lightning_001" uid="1046">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>nada</initial-animation>
@@ -23368,8 +23368,8 @@
                         <x>646</x>
                         <y>270</y>
                         <z>0</z>
-                        <width>249.450958252</width>
-                        <height>256.510406494</height>
+                        <width>1995.607666016</width>
+                        <height>2052.083251953</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -23399,7 +23399,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="raio" uid="1047">
+                <instance type="Sprite_Trigger_LightningStart" uid="1047">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -23421,7 +23421,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="irfase22" uid="1050">
+                <instance type="Sprite_Trigger_Level_021_Go_Level_022" uid="1050">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>

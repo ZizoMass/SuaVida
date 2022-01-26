@@ -30,7 +30,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="34">Level_012</layout>
         <layout order="35">Level_014</layout>
         <layout order="36">Level_016</layout>
-        <layout active="1" order="37">Level_020</layout>
+        <layout order="37">Level_020</layout>
+        <layout active="1" order="38">Level_021</layout>
         <event-sheet order="8">EventSheet_006</event-sheet>
         <event-sheet order="11">EventSheet_010</event-sheet>
         <event-sheet order="17">EventSheet_001</event-sheet>
@@ -239,6 +240,14 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Sprite_Trigger_Level_020_Go_Level_021/" />
         <folder expanded="1" path="animation-folder/Sprite_Trigger_Level_20_MX_Play/" />
         <folder expanded="1" path="animation-folder/Sprite_Trigger_PlayerHome_WifeTalk_002/" />
+        <folder expanded="1" path="animation-folder/Sprite_BG_PlayerHome_2D/" />
+        <folder expanded="1" path="animation-folder/Sprite_Lightning_001/" />
+        <folder expanded="1" path="animation-folder/Sprite_Lightning_002/" />
+        <folder expanded="1" path="animation-folder/Sprite_Lightning_003/" />
+        <folder expanded="1" path="animation-folder/Sprite_MainCharacter_002/" />
+        <folder expanded="1" path="animation-folder/Sprite_RainEffect_001/" />
+        <folder expanded="1" path="animation-folder/Sprite_Trigger_Level_021_Go_Level_022/" />
+        <folder expanded="1" path="animation-folder/Sprite_Trigger_LightningStart/" />
         <folder expanded="1" path="animation-folder/Sprite3/" />
         <folder expanded="1" path="animation-folder/curtina/" />
         <folder expanded="1" path="animation-folder/Sprite6/" />
@@ -289,17 +298,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/nuvens15/" />
         <folder expanded="1" path="animation-folder/conversa/" />
         <folder expanded="1" path="animation-folder/conversa2/" />
-        <folder expanded="1" path="animation-folder/fase2/" />
-        <folder expanded="1" path="animation-folder/Sprite_MainCharacter_002/" />
         <folder expanded="1" path="animation-folder/fim/" />
         <folder expanded="1" path="animation-folder/comandos/" />
         <folder expanded="1" path="animation-folder/cima/" />
-        <folder expanded="1" path="animation-folder/SuperLightning/" />
-        <folder expanded="1" path="animation-folder/SuperLight2ning/" />
-        <folder expanded="1" path="animation-folder/raio/" />
-        <folder expanded="1" path="animation-folder/Sprite_RainEffect_001/" />
-        <folder expanded="1" path="animation-folder/SuperLightning2/" />
-        <folder expanded="1" path="animation-folder/irfase22/" />
         <folder expanded="1" path="animation-folder/fase19/" />
         <folder expanded="1" path="animation-folder/fase20/" />
         <folder expanded="1" path="animation-folder/fase21/" />

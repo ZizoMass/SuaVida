@@ -318,7 +318,7 @@
                             <param id="0" name="Variable">morreu1</param>
                             <param id="1" name="Value">1</param>
                         </action>
-                        <action id="4" name="Set animation" sid="3566823940621859" type="SuperLight2ning">
+                        <action id="4" name="Set animation" sid="3566823940621859" type="Sprite_Lightning_001">
                             <param id="0" name="Animation">&quot;default1&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -345,7 +345,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="3421169993574268" type="SuperLight2ning">
+                <action id="4" name="Set animation" sid="3421169993574268" type="Sprite_Lightning_001">
                     <param id="0" name="Animation">&quot;default3&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -359,7 +359,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="7545666128199198" type="SuperLight2ning">
+                <action id="4" name="Set animation" sid="7545666128199198" type="Sprite_Lightning_001">
                     <param id="0" name="Animation">&quot;default1&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -372,7 +372,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="7795493876559549" type="SuperLight2ning">
+                <action id="4" name="Set animation" sid="7795493876559549" type="Sprite_Lightning_001">
                     <param id="0" name="Animation">&quot;default2&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -380,7 +380,7 @@
         </event-block>
         <event-block sid="8647986715227198">
             <conditions>
-                <condition id="4" name="On finished" sid="5163315075232538" type="SuperLight2ning">
+                <condition id="4" name="On finished" sid="5163315075232538" type="Sprite_Lightning_001">
                     <param id="0" name="Animation">&quot;default1&quot;</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="3475383119937347" type="System">
@@ -423,7 +423,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="972681041153623" type="SuperLight2ning">
+                <action id="4" name="Set animation" sid="972681041153623" type="Sprite_Lightning_001">
                     <param id="0" name="Animation">&quot;default2&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -446,7 +446,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="7992997455230827" type="SuperLight2ning">
+                <action id="4" name="Set animation" sid="7992997455230827" type="Sprite_Lightning_001">
                     <param id="0" name="Animation">&quot;default1&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -464,7 +464,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="9168907407921382" type="SuperLight2ning">
+                <action id="4" name="Set animation" sid="9168907407921382" type="Sprite_Lightning_001">
                     <param id="0" name="Animation">&quot;default2&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -478,7 +478,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="2276223474209237" type="SuperLight2ning">
+                <action id="4" name="Set animation" sid="2276223474209237" type="Sprite_Lightning_001">
                     <param id="0" name="Animation">&quot;default1&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -493,7 +493,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="7783633789945179" type="SuperLight2ning">
+                <action id="4" name="Set animation" sid="7783633789945179" type="Sprite_Lightning_001">
                     <param id="0" name="Animation">&quot;default2&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -511,7 +511,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="3277014477260404" type="SuperLight2ning">
+                <action id="4" name="Set animation" sid="3277014477260404" type="Sprite_Lightning_001">
                     <param id="0" name="Animation">&quot;default2&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -553,7 +553,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="676966232028975" type="SuperLight2ning">
+                <action id="4" name="Set animation" sid="676966232028975" type="Sprite_Lightning_001">
                     <param id="0" name="Animation">&quot;default1&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -731,7 +731,7 @@
                             <param id="0" name="Variable">morreu2</param>
                             <param id="1" name="Value">1</param>
                         </action>
-                        <action id="4" name="Set animation" sid="136503471965441" type="SuperLight2ning">
+                        <action id="4" name="Set animation" sid="136503471965441" type="Sprite_Lightning_001">
                             <param id="0" name="Animation">&quot;default1&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -752,7 +752,7 @@
         </event-block>
         <event-block sid="9868625209912748">
             <conditions>
-                <condition id="4" name="On finished" sid="4595033987241374" type="SuperLight2ning">
+                <condition id="4" name="On finished" sid="4595033987241374" type="Sprite_Lightning_001">
                     <param id="0" name="Animation">&quot;default1&quot;</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="4018798625149294" type="System">
@@ -792,7 +792,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="6368049617297315" type="SuperLight2ning">
+                <action id="4" name="Set animation" sid="6368049617297315" type="Sprite_Lightning_001">
                     <param id="0" name="Animation">&quot;default2&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -807,7 +807,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="9988058936608169" type="SuperLight2ning">
+                <action id="4" name="Set animation" sid="9988058936608169" type="Sprite_Lightning_001">
                     <param id="0" name="Animation">&quot;default1&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -822,7 +822,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="9890630666739062" type="SuperLight2ning">
+                <action id="4" name="Set animation" sid="9890630666739062" type="Sprite_Lightning_001">
                     <param id="0" name="Animation">&quot;default2&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -837,7 +837,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="9995008618298325" type="SuperLight2ning">
+                <action id="4" name="Set animation" sid="9995008618298325" type="Sprite_Lightning_001">
                     <param id="0" name="Animation">&quot;default1&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -852,7 +852,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="2352153956078566" type="SuperLight2ning">
+                <action id="4" name="Set animation" sid="2352153956078566" type="Sprite_Lightning_001">
                     <param id="0" name="Animation">&quot;default2&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -870,7 +870,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="2028034747771283" type="SuperLight2ning">
+                <action id="4" name="Set animation" sid="2028034747771283" type="Sprite_Lightning_001">
                     <param id="0" name="Animation">&quot;default3&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -908,7 +908,7 @@
                             <param id="0" name="Variable">morreu3</param>
                             <param id="1" name="Value">1</param>
                         </action>
-                        <action id="4" name="Set animation" sid="3129495457876463" type="SuperLight2ning">
+                        <action id="4" name="Set animation" sid="3129495457876463" type="Sprite_Lightning_001">
                             <param id="0" name="Animation">&quot;default1&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -929,7 +929,7 @@
         </event-block>
         <event-block sid="6789840010055335">
             <conditions>
-                <condition id="4" name="On finished" sid="9209766980870443" type="SuperLight2ning">
+                <condition id="4" name="On finished" sid="9209766980870443" type="Sprite_Lightning_001">
                     <param id="0" name="Animation">&quot;default1&quot;</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="3016212600877406" type="System">
@@ -964,7 +964,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="5302257631405163" type="SuperLight2ning">
+                <action id="4" name="Set animation" sid="5302257631405163" type="Sprite_Lightning_001">
                     <param id="0" name="Animation">&quot;default4&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -979,7 +979,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="4080648271988269" type="SuperLight2ning">
+                <action id="4" name="Set animation" sid="4080648271988269" type="Sprite_Lightning_001">
                     <param id="0" name="Animation">&quot;default2&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -994,7 +994,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="5506548895182366" type="SuperLight2ning">
+                <action id="4" name="Set animation" sid="5506548895182366" type="Sprite_Lightning_001">
                     <param id="0" name="Animation">&quot;default1&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -1009,7 +1009,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="496728854334696" type="SuperLight2ning">
+                <action id="4" name="Set animation" sid="496728854334696" type="Sprite_Lightning_001">
                     <param id="0" name="Animation">&quot;default2&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -1024,7 +1024,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="4316855884422494" type="SuperLight2ning">
+                <action id="4" name="Set animation" sid="4316855884422494" type="Sprite_Lightning_001">
                     <param id="0" name="Animation">choose(&quot;default2&quot;,&quot;default4&quot;)</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -1042,7 +1042,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="7862257200319194" type="SuperLight2ning">
+                <action id="4" name="Set animation" sid="7862257200319194" type="Sprite_Lightning_001">
                     <param id="0" name="Animation">&quot;default3&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -1104,7 +1104,7 @@
                     <param id="0" name="Variable">morreu4</param>
                     <param id="1" name="Value">1</param>
                 </action>
-                <action id="4" name="Set animation" sid="8953034953630183" type="SuperLight2ning">
+                <action id="4" name="Set animation" sid="8953034953630183" type="Sprite_Lightning_001">
                     <param id="0" name="Animation">&quot;default1&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -1154,7 +1154,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="5134535042633953" type="SuperLight2ning">
+                <action id="4" name="Set animation" sid="5134535042633953" type="Sprite_Lightning_001">
                     <param id="0" name="Animation">&quot;default1&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -1169,7 +1169,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="6502939200252478" type="SuperLight2ning">
+                <action id="4" name="Set animation" sid="6502939200252478" type="Sprite_Lightning_001">
                     <param id="0" name="Animation">&quot;default4&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -1184,7 +1184,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="3584463244805889" type="SuperLight2ning">
+                <action id="4" name="Set animation" sid="3584463244805889" type="Sprite_Lightning_001">
                     <param id="0" name="Animation">&quot;default2&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -1199,7 +1199,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="4821831537886836" type="SuperLight2ning">
+                <action id="4" name="Set animation" sid="4821831537886836" type="Sprite_Lightning_001">
                     <param id="0" name="Animation">&quot;default3&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -1212,7 +1212,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="1716080218638421" type="SuperLight2ning">
+                <action id="4" name="Set animation" sid="1716080218638421" type="Sprite_Lightning_001">
                     <param id="0" name="Animation">&quot;default5&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -1230,10 +1230,10 @@
         </event-block>
         <event-block sid="97234224745032">
             <conditions>
-                <condition id="2" name="Is playing" sid="7684010725527565" type="SuperLight2ning">
+                <condition id="2" name="Is playing" sid="7684010725527565" type="Sprite_Lightning_001">
                     <param id="0" name="Animation">&quot;default&quot;</param>
                 </condition>
-                <condition id="3" name="Compare frame" sid="5417792392956651" type="SuperLight2ning">
+                <condition id="3" name="Compare frame" sid="5417792392956651" type="Sprite_Lightning_001">
                     <param id="0" name="Comparison">0</param>
                     <param id="1" name="Number">0</param>
                 </condition>
@@ -1250,10 +1250,10 @@
         </event-block>
         <event-block sid="1267409930929002">
             <conditions>
-                <condition id="2" name="Is playing" sid="656961330766453" type="SuperLight2ning">
+                <condition id="2" name="Is playing" sid="656961330766453" type="Sprite_Lightning_001">
                     <param id="0" name="Animation">&quot;default1&quot;</param>
                 </condition>
-                <condition id="3" name="Compare frame" sid="3812647322271853" type="SuperLight2ning">
+                <condition id="3" name="Compare frame" sid="3812647322271853" type="Sprite_Lightning_001">
                     <param id="0" name="Comparison">0</param>
                     <param id="1" name="Number">0</param>
                 </condition>
@@ -1270,10 +1270,10 @@
         </event-block>
         <event-block sid="2898957136738386">
             <conditions>
-                <condition id="2" name="Is playing" sid="9222275533920103" type="SuperLight2ning">
+                <condition id="2" name="Is playing" sid="9222275533920103" type="Sprite_Lightning_001">
                     <param id="0" name="Animation">&quot;default2&quot;</param>
                 </condition>
-                <condition id="3" name="Compare frame" sid="899658869469483" type="SuperLight2ning">
+                <condition id="3" name="Compare frame" sid="899658869469483" type="Sprite_Lightning_001">
                     <param id="0" name="Comparison">0</param>
                     <param id="1" name="Number">0</param>
                 </condition>
@@ -1290,10 +1290,10 @@
         </event-block>
         <event-block sid="5910267683293091">
             <conditions>
-                <condition id="2" name="Is playing" sid="5430314506746117" type="SuperLight2ning">
+                <condition id="2" name="Is playing" sid="5430314506746117" type="Sprite_Lightning_001">
                     <param id="0" name="Animation">&quot;default3&quot;</param>
                 </condition>
-                <condition id="3" name="Compare frame" sid="7997084066705827" type="SuperLight2ning">
+                <condition id="3" name="Compare frame" sid="7997084066705827" type="Sprite_Lightning_001">
                     <param id="0" name="Comparison">0</param>
                     <param id="1" name="Number">0</param>
                 </condition>
@@ -1310,10 +1310,10 @@
         </event-block>
         <event-block sid="3828688698195609">
             <conditions>
-                <condition id="2" name="Is playing" sid="1993998363018929" type="SuperLight2ning">
+                <condition id="2" name="Is playing" sid="1993998363018929" type="Sprite_Lightning_001">
                     <param id="0" name="Animation">&quot;default4&quot;</param>
                 </condition>
-                <condition id="3" name="Compare frame" sid="9960509797974532" type="SuperLight2ning">
+                <condition id="3" name="Compare frame" sid="9960509797974532" type="Sprite_Lightning_001">
                     <param id="0" name="Comparison">0</param>
                     <param id="1" name="Number">0</param>
                 </condition>
@@ -1330,10 +1330,10 @@
         </event-block>
         <event-block sid="1078914680118611">
             <conditions>
-                <condition id="2" name="Is playing" sid="5443166597438569" type="SuperLight2ning">
+                <condition id="2" name="Is playing" sid="5443166597438569" type="Sprite_Lightning_001">
                     <param id="0" name="Animation">&quot;default5&quot;</param>
                 </condition>
-                <condition id="3" name="Compare frame" sid="547741962262475" type="SuperLight2ning">
+                <condition id="3" name="Compare frame" sid="547741962262475" type="Sprite_Lightning_001">
                     <param id="0" name="Comparison">0</param>
                     <param id="1" name="Number">0</param>
                 </condition>
@@ -1350,10 +1350,10 @@
         </event-block>
         <event-block sid="6073935715617426">
             <conditions>
-                <condition id="2" name="Is playing" sid="3474398884924869" type="SuperLight2ning">
+                <condition id="2" name="Is playing" sid="3474398884924869" type="Sprite_Lightning_001">
                     <param id="0" name="Animation">&quot;default6&quot;</param>
                 </condition>
-                <condition id="3" name="Compare frame" sid="5128026191601649" type="SuperLight2ning">
+                <condition id="3" name="Compare frame" sid="5128026191601649" type="Sprite_Lightning_001">
                     <param id="0" name="Comparison">0</param>
                     <param id="1" name="Number">0</param>
                 </condition>
@@ -1563,7 +1563,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="9003590639456378" type="SuperLight2ning">
+                        <action id="4" name="Set animation" sid="9003590639456378" type="Sprite_Lightning_001">
                             <param id="0" name="Animation">&quot;default2&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -1610,7 +1610,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="907079298890597" type="SuperLight2ning">
+                        <action id="4" name="Set animation" sid="907079298890597" type="Sprite_Lightning_001">
                             <param id="0" name="Animation">&quot;default2&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -1657,7 +1657,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="8754450949371755" type="SuperLight2ning">
+                        <action id="4" name="Set animation" sid="8754450949371755" type="Sprite_Lightning_001">
                             <param id="0" name="Animation">&quot;default2&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -1704,7 +1704,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="960473590333079" type="SuperLight2ning">
+                        <action id="4" name="Set animation" sid="960473590333079" type="Sprite_Lightning_001">
                             <param id="0" name="Animation">&quot;default2&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>

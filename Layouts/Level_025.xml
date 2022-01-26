@@ -358,7 +358,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="SuperLight2ning" uid="1142">
+                <instance type="Sprite_Lightning_001" uid="1142">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>nada</initial-animation>
@@ -371,8 +371,8 @@
                         <x>609</x>
                         <y>181</y>
                         <z>0</z>
-                        <width>236.273788452</width>
-                        <height>180.989578247</height>
+                        <width>1890.190307617</width>
+                        <height>1447.916625977</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
