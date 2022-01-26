@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>EventSheet_001</name>
+    <events>
+        <variable constant="0" name="layout" sid="4526098781896856" static="0" type="number">0</variable>
+        <variable constant="0" name="alarmeligdesl" sid="1973978356182805" static="0" type="number">0</variable>
+        <variable constant="0" name="espaço" sid="5051248682840914" static="0" type="number">0</variable>
+        <variable constant="0" name="alarme" sid="5772218289386508" static="0" type="number">0</variable>
+        <event-block sid="3849931692377699">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="2700941355785861" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Fade" id="1" name="Start fade" sid="8978862339417059" type="Sprite_Logo" />
+                <action behavior="Fade" id="1" name="Start fade" sid="4981822258835582" type="Sprite_Text_MainMenuOptions" />
+                <action id="7" name="Play (by name)" sid="8977618071133539" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">&quot;intro&quot;</param>
+                    <param id="3" name="Loop">1</param>
+                    <param id="4" name="Volume">20</param>
+                    <param id="2" name="Tag (optional)">&quot;int&quot;</param>
+                </action>
+                <action behavior="Timer" id="0" name="Start timer" sid="7381243062291862" type="Sprite_Logo">
+                    <param id="0" name="Duration">8</param>
+                    <param id="1" name="Type">0</param>
+                    <param id="2" name="Tag">&quot;esp&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5898592954792268">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="8921695406411779" type="System">
+                    <param id="0" name="Variable">espaço</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="9095246931614555">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="6230070459889314" type="Keyboard">
+                            <param id="0" name="Key">32</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Flash" id="0" name="Flash" sid="2293238540144122" type="Sprite_Text_MainMenuOptions">
+                            <param id="0" name="&apos;On&apos; time">0.1</param>
+                            <param id="1" name="&apos;Off&apos; time">0.1</param>
+                            <param id="2" name="Duration">5</param>
+                        </action>
+                        <action behavior="Fade2" id="1" name="Start fade" sid="5193461355595719" type="Sprite_Text_MainMenuOptions" />
+                        <action id="6" name="Stop" sid="249750723308761" type="Audio">
+                            <param id="0" name="Tag">&quot;int&quot;</param>
+                        </action>
+                        <action id="0" name="Play" sid="1603288444553296" type="Audio">
+                            <param id="0" name="Audio file">SFX_GameStart_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="9782957432461604" type="System">
+                            <param id="0" name="Variable">espaço</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="694600613463675">
+            <conditions>
+                <condition behavior="Flash" id="1" name="On flash ended" sid="5908136462331457" type="Sprite_Text_MainMenuOptions" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="4813472268241821" type="Audio">
+                    <param id="0" name="Audio file">SFX_Alarme_001</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;alr&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7546570651659495">
+            <conditions>
+                <condition id="0" name="On ended" sid="7842161488313049" type="Audio">
+                    <param id="0" name="Tag">&quot;alr&quot;</param>
+                </condition>
+                <condition id="5" inverted="1" name="Is tag playing" sid="6359358351907965" type="Audio">
+                    <param id="0" name="Tag">&quot;alr&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="1329837063870328" type="System">
+                    <param id="0" name="Variable">alarmeligdesl</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="3680233233573486" type="System">
+                    <param id="0" name="Variable">alarme</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">7</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="1551179730197033" type="System">
+                    <param id="0" name="Variable">alarme</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Play" sid="6458277224404804" type="Audio">
+                    <param id="0" name="Audio file">SFX_Alarme_001</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;alr&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1599438198758251">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="8914999142759113" type="System">
+                    <param id="0" name="Variable">alarme</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="5479847880922806" type="Sprite_Logo">
+                    <param id="0" name="Animation">&quot;a2&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="742717414566394">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="8921347754319348" type="System">
+                    <param id="0" name="Variable">alarme</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="8035428724204674" type="Sprite_Logo">
+                    <param id="0" name="Animation">&quot;a3&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9003563457972817">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="305844951009456" type="System">
+                    <param id="0" name="Variable">alarme</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="4620339688266913" type="Sprite_Logo">
+                    <param id="0" name="Animation">&quot;a4&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4679063200060622">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="5394601386769507" type="System">
+                    <param id="0" name="Variable">alarme</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="5707524135035371" type="Sprite_Logo">
+                    <param id="0" name="Animation">&quot;a5&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7007006433628342">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="3223302958438811" type="System">
+                    <param id="0" name="Variable">alarme</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="2367495054683482" type="Sprite_Logo">
+                    <param id="0" name="Animation">&quot;a6&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6124020006271151">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="3086214356264057" type="System">
+                    <param id="0" name="Variable">alarme</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">6</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="5679465672960446" type="Sprite_Logo">
+                    <param id="0" name="Animation">&quot;a7&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5024538348525749">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="8806701875804773" type="System">
+                    <param id="0" name="Variable">alarme</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">7</param>
+                </condition>
+                <condition id="5" inverted="1" name="Is tag playing" sid="512171802454857" type="Audio">
+                    <param id="0" name="Tag">&quot;alr&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="7559039220208704" type="Sprite_Logo">
+                    <param id="0" name="Animation">&quot;a8&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Play" sid="7606138685717531" type="Audio">
+                    <param id="0" name="Audio file">SFX_Alarme_001</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;alr&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6456037502013105">
+            <conditions>
+                <condition behavior="Timer" id="0" name="On timer" sid="653200860202477" type="Sprite_Logo">
+                    <param id="0" name="Tag">&quot;esp&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="7274443773920239" type="System">
+                    <param id="0" name="Variable">espaço</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6625387904677815">
+            <conditions>
+                <condition id="4" name="On finished" sid="5016143332202055" type="Sprite_Logo">
+                    <param id="0" name="Animation">&quot;a8&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="4749954348043972" type="System">
+                    <param id="0" name="Layout">Level_001</param>
+                </action>
+                <action id="-9" name="Set value" sid="5016639882876382" type="System">
+                    <param id="0" name="Variable">layout</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="8093528220988382" type="System">
+                    <param id="0" name="Variable">SpanwX</param>
+                    <param id="1" name="Value">451.79</param>
+                </action>
+                <action id="-9" name="Set value" sid="6834337497769985" type="System">
+                    <param id="0" name="Variable">SpanwY</param>
+                    <param id="1" name="Value">472.643</param>
+                </action>
+                <action id="-15" name="Set visible" sid="3373855242565041" type="Level_001_Text_PlayerRoom_GameTutorial">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

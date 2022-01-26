@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>EventSheet_012</name>
+    <events>
+        <event-block sid="2760963215187128">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="2740527668287075" type="System" />
+            </conditions>
+            <actions>
+                <action id="6" name="Play" sid="4246965236521523" type="Video_Ani_StuckInTraffic" />
+                <action id="4" name="Set volume" sid="6315292032852071" type="Video_Ani_StuckInTraffic">
+                    <param id="0" name="Volume">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4290166896582197">
+            <conditions>
+                <condition id="2" name="Has ended" sid="7928639080103274" type="Video_Ani_StuckInTraffic" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="4227437781018373" type="System">
+                    <param id="0" name="Layout">Level_019</param>
+                </action>
+                <action id="-9" name="Set value" sid="4411716488720068" type="System">
+                    <param id="0" name="Variable">SpanwX</param>
+                    <param id="1" name="Value">1258</param>
+                </action>
+                <action id="-9" name="Set value" sid="3903664696529955" type="System">
+                    <param id="0" name="Variable">SpanwY</param>
+                    <param id="1" name="Value"> 514</param>
+                </action>
+                <action id="-9" name="Set value" sid="5572651727093496" type="System">
+                    <param id="0" name="Variable">layout</param>
+                    <param id="1" name="Value">19</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2167323731682681">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="3114679090707817" type="Keyboard">
+                    <param id="0" name="Key">32</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="4137388983491965" type="Audio">
+                    <param id="0" name="Audio file">SFX_CarHorn_001</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;buz&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4708865274111882">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="4700435550802829" type="Keyboard">
+                    <param id="0" name="Key">27</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="4249465089839663" type="Audio" />
+                <action id="-21" name="Reset global variables" sid="6106449732051414" type="System" />
+                <action id="-25" name="Go to layout (by name)" sid="2782016770554583" type="System">
+                    <param id="0" name="Layout">&quot;inicio&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

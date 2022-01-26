@@ -1,0 +1,2860 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>EventSheet_009</name>
+    <events>
+        <event-block sid="4054290082858423">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="7731821001540378" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="6704249738065689" type="Audio">
+                    <param id="0" name="Audio file">BG_OldPhosphorescentLamp_001</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">-20</param>
+                    <param id="1" name="Tag (optional)">&quot;lamp&quot;</param>
+                </action>
+                <action id="2" name="Stop" sid="7567909002195936" type="Sprite_Text_Computer_Loading" />
+                <action id="4" name="Set animation" sid="6468593488187553" type="Sprite_Computer_Text_Command">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Play" sid="5065434407685765" type="Audio">
+                    <param id="0" name="Audio file">SFX_OldComputer_StartUp_074</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;inic&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1288011496324305">
+            <conditions>
+                <condition id="4" name="On finished" sid="8451976486887646" type="Sprite_Computer_Text_Command">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="8043206289486244" type="Sprite_Computer_Text_Command">
+                    <param id="0" name="Animation">&quot;ponto&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6067449091865567">
+            <conditions>
+                <condition id="2" name="Is playing" sid="9333660815234032" type="Sprite_Computer_Text_Command">
+                    <param id="0" name="Animation">&quot;ponto&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="3552230278584814">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="6956214935152101" type="Keyboard">
+                            <param id="0" name="Key">65</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="9386763458854698" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;a&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="1769025490984103" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_ButtonPress_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;botão&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9666557951962081">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="761499315764447" type="Keyboard">
+                            <param id="0" name="Key">66</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="8280559846167142" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;b&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="5134939221919437" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_ButtonPress_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;botão&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2462130161282809">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="1834982289168961" type="Keyboard">
+                            <param id="0" name="Key">67</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="8945930302678879" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;c&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="3130522704342008" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_ButtonPress_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;botão&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1102049361844813">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="9445883511354165" type="Keyboard">
+                            <param id="0" name="Key">68</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="9317810808914443" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;d&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="6780612725897199" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_ButtonPress_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;botão&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9151732441108658">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="4742744272776749" type="Keyboard">
+                            <param id="0" name="Key">69</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="9866639358470017" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;e&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="3000237162896126" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_ButtonPress_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;botão&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2605585938001909">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="1166669976467171" type="Keyboard">
+                            <param id="0" name="Key">70</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="8590210788756407" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;f&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="4920718994390008" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_ButtonPress_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;botão&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8991303220252271">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="3606061025274779" type="Keyboard">
+                            <param id="0" name="Key">71</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="5535977614120311" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;g&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="5593582026628536" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_ButtonPress_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;botão&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8817387107936187">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="6859251758964838" type="Keyboard">
+                            <param id="0" name="Key">72</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="5989917463159749" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;h&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="6802846147906509" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_ButtonPress_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;botão&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5538802849523704">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="4865010495146274" type="Keyboard">
+                            <param id="0" name="Key">73</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="1418995453237515" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;i&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="4856205364990806" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_ButtonPress_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;botão&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4714851463892729">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="3363289148295388" type="Keyboard">
+                            <param id="0" name="Key">74</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="2412615614911938" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;j&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="3937868094769053" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_J-KeyPressed_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;j&quot;</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="6283092338874649" type="System">
+                            <param id="0" name="Variable">mudarlayout</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8043953129947022">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="6135401732576474" type="Keyboard">
+                            <param id="0" name="Key">75</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="9284625624430723" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;k&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="9754786119416455" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_ButtonPress_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;botão&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7396135357214158">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="5516496954376175" type="Keyboard">
+                            <param id="0" name="Key">76</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="4649175846217314" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;l&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="1376950166568168" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_ButtonPress_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;botão&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9313825336124206">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="5659672683300492" type="Keyboard">
+                            <param id="0" name="Key">77</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="3914344002759663" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;m&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="7490881634491467" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_ButtonPress_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;botão&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3612551437483369">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="3181748054416099" type="Keyboard">
+                            <param id="0" name="Key">78</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="7534020231327782" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;n&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="561158844899602" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_ButtonPress_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;botão&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5454396595160269">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="6200857925815968" type="Keyboard">
+                            <param id="0" name="Key">79</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="8992969629117046" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;o&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="1582133252342702" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_ButtonPress_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;botão&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3352192978136113">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="5577709898276795" type="Keyboard">
+                            <param id="0" name="Key">80</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="7370222839437323" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;p&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="494243594373056" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_ButtonPress_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;botão&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8183976558084826">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="9642035284757713" type="Keyboard">
+                            <param id="0" name="Key">81</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="13093536411107" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;q&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="2045728672827882" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_ButtonPress_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;botão&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8588757909491988">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="422256759066255" type="Keyboard">
+                            <param id="0" name="Key">82</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="2383347563393588" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;r&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="5719795066984202" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_ButtonPress_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;botão&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3724283852785779">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="7759925845168852" type="Keyboard">
+                            <param id="0" name="Key">83</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="1386051604141874" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;s&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="4975533663565098" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_ButtonPress_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;botão&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2368831840948754">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="6412017587865899" type="Keyboard">
+                            <param id="0" name="Key">84</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="4237024397234884" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;t&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="5288478520947277" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_ButtonPress_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;botão&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4288700629477751">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="8683521714638722" type="Keyboard">
+                            <param id="0" name="Key">85</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="5439363462757606" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;u&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="3348790691634935" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_ButtonPress_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;botão&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8471129643141989">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="7523580999721305" type="Keyboard">
+                            <param id="0" name="Key">86</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="7787060083211677" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;v&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="6330634696783477" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_ButtonPress_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;botão&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="286573037006447">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="9861818424348402" type="Keyboard">
+                            <param id="0" name="Key">87</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="6800674212972037" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;w&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="8507797154694191" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_ButtonPress_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;botão&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4760744177014136">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="5729288645329393" type="Keyboard">
+                            <param id="0" name="Key">88</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="1307010900487268" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;x&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="2504520456974924" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_ButtonPress_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;botão&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3637008888357642">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="8071557428885547" type="Keyboard">
+                            <param id="0" name="Key">89</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="2036548173339478" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;y&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="426072425200476" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_ButtonPress_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;botão&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2642250798515633">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="6285784625760392" type="Keyboard">
+                            <param id="0" name="Key">90</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="886596117244339" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;z&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="2938823961212059" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_ButtonPress_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;botão&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5226730365645234">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="6472982696740881" type="Keyboard">
+                            <param id="0" name="Key">13</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="658355056356785" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3700702295046742">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="5672786815987887" type="Keyboard">
+                            <param id="0" name="Key">27</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="4597496500054796" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6725653489460748">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="6759874701561435" type="Keyboard">
+                            <param id="0" name="Key">121</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="8023732447879265" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1983962641182307">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="9167306249802542" type="Keyboard">
+                            <param id="0" name="Key">192</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="1540344562661863" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4819520689096326">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="3104969896200937" type="Keyboard">
+                            <param id="0" name="Key">49</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="2829171879762201" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6245397641176547">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="1822102729823448" type="Keyboard">
+                            <param id="0" name="Key">50</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="130813439235485" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5754446266874015">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="7510225721795105" type="Keyboard">
+                            <param id="0" name="Key">51</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="7711583445920548" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6991555999014442">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="1342436685123166" type="Keyboard">
+                            <param id="0" name="Key">52</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="3814159784712195" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4032286281119941">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="7036136230412593" type="Keyboard">
+                            <param id="0" name="Key">53</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="6427875290490943" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5483348924142367">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="1724774269741675" type="Keyboard">
+                            <param id="0" name="Key">54</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="4771533910328082" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3807326627203996">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="1376155700791456" type="Keyboard">
+                            <param id="0" name="Key">55</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="1357431539806795" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7034460624948064">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="6674373630220163" type="Keyboard">
+                            <param id="0" name="Key">56</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="4674146952439124" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8332340830469175">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="7727747430328397" type="Keyboard">
+                            <param id="0" name="Key">57</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="982147763922251" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1926322398291054">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="9619993754822893" type="Keyboard">
+                            <param id="0" name="Key">48</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="7550804006700615" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5587790284638668">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="9385733281145524" type="Keyboard">
+                            <param id="0" name="Key">189</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="1408682959070177" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9080415501340734">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="7720673806582321" type="Keyboard">
+                            <param id="0" name="Key">187</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="3007751464041052" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3672060084646533">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="3518683359391458" type="Keyboard">
+                            <param id="0" name="Key">219</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="5627289678432485" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2809188464471063">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="796314664092081" type="Keyboard">
+                            <param id="0" name="Key">221</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="4560094755929033" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6734314563868923">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="1306868865017708" type="Keyboard">
+                            <param id="0" name="Key">220</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="3355956194146701" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5493116916789818">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="5993717713842285" type="Keyboard">
+                            <param id="0" name="Key">8</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="4199646747062831" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4096383805327377">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="6327590352883569" type="Keyboard">
+                            <param id="0" name="Key">186</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="6885879194666916" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9427631061439457">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="4950207281407515" type="Keyboard">
+                            <param id="0" name="Key">222</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="5874749433291212" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8232110780507399">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="4950706607662236" type="Keyboard">
+                            <param id="0" name="Key">191</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="3932556078799515" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1018829627689604">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="4371507266099909" type="Keyboard">
+                            <param id="0" name="Key">190</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="952542601718153" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4986961083635957">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="9962196758133208" type="Keyboard">
+                            <param id="0" name="Key">188</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="5783186146148393" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9074181014539496">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="6139954320895666" type="Keyboard">
+                            <param id="0" name="Key">17</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="8523257060417026" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5448609469539816">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="5579696016827735" type="Keyboard">
+                            <param id="0" name="Key">18</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="7295311075564456" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6848935354828979">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="6191710219488261" type="Keyboard">
+                            <param id="0" name="Key">32</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="2877461265836845" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2927761446857307">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="74198305173898" type="Keyboard">
+                            <param id="0" name="Key">93</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="3082669301406128" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3093825122692733">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="1960255515990133" type="Keyboard">
+                            <param id="0" name="Key">91</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="9624139837560786" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5560829063110391">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="4192040563625951" type="Keyboard">
+                            <param id="0" name="Key">17</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="1663535888450794" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2773758484351109">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="308463446322959" type="Keyboard">
+                            <param id="0" name="Key">16</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="5671644509715221" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9871471379041872">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="5105790110083165" type="Keyboard">
+                            <param id="0" name="Key">16</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="7311518213130224" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8249025997301905">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="8365594878002345" type="Keyboard">
+                            <param id="0" name="Key">20</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="3660062067732051" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7487081747156948">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="597045410579633" type="Keyboard">
+                            <param id="0" name="Key">9</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="6670567198341216" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7429432244614248">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="9881379811300756" type="Keyboard">
+                            <param id="0" name="Key">112</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="8869294746980254" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="985723398707807">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="5374566616276677" type="Keyboard">
+                            <param id="0" name="Key">113</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="8805185005548528" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7643849322474138">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="4295090458963949" type="Keyboard">
+                            <param id="0" name="Key">115</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="1359033786020958" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5395451592677212">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="5632367642843521" type="Keyboard">
+                            <param id="0" name="Key">114</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="982211306823551" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5228960952485979">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="6762411777199796" type="Keyboard">
+                            <param id="0" name="Key">116</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="8400436753616011" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1529872380088572">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="603530974541788" type="Keyboard">
+                            <param id="0" name="Key">117</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="4675379160399571" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1509296034441283">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="1429038708983998" type="Keyboard">
+                            <param id="0" name="Key">118</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="911261701903799" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6911325126203324">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="854257315236368" type="Keyboard">
+                            <param id="0" name="Key">119</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="3918141405721973" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1756279014173687">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="4982805881265802" type="Keyboard">
+                            <param id="0" name="Key">120</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="3139651504272644" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6118653926850236">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="9557193250412421" type="Keyboard">
+                            <param id="0" name="Key">122</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="2846798531273178" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="744719249485795">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="5642779513484329" type="Keyboard">
+                            <param id="0" name="Key">123</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="8187325597529643" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9625272012269834">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="4094632509505085" type="Keyboard">
+                            <param id="0" name="Key">19</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="7616625201800462" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4590041790502229">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="3890948261467103" type="Keyboard">
+                            <param id="0" name="Key">45</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="8619467205443787" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2212512107714289">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="2591729382961735" type="Keyboard">
+                            <param id="0" name="Key">46</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="792921816624086" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8388777334278766">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="7173616304546908" type="Keyboard">
+                            <param id="0" name="Key">36</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="1677397533226775" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8493947046432721">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="6860614452157294" type="Keyboard">
+                            <param id="0" name="Key">35</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="7486194726660899" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3840182841779736">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="2151989380625173" type="Keyboard">
+                            <param id="0" name="Key">33</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="1045461111263059" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7899293189974985">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="5743133157140651" type="Keyboard">
+                            <param id="0" name="Key">34</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="936633346961905" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4172473419851223">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="1491485402750657" type="Keyboard">
+                            <param id="0" name="Key">144</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="6245856654720237" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7341491593381355">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="1029563130787168" type="Keyboard">
+                            <param id="0" name="Key">111</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="1364610868679519" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7581354181600411">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="8056660981820054" type="Keyboard">
+                            <param id="0" name="Key">106</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="895015917415837" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5265176153609571">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="892522928760286" type="Keyboard">
+                            <param id="0" name="Key">109</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="9995206777159063" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9232609173971349">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="2161327971503982" type="Keyboard">
+                            <param id="0" name="Key">36</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="5795362590474055" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9897105832290697">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="8294014095392264" type="Keyboard">
+                            <param id="0" name="Key">38</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="4963148940420604" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5497794848175282">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="853038339496853" type="Keyboard">
+                            <param id="0" name="Key">33</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="9796648861981535" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="634537177298105">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="2772905081884229" type="Keyboard">
+                            <param id="0" name="Key">107</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="3180596667129381" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7143638590559697">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="6144515850427402" type="Keyboard">
+                            <param id="0" name="Key">37</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="1014307366620554" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3770439767022609">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="6468808423912739" type="Keyboard">
+                            <param id="0" name="Key">12</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="7103752017637882" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2542227421855344">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="8323641071622623" type="Keyboard">
+                            <param id="0" name="Key">39</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="8352897921302663" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2937915147605387">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="331320410093822" type="Keyboard">
+                            <param id="0" name="Key">99</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="7423934138656296" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6225243135543984">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="4402517173978085" type="Keyboard">
+                            <param id="0" name="Key">98</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="6237493038845699" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5902597635040765">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="6081785536098577" type="Keyboard">
+                            <param id="0" name="Key">97</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="2197339027026867" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="362965503432421">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="5926396776539676" type="Keyboard">
+                            <param id="0" name="Key">110</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="8172177860789641" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2512740733658383">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="1594637586029033" type="Keyboard">
+                            <param id="0" name="Key">96</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="7526012887454456" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5668436115954385">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="1719417665323687" type="Keyboard">
+                            <param id="0" name="Key">39</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="7971313990506117" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4105687490450434">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="726741516327882" type="Keyboard">
+                            <param id="0" name="Key">40</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="2618284622720034" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9351868760791047">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="6552245576164518" type="Keyboard">
+                            <param id="0" name="Key">37</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="6932790635663298" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4154191660300487">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="1194343580430583" type="Keyboard">
+                            <param id="0" name="Key">38</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="6078469008606988" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7972696607286474">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="2222145501870354" type="Keyboard">
+                            <param id="0" name="Key">192</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="6946652368947785" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2716026197554275">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="4443838724274075" type="Keyboard">
+                            <param id="0" name="Key">219</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="755696684573347" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6340964285799639">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="2257255782520676" type="Keyboard">
+                            <param id="0" name="Key">186</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="7886782272486737" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5252408260927645">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="5849502753391071" type="Keyboard">
+                            <param id="0" name="Key">222</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="1109830839087776" type="Sprite_Computer_Text_Command">
+                            <param id="0" name="Animation">&quot;erro&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="1085685742092476">
+            <conditions>
+                <condition id="4" name="On finished" sid="6135560897876549" type="Sprite_Computer_Text_Command">
+                    <param id="0" name="Animation">&quot;j&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="9961194874800323" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="353877208781294" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Animation">&quot;sucesso&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1676520044054967">
+            <conditions>
+                <condition id="4" name="On finished" sid="3579855077743246" type="Sprite_Computer_Text_Command">
+                    <param id="0" name="Animation">&quot;a&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="7602032043546412" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="9043365891795024" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Animation">choose (&quot;inc&quot;, &quot;inc1&quot;, &quot;inc2&quot;, &quot;inc3&quot;, &quot;inc4&quot;, &quot;inc5&quot;, &quot;inc6&quot;) </param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6082656300624543">
+            <conditions>
+                <condition id="4" name="On finished" sid="5981797581063755" type="Sprite_Computer_Text_Command">
+                    <param id="0" name="Animation">&quot;b&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="2380581870257757" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="3955997634301053" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Animation">choose (&quot;inc&quot;, &quot;inc1&quot;, &quot;inc2&quot;, &quot;inc3&quot;, &quot;inc4&quot;, &quot;inc5&quot;, &quot;inc6&quot;) </param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5650359726698463">
+            <conditions>
+                <condition id="4" name="On finished" sid="720847244381415" type="Sprite_Computer_Text_Command">
+                    <param id="0" name="Animation">&quot;c&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="3474382842196499" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="806773771254892" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Animation">choose (&quot;inc&quot;, &quot;inc1&quot;, &quot;inc2&quot;, &quot;inc3&quot;, &quot;inc4&quot;, &quot;inc5&quot;, &quot;inc6&quot;) </param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4185864754780752">
+            <conditions>
+                <condition id="4" name="On finished" sid="742944805085281" type="Sprite_Computer_Text_Command">
+                    <param id="0" name="Animation">&quot;d&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="1445720609409595" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="5981509300342912" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Animation">choose (&quot;inc&quot;, &quot;inc1&quot;, &quot;inc2&quot;, &quot;inc3&quot;, &quot;inc4&quot;, &quot;inc5&quot;, &quot;inc6&quot;) </param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8383791783470138">
+            <conditions>
+                <condition id="4" name="On finished" sid="3844168792986085" type="Sprite_Computer_Text_Command">
+                    <param id="0" name="Animation">&quot;f&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="569550934622803" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="6293359877765245" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Animation">choose (&quot;inc&quot;, &quot;inc1&quot;, &quot;inc2&quot;, &quot;inc3&quot;, &quot;inc4&quot;, &quot;inc5&quot;, &quot;inc6&quot;) </param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7987355510939643">
+            <conditions>
+                <condition id="4" name="On finished" sid="9272223339074392" type="Sprite_Computer_Text_Command">
+                    <param id="0" name="Animation">&quot;g&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="4233369651107028" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="7909213887089651" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Animation">choose (&quot;inc&quot;, &quot;inc1&quot;, &quot;inc2&quot;, &quot;inc3&quot;, &quot;inc4&quot;, &quot;inc5&quot;, &quot;inc6&quot;) </param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2348750606111101">
+            <conditions>
+                <condition id="4" name="On finished" sid="6286547296920615" type="Sprite_Computer_Text_Command">
+                    <param id="0" name="Animation">&quot;h&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="7234704108606458" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="5679317652342374" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Animation">choose (&quot;inc&quot;, &quot;inc1&quot;, &quot;inc2&quot;, &quot;inc3&quot;, &quot;inc4&quot;, &quot;inc5&quot;, &quot;inc6&quot;) </param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1507604941460754">
+            <conditions>
+                <condition id="4" name="On finished" sid="6573675796685673" type="Sprite_Computer_Text_Command">
+                    <param id="0" name="Animation">&quot;i&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="1684160226988716" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="7148445711326806" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Animation">choose (&quot;inc&quot;, &quot;inc1&quot;, &quot;inc2&quot;, &quot;inc3&quot;, &quot;inc4&quot;, &quot;inc5&quot;, &quot;inc6&quot;) </param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3829900566666311">
+            <conditions>
+                <condition id="4" name="On finished" sid="9520223136952801" type="Sprite_Computer_Text_Command">
+                    <param id="0" name="Animation">&quot;k&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="4945064267033884" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="5070615132787814" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Animation">choose (&quot;inc&quot;, &quot;inc1&quot;, &quot;inc2&quot;, &quot;inc3&quot;, &quot;inc4&quot;, &quot;inc5&quot;, &quot;inc6&quot;) </param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7678412224517977">
+            <conditions>
+                <condition id="4" name="On finished" sid="5930381238165929" type="Sprite_Computer_Text_Command">
+                    <param id="0" name="Animation">&quot;l&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="8025445244170958" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="7445212903160414" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Animation">choose (&quot;inc&quot;, &quot;inc1&quot;, &quot;inc2&quot;, &quot;inc3&quot;, &quot;inc4&quot;, &quot;inc5&quot;, &quot;inc6&quot;) </param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4534901900410241">
+            <conditions>
+                <condition id="4" name="On finished" sid="8809199128284683" type="Sprite_Computer_Text_Command">
+                    <param id="0" name="Animation">&quot;m&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="2401002475499053" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="603003880679173" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Animation">choose (&quot;inc&quot;, &quot;inc1&quot;, &quot;inc2&quot;, &quot;inc3&quot;, &quot;inc4&quot;, &quot;inc5&quot;, &quot;inc6&quot;) </param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9453848834561296">
+            <conditions>
+                <condition id="4" name="On finished" sid="8879544409494855" type="Sprite_Computer_Text_Command">
+                    <param id="0" name="Animation">&quot;n&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="6948123575021688" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="216963927194469" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Animation">choose (&quot;inc&quot;, &quot;inc1&quot;, &quot;inc2&quot;, &quot;inc3&quot;, &quot;inc4&quot;, &quot;inc5&quot;, &quot;inc6&quot;) </param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4671049152230843">
+            <conditions>
+                <condition id="4" name="On finished" sid="6765942173824642" type="Sprite_Computer_Text_Command">
+                    <param id="0" name="Animation">&quot;o&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="1333523122142339" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="4795402149398986" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Animation">choose (&quot;inc&quot;, &quot;inc1&quot;, &quot;inc2&quot;, &quot;inc3&quot;, &quot;inc4&quot;, &quot;inc5&quot;, &quot;inc6&quot;) </param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4550366769834083">
+            <conditions>
+                <condition id="4" name="On finished" sid="8794336725210182" type="Sprite_Computer_Text_Command">
+                    <param id="0" name="Animation">&quot;p&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="3801210496692062" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="9236393666534677" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Animation">choose (&quot;inc&quot;, &quot;inc1&quot;, &quot;inc2&quot;, &quot;inc3&quot;, &quot;inc4&quot;, &quot;inc5&quot;, &quot;inc6&quot;) </param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7125316933609157">
+            <conditions>
+                <condition id="4" name="On finished" sid="6561121144725282" type="Sprite_Computer_Text_Command">
+                    <param id="0" name="Animation">&quot;q&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="1173662052060151" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="3511016426896546" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Animation">choose (&quot;inc&quot;, &quot;inc1&quot;, &quot;inc2&quot;, &quot;inc3&quot;, &quot;inc4&quot;, &quot;inc5&quot;, &quot;inc6&quot;) </param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8671537387402621">
+            <conditions>
+                <condition id="4" name="On finished" sid="5192687949026183" type="Sprite_Computer_Text_Command">
+                    <param id="0" name="Animation">&quot;r&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="1310753702871346" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="4723275578867197" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Animation">choose (&quot;inc&quot;, &quot;inc1&quot;, &quot;inc2&quot;, &quot;inc3&quot;, &quot;inc4&quot;, &quot;inc5&quot;, &quot;inc6&quot;) </param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="127023753839509">
+            <conditions>
+                <condition id="4" name="On finished" sid="930384445986611" type="Sprite_Computer_Text_Command">
+                    <param id="0" name="Animation">&quot;s&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="8241842607049198" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="5101898633217309" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Animation">choose (&quot;inc&quot;, &quot;inc1&quot;, &quot;inc2&quot;, &quot;inc3&quot;, &quot;inc4&quot;, &quot;inc5&quot;, &quot;inc6&quot;) </param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2377535222625385">
+            <conditions>
+                <condition id="4" name="On finished" sid="2321912658684838" type="Sprite_Computer_Text_Command">
+                    <param id="0" name="Animation">&quot;t&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="4582954142392684" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="6028029487561601" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Animation">choose (&quot;inc&quot;, &quot;inc1&quot;, &quot;inc2&quot;, &quot;inc3&quot;, &quot;inc4&quot;, &quot;inc5&quot;, &quot;inc6&quot;) </param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8498484567569825">
+            <conditions>
+                <condition id="4" name="On finished" sid="9683982906535509" type="Sprite_Computer_Text_Command">
+                    <param id="0" name="Animation">&quot;u&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="4084107805984" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="3132111843205839" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Animation">choose (&quot;inc&quot;, &quot;inc1&quot;, &quot;inc2&quot;, &quot;inc3&quot;, &quot;inc4&quot;, &quot;inc5&quot;, &quot;inc6&quot;) </param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5951950977497003">
+            <conditions>
+                <condition id="4" name="On finished" sid="253523609957162" type="Sprite_Computer_Text_Command">
+                    <param id="0" name="Animation">&quot;v&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="50988982399346" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="7424272438913777" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Animation">choose (&quot;inc&quot;, &quot;inc1&quot;, &quot;inc2&quot;, &quot;inc3&quot;, &quot;inc4&quot;, &quot;inc5&quot;, &quot;inc6&quot;) </param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5403942806804122">
+            <conditions>
+                <condition id="4" name="On finished" sid="4864113917092375" type="Sprite_Computer_Text_Command">
+                    <param id="0" name="Animation">&quot;w&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="5586196899342713" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="4474337302903511" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Animation">choose (&quot;inc&quot;, &quot;inc1&quot;, &quot;inc2&quot;, &quot;inc3&quot;, &quot;inc4&quot;, &quot;inc5&quot;, &quot;inc6&quot;) </param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1482472176335169">
+            <conditions>
+                <condition id="4" name="On finished" sid="8384506858195288" type="Sprite_Computer_Text_Command">
+                    <param id="0" name="Animation">&quot;x&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="2232756437753201" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="4418005484676509" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Animation">choose (&quot;inc&quot;, &quot;inc1&quot;, &quot;inc2&quot;, &quot;inc3&quot;, &quot;inc4&quot;, &quot;inc5&quot;, &quot;inc6&quot;) </param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5475860815949949">
+            <conditions>
+                <condition id="4" name="On finished" sid="7850749843723402" type="Sprite_Computer_Text_Command">
+                    <param id="0" name="Animation">&quot;y&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="4261797341565064" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="5672400364393549" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Animation">choose (&quot;inc&quot;, &quot;inc1&quot;, &quot;inc2&quot;, &quot;inc3&quot;, &quot;inc4&quot;, &quot;inc5&quot;, &quot;inc6&quot;) </param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="292408515715453">
+            <conditions>
+                <condition id="4" name="On finished" sid="9089970112245712" type="Sprite_Computer_Text_Command">
+                    <param id="0" name="Animation">&quot;z&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="9883840276700987" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="3376541841712707" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Animation">choose (&quot;inc&quot;, &quot;inc1&quot;, &quot;inc2&quot;, &quot;inc3&quot;, &quot;inc4&quot;, &quot;inc5&quot;, &quot;inc6&quot;) </param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="676067822834999">
+            <conditions>
+                <condition id="4" name="On finished" sid="3773357286972455" type="Sprite_Computer_Text_Command">
+                    <param id="0" name="Animation">&quot;erro&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="7033948433034655" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="3319927895942712" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Animation">&quot;erro&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="309126250424553">
+            <conditions>
+                <condition id="4" name="On finished" sid="5623992002414071" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Animation">&quot;erro&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="829556902512443" type="Sprite_Computer_Text_Command">
+                    <param id="0" name="Animation">&quot;default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="2928342849225441" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4215358291119422">
+            <conditions>
+                <condition id="4" name="On finished" sid="7387745019662443" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Animation">&quot;inc&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="4321574083681964" type="Sprite_Computer_Text_Command">
+                    <param id="0" name="Animation">&quot;default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="6103602624946872" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2672546079712758">
+            <conditions>
+                <condition id="4" name="On finished" sid="9756238784216458" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Animation">&quot;inc2&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="5666491613663006" type="Sprite_Computer_Text_Command">
+                    <param id="0" name="Animation">&quot;default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="8501457698997711" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6076880791384327">
+            <conditions>
+                <condition id="4" name="On finished" sid="1876183778972688" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Animation">&quot;inc3&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="5477632524836536" type="Sprite_Computer_Text_Command">
+                    <param id="0" name="Animation">&quot;default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="7822306702268562" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9032054269726286">
+            <conditions>
+                <condition id="4" name="On finished" sid="2202676005857089" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Animation">&quot;inc4&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="9509169903439627" type="Sprite_Computer_Text_Command">
+                    <param id="0" name="Animation">&quot;default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="1962191059800004" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="42685360391978">
+            <conditions>
+                <condition id="4" name="On finished" sid="2187849944152312" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Animation">&quot;inc5&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="8352359574761428" type="Sprite_Computer_Text_Command">
+                    <param id="0" name="Animation">&quot;default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="9142570061972585" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2856086661143866">
+            <conditions>
+                <condition id="4" name="On finished" sid="5032358830012925" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Animation">&quot;sucesso&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="5170005660880704" type="Sprite_Computer_Text_Command">
+                    <param id="0" name="Animation">&quot;fim&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="1257932680787384" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8309815011743229">
+            <conditions>
+                <condition id="4" name="On finished" sid="2627908815593933" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Animation">&quot;inc6&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="3431114912919986" type="Sprite_Computer_Text_Command">
+                    <param id="0" name="Animation">&quot;default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="2959776245176291" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4179265939536681">
+            <conditions>
+                <condition id="2" name="Is playing" sid="5570436296507884" type="Sprite_Computer_Text_Command">
+                    <param id="0" name="Animation">&quot;default&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="119340009271587" type="Sprite_Led_Brown">
+                    <param id="0" name="Animation">&quot;pisc&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8638690317549408">
+            <conditions>
+                <condition id="3" name="Compare frame" sid="4916336495575091" type="Sprite_Computer_Text_Command">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Number">9</param>
+                </condition>
+                <condition id="2" name="Is playing" sid="4133664276438633" type="Sprite_Computer_Text_Command">
+                    <param id="0" name="Animation">&quot;default&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="2339220519121796" type="Sprite_Led_Brown">
+                    <param id="0" name="Animation">&quot;apag&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3078058936688882">
+            <conditions>
+                <condition id="2" name="Is playing" sid="6519412872081041" type="Sprite_Computer_Text_Command">
+                    <param id="0" name="Animation">&quot;fim&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="5510358685146352" type="Sprite_Led_Brown">
+                    <param id="0" name="Animation">&quot;pisc&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4613667313885933">
+            <conditions>
+                <condition id="3" name="Compare frame" sid="9752607298417148" type="Sprite_Computer_Text_Command">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Number">9</param>
+                </condition>
+                <condition id="2" name="Is playing" sid="2619934658174442" type="Sprite_Computer_Text_Command">
+                    <param id="0" name="Animation">&quot;fim&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="796641825188853" type="Sprite_Led_Brown">
+                    <param id="0" name="Animation">&quot;apag&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4668993419637746">
+            <conditions>
+                <condition id="2" name="Is playing" sid="4175781997448882" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Animation">&quot;inc&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="7955942883221206" type="Sprite_Led_Blue">
+                    <param id="0" name="Animation">&quot;pisc&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="50849064020171">
+            <conditions>
+                <condition id="2" name="Is playing" sid="3242450841916818" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Animation">&quot;inc2&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="9479746151314305" type="Sprite_Led_Blue">
+                    <param id="0" name="Animation">&quot;pisc&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2846911910416816">
+            <conditions>
+                <condition id="2" name="Is playing" sid="1286377991531493" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Animation">&quot;inc3&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="7855673830932942" type="Sprite_Led_Blue">
+                    <param id="0" name="Animation">&quot;pisc&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5928078726579335">
+            <conditions>
+                <condition id="2" name="Is playing" sid="7842554870928238" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Animation">&quot;inc4&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="470794227476088" type="Sprite_Led_Blue">
+                    <param id="0" name="Animation">&quot;pisc&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3771887515443769">
+            <conditions>
+                <condition id="2" name="Is playing" sid="1116072345522831" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Animation">&quot;inc5&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="6025981482211482" type="Sprite_Led_Blue">
+                    <param id="0" name="Animation">&quot;pisc&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="677633331090264">
+            <conditions>
+                <condition id="2" name="Is playing" sid="2757866369973757" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Animation">&quot;inc6&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="1101754661685472" type="Sprite_Led_Blue">
+                    <param id="0" name="Animation">&quot;pisc&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9071121167716035">
+            <conditions>
+                <condition id="2" name="Is playing" sid="4702460253447868" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Animation">&quot;sucesso&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="112347019865084" type="Sprite_Led_Blue">
+                    <param id="0" name="Animation">&quot;pisc&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7414818378395408">
+            <conditions>
+                <condition id="2" name="Is playing" sid="4744230636652736" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Animation">&quot;sucesso&quot;</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="8160246625640249" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">90</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="6195259228567778" type="Sprite_Led_Blue">
+                    <param id="0" name="Animation">&quot;apag&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1428232358972221">
+            <conditions>
+                <condition id="2" name="Is playing" sid="2171740484644396" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Animation">&quot;inc&quot;</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="2217795922182656" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">20</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="2955580971984482" type="Sprite_Led_Blue">
+                    <param id="0" name="Animation">&quot;apag&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2053868778641845">
+            <conditions>
+                <condition id="2" name="Is playing" sid="731318741201916" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Animation">&quot;inc2&quot;</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="5308958937994459" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">34</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="4188754258833037" type="Sprite_Led_Blue">
+                    <param id="0" name="Animation">&quot;apag&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1695806127587462">
+            <conditions>
+                <condition id="2" name="Is playing" sid="568011919558359" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Animation">&quot;inc3&quot;</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="8019366777906946" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">41</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="6619673689017603" type="Sprite_Led_Blue">
+                    <param id="0" name="Animation">&quot;apag&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9855106867587335">
+            <conditions>
+                <condition id="2" name="Is playing" sid="9393550341271421" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Animation">&quot;inc4&quot;</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="9131153260262683" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">51</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="1714555232534264" type="Sprite_Led_Blue">
+                    <param id="0" name="Animation">&quot;apag&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6573680573908031">
+            <conditions>
+                <condition id="2" name="Is playing" sid="1631646088134286" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Animation">&quot;inc5&quot;</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="1479385825964802" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">67</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="7277436177638023" type="Sprite_Led_Blue">
+                    <param id="0" name="Animation">&quot;apag&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="11335067958791">
+            <conditions>
+                <condition id="2" name="Is playing" sid="4794042588153856" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Animation">&quot;inc6&quot;</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="3387645063711251" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">88</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="6441440183501198" type="Sprite_Led_Blue">
+                    <param id="0" name="Animation">&quot;apag&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9774817612766223">
+            <conditions>
+                <condition id="2" name="Is playing" sid="8795240044400214" type="Sprite_Text_Computer_Starting">
+                    <param id="0" name="Animation">&quot;default&quot;</param>
+                </condition>
+                <condition id="5" inverted="1" name="Is tag playing" sid="610573226479123" type="Audio">
+                    <param id="0" name="Tag">&quot;hd&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Play (by name)" sid="6042505556720217" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">choose (&quot;hd01&quot;,&quot;hd02&quot;,&quot;hd03&quot;,&quot;hd04&quot;,&quot;hd05&quot;,&quot;hd06&quot;,&quot;hd07&quot;,&quot;hd09&quot;,&quot;hd10&quot;,&quot;hd11&quot;,&quot;hd12&quot;,&quot;hd13&quot;)</param>
+                    <param id="3" name="Loop">0</param>
+                    <param id="4" name="Volume">-17</param>
+                    <param id="2" name="Tag (optional)">&quot;hd&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7249933902411641">
+            <conditions>
+                <condition id="4" name="On finished" sid="7843413149024832" type="Sprite_Text_Computer_Starting">
+                    <param id="0" name="Animation">&quot;default&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="9046959698243618" type="Audio">
+                    <param id="0" name="Tag">&quot;hd&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8267000293119544">
+            <conditions>
+                <condition id="2" name="Is playing" sid="3269536311472044" type="Sprite_Computer_Text_Command">
+                    <param id="0" name="Animation">&quot;default&quot;</param>
+                </condition>
+                <condition id="5" inverted="1" name="Is tag playing" sid="9757084903617378" type="Audio">
+                    <param id="0" name="Tag">&quot;hd&quot;</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="6479562281611102" type="Sprite_Computer_Text_Command">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="Number">9</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Play (by name)" sid="521541053407298" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">choose (&quot;hd01&quot;,&quot;hd02&quot;,&quot;hd03&quot;,&quot;hd04&quot;,&quot;hd05&quot;,&quot;hd06&quot;,&quot;hd07&quot;,&quot;hd09&quot;,&quot;hd10&quot;,&quot;hd11&quot;,&quot;hd12&quot;,&quot;hd13&quot;)</param>
+                    <param id="3" name="Loop">0</param>
+                    <param id="4" name="Volume">-17</param>
+                    <param id="2" name="Tag (optional)">&quot;hd&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3203945842124105">
+            <conditions>
+                <condition id="3" name="Compare frame" sid="6682045959156241" type="Sprite_Computer_Text_Command">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="Number">10</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="1685115332529435" type="Audio">
+                    <param id="0" name="Tag">&quot;hd&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="915974215611171">
+            <conditions>
+                <condition id="2" name="Is playing" sid="3864054215043097" type="Sprite_Computer_Text_Command">
+                    <param id="0" name="Animation">&quot;fim&quot;</param>
+                </condition>
+                <condition id="5" inverted="1" name="Is tag playing" sid="5630062597052919" type="Audio">
+                    <param id="0" name="Tag">&quot;hd&quot;</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="305001079829347" type="Sprite_Computer_Text_Command">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="Number">9</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Play (by name)" sid="3709891349993773" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">choose (&quot;hd01&quot;,&quot;hd02&quot;,&quot;hd03&quot;,&quot;hd04&quot;,&quot;hd05&quot;,&quot;hd06&quot;,&quot;hd07&quot;,&quot;hd09&quot;,&quot;hd10&quot;,&quot;hd11&quot;,&quot;hd12&quot;,&quot;hd13&quot;)</param>
+                    <param id="3" name="Loop">0</param>
+                    <param id="4" name="Volume">-17</param>
+                    <param id="2" name="Tag (optional)">&quot;hd&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="366724678412777">
+            <conditions>
+                <condition id="2" name="Is playing" sid="2646794567294055" type="Sprite_Computer_Text_Command">
+                    <param id="0" name="Animation">&quot;fim&quot;</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="9605306486896352" type="Sprite_Computer_Text_Command">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">64</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="1343211097738863">
+                    <conditions>
+                        <condition id="6" name="On frame changed" sid="2131752659510011" type="Sprite_Computer_Text_Command" />
+                        <condition id="5" inverted="1" name="Is tag playing" sid="246964775185527" type="Audio">
+                            <param id="0" name="Tag">&quot;fim&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="6005140535691537" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_ButtonPress_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;fim&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="6913307851716344">
+            <conditions>
+                <condition id="3" name="Compare frame" sid="9164926936337232" type="Sprite_Computer_Text_Command">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="Number">65</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="8112001352014501" type="Audio">
+                    <param id="0" name="Tag">&quot;fim&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8557041725935053">
+            <conditions>
+                <condition id="2" name="Is playing" sid="4758636903207727" type="Sprite_Led_Blue">
+                    <param id="0" name="Animation">&quot;pisc&quot;</param>
+                </condition>
+                <condition id="5" inverted="1" name="Is tag playing" sid="1120859716002605" type="Audio">
+                    <param id="0" name="Tag">&quot;dial&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Play (by name)" sid="598336393059605" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">choose(&quot;di01&quot;,&quot;di02&quot;,&quot;di03&quot;,&quot;di04&quot;,&quot;di05&quot;,&quot;di06&quot;,&quot;di07&quot;,&quot;di08&quot;,&quot;di09&quot;,&quot;di10&quot;,&quot;di11&quot;,&quot;di12&quot;,&quot;di13&quot;,&quot;di14&quot;,&quot;di15&quot;,&quot;di16&quot;,&quot;di17&quot;,&quot;di18&quot;,&quot;di19&quot;,&quot;di20&quot;,&quot;di21&quot;,&quot;di22&quot;,&quot;di23&quot;,&quot;di24&quot;,&quot;di25&quot;,&quot;di01&quot;,&quot;di26&quot;,&quot;di27&quot;)</param>
+                    <param id="3" name="Loop">0</param>
+                    <param id="4" name="Volume">-12</param>
+                    <param id="2" name="Tag (optional)">&quot;dial&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9309307164872229">
+            <conditions>
+                <condition id="2" name="Is playing" sid="8700673684662434" type="Sprite_Led_Blue">
+                    <param id="0" name="Animation">&quot;apag&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="5051002514208644" type="Audio">
+                    <param id="0" name="Tag">&quot;dial&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9093949802810611">
+            <conditions>
+                <condition id="2" name="Is playing" sid="1699703029959835" type="Sprite_Computer_Text_Command">
+                    <param id="0" name="Animation">&quot;erro&quot;</param>
+                </condition>
+                <condition id="5" inverted="1" name="Is tag playing" sid="3771807746364177" type="Audio">
+                    <param id="0" name="Tag">&quot;erro&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="9587528945468775" type="Audio">
+                    <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7835717026149468">
+            <conditions>
+                <condition id="-9" name="Is visible" sid="6594959894137518" type="Sprite_Text_Computer_Loading" />
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="728764299826618" type="Audio">
+                    <param id="0" name="Tag">&quot;erro&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7136982238616865">
+            <conditions>
+                <condition id="2" name="Is playing" sid="6353226671646404" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Animation">&quot;erro&quot;</param>
+                </condition>
+                <condition id="5" inverted="1" name="Is tag playing" sid="7684272386635568" type="Audio">
+                    <param id="0" name="Tag">&quot;erro2&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="6292510214268614" type="Audio">
+                    <param id="0" name="Audio file">SFX_OldComputer_Error_002</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;erro2&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4697235043775397">
+            <conditions>
+                <condition id="-9" inverted="1" name="Is visible" sid="3151915214409999" type="Sprite_Text_Computer_Loading" />
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="793730839423868" type="Audio">
+                    <param id="0" name="Tag">&quot;erro2&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="927006167605872">
+            <conditions>
+                <condition id="2" name="Is playing" sid="114799765124894" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Animation">&quot;sucesso&quot;</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="1194199592363875" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">90</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="7924357184504976">
+                    <conditions>
+                        <condition id="6" name="On frame changed" sid="5064980695024999" type="Sprite_Text_Computer_Loading" />
+                        <condition id="5" inverted="1" name="Is tag playing" sid="5022439693427496" type="Audio">
+                            <param id="0" name="Tag">&quot;suc&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Play (by name)" sid="2267908945631256" type="Audio">
+                            <param id="0" name="Folder">0</param>
+                            <param id="1" name="Audio file name">choose(&quot;suc1&quot;,&quot;suc2&quot;,&quot;suc3&quot;,&quot;suc4&quot;,&quot;suc5&quot;,&quot;suc6&quot;) </param>
+                            <param id="3" name="Loop">0</param>
+                            <param id="4" name="Volume">-15</param>
+                            <param id="2" name="Tag (optional)">&quot;suc&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="6957984861424793">
+            <conditions>
+                <condition id="2" name="Is playing" sid="609159749563406" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Animation">&quot;inc&quot;</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="9592270302215841" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">20</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="628019950910076">
+                    <conditions>
+                        <condition id="6" name="On frame changed" sid="4173728497966447" type="Sprite_Text_Computer_Loading" />
+                        <condition id="5" inverted="1" name="Is tag playing" sid="7076371204724852" type="Audio">
+                            <param id="0" name="Tag">&quot;inc&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Play (by name)" sid="4713791016828095" type="Audio">
+                            <param id="0" name="Folder">0</param>
+                            <param id="1" name="Audio file name">choose(&quot;inc1&quot;,&quot;inc2&quot;,&quot;inc3&quot;) </param>
+                            <param id="3" name="Loop">0</param>
+                            <param id="4" name="Volume">-15</param>
+                            <param id="2" name="Tag (optional)">&quot;inc&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="674174060010313">
+            <conditions>
+                <condition id="2" name="Is playing" sid="3350671333246381" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Animation">&quot;inc2&quot;</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="3845689946307419" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">34</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="9941787976453099">
+                    <conditions>
+                        <condition id="6" name="On frame changed" sid="358897148217748" type="Sprite_Text_Computer_Loading" />
+                        <condition id="5" inverted="1" name="Is tag playing" sid="945161235462474" type="Audio">
+                            <param id="0" name="Tag">&quot;inc&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Play (by name)" sid="7236012187450424" type="Audio">
+                            <param id="0" name="Folder">0</param>
+                            <param id="1" name="Audio file name">choose(&quot;inc1&quot;,&quot;inc2&quot;,&quot;inc3&quot;) </param>
+                            <param id="3" name="Loop">0</param>
+                            <param id="4" name="Volume">-15</param>
+                            <param id="2" name="Tag (optional)">&quot;inc&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="8533564931195193">
+            <conditions>
+                <condition id="2" name="Is playing" sid="5761086229337607" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Animation">&quot;inc3&quot;</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="7130979256134498" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">41</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="6091580627363799">
+                    <conditions>
+                        <condition id="6" name="On frame changed" sid="9463223587699061" type="Sprite_Text_Computer_Loading" />
+                        <condition id="5" inverted="1" name="Is tag playing" sid="1379084795205749" type="Audio">
+                            <param id="0" name="Tag">&quot;inc&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Play (by name)" sid="4149002051143736" type="Audio">
+                            <param id="0" name="Folder">0</param>
+                            <param id="1" name="Audio file name">choose(&quot;inc1&quot;,&quot;inc2&quot;,&quot;inc3&quot;) </param>
+                            <param id="3" name="Loop">0</param>
+                            <param id="4" name="Volume">-15</param>
+                            <param id="2" name="Tag (optional)">&quot;inc&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="7301823551777375">
+            <conditions>
+                <condition id="2" name="Is playing" sid="8388226880079498" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Animation">&quot;inc4&quot;</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="6411317818432135" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">51</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="7971405219834832">
+                    <conditions>
+                        <condition id="6" name="On frame changed" sid="3947959728346778" type="Sprite_Text_Computer_Loading" />
+                        <condition id="5" inverted="1" name="Is tag playing" sid="8140511119431389" type="Audio">
+                            <param id="0" name="Tag">&quot;inc&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Play (by name)" sid="5174469901795958" type="Audio">
+                            <param id="0" name="Folder">0</param>
+                            <param id="1" name="Audio file name">choose(&quot;inc1&quot;,&quot;inc2&quot;,&quot;inc3&quot;) </param>
+                            <param id="3" name="Loop">0</param>
+                            <param id="4" name="Volume">-15</param>
+                            <param id="2" name="Tag (optional)">&quot;inc&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="1638629469218417">
+            <conditions>
+                <condition id="2" name="Is playing" sid="2703999080365611" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Animation">&quot;inc5&quot;</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="4731105326434771" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">67</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="6553565362905118">
+                    <conditions>
+                        <condition id="6" name="On frame changed" sid="904698417025076" type="Sprite_Text_Computer_Loading" />
+                        <condition id="5" inverted="1" name="Is tag playing" sid="209293634526989" type="Audio">
+                            <param id="0" name="Tag">&quot;inc&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Play (by name)" sid="1760558644261771" type="Audio">
+                            <param id="0" name="Folder">0</param>
+                            <param id="1" name="Audio file name">choose(&quot;inc1&quot;,&quot;inc2&quot;,&quot;inc3&quot;) </param>
+                            <param id="3" name="Loop">0</param>
+                            <param id="4" name="Volume">-15</param>
+                            <param id="2" name="Tag (optional)">&quot;inc&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="3331592279305991">
+            <conditions>
+                <condition id="2" name="Is playing" sid="1591935901200398" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Animation">&quot;inc6&quot;</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="8009047675222608" type="Sprite_Text_Computer_Loading">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">88</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="8392529577327352">
+                    <conditions>
+                        <condition id="6" name="On frame changed" sid="9942395067063414" type="Sprite_Text_Computer_Loading" />
+                        <condition id="5" inverted="1" name="Is tag playing" sid="2520117673356111" type="Audio">
+                            <param id="0" name="Tag">&quot;inc&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Play (by name)" sid="4571906560925174" type="Audio">
+                            <param id="0" name="Folder">0</param>
+                            <param id="1" name="Audio file name">choose(&quot;inc1&quot;,&quot;inc2&quot;,&quot;inc3&quot;) </param>
+                            <param id="3" name="Loop">0</param>
+                            <param id="4" name="Volume">-15</param>
+                            <param id="2" name="Tag (optional)">&quot;inc&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="7858341235231605">
+            <conditions>
+                <condition id="-9" inverted="1" name="Is visible" sid="5744092669261622" type="Sprite_Text_Computer_Loading" />
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="1999362020985226" type="Audio">
+                    <param id="0" name="Tag">&quot;inc&quot;</param>
+                </action>
+                <action id="6" name="Stop" sid="7351450305503742" type="Audio">
+                    <param id="0" name="Tag">&quot;suc&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7536205579494129">
+            <conditions>
+                <condition id="4" name="On finished" sid="9776810965478812" type="Sprite_Computer_Text_Command">
+                    <param id="0" name="Animation">&quot;fim&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-25" name="Go to layout (by name)" sid="9170851406187868" type="System">
+                    <param id="0" name="Layout">&quot;fase13&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="6101362596777134" type="System">
+                    <param id="0" name="Variable">SpanwX</param>
+                    <param id="1" name="Value">703.608</param>
+                </action>
+                <action id="-9" name="Set value" sid="648776657022707" type="System">
+                    <param id="0" name="Variable">SpanwY</param>
+                    <param id="1" name="Value">556.529</param>
+                </action>
+                <action id="6" name="Stop" sid="4358166831168252" type="Audio">
+                    <param id="0" name="Tag">&quot;inic&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="2918172800131174" type="Audio">
+                    <param id="0" name="Audio file">SFX_OldComputer_TurningOff_001</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;des&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4179830078427571">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="9941679808091585" type="Keyboard">
+                    <param id="0" name="Key">27</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="6786610896954042" type="Audio" />
+                <action id="-21" name="Reset global variables" sid="7010347320372067" type="System" />
+                <action id="-25" name="Go to layout (by name)" sid="2745205169395747" type="System">
+                    <param id="0" name="Layout">&quot;inicio&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

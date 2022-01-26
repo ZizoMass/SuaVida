@@ -1,0 +1,405 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>EventSheet_005</name>
+    <events>
+        <variable constant="0" name="estacionado" sid="9498519648501622" static="0" type="number">0</variable>
+        <event-block sid="2134422794895054">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="3420902395356252" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="6922271781461701" type="Audio">
+                    <param id="0" name="Audio file">BG_DistantTraffic_001</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">-3</param>
+                    <param id="1" name="Tag (optional)">&quot;amb5&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="4264744510780789" type="Audio">
+                    <param id="0" name="Audio file">SFX_CarEgineNeutral_002</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">10</param>
+                    <param id="1" name="Tag (optional)">&quot;crrm&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5831733432313693">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="2949122918030761" type="Sprite_PlayerCar_003">
+                    <param id="0" name="Object">Sprite_Trigger_CarParkiing_Entering</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="3953275759853242" type="System">
+                    <param id="0" name="Variable">estacionado</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="1835474527102846" type="Sprite_PlayerCar_003">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="5461232564275188" type="Sprite_PlayerCarParking">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="3" name="Start" sid="9193541862404141" type="Sprite_PlayerCarParking">
+                    <param id="0" name="From">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="8937247315204232" type="System">
+                    <param id="0" name="Variable">estacionado</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-3" name="Set position" sid="707516166908273" type="Sprite_PlayerCar_003">
+                    <param id="0" name="X">713.566</param>
+                    <param id="1" name="Y">698.536</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="243285592617168">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="7320049205516804" type="Sprite_PlayerCar_003">
+                    <param id="0" name="Object">Sprite_Trigger_CarParkiing_Leaving</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="9480453259532053" type="System">
+                    <param id="0" name="Variable">estacionado</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="1827054818939787" type="Sprite_PlayerCar_003">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="1308629609386434" type="Sprite_PlayerCarParking">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="6584634494442279" type="Sprite_PlayerCar_003">
+                    <param id="0" name="Animation">&quot;saindo&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="8209330909070795" type="System">
+                    <param id="0" name="Variable">estacionado</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7828993968474621">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="3341357618672152" type="Keyboard">
+                    <param id="0" name="Key">32</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="6132283999409719" type="System">
+                    <param id="0" name="Variable">estacionado</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="2107339926753582" type="Audio">
+                    <param id="0" name="Tag">&quot;crrm&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="3792772299080461" type="Audio">
+                    <param id="0" name="Audio file">SFX_CarEgineShotDown_001</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;cdsl&quot;</param>
+                </action>
+                <action behavior="Platform" id="11" name="Set enabled" sid="1870109099493766" type="Sprite_PlayerCar_003">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="4811806098650862" type="System">
+                    <param id="0" name="Variable">estacionado</param>
+                    <param id="1" name="Value">1.2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="678759724606996">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="9667704757067807" type="System">
+                    <param id="0" name="Variable">estacionado</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1.5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="3331100877501937" type="Sprite_PlayerCarParking">
+                    <param id="0" name="Animation">&quot;vazio&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action behavior="Platform" id="11" name="Set enabled" sid="7862844339704359" type="Sprite_MainCharacter_001">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="1639780219791009" type="Sprite_MainCharacter_001">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action behavior="Solid" id="0" name="Set enabled" sid="2613805678988568" type="Sprite_CollisionContainer_PlayerMovement_001">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action behavior="Solid" id="0" name="Set enabled" sid="2070806108566334" type="Sprite_CollisionContainer_CarFloorLimiter_001">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="9603120205310443" type="System">
+                    <param id="0" name="Variable">SpanwX</param>
+                    <param id="1" name="Value">690.21</param>
+                </action>
+                <action id="-9" name="Set value" sid="9288678205589083" type="System">
+                    <param id="0" name="Variable">SpanwY</param>
+                    <param id="1" name="Value">711.838</param>
+                </action>
+                <action id="-1" name="Set X" sid="9637701474271727" type="Sprite_MainCharacter_001">
+                    <param id="0" name="X">SpanwX</param>
+                </action>
+                <action id="-2" name="Set Y" sid="6954070227692621" type="Sprite_MainCharacter_001">
+                    <param id="0" name="Y">SpanwY</param>
+                </action>
+                <action id="-9" name="Set value" sid="4822382933063372" type="System">
+                    <param id="0" name="Variable">estacionado</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+                <action id="1" name="Set looping" sid="5111197191792094" type="Audio">
+                    <param id="0" name="Tag">&quot;msc2&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6991220948417584">
+            <conditions>
+                <condition behavior="Platform" id="0" name="Is moving" sid="3824637692678173" type="Sprite_MainCharacter_001" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="1821307893720245" type="Sprite_MainCharacter_001">
+                    <param id="0" name="Animation">&quot;caminhando&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3244297425855364">
+            <conditions>
+                <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="1503578388504684" type="Sprite_MainCharacter_001" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="2760729469528267" type="Sprite_MainCharacter_001">
+                    <param id="0" name="Animation">&quot;parado&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9483090780492315">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="3917594070886731" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="2261870640266144" type="Sprite_MainCharacter_001">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="6834590928354937" type="System">
+                    <param id="0" name="Variable">olhandodireita</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7879652065559556">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="2433130521518495" type="Keyboard">
+                    <param id="0" name="Key">39</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="8209084434475734" type="Sprite_MainCharacter_001">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="8655406821005318" type="System">
+                    <param id="0" name="Variable">olhandodireita</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5030542063906073">
+            <conditions>
+                <condition behavior="Platform" id="10" name="Is by wall" sid="1820345660064768" type="Sprite_MainCharacter_001">
+                    <param id="0" name="Side">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="6575405252574192" type="Sprite_MainCharacter_001">
+                    <param id="0" name="Animation">&quot;parado&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8615288914301467">
+            <conditions>
+                <condition behavior="Platform" id="10" name="Is by wall" sid="4674806104940188" type="Sprite_MainCharacter_001">
+                    <param id="0" name="Side">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="2321120159935418" type="Sprite_MainCharacter_001">
+                    <param id="0" name="Animation">&quot;parado&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4146593603725776">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="5529185595192483" type="System">
+                    <param id="0" name="Variable">olhandodireita</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="6579019068030438" type="Sprite_MainCharacter_001">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3143258194579603">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="915166548313782" type="System">
+                    <param id="0" name="Variable">olhandodireita</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="2681031472182332" type="Sprite_MainCharacter_001">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9137721392560893">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="9451031006915361" type="Sprite_MainCharacter_001">
+                    <param id="0" name="Object">Sprite_Trigger_OpenDoor_001</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="714958257116985" type="Sprite_MegaCorpDoor_Opened">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Play" sid="7728220641478364" type="Audio">
+                    <param id="0" name="Audio file">SFX_GlassDoor_Open_001</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-35</param>
+                    <param id="1" name="Tag (optional)">&quot;gdo&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2841038593252244">
+            <conditions>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="3417286470960093" type="Sprite_MainCharacter_001">
+                    <param id="0" name="Object">Sprite_Trigger_OpenDoor_001</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="2813217137318017" type="Sprite_MegaCorpDoor_Opened">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9612346215486095">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="3188056191947681" type="Sprite_MainCharacter_001">
+                    <param id="0" name="Object">Sprite_Trigger_Level_005_Go_Level_006</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="2987522970181861" type="System">
+                    <param id="0" name="Layout">Level_006</param>
+                </action>
+                <action id="-9" name="Set value" sid="9948858445024829" type="System">
+                    <param id="0" name="Variable">SpanwX</param>
+                    <param id="1" name="Value">29</param>
+                </action>
+                <action id="-9" name="Set value" sid="2674190784082355" type="System">
+                    <param id="0" name="Variable">SpanwY</param>
+                    <param id="1" name="Value">518</param>
+                </action>
+                <action id="6" name="Stop" sid="3743664289184025" type="Audio">
+                    <param id="0" name="Tag">&quot;amb5&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="4998046758452299" type="System">
+                    <param id="0" name="Variable">layout</param>
+                    <param id="1" name="Value">6</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8013200700038128">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="2254076631349433" type="System">
+                    <param id="0" name="Variable">estacionado</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="5713224359277466">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="7880995557762174" type="Keyboard">
+                            <param id="0" name="Key">32</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="6104309692737217" type="Audio">
+                            <param id="0" name="Audio file">SFX_CarHorn_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-23</param>
+                            <param id="1" name="Tag (optional)">&quot;buz&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="6663303367701547">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="1633745414850465" type="Keyboard">
+                    <param id="0" name="Key">27</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="4891230952766828" type="Audio" />
+                <action id="-21" name="Reset global variables" sid="2522007416949877" type="System" />
+                <action id="-25" name="Go to layout (by name)" sid="5409190860065743" type="System">
+                    <param id="0" name="Layout">&quot;inicio&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6432058599256411">
+            <conditions>
+                <condition id="5" inverted="1" name="Is tag playing" sid="2064122609260858" type="Audio">
+                    <param id="0" name="Tag">&quot;cdsl&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="5386219264738105" type="System">
+                    <param id="0" name="Variable">estacionado</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1.2</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="9212077499281966">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="6224418071356834" type="Keyboard">
+                            <param id="0" name="Key">32</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="6632784500361797" type="System">
+                            <param id="0" name="Variable">estacionado</param>
+                            <param id="1" name="Value">1.5</param>
+                        </action>
+                        <action id="0" name="Play" sid="7030617899395945" type="Audio">
+                            <param id="0" name="Audio file">SFX_CarDoorClose_003</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;pcf&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

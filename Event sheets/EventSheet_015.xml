@@ -1,0 +1,726 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>EventSheet_015</name>
+    <events>
+        <variable constant="0" name="raiopisca" sid="5510192094645904" static="0" type="number">0</variable>
+        <event-block sid="3396246072321537">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="7420089678004518" type="System">
+                    <param id="0" name="Variable">olhandodireita</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="2681582290982947" type="Sprite_MainCharacter_002">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8274015311321177">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="9033955626694711" type="System">
+                    <param id="0" name="Variable">olhandodireita</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="3553273245817264" type="Sprite_MainCharacter_002">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4742125273808552">
+            <conditions>
+                <condition behavior="Platform" id="0" name="Is moving" sid="3051504450647975" type="Sprite_MainCharacter_002" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="3189536268828829" type="Sprite_MainCharacter_002">
+                    <param id="0" name="Animation">&quot;andando&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="805761042674488">
+            <conditions>
+                <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="7696255366591327" type="Sprite_MainCharacter_002" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="260342407396397" type="Sprite_MainCharacter_002">
+                    <param id="0" name="Animation">&quot;parado&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4890411696382386">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="1772335832318333" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="4789639939680754" type="Sprite_MainCharacter_002">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="7794779988616749" type="System">
+                    <param id="0" name="Variable">olhandodireita</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1423827056405335">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="9765974275257652" type="Keyboard">
+                    <param id="0" name="Key">39</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="4271176381705625" type="Sprite_MainCharacter_002">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="4044886723720116" type="System">
+                    <param id="0" name="Variable">olhandodireita</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9184459972959337">
+            <conditions>
+                <condition behavior="Platform" id="10" name="Is by wall" sid="5333168313327077" type="Sprite_MainCharacter_002">
+                    <param id="0" name="Side">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="8753725525710144" type="Sprite_MainCharacter_002">
+                    <param id="0" name="Animation">&quot;parado&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4174011488951709">
+            <conditions>
+                <condition behavior="Platform" id="10" name="Is by wall" sid="8756639857976719" type="Sprite_MainCharacter_002">
+                    <param id="0" name="Side">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="6319095956803172" type="Sprite_MainCharacter_002">
+                    <param id="0" name="Animation">&quot;parado&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7091788824989483">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="4405228251203084" type="System">
+                    <param id="0" name="Variable">olhandodireita</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="2739209815147521" type="personagen3">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5485486450410049">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="5469166123899642" type="System">
+                    <param id="0" name="Variable">olhandodireita</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="5362771806203016" type="personagen3">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4621227685525757">
+            <conditions>
+                <condition behavior="Platform" id="0" name="Is moving" sid="4413275502752205" type="Sprite_MainCharacter_002" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="6287281685249873" type="personagen3">
+                    <param id="0" name="Animation">&quot;andando&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8038082721077018">
+            <conditions>
+                <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="7811857975227455" type="Sprite_MainCharacter_002" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="1914567333316719" type="personagen3">
+                    <param id="0" name="Animation">&quot;parado&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9798539673235271">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="9236060622352221" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="2292889832257662" type="personagen3">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="1879434554318252" type="System">
+                    <param id="0" name="Variable">olhandodireita</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1891783053214954">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="6695545046852626" type="Keyboard">
+                    <param id="0" name="Key">39</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="7681102719258083" type="personagen3">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="6172329612008709" type="System">
+                    <param id="0" name="Variable">olhandodireita</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1827341122891894">
+            <conditions>
+                <condition behavior="Platform" id="10" name="Is by wall" sid="763768876187667" type="Sprite_MainCharacter_002">
+                    <param id="0" name="Side">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="768247370316067" type="personagen3">
+                    <param id="0" name="Animation">&quot;parado&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3783304626071369">
+            <conditions>
+                <condition behavior="Platform" id="10" name="Is by wall" sid="609520977498861" type="Sprite_MainCharacter_002">
+                    <param id="0" name="Side">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="6540473922206925" type="personagen3">
+                    <param id="0" name="Animation">&quot;parado&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7431171348995785">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="9034052872128431" type="System">
+                    <param id="0" name="Variable">olhandodireita</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="1778917732457199" type="personagen4">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5845763058811678">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="3112297951029504" type="System">
+                    <param id="0" name="Variable">olhandodireita</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="169679014511134" type="personagen4">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6149318385511707">
+            <conditions>
+                <condition behavior="Platform" id="0" name="Is moving" sid="4069616403089968" type="Sprite_MainCharacter_002" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="6674983900910614" type="personagen4">
+                    <param id="0" name="Animation">&quot;andando&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9364365685244152">
+            <conditions>
+                <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="7233171217773532" type="Sprite_MainCharacter_002" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="1230303047420218" type="personagen4">
+                    <param id="0" name="Animation">&quot;parado&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9103496426501706">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="4667366194120038" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="6468798392839097" type="personagen4">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="7809336487565461" type="System">
+                    <param id="0" name="Variable">olhandodireita</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7003066275678017">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="2598953338166376" type="Keyboard">
+                    <param id="0" name="Key">39</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="4234816603994246" type="personagen4">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="2106072629847093" type="System">
+                    <param id="0" name="Variable">olhandodireita</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8393238508046717">
+            <conditions>
+                <condition behavior="Platform" id="10" name="Is by wall" sid="108333352607885" type="Sprite_MainCharacter_002">
+                    <param id="0" name="Side">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="3953342649838678" type="personagen4">
+                    <param id="0" name="Animation">&quot;parado&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4849207639205727">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="109318973314463" type="System">
+                    <param id="0" name="Variable">olhandodireita</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="4345636293774716" type="personagen5">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4886898915893259">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="2646321044313599" type="System">
+                    <param id="0" name="Variable">olhandodireita</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="6199107671573789" type="personagen5">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9323059537196914">
+            <conditions>
+                <condition behavior="Platform" id="0" name="Is moving" sid="5137111273983808" type="Sprite_MainCharacter_002" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="1890810451405455" type="personagen5">
+                    <param id="0" name="Animation">&quot;andando&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3897772056687084">
+            <conditions>
+                <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="9480173655407623" type="Sprite_MainCharacter_002" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="9770738585098256" type="personagen5">
+                    <param id="0" name="Animation">&quot;parado&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4392108631942832">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="8672846161866339" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="6948022794506392" type="personagen5">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="5897642999749571" type="System">
+                    <param id="0" name="Variable">olhandodireita</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3960165946312355">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="6523174418158671" type="Keyboard">
+                    <param id="0" name="Key">39</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="1593016803867636" type="personagen5">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="4976688970690954" type="System">
+                    <param id="0" name="Variable">olhandodireita</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5772855316486787">
+            <conditions>
+                <condition behavior="Platform" id="10" name="Is by wall" sid="9315726731289489" type="Sprite_MainCharacter_002">
+                    <param id="0" name="Side">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="5126537258691744" type="personagen5">
+                    <param id="0" name="Animation">&quot;parado&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="224919023392446">
+            <conditions>
+                <condition behavior="Platform" id="10" name="Is by wall" sid="3820060714184388" type="Sprite_MainCharacter_002">
+                    <param id="0" name="Side">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="7023884477680889" type="personagen5">
+                    <param id="0" name="Animation">&quot;parado&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3434883084852958">
+            <conditions>
+                <condition behavior="Platform" id="10" name="Is by wall" sid="78273348137984" type="Sprite_MainCharacter_002">
+                    <param id="0" name="Side">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="2642197441918984" type="personagen5">
+                    <param id="0" name="Animation">&quot;parado&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2612887758901298">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="9720639961264608" type="Sprite_MainCharacter_002">
+                    <param id="0" name="Object">raio1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="9185171397192071" type="fase20">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="9057769764508177" type="SuperLight2ning">
+                    <param id="0" name="Animation">&quot;default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="8731880854471721" type="SuperLight2ning">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action behavior="Flash" id="0" name="Flash" sid="3386186573955558" type="personagen3">
+                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                    <param id="2" name="Duration">1.0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="7793888780237175" type="personagen3">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="8161149296889248" type="System">
+                    <param id="0" name="Variable">raiopisca</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action behavior="Flash" id="0" name="Flash" sid="1865963398367803" type="personagen5">
+                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                    <param id="2" name="Duration">1.0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="2282023897088437" type="personagen5">
+                    <param id="0" name="Opacity">30</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="2872259247760257" type="fdf" />
+                <action id="-15" name="Set visible" sid="8037133778367792" type="fdf">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9753773896656568">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="5955953704797973" type="Sprite_MainCharacter_002">
+                    <param id="0" name="Object">raio2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="8741815473649727" type="fase21">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="161399464518238" type="SuperLight2ning">
+                    <param id="0" name="Animation">&quot;default6&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="8970981383075874" type="SuperLight2ning">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="401702312053306" type="personagen4">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action behavior="Flash" id="0" name="Flash" sid="4328020617478267" type="personagen4">
+                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                    <param id="2" name="Duration">1.0</param>
+                </action>
+                <action id="-9" name="Set value" sid="8195321456310122" type="System">
+                    <param id="0" name="Variable">raiopisca</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+                <action behavior="Flash" id="0" name="Flash" sid="489735968945947" type="personagen5">
+                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                    <param id="2" name="Duration">1.0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="3737556418314532" type="personagen5">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="3006213309710846" type="fdf2" />
+                <action id="-15" name="Set visible" sid="4655023932064112" type="fdf2">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3547002334173315">
+            <conditions>
+                <condition behavior="Flash" id="1" name="On flash ended" sid="1406764544239599" type="personagen3" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="7408547263837466" type="Sprite_MainCharacter_002">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3009275557085782">
+            <conditions>
+                <condition behavior="Flash" id="1" name="On flash ended" sid="8516689439186477" type="personagen4" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="6089088570946924" type="personagen3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7587881051459913">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="5789440549856817" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Pin" id="0" name="Pin to object" sid="2183365348628155" type="personagen5">
+                    <param id="0" name="Pin to">Sprite_MainCharacter_002</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2063116366855992">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="5980124564195391" type="personagen4">
+                    <param id="0" name="Object">irfase23</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-25" name="Go to layout (by name)" sid="3226119387945081" type="System">
+                    <param id="0" name="Layout">&quot;fase23&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="6593711379992284" type="System">
+                    <param id="0" name="Variable">layout</param>
+                    <param id="1" name="Value">23</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="359621558403293">
+            <conditions>
+                <condition id="2" name="Is playing" sid="8447778706173051" type="SuperLight2ning">
+                    <param id="0" name="Animation">&quot;default&quot;</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="4220219724350419" type="SuperLight2ning">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Play (by name)" sid="256625848302713" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">choose(&quot;tb1&quot;,&quot;tb2&quot;,&quot;tb3&quot;,&quot;tb4&quot;,&quot;tb5&quot;)</param>
+                    <param id="3" name="Loop">0</param>
+                    <param id="4" name="Volume">0</param>
+                    <param id="2" name="Tag (optional)">&quot;tro&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9504720411796652">
+            <conditions>
+                <condition id="2" name="Is playing" sid="241599001100543" type="SuperLight2ning">
+                    <param id="0" name="Animation">&quot;default1&quot;</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="285651226740949" type="SuperLight2ning">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Play (by name)" sid="5021730679361138" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">choose(&quot;tb1&quot;,&quot;tb2&quot;,&quot;tb3&quot;,&quot;tb4&quot;,&quot;tb5&quot;)</param>
+                    <param id="3" name="Loop">0</param>
+                    <param id="4" name="Volume">0</param>
+                    <param id="2" name="Tag (optional)">&quot;tro&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="341406253425125">
+            <conditions>
+                <condition id="2" name="Is playing" sid="5817859004495059" type="SuperLight2ning">
+                    <param id="0" name="Animation">&quot;default2&quot;</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="1392221537397196" type="SuperLight2ning">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Play (by name)" sid="5799114364190249" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">choose(&quot;tb1&quot;,&quot;tb2&quot;,&quot;tb3&quot;,&quot;tb4&quot;,&quot;tb5&quot;)</param>
+                    <param id="3" name="Loop">0</param>
+                    <param id="4" name="Volume">0</param>
+                    <param id="2" name="Tag (optional)">&quot;tro&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6810340012979356">
+            <conditions>
+                <condition id="2" name="Is playing" sid="6048248952418706" type="SuperLight2ning">
+                    <param id="0" name="Animation">&quot;default3&quot;</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="7215553286570925" type="SuperLight2ning">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Play (by name)" sid="4435812988462382" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">choose(&quot;tb1&quot;,&quot;tb2&quot;,&quot;tb3&quot;,&quot;tb4&quot;,&quot;tb5&quot;)</param>
+                    <param id="3" name="Loop">0</param>
+                    <param id="4" name="Volume">0</param>
+                    <param id="2" name="Tag (optional)">&quot;tro&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6536987558052725">
+            <conditions>
+                <condition id="2" name="Is playing" sid="3003300370421682" type="SuperLight2ning">
+                    <param id="0" name="Animation">&quot;default4&quot;</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="7986372691448436" type="SuperLight2ning">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Play (by name)" sid="6613962385863677" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">choose(&quot;tb1&quot;,&quot;tb2&quot;,&quot;tb3&quot;,&quot;tb4&quot;,&quot;tb5&quot;)</param>
+                    <param id="3" name="Loop">0</param>
+                    <param id="4" name="Volume">0</param>
+                    <param id="2" name="Tag (optional)">&quot;tro&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8642445988341547">
+            <conditions>
+                <condition id="2" name="Is playing" sid="103994758828685" type="SuperLight2ning">
+                    <param id="0" name="Animation">&quot;default5&quot;</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="3266172648651113" type="SuperLight2ning">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Play (by name)" sid="4384871766826758" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">choose(&quot;tb1&quot;,&quot;tb2&quot;,&quot;tb3&quot;,&quot;tb4&quot;,&quot;tb5&quot;)</param>
+                    <param id="3" name="Loop">0</param>
+                    <param id="4" name="Volume">0</param>
+                    <param id="2" name="Tag (optional)">&quot;tro&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2229424026098552">
+            <conditions>
+                <condition id="2" name="Is playing" sid="5070864493216014" type="SuperLight2ning">
+                    <param id="0" name="Animation">&quot;default6&quot;</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="1253550911564204" type="SuperLight2ning">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Play (by name)" sid="149537259903253" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">choose(&quot;tb1&quot;,&quot;tb2&quot;,&quot;tb3&quot;,&quot;tb4&quot;,&quot;tb5&quot;)</param>
+                    <param id="3" name="Loop">0</param>
+                    <param id="4" name="Volume">0</param>
+                    <param id="2" name="Tag (optional)">&quot;tro&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5762450563592913">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="2607443391000847" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="8537161948303348" type="Audio">
+                    <param id="0" name="Audio file">MX_CoorporativeMeat</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;msc23&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

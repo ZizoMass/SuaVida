@@ -1,0 +1,370 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout order="0">MainMenu</layout>
+        <layout order="1">Level_001</layout>
+        <layout order="2">Level_002</layout>
+        <layout order="3">Level_003</layout>
+        <layout order="4">Level_004</layout>
+        <layout order="5">Level_005</layout>
+        <layout order="6">Level_006</layout>
+        <layout order="7">Level_007</layout>
+        <layout order="9">Level_017</layout>
+        <layout order="10">Level_015</layout>
+        <layout order="12">Level_010</layout>
+        <layout order="13">Level_009</layout>
+        <layout order="14">Level_011</layout>
+        <layout order="15">Level_019</layout>
+        <layout order="16">Level_018</layout>
+        <layout order="19">Level_013</layout>
+        <layout order="33">Level_008</layout>
+        <layout order="34">Level_012</layout>
+        <layout order="35">Level_014</layout>
+        <layout order="36">Level_016</layout>
+        <layout active="1" order="37">Level_020</layout>
+        <event-sheet order="8">EventSheet_006</event-sheet>
+        <event-sheet order="11">EventSheet_010</event-sheet>
+        <event-sheet order="17">EventSheet_001</event-sheet>
+        <event-sheet order="18">EventSheet_002</event-sheet>
+        <event-sheet order="20">EventSheet_003</event-sheet>
+        <event-sheet order="21">EventSheet_004</event-sheet>
+        <event-sheet order="22">EventSheet_005</event-sheet>
+        <event-sheet order="23">EventSheet_007</event-sheet>
+        <event-sheet order="24">EventSheet_008</event-sheet>
+        <event-sheet order="25">EventSheet_009</event-sheet>
+        <event-sheet order="26">EventSheet_011</event-sheet>
+        <event-sheet order="27">EventSheet_012</event-sheet>
+        <event-sheet order="28">EventSheet_013</event-sheet>
+        <event-sheet order="29">EventSheet_014</event-sheet>
+        <event-sheet order="30">EventSheet_015</event-sheet>
+        <event-sheet order="31">EventSheet_016</event-sheet>
+        <event-sheet order="32">EventSheet_017</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="1">
+        <family expanded="1" name="fdff" />
+    </families-expanded>
+    <folders-expanded>
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="1" path="object-folder/Sprite/" />
+        <folder expanded="0" path="object-folder/Video/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="0" path="event-folder/" />
+        <folder expanded="0" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="0" path="music-folder/" />
+        <folder expanded="1" path="file-folder/Icons/" />
+        <folder expanded="1" path="file-folder/Animations/" />
+        <folder expanded="0" path="sound-folder/BG/" />
+        <folder expanded="0" path="sound-folder/FLY/" />
+        <folder expanded="0" path="sound-folder/FOL/" />
+        <folder expanded="0" path="sound-folder/SFX/" />
+        <folder expanded="1" path="animation-folder/Sprite_Logo/" />
+        <folder expanded="1" path="animation-folder/Sprite_Text_MainMenuOptions/" />
+        <folder expanded="1" path="animation-folder/Sprite_BG_PlayerHome/" />
+        <folder expanded="1" path="animation-folder/Sprite_CollisionContainer_PlayerMovement_001/" />
+        <folder expanded="1" path="animation-folder/Sprite_Text_Daughter_PlayerHome/" />
+        <folder expanded="1" path="animation-folder/Sprite_Text_Son_PlayerHome/" />
+        <folder expanded="1" path="animation-folder/Sprite_Text_Wife_PlayerHome/" />
+        <folder expanded="1" path="animation-folder/Sprite_Trigger_Level_002_Go_Level_003/" />
+        <folder expanded="1" path="animation-folder/Sprite_Trigger_PlayerHome_DaughterTalk/" />
+        <folder expanded="1" path="animation-folder/Sprite_Trigger_Level_002_Go_Level_001/" />
+        <folder expanded="1" path="animation-folder/Sprite_Trigger_PlayerHome_SonTalk/" />
+        <folder expanded="1" path="animation-folder/Sprite_Trigger_PlayerHome_WifeTalk_001/" />
+        <folder expanded="1" path="animation-folder/Sprite_MainCharacter_001/" />
+        <folder expanded="1" path="animation-folder/Sprite_NPC_Daughter/" />
+        <folder expanded="1" path="animation-folder/Sprite_NPC_Son/" />
+        <folder expanded="1" path="animation-folder/Sprite_NPC_Son_Mouth/" />
+        <folder expanded="1" path="animation-folder/Sprite_NPC_Wife_001/" />
+        <folder expanded="1" path="animation-folder/Sprite_PlayerHome_TransictionVignette/" />
+        <folder expanded="1" path="animation-folder/Sprite_PlayerHome_TV/" />
+        <folder expanded="1" path="animation-folder/Sprite_PlayerHome_TVLight/" />
+        <folder expanded="1" path="animation-folder/Sprite_BG_PlayerFrontYard_Day/" />
+        <folder expanded="1" path="animation-folder/Sprite_CollisionContainer_CarFloorLimiter_001/" />
+        <folder expanded="1" path="animation-folder/Sprite_CollisionContainer_PlayerCharacterLimiter_001/" />
+        <folder expanded="1" path="animation-folder/Sprite_Text_CarTutorial/" />
+        <folder expanded="1" path="animation-folder/Sprite_Trigger_GetInCar/" />
+        <folder expanded="1" path="animation-folder/Sprite_Trigger_Level_003_Go_Level_002/" />
+        <folder expanded="1" path="animation-folder/Sprite_Trigger_Level_003_Go_Level_004/" />
+        <folder expanded="1" path="animation-folder/Spite_Clouds_001/" />
+        <folder expanded="1" path="animation-folder/Spite_Clouds_002/" />
+        <folder expanded="1" path="animation-folder/Spite_Clouds_003/" />
+        <folder expanded="1" path="animation-folder/Spite_Clouds_004/" />
+        <folder expanded="1" path="animation-folder/Sprite_PlayerCar_001/" />
+        <folder expanded="1" path="animation-folder/Sprite_SkyBox/" />
+        <folder expanded="1" path="animation-folder/Sprite_SkyEffect_002/" />
+        <folder expanded="1" path="animation-folder/Sprite_Smog_001/" />
+        <folder expanded="1" path="animation-folder/Sprite_Smog_002/" />
+        <folder expanded="1" path="animation-folder/Sprite_Sun/" />
+        <folder expanded="1" path="animation-folder/Sprite_BG_CityBackgroundCars/" />
+        <folder expanded="1" path="animation-folder/Sprite_BG_CityRoad/" />
+        <folder expanded="1" path="animation-folder/Sprite_CityCarNPC/" />
+        <folder expanded="1" path="animation-folder/Sprite_CollisionContainer_CarFloorLimiter_002/" />
+        <folder expanded="1" path="animation-folder/Sprite_CollisionContainer_PlayerCar/" />
+        <folder expanded="1" path="animation-folder/Sprite_Ground/" />
+        <folder expanded="1" path="animation-folder/Sprite_PlayerCar_002/" />
+        <folder expanded="1" path="animation-folder/Sprite_Smog_003/" />
+        <folder expanded="1" path="animation-folder/Sprite_SpawnBox_CityCarNPC_001/" />
+        <folder expanded="1" path="animation-folder/Sprite_SpawnBox_CityCarNPC_002/" />
+        <folder expanded="1" path="animation-folder/Sprite_SpawnBox_CityCarNPC_003/" />
+        <folder expanded="1" path="animation-folder/Sprite_SpawnBox_CityCarNPC_004/" />
+        <folder expanded="1" path="animation-folder/Sprite_SpawnBox_CityCarNPC_005/" />
+        <folder expanded="1" path="animation-folder/Sprite_SpawnBox_CityCarNPC_006/" />
+        <folder expanded="1" path="animation-folder/Sprite_SpawnBox_CityCarNPC_007/" />
+        <folder expanded="1" path="animation-folder/Sprite_SpawnBox_CityCarNPC_008/" />
+        <folder expanded="1" path="animation-folder/Sprite_SpawnBox_CityCarNPC_009/" />
+        <folder expanded="1" path="animation-folder/Sprite_SpawnBox_CityCarNPC_010/" />
+        <folder expanded="1" path="animation-folder/Sprite_SpawnBox_CityCarNPC_011/" />
+        <folder expanded="1" path="animation-folder/Sprite_SpawnBox_CityCarNPC_012/" />
+        <folder expanded="1" path="animation-folder/Sprite_SpawnBox_CityCarNPCAssemble/" />
+        <folder expanded="1" path="animation-folder/Sprite_SpawnBox_RespawnCityCarNPC_001/" />
+        <folder expanded="1" path="animation-folder/Sprite_Text_MessageNumber/" />
+        <folder expanded="1" path="animation-folder/Sprite_Text_MessageTutorial/" />
+        <folder expanded="1" path="animation-folder/Sprite_Text_SMSMessage/" />
+        <folder expanded="1" path="animation-folder/Sprite_Trigger_CityCarNPCAccelerator/" />
+        <folder expanded="1" path="animation-folder/Sprite_Trigger_CityCarNPCDestroyer/" />
+        <folder expanded="1" path="animation-folder/Sprite_Trigger_Level_004_Go_Level_005/" />
+        <folder expanded="1" path="animation-folder/Sprite_Trigger_StopCarNPC/" />
+        <folder expanded="1" path="animation-folder/Sprite_BG_CityCenter/" />
+        <folder expanded="1" path="animation-folder/Sprite_MegaCorpBuilding/" />
+        <folder expanded="1" path="animation-folder/Sprite_MegaCorpDoor_Closed/" />
+        <folder expanded="1" path="animation-folder/Sprite_MegaCorpDoor_Opened/" />
+        <folder expanded="1" path="animation-folder/Sprite_MegaCorpDoors/" />
+        <folder expanded="1" path="animation-folder/Sprite_PlayerCar_003/" />
+        <folder expanded="1" path="animation-folder/Sprite_PlayerCarParking/" />
+        <folder expanded="1" path="animation-folder/Sprite_Trigger_CarParkiing_Entering/" />
+        <folder expanded="1" path="animation-folder/Sprite_Trigger_CarParkiing_Leaving/" />
+        <folder expanded="1" path="animation-folder/Sprite_Trigger_GetInsideCar/" />
+        <folder expanded="1" path="animation-folder/Sprite_Trigger_Level_005_Go_Level_006/" />
+        <folder expanded="1" path="animation-folder/Sprite_Trigger_OpenDoor_001/" />
+        <folder expanded="1" path="animation-folder/Sprite_BG_MegaCorpEntrance_Day/" />
+        <folder expanded="1" path="animation-folder/Sprite_CollisionContainer_Elevator_GroundFloor_Closed/" />
+        <folder expanded="1" path="animation-folder/Sprite_Elevator_GroundFloor/" />
+        <folder expanded="1" path="animation-folder/Sprite_Elevator_GroundFlorr_Column/" />
+        <folder expanded="1" path="animation-folder/Sprite_Trigger_Elevator_GroundFloor_Button/" />
+        <folder expanded="1" path="animation-folder/Sprite_Trigger_Level_006_Go_Level_007/" />
+        <folder expanded="1" path="animation-folder/Sprite_BG_BossRoomSky_Day/" />
+        <folder expanded="1" path="animation-folder/Sprite_BG_Corridor_001/" />
+        <folder expanded="1" path="animation-folder/Sprite_BG_Corridor_002/" />
+        <folder expanded="1" path="animation-folder/Sprite_BG_Corridor_003/" />
+        <folder expanded="1" path="animation-folder/Sprite_BG_Corridor_004/" />
+        <folder expanded="1" path="animation-folder/Sprite_BG_Corridor_005/" />
+        <folder expanded="1" path="animation-folder/Sprite_BG_Corridor_006/" />
+        <folder expanded="1" path="animation-folder/Sprite_BossRoom/" />
+        <folder expanded="1" path="animation-folder/Sprite_CollisionContainer_Elevator_OfficeFloor_Closed/" />
+        <folder expanded="1" path="animation-folder/Sprite_Elevator_OfficeFloor/" />
+        <folder expanded="1" path="animation-folder/Sprite_Elevator_OfficeFloor_DoorFrameColumn/" />
+        <folder expanded="1" path="animation-folder/Sprite_Elevator_OfficeFloor_WallColumn/" />
+        <folder expanded="1" path="animation-folder/Sprite_NPC_Boss_001/" />
+        <folder expanded="1" path="animation-folder/Sprite_NPC_Boss_001_Mouth/" />
+        <folder expanded="1" path="animation-folder/Sprite_OfficeDoor/" />
+        <folder expanded="1" path="animation-folder/Sprite_SuicidalEmployee/" />
+        <folder expanded="1" path="animation-folder/Sprite_Text_Boss/" />
+        <folder expanded="1" path="animation-folder/Sprite_Trigger_BossTalk/" />
+        <folder expanded="1" path="animation-folder/Sprite_Trigger_Elevator_OfficeFloor_CloseDoor/" />
+        <folder expanded="1" path="animation-folder/Sprite_Trigger_Elevator_OfficeFloor_OpenDoor/" />
+        <folder expanded="1" path="animation-folder/Sprite_Trigger_Level_008_Go_Level_009/" />
+        <folder expanded="1" path="animation-folder/Sprite_BG_PlayerOffice/" />
+        <folder expanded="1" path="animation-folder/Sprite_CollisionBox_PlayerOfficeDoor_Closed/" />
+        <folder expanded="1" path="animation-folder/Sprite_PlayerOffice_DoorFrameColumn/" />
+        <folder expanded="1" path="animation-folder/Sprite_PlayerOfficeDoor_Closed/" />
+        <folder expanded="1" path="animation-folder/Sprite_PlayerOfficeDoor_Open/" />
+        <folder expanded="1" path="animation-folder/Sprite_PlayerOfficeLamp/" />
+        <folder expanded="1" path="animation-folder/Sprite_Trigger_Level_009_Go_Level_010/" />
+        <folder expanded="1" path="animation-folder/Sprite_Trigger_PlayerOfficeDoor_Close/" />
+        <folder expanded="1" path="animation-folder/Sprite_BG_OfficeComputer/" />
+        <folder expanded="1" path="animation-folder/Sprite_Text_Computer_Intro/" />
+        <folder expanded="1" path="animation-folder/Sprite_Computer_Text_Command/" />
+        <folder expanded="1" path="animation-folder/Sprite_Text_Computer_Loading/" />
+        <folder expanded="1" path="animation-folder/Sprite_Text_Computer_Starting/" />
+        <folder expanded="1" path="animation-folder/Sprite_Led_Blue/" />
+        <folder expanded="1" path="animation-folder/Sprite_Led_Brown/" />
+        <folder expanded="1" path="animation-folder/Sprite_Led_Green/" />
+        <folder expanded="1" path="animation-folder/Sprite_Trigger_Door_Open/" />
+        <folder expanded="1" path="animation-folder/Sprite_Trigger_Level_013_Go_Level_014/" />
+        <folder expanded="1" path="animation-folder/Sprite_BG_BossRoomSky_Night/" />
+        <folder expanded="1" path="animation-folder/Sprite_ClosedOfficeDoor/" />
+        <folder expanded="1" path="animation-folder/Sprite_NPC_Boss_002/" />
+        <folder expanded="1" path="animation-folder/Sprite_NPC_Boss_002_Mouth/" />
+        <folder expanded="1" path="animation-folder/Sprite_SkyEffect_001/" />
+        <folder expanded="1" path="animation-folder/Sprite_Text_Boss_PlayerFired/" />
+        <folder expanded="1" path="animation-folder/Sprite_Trigger_Level_014_Go_Level_015/" />
+        <folder expanded="1" path="animation-folder/Sprite_Trigger_PlayerGetFired/" />
+        <folder expanded="1" path="animation-folder/Sprite_BG_MegaCorpEntrance_Night/" />
+        <folder expanded="1" path="animation-folder/Sprite_Spotlight_001_Light/" />
+        <folder expanded="1" path="animation-folder/Sprite_Spotlight_001_Vignette/" />
+        <folder expanded="1" path="animation-folder/Sprite_Trigger_Elevator_GoinDown/" />
+        <folder expanded="1" path="animation-folder/Sprite_Trigger_Level_016_Go_Level_017/" />
+        <folder expanded="1" path="animation-folder/Sprite_CityCenter_NightLights/" />
+        <folder expanded="1" path="animation-folder/Sprite_PlayerCar_004/" />
+        <folder expanded="1" path="animation-folder/Sprite_Trigger_Level_017_Go_Level_018/" />
+        <folder expanded="1" path="animation-folder/Level_001_Text_PlayerRoom_GameTutorial/" />
+        <folder expanded="1" path="animation-folder/Sprite_BG_PlayerRoom/" />
+        <folder expanded="1" path="animation-folder/Sprite_Curtain/" />
+        <folder expanded="1" path="animation-folder/Sprite_PlayerRoom_Bed/" />
+        <folder expanded="1" path="animation-folder/Sprite_PlayerRoom_DoorFrameColumn/" />
+        <folder expanded="1" path="animation-folder/Sprite_PlayerRoom_TransictionVignetteColumn/" />
+        <folder expanded="1" path="animation-folder/Sprite_Trigger_Level_001_Go_Level_002/" />
+        <folder expanded="1" path="animation-folder/Sprite_Trigger_PlayerRoom_AlarmClock/" />
+        <folder expanded="1" path="animation-folder/Sprite_Trigger_PlayerRoom_Closet/" />
+        <folder expanded="1" path="animation-folder/Sprite_Trigger_PlayerRoom_SetMirrored/" />
+        <folder expanded="1" path="animation-folder/Sprite_Trigger_PlayerRoom_TutorialFadeOut/" />
+        <folder expanded="1" path="animation-folder/Sprite_BG_CityCenter_Night/" />
+        <folder expanded="1" path="animation-folder/Sprite_BG_PlayerFrontYard_HouseLights/" />
+        <folder expanded="1" path="animation-folder/Sprite_BG_PlayerFrontYard_Night/" />
+        <folder expanded="1" path="animation-folder/Sprite_BG_PlayerFrontYard_NightSky/" />
+        <folder expanded="1" path="animation-folder/Sprite_BG_PlayerFrontYard_Shadows/" />
+        <folder expanded="1" path="animation-folder/Sprite_PlayerCar_005/" />
+        <folder expanded="1" path="animation-folder/Sprite_Trigger_Level_019_Go_Level_020/" />
+        <folder expanded="1" path="animation-folder/Sprite_NPC_Wife_002/" />
+        <folder expanded="1" path="animation-folder/Sprite_NPC_Wife_002_Mouth/" />
+        <folder expanded="1" path="animation-folder/Sprite_PlayerHome_WallPhone/" />
+        <folder expanded="1" path="animation-folder/Sprite_SpotLight_002_Light/" />
+        <folder expanded="1" path="animation-folder/Sprite_SpotLight_002_Light_Vignette/" />
+        <folder expanded="1" path="animation-folder/Sprite_Text_Wife_Breakdown/" />
+        <folder expanded="1" path="animation-folder/Sprite_Trigger_Level_020_Go_Level_021/" />
+        <folder expanded="1" path="animation-folder/Sprite_Trigger_Level_20_MX_Play/" />
+        <folder expanded="1" path="animation-folder/Sprite_Trigger_PlayerHome_WifeTalk_002/" />
+        <folder expanded="1" path="animation-folder/Sprite3/" />
+        <folder expanded="1" path="animation-folder/curtina/" />
+        <folder expanded="1" path="animation-folder/Sprite6/" />
+        <folder expanded="1" path="animation-folder/Sprite7/" />
+        <folder expanded="1" path="animation-folder/fundo/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/Sprite11/" />
+        <folder expanded="1" path="animation-folder/Sprite13/" />
+        <folder expanded="1" path="animation-folder/nuvens/" />
+        <folder expanded="1" path="animation-folder/caminhao/" />
+        <folder expanded="1" path="animation-folder/compacto/" />
+        <folder expanded="1" path="animation-folder/guincho/" />
+        <folder expanded="1" path="animation-folder/hat/" />
+        <folder expanded="1" path="animation-folder/vanG/" />
+        <folder expanded="1" path="animation-folder/van/" />
+        <folder expanded="1" path="animation-folder/seda/" />
+        <folder expanded="1" path="animation-folder/Sprite5/" />
+        <folder expanded="1" path="animation-folder/chao2/" />
+        <folder expanded="1" path="animation-folder/player2/" />
+        <folder expanded="1" path="animation-folder/parando/" />
+        <folder expanded="1" path="animation-folder/portas/" />
+        <folder expanded="1" path="animation-folder/portas2/" />
+        <folder expanded="1" path="animation-folder/portas3/" />
+        <folder expanded="1" path="animation-folder/porta/" />
+        <folder expanded="1" path="animation-folder/portafren/" />
+        <folder expanded="1" path="animation-folder/empresa/" />
+        <folder expanded="1" path="animation-folder/portafren2/" />
+        <folder expanded="1" path="animation-folder/elevadorparado/" />
+        <folder expanded="1" path="animation-folder/SemTítulo/" />
+        <folder expanded="1" path="animation-folder/elevadorparado2/" />
+        <folder expanded="1" path="animation-folder/SemTítulo2/" />
+        <folder expanded="1" path="animation-folder/voltarfase05/" />
+        <folder expanded="1" path="animation-folder/fundofase/" />
+        <folder expanded="1" path="animation-folder/fundofase2/" />
+        <folder expanded="1" path="animation-folder/elevador2/" />
+        <folder expanded="1" path="animation-folder/fase5/" />
+        <folder expanded="1" path="animation-folder/fase6/" />
+        <folder expanded="1" path="animation-folder/fase7/" />
+        <folder expanded="1" path="animation-folder/fase8/" />
+        <folder expanded="1" path="animation-folder/fase3/" />
+        <folder expanded="1" path="animation-folder/fase4/" />
+        <folder expanded="1" path="animation-folder/fase10/" />
+        <folder expanded="1" path="animation-folder/fundofase3/" />
+        <folder expanded="1" path="animation-folder/level/" />
+        <folder expanded="1" path="animation-folder/porta2/" />
+        <folder expanded="1" path="animation-folder/Sprite10/" />
+        <folder expanded="1" path="animation-folder/som/" />
+        <folder expanded="1" path="animation-folder/nuvens15/" />
+        <folder expanded="1" path="animation-folder/conversa/" />
+        <folder expanded="1" path="animation-folder/conversa2/" />
+        <folder expanded="1" path="animation-folder/fase2/" />
+        <folder expanded="1" path="animation-folder/Sprite_MainCharacter_002/" />
+        <folder expanded="1" path="animation-folder/fim/" />
+        <folder expanded="1" path="animation-folder/comandos/" />
+        <folder expanded="1" path="animation-folder/cima/" />
+        <folder expanded="1" path="animation-folder/SuperLightning/" />
+        <folder expanded="1" path="animation-folder/SuperLight2ning/" />
+        <folder expanded="1" path="animation-folder/raio/" />
+        <folder expanded="1" path="animation-folder/Sprite_RainEffect_001/" />
+        <folder expanded="1" path="animation-folder/SuperLightning2/" />
+        <folder expanded="1" path="animation-folder/irfase22/" />
+        <folder expanded="1" path="animation-folder/fase19/" />
+        <folder expanded="1" path="animation-folder/fase20/" />
+        <folder expanded="1" path="animation-folder/fase21/" />
+        <folder expanded="1" path="animation-folder/raio1/" />
+        <folder expanded="1" path="animation-folder/raio2/" />
+        <folder expanded="1" path="animation-folder/personagen3/" />
+        <folder expanded="1" path="animation-folder/personagen4/" />
+        <folder expanded="1" path="animation-folder/personagen5/" />
+        <folder expanded="1" path="animation-folder/SemTítulo6/" />
+        <folder expanded="1" path="animation-folder/irfase23/" />
+        <folder expanded="1" path="animation-folder/irfase24/" />
+        <folder expanded="1" path="animation-folder/Sprite35/" />
+        <folder expanded="1" path="animation-folder/level3/" />
+        <folder expanded="1" path="animation-folder/irfase25/" />
+        <folder expanded="1" path="animation-folder/level4/" />
+        <folder expanded="1" path="animation-folder/level2/" />
+        <folder expanded="1" path="animation-folder/acelera/" />
+        <folder expanded="1" path="animation-folder/para/" />
+        <folder expanded="1" path="animation-folder/corda/" />
+        <folder expanded="1" path="animation-folder/forca/" />
+        <folder expanded="1" path="animation-folder/forcapc/" />
+        <folder expanded="1" path="animation-folder/mrt1/" />
+        <folder expanded="1" path="animation-folder/arma/" />
+        <folder expanded="1" path="animation-folder/tiro/" />
+        <folder expanded="1" path="animation-folder/tiropq/" />
+        <folder expanded="1" path="animation-folder/mrt2/" />
+        <folder expanded="1" path="animation-folder/ponte/" />
+        <folder expanded="1" path="animation-folder/mrt3/" />
+        <folder expanded="1" path="animation-folder/irfase26/" />
+        <folder expanded="1" path="animation-folder/queda/" />
+        <folder expanded="1" path="animation-folder/quedapq/" />
+        <folder expanded="1" path="animation-folder/mrt4/" />
+        <folder expanded="1" path="animation-folder/titulo/" />
+        <folder expanded="1" path="animation-folder/titulo2/" />
+        <folder expanded="1" path="animation-folder/somporta/" />
+        <folder expanded="1" path="animation-folder/fdf/" />
+        <folder expanded="1" path="animation-folder/fdf2/" />
+        <folder expanded="1" path="animation-folder/fdf3/" />
+        <folder expanded="1" path="animation-folder/fdf4/" />
+        <folder expanded="1" path="animation-folder/FDF5/" />
+        <folder expanded="1" path="animation-folder/FDF6/" />
+        <folder expanded="1" path="animation-folder/FDF7/" />
+        <folder expanded="1" path="animation-folder/FDF8/" />
+        <folder expanded="1" path="animation-folder/fdf9/" />
+        <folder expanded="1" path="animation-folder/fdf10/" />
+        <folder expanded="1" path="animation-folder/FDF11/" />
+        <folder expanded="1" path="animation-folder/FDF12/" />
+        <folder expanded="1" path="animation-folder/FDF13/" />
+        <folder expanded="1" path="animation-folder/finzes/" />
+        <folder expanded="1" path="animation-folder/Text_Credits_CreditText_02/" />
+        <folder expanded="1" path="animation-folder/ff10/" />
+        <folder expanded="1" path="animation-folder/ff11/" />
+        <folder expanded="1" path="animation-folder/frzs1/" />
+        <folder expanded="1" path="animation-folder/flsa01/" />
+        <folder expanded="1" path="animation-folder/flsa02/" />
+        <folder expanded="1" path="animation-folder/ruas1/" />
+        <folder expanded="1" path="animation-folder/ruas2/" />
+        <folder expanded="1" path="animation-folder/srt1/" />
+        <folder expanded="1" path="animation-folder/srt2/" />
+        <folder expanded="1" path="animation-folder/srt3/" />
+        <folder expanded="1" path="animation-folder/srt4/" />
+        <folder expanded="1" path="animation-folder/srt5/" />
+        <folder expanded="1" path="animation-folder/Text_Credits_CreditText_01/" />
+        <folder expanded="1" path="animation-folder/Text_Credits_CreditText_03/" />
+        <folder expanded="1" path="animation-folder/Text_Credits_CreditText_04/" />
+        <folder expanded="1" path="animation-folder/RainEffect_02/" />
+    </folders-expanded>
+</c2uistate>

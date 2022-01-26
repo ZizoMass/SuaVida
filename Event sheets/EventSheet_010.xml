@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>EventSheet_010</name>
+    <events>
+        <event-block sid="6046831559977778">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="2534874331741286" type="System" />
+            </conditions>
+            <actions>
+                <action id="6" name="Play" sid="6419397876509995" type="Video_Ani_ElevatorGoingDown" />
+            </actions>
+        </event-block>
+        <event-block sid="201483990613272">
+            <conditions>
+                <condition id="2" name="Has ended" sid="6487019795498483" type="Video_Ani_ElevatorGoingDown" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="5243604145126146" type="System">
+                    <param id="0" name="Layout">Level_016</param>
+                </action>
+                <action id="-9" name="Set value" sid="1788137411117717" type="System">
+                    <param id="0" name="Variable">SpanwX</param>
+                    <param id="1" name="Value">1258</param>
+                </action>
+                <action id="-9" name="Set value" sid="5441355925665281" type="System">
+                    <param id="0" name="Variable">SpanwY</param>
+                    <param id="1" name="Value"> 514</param>
+                </action>
+                <action id="-9" name="Set value" sid="3632659287430306" type="System">
+                    <param id="0" name="Variable">layout</param>
+                    <param id="1" name="Value">16</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8065495657969017">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="4048280993866607" type="Keyboard">
+                    <param id="0" name="Key">27</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="2002629470317432" type="Audio" />
+                <action id="-21" name="Reset global variables" sid="1228068288492134" type="System" />
+                <action id="-25" name="Go to layout (by name)" sid="5141133140399504" type="System">
+                    <param id="0" name="Layout">&quot;inicio&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

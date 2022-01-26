@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>EventSheet_008</name>
+    <events>
+        <event-block sid="6793556005569488">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="3311288102006025" type="System" />
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="8828962901452814" type="Audio" />
+            </actions>
+        </event-block>
+        <event-block sid="7962073533432399">
+            <conditions>
+                <condition id="2" name="Has ended" sid="5881485099146046" type="Video_Ani_WorkingTimeLapse" />
+            </conditions>
+            <actions>
+                <action id="-25" name="Go to layout (by name)" sid="2723437515120197" type="System">
+                    <param id="0" name="Layout">&quot;fase12&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4208280299515201">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="2170611476196942" type="Keyboard">
+                    <param id="0" name="Key">27</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="5592343317968424" type="Audio" />
+                <action id="-21" name="Reset global variables" sid="7283371624856501" type="System" />
+                <action id="-25" name="Go to layout (by name)" sid="3891786643081045" type="System">
+                    <param id="0" name="Layout">&quot;inicio&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
