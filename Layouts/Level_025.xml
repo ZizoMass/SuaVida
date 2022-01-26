@@ -51,7 +51,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="personagen4" uid="1086">
+                <instance type="Sprite_MainCharacter_004" uid="1086">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -126,7 +126,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="personagen5" uid="1087">
+                <instance type="Sprite_MainCharacter_005" uid="1087">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -292,7 +292,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="raio2" uid="1139">
+                <instance type="Sprite_Trigger_LightningStart_003" uid="1139">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -314,7 +314,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="raio2" uid="1140">
+                <instance type="Sprite_Trigger_LightningStart_003" uid="1140">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -336,7 +336,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="raio1" uid="1141">
+                <instance type="Sprite_Trigger_LightningStart_002" uid="1141">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>

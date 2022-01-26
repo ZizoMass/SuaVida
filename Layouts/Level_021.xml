@@ -23399,7 +23399,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite_Trigger_LightningStart" uid="1047">
+                <instance type="Sprite_Trigger_LightningStart_001" uid="1047">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>

@@ -121,7 +121,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="7" name="Set mirrored" sid="2739209815147521" type="personagen3">
+                <action id="7" name="Set mirrored" sid="2739209815147521" type="Sprite_MainCharacter_003">
                     <param id="0" name="State">0</param>
                 </action>
             </actions>
@@ -135,7 +135,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="7" name="Set mirrored" sid="5362771806203016" type="personagen3">
+                <action id="7" name="Set mirrored" sid="5362771806203016" type="Sprite_MainCharacter_003">
                     <param id="0" name="State">1</param>
                 </action>
             </actions>
@@ -145,7 +145,7 @@
                 <condition behavior="Platform" id="0" name="Is moving" sid="4413275502752205" type="Sprite_MainCharacter_002" />
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="6287281685249873" type="personagen3">
+                <action id="4" name="Set animation" sid="6287281685249873" type="Sprite_MainCharacter_003">
                     <param id="0" name="Animation">&quot;andando&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -156,7 +156,7 @@
                 <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="7811857975227455" type="Sprite_MainCharacter_002" />
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="1914567333316719" type="personagen3">
+                <action id="4" name="Set animation" sid="1914567333316719" type="Sprite_MainCharacter_003">
                     <param id="0" name="Animation">&quot;parado&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -169,7 +169,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="7" name="Set mirrored" sid="2292889832257662" type="personagen3">
+                <action id="7" name="Set mirrored" sid="2292889832257662" type="Sprite_MainCharacter_003">
                     <param id="0" name="State">0</param>
                 </action>
                 <action id="-9" name="Set value" sid="1879434554318252" type="System">
@@ -185,7 +185,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="7" name="Set mirrored" sid="7681102719258083" type="personagen3">
+                <action id="7" name="Set mirrored" sid="7681102719258083" type="Sprite_MainCharacter_003">
                     <param id="0" name="State">1</param>
                 </action>
                 <action id="-9" name="Set value" sid="6172329612008709" type="System">
@@ -201,7 +201,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="768247370316067" type="personagen3">
+                <action id="4" name="Set animation" sid="768247370316067" type="Sprite_MainCharacter_003">
                     <param id="0" name="Animation">&quot;parado&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -214,7 +214,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="6540473922206925" type="personagen3">
+                <action id="4" name="Set animation" sid="6540473922206925" type="Sprite_MainCharacter_003">
                     <param id="0" name="Animation">&quot;parado&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -229,7 +229,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="7" name="Set mirrored" sid="1778917732457199" type="personagen4">
+                <action id="7" name="Set mirrored" sid="1778917732457199" type="Sprite_MainCharacter_004">
                     <param id="0" name="State">0</param>
                 </action>
             </actions>
@@ -243,7 +243,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="7" name="Set mirrored" sid="169679014511134" type="personagen4">
+                <action id="7" name="Set mirrored" sid="169679014511134" type="Sprite_MainCharacter_004">
                     <param id="0" name="State">1</param>
                 </action>
             </actions>
@@ -253,7 +253,7 @@
                 <condition behavior="Platform" id="0" name="Is moving" sid="4069616403089968" type="Sprite_MainCharacter_002" />
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="6674983900910614" type="personagen4">
+                <action id="4" name="Set animation" sid="6674983900910614" type="Sprite_MainCharacter_004">
                     <param id="0" name="Animation">&quot;andando&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -264,7 +264,7 @@
                 <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="7233171217773532" type="Sprite_MainCharacter_002" />
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="1230303047420218" type="personagen4">
+                <action id="4" name="Set animation" sid="1230303047420218" type="Sprite_MainCharacter_004">
                     <param id="0" name="Animation">&quot;parado&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -277,7 +277,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="7" name="Set mirrored" sid="6468798392839097" type="personagen4">
+                <action id="7" name="Set mirrored" sid="6468798392839097" type="Sprite_MainCharacter_004">
                     <param id="0" name="State">0</param>
                 </action>
                 <action id="-9" name="Set value" sid="7809336487565461" type="System">
@@ -293,7 +293,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="7" name="Set mirrored" sid="4234816603994246" type="personagen4">
+                <action id="7" name="Set mirrored" sid="4234816603994246" type="Sprite_MainCharacter_004">
                     <param id="0" name="State">1</param>
                 </action>
                 <action id="-9" name="Set value" sid="2106072629847093" type="System">
@@ -309,7 +309,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="3953342649838678" type="personagen4">
+                <action id="4" name="Set animation" sid="3953342649838678" type="Sprite_MainCharacter_004">
                     <param id="0" name="Animation">&quot;parado&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -324,7 +324,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="7" name="Set mirrored" sid="4345636293774716" type="personagen5">
+                <action id="7" name="Set mirrored" sid="4345636293774716" type="Sprite_MainCharacter_005">
                     <param id="0" name="State">0</param>
                 </action>
             </actions>
@@ -338,7 +338,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="7" name="Set mirrored" sid="6199107671573789" type="personagen5">
+                <action id="7" name="Set mirrored" sid="6199107671573789" type="Sprite_MainCharacter_005">
                     <param id="0" name="State">1</param>
                 </action>
             </actions>
@@ -348,7 +348,7 @@
                 <condition behavior="Platform" id="0" name="Is moving" sid="5137111273983808" type="Sprite_MainCharacter_002" />
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="1890810451405455" type="personagen5">
+                <action id="4" name="Set animation" sid="1890810451405455" type="Sprite_MainCharacter_005">
                     <param id="0" name="Animation">&quot;andando&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -359,7 +359,7 @@
                 <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="9480173655407623" type="Sprite_MainCharacter_002" />
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="9770738585098256" type="personagen5">
+                <action id="4" name="Set animation" sid="9770738585098256" type="Sprite_MainCharacter_005">
                     <param id="0" name="Animation">&quot;parado&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -372,7 +372,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="7" name="Set mirrored" sid="6948022794506392" type="personagen5">
+                <action id="7" name="Set mirrored" sid="6948022794506392" type="Sprite_MainCharacter_005">
                     <param id="0" name="State">0</param>
                 </action>
                 <action id="-9" name="Set value" sid="5897642999749571" type="System">
@@ -388,7 +388,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="7" name="Set mirrored" sid="1593016803867636" type="personagen5">
+                <action id="7" name="Set mirrored" sid="1593016803867636" type="Sprite_MainCharacter_005">
                     <param id="0" name="State">1</param>
                 </action>
                 <action id="-9" name="Set value" sid="4976688970690954" type="System">
@@ -404,7 +404,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="5126537258691744" type="personagen5">
+                <action id="4" name="Set animation" sid="5126537258691744" type="Sprite_MainCharacter_005">
                     <param id="0" name="Animation">&quot;parado&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -417,7 +417,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="7023884477680889" type="personagen5">
+                <action id="4" name="Set animation" sid="7023884477680889" type="Sprite_MainCharacter_005">
                     <param id="0" name="Animation">&quot;parado&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -430,7 +430,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="2642197441918984" type="personagen5">
+                <action id="4" name="Set animation" sid="2642197441918984" type="Sprite_MainCharacter_005">
                     <param id="0" name="Animation">&quot;parado&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -439,11 +439,11 @@
         <event-block sid="2612887758901298">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="9720639961264608" type="Sprite_MainCharacter_002">
-                    <param id="0" name="Object">raio1</param>
+                    <param id="0" name="Object">Sprite_Trigger_LightningStart_002</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-15" name="Set visible" sid="9185171397192071" type="fase20">
+                <action id="-15" name="Set visible" sid="9185171397192071" type="Sprite_BG_CityRoad_2D_002">
                     <param id="0" name="Visibility">1</param>
                 </action>
                 <action id="4" name="Set animation" sid="9057769764508177" type="Sprite_Lightning_001">
@@ -453,28 +453,28 @@
                 <action id="-15" name="Set visible" sid="8731880854471721" type="Sprite_Lightning_001">
                     <param id="0" name="Visibility">1</param>
                 </action>
-                <action behavior="Flash" id="0" name="Flash" sid="3386186573955558" type="personagen3">
+                <action behavior="Flash" id="0" name="Flash" sid="3386186573955558" type="Sprite_MainCharacter_003">
                     <param id="0" name="&apos;On&apos; time">0.1</param>
                     <param id="1" name="&apos;Off&apos; time">0.1</param>
                     <param id="2" name="Duration">1.0</param>
                 </action>
-                <action id="-15" name="Set visible" sid="7793888780237175" type="personagen3">
+                <action id="-15" name="Set visible" sid="7793888780237175" type="Sprite_MainCharacter_003">
                     <param id="0" name="Visibility">1</param>
                 </action>
                 <action id="-9" name="Set value" sid="8161149296889248" type="System">
                     <param id="0" name="Variable">raiopisca</param>
                     <param id="1" name="Value">1</param>
                 </action>
-                <action behavior="Flash" id="0" name="Flash" sid="1865963398367803" type="personagen5">
+                <action behavior="Flash" id="0" name="Flash" sid="1865963398367803" type="Sprite_MainCharacter_005">
                     <param id="0" name="&apos;On&apos; time">0.1</param>
                     <param id="1" name="&apos;Off&apos; time">0.1</param>
                     <param id="2" name="Duration">1.0</param>
                 </action>
-                <action id="-16" name="Set opacity" sid="2282023897088437" type="personagen5">
+                <action id="-16" name="Set opacity" sid="2282023897088437" type="Sprite_MainCharacter_005">
                     <param id="0" name="Opacity">30</param>
                 </action>
-                <action behavior="Fade" id="1" name="Start fade" sid="2872259247760257" type="fdf" />
-                <action id="-15" name="Set visible" sid="8037133778367792" type="fdf">
+                <action behavior="Fade" id="1" name="Start fade" sid="2872259247760257" type="Sprite_Text_FinalDialogue_001" />
+                <action id="-15" name="Set visible" sid="8037133778367792" type="Sprite_Text_FinalDialogue_001">
                     <param id="0" name="Visibility">1</param>
                 </action>
             </actions>
@@ -482,11 +482,11 @@
         <event-block sid="9753773896656568">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="5955953704797973" type="Sprite_MainCharacter_002">
-                    <param id="0" name="Object">raio2</param>
+                    <param id="0" name="Object">Sprite_Trigger_LightningStart_003</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-15" name="Set visible" sid="8741815473649727" type="fase21">
+                <action id="-15" name="Set visible" sid="8741815473649727" type="Sprite_BG_CityRoad_2D_003">
                     <param id="0" name="Visibility">1</param>
                 </action>
                 <action id="4" name="Set animation" sid="161399464518238" type="Sprite_Lightning_001">
@@ -496,10 +496,10 @@
                 <action id="-15" name="Set visible" sid="8970981383075874" type="Sprite_Lightning_001">
                     <param id="0" name="Visibility">1</param>
                 </action>
-                <action id="-15" name="Set visible" sid="401702312053306" type="personagen4">
+                <action id="-15" name="Set visible" sid="401702312053306" type="Sprite_MainCharacter_004">
                     <param id="0" name="Visibility">1</param>
                 </action>
-                <action behavior="Flash" id="0" name="Flash" sid="4328020617478267" type="personagen4">
+                <action behavior="Flash" id="0" name="Flash" sid="4328020617478267" type="Sprite_MainCharacter_004">
                     <param id="0" name="&apos;On&apos; time">0.1</param>
                     <param id="1" name="&apos;Off&apos; time">0.1</param>
                     <param id="2" name="Duration">1.0</param>
@@ -508,23 +508,23 @@
                     <param id="0" name="Variable">raiopisca</param>
                     <param id="1" name="Value">2</param>
                 </action>
-                <action behavior="Flash" id="0" name="Flash" sid="489735968945947" type="personagen5">
+                <action behavior="Flash" id="0" name="Flash" sid="489735968945947" type="Sprite_MainCharacter_005">
                     <param id="0" name="&apos;On&apos; time">0.1</param>
                     <param id="1" name="&apos;Off&apos; time">0.1</param>
                     <param id="2" name="Duration">1.0</param>
                 </action>
-                <action id="-16" name="Set opacity" sid="3737556418314532" type="personagen5">
+                <action id="-16" name="Set opacity" sid="3737556418314532" type="Sprite_MainCharacter_005">
                     <param id="0" name="Opacity">100</param>
                 </action>
-                <action behavior="Fade" id="1" name="Start fade" sid="3006213309710846" type="fdf2" />
-                <action id="-15" name="Set visible" sid="4655023932064112" type="fdf2">
+                <action behavior="Fade" id="1" name="Start fade" sid="3006213309710846" type="Sprite_Text_FinalDialogue_002" />
+                <action id="-15" name="Set visible" sid="4655023932064112" type="Sprite_Text_FinalDialogue_002">
                     <param id="0" name="Visibility">1</param>
                 </action>
             </actions>
         </event-block>
         <event-block sid="3547002334173315">
             <conditions>
-                <condition behavior="Flash" id="1" name="On flash ended" sid="1406764544239599" type="personagen3" />
+                <condition behavior="Flash" id="1" name="On flash ended" sid="1406764544239599" type="Sprite_MainCharacter_003" />
             </conditions>
             <actions>
                 <action id="-15" name="Set visible" sid="7408547263837466" type="Sprite_MainCharacter_002">
@@ -534,10 +534,10 @@
         </event-block>
         <event-block sid="3009275557085782">
             <conditions>
-                <condition behavior="Flash" id="1" name="On flash ended" sid="8516689439186477" type="personagen4" />
+                <condition behavior="Flash" id="1" name="On flash ended" sid="8516689439186477" type="Sprite_MainCharacter_004" />
             </conditions>
             <actions>
-                <action id="-15" name="Set visible" sid="6089088570946924" type="personagen3">
+                <action id="-15" name="Set visible" sid="6089088570946924" type="Sprite_MainCharacter_003">
                     <param id="0" name="Visibility">0</param>
                 </action>
             </actions>
@@ -547,7 +547,7 @@
                 <condition id="-2" name="On start of layout" sid="5789440549856817" type="System" />
             </conditions>
             <actions>
-                <action behavior="Pin" id="0" name="Pin to object" sid="2183365348628155" type="personagen5">
+                <action behavior="Pin" id="0" name="Pin to object" sid="2183365348628155" type="Sprite_MainCharacter_005">
                     <param id="0" name="Pin to">Sprite_MainCharacter_002</param>
                     <param id="1" name="Mode">0</param>
                 </action>
@@ -555,8 +555,8 @@
         </event-block>
         <event-block sid="2063116366855992">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="5980124564195391" type="personagen4">
-                    <param id="0" name="Object">irfase23</param>
+                <condition id="0" name="On collision with another object" sid="5980124564195391" type="Sprite_MainCharacter_004">
+                    <param id="0" name="Object">Sprite_Trigger_Level_022_Go_Level_023</param>
                 </condition>
             </conditions>
             <actions>

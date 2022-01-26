@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="fase19" uid="1051">
+                <instance type="Sprite_BG_CityRoad_2D_001" uid="1051">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -51,7 +51,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="fase20" uid="1056">
+                <instance type="Sprite_BG_CityRoad_2D_002" uid="1056">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -73,7 +73,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="fase21" uid="1057">
+                <instance type="Sprite_BG_CityRoad_2D_003" uid="1057">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -142,7 +142,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="personagen4" uid="1063">
+                <instance type="Sprite_MainCharacter_004" uid="1063">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -195,7 +195,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="personagen3" uid="1062">
+                <instance type="Sprite_MainCharacter_003" uid="1062">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -287,7 +287,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="raio1" uid="1059">
+                <instance type="Sprite_Trigger_LightningStart_002" uid="1059">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -309,7 +309,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="raio2" uid="1060">
+                <instance type="Sprite_Trigger_LightningStart_003" uid="1060">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -360,7 +360,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="personagen5" uid="1064">
+                <instance type="Sprite_MainCharacter_005" uid="1064">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -409,7 +409,7 @@
                         <opacity>0.100000001</opacity>
                     </world>
                 </instance>
-                <instance type="irfase23" uid="1071">
+                <instance type="Sprite_Trigger_Level_022_Go_Level_023" uid="1071">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -431,7 +431,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="fdf" uid="42">
+                <instance type="Sprite_Text_FinalDialogue_001" uid="42">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -464,7 +464,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="fdf2" uid="45">
+                <instance type="Sprite_Text_FinalDialogue_002" uid="45">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>

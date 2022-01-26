@@ -114,7 +114,7 @@
         <event-block sid="1567778806085689">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="2338781330604041" type="Sprite_MainCharacter_002">
-                    <param id="0" name="Object">Sprite_Trigger_LightningStart</param>
+                    <param id="0" name="Object">Sprite_Trigger_LightningStart_001</param>
                 </condition>
             </conditions>
             <actions>
@@ -134,7 +134,7 @@
                     <param id="3" name="Volume">-18</param>
                     <param id="1" name="Tag (optional)">&quot;chuva&quot;</param>
                 </action>
-                <action id="-9" name="Destroy" sid="2092830429412953" type="Sprite_Trigger_LightningStart" />
+                <action id="-9" name="Destroy" sid="2092830429412953" type="Sprite_Trigger_LightningStart_001" />
             </actions>
             <sub-events>
                 <event-block sid="4648970221229676">

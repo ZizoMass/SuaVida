@@ -31,7 +31,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="35">Level_014</layout>
         <layout order="36">Level_016</layout>
         <layout order="37">Level_020</layout>
-        <layout active="1" order="38">Level_021</layout>
+        <layout order="38">Level_021</layout>
+        <layout active="1" order="39">Level_022</layout>
         <event-sheet order="8">EventSheet_006</event-sheet>
         <event-sheet order="11">EventSheet_010</event-sheet>
         <event-sheet order="17">EventSheet_001</event-sheet>
@@ -61,7 +62,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </families-expanded>
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
-        <folder expanded="1" path="object-folder/Sprite/" />
+        <folder expanded="0" path="object-folder/Sprite/" />
         <folder expanded="0" path="object-folder/Video/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="0" path="event-folder/" />
@@ -247,7 +248,18 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Sprite_MainCharacter_002/" />
         <folder expanded="1" path="animation-folder/Sprite_RainEffect_001/" />
         <folder expanded="1" path="animation-folder/Sprite_Trigger_Level_021_Go_Level_022/" />
-        <folder expanded="1" path="animation-folder/Sprite_Trigger_LightningStart/" />
+        <folder expanded="1" path="animation-folder/Sprite_Trigger_LightningStart_001/" />
+        <folder expanded="1" path="animation-folder/Sprite_BG_CityRoad_2D_001/" />
+        <folder expanded="1" path="animation-folder/Sprite_BG_CityRoad_2D_002/" />
+        <folder expanded="1" path="animation-folder/Sprite_BG_CityRoad_2D_003/" />
+        <folder expanded="1" path="animation-folder/Sprite_MainCharacter_003/" />
+        <folder expanded="1" path="animation-folder/Sprite_MainCharacter_004/" />
+        <folder expanded="1" path="animation-folder/Sprite_MainCharacter_005/" />
+        <folder expanded="1" path="animation-folder/Sprite_Text_FinalDialogue_001/" />
+        <folder expanded="1" path="animation-folder/Sprite_Text_FinalDialogue_002/" />
+        <folder expanded="1" path="animation-folder/Sprite_Trigger_Level_022_Go_Level_023/" />
+        <folder expanded="1" path="animation-folder/Sprite_Trigger_LightningStart_002/" />
+        <folder expanded="1" path="animation-folder/Sprite_Trigger_LightningStart_003/" />
         <folder expanded="1" path="animation-folder/Sprite3/" />
         <folder expanded="1" path="animation-folder/curtina/" />
         <folder expanded="1" path="animation-folder/Sprite6/" />
@@ -301,16 +313,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/fim/" />
         <folder expanded="1" path="animation-folder/comandos/" />
         <folder expanded="1" path="animation-folder/cima/" />
-        <folder expanded="1" path="animation-folder/fase19/" />
-        <folder expanded="1" path="animation-folder/fase20/" />
-        <folder expanded="1" path="animation-folder/fase21/" />
-        <folder expanded="1" path="animation-folder/raio1/" />
-        <folder expanded="1" path="animation-folder/raio2/" />
-        <folder expanded="1" path="animation-folder/personagen3/" />
-        <folder expanded="1" path="animation-folder/personagen4/" />
-        <folder expanded="1" path="animation-folder/personagen5/" />
         <folder expanded="1" path="animation-folder/SemTítulo6/" />
-        <folder expanded="1" path="animation-folder/irfase23/" />
         <folder expanded="1" path="animation-folder/irfase24/" />
         <folder expanded="1" path="animation-folder/Sprite35/" />
         <folder expanded="1" path="animation-folder/level3/" />
@@ -336,8 +339,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/titulo/" />
         <folder expanded="1" path="animation-folder/titulo2/" />
         <folder expanded="1" path="animation-folder/somporta/" />
-        <folder expanded="1" path="animation-folder/fdf/" />
-        <folder expanded="1" path="animation-folder/fdf2/" />
         <folder expanded="1" path="animation-folder/fdf3/" />
         <folder expanded="1" path="animation-folder/fdf4/" />
         <folder expanded="1" path="animation-folder/FDF5/" />

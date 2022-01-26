@@ -13,8 +13,8 @@
                 <condition id="-2" name="On start of layout" sid="1581515906829845" type="System" />
             </conditions>
             <actions>
-                <action behavior="Pin" id="0" name="Pin to object" sid="4503863481907367" type="personagen5">
-                    <param id="0" name="Pin to">personagen4</param>
+                <action behavior="Pin" id="0" name="Pin to object" sid="4503863481907367" type="Sprite_MainCharacter_005">
+                    <param id="0" name="Pin to">Sprite_MainCharacter_004</param>
                     <param id="1" name="Mode">0</param>
                 </action>
             </actions>
@@ -28,7 +28,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="7" name="Set mirrored" sid="757353895668901" type="personagen4">
+                <action id="7" name="Set mirrored" sid="757353895668901" type="Sprite_MainCharacter_004">
                     <param id="0" name="State">0</param>
                 </action>
             </actions>
@@ -42,17 +42,17 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="7" name="Set mirrored" sid="5197039128609757" type="personagen4">
+                <action id="7" name="Set mirrored" sid="5197039128609757" type="Sprite_MainCharacter_004">
                     <param id="0" name="State">1</param>
                 </action>
             </actions>
         </event-block>
         <event-block sid="2960559189807729">
             <conditions>
-                <condition behavior="Platform" id="0" name="Is moving" sid="3071228539410452" type="personagen4" />
+                <condition behavior="Platform" id="0" name="Is moving" sid="3071228539410452" type="Sprite_MainCharacter_004" />
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="4633603429599539" type="personagen4">
+                <action id="4" name="Set animation" sid="4633603429599539" type="Sprite_MainCharacter_004">
                     <param id="0" name="Animation">&quot;andando&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -60,10 +60,10 @@
         </event-block>
         <event-block sid="1700369656200942">
             <conditions>
-                <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="1892896245868762" type="personagen4" />
+                <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="1892896245868762" type="Sprite_MainCharacter_004" />
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="5695793597746188" type="personagen4">
+                <action id="4" name="Set animation" sid="5695793597746188" type="Sprite_MainCharacter_004">
                     <param id="0" name="Animation">&quot;parado&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -76,7 +76,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="7" name="Set mirrored" sid="7818379400902465" type="personagen4">
+                <action id="7" name="Set mirrored" sid="7818379400902465" type="Sprite_MainCharacter_004">
                     <param id="0" name="State">0</param>
                 </action>
                 <action id="-9" name="Set value" sid="4781991316881158" type="System">
@@ -92,7 +92,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="7" name="Set mirrored" sid="5718623172084495" type="personagen4">
+                <action id="7" name="Set mirrored" sid="5718623172084495" type="Sprite_MainCharacter_004">
                     <param id="0" name="State">1</param>
                 </action>
                 <action id="-9" name="Set value" sid="1580162112898366" type="System">
@@ -103,12 +103,12 @@
         </event-block>
         <event-block sid="6289731614352547">
             <conditions>
-                <condition behavior="Platform" id="10" name="Is by wall" sid="9302009744996689" type="personagen4">
+                <condition behavior="Platform" id="10" name="Is by wall" sid="9302009744996689" type="Sprite_MainCharacter_004">
                     <param id="0" name="Side">0</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="3663459933953957" type="personagen4">
+                <action id="4" name="Set animation" sid="3663459933953957" type="Sprite_MainCharacter_004">
                     <param id="0" name="Animation">&quot;parado&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -116,12 +116,12 @@
         </event-block>
         <event-block sid="3894071619394871">
             <conditions>
-                <condition behavior="Platform" id="10" name="Is by wall" sid="9291721589593017" type="personagen4">
+                <condition behavior="Platform" id="10" name="Is by wall" sid="9291721589593017" type="Sprite_MainCharacter_004">
                     <param id="0" name="Side">1</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="7480385724292233" type="personagen4">
+                <action id="4" name="Set animation" sid="7480385724292233" type="Sprite_MainCharacter_004">
                     <param id="0" name="Animation">&quot;parado&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -136,7 +136,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="7" name="Set mirrored" sid="3820380461067878" type="personagen5">
+                <action id="7" name="Set mirrored" sid="3820380461067878" type="Sprite_MainCharacter_005">
                     <param id="0" name="State">0</param>
                 </action>
             </actions>
@@ -150,17 +150,17 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="7" name="Set mirrored" sid="3401140429825583" type="personagen5">
+                <action id="7" name="Set mirrored" sid="3401140429825583" type="Sprite_MainCharacter_005">
                     <param id="0" name="State">1</param>
                 </action>
             </actions>
         </event-block>
         <event-block sid="4348906886267322">
             <conditions>
-                <condition behavior="Platform" id="0" name="Is moving" sid="3748844699392464" type="personagen4" />
+                <condition behavior="Platform" id="0" name="Is moving" sid="3748844699392464" type="Sprite_MainCharacter_004" />
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="1364283602150816" type="personagen5">
+                <action id="4" name="Set animation" sid="1364283602150816" type="Sprite_MainCharacter_005">
                     <param id="0" name="Animation">&quot;andando&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -168,10 +168,10 @@
         </event-block>
         <event-block sid="3071644472898353">
             <conditions>
-                <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="537390217838647" type="personagen4" />
+                <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="537390217838647" type="Sprite_MainCharacter_004" />
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="2582877933299928" type="personagen5">
+                <action id="4" name="Set animation" sid="2582877933299928" type="Sprite_MainCharacter_005">
                     <param id="0" name="Animation">&quot;parado&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -184,7 +184,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="7" name="Set mirrored" sid="6283319676753644" type="personagen5">
+                <action id="7" name="Set mirrored" sid="6283319676753644" type="Sprite_MainCharacter_005">
                     <param id="0" name="State">0</param>
                 </action>
                 <action id="-9" name="Set value" sid="5763505902608335" type="System">
@@ -200,7 +200,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="7" name="Set mirrored" sid="4819513969395311" type="personagen5">
+                <action id="7" name="Set mirrored" sid="4819513969395311" type="Sprite_MainCharacter_005">
                     <param id="0" name="State">1</param>
                 </action>
                 <action id="-9" name="Set value" sid="2843240678476471" type="System">
@@ -211,12 +211,12 @@
         </event-block>
         <event-block sid="6662768632343109">
             <conditions>
-                <condition behavior="Platform" id="10" name="Is by wall" sid="4777622134016847" type="personagen4">
+                <condition behavior="Platform" id="10" name="Is by wall" sid="4777622134016847" type="Sprite_MainCharacter_004">
                     <param id="0" name="Side">0</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="264040150090852" type="personagen5">
+                <action id="4" name="Set animation" sid="264040150090852" type="Sprite_MainCharacter_005">
                     <param id="0" name="Animation">&quot;parado&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -224,12 +224,12 @@
         </event-block>
         <event-block sid="1468739233876118">
             <conditions>
-                <condition behavior="Platform" id="10" name="Is by wall" sid="7480393674167796" type="personagen4">
+                <condition behavior="Platform" id="10" name="Is by wall" sid="7480393674167796" type="Sprite_MainCharacter_004">
                     <param id="0" name="Side">1</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="9433958903954858" type="personagen5">
+                <action id="4" name="Set animation" sid="9433958903954858" type="Sprite_MainCharacter_005">
                     <param id="0" name="Animation">&quot;parado&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -237,7 +237,7 @@
         </event-block>
         <event-block sid="7989754132256093">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="219485407797505" type="personagen4">
+                <condition id="0" name="On collision with another object" sid="219485407797505" type="Sprite_MainCharacter_004">
                     <param id="0" name="Object">irfase25</param>
                 </condition>
             </conditions>
@@ -253,55 +253,55 @@
         </event-block>
         <event-block sid="3034912880681408">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="388151963245375" type="personagen4">
+                <condition id="0" name="On collision with another object" sid="388151963245375" type="Sprite_MainCharacter_004">
                     <param id="0" name="Object">acelera</param>
                 </condition>
             </conditions>
             <actions>
-                <action behavior="Platform" id="1" name="Set max speed" sid="1488386388119512" type="personagen4">
+                <action behavior="Platform" id="1" name="Set max speed" sid="1488386388119512" type="Sprite_MainCharacter_004">
                     <param id="0" name="Max Speed">5000</param>
                 </action>
-                <action behavior="Platform" id="2" name="Set acceleration" sid="9569773451116356" type="personagen4">
+                <action behavior="Platform" id="2" name="Set acceleration" sid="9569773451116356" type="Sprite_MainCharacter_004">
                     <param id="0" name="Acceleration">30</param>
                 </action>
-                <action behavior="ScrollTo" id="1" name="Set enabled" sid="6502346731675504" type="personagen4">
+                <action behavior="ScrollTo" id="1" name="Set enabled" sid="6502346731675504" type="Sprite_MainCharacter_004">
                     <param id="0" name="State">1</param>
                 </action>
-                <action behavior="Platform" id="1" name="Set max speed" sid="1522031742056087" type="personagen5">
+                <action behavior="Platform" id="1" name="Set max speed" sid="1522031742056087" type="Sprite_MainCharacter_005">
                     <param id="0" name="Max Speed">5000</param>
                 </action>
-                <action behavior="Platform" id="2" name="Set acceleration" sid="6638439141202001" type="personagen5">
+                <action behavior="Platform" id="2" name="Set acceleration" sid="6638439141202001" type="Sprite_MainCharacter_005">
                     <param id="0" name="Acceleration">30</param>
                 </action>
             </actions>
         </event-block>
         <event-block sid="4006156864159849">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="929247153804904" type="personagen4">
+                <condition id="0" name="On collision with another object" sid="929247153804904" type="Sprite_MainCharacter_004">
                     <param id="0" name="Object">para</param>
                 </condition>
             </conditions>
             <actions>
-                <action behavior="Platform" id="1" name="Set max speed" sid="7863147263671265" type="personagen4">
+                <action behavior="Platform" id="1" name="Set max speed" sid="7863147263671265" type="Sprite_MainCharacter_004">
                     <param id="0" name="Max Speed">60</param>
                 </action>
-                <action behavior="Platform" id="2" name="Set acceleration" sid="612007700036605" type="personagen4">
+                <action behavior="Platform" id="2" name="Set acceleration" sid="612007700036605" type="Sprite_MainCharacter_004">
                     <param id="0" name="Acceleration">100</param>
                 </action>
-                <action behavior="ScrollTo" id="1" name="Set enabled" sid="1646192620807937" type="personagen4">
+                <action behavior="ScrollTo" id="1" name="Set enabled" sid="1646192620807937" type="Sprite_MainCharacter_004">
                     <param id="0" name="State">1</param>
                 </action>
-                <action behavior="Platform" id="1" name="Set max speed" sid="752182180198019" type="personagen5">
+                <action behavior="Platform" id="1" name="Set max speed" sid="752182180198019" type="Sprite_MainCharacter_005">
                     <param id="0" name="Max Speed">60</param>
                 </action>
-                <action behavior="Platform" id="2" name="Set acceleration" sid="574930747178547" type="personagen5">
+                <action behavior="Platform" id="2" name="Set acceleration" sid="574930747178547" type="Sprite_MainCharacter_005">
                     <param id="0" name="Acceleration">100</param>
                 </action>
             </actions>
         </event-block>
         <event-block sid="5882869282267492">
             <conditions>
-                <condition id="1" name="Is overlapping another object" sid="4573913887912788" type="personagen4">
+                <condition id="1" name="Is overlapping another object" sid="4573913887912788" type="Sprite_MainCharacter_004">
                     <param id="0" name="Object">mrt1</param>
                 </condition>
             </conditions>
@@ -390,8 +390,8 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-9" name="Destroy" sid="2077483891339132" type="personagen4" />
-                <action id="-9" name="Destroy" sid="6682452489215063" type="personagen5" />
+                <action id="-9" name="Destroy" sid="2077483891339132" type="Sprite_MainCharacter_004" />
+                <action id="-9" name="Destroy" sid="6682452489215063" type="Sprite_MainCharacter_005" />
                 <action id="4" name="Set animation" sid="3338058963694625" type="forca">
                     <param id="0" name="Animation">&quot;fim&quot;</param>
                     <param id="1" name="From">1</param>
@@ -413,8 +413,8 @@
         </event-block>
         <event-block sid="4764074569405275">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="8808205701870712" type="personagen4">
-                    <param id="0" name="Object">raio1</param>
+                <condition id="0" name="On collision with another object" sid="8808205701870712" type="Sprite_MainCharacter_004">
+                    <param id="0" name="Object">Sprite_Trigger_LightningStart_002</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="2274128314543463" type="System">
                     <param id="0" name="Variable">layout</param>
@@ -427,7 +427,7 @@
                     <param id="0" name="Animation">&quot;default2&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
-                <action id="-9" name="Destroy" sid="3119129043223487" type="raio1" />
+                <action id="-9" name="Destroy" sid="3119129043223487" type="Sprite_Trigger_LightningStart_002" />
                 <action behavior="Fade" id="1" name="Start fade" sid="5752134442747715" type="fdf3" />
                 <action id="-15" name="Set visible" sid="3076543715944498" type="fdf3">
                     <param id="0" name="Visibility">1</param>
@@ -436,8 +436,8 @@
         </event-block>
         <event-block sid="4146782839047436">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="370836663878765" type="personagen4">
-                    <param id="0" name="Object">raio2</param>
+                <condition id="0" name="On collision with another object" sid="370836663878765" type="Sprite_MainCharacter_004">
+                    <param id="0" name="Object">Sprite_Trigger_LightningStart_003</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="2581935924327331" type="System">
                     <param id="0" name="Variable">layout</param>
@@ -450,7 +450,7 @@
                     <param id="0" name="Animation">&quot;default1&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
-                <action id="-9" name="Destroy" sid="8326335026314334" type="raio2" />
+                <action id="-9" name="Destroy" sid="8326335026314334" type="Sprite_Trigger_LightningStart_003" />
                 <action behavior="Fade" id="1" name="Start fade" sid="9050007224654505" type="fdf4" />
                 <action id="-15" name="Set visible" sid="9477413729027479" type="fdf4">
                     <param id="0" name="Visibility">1</param>
@@ -459,8 +459,8 @@
         </event-block>
         <event-block sid="9970820716543827">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="8978682698296445" type="personagen4">
-                    <param id="0" name="Object">raio1</param>
+                <condition id="0" name="On collision with another object" sid="8978682698296445" type="Sprite_MainCharacter_004">
+                    <param id="0" name="Object">Sprite_Trigger_LightningStart_002</param>
                 </condition>
             </conditions>
             <actions>
@@ -468,13 +468,13 @@
                     <param id="0" name="Animation">&quot;default2&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
-                <action id="-9" name="Destroy" sid="6825396833404976" type="raio1" />
+                <action id="-9" name="Destroy" sid="6825396833404976" type="Sprite_Trigger_LightningStart_002" />
             </actions>
         </event-block>
         <event-block sid="257740697803312">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="1330162651130653" type="personagen4">
-                    <param id="0" name="Object">raio2</param>
+                <condition id="0" name="On collision with another object" sid="1330162651130653" type="Sprite_MainCharacter_004">
+                    <param id="0" name="Object">Sprite_Trigger_LightningStart_003</param>
                 </condition>
             </conditions>
             <actions>
@@ -482,7 +482,7 @@
                     <param id="0" name="Animation">&quot;default1&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
-                <action id="-9" name="Destroy" sid="6573566108730764" type="raio2" />
+                <action id="-9" name="Destroy" sid="6573566108730764" type="Sprite_Trigger_LightningStart_003" />
             </actions>
         </event-block>
         <event-block sid="5048159729272181">
@@ -501,8 +501,8 @@
         </event-block>
         <event-block sid="768947712561103">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="1592480604968716" type="personagen4">
-                    <param id="0" name="Object">raio1</param>
+                <condition id="0" name="On collision with another object" sid="1592480604968716" type="Sprite_MainCharacter_004">
+                    <param id="0" name="Object">Sprite_Trigger_LightningStart_002</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="3553963927956623" type="System">
                     <param id="0" name="Variable">layout</param>
@@ -515,7 +515,7 @@
                     <param id="0" name="Animation">&quot;default2&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
-                <action id="-9" name="Destroy" sid="8193223797745854" type="raio1" />
+                <action id="-9" name="Destroy" sid="8193223797745854" type="Sprite_Trigger_LightningStart_002" />
                 <action id="-15" name="Set visible" sid="8713628994987014" type="FDF5">
                     <param id="0" name="Visibility">1</param>
                 </action>
@@ -524,7 +524,7 @@
         </event-block>
         <event-block sid="3551700580821104">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="8743058011438869" type="personagen4">
+                <condition id="0" name="On collision with another object" sid="8743058011438869" type="Sprite_MainCharacter_004">
                     <param id="0" name="Object">flsa01</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="8253050341126668" type="System">
@@ -543,8 +543,8 @@
         </event-block>
         <event-block sid="7653765882672536">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="6023855755460505" type="personagen4">
-                    <param id="0" name="Object">raio2</param>
+                <condition id="0" name="On collision with another object" sid="6023855755460505" type="Sprite_MainCharacter_004">
+                    <param id="0" name="Object">Sprite_Trigger_LightningStart_003</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="2109873862133515" type="System">
                     <param id="0" name="Variable">layout</param>
@@ -557,12 +557,12 @@
                     <param id="0" name="Animation">&quot;default1&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
-                <action id="-9" name="Destroy" sid="6190899076707997" type="raio2" />
+                <action id="-9" name="Destroy" sid="6190899076707997" type="Sprite_Trigger_LightningStart_003" />
             </actions>
         </event-block>
         <event-block sid="7777447920011491">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="732847768294846" type="personagen4">
+                <condition id="0" name="On collision with another object" sid="732847768294846" type="Sprite_MainCharacter_004">
                     <param id="0" name="Object">flsa02</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="1536544821538165" type="System">
@@ -581,7 +581,7 @@
         </event-block>
         <event-block sid="972209362746935">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="5066575469184966" type="personagen4">
+                <condition id="0" name="On collision with another object" sid="5066575469184966" type="Sprite_MainCharacter_004">
                     <param id="0" name="Object">srt2</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="9660667887545671" type="System">
@@ -600,7 +600,7 @@
         </event-block>
         <event-block sid="5138111651228585">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="7098363242925289" type="personagen4">
+                <condition id="0" name="On collision with another object" sid="7098363242925289" type="Sprite_MainCharacter_004">
                     <param id="0" name="Object">srt3</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="1058171710114456" type="System">
@@ -619,7 +619,7 @@
         </event-block>
         <event-block sid="6543564222228918">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="7723334733199243" type="personagen4">
+                <condition id="0" name="On collision with another object" sid="7723334733199243" type="Sprite_MainCharacter_004">
                     <param id="0" name="Object">srt1</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="1389929770236205" type="System">
@@ -638,7 +638,7 @@
         </event-block>
         <event-block sid="4210172211672554">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="4643401592039541" type="personagen4">
+                <condition id="0" name="On collision with another object" sid="4643401592039541" type="Sprite_MainCharacter_004">
                     <param id="0" name="Object">srt4</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="6389379594877808" type="System">
@@ -657,7 +657,7 @@
         </event-block>
         <event-block sid="4327700889244722">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="9638338691518292" type="personagen4">
+                <condition id="0" name="On collision with another object" sid="9638338691518292" type="Sprite_MainCharacter_004">
                     <param id="0" name="Object">srt5</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="9713476808661114" type="System">
@@ -676,7 +676,7 @@
         </event-block>
         <event-block sid="9332224465856907">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="724905706995817" type="personagen4">
+                <condition id="0" name="On collision with another object" sid="724905706995817" type="Sprite_MainCharacter_004">
                     <param id="0" name="Object">ruas1</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="7040193850498802" type="System">
@@ -695,7 +695,7 @@
         </event-block>
         <event-block sid="2509694417686571">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="8583578188384915" type="personagen4">
+                <condition id="0" name="On collision with another object" sid="8583578188384915" type="Sprite_MainCharacter_004">
                     <param id="0" name="Object">ruas2</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="9731212477654001" type="System">
@@ -714,7 +714,7 @@
         </event-block>
         <event-block sid="64917930802064">
             <conditions>
-                <condition id="1" name="Is overlapping another object" sid="1809773401643146" type="personagen4">
+                <condition id="1" name="Is overlapping another object" sid="1809773401643146" type="Sprite_MainCharacter_004">
                     <param id="0" name="Object">mrt2</param>
                 </condition>
             </conditions>
@@ -762,8 +762,8 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-9" name="Destroy" sid="9142897565525362" type="personagen4" />
-                <action id="-9" name="Destroy" sid="7595482086212672" type="personagen5" />
+                <action id="-9" name="Destroy" sid="9142897565525362" type="Sprite_MainCharacter_004" />
+                <action id="-9" name="Destroy" sid="7595482086212672" type="Sprite_MainCharacter_005" />
                 <action id="4" name="Set animation" sid="1531922130342824" type="tiro">
                     <param id="0" name="Animation">&quot;fim&quot;</param>
                     <param id="1" name="From">1</param>
@@ -891,7 +891,7 @@
         </event-block>
         <event-block sid="3311787933185222">
             <conditions>
-                <condition id="1" name="Is overlapping another object" sid="1656215787453374" type="personagen4">
+                <condition id="1" name="Is overlapping another object" sid="1656215787453374" type="Sprite_MainCharacter_004">
                     <param id="0" name="Object">mrt3</param>
                 </condition>
             </conditions>
@@ -939,8 +939,8 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-9" name="Destroy" sid="5865744438515288" type="personagen4" />
-                <action id="-9" name="Destroy" sid="8222520571400994" type="personagen5" />
+                <action id="-9" name="Destroy" sid="5865744438515288" type="Sprite_MainCharacter_004" />
+                <action id="-9" name="Destroy" sid="8222520571400994" type="Sprite_MainCharacter_005" />
                 <action id="4" name="Set animation" sid="3733751290704032" type="ponte">
                     <param id="0" name="Animation">&quot;fim&quot;</param>
                     <param id="1" name="From">1</param>
@@ -1063,7 +1063,7 @@
         </event-block>
         <event-block sid="505262537478524">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="4127001584984099" type="personagen4">
+                <condition id="0" name="On collision with another object" sid="4127001584984099" type="Sprite_MainCharacter_004">
                     <param id="0" name="Object">irfase24</param>
                 </condition>
             </conditions>
@@ -1079,7 +1079,7 @@
         </event-block>
         <event-block sid="5355101337654995">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="5241105968654951" type="personagen4">
+                <condition id="0" name="On collision with another object" sid="5241105968654951" type="Sprite_MainCharacter_004">
                     <param id="0" name="Object">irfase26</param>
                 </condition>
             </conditions>
@@ -1095,7 +1095,7 @@
         </event-block>
         <event-block sid="530593668275816">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="5801011379222152" type="personagen4">
+                <condition id="0" name="On collision with another object" sid="5801011379222152" type="Sprite_MainCharacter_004">
                     <param id="0" name="Object">mrt4</param>
                 </condition>
             </conditions>
@@ -1108,7 +1108,7 @@
                     <param id="0" name="Animation">&quot;default1&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
-                <action behavior="Platform" id="0" name="Set ignoring input" sid="6949098326539034" type="personagen4">
+                <action behavior="Platform" id="0" name="Set ignoring input" sid="6949098326539034" type="Sprite_MainCharacter_004">
                     <param id="0" name="Input">1</param>
                 </action>
                 <action id="6" name="Stop" sid="483409069954611" type="Audio">
@@ -1125,8 +1125,8 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-9" name="Destroy" sid="3846915504645796" type="personagen4" />
-                <action id="-9" name="Destroy" sid="2720454678896532" type="personagen5" />
+                <action id="-9" name="Destroy" sid="3846915504645796" type="Sprite_MainCharacter_004" />
+                <action id="-9" name="Destroy" sid="2720454678896532" type="Sprite_MainCharacter_005" />
                 <action behavior="ScrollTo" id="1" name="Set enabled" sid="9697942739013654" type="queda">
                     <param id="0" name="State">1</param>
                 </action>
@@ -1512,27 +1512,27 @@
             <sub-events>
                 <event-block sid="9118725213164779">
                     <conditions>
-                        <condition id="0" name="On collision with another object" sid="1317418989626212" type="personagen4">
-                            <param id="0" name="Object">raio1</param>
+                        <condition id="0" name="On collision with another object" sid="1317418989626212" type="Sprite_MainCharacter_004">
+                            <param id="0" name="Object">Sprite_Trigger_LightningStart_002</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-9" name="Destroy" sid="1499767158169763" type="raio1" />
+                        <action id="-9" name="Destroy" sid="1499767158169763" type="Sprite_Trigger_LightningStart_002" />
                     </actions>
                 </event-block>
                 <event-block sid="9314731090854397">
                     <conditions>
-                        <condition id="0" name="On collision with another object" sid="1232084746174165" type="personagen4">
-                            <param id="0" name="Object">raio2</param>
+                        <condition id="0" name="On collision with another object" sid="1232084746174165" type="Sprite_MainCharacter_004">
+                            <param id="0" name="Object">Sprite_Trigger_LightningStart_003</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-9" name="Destroy" sid="1186864756769279" type="raio2" />
+                        <action id="-9" name="Destroy" sid="1186864756769279" type="Sprite_Trigger_LightningStart_003" />
                     </actions>
                 </event-block>
                 <event-block sid="2747109667459562">
                     <conditions>
-                        <condition id="0" name="On collision with another object" sid="1148506368720115" type="personagen4">
+                        <condition id="0" name="On collision with another object" sid="1148506368720115" type="Sprite_MainCharacter_004">
                             <param id="0" name="Object">para</param>
                         </condition>
                     </conditions>

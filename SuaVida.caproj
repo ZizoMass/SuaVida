@@ -13315,10 +13315,207 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="Sprite_Trigger_LightningStart" sid="2524746494397663">
+            <object-type name="Sprite_Trigger_LightningStart_001" sid="2524746494397663">
                 <plugin id="Sprite" />
                 <animation-folder>
-                    <animation framecount="1" loop="0" name="Sprite_Trigger_LightningStart_Ani_Idle_001" pingpong="0" repeatcount="1" repeatto="0" sid="2817297790015268" speed="5">
+                    <animation framecount="1" loop="0" name="Sprite_Trigger_LightningStart_001_Ani_Idle_001" pingpong="0" repeatcount="1" repeatto="0" sid="2817297790015268" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Sprite_BG_CityRoad_2D_001" sid="9052807501363206">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Sprite_BG_CityRoad_2D_001_Ani_Idle_001" pingpong="0" repeatcount="1" repeatto="0" sid="4092053610806185" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.500694" original-source="C:\Users\ZiZo\Desktop\levels\level23\fase03-01.png">
+                            <collision-poly>
+                                <point x="0.00390625" y="0.00693481" />
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Sprite_BG_CityRoad_2D_002" sid="9717003439323693">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Sprite_BG_CityRoad_2D_002_Ani_Idle_001" pingpong="0" repeatcount="1" repeatto="0" sid="7807434829550145" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ZiZo\Desktop\levels\level23\fase03-01-01.png">
+                            <collision-poly>
+                                <point x="0.00078125" y="0.00138889" />
+                                <point x="0.999219" y="0.00138889" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Sprite_BG_CityRoad_2D_003" sid="5981708971236889">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Sprite_BG_CityRoad_2D_003_Ani_Idle_001" pingpong="0" repeatcount="1" repeatto="0" sid="9898834922827584" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ZiZo\Desktop\levels\level23\fase03-012-01.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Sprite_MainCharacter_003" sid="5117144840369897">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Platform" sid="5484188152156195">
+                        <behavior id="Platform" />
+                    </behavior-type>
+                    <behavior-type name="Flash" sid="5491267181557147">
+                        <behavior id="Flash" />
+                    </behavior-type>
+                </behaviors>
+                <effects>
+                    <effect-type name="AdjustHSL">
+                        <effect id="hsladjust" />
+                    </effect-type>
+                </effects>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Sprite_MainCharacter_003_Ani_Idle_001" pingpong="0" repeatcount="1" repeatto="0" sid="5515302508263628" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                    </animation>
+                    <animation framecount="7" loop="0" name="Sprite_MainCharacter_003_Ani_Walk_001" pingpong="0" repeatcount="1" repeatto="0" sid="7533193196013456" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Sprite_MainCharacter_004" sid="5478632038348429">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Platform" sid="3342643671711908">
+                        <behavior id="Platform" />
+                    </behavior-type>
+                    <behavior-type name="Flash" sid="2936688402534768">
+                        <behavior id="Flash" />
+                    </behavior-type>
+                    <behavior-type name="ScrollTo" sid="2205028639657882">
+                        <behavior id="scrollto" />
+                    </behavior-type>
+                </behaviors>
+                <effects>
+                    <effect-type name="AdjustHSL">
+                        <effect id="hsladjust" />
+                    </effect-type>
+                </effects>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Sprite_MainCharacter_004_Ani_Idle_001" pingpong="0" repeatcount="1" repeatto="0" sid="5516472825512774" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                    </animation>
+                    <animation framecount="7" loop="0" name="Sprite_MainCharacter_004_Ani_Walk_001" pingpong="0" repeatcount="1" repeatto="0" sid="5734128594852823" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Sprite_MainCharacter_005" sid="9830738181350194">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Platform" sid="9192448100395242">
+                        <behavior id="Platform" />
+                    </behavior-type>
+                    <behavior-type name="Flash" sid="5340645621828886">
+                        <behavior id="Flash" />
+                    </behavior-type>
+                    <behavior-type name="Pin" sid="964467013020622">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                </behaviors>
+                <effects>
+                    <effect-type name="SetColor">
+                        <effect id="setcolor" />
+                    </effect-type>
+                </effects>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Sprite_MainCharacter_005_Ani_Idle_001" pingpong="0" repeatcount="1" repeatto="0" sid="2323532403815769" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0" />
+                    </animation>
+                    <animation framecount="7" loop="0" name="Sprite_MainCharacter_005_Ani_Walk_001" pingpong="0" repeatcount="1" repeatto="0" sid="9616507255487082" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Sprite_Text_FinalDialogue_001" sid="640603949775236">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="6423382088548116">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Sprite_Text_FinalDialogue_001_Ani_Dialogue_001" pingpong="0" repeatcount="1" repeatto="0" sid="7095456263221811" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ZiZo\Desktop\levels\level23\FRASES\fdf1.png">
+                            <collision-poly>
+                                <point x="0.475781" y="0.845833" />
+                                <point x="0.5" y="0.8125" />
+                                <point x="0.528906" y="0.8375" />
+                                <point x="0.5" y="0.866667" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Sprite_Text_FinalDialogue_002" sid="577563449807971">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="5514481467878958">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Sprite_Text_FinalDialogue_002_Ani_Dialogue_001" pingpong="0" repeatcount="1" repeatto="0" sid="2499993770490098" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ZiZo\Desktop\levels\level23\FRASES\fdf2-01.png">
+                            <collision-poly>
+                                <point x="0.5" y="0.795833" />
+                                <point x="0.515625" y="0.861111" />
+                                <point x="0.5" y="0.875" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Sprite_Trigger_Level_022_Go_Level_023" sid="1815776518623512">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Sprite_Trigger_Level_022_Go_Level_023_Ani_Idle_001" pingpong="0" repeatcount="1" repeatto="0" sid="1276695797952834" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Sprite_Trigger_LightningStart_002" sid="8857664151930298">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Sprite_Trigger_LightningStart_002_Ani_Idle_001" pingpong="0" repeatcount="1" repeatto="0" sid="8478739192611542" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Sprite_Trigger_LightningStart_003" sid="1264824702080694">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Sprite_Trigger_LightningStart_003_Ani_Idle_001" pingpong="0" repeatcount="1" repeatto="0" sid="8740494682201523" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     </animation>
                 </animation-folder>
@@ -14472,169 +14669,11 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="fase19" sid="9052807501363206">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4092053610806185" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.500694" original-source="C:\Users\ZiZo\Desktop\levels\level23\fase03-01.png">
-                        <collision-poly>
-                            <point x="0.00390625" y="0.00693481" />
-                            <point x="1" y="0" />
-                            <point x="1" y="1" />
-                            <point x="0" y="1" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="fase20" sid="9717003439323693">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7807434829550145" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ZiZo\Desktop\levels\level23\fase03-01-01.png">
-                        <collision-poly>
-                            <point x="0.00078125" y="0.00138889" />
-                            <point x="0.999219" y="0.00138889" />
-                            <point x="1" y="1" />
-                            <point x="0" y="1" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="fase21" sid="5981708971236889">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9898834922827584" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ZiZo\Desktop\levels\level23\fase03-012-01.png" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="raio1" sid="8857664151930298">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8478739192611542" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="raio2" sid="1264824702080694">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8740494682201523" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="personagen3" sid="5117144840369897">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Platform" sid="5484188152156195">
-                    <behavior id="Platform" />
-                </behavior-type>
-                <behavior-type name="Flash" sid="5491267181557147">
-                    <behavior id="Flash" />
-                </behavior-type>
-            </behaviors>
-            <effects>
-                <effect-type name="AdjustHSL">
-                    <effect id="hsladjust" />
-                </effect-type>
-            </effects>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="parado" pingpong="0" repeatcount="1" repeatto="0" sid="5515302508263628" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
-                </animation>
-                <animation framecount="7" loop="0" name="andando" pingpong="0" repeatcount="1" repeatto="0" sid="7533193196013456" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="personagen4" sid="5478632038348429">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Platform" sid="3342643671711908">
-                    <behavior id="Platform" />
-                </behavior-type>
-                <behavior-type name="Flash" sid="2936688402534768">
-                    <behavior id="Flash" />
-                </behavior-type>
-                <behavior-type name="ScrollTo" sid="2205028639657882">
-                    <behavior id="scrollto" />
-                </behavior-type>
-            </behaviors>
-            <effects>
-                <effect-type name="AdjustHSL">
-                    <effect id="hsladjust" />
-                </effect-type>
-            </effects>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="parado" pingpong="0" repeatcount="1" repeatto="0" sid="5516472825512774" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
-                </animation>
-                <animation framecount="7" loop="0" name="andando" pingpong="0" repeatcount="1" repeatto="0" sid="5734128594852823" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="personagen5" sid="9830738181350194">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Platform" sid="9192448100395242">
-                    <behavior id="Platform" />
-                </behavior-type>
-                <behavior-type name="Flash" sid="5340645621828886">
-                    <behavior id="Flash" />
-                </behavior-type>
-                <behavior-type name="Pin" sid="964467013020622">
-                    <behavior id="Pin" />
-                </behavior-type>
-            </behaviors>
-            <effects>
-                <effect-type name="SetColor">
-                    <effect id="setcolor" />
-                </effect-type>
-            </effects>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="parado" pingpong="0" repeatcount="1" repeatto="0" sid="2323532403815769" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" />
-                </animation>
-                <animation framecount="7" loop="0" name="andando" pingpong="0" repeatcount="1" repeatto="0" sid="9616507255487082" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="SemTítulo6" sid="3106023152857667">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4626955458621704" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ZiZo\Desktop\levels\level24\Sem título-1-01-01.png" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="irfase23" sid="1815776518623512">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1276695797952834" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -16417,45 +16456,6 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8940759394676807" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="fdf" sid="640603949775236">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Fade" sid="6423382088548116">
-                    <behavior id="Fade" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7095456263221811" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ZiZo\Desktop\levels\level23\FRASES\fdf1.png">
-                        <collision-poly>
-                            <point x="0.475781" y="0.845833" />
-                            <point x="0.5" y="0.8125" />
-                            <point x="0.528906" y="0.8375" />
-                            <point x="0.5" y="0.866667" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="fdf2" sid="577563449807971">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Fade" sid="5514481467878958">
-                    <behavior id="Fade" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2499993770490098" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ZiZo\Desktop\levels\level23\FRASES\fdf2-01.png">
-                        <collision-poly>
-                            <point x="0.5" y="0.795833" />
-                            <point x="0.515625" y="0.861111" />
-                            <point x="0.5" y="0.875" />
-                        </collision-poly>
-                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
