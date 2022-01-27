@@ -12,8 +12,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <open-tabs>
         <layout order="0">Level_024</layout>
         <layout order="2">Level_025</layout>
-        <layout active="1" order="3">Level_026</layout>
-        <layout order="4">Credits</layout>
+        <layout order="3">Level_026</layout>
+        <layout active="1" order="4">Credits</layout>
         <layout order="5">Level_023</layout>
         <layout order="6">Level_022</layout>
         <layout order="7">Level_021</layout>
@@ -29,7 +29,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="1" name="Configuration Settings" />
     </properties>
     <families-expanded root="1">
-        <family expanded="1" name="fdff" />
+        <family expanded="1" name="FamalyInstanceVariables" />
     </families-expanded>
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
@@ -37,8 +37,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/Video/" />
         <folder expanded="1" path="object-folder/Tiled Background/" />
         <folder expanded="1" path="layout-folder/" />
-        <folder expanded="1" path="event-folder/" />
-        <folder expanded="0" path="file-folder/" />
+        <folder expanded="0" path="event-folder/" />
+        <folder expanded="1" path="file-folder/" />
         <folder expanded="1" path="sound-folder/" />
         <folder expanded="0" path="music-folder/" />
         <folder expanded="1" path="file-folder/Icons/" />
@@ -276,6 +276,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Sprite_Trigger_ShowEndText_009/" />
         <folder expanded="1" path="animation-folder/Sprite_Trigger_ShowEndText_010/" />
         <folder expanded="1" path="animation-folder/Sprite_Trigger_ShowEndText_011/" />
+        <folder expanded="1" path="animation-folder/Sprite_RainEffect_002/" />
+        <folder expanded="1" path="animation-folder/Sprite_Text_Credits_CreditText_001/" />
+        <folder expanded="1" path="animation-folder/Sprite_Text_Credits_CreditText_002/" />
+        <folder expanded="1" path="animation-folder/Sprite_Text_Credits_CreditText_003/" />
+        <folder expanded="1" path="animation-folder/Sprite_Text_Credits_CreditText_004/" />
         <folder expanded="1" path="animation-folder/Sprite3/" />
         <folder expanded="1" path="animation-folder/curtina/" />
         <folder expanded="1" path="animation-folder/Sprite6/" />
@@ -332,13 +337,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/titulo/" />
         <folder expanded="1" path="animation-folder/titulo2/" />
         <folder expanded="1" path="animation-folder/somporta/" />
-        <folder expanded="1" path="animation-folder/Text_Credits_CreditText_02/" />
         <folder expanded="1" path="animation-folder/ff10/" />
         <folder expanded="1" path="animation-folder/ff11/" />
         <folder expanded="1" path="animation-folder/frzs1/" />
-        <folder expanded="1" path="animation-folder/Text_Credits_CreditText_01/" />
-        <folder expanded="1" path="animation-folder/Text_Credits_CreditText_03/" />
-        <folder expanded="1" path="animation-folder/Text_Credits_CreditText_04/" />
-        <folder expanded="1" path="animation-folder/RainEffect_02/" />
     </folders-expanded>
 </c2uistate>

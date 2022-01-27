@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Text_Credits_CreditText_02" uid="191">
+                <instance type="Sprite_Text_Credits_CreditText_002" uid="191">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -62,7 +62,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Text_Credits_CreditText_01" uid="336">
+                <instance type="Sprite_Text_Credits_CreditText_001" uid="336">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -96,7 +96,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Text_Credits_CreditText_03" uid="337">
+                <instance type="Sprite_Text_Credits_CreditText_003" uid="337">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -130,7 +130,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Text_Credits_CreditText_04" uid="338">
+                <instance type="Sprite_Text_Credits_CreditText_004" uid="338">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -163,7 +163,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="RainEffect_02" uid="340">
+                <instance type="Sprite_RainEffect_002" uid="340">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>

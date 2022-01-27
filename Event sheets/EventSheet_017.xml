@@ -8,7 +8,7 @@
                 <condition id="-2" name="On start of layout" sid="734826891773421" type="System" />
             </conditions>
             <actions>
-                <action behavior="Timer" id="0" name="Start timer" sid="1596779743955732" type="Text_Credits_CreditText_01">
+                <action behavior="Timer" id="0" name="Start timer" sid="1596779743955732" type="Sprite_Text_Credits_CreditText_001">
                     <param id="0" name="Duration">5.0</param>
                     <param id="1" name="Type">0</param>
                     <param id="2" name="Tag">&quot;in&quot;</param>
@@ -17,30 +17,30 @@
         </event-block>
         <event-block sid="1998296433168549">
             <conditions>
-                <condition behavior="Timer" id="0" name="On timer" sid="7428265328519279" type="Text_Credits_CreditText_01">
+                <condition behavior="Timer" id="0" name="On timer" sid="7428265328519279" type="Sprite_Text_Credits_CreditText_001">
                     <param id="0" name="Tag">&quot;in&quot;</param>
                 </condition>
             </conditions>
             <actions>
-                <action behavior="Fade" id="1" name="Start fade" sid="4706422506820001" type="Text_Credits_CreditText_01" />
-                <action behavior="Timer" id="0" name="Start timer" sid="8537619759851869" type="Text_Credits_CreditText_01">
+                <action behavior="Fade" id="1" name="Start fade" sid="4706422506820001" type="Sprite_Text_Credits_CreditText_001" />
+                <action behavior="Timer" id="0" name="Start timer" sid="8537619759851869" type="Sprite_Text_Credits_CreditText_001">
                     <param id="0" name="Duration">3.0</param>
                     <param id="1" name="Type">0</param>
                     <param id="2" name="Tag">&quot;fade&quot;</param>
                 </action>
-                <action id="-15" name="Set visible" sid="7801073853532102" type="Text_Credits_CreditText_01">
+                <action id="-15" name="Set visible" sid="7801073853532102" type="Sprite_Text_Credits_CreditText_001">
                     <param id="0" name="Visibility">1</param>
                 </action>
             </actions>
         </event-block>
         <event-block sid="4218922424038543">
             <conditions>
-                <condition behavior="Timer" id="0" name="On timer" sid="3250398434020504" type="Text_Credits_CreditText_01">
+                <condition behavior="Timer" id="0" name="On timer" sid="3250398434020504" type="Sprite_Text_Credits_CreditText_001">
                     <param id="0" name="Tag">&quot;fade&quot;</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="784724896363988" type="Text_Credits_CreditText_01">
+                <action id="4" name="Set animation" sid="784724896363988" type="Sprite_Text_Credits_CreditText_001">
                     <param id="0" name="Animation">&quot;Animation2&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -54,26 +54,26 @@
         </event-block>
         <event-block sid="9318317303356725">
             <conditions>
-                <condition id="4" name="On finished" sid="3514479534025735" type="Text_Credits_CreditText_01">
+                <condition id="4" name="On finished" sid="3514479534025735" type="Sprite_Text_Credits_CreditText_001">
                     <param id="0" name="Animation">&quot;Animation2&quot;</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-15" name="Set visible" sid="9891255968260216" type="Text_Credits_CreditText_01">
+                <action id="-15" name="Set visible" sid="9891255968260216" type="Sprite_Text_Credits_CreditText_001">
                     <param id="0" name="Visibility">0</param>
                 </action>
-                <action id="-15" name="Set visible" sid="7399436473518417" type="Text_Credits_CreditText_02">
+                <action id="-15" name="Set visible" sid="7399436473518417" type="Sprite_Text_Credits_CreditText_002">
                     <param id="0" name="Visibility">0</param>
                 </action>
-                <action id="-15" name="Set visible" sid="1416024305238596" type="Text_Credits_CreditText_03">
+                <action id="-15" name="Set visible" sid="1416024305238596" type="Sprite_Text_Credits_CreditText_003">
                     <param id="0" name="Visibility">1</param>
                 </action>
-                <action id="-15" name="Set visible" sid="3565187490412377" type="Text_Credits_CreditText_04">
+                <action id="-15" name="Set visible" sid="3565187490412377" type="Sprite_Text_Credits_CreditText_004">
                     <param id="0" name="Visibility">1</param>
                 </action>
-                <action behavior="Fade" id="1" name="Start fade" sid="4897490813132936" type="Text_Credits_CreditText_03" />
-                <action behavior="Fade" id="1" name="Start fade" sid="5182342933528918" type="Text_Credits_CreditText_04" />
-                <action behavior="Timer" id="0" name="Start timer" sid="9324266566507112" type="Text_Credits_CreditText_01">
+                <action behavior="Fade" id="1" name="Start fade" sid="4897490813132936" type="Sprite_Text_Credits_CreditText_003" />
+                <action behavior="Fade" id="1" name="Start fade" sid="5182342933528918" type="Sprite_Text_Credits_CreditText_004" />
+                <action behavior="Timer" id="0" name="Start timer" sid="9324266566507112" type="Sprite_Text_Credits_CreditText_001">
                     <param id="0" name="Duration">7.0</param>
                     <param id="1" name="Type">0</param>
                     <param id="2" name="Tag">&quot;cabo&quot;</param>
@@ -82,7 +82,7 @@
         </event-block>
         <event-block sid="7620183338075104">
             <conditions>
-                <condition behavior="Timer" id="0" name="On timer" sid="8189904621183394" type="Text_Credits_CreditText_01">
+                <condition behavior="Timer" id="0" name="On timer" sid="8189904621183394" type="Sprite_Text_Credits_CreditText_001">
                     <param id="0" name="Tag">&quot;cabo&quot;</param>
                 </condition>
             </conditions>
