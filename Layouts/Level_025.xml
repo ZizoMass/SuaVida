@@ -104,7 +104,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="level3" uid="1082">
+                <instance type="Sprite_BG_Bridge" uid="1082">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -197,7 +197,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="ponte" uid="1137">
+                <instance type="Sprite_Bridge" uid="1137">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>nada</initial-animation>
@@ -210,8 +210,8 @@
                         <x>640</x>
                         <y>360</y>
                         <z>0</z>
-                        <width>250</width>
-                        <height>250</height>
+                        <width>1280</width>
+                        <height>720</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -270,7 +270,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="mrt3" uid="1138">
+                <instance type="Sprite_Trigger_End_Jump" uid="1138">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -380,7 +380,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="irfase26" uid="1143">
+                <instance type="Sprite_Trigger_Level_025_Go_Level_026" uid="1143">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -402,7 +402,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="FDF7" uid="55">
+                <instance type="Sprite_Text_FinalDialogue_007" uid="55">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -435,7 +435,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="FDF8" uid="56">
+                <instance type="Sprite_Text_FinalDialogue_008" uid="56">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -502,7 +502,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="ruas1" uid="200">
+                <instance type="Sprite_Trigger_ShowEndText_005" uid="200">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -524,7 +524,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="ruas2" uid="254">
+                <instance type="Sprite_Trigger_ShowEndText_006" uid="254">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>

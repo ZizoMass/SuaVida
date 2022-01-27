@@ -11,8 +11,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">Level_024</layout>
-        <layout active="1" order="2">Level_025</layout>
-        <layout order="3">Level_026</layout>
+        <layout order="2">Level_025</layout>
+        <layout active="1" order="3">Level_026</layout>
         <layout order="4">Credits</layout>
         <layout order="5">Level_023</layout>
         <layout order="6">Level_022</layout>
@@ -250,6 +250,14 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Sprite_Trigger_Level_024_Go_Level_025/" />
         <folder expanded="1" path="animation-folder/Sprite_Trigger_ShowEndText_003/" />
         <folder expanded="1" path="animation-folder/Sprite_Trigger_ShowEndText_004/" />
+        <folder expanded="1" path="animation-folder/Sprite_BG_Bridge/" />
+        <folder expanded="1" path="animation-folder/Sprite_Bridge/" />
+        <folder expanded="1" path="animation-folder/Sprite_Text_FinalDialogue_007/" />
+        <folder expanded="1" path="animation-folder/Sprite_Text_FinalDialogue_008/" />
+        <folder expanded="1" path="animation-folder/Sprite_Trigger_End_Jump/" />
+        <folder expanded="1" path="animation-folder/Sprite_Trigger_Level_025_Go_Level_026/" />
+        <folder expanded="1" path="animation-folder/Sprite_Trigger_ShowEndText_005/" />
+        <folder expanded="1" path="animation-folder/Sprite_Trigger_ShowEndText_006/" />
         <folder expanded="1" path="animation-folder/Sprite3/" />
         <folder expanded="1" path="animation-folder/curtina/" />
         <folder expanded="1" path="animation-folder/Sprite6/" />
@@ -303,21 +311,15 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/fim/" />
         <folder expanded="1" path="animation-folder/comandos/" />
         <folder expanded="1" path="animation-folder/cima/" />
-        <folder expanded="1" path="animation-folder/level3/" />
         <folder expanded="1" path="animation-folder/level2/" />
         <folder expanded="1" path="animation-folder/acelera/" />
         <folder expanded="1" path="animation-folder/para/" />
-        <folder expanded="1" path="animation-folder/ponte/" />
-        <folder expanded="1" path="animation-folder/mrt3/" />
-        <folder expanded="1" path="animation-folder/irfase26/" />
         <folder expanded="1" path="animation-folder/queda/" />
         <folder expanded="1" path="animation-folder/quedapq/" />
         <folder expanded="1" path="animation-folder/mrt4/" />
         <folder expanded="1" path="animation-folder/titulo/" />
         <folder expanded="1" path="animation-folder/titulo2/" />
         <folder expanded="1" path="animation-folder/somporta/" />
-        <folder expanded="1" path="animation-folder/FDF7/" />
-        <folder expanded="1" path="animation-folder/FDF8/" />
         <folder expanded="1" path="animation-folder/fdf9/" />
         <folder expanded="1" path="animation-folder/fdf10/" />
         <folder expanded="1" path="animation-folder/FDF11/" />
@@ -327,8 +329,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/ff10/" />
         <folder expanded="1" path="animation-folder/ff11/" />
         <folder expanded="1" path="animation-folder/frzs1/" />
-        <folder expanded="1" path="animation-folder/ruas1/" />
-        <folder expanded="1" path="animation-folder/ruas2/" />
         <folder expanded="1" path="animation-folder/srt1/" />
         <folder expanded="1" path="animation-folder/srt2/" />
         <folder expanded="1" path="animation-folder/srt3/" />

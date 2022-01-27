@@ -677,7 +677,7 @@
         <event-block sid="9332224465856907">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="724905706995817" type="Sprite_MainCharacter_004">
-                    <param id="0" name="Object">ruas1</param>
+                    <param id="0" name="Object">Sprite_Trigger_ShowEndText_005</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="7040193850498802" type="System">
                     <param id="0" name="Variable">layout</param>
@@ -686,17 +686,17 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-9" name="Destroy" sid="8555846684160725" type="ruas1" />
-                <action id="-15" name="Set visible" sid="174477392031996" type="FDF7">
+                <action id="-9" name="Destroy" sid="8555846684160725" type="Sprite_Trigger_ShowEndText_005" />
+                <action id="-15" name="Set visible" sid="174477392031996" type="Sprite_Text_FinalDialogue_007">
                     <param id="0" name="Visibility">1</param>
                 </action>
-                <action behavior="Fade" id="1" name="Start fade" sid="7409047611921101" type="FDF7" />
+                <action behavior="Fade" id="1" name="Start fade" sid="7409047611921101" type="Sprite_Text_FinalDialogue_007" />
             </actions>
         </event-block>
         <event-block sid="2509694417686571">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="8583578188384915" type="Sprite_MainCharacter_004">
-                    <param id="0" name="Object">ruas2</param>
+                    <param id="0" name="Object">Sprite_Trigger_ShowEndText_006</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="9731212477654001" type="System">
                     <param id="0" name="Variable">layout</param>
@@ -705,11 +705,11 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-9" name="Destroy" sid="7468316059217296" type="ruas2" />
-                <action id="-15" name="Set visible" sid="6962098502467252" type="FDF8">
+                <action id="-9" name="Destroy" sid="7468316059217296" type="Sprite_Trigger_ShowEndText_006" />
+                <action id="-15" name="Set visible" sid="6962098502467252" type="Sprite_Text_FinalDialogue_008">
                     <param id="0" name="Visibility">1</param>
                 </action>
-                <action behavior="Fade" id="1" name="Start fade" sid="2913210068821097" type="FDF8" />
+                <action behavior="Fade" id="1" name="Start fade" sid="2913210068821097" type="Sprite_Text_FinalDialogue_008" />
             </actions>
         </event-block>
         <event-block sid="64917930802064">
@@ -892,7 +892,7 @@
         <event-block sid="3311787933185222">
             <conditions>
                 <condition id="1" name="Is overlapping another object" sid="1656215787453374" type="Sprite_MainCharacter_004">
-                    <param id="0" name="Object">mrt3</param>
+                    <param id="0" name="Object">Sprite_Trigger_End_Jump</param>
                 </condition>
             </conditions>
             <actions />
@@ -941,7 +941,7 @@
             <actions>
                 <action id="-9" name="Destroy" sid="5865744438515288" type="Sprite_MainCharacter_004" />
                 <action id="-9" name="Destroy" sid="8222520571400994" type="Sprite_MainCharacter_005" />
-                <action id="4" name="Set animation" sid="3733751290704032" type="ponte">
+                <action id="4" name="Set animation" sid="3733751290704032" type="Sprite_Bridge">
                     <param id="0" name="Animation">&quot;fim&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -957,8 +957,8 @@
         </event-block>
         <event-block sid="3937384446818159">
             <conditions>
-                <condition id="6" name="On frame changed" sid="4630359554422871" type="ponte" />
-                <condition id="3" name="Compare frame" sid="8680931572503917" type="ponte">
+                <condition id="6" name="On frame changed" sid="4630359554422871" type="Sprite_Bridge" />
+                <condition id="3" name="Compare frame" sid="8680931572503917" type="Sprite_Bridge">
                     <param id="0" name="Comparison">0</param>
                     <param id="1" name="Number">3</param>
                 </condition>
@@ -972,8 +972,8 @@
         </event-block>
         <event-block sid="1208644691208277">
             <conditions>
-                <condition id="6" name="On frame changed" sid="5555907438014751" type="ponte" />
-                <condition id="3" name="Compare frame" sid="4146091058313645" type="ponte">
+                <condition id="6" name="On frame changed" sid="5555907438014751" type="Sprite_Bridge" />
+                <condition id="3" name="Compare frame" sid="4146091058313645" type="Sprite_Bridge">
                     <param id="0" name="Comparison">0</param>
                     <param id="1" name="Number">10</param>
                 </condition>
@@ -987,8 +987,8 @@
         </event-block>
         <event-block sid="1998442956078056">
             <conditions>
-                <condition id="6" name="On frame changed" sid="3434747945837965" type="ponte" />
-                <condition id="3" name="Compare frame" sid="6092870303960345" type="ponte">
+                <condition id="6" name="On frame changed" sid="3434747945837965" type="Sprite_Bridge" />
+                <condition id="3" name="Compare frame" sid="6092870303960345" type="Sprite_Bridge">
                     <param id="0" name="Comparison">0</param>
                     <param id="1" name="Number">20</param>
                 </condition>
@@ -1002,8 +1002,8 @@
         </event-block>
         <event-block sid="6271598456272268">
             <conditions>
-                <condition id="6" name="On frame changed" sid="1836495810323971" type="ponte" />
-                <condition id="3" name="Compare frame" sid="5373534281001552" type="ponte">
+                <condition id="6" name="On frame changed" sid="1836495810323971" type="Sprite_Bridge" />
+                <condition id="3" name="Compare frame" sid="5373534281001552" type="Sprite_Bridge">
                     <param id="0" name="Comparison">0</param>
                     <param id="1" name="Number">29</param>
                 </condition>
@@ -1017,8 +1017,8 @@
         </event-block>
         <event-block sid="9716729871966558">
             <conditions>
-                <condition id="6" name="On frame changed" sid="2421648865548536" type="ponte" />
-                <condition id="3" name="Compare frame" sid="7274971327278409" type="ponte">
+                <condition id="6" name="On frame changed" sid="2421648865548536" type="Sprite_Bridge" />
+                <condition id="3" name="Compare frame" sid="7274971327278409" type="Sprite_Bridge">
                     <param id="0" name="Comparison">0</param>
                     <param id="1" name="Number">29</param>
                 </condition>
@@ -1032,7 +1032,7 @@
         </event-block>
         <event-block sid="1975981618417005">
             <conditions>
-                <condition id="4" name="On finished" sid="6028996299502998" type="ponte">
+                <condition id="4" name="On finished" sid="6028996299502998" type="Sprite_Bridge">
                     <param id="0" name="Animation">&quot;fim&quot;</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="229322288577563" type="System">
@@ -1080,7 +1080,7 @@
         <event-block sid="5355101337654995">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="5241105968654951" type="Sprite_MainCharacter_004">
-                    <param id="0" name="Object">irfase26</param>
+                    <param id="0" name="Object">Sprite_Trigger_Level_025_Go_Level_026</param>
                 </condition>
             </conditions>
             <actions>
@@ -1370,13 +1370,13 @@
         </event-block>
         <event-block sid="5495640434787957">
             <conditions>
-                <condition id="2" name="Is playing" sid="6719470976668901" type="ponte">
+                <condition id="2" name="Is playing" sid="6719470976668901" type="Sprite_Bridge">
                     <param id="0" name="Animation">&quot;fim&quot;</param>
                 </condition>
                 <condition id="5" inverted="1" name="Is tag playing" sid="3609846123118141" type="Audio">
                     <param id="0" name="Tag">&quot;alma&quot;</param>
                 </condition>
-                <condition id="3" name="Compare frame" sid="1517227011044318" type="ponte">
+                <condition id="3" name="Compare frame" sid="1517227011044318" type="Sprite_Bridge">
                     <param id="0" name="Comparison">0</param>
                     <param id="1" name="Number">31</param>
                 </condition>
@@ -1480,13 +1480,13 @@
         </event-block>
         <event-block sid="6795230616784732">
             <conditions>
-                <condition id="2" name="Is playing" sid="7800739216328745" type="ponte">
+                <condition id="2" name="Is playing" sid="7800739216328745" type="Sprite_Bridge">
                     <param id="0" name="Animation">&quot;fim&quot;</param>
                 </condition>
                 <condition id="5" inverted="1" name="Is tag playing" sid="6973756003170437" type="Audio">
                     <param id="0" name="Tag">&quot;drama&quot;</param>
                 </condition>
-                <condition id="3" name="Compare frame" sid="9793421822178426" type="ponte">
+                <condition id="3" name="Compare frame" sid="9793421822178426" type="Sprite_Bridge">
                     <param id="0" name="Comparison">2</param>
                     <param id="1" name="Number">28</param>
                 </condition>
@@ -1652,7 +1652,7 @@
             <sub-events>
                 <event-block sid="2254779494761861">
                     <conditions>
-                        <condition id="4" name="On finished" sid="6519734458257794" type="ponte">
+                        <condition id="4" name="On finished" sid="6519734458257794" type="Sprite_Bridge">
                             <param id="0" name="Animation">&quot;fim&quot;</param>
                         </condition>
                     </conditions>
