@@ -1472,7 +1472,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="finzes" uid="189">
+                <instance type="Sprite_EndFadeOut_Black" uid="189">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>

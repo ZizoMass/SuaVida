@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="SemTítulo6" uid="1065">
+                <instance type="Sprite_BG_End_Tree" uid="1065">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -51,7 +51,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="forca" uid="1123">
+                <instance type="Sprite_Rope_002" uid="1123">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>nada</initial-animation>
@@ -64,8 +64,8 @@
                         <x>640</x>
                         <y>360</y>
                         <z>0</z>
-                        <width>250</width>
-                        <height>250</height>
+                        <width>1280</width>
+                        <height>720</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -73,7 +73,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="forcapc" uid="1124">
+                <instance type="Sprite_Rope_003" uid="1124">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>nada</initial-animation>
@@ -95,8 +95,8 @@
                         <x>640</x>
                         <y>360</y>
                         <z>0</z>
-                        <width>250</width>
-                        <height>250</height>
+                        <width>1280</width>
+                        <height>720</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -104,7 +104,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="corda" uid="1122">
+                <instance type="Sprite_Rope_001" uid="1122">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -279,7 +279,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="mrt1" uid="1125">
+                <instance type="Sprite_Trigger_End_Rope" uid="1125">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -301,7 +301,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="irfase24" uid="1072">
+                <instance type="Sprite_Trigger_Level_023_Go_Level_024" uid="1072">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -389,7 +389,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="fdf3" uid="46">
+                <instance type="Sprite_Text_FinalDialogue_003" uid="46">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -422,7 +422,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="fdf4" uid="48">
+                <instance type="Sprite_Text_FinalDialogue_004" uid="48">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -477,7 +477,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="finzes" uid="195">
+                <instance type="Sprite_EndFadeOut_Black" uid="195">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
