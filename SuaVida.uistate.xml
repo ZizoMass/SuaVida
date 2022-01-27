@@ -10,47 +10,16 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">MainMenu</layout>
-        <layout order="1">Level_001</layout>
-        <layout order="2">Level_002</layout>
-        <layout order="3">Level_003</layout>
-        <layout order="4">Level_004</layout>
-        <layout order="5">Level_005</layout>
-        <layout order="6">Level_006</layout>
-        <layout order="7">Level_007</layout>
-        <layout order="9">Level_017</layout>
-        <layout order="10">Level_015</layout>
-        <layout order="12">Level_010</layout>
-        <layout order="13">Level_009</layout>
-        <layout order="14">Level_011</layout>
-        <layout order="15">Level_019</layout>
-        <layout order="16">Level_018</layout>
-        <layout order="19">Level_013</layout>
-        <layout order="33">Level_008</layout>
-        <layout order="34">Level_012</layout>
-        <layout order="35">Level_014</layout>
-        <layout order="36">Level_016</layout>
-        <layout order="37">Level_020</layout>
-        <layout order="38">Level_021</layout>
-        <layout order="39">Level_022</layout>
-        <layout order="40">Level_023</layout>
-        <event-sheet order="8">EventSheet_006</event-sheet>
-        <event-sheet order="11">EventSheet_010</event-sheet>
-        <event-sheet order="17">EventSheet_001</event-sheet>
-        <event-sheet order="18">EventSheet_002</event-sheet>
-        <event-sheet order="20">EventSheet_003</event-sheet>
-        <event-sheet order="21">EventSheet_004</event-sheet>
-        <event-sheet order="22">EventSheet_005</event-sheet>
-        <event-sheet order="23">EventSheet_007</event-sheet>
-        <event-sheet order="24">EventSheet_008</event-sheet>
-        <event-sheet order="25">EventSheet_009</event-sheet>
-        <event-sheet order="26">EventSheet_011</event-sheet>
-        <event-sheet order="27">EventSheet_012</event-sheet>
-        <event-sheet order="28">EventSheet_013</event-sheet>
-        <event-sheet order="29">EventSheet_014</event-sheet>
-        <event-sheet order="30">EventSheet_015</event-sheet>
-        <event-sheet active="1" order="31">EventSheet_016</event-sheet>
-        <event-sheet order="32">EventSheet_017</event-sheet>
+        <layout order="0">Level_024</layout>
+        <layout active="1" order="2">Level_025</layout>
+        <layout order="3">Level_026</layout>
+        <layout order="4">Credits</layout>
+        <layout order="5">Level_023</layout>
+        <layout order="6">Level_022</layout>
+        <layout order="7">Level_021</layout>
+        <layout order="8">Level_020</layout>
+        <layout order="9">Level_019</layout>
+        <event-sheet order="1">EventSheet_016</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -259,8 +228,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Sprite_Text_FinalDialogue_001/" />
         <folder expanded="1" path="animation-folder/Sprite_Text_FinalDialogue_002/" />
         <folder expanded="1" path="animation-folder/Sprite_Trigger_Level_022_Go_Level_023/" />
-        <folder expanded="1" path="animation-folder/Sprite_Trigger_LightningStart_002/" />
-        <folder expanded="1" path="animation-folder/Sprite_Trigger_LightningStart_003/" />
+        <folder expanded="1" path="animation-folder/Sprite_Trigger_ShowEndText_001/" />
+        <folder expanded="1" path="animation-folder/Sprite_Trigger_ShowEndText_002/" />
         <folder expanded="1" path="animation-folder/Sprite_BG_End_Tree/" />
         <folder expanded="1" path="animation-folder/Sprite_EndFadeOut_Black/" />
         <folder expanded="1" path="animation-folder/Sprite_Rope_001/" />
@@ -270,6 +239,17 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Sprite_Text_FinalDialogue_004/" />
         <folder expanded="1" path="animation-folder/Sprite_Trigger_End_Rope/" />
         <folder expanded="1" path="animation-folder/Sprite_Trigger_Level_023_Go_Level_024/" />
+        <folder expanded="1" path="animation-folder/Sprite_Gun_001/" />
+        <folder expanded="1" path="animation-folder/Sprite_Gun_002/" />
+        <folder expanded="1" path="animation-folder/Sprite_Gun_003/" />
+        <folder expanded="1" path="animation-folder/Sprite_Text_FinalDialogue_005/" />
+        <folder expanded="1" path="animation-folder/Sprite_Text_FinalDialogue_006/" />
+        <folder expanded="1" path="animation-folder/Sprite_BG_End_Office/" />
+        <folder expanded="1" path="animation-folder/Sprite_BG_Red_Mask/" />
+        <folder expanded="1" path="animation-folder/Sprite_Trigger_End_Gun/" />
+        <folder expanded="1" path="animation-folder/Sprite_Trigger_Level_024_Go_Level_025/" />
+        <folder expanded="1" path="animation-folder/Sprite_Trigger_ShowEndText_003/" />
+        <folder expanded="1" path="animation-folder/Sprite_Trigger_ShowEndText_004/" />
         <folder expanded="1" path="animation-folder/Sprite3/" />
         <folder expanded="1" path="animation-folder/curtina/" />
         <folder expanded="1" path="animation-folder/Sprite6/" />
@@ -323,17 +303,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/fim/" />
         <folder expanded="1" path="animation-folder/comandos/" />
         <folder expanded="1" path="animation-folder/cima/" />
-        <folder expanded="1" path="animation-folder/Sprite35/" />
         <folder expanded="1" path="animation-folder/level3/" />
-        <folder expanded="1" path="animation-folder/irfase25/" />
-        <folder expanded="1" path="animation-folder/level4/" />
         <folder expanded="1" path="animation-folder/level2/" />
         <folder expanded="1" path="animation-folder/acelera/" />
         <folder expanded="1" path="animation-folder/para/" />
-        <folder expanded="1" path="animation-folder/arma/" />
-        <folder expanded="1" path="animation-folder/tiro/" />
-        <folder expanded="1" path="animation-folder/tiropq/" />
-        <folder expanded="1" path="animation-folder/mrt2/" />
         <folder expanded="1" path="animation-folder/ponte/" />
         <folder expanded="1" path="animation-folder/mrt3/" />
         <folder expanded="1" path="animation-folder/irfase26/" />
@@ -343,8 +316,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/titulo/" />
         <folder expanded="1" path="animation-folder/titulo2/" />
         <folder expanded="1" path="animation-folder/somporta/" />
-        <folder expanded="1" path="animation-folder/FDF5/" />
-        <folder expanded="1" path="animation-folder/FDF6/" />
         <folder expanded="1" path="animation-folder/FDF7/" />
         <folder expanded="1" path="animation-folder/FDF8/" />
         <folder expanded="1" path="animation-folder/fdf9/" />
@@ -356,8 +327,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/ff10/" />
         <folder expanded="1" path="animation-folder/ff11/" />
         <folder expanded="1" path="animation-folder/frzs1/" />
-        <folder expanded="1" path="animation-folder/flsa01/" />
-        <folder expanded="1" path="animation-folder/flsa02/" />
         <folder expanded="1" path="animation-folder/ruas1/" />
         <folder expanded="1" path="animation-folder/ruas2/" />
         <folder expanded="1" path="animation-folder/srt1/" />

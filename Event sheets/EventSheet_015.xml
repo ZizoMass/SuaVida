@@ -439,7 +439,7 @@
         <event-block sid="2612887758901298">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="9720639961264608" type="Sprite_MainCharacter_002">
-                    <param id="0" name="Object">Sprite_Trigger_LightningStart_002</param>
+                    <param id="0" name="Object">Sprite_Trigger_ShowEndText_001</param>
                 </condition>
             </conditions>
             <actions>
@@ -482,7 +482,7 @@
         <event-block sid="9753773896656568">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="5955953704797973" type="Sprite_MainCharacter_002">
-                    <param id="0" name="Object">Sprite_Trigger_LightningStart_003</param>
+                    <param id="0" name="Object">Sprite_Trigger_ShowEndText_002</param>
                 </condition>
             </conditions>
             <actions>

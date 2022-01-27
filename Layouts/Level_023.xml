@@ -345,7 +345,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite_Trigger_LightningStart_002" uid="1127">
+                <instance type="Sprite_Trigger_ShowEndText_001" uid="1127">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -367,7 +367,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite_Trigger_LightningStart_003" uid="1128">
+                <instance type="Sprite_Trigger_ShowEndText_002" uid="1128">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -455,7 +455,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite_Trigger_LightningStart_002" uid="49">
+                <instance type="Sprite_Trigger_ShowEndText_001" uid="49">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>

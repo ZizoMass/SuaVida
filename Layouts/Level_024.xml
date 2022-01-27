@@ -15,7 +15,7 @@
     <layers>
         <layer name="Layer 0" sid="1626488914119944">
             <initially-visible>1</initially-visible>
-            <background-color>255,255,255</background-color>
+            <background-color>90,0,0</background-color>
             <transparent>0</transparent>
             <parallax>
                 <x>1</x>
@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Sprite35" uid="1074">
+                <instance type="Sprite_BG_Red_Mask" uid="1074">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -51,7 +51,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="level4" uid="1091">
+                <instance type="Sprite_BG_End_Office" uid="1091">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -131,7 +131,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="arma" uid="1129">
+                <instance type="Sprite_Gun_001" uid="1129">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -277,7 +277,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite35" uid="1081">
+                <instance type="Sprite_BG_Red_Mask" uid="1081">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -299,7 +299,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="tiro" uid="1130">
+                <instance type="Sprite_Gun_002" uid="1130">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>nada</initial-animation>
@@ -312,8 +312,8 @@
                         <x>640</x>
                         <y>360</y>
                         <z>0</z>
-                        <width>250</width>
-                        <height>250</height>
+                        <width>1280</width>
+                        <height>720</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -321,7 +321,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="tiropq" uid="1131">
+                <instance type="Sprite_Gun_003" uid="1131">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>nada</initial-animation>
@@ -343,8 +343,8 @@
                         <x>640</x>
                         <y>360</y>
                         <z>0</z>
-                        <width>250</width>
-                        <height>250</height>
+                        <width>1280</width>
+                        <height>720</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -374,7 +374,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="irfase25" uid="1090">
+                <instance type="Sprite_Trigger_Level_024_Go_Level_025" uid="1090">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -396,7 +396,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="mrt2" uid="1132">
+                <instance type="Sprite_Trigger_End_Gun" uid="1132">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -440,7 +440,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite_Trigger_LightningStart_003" uid="1134">
+                <instance type="Sprite_Trigger_ShowEndText_002" uid="1134">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -462,7 +462,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite_Trigger_LightningStart_002" uid="1135">
+                <instance type="Sprite_Trigger_ShowEndText_001" uid="1135">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -484,7 +484,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite_Trigger_LightningStart_002" uid="1136">
+                <instance type="Sprite_Trigger_ShowEndText_001" uid="1136">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -506,7 +506,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="FDF5" uid="50">
+                <instance type="Sprite_Text_FinalDialogue_005" uid="50">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -539,7 +539,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="FDF6" uid="52">
+                <instance type="Sprite_Text_FinalDialogue_006" uid="52">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -606,7 +606,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="flsa01" uid="198">
+                <instance type="Sprite_Trigger_ShowEndText_003" uid="198">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -628,7 +628,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="flsa02" uid="199">
+                <instance type="Sprite_Trigger_ShowEndText_004" uid="199">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
