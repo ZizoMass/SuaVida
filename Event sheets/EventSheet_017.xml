@@ -41,7 +41,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="784724896363988" type="Sprite_Text_Credits_CreditText_001">
-                    <param id="0" name="Animation">&quot;Animation2&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Text_Credits_CreditText_001_Ani_GlitchTransition_001&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
                 <action id="0" name="Play" sid="8044637839514466" type="Audio">
@@ -55,7 +55,7 @@
         <event-block sid="9318317303356725">
             <conditions>
                 <condition id="4" name="On finished" sid="3514479534025735" type="Sprite_Text_Credits_CreditText_001">
-                    <param id="0" name="Animation">&quot;Animation2&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Text_Credits_CreditText_001_Ani_GlitchTransition_001&quot;</param>
                 </condition>
             </conditions>
             <actions>
@@ -104,8 +104,8 @@
             <actions>
                 <action id="33" name="Stop all" sid="1415207297137937" type="Audio" />
                 <action id="-21" name="Reset global variables" sid="3995689872102981" type="System" />
-                <action id="-25" name="Go to layout (by name)" sid="2945875918130041" type="System">
-                    <param id="0" name="Layout">&quot;inicio&quot;</param>
+                <action id="-2" name="Go to layout" sid="2945875918130041" type="System">
+                    <param id="0" name="Layout">MainMenu</param>
                 </action>
             </actions>
         </event-block>

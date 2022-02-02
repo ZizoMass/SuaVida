@@ -3,10 +3,10 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>EventSheet_001</name>
     <events>
-        <variable constant="0" name="layout" sid="4526098781896856" static="0" type="number">0</variable>
-        <variable constant="0" name="alarmeligdesl" sid="1973978356182805" static="0" type="number">0</variable>
-        <variable constant="0" name="espaço" sid="5051248682840914" static="0" type="number">0</variable>
-        <variable constant="0" name="alarme" sid="5772218289386508" static="0" type="number">0</variable>
+        <variable constant="0" name="Layout" sid="4526098781896856" static="0" type="number">0</variable>
+        <variable constant="0" name="AlarmOff" sid="1973978356182805" static="0" type="number">0</variable>
+        <variable constant="0" name="SpacePress" sid="5051248682840914" static="0" type="number">0</variable>
+        <variable constant="0" name="Alarm" sid="5772218289386508" static="0" type="number">0</variable>
         <event-block sid="3849931692377699">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="2700941355785861" type="System" />
@@ -15,8 +15,8 @@
                 <action behavior="Fade" id="1" name="Start fade" sid="8978862339417059" type="Sprite_Logo" />
                 <action behavior="Fade" id="1" name="Start fade" sid="4981822258835582" type="Sprite_Text_MainMenuOptions" />
                 <action id="7" name="Play (by name)" sid="8977618071133539" type="Audio">
-                    <param id="0" name="Folder">0</param>
-                    <param id="1" name="Audio file name">&quot;intro&quot;</param>
+                    <param id="0" name="Folder">1</param>
+                    <param id="1" name="Audio file name">&quot;MX_MainTheme&quot;</param>
                     <param id="3" name="Loop">1</param>
                     <param id="4" name="Volume">20</param>
                     <param id="2" name="Tag (optional)">&quot;int&quot;</param>
@@ -31,7 +31,7 @@
         <event-block sid="5898592954792268">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="8921695406411779" type="System">
-                    <param id="0" name="Variable">espaço</param>
+                    <param id="0" name="Variable">SpacePress</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">1</param>
                 </condition>
@@ -61,7 +61,7 @@
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                         <action id="-9" name="Set value" sid="9782957432461604" type="System">
-                            <param id="0" name="Variable">espaço</param>
+                            <param id="0" name="Variable">SpacePress</param>
                             <param id="1" name="Value">2</param>
                         </action>
                     </actions>
@@ -90,19 +90,19 @@
                     <param id="0" name="Tag">&quot;alr&quot;</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="1329837063870328" type="System">
-                    <param id="0" name="Variable">alarmeligdesl</param>
+                    <param id="0" name="Variable">AlarmOff</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">0</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="3680233233573486" type="System">
-                    <param id="0" name="Variable">alarme</param>
+                    <param id="0" name="Variable">Alarm</param>
                     <param id="1" name="Comparison">2</param>
                     <param id="2" name="Value">7</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="-10" name="Add to" sid="1551179730197033" type="System">
-                    <param id="0" name="Variable">alarme</param>
+                    <param id="0" name="Variable">Alarm</param>
                     <param id="1" name="Value">1</param>
                 </action>
                 <action id="0" name="Play" sid="6458277224404804" type="Audio">
@@ -116,14 +116,14 @@
         <event-block sid="1599438198758251">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="8914999142759113" type="System">
-                    <param id="0" name="Variable">alarme</param>
+                    <param id="0" name="Variable">Alarm</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">1</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="5479847880922806" type="Sprite_Logo">
-                    <param id="0" name="Animation">&quot;a2&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Logo_Ani_Start_002&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -131,14 +131,14 @@
         <event-block sid="742717414566394">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="8921347754319348" type="System">
-                    <param id="0" name="Variable">alarme</param>
+                    <param id="0" name="Variable">Alarm</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">2</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="8035428724204674" type="Sprite_Logo">
-                    <param id="0" name="Animation">&quot;a3&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Logo_Ani_Start_003&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -146,14 +146,14 @@
         <event-block sid="9003563457972817">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="305844951009456" type="System">
-                    <param id="0" name="Variable">alarme</param>
+                    <param id="0" name="Variable">Alarm</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">3</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="4620339688266913" type="Sprite_Logo">
-                    <param id="0" name="Animation">&quot;a4&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Logo_Ani_Start_004&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -161,14 +161,14 @@
         <event-block sid="4679063200060622">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="5394601386769507" type="System">
-                    <param id="0" name="Variable">alarme</param>
+                    <param id="0" name="Variable">Alarm</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">4</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="5707524135035371" type="Sprite_Logo">
-                    <param id="0" name="Animation">&quot;a5&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Logo_Ani_Start_005&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -176,14 +176,14 @@
         <event-block sid="7007006433628342">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="3223302958438811" type="System">
-                    <param id="0" name="Variable">alarme</param>
+                    <param id="0" name="Variable">Alarm</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">5</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="2367495054683482" type="Sprite_Logo">
-                    <param id="0" name="Animation">&quot;a6&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Logo_Ani_Start_006&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -191,14 +191,14 @@
         <event-block sid="6124020006271151">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="3086214356264057" type="System">
-                    <param id="0" name="Variable">alarme</param>
+                    <param id="0" name="Variable">Alarm</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">6</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="5679465672960446" type="Sprite_Logo">
-                    <param id="0" name="Animation">&quot;a7&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Logo_Ani_Start_007&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -206,7 +206,7 @@
         <event-block sid="5024538348525749">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="8806701875804773" type="System">
-                    <param id="0" name="Variable">alarme</param>
+                    <param id="0" name="Variable">Alarm</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">7</param>
                 </condition>
@@ -216,7 +216,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="7559039220208704" type="Sprite_Logo">
-                    <param id="0" name="Animation">&quot;a8&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Logo_Ani_Start_008&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
                 <action id="0" name="Play" sid="7606138685717531" type="Audio">
@@ -235,7 +235,7 @@
             </conditions>
             <actions>
                 <action id="-9" name="Set value" sid="7274443773920239" type="System">
-                    <param id="0" name="Variable">espaço</param>
+                    <param id="0" name="Variable">SpacePress</param>
                     <param id="1" name="Value">1</param>
                 </action>
             </actions>
@@ -243,7 +243,7 @@
         <event-block sid="6625387904677815">
             <conditions>
                 <condition id="4" name="On finished" sid="5016143332202055" type="Sprite_Logo">
-                    <param id="0" name="Animation">&quot;a8&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Logo_Ani_Start_008&quot;</param>
                 </condition>
             </conditions>
             <actions>
@@ -251,7 +251,7 @@
                     <param id="0" name="Layout">Level_001</param>
                 </action>
                 <action id="-9" name="Set value" sid="5016639882876382" type="System">
-                    <param id="0" name="Variable">layout</param>
+                    <param id="0" name="Variable">Layout</param>
                     <param id="1" name="Value">1</param>
                 </action>
                 <action id="-9" name="Set value" sid="8093528220988382" type="System">
@@ -262,7 +262,7 @@
                     <param id="0" name="Variable">SpanwY</param>
                     <param id="1" name="Value">472.643</param>
                 </action>
-                <action id="-15" name="Set visible" sid="3373855242565041" type="Level_001_Text_PlayerRoom_GameTutorial">
+                <action id="-15" name="Set visible" sid="3373855242565041" type="Sprite_Text_PlayerRoom_GameTutorial">
                     <param id="0" name="Visibility">1</param>
                 </action>
             </actions>

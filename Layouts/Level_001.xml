@@ -449,7 +449,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Level_001_Text_PlayerRoom_GameTutorial" uid="20">
+                <instance type="Sprite_Text_PlayerRoom_GameTutorial" uid="20">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>

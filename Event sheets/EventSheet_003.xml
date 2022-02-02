@@ -3,6 +3,24 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>EventSheet_003</name>
     <events>
+        <event-block sid="2645125155009018">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="2380197584848093" type="System" />
+                <condition id="-14" name="Compare variable" sid="8148429239522236" type="System">
+                    <param id="0" name="Variable">Layout</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="8403746449982396" type="Audio">
+                    <param id="0" name="Audio file">BG_HeavyTraffic_001</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;amb3&quot;</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="8353075988920701">
             <conditions>
                 <condition id="1" name="Is overlapping another object" sid="2095470965781906" type="Sprite_MainCharacter_001">
@@ -49,7 +67,7 @@
                             <param id="1" name="Value">0</param>
                         </action>
                         <action id="-9" name="Set value" sid="8900421802230407" type="System">
-                            <param id="0" name="Variable">layout</param>
+                            <param id="0" name="Variable">Layout</param>
                             <param id="1" name="Value">2</param>
                         </action>
                         <action id="0" name="Play" sid="8001345758922345" type="Audio">
@@ -71,7 +89,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="1637181635610455" type="Sprite_MainCharacter_001">
-                    <param id="0" name="Animation">&quot;caminhando&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_MainCharacter_001_Ani_Walk_001&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -82,7 +100,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="983050440290011" type="Sprite_MainCharacter_001">
-                    <param id="0" name="Animation">&quot;parado&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_MainCharacter_001_Ani_Idle_001&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -140,7 +158,7 @@
                     </conditions>
                     <actions>
                         <action id="4" name="Set animation" sid="5547615790185178" type="Sprite_PlayerCar_001">
-                            <param id="0" name="Animation">&quot;desligado&quot;</param>
+                            <param id="0" name="Animation">&quot;Sprite_PlayerCar_001_Ani_MotorOff_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                         <action id="-9" name="Destroy" sid="4437621826964222" type="Sprite_MainCharacter_001" />
@@ -219,7 +237,7 @@
                                     <actions>
                                         <action id="7" name="Play (by name)" sid="521252876554471" type="Audio">
                                             <param id="0" name="Folder">0</param>
-                                            <param id="1" name="Audio file name">choose(&quot;ptd1&quot;,&quot;ptd2&quot;,&quot;ptd3&quot;,&quot;ptd4&quot;) </param>
+                                            <param id="1" name="Audio file name">choose(&quot;SFX_CarIgnitionAttempt_001&quot;,&quot;SFX_CarIgnitionAttempt_002&quot;,&quot;SFX_CarIgnitionAttempt_003&quot;,&quot;SFX_CarIgnitionAttempt_004&quot;)</param>
                                             <param id="3" name="Loop">0</param>
                                             <param id="4" name="Volume">-9</param>
                                             <param id="2" name="Tag (optional)">&quot;ptc&quot;</param>
@@ -343,7 +361,7 @@
                             </conditions>
                             <actions>
                                 <action id="4" name="Set animation" sid="5016197835315622" type="Sprite_PlayerCar_001">
-                                    <param id="0" name="Animation">&quot;andando&quot;</param>
+                                    <param id="0" name="Animation">&quot;Sprite_PlayerCar_001_Ani_Moving_001&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
                             </actions>
@@ -354,7 +372,7 @@
                             </conditions>
                             <actions>
                                 <action id="4" name="Set animation" sid="8106961752008249" type="Sprite_PlayerCar_001">
-                                    <param id="0" name="Animation">&quot;ligado&quot;</param>
+                                    <param id="0" name="Animation">&quot;Sprite_PlayerCar_001_Ani_MotorOn_001&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
                             </actions>
@@ -362,24 +380,6 @@
                     </sub-events>
                 </event-block>
             </sub-events>
-        </event-block>
-        <event-block sid="2645125155009018">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="2380197584848093" type="System" />
-                <condition id="-14" name="Compare variable" sid="8148429239522236" type="System">
-                    <param id="0" name="Variable">layout</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">3</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="0" name="Play" sid="8403746449982396" type="Audio">
-                    <param id="0" name="Audio file">BG_HeavyTraffic_001</param>
-                    <param id="2" name="Loop">1</param>
-                    <param id="3" name="Volume">-10</param>
-                    <param id="1" name="Tag (optional)">&quot;amb3&quot;</param>
-                </action>
-            </actions>
         </event-block>
         <event-block sid="2858378115586875">
             <conditions>
@@ -517,11 +517,11 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-25" name="Go to layout (by name)" sid="694483719199669" type="System">
-                    <param id="0" name="Layout">&quot;fase04&quot;</param>
+                <action id="-2" name="Go to layout" sid="694483719199669" type="System">
+                    <param id="0" name="Layout">Level_004</param>
                 </action>
                 <action id="-9" name="Set value" sid="8459461123134751" type="System">
-                    <param id="0" name="Variable">layout</param>
+                    <param id="0" name="Variable">Layout</param>
                     <param id="1" name="Value">4</param>
                 </action>
                 <action id="6" name="Stop" sid="5042870509981775" type="Audio">
@@ -550,8 +550,8 @@
             <actions>
                 <action id="33" name="Stop all" sid="3405059938544532" type="Audio" />
                 <action id="-21" name="Reset global variables" sid="710043123523006" type="System" />
-                <action id="-25" name="Go to layout (by name)" sid="8227064955227698" type="System">
-                    <param id="0" name="Layout">&quot;inicio&quot;</param>
+                <action id="-2" name="Go to layout" sid="8227064955227698" type="System">
+                    <param id="0" name="Layout">MainMenu</param>
                 </action>
             </actions>
         </event-block>

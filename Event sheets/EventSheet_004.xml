@@ -127,7 +127,7 @@
                     <param id="2" name="Image point">0</param>
                 </action>
                 <action id="4" name="Set animation" sid="5971213478215928" type="Sprite_CityCarNPC">
-                    <param id="0" name="Animation">choose(&quot;car1&quot;,&quot;car2&quot;,&quot;car3&quot;,&quot;car4&quot;,&quot;car5&quot;,&quot;car6&quot;,&quot;car7&quot;)</param>
+                    <param id="0" name="Animation">choose(&quot;Sprite_CityCarNPC_Ani_Style_002&quot;,&quot;Sprite_CityCarNPC_Ani_Style_003&quot;,&quot;Sprite_CityCarNPC_Ani_Style_004&quot;,&quot;Sprite_CityCarNPC_Ani_Style_005&quot;,&quot;Sprite_CityCarNPC_Ani_Style_006&quot;,&quot;Sprite_CityCarNPC_Ani_Style_007&quot;,&quot;Sprite_CityCarNPC_Ani_Style_008&quot;)</param>
                     <param id="1" name="From">1</param>
                 </action>
                 <action behavior="Bullet" id="0" name="Set speed" sid="5520064202091961" type="Sprite_CityCarNPC">
@@ -185,7 +185,7 @@
                     <param id="1" name="Mode">0</param>
                 </action>
                 <action id="4" name="Set animation" sid="9295097853723375" type="Sprite_CityCarNPC">
-                    <param id="0" name="Animation">choose(&quot;car1&quot;,&quot;car2&quot;,&quot;car3&quot;,&quot;car4&quot;,&quot;car5&quot;,&quot;car6&quot;,&quot;car7&quot;)</param>
+                    <param id="0" name="Animation">choose(&quot;Sprite_CityCarNPC_Ani_Style_002&quot;,&quot;Sprite_CityCarNPC_Ani_Style_003&quot;,&quot;Sprite_CityCarNPC_Ani_Style_004&quot;,&quot;Sprite_CityCarNPC_Ani_Style_005&quot;,&quot;Sprite_CityCarNPC_Ani_Style_006&quot;,&quot;Sprite_CityCarNPC_Ani_Style_007&quot;,&quot;Sprite_CityCarNPC_Ani_Style_008&quot;)</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -222,7 +222,7 @@
                     <param id="1" name="Mode">0</param>
                 </action>
                 <action id="4" name="Set animation" sid="1759861100243383" type="Sprite_CityCarNPC">
-                    <param id="0" name="Animation">choose(&quot;car1&quot;,&quot;car2&quot;,&quot;car3&quot;,&quot;car4&quot;,&quot;car5&quot;,&quot;car6&quot;,&quot;car7&quot;)</param>
+                    <param id="0" name="Animation">choose(&quot;Sprite_CityCarNPC_Ani_Style_002&quot;,&quot;Sprite_CityCarNPC_Ani_Style_003&quot;,&quot;Sprite_CityCarNPC_Ani_Style_004&quot;,&quot;Sprite_CityCarNPC_Ani_Style_005&quot;,&quot;Sprite_CityCarNPC_Ani_Style_006&quot;,&quot;Sprite_CityCarNPC_Ani_Style_007&quot;,&quot;Sprite_CityCarNPC_Ani_Style_008&quot;)</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -259,7 +259,7 @@
                     <param id="1" name="Mode">0</param>
                 </action>
                 <action id="4" name="Set animation" sid="3900118669012956" type="Sprite_CityCarNPC">
-                    <param id="0" name="Animation">choose(&quot;car1&quot;,&quot;car2&quot;,&quot;car3&quot;,&quot;car4&quot;,&quot;car5&quot;,&quot;car6&quot;,&quot;car7&quot;)</param>
+                    <param id="0" name="Animation">choose(&quot;Sprite_CityCarNPC_Ani_Style_002&quot;,&quot;Sprite_CityCarNPC_Ani_Style_003&quot;,&quot;Sprite_CityCarNPC_Ani_Style_004&quot;,&quot;Sprite_CityCarNPC_Ani_Style_005&quot;,&quot;Sprite_CityCarNPC_Ani_Style_006&quot;,&quot;Sprite_CityCarNPC_Ani_Style_007&quot;,&quot;Sprite_CityCarNPC_Ani_Style_008&quot;)</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -296,7 +296,7 @@
                     <param id="1" name="Mode">0</param>
                 </action>
                 <action id="4" name="Set animation" sid="8611237941011266" type="Sprite_CityCarNPC">
-                    <param id="0" name="Animation">choose(&quot;car1&quot;,&quot;car2&quot;,&quot;car3&quot;,&quot;car4&quot;,&quot;car5&quot;,&quot;car6&quot;,&quot;car7&quot;)</param>
+                    <param id="0" name="Animation">choose(&quot;Sprite_CityCarNPC_Ani_Style_002&quot;,&quot;Sprite_CityCarNPC_Ani_Style_003&quot;,&quot;Sprite_CityCarNPC_Ani_Style_004&quot;,&quot;Sprite_CityCarNPC_Ani_Style_005&quot;,&quot;Sprite_CityCarNPC_Ani_Style_006&quot;,&quot;Sprite_CityCarNPC_Ani_Style_007&quot;,&quot;Sprite_CityCarNPC_Ani_Style_008&quot;)</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -333,7 +333,7 @@
                     <param id="1" name="Mode">0</param>
                 </action>
                 <action id="4" name="Set animation" sid="6284378523772195" type="Sprite_CityCarNPC">
-                    <param id="0" name="Animation">choose(&quot;car1&quot;,&quot;car2&quot;,&quot;car3&quot;,&quot;car4&quot;,&quot;car5&quot;,&quot;car6&quot;,&quot;car7&quot;)</param>
+                    <param id="0" name="Animation">choose(&quot;Sprite_CityCarNPC_Ani_Style_002&quot;,&quot;Sprite_CityCarNPC_Ani_Style_003&quot;,&quot;Sprite_CityCarNPC_Ani_Style_004&quot;,&quot;Sprite_CityCarNPC_Ani_Style_005&quot;,&quot;Sprite_CityCarNPC_Ani_Style_006&quot;,&quot;Sprite_CityCarNPC_Ani_Style_007&quot;,&quot;Sprite_CityCarNPC_Ani_Style_008&quot;)</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -370,7 +370,7 @@
                     <param id="1" name="Mode">0</param>
                 </action>
                 <action id="4" name="Set animation" sid="4338745570839306" type="Sprite_CityCarNPC">
-                    <param id="0" name="Animation">choose(&quot;car1&quot;,&quot;car2&quot;,&quot;car3&quot;,&quot;car4&quot;,&quot;car5&quot;,&quot;car6&quot;,&quot;car7&quot;)</param>
+                    <param id="0" name="Animation">choose(&quot;Sprite_CityCarNPC_Ani_Style_002&quot;,&quot;Sprite_CityCarNPC_Ani_Style_003&quot;,&quot;Sprite_CityCarNPC_Ani_Style_004&quot;,&quot;Sprite_CityCarNPC_Ani_Style_005&quot;,&quot;Sprite_CityCarNPC_Ani_Style_006&quot;,&quot;Sprite_CityCarNPC_Ani_Style_007&quot;,&quot;Sprite_CityCarNPC_Ani_Style_008&quot;)</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -407,7 +407,7 @@
                     <param id="1" name="Mode">0</param>
                 </action>
                 <action id="4" name="Set animation" sid="4867190606298496" type="Sprite_CityCarNPC">
-                    <param id="0" name="Animation">choose(&quot;car1&quot;,&quot;car2&quot;,&quot;car3&quot;,&quot;car4&quot;,&quot;car5&quot;,&quot;car6&quot;,&quot;car7&quot;)</param>
+                    <param id="0" name="Animation">choose(&quot;Sprite_CityCarNPC_Ani_Style_002&quot;,&quot;Sprite_CityCarNPC_Ani_Style_003&quot;,&quot;Sprite_CityCarNPC_Ani_Style_004&quot;,&quot;Sprite_CityCarNPC_Ani_Style_005&quot;,&quot;Sprite_CityCarNPC_Ani_Style_006&quot;,&quot;Sprite_CityCarNPC_Ani_Style_007&quot;,&quot;Sprite_CityCarNPC_Ani_Style_008&quot;)</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -444,7 +444,7 @@
                     <param id="1" name="Mode">0</param>
                 </action>
                 <action id="4" name="Set animation" sid="5132478015728259" type="Sprite_CityCarNPC">
-                    <param id="0" name="Animation">choose(&quot;car1&quot;,&quot;car2&quot;,&quot;car3&quot;,&quot;car4&quot;,&quot;car5&quot;,&quot;car6&quot;,&quot;car7&quot;)</param>
+                    <param id="0" name="Animation">choose(&quot;Sprite_CityCarNPC_Ani_Style_002&quot;,&quot;Sprite_CityCarNPC_Ani_Style_003&quot;,&quot;Sprite_CityCarNPC_Ani_Style_004&quot;,&quot;Sprite_CityCarNPC_Ani_Style_005&quot;,&quot;Sprite_CityCarNPC_Ani_Style_006&quot;,&quot;Sprite_CityCarNPC_Ani_Style_007&quot;,&quot;Sprite_CityCarNPC_Ani_Style_008&quot;)</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -481,7 +481,7 @@
                     <param id="1" name="Mode">0</param>
                 </action>
                 <action id="4" name="Set animation" sid="3972999814221178" type="Sprite_CityCarNPC">
-                    <param id="0" name="Animation">choose(&quot;car1&quot;,&quot;car2&quot;,&quot;car3&quot;,&quot;car4&quot;,&quot;car5&quot;,&quot;car6&quot;,&quot;car7&quot;)</param>
+                    <param id="0" name="Animation">choose(&quot;Sprite_CityCarNPC_Ani_Style_002&quot;,&quot;Sprite_CityCarNPC_Ani_Style_003&quot;,&quot;Sprite_CityCarNPC_Ani_Style_004&quot;,&quot;Sprite_CityCarNPC_Ani_Style_005&quot;,&quot;Sprite_CityCarNPC_Ani_Style_006&quot;,&quot;Sprite_CityCarNPC_Ani_Style_007&quot;,&quot;Sprite_CityCarNPC_Ani_Style_008&quot;)</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -518,7 +518,7 @@
                     <param id="1" name="Mode">0</param>
                 </action>
                 <action id="4" name="Set animation" sid="1879597728455566" type="Sprite_CityCarNPC">
-                    <param id="0" name="Animation">choose(&quot;car1&quot;,&quot;car2&quot;,&quot;car3&quot;,&quot;car4&quot;,&quot;car5&quot;,&quot;car6&quot;,&quot;car7&quot;)</param>
+                    <param id="0" name="Animation">choose(&quot;Sprite_CityCarNPC_Ani_Style_002&quot;,&quot;Sprite_CityCarNPC_Ani_Style_003&quot;,&quot;Sprite_CityCarNPC_Ani_Style_004&quot;,&quot;Sprite_CityCarNPC_Ani_Style_005&quot;,&quot;Sprite_CityCarNPC_Ani_Style_006&quot;,&quot;Sprite_CityCarNPC_Ani_Style_007&quot;,&quot;Sprite_CityCarNPC_Ani_Style_008&quot;)</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -555,7 +555,7 @@
                     <param id="1" name="Mode">0</param>
                 </action>
                 <action id="4" name="Set animation" sid="9161341361472029" type="Sprite_CityCarNPC">
-                    <param id="0" name="Animation">choose(&quot;car1&quot;,&quot;car2&quot;,&quot;car3&quot;,&quot;car4&quot;,&quot;car5&quot;,&quot;car6&quot;,&quot;car7&quot;)</param>
+                    <param id="0" name="Animation">choose(&quot;Sprite_CityCarNPC_Ani_Style_002&quot;,&quot;Sprite_CityCarNPC_Ani_Style_003&quot;,&quot;Sprite_CityCarNPC_Ani_Style_004&quot;,&quot;Sprite_CityCarNPC_Ani_Style_005&quot;,&quot;Sprite_CityCarNPC_Ani_Style_006&quot;,&quot;Sprite_CityCarNPC_Ani_Style_007&quot;,&quot;Sprite_CityCarNPC_Ani_Style_008&quot;)</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -592,7 +592,7 @@
                     <param id="1" name="Mode">0</param>
                 </action>
                 <action id="4" name="Set animation" sid="4703736135289154" type="Sprite_CityCarNPC">
-                    <param id="0" name="Animation">choose(&quot;car1&quot;,&quot;car2&quot;,&quot;car3&quot;,&quot;car4&quot;,&quot;car5&quot;,&quot;car6&quot;,&quot;car7&quot;)</param>
+                    <param id="0" name="Animation">choose(&quot;Sprite_CityCarNPC_Ani_Style_002&quot;,&quot;Sprite_CityCarNPC_Ani_Style_003&quot;,&quot;Sprite_CityCarNPC_Ani_Style_004&quot;,&quot;Sprite_CityCarNPC_Ani_Style_005&quot;,&quot;Sprite_CityCarNPC_Ani_Style_006&quot;,&quot;Sprite_CityCarNPC_Ani_Style_007&quot;,&quot;Sprite_CityCarNPC_Ani_Style_008&quot;)</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -1029,7 +1029,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="6327951795310236" type="Sprite_Text_MessageNumber">
-                    <param id="0" name="Animation">&quot;m1&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Text_MessageNumber_Ani_Numbers_001&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -1044,7 +1044,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="8198437387700916" type="Sprite_Text_MessageNumber">
-                    <param id="0" name="Animation">&quot;m2&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Text_MessageNumber_Ani_Numbers_002&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -1059,7 +1059,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="6448127266664467" type="Sprite_Text_MessageNumber">
-                    <param id="0" name="Animation">&quot;m3&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Text_MessageNumber_Ani_Numbers_003&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -1074,7 +1074,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="5191311973548552" type="Sprite_Text_MessageNumber">
-                    <param id="0" name="Animation">&quot;m4&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Text_MessageNumber_Ani_Numbers_004&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -1089,7 +1089,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="4761368030895622" type="Sprite_Text_MessageNumber">
-                    <param id="0" name="Animation">&quot;m5&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Text_MessageNumber_Ani_Numbers_005&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -1104,7 +1104,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="2967789994981511" type="Sprite_Text_MessageNumber">
-                    <param id="0" name="Animation">&quot;m6&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Text_MessageNumber_Ani_Numbers_006&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -1119,7 +1119,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="1636048083973196" type="Sprite_Text_MessageNumber">
-                    <param id="0" name="Animation">&quot;m7&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Text_MessageNumber_Ani_Numbers_007&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -1134,7 +1134,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="1503071177418781" type="Sprite_Text_MessageNumber">
-                    <param id="0" name="Animation">&quot;m8&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Text_MessageNumber_Ani_Numbers_008&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -1149,7 +1149,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="4058230052201396" type="Sprite_Text_MessageNumber">
-                    <param id="0" name="Animation">&quot;m9&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Text_MessageNumber_Ani_Numbers_009&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -1164,7 +1164,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="1112373475610265" type="Sprite_Text_MessageNumber">
-                    <param id="0" name="Animation">&quot;m10&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Text_MessageNumber_Ani_Numbers_010&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -1191,7 +1191,7 @@
                             <param id="0" name="Visibility">1</param>
                         </action>
                         <action id="4" name="Set animation" sid="4692658692716844" type="Sprite_Text_SMSMessage">
-                            <param id="0" name="Animation">choose(&quot;s1&quot;,&quot;s2&quot;,&quot;s3&quot;,&quot;s4&quot;,&quot;s5&quot;,&quot;s6&quot;,&quot;s7&quot;,&quot;s8&quot;,&quot;s9&quot;,&quot;s10&quot;,&quot;s11&quot;)</param>
+                            <param id="0" name="Animation">choose(&quot;Sprite_Text_SMSMessage_Ani_SMS_001&quot;,&quot;Sprite_Text_SMSMessage_Ani_SMS_002&quot;,&quot;Sprite_Text_SMSMessage_Ani_SMS_003&quot;,&quot;Sprite_Text_SMSMessage_Ani_SMS_004&quot;,&quot;Sprite_Text_SMSMessage_Ani_SMS_005&quot;,&quot;Sprite_Text_SMSMessage_Ani_SMS_006&quot;,&quot;Sprite_Text_SMSMessage_Ani_SMS_007&quot;,&quot;Sprite_Text_SMSMessage_Ani_SMS_008&quot;,&quot;Sprite_Text_SMSMessage_Ani_SMS_009&quot;,&quot;Sprite_Text_SMSMessage_Ani_SMS_010&quot;,&quot;Sprite_Text_SMSMessage_Ani_SMS_011&quot;)</param>
                             <param id="1" name="From">1</param>
                         </action>
                         <action behavior="Flash" id="0" name="Flash" sid="538137345107" type="Sprite_Text_SMSMessage">
@@ -1234,7 +1234,7 @@
                     <param id="0" name="Layout">Level_005</param>
                 </action>
                 <action id="-9" name="Set value" sid="4237412640100705" type="System">
-                    <param id="0" name="Variable">layout</param>
+                    <param id="0" name="Variable">Layout</param>
                     <param id="1" name="Value">5</param>
                 </action>
                 <action id="6" name="Stop" sid="9868618588869035" type="Audio">
@@ -1251,8 +1251,8 @@
             <actions>
                 <action id="33" name="Stop all" sid="4177157967470441" type="Audio" />
                 <action id="-21" name="Reset global variables" sid="3616824876902128" type="System" />
-                <action id="-25" name="Go to layout (by name)" sid="5941381996755769" type="System">
-                    <param id="0" name="Layout">&quot;inicio&quot;</param>
+                <action id="-2" name="Go to layout" sid="5941381996755769" type="System">
+                    <param id="0" name="Layout">MainMenu</param>
                 </action>
             </actions>
         </event-block>

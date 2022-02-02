@@ -697,7 +697,7 @@
                         <frame duration="1" hotspotX="0.505747" hotspotY="0.502222" />
                         <frame duration="1" hotspotX="0.505747" hotspotY="0.502222" />
                     </animation>
-                    <animation framecount="28" loop="0" name="Sprite_NPC_Daughter_Ani_GetOff_001" pingpong="0" repeatcount="1" repeatto="0" sid="9653759003279489" speed="8">
+                    <animation framecount="28" loop="0" name="Sprite_NPC_Daughter_Ani_Speaking_002" pingpong="0" repeatcount="1" repeatto="0" sid="9653759003279489" speed="8">
                         <frame duration="1" hotspotX="0.505747" hotspotY="0.502222" />
                         <frame duration="1" hotspotX="0.505747" hotspotY="0.502222" />
                         <frame duration="1" hotspotX="0.505747" hotspotY="0.502222" />
@@ -8756,7 +8756,7 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="Sprite_Computer_Text_Command" sid="5671622862579754">
+            <object-type name="Sprite_Text_Computer_Press" sid="5671622862579754">
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="36" loop="0" name="Sprite_Computer_Press_J_Ani_Loading_001" pingpong="0" repeatcount="1" repeatto="0" sid="6218377723175094" speed="5">
@@ -9044,7 +9044,10 @@
             <object-type name="Sprite_Text_Computer_Loading" sid="7072855230915371">
                 <plugin id="Sprite" />
                 <animation-folder>
-                    <animation framecount="91" loop="0" name="Sprite_Text_Computer_Loading_Ani_Loading_Success_001" pingpong="0" repeatcount="1" repeatto="0" sid="971421527715925" speed="4">
+                    <animation framecount="1" loop="0" name="Sprite_Text_Computer_Loading_Ani_Idle_001" pingpong="0" repeatcount="1" repeatto="0" sid="7789214251172427" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                    <animation framecount="91" loop="0" name="Sprite_Text_Computer_Loading_Ani_Success_001" pingpong="0" repeatcount="1" repeatto="0" sid="971421527715925" speed="4">
                         <frame duration="1" hotspotX="0.500268" hotspotY="0.5" />
                         <frame duration="1" hotspotX="0.500268" hotspotY="0.5" />
                         <frame duration="1" hotspotX="0.500268" hotspotY="0.5" />
@@ -10242,11 +10245,8 @@
                         </frame>
                         <frame duration="20" hotspotX="0.500268" hotspotY="0.5" />
                     </animation>
-                    <animation framecount="1" loop="0" name="Sprite_Text_Computer_Loading_Ani_Loading_Error_007" pingpong="0" repeatcount="1" repeatto="0" sid="9890459825524715" speed="2">
+                    <animation framecount="1" loop="0" name="Sprite_Text_Computer_Loading_Ani_Error_001" pingpong="0" repeatcount="1" repeatto="0" sid="9890459825524715" speed="2">
                         <frame duration="10" hotspotX="0.500268" hotspotY="0.5" />
-                    </animation>
-                    <animation framecount="1" loop="0" name="Sprite_Text_Computer_Loading_Ani_Idle_001" pingpong="0" repeatcount="1" repeatto="0" sid="7789214251172427" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -10413,7 +10413,7 @@
             <object-type name="Sprite_Led_Blue" sid="2728236639109779">
                 <plugin id="Sprite" />
                 <animation-folder>
-                    <animation framecount="1" loop="0" name="Sprite_Led_Blue_Ani_On_001" pingpong="0" repeatcount="1" repeatto="0" sid="8104761584974065" speed="5">
+                    <animation framecount="1" loop="0" name="Sprite_Led_Blue_Ani_Off_001" pingpong="0" repeatcount="1" repeatto="0" sid="8104761584974065" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ZiZo\Desktop\levels\level9\ledazuapa.png">
                             <collision-poly>
                                 <point x="0.4" y="0.390244" />
@@ -10426,7 +10426,7 @@
                             </collision-poly>
                         </frame>
                     </animation>
-                    <animation framecount="2" loop="1" name="Sprite_Led_Blue_Ani_Off_001" pingpong="0" repeatcount="1" repeatto="0" sid="6911519881760472" speed="30">
+                    <animation framecount="2" loop="1" name="Sprite_Led_Blue_Ani_On_001" pingpong="0" repeatcount="1" repeatto="0" sid="6911519881760472" speed="30">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ZiZo\Desktop\levels\level9\ledazupis_0000_Retângulo-1-copiar.png" />
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ZiZo\Desktop\levels\level9\ledazupis_0001_Retângulo-1.png" />
                     </animation>
@@ -10435,10 +10435,10 @@
             <object-type name="Sprite_Led_Brown" sid="7085626064081763">
                 <plugin id="Sprite" />
                 <animation-folder>
-                    <animation framecount="1" loop="1" name="Sprite_Led_Brown_Ani_On_001" pingpong="0" repeatcount="1" repeatto="0" sid="2377660757559188" speed="30">
+                    <animation framecount="1" loop="1" name="Sprite_Led_Brown_Ani_Off_001" pingpong="0" repeatcount="1" repeatto="0" sid="2377660757559188" speed="30">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ZiZo\Desktop\levels\level9\ledlar_0001_Retângulo-1.png" />
                     </animation>
-                    <animation framecount="2" loop="1" name="Sprite_Led_Brown_Ani_Off_001" pingpong="0" repeatcount="1" repeatto="0" sid="6056626308761858" speed="30">
+                    <animation framecount="2" loop="1" name="Sprite_Led_Brown_Ani_On_001" pingpong="0" repeatcount="1" repeatto="0" sid="6056626308761858" speed="30">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ZiZo\Desktop\levels\level9\ledlarpis_0000_Retângulo-1-copiar.png" />
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ZiZo\Desktop\levels\level9\ledlarpis_0001_Retângulo-1.png" />
                     </animation>
@@ -11042,7 +11042,7 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="Level_001_Text_PlayerRoom_GameTutorial" sid="5831904664471623">
+            <object-type name="Sprite_Text_PlayerRoom_GameTutorial" sid="5831904664471623">
                 <plugin id="Sprite" />
                 <behaviors>
                     <behavior-type name="Fade" sid="9074819424347232">
@@ -12398,12 +12398,12 @@
             <object-type name="Sprite_NPC_Wife_002_Mouth" sid="9852827038631128">
                 <plugin id="Sprite" />
                 <animation-folder>
+                    <animation framecount="1" loop="0" name="Sprite_NPC_Wife_002_Mouth_Ani_Idle_001" pingpong="0" repeatcount="1" repeatto="0" sid="1925870662962572" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="38" />
+                    </animation>
                     <animation framecount="2" loop="1" name="Sprite_NPC_Wife_002_Mouth_Ani_Speaking_001" pingpong="0" repeatcount="1" repeatto="0" sid="4687419658083539" speed="6">
                         <frame duration="1" hotspotX="0.5" hotspotY="38" />
                         <frame duration="1" hotspotX="0.5" hotspotY="16.5714" />
-                    </animation>
-                    <animation framecount="1" loop="0" name="Sprite_NPC_Wife_002_Mouth_Ani_Idle_001" pingpong="0" repeatcount="1" repeatto="0" sid="1925870662962572" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="38" />
                     </animation>
                 </animation-folder>
             </object-type>

@@ -3,11 +3,11 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>EventSheet_016</name>
     <events>
-        <variable constant="0" name="fdff" sid="4439158370304458" static="0" type="number">0</variable>
-        <variable constant="0" name="morreu4" sid="7422174144763725" static="0" type="number">0</variable>
-        <variable constant="0" name="morreu3" sid="9489930312089385" static="0" type="number">0</variable>
-        <variable constant="0" name="morreu2" sid="8185898858197709" static="0" type="number">0</variable>
-        <variable constant="0" name="morreu1" sid="6450662354512657" static="0" type="number">0</variable>
+        <variable constant="0" name="EndType" sid="4439158370304458" static="0" type="number">0</variable>
+        <variable constant="0" name="End4" sid="7422174144763725" static="0" type="number">0</variable>
+        <variable constant="0" name="End3" sid="9489930312089385" static="0" type="number">0</variable>
+        <variable constant="0" name="End2" sid="8185898858197709" static="0" type="number">0</variable>
+        <variable constant="0" name="End1" sid="6450662354512657" static="0" type="number">0</variable>
         <event-block sid="3045535967595418">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="1581515906829845" type="System" />
@@ -53,7 +53,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="4633603429599539" type="Sprite_MainCharacter_004">
-                    <param id="0" name="Animation">&quot;andando&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_MainCharacter_004_Ani_Walk_001&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -64,7 +64,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="5695793597746188" type="Sprite_MainCharacter_004">
-                    <param id="0" name="Animation">&quot;parado&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_MainCharacter_004_Ani_Idle_001&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -109,7 +109,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="3663459933953957" type="Sprite_MainCharacter_004">
-                    <param id="0" name="Animation">&quot;parado&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_MainCharacter_004_Ani_Idle_001&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -122,7 +122,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="7480385724292233" type="Sprite_MainCharacter_004">
-                    <param id="0" name="Animation">&quot;parado&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_MainCharacter_004_Ani_Idle_001&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -161,7 +161,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="1364283602150816" type="Sprite_MainCharacter_005">
-                    <param id="0" name="Animation">&quot;andando&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_MainCharacter_005_Ani_Walk_001&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -172,7 +172,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="2582877933299928" type="Sprite_MainCharacter_005">
-                    <param id="0" name="Animation">&quot;parado&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_MainCharacter_005_Ani_Idle_001&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -217,7 +217,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="264040150090852" type="Sprite_MainCharacter_005">
-                    <param id="0" name="Animation">&quot;parado&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_MainCharacter_005_Ani_Idle_001&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -230,7 +230,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="9433958903954858" type="Sprite_MainCharacter_005">
-                    <param id="0" name="Animation">&quot;parado&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_MainCharacter_005_Ani_Idle_001&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -242,11 +242,11 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-25" name="Go to layout (by name)" sid="3301693255673898" type="System">
-                    <param id="0" name="Layout">&quot;fase25&quot;</param>
+                <action id="-2" name="Go to layout" sid="3301693255673898" type="System">
+                    <param id="0" name="Layout">Level_025</param>
                 </action>
                 <action id="-9" name="Set value" sid="1656010747168663" type="System">
-                    <param id="0" name="Variable">layout</param>
+                    <param id="0" name="Variable">Layout</param>
                     <param id="1" name="Value">25</param>
                 </action>
             </actions>
@@ -315,11 +315,11 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Set value" sid="6605115359298165" type="System">
-                            <param id="0" name="Variable">morreu1</param>
+                            <param id="0" name="Variable">End1</param>
                             <param id="1" name="Value">1</param>
                         </action>
                         <action id="4" name="Set animation" sid="3566823940621859" type="Sprite_Lightning_001">
-                            <param id="0" name="Animation">&quot;default1&quot;</param>
+                            <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_002&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                         <action id="3" name="Set volume" sid="4569204342322157" type="Audio">
@@ -346,7 +346,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="3421169993574268" type="Sprite_Lightning_001">
-                    <param id="0" name="Animation">&quot;default3&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_003&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -360,7 +360,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="7545666128199198" type="Sprite_Lightning_001">
-                    <param id="0" name="Animation">&quot;default1&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_002&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -373,7 +373,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="7795493876559549" type="Sprite_Lightning_001">
-                    <param id="0" name="Animation">&quot;default2&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_001&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -381,10 +381,10 @@
         <event-block sid="8647986715227198">
             <conditions>
                 <condition id="4" name="On finished" sid="5163315075232538" type="Sprite_Lightning_001">
-                    <param id="0" name="Animation">&quot;default1&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_002&quot;</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="3475383119937347" type="System">
-                    <param id="0" name="Variable">morreu1</param>
+                    <param id="0" name="Variable">End1</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">1</param>
                 </condition>
@@ -393,15 +393,15 @@
                 <action id="-9" name="Destroy" sid="2077483891339132" type="Sprite_MainCharacter_004" />
                 <action id="-9" name="Destroy" sid="6682452489215063" type="Sprite_MainCharacter_005" />
                 <action id="4" name="Set animation" sid="3338058963694625" type="Sprite_Rope_002">
-                    <param id="0" name="Animation">&quot;fim&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Rope_002_Ani_End_001&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
                 <action id="4" name="Set animation" sid="8390280556761763" type="Sprite_Rope_003">
-                    <param id="0" name="Animation">&quot;fim&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Rope_003_Ani_End_001&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
                 <action id="-9" name="Set value" sid="5752005112775119" type="System">
-                    <param id="0" name="Variable">morreu1</param>
+                    <param id="0" name="Variable">End1</param>
                     <param id="1" name="Value">2</param>
                 </action>
                 <action id="-9" name="Destroy" sid="4090203092982449" type="Sprite_Rope_001" />
@@ -417,14 +417,14 @@
                     <param id="0" name="Object">Sprite_Trigger_ShowEndText_001</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="2274128314543463" type="System">
-                    <param id="0" name="Variable">layout</param>
+                    <param id="0" name="Variable">Layout</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">23</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="972681041153623" type="Sprite_Lightning_001">
-                    <param id="0" name="Animation">&quot;default2&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_001&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
                 <action id="-9" name="Destroy" sid="3119129043223487" type="Sprite_Trigger_ShowEndText_001" />
@@ -440,14 +440,14 @@
                     <param id="0" name="Object">Sprite_Trigger_ShowEndText_002</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="2581935924327331" type="System">
-                    <param id="0" name="Variable">layout</param>
+                    <param id="0" name="Variable">Layout</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">23</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="7992997455230827" type="Sprite_Lightning_001">
-                    <param id="0" name="Animation">&quot;default1&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_002&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
                 <action id="-9" name="Destroy" sid="8326335026314334" type="Sprite_Trigger_ShowEndText_002" />
@@ -465,7 +465,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="9168907407921382" type="Sprite_Lightning_001">
-                    <param id="0" name="Animation">&quot;default2&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_001&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
                 <action id="-9" name="Destroy" sid="6825396833404976" type="Sprite_Trigger_ShowEndText_001" />
@@ -479,7 +479,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="2276223474209237" type="Sprite_Lightning_001">
-                    <param id="0" name="Animation">&quot;default1&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_002&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
                 <action id="-9" name="Destroy" sid="6573566108730764" type="Sprite_Trigger_ShowEndText_002" />
@@ -494,7 +494,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="7783633789945179" type="Sprite_Lightning_001">
-                    <param id="0" name="Animation">&quot;default2&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_001&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -505,14 +505,14 @@
                     <param id="0" name="Object">Sprite_Trigger_ShowEndText_001</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="3553963927956623" type="System">
-                    <param id="0" name="Variable">layout</param>
+                    <param id="0" name="Variable">Layout</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">24</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="3277014477260404" type="Sprite_Lightning_001">
-                    <param id="0" name="Animation">&quot;default2&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_001&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
                 <action id="-9" name="Destroy" sid="8193223797745854" type="Sprite_Trigger_ShowEndText_001" />
@@ -528,7 +528,7 @@
                     <param id="0" name="Object">Sprite_Trigger_ShowEndText_003</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="8253050341126668" type="System">
-                    <param id="0" name="Variable">layout</param>
+                    <param id="0" name="Variable">Layout</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">24</param>
                 </condition>
@@ -547,14 +547,14 @@
                     <param id="0" name="Object">Sprite_Trigger_ShowEndText_002</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="2109873862133515" type="System">
-                    <param id="0" name="Variable">layout</param>
+                    <param id="0" name="Variable">Layout</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">24</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="676966232028975" type="Sprite_Lightning_001">
-                    <param id="0" name="Animation">&quot;default1&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_002&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
                 <action id="-9" name="Destroy" sid="6190899076707997" type="Sprite_Trigger_ShowEndText_002" />
@@ -566,7 +566,7 @@
                     <param id="0" name="Object">Sprite_Trigger_ShowEndText_004</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="1536544821538165" type="System">
-                    <param id="0" name="Variable">layout</param>
+                    <param id="0" name="Variable">Layout</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">24</param>
                 </condition>
@@ -585,7 +585,7 @@
                     <param id="0" name="Object">Sprite_Trigger_ShowEndText_008</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="9660667887545671" type="System">
-                    <param id="0" name="Variable">layout</param>
+                    <param id="0" name="Variable">Layout</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">26</param>
                 </condition>
@@ -604,7 +604,7 @@
                     <param id="0" name="Object">Sprite_Trigger_ShowEndText_009</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="1058171710114456" type="System">
-                    <param id="0" name="Variable">layout</param>
+                    <param id="0" name="Variable">Layout</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">26</param>
                 </condition>
@@ -623,7 +623,7 @@
                     <param id="0" name="Object">Sprite_Trigger_ShowEndText_007</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="1389929770236205" type="System">
-                    <param id="0" name="Variable">layout</param>
+                    <param id="0" name="Variable">Layout</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">26</param>
                 </condition>
@@ -642,7 +642,7 @@
                     <param id="0" name="Object">Sprite_Trigger_ShowEndText_010</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="6389379594877808" type="System">
-                    <param id="0" name="Variable">layout</param>
+                    <param id="0" name="Variable">Layout</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">26</param>
                 </condition>
@@ -661,7 +661,7 @@
                     <param id="0" name="Object">Sprite_Trigger_ShowEndText_011</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="9713476808661114" type="System">
-                    <param id="0" name="Variable">layout</param>
+                    <param id="0" name="Variable">Layout</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">26</param>
                 </condition>
@@ -680,7 +680,7 @@
                     <param id="0" name="Object">Sprite_Trigger_ShowEndText_005</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="7040193850498802" type="System">
-                    <param id="0" name="Variable">layout</param>
+                    <param id="0" name="Variable">Layout</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">25</param>
                 </condition>
@@ -699,7 +699,7 @@
                     <param id="0" name="Object">Sprite_Trigger_ShowEndText_006</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="9731212477654001" type="System">
-                    <param id="0" name="Variable">layout</param>
+                    <param id="0" name="Variable">Layout</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">25</param>
                 </condition>
@@ -728,11 +728,11 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Set value" sid="2596120887816025" type="System">
-                            <param id="0" name="Variable">morreu2</param>
+                            <param id="0" name="Variable">End2</param>
                             <param id="1" name="Value">1</param>
                         </action>
                         <action id="4" name="Set animation" sid="136503471965441" type="Sprite_Lightning_001">
-                            <param id="0" name="Animation">&quot;default1&quot;</param>
+                            <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_002&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                         <action id="3" name="Set volume" sid="3135300422832191" type="Audio">
@@ -753,10 +753,10 @@
         <event-block sid="9868625209912748">
             <conditions>
                 <condition id="4" name="On finished" sid="4595033987241374" type="Sprite_Lightning_001">
-                    <param id="0" name="Animation">&quot;default1&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_002&quot;</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="4018798625149294" type="System">
-                    <param id="0" name="Variable">morreu2</param>
+                    <param id="0" name="Variable">End2</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">1</param>
                 </condition>
@@ -765,16 +765,16 @@
                 <action id="-9" name="Destroy" sid="9142897565525362" type="Sprite_MainCharacter_004" />
                 <action id="-9" name="Destroy" sid="7595482086212672" type="Sprite_MainCharacter_005" />
                 <action id="4" name="Set animation" sid="1531922130342824" type="Sprite_Gun_002">
-                    <param id="0" name="Animation">&quot;fim&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Gun_002_Ani_End_001&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
                 <action id="4" name="Set animation" sid="7282397405856373" type="Sprite_Gun_003">
-                    <param id="0" name="Animation">&quot;fim&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Gun_003_Ani_End_001&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
                 <action id="-9" name="Destroy" sid="7838983787416275" type="Sprite_Gun_001" />
                 <action id="-9" name="Set value" sid="5291465611201916" type="System">
-                    <param id="0" name="Variable">morreu2</param>
+                    <param id="0" name="Variable">End2</param>
                     <param id="1" name="Value">2</param>
                 </action>
                 <action id="3" name="Set volume" sid="3286729050190283" type="Audio">
@@ -793,7 +793,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="6368049617297315" type="Sprite_Lightning_001">
-                    <param id="0" name="Animation">&quot;default2&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_001&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -808,7 +808,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="9988058936608169" type="Sprite_Lightning_001">
-                    <param id="0" name="Animation">&quot;default1&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_002&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -823,7 +823,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="9890630666739062" type="Sprite_Lightning_001">
-                    <param id="0" name="Animation">&quot;default2&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_001&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -838,7 +838,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="9995008618298325" type="Sprite_Lightning_001">
-                    <param id="0" name="Animation">&quot;default1&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_002&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -853,7 +853,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="2352153956078566" type="Sprite_Lightning_001">
-                    <param id="0" name="Animation">&quot;default2&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_001&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -861,17 +861,17 @@
         <event-block sid="8920240767954886">
             <conditions>
                 <condition id="4" name="On finished" sid="3159157394661627" type="Sprite_Gun_002">
-                    <param id="0" name="Animation">&quot;fim&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Gun_002_Ani_End_001&quot;</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="7606535457778907" type="System">
-                    <param id="0" name="Variable">morreu2</param>
+                    <param id="0" name="Variable">End2</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">2</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="2028034747771283" type="Sprite_Lightning_001">
-                    <param id="0" name="Animation">&quot;default3&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_003&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
                 <action behavior="Fade" id="1" name="Start fade" sid="4340007887831798" type="Sprite_EndFadeOut_Black" />
@@ -879,7 +879,7 @@
                     <param id="0" name="Visibility">1</param>
                 </action>
                 <action id="-9" name="Set value" sid="8682309014436956" type="System">
-                    <param id="0" name="Variable">morreu2</param>
+                    <param id="0" name="Variable">End2</param>
                     <param id="1" name="Value">3</param>
                 </action>
                 <action behavior="Timer" id="0" name="Start timer" sid="2685758832651302" type="Sprite_EndFadeOut_Black">
@@ -905,11 +905,11 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Set value" sid="4638674599340301" type="System">
-                            <param id="0" name="Variable">morreu3</param>
+                            <param id="0" name="Variable">End3</param>
                             <param id="1" name="Value">1</param>
                         </action>
                         <action id="4" name="Set animation" sid="3129495457876463" type="Sprite_Lightning_001">
-                            <param id="0" name="Animation">&quot;default1&quot;</param>
+                            <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_002&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                         <action id="3" name="Set volume" sid="8876575881397779" type="Audio">
@@ -930,10 +930,10 @@
         <event-block sid="6789840010055335">
             <conditions>
                 <condition id="4" name="On finished" sid="9209766980870443" type="Sprite_Lightning_001">
-                    <param id="0" name="Animation">&quot;default1&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_002&quot;</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="3016212600877406" type="System">
-                    <param id="0" name="Variable">morreu3</param>
+                    <param id="0" name="Variable">End3</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">1</param>
                 </condition>
@@ -942,11 +942,11 @@
                 <action id="-9" name="Destroy" sid="5865744438515288" type="Sprite_MainCharacter_004" />
                 <action id="-9" name="Destroy" sid="8222520571400994" type="Sprite_MainCharacter_005" />
                 <action id="4" name="Set animation" sid="3733751290704032" type="Sprite_Bridge">
-                    <param id="0" name="Animation">&quot;fim&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Bridge_Ani_End_001&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
                 <action id="-9" name="Set value" sid="8306406226776701" type="System">
-                    <param id="0" name="Variable">morreu3</param>
+                    <param id="0" name="Variable">End3</param>
                     <param id="1" name="Value">2</param>
                 </action>
                 <action id="3" name="Set volume" sid="2361600703560418" type="Audio">
@@ -965,7 +965,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="5302257631405163" type="Sprite_Lightning_001">
-                    <param id="0" name="Animation">&quot;default4&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_004&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -980,7 +980,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="4080648271988269" type="Sprite_Lightning_001">
-                    <param id="0" name="Animation">&quot;default2&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_001&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -995,7 +995,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="5506548895182366" type="Sprite_Lightning_001">
-                    <param id="0" name="Animation">&quot;default1&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_002&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -1010,7 +1010,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="496728854334696" type="Sprite_Lightning_001">
-                    <param id="0" name="Animation">&quot;default2&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_001&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -1025,7 +1025,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="4316855884422494" type="Sprite_Lightning_001">
-                    <param id="0" name="Animation">choose(&quot;default2&quot;,&quot;default4&quot;)</param>
+                    <param id="0" name="Animation">choose(&quot;Sprite_Lightning_001_Ani_Flash_001&quot;,&quot;Sprite_Lightning_001_Ani_Flash_004&quot;)</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -1033,22 +1033,22 @@
         <event-block sid="1975981618417005">
             <conditions>
                 <condition id="4" name="On finished" sid="6028996299502998" type="Sprite_Bridge">
-                    <param id="0" name="Animation">&quot;fim&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Bridge_Ani_End_001&quot;</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="229322288577563" type="System">
-                    <param id="0" name="Variable">morreu3</param>
+                    <param id="0" name="Variable">End3</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">2</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="7862257200319194" type="Sprite_Lightning_001">
-                    <param id="0" name="Animation">&quot;default3&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_003&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
                 <action behavior="Fade" id="1" name="Start fade" sid="647267060241101" type="Sprite_EndFadeOut_Black" />
                 <action id="-9" name="Set value" sid="3383939812787584" type="System">
-                    <param id="0" name="Variable">morreu3</param>
+                    <param id="0" name="Variable">End3</param>
                     <param id="1" name="Value">3</param>
                 </action>
                 <action id="-15" name="Set visible" sid="2969484481110021" type="Sprite_EndFadeOut_Black">
@@ -1068,11 +1068,11 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-25" name="Go to layout (by name)" sid="9341750043253993" type="System">
-                    <param id="0" name="Layout">&quot;fase24&quot;</param>
+                <action id="-2" name="Go to layout" sid="9341750043253993" type="System">
+                    <param id="0" name="Layout">Level_024</param>
                 </action>
                 <action id="-9" name="Set value" sid="2840282316007796" type="System">
-                    <param id="0" name="Variable">layout</param>
+                    <param id="0" name="Variable">Layout</param>
                     <param id="1" name="Value">24</param>
                 </action>
             </actions>
@@ -1084,11 +1084,11 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-25" name="Go to layout (by name)" sid="766954067340634" type="System">
-                    <param id="0" name="Layout">&quot;fase26&quot;</param>
+                <action id="-2" name="Go to layout" sid="766954067340634" type="System">
+                    <param id="0" name="Layout">Level_026</param>
                 </action>
                 <action id="-9" name="Set value" sid="9705846187440525" type="System">
-                    <param id="0" name="Variable">layout</param>
+                    <param id="0" name="Variable">Layout</param>
                     <param id="1" name="Value">26</param>
                 </action>
             </actions>
@@ -1101,11 +1101,11 @@
             </conditions>
             <actions>
                 <action id="-9" name="Set value" sid="3829199520456507" type="System">
-                    <param id="0" name="Variable">morreu4</param>
+                    <param id="0" name="Variable">End4</param>
                     <param id="1" name="Value">1</param>
                 </action>
                 <action id="4" name="Set animation" sid="8953034953630183" type="Sprite_Lightning_001">
-                    <param id="0" name="Animation">&quot;default1&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_002&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
                 <action behavior="Platform" id="0" name="Set ignoring input" sid="6949098326539034" type="Sprite_MainCharacter_004">
@@ -1119,7 +1119,7 @@
         <event-block sid="9748890297002577">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="8284034100619226" type="System">
-                    <param id="0" name="Variable">morreu4</param>
+                    <param id="0" name="Variable">End4</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">1</param>
                 </condition>
@@ -1131,16 +1131,16 @@
                     <param id="0" name="State">1</param>
                 </action>
                 <action id="4" name="Set animation" sid="7581628645235949" type="Sprite_Collapse_001">
-                    <param id="0" name="Animation">&quot;fim&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Collapse_001_Ani_End_001&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
                 <action id="4" name="Set animation" sid="456248376301313" type="Sprite_Collapse_002">
-                    <param id="0" name="Animation">&quot;fim&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Collapse_002_Ani_End_001&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
                 <action id="-9" name="Destroy" sid="8689706740675101" type="Sprite_PlayerHome_TransictionVignette" />
                 <action id="-9" name="Set value" sid="5211262931018324" type="System">
-                    <param id="0" name="Variable">morreu4</param>
+                    <param id="0" name="Variable">End4</param>
                     <param id="1" name="Value">2</param>
                 </action>
             </actions>
@@ -1155,7 +1155,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="5134535042633953" type="Sprite_Lightning_001">
-                    <param id="0" name="Animation">&quot;default1&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_002&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -1170,7 +1170,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="6502939200252478" type="Sprite_Lightning_001">
-                    <param id="0" name="Animation">&quot;default4&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_004&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -1185,7 +1185,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="3584463244805889" type="Sprite_Lightning_001">
-                    <param id="0" name="Animation">&quot;default2&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_001&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -1200,7 +1200,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="4821831537886836" type="Sprite_Lightning_001">
-                    <param id="0" name="Animation">&quot;default3&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_003&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -1208,12 +1208,12 @@
         <event-block sid="8220089195224466">
             <conditions>
                 <condition id="4" name="On finished" sid="9719306549778443" type="Sprite_Collapse_001">
-                    <param id="0" name="Animation">&quot;fim&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Collapse_001_Ani_End_001&quot;</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="1716080218638421" type="Sprite_Lightning_001">
-                    <param id="0" name="Animation">&quot;default5&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_005&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -1221,7 +1221,7 @@
         <event-block sid="1812292582279847">
             <conditions>
                 <condition id="4" name="On finished" sid="2840718055445206" type="Sprite_Collapse_002">
-                    <param id="0" name="Animation">&quot;fim&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Collapse_002_Ani_End_001&quot;</param>
                 </condition>
             </conditions>
             <actions>
@@ -1231,7 +1231,7 @@
         <event-block sid="97234224745032">
             <conditions>
                 <condition id="2" name="Is playing" sid="7684010725527565" type="Sprite_Lightning_001">
-                    <param id="0" name="Animation">&quot;default&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Transition_001&quot;</param>
                 </condition>
                 <condition id="3" name="Compare frame" sid="5417792392956651" type="Sprite_Lightning_001">
                     <param id="0" name="Comparison">0</param>
@@ -1241,7 +1241,7 @@
             <actions>
                 <action id="7" name="Play (by name)" sid="8709196131353117" type="Audio">
                     <param id="0" name="Folder">0</param>
-                    <param id="1" name="Audio file name">choose(&quot;tb1&quot;,&quot;tb2&quot;,&quot;tb3&quot;,&quot;tb4&quot;,&quot;tb5&quot;)</param>
+                    <param id="1" name="Audio file name">choose(&quot;SFX_Thunder_007&quot;,&quot;SFX_Thunder_008&quot;,&quot;SFX_Thunder_009&quot;,&quot;SFX_Thunder_010&quot;,&quot;SFX_Thunder_011&quot;)</param>
                     <param id="3" name="Loop">0</param>
                     <param id="4" name="Volume">0</param>
                     <param id="2" name="Tag (optional)">&quot;tro&quot;</param>
@@ -1251,7 +1251,7 @@
         <event-block sid="1267409930929002">
             <conditions>
                 <condition id="2" name="Is playing" sid="656961330766453" type="Sprite_Lightning_001">
-                    <param id="0" name="Animation">&quot;default1&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Transition_002&quot;</param>
                 </condition>
                 <condition id="3" name="Compare frame" sid="3812647322271853" type="Sprite_Lightning_001">
                     <param id="0" name="Comparison">0</param>
@@ -1261,7 +1261,7 @@
             <actions>
                 <action id="7" name="Play (by name)" sid="8588711426947043" type="Audio">
                     <param id="0" name="Folder">0</param>
-                    <param id="1" name="Audio file name">choose(&quot;tb1&quot;,&quot;tb2&quot;,&quot;tb3&quot;,&quot;tb4&quot;,&quot;tb5&quot;)</param>
+                    <param id="1" name="Audio file name">choose(&quot;SFX_Thunder_007&quot;,&quot;SFX_Thunder_008&quot;,&quot;SFX_Thunder_009&quot;,&quot;SFX_Thunder_010&quot;,&quot;SFX_Thunder_011&quot;)</param>
                     <param id="3" name="Loop">0</param>
                     <param id="4" name="Volume">0</param>
                     <param id="2" name="Tag (optional)">&quot;tro&quot;</param>
@@ -1271,7 +1271,7 @@
         <event-block sid="2898957136738386">
             <conditions>
                 <condition id="2" name="Is playing" sid="9222275533920103" type="Sprite_Lightning_001">
-                    <param id="0" name="Animation">&quot;default2&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_001&quot;</param>
                 </condition>
                 <condition id="3" name="Compare frame" sid="899658869469483" type="Sprite_Lightning_001">
                     <param id="0" name="Comparison">0</param>
@@ -1281,7 +1281,7 @@
             <actions>
                 <action id="7" name="Play (by name)" sid="994673041883232" type="Audio">
                     <param id="0" name="Folder">0</param>
-                    <param id="1" name="Audio file name">choose(&quot;tb1&quot;,&quot;tb2&quot;,&quot;tb3&quot;,&quot;tb4&quot;,&quot;tb5&quot;)</param>
+                    <param id="1" name="Audio file name">choose(&quot;SFX_Thunder_007&quot;,&quot;SFX_Thunder_008&quot;,&quot;SFX_Thunder_009&quot;,&quot;SFX_Thunder_010&quot;,&quot;SFX_Thunder_011&quot;)</param>
                     <param id="3" name="Loop">0</param>
                     <param id="4" name="Volume">0</param>
                     <param id="2" name="Tag (optional)">&quot;tro&quot;</param>
@@ -1291,7 +1291,7 @@
         <event-block sid="5910267683293091">
             <conditions>
                 <condition id="2" name="Is playing" sid="5430314506746117" type="Sprite_Lightning_001">
-                    <param id="0" name="Animation">&quot;default3&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_002&quot;</param>
                 </condition>
                 <condition id="3" name="Compare frame" sid="7997084066705827" type="Sprite_Lightning_001">
                     <param id="0" name="Comparison">0</param>
@@ -1301,7 +1301,7 @@
             <actions>
                 <action id="7" name="Play (by name)" sid="9537561035038679" type="Audio">
                     <param id="0" name="Folder">0</param>
-                    <param id="1" name="Audio file name">choose(&quot;tb1&quot;,&quot;tb2&quot;,&quot;tb3&quot;,&quot;tb4&quot;,&quot;tb5&quot;)</param>
+                    <param id="1" name="Audio file name">choose(&quot;SFX_Thunder_007&quot;,&quot;SFX_Thunder_008&quot;,&quot;SFX_Thunder_009&quot;,&quot;SFX_Thunder_010&quot;,&quot;SFX_Thunder_011&quot;)</param>
                     <param id="3" name="Loop">0</param>
                     <param id="4" name="Volume">0</param>
                     <param id="2" name="Tag (optional)">&quot;tro&quot;</param>
@@ -1311,7 +1311,7 @@
         <event-block sid="3828688698195609">
             <conditions>
                 <condition id="2" name="Is playing" sid="1993998363018929" type="Sprite_Lightning_001">
-                    <param id="0" name="Animation">&quot;default4&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_003&quot;</param>
                 </condition>
                 <condition id="3" name="Compare frame" sid="9960509797974532" type="Sprite_Lightning_001">
                     <param id="0" name="Comparison">0</param>
@@ -1321,7 +1321,7 @@
             <actions>
                 <action id="7" name="Play (by name)" sid="4201911062647787" type="Audio">
                     <param id="0" name="Folder">0</param>
-                    <param id="1" name="Audio file name">choose(&quot;tb1&quot;,&quot;tb2&quot;,&quot;tb3&quot;,&quot;tb4&quot;,&quot;tb5&quot;)</param>
+                    <param id="1" name="Audio file name">choose(&quot;SFX_Thunder_007&quot;,&quot;SFX_Thunder_008&quot;,&quot;SFX_Thunder_009&quot;,&quot;SFX_Thunder_010&quot;,&quot;SFX_Thunder_011&quot;)</param>
                     <param id="3" name="Loop">0</param>
                     <param id="4" name="Volume">0</param>
                     <param id="2" name="Tag (optional)">&quot;tro&quot;</param>
@@ -1331,7 +1331,7 @@
         <event-block sid="1078914680118611">
             <conditions>
                 <condition id="2" name="Is playing" sid="5443166597438569" type="Sprite_Lightning_001">
-                    <param id="0" name="Animation">&quot;default5&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_004&quot;</param>
                 </condition>
                 <condition id="3" name="Compare frame" sid="547741962262475" type="Sprite_Lightning_001">
                     <param id="0" name="Comparison">0</param>
@@ -1341,7 +1341,7 @@
             <actions>
                 <action id="7" name="Play (by name)" sid="4290900276513188" type="Audio">
                     <param id="0" name="Folder">0</param>
-                    <param id="1" name="Audio file name">choose(&quot;tb1&quot;,&quot;tb2&quot;,&quot;tb3&quot;,&quot;tb4&quot;,&quot;tb5&quot;)</param>
+                    <param id="1" name="Audio file name">choose(&quot;SFX_Thunder_007&quot;,&quot;SFX_Thunder_008&quot;,&quot;SFX_Thunder_009&quot;,&quot;SFX_Thunder_010&quot;,&quot;SFX_Thunder_011&quot;)</param>
                     <param id="3" name="Loop">0</param>
                     <param id="4" name="Volume">0</param>
                     <param id="2" name="Tag (optional)">&quot;tro&quot;</param>
@@ -1351,7 +1351,7 @@
         <event-block sid="6073935715617426">
             <conditions>
                 <condition id="2" name="Is playing" sid="3474398884924869" type="Sprite_Lightning_001">
-                    <param id="0" name="Animation">&quot;default6&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_005&quot;</param>
                 </condition>
                 <condition id="3" name="Compare frame" sid="5128026191601649" type="Sprite_Lightning_001">
                     <param id="0" name="Comparison">0</param>
@@ -1361,7 +1361,7 @@
             <actions>
                 <action id="7" name="Play (by name)" sid="7518827009849495" type="Audio">
                     <param id="0" name="Folder">0</param>
-                    <param id="1" name="Audio file name">choose(&quot;tb1&quot;,&quot;tb2&quot;,&quot;tb3&quot;,&quot;tb4&quot;,&quot;tb5&quot;)</param>
+                    <param id="1" name="Audio file name">choose(&quot;SFX_Thunder_007&quot;,&quot;SFX_Thunder_008&quot;,&quot;SFX_Thunder_009&quot;,&quot;SFX_Thunder_010&quot;,&quot;SFX_Thunder_011&quot;)</param>
                     <param id="3" name="Loop">0</param>
                     <param id="4" name="Volume">0</param>
                     <param id="2" name="Tag (optional)">&quot;tro&quot;</param>
@@ -1371,7 +1371,7 @@
         <event-block sid="5495640434787957">
             <conditions>
                 <condition id="2" name="Is playing" sid="6719470976668901" type="Sprite_Bridge">
-                    <param id="0" name="Animation">&quot;fim&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Bridge_Ani_End_001&quot;</param>
                 </condition>
                 <condition id="5" inverted="1" name="Is tag playing" sid="3609846123118141" type="Audio">
                     <param id="0" name="Tag">&quot;alma&quot;</param>
@@ -1393,7 +1393,7 @@
         <event-block sid="9773896242198576">
             <conditions>
                 <condition id="2" name="Is playing" sid="3350465662366616" type="Sprite_Rope_002">
-                    <param id="0" name="Animation">&quot;fim&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Rope_002_Ani_End_001&quot;</param>
                 </condition>
                 <condition id="5" inverted="1" name="Is tag playing" sid="5087016437741342" type="Audio">
                     <param id="0" name="Tag">&quot;alma&quot;</param>
@@ -1415,7 +1415,7 @@
         <event-block sid="5774364001280865">
             <conditions>
                 <condition id="2" name="Is playing" sid="6181694417044624" type="Sprite_Gun_002">
-                    <param id="0" name="Animation">&quot;fim&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Gun_002_Ani_End_001&quot;</param>
                 </condition>
                 <condition id="5" inverted="1" name="Is tag playing" sid="6448696323988378" type="Audio">
                     <param id="0" name="Tag">&quot;alma&quot;</param>
@@ -1437,7 +1437,7 @@
         <event-block sid="1094735099811877">
             <conditions>
                 <condition id="2" name="Is playing" sid="8237786750255353" type="Sprite_Rope_002">
-                    <param id="0" name="Animation">&quot;fim&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Rope_002_Ani_End_001&quot;</param>
                 </condition>
                 <condition id="5" inverted="1" name="Is tag playing" sid="6892062232827898" type="Audio">
                     <param id="0" name="Tag">&quot;drama&quot;</param>
@@ -1459,7 +1459,7 @@
         <event-block sid="7942633826229966">
             <conditions>
                 <condition id="2" name="Is playing" sid="9885997729612221" type="Sprite_Gun_002">
-                    <param id="0" name="Animation">&quot;fim&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Gun_002_Ani_End_001&quot;</param>
                 </condition>
                 <condition id="5" inverted="1" name="Is tag playing" sid="1009943456727347" type="Audio">
                     <param id="0" name="Tag">&quot;drama&quot;</param>
@@ -1481,7 +1481,7 @@
         <event-block sid="6795230616784732">
             <conditions>
                 <condition id="2" name="Is playing" sid="7800739216328745" type="Sprite_Bridge">
-                    <param id="0" name="Animation">&quot;fim&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Bridge_Ani_End_001&quot;</param>
                 </condition>
                 <condition id="5" inverted="1" name="Is tag playing" sid="6973756003170437" type="Audio">
                     <param id="0" name="Tag">&quot;drama&quot;</param>
@@ -1503,7 +1503,7 @@
         <event-block sid="9314486655273205">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="7747042598908252" type="System">
-                    <param id="0" name="Variable">layout</param>
+                    <param id="0" name="Variable">Layout</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">26</param>
                 </condition>
@@ -1539,7 +1539,7 @@
                     <actions>
                         <action id="-9" name="Destroy" sid="3833228412658632" type="Sprite_Trigger_MainCharacter_Stop" />
                         <action id="-9" name="Set value" sid="6387786880140923" type="System">
-                            <param id="0" name="Variable">fdff</param>
+                            <param id="0" name="Variable">EndType</param>
                             <param id="1" name="Value">5</param>
                         </action>
                     </actions>
@@ -1549,7 +1549,7 @@
         <event-block sid="5015294833875027">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="515414284826714" type="System">
-                    <param id="0" name="Variable">morreu1</param>
+                    <param id="0" name="Variable">End1</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">2</param>
                 </condition>
@@ -1559,17 +1559,17 @@
                 <event-block sid="4645660109875862">
                     <conditions>
                         <condition id="4" name="On finished" sid="2226618477660688" type="Sprite_Rope_002">
-                            <param id="0" name="Animation">&quot;fim&quot;</param>
+                            <param id="0" name="Animation">&quot;Sprite_Rope_002_Ani_End_001&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
                         <action id="4" name="Set animation" sid="9003590639456378" type="Sprite_Lightning_001">
-                            <param id="0" name="Animation">&quot;default2&quot;</param>
+                            <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                         <action behavior="Fade" id="1" name="Start fade" sid="7905530137847351" type="Sprite_EndFadeOut_Black" />
                         <action id="-9" name="Set value" sid="1552237229352081" type="System">
-                            <param id="0" name="Variable">morreu1</param>
+                            <param id="0" name="Variable">End1</param>
                             <param id="1" name="Value">3</param>
                         </action>
                         <action id="-15" name="Set visible" sid="6955625367212881" type="Sprite_EndFadeOut_Black">
@@ -1596,7 +1596,7 @@
         <event-block sid="5818351407191209">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="8919975456077144" type="System">
-                    <param id="0" name="Variable">morreu2</param>
+                    <param id="0" name="Variable">End2</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">2</param>
                 </condition>
@@ -1606,12 +1606,12 @@
                 <event-block sid="4790580983438394">
                     <conditions>
                         <condition id="4" name="On finished" sid="7620065726249048" type="Sprite_Gun_002">
-                            <param id="0" name="Animation">&quot;fim&quot;</param>
+                            <param id="0" name="Animation">&quot;Sprite_Gun_002_Ani_End_001&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
                         <action id="4" name="Set animation" sid="907079298890597" type="Sprite_Lightning_001">
-                            <param id="0" name="Animation">&quot;default2&quot;</param>
+                            <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                         <action behavior="Fade" id="1" name="Start fade" sid="5457909346839281" type="Sprite_EndFadeOut_Black" />
@@ -1619,7 +1619,7 @@
                             <param id="0" name="Visibility">1</param>
                         </action>
                         <action id="-9" name="Set value" sid="4669418800341692" type="System">
-                            <param id="0" name="Variable">morreu2</param>
+                            <param id="0" name="Variable">End2</param>
                             <param id="1" name="Value">3</param>
                         </action>
                         <action behavior="Timer" id="0" name="Start timer" sid="4889997317367489" type="Sprite_EndFadeOut_Black">
@@ -1643,7 +1643,7 @@
         <event-block sid="7136192685705137">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="9921264128123954" type="System">
-                    <param id="0" name="Variable">morreu3</param>
+                    <param id="0" name="Variable">End3</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">2</param>
                 </condition>
@@ -1653,17 +1653,17 @@
                 <event-block sid="2254779494761861">
                     <conditions>
                         <condition id="4" name="On finished" sid="6519734458257794" type="Sprite_Bridge">
-                            <param id="0" name="Animation">&quot;fim&quot;</param>
+                            <param id="0" name="Animation">&quot;Sprite_Bridge_Ani_End_001&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
                         <action id="4" name="Set animation" sid="8754450949371755" type="Sprite_Lightning_001">
-                            <param id="0" name="Animation">&quot;default2&quot;</param>
+                            <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                         <action behavior="Fade" id="1" name="Start fade" sid="9563370770568032" type="Sprite_EndFadeOut_Black" />
                         <action id="-9" name="Set value" sid="7332015154874373" type="System">
-                            <param id="0" name="Variable">morreu3</param>
+                            <param id="0" name="Variable">End3</param>
                             <param id="1" name="Value">3</param>
                         </action>
                         <action id="-15" name="Set visible" sid="9558674906393597" type="Sprite_EndFadeOut_Black">
@@ -1690,7 +1690,7 @@
         <event-block sid="9588817812918472">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="4449727748632056" type="System">
-                    <param id="0" name="Variable">morreu4</param>
+                    <param id="0" name="Variable">End4</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">2</param>
                 </condition>
@@ -1700,17 +1700,17 @@
                 <event-block sid="7602743239337483">
                     <conditions>
                         <condition id="4" name="On finished" sid="429796136258828" type="Sprite_Collapse_001">
-                            <param id="0" name="Animation">&quot;fim&quot;</param>
+                            <param id="0" name="Animation">&quot;Sprite_Collapse_001_Ani_End_001&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
                         <action id="4" name="Set animation" sid="960473590333079" type="Sprite_Lightning_001">
-                            <param id="0" name="Animation">&quot;default2&quot;</param>
+                            <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                         <action behavior="Fade" id="1" name="Start fade" sid="2821840926752906" type="Sprite_EndFadeOut_Black" />
                         <action id="-9" name="Set value" sid="14520870938079" type="System">
-                            <param id="0" name="Variable">morreu4</param>
+                            <param id="0" name="Variable">End4</param>
                             <param id="1" name="Value">3</param>
                         </action>
                         <action id="-15" name="Set visible" sid="174012125478507" type="Sprite_EndFadeOut_Black">
@@ -1737,7 +1737,7 @@
         <event-block sid="4194332240166516">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="2193291194196306" type="System">
-                    <param id="0" name="Variable">morreu1</param>
+                    <param id="0" name="Variable">End1</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">3</param>
                 </condition>
@@ -1768,7 +1768,7 @@
         <event-block sid="8171078653607491">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="4958874179710489" type="System">
-                    <param id="0" name="Variable">morreu2</param>
+                    <param id="0" name="Variable">End2</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">3</param>
                 </condition>
@@ -1799,7 +1799,7 @@
         <event-block sid="9046580794220886">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="2180103750207188" type="System">
-                    <param id="0" name="Variable">morreu3</param>
+                    <param id="0" name="Variable">End3</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">3</param>
                 </condition>
@@ -1830,7 +1830,7 @@
         <event-block sid="7469101409079881">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="2032281862749644" type="System">
-                    <param id="0" name="Variable">morreu4</param>
+                    <param id="0" name="Variable">End4</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">3</param>
                 </condition>

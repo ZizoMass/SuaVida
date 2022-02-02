@@ -73,7 +73,7 @@
                     <param id="0" name="Visibility">0</param>
                 </action>
                 <action id="4" name="Set animation" sid="6584634494442279" type="Sprite_PlayerCar_003">
-                    <param id="0" name="Animation">&quot;saindo&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_PlayerCar_003_Ani_ParkingGettingOut_001&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
                 <action id="-9" name="Set value" sid="8209330909070795" type="System">
@@ -122,7 +122,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="3331100877501937" type="Sprite_PlayerCarParking">
-                    <param id="0" name="Animation">&quot;vazio&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_PlayerCarParking_Ani_CarEmpty_001&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
                 <action behavior="Platform" id="11" name="Set enabled" sid="7862844339704359" type="Sprite_MainCharacter_001">
@@ -167,7 +167,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="1821307893720245" type="Sprite_MainCharacter_001">
-                    <param id="0" name="Animation">&quot;caminhando&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_MainCharacter_001_Ani_Walk_001&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -178,7 +178,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="2760729469528267" type="Sprite_MainCharacter_001">
-                    <param id="0" name="Animation">&quot;parado&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_MainCharacter_001_Ani_Idle_001&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -223,7 +223,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="6575405252574192" type="Sprite_MainCharacter_001">
-                    <param id="0" name="Animation">&quot;parado&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_MainCharacter_001_Ani_Idle_001&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -236,7 +236,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="2321120159935418" type="Sprite_MainCharacter_001">
-                    <param id="0" name="Animation">&quot;parado&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_MainCharacter_001_Ani_Idle_001&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -321,7 +321,7 @@
                     <param id="0" name="Tag">&quot;amb5&quot;</param>
                 </action>
                 <action id="-9" name="Set value" sid="4998046758452299" type="System">
-                    <param id="0" name="Variable">layout</param>
+                    <param id="0" name="Variable">Layout</param>
                     <param id="1" name="Value">6</param>
                 </action>
             </actions>
@@ -352,20 +352,6 @@
                     </actions>
                 </event-block>
             </sub-events>
-        </event-block>
-        <event-block sid="6663303367701547">
-            <conditions>
-                <condition id="0" name="On key pressed" sid="1633745414850465" type="Keyboard">
-                    <param id="0" name="Key">27</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="33" name="Stop all" sid="4891230952766828" type="Audio" />
-                <action id="-21" name="Reset global variables" sid="2522007416949877" type="System" />
-                <action id="-25" name="Go to layout (by name)" sid="5409190860065743" type="System">
-                    <param id="0" name="Layout">&quot;inicio&quot;</param>
-                </action>
-            </actions>
         </event-block>
         <event-block sid="6432058599256411">
             <conditions>
@@ -400,6 +386,20 @@
                     </actions>
                 </event-block>
             </sub-events>
+        </event-block>
+        <event-block sid="6663303367701547">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="1633745414850465" type="Keyboard">
+                    <param id="0" name="Key">27</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="4891230952766828" type="Audio" />
+                <action id="-21" name="Reset global variables" sid="2522007416949877" type="System" />
+                <action id="-2" name="Go to layout" sid="5409190860065743" type="System">
+                    <param id="0" name="Layout">MainMenu</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>

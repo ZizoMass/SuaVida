@@ -31,7 +31,7 @@
                     <param id="1" name="Value"> 514</param>
                 </action>
                 <action id="-9" name="Set value" sid="5572651727093496" type="System">
-                    <param id="0" name="Variable">layout</param>
+                    <param id="0" name="Variable">Layout</param>
                     <param id="1" name="Value">19</param>
                 </action>
             </actions>
@@ -60,8 +60,8 @@
             <actions>
                 <action id="33" name="Stop all" sid="4249465089839663" type="Audio" />
                 <action id="-21" name="Reset global variables" sid="6106449732051414" type="System" />
-                <action id="-25" name="Go to layout (by name)" sid="2782016770554583" type="System">
-                    <param id="0" name="Layout">&quot;inicio&quot;</param>
+                <action id="-2" name="Go to layout" sid="2782016770554583" type="System">
+                    <param id="0" name="Layout">MainMenu</param>
                 </action>
             </actions>
         </event-block>

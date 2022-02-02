@@ -560,11 +560,11 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-25" name="Go to layout (by name)" sid="3226119387945081" type="System">
-                    <param id="0" name="Layout">&quot;fase23&quot;</param>
+                <action id="-2" name="Go to layout" sid="3226119387945081" type="System">
+                    <param id="0" name="Layout">Level_023</param>
                 </action>
                 <action id="-9" name="Set value" sid="6593711379992284" type="System">
-                    <param id="0" name="Variable">layout</param>
+                    <param id="0" name="Variable">Layout</param>
                     <param id="1" name="Value">23</param>
                 </action>
             </actions>
@@ -572,7 +572,7 @@
         <event-block sid="359621558403293">
             <conditions>
                 <condition id="2" name="Is playing" sid="8447778706173051" type="Sprite_Lightning_001">
-                    <param id="0" name="Animation">&quot;default&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Transition_001&quot;</param>
                 </condition>
                 <condition id="3" name="Compare frame" sid="4220219724350419" type="Sprite_Lightning_001">
                     <param id="0" name="Comparison">0</param>
@@ -582,7 +582,7 @@
             <actions>
                 <action id="7" name="Play (by name)" sid="256625848302713" type="Audio">
                     <param id="0" name="Folder">0</param>
-                    <param id="1" name="Audio file name">choose(&quot;tb1&quot;,&quot;tb2&quot;,&quot;tb3&quot;,&quot;tb4&quot;,&quot;tb5&quot;)</param>
+                    <param id="1" name="Audio file name">choose(&quot;SFX_Thunder_007&quot;,&quot;SFX_Thunder_008&quot;,&quot;SFX_Thunder_009&quot;,&quot;SFX_Thunder_010&quot;,&quot;SFX_Thunder_011&quot;)</param>
                     <param id="3" name="Loop">0</param>
                     <param id="4" name="Volume">0</param>
                     <param id="2" name="Tag (optional)">&quot;tro&quot;</param>
@@ -592,7 +592,7 @@
         <event-block sid="9504720411796652">
             <conditions>
                 <condition id="2" name="Is playing" sid="241599001100543" type="Sprite_Lightning_001">
-                    <param id="0" name="Animation">&quot;default1&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_002&quot;</param>
                 </condition>
                 <condition id="3" name="Compare frame" sid="285651226740949" type="Sprite_Lightning_001">
                     <param id="0" name="Comparison">0</param>
@@ -602,7 +602,7 @@
             <actions>
                 <action id="7" name="Play (by name)" sid="5021730679361138" type="Audio">
                     <param id="0" name="Folder">0</param>
-                    <param id="1" name="Audio file name">choose(&quot;tb1&quot;,&quot;tb2&quot;,&quot;tb3&quot;,&quot;tb4&quot;,&quot;tb5&quot;)</param>
+                    <param id="1" name="Audio file name">choose(&quot;SFX_Thunder_007&quot;,&quot;SFX_Thunder_008&quot;,&quot;SFX_Thunder_009&quot;,&quot;SFX_Thunder_010&quot;,&quot;SFX_Thunder_011&quot;)</param>
                     <param id="3" name="Loop">0</param>
                     <param id="4" name="Volume">0</param>
                     <param id="2" name="Tag (optional)">&quot;tro&quot;</param>
@@ -612,7 +612,7 @@
         <event-block sid="341406253425125">
             <conditions>
                 <condition id="2" name="Is playing" sid="5817859004495059" type="Sprite_Lightning_001">
-                    <param id="0" name="Animation">&quot;default2&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_001&quot;</param>
                 </condition>
                 <condition id="3" name="Compare frame" sid="1392221537397196" type="Sprite_Lightning_001">
                     <param id="0" name="Comparison">0</param>
@@ -622,7 +622,7 @@
             <actions>
                 <action id="7" name="Play (by name)" sid="5799114364190249" type="Audio">
                     <param id="0" name="Folder">0</param>
-                    <param id="1" name="Audio file name">choose(&quot;tb1&quot;,&quot;tb2&quot;,&quot;tb3&quot;,&quot;tb4&quot;,&quot;tb5&quot;)</param>
+                    <param id="1" name="Audio file name">choose(&quot;SFX_Thunder_007&quot;,&quot;SFX_Thunder_008&quot;,&quot;SFX_Thunder_009&quot;,&quot;SFX_Thunder_010&quot;,&quot;SFX_Thunder_011&quot;)</param>
                     <param id="3" name="Loop">0</param>
                     <param id="4" name="Volume">0</param>
                     <param id="2" name="Tag (optional)">&quot;tro&quot;</param>
@@ -632,7 +632,7 @@
         <event-block sid="6810340012979356">
             <conditions>
                 <condition id="2" name="Is playing" sid="6048248952418706" type="Sprite_Lightning_001">
-                    <param id="0" name="Animation">&quot;default3&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_003&quot;</param>
                 </condition>
                 <condition id="3" name="Compare frame" sid="7215553286570925" type="Sprite_Lightning_001">
                     <param id="0" name="Comparison">0</param>
@@ -642,7 +642,7 @@
             <actions>
                 <action id="7" name="Play (by name)" sid="4435812988462382" type="Audio">
                     <param id="0" name="Folder">0</param>
-                    <param id="1" name="Audio file name">choose(&quot;tb1&quot;,&quot;tb2&quot;,&quot;tb3&quot;,&quot;tb4&quot;,&quot;tb5&quot;)</param>
+                    <param id="1" name="Audio file name">choose(&quot;SFX_Thunder_007&quot;,&quot;SFX_Thunder_008&quot;,&quot;SFX_Thunder_009&quot;,&quot;SFX_Thunder_010&quot;,&quot;SFX_Thunder_011&quot;)</param>
                     <param id="3" name="Loop">0</param>
                     <param id="4" name="Volume">0</param>
                     <param id="2" name="Tag (optional)">&quot;tro&quot;</param>
@@ -652,7 +652,7 @@
         <event-block sid="6536987558052725">
             <conditions>
                 <condition id="2" name="Is playing" sid="3003300370421682" type="Sprite_Lightning_001">
-                    <param id="0" name="Animation">&quot;default4&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_004&quot;</param>
                 </condition>
                 <condition id="3" name="Compare frame" sid="7986372691448436" type="Sprite_Lightning_001">
                     <param id="0" name="Comparison">0</param>
@@ -662,7 +662,7 @@
             <actions>
                 <action id="7" name="Play (by name)" sid="6613962385863677" type="Audio">
                     <param id="0" name="Folder">0</param>
-                    <param id="1" name="Audio file name">choose(&quot;tb1&quot;,&quot;tb2&quot;,&quot;tb3&quot;,&quot;tb4&quot;,&quot;tb5&quot;)</param>
+                    <param id="1" name="Audio file name">choose(&quot;SFX_Thunder_007&quot;,&quot;SFX_Thunder_008&quot;,&quot;SFX_Thunder_009&quot;,&quot;SFX_Thunder_010&quot;,&quot;SFX_Thunder_011&quot;)</param>
                     <param id="3" name="Loop">0</param>
                     <param id="4" name="Volume">0</param>
                     <param id="2" name="Tag (optional)">&quot;tro&quot;</param>
@@ -672,7 +672,7 @@
         <event-block sid="8642445988341547">
             <conditions>
                 <condition id="2" name="Is playing" sid="103994758828685" type="Sprite_Lightning_001">
-                    <param id="0" name="Animation">&quot;default5&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_005&quot;</param>
                 </condition>
                 <condition id="3" name="Compare frame" sid="3266172648651113" type="Sprite_Lightning_001">
                     <param id="0" name="Comparison">0</param>
@@ -682,7 +682,7 @@
             <actions>
                 <action id="7" name="Play (by name)" sid="4384871766826758" type="Audio">
                     <param id="0" name="Folder">0</param>
-                    <param id="1" name="Audio file name">choose(&quot;tb1&quot;,&quot;tb2&quot;,&quot;tb3&quot;,&quot;tb4&quot;,&quot;tb5&quot;)</param>
+                    <param id="1" name="Audio file name">choose(&quot;SFX_Thunder_007&quot;,&quot;SFX_Thunder_008&quot;,&quot;SFX_Thunder_009&quot;,&quot;SFX_Thunder_010&quot;,&quot;SFX_Thunder_011&quot;)</param>
                     <param id="3" name="Loop">0</param>
                     <param id="4" name="Volume">0</param>
                     <param id="2" name="Tag (optional)">&quot;tro&quot;</param>
@@ -692,7 +692,7 @@
         <event-block sid="2229424026098552">
             <conditions>
                 <condition id="2" name="Is playing" sid="5070864493216014" type="Sprite_Lightning_001">
-                    <param id="0" name="Animation">&quot;default6&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Transition_002&quot;</param>
                 </condition>
                 <condition id="3" name="Compare frame" sid="1253550911564204" type="Sprite_Lightning_001">
                     <param id="0" name="Comparison">0</param>
@@ -702,7 +702,7 @@
             <actions>
                 <action id="7" name="Play (by name)" sid="149537259903253" type="Audio">
                     <param id="0" name="Folder">0</param>
-                    <param id="1" name="Audio file name">choose(&quot;tb1&quot;,&quot;tb2&quot;,&quot;tb3&quot;,&quot;tb4&quot;,&quot;tb5&quot;)</param>
+                    <param id="1" name="Audio file name">choose(&quot;SFX_Thunder_007&quot;,&quot;SFX_Thunder_008&quot;,&quot;SFX_Thunder_009&quot;,&quot;SFX_Thunder_010&quot;,&quot;SFX_Thunder_011&quot;)</param>
                     <param id="3" name="Loop">0</param>
                     <param id="4" name="Volume">0</param>
                     <param id="2" name="Tag (optional)">&quot;tro&quot;</param>

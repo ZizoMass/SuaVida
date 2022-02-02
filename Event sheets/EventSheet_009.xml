@@ -15,7 +15,7 @@
                     <param id="1" name="Tag (optional)">&quot;lamp&quot;</param>
                 </action>
                 <action id="2" name="Stop" sid="7567909002195936" type="Sprite_Text_Computer_Loading" />
-                <action id="4" name="Set animation" sid="6468593488187553" type="Sprite_Computer_Text_Command">
+                <action id="4" name="Set animation" sid="6468593488187553" type="Sprite_Text_Computer_Press">
                     <param id="0" name="Animation">&quot;Default&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -29,12 +29,12 @@
         </event-block>
         <event-block sid="1288011496324305">
             <conditions>
-                <condition id="4" name="On finished" sid="8451976486887646" type="Sprite_Computer_Text_Command">
+                <condition id="4" name="On finished" sid="8451976486887646" type="Sprite_Text_Computer_Press">
                     <param id="0" name="Animation">&quot;Default&quot;</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="8043206289486244" type="Sprite_Computer_Text_Command">
+                <action id="4" name="Set animation" sid="8043206289486244" type="Sprite_Text_Computer_Press">
                     <param id="0" name="Animation">&quot;ponto&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -42,7 +42,7 @@
         </event-block>
         <event-block sid="6067449091865567">
             <conditions>
-                <condition id="2" name="Is playing" sid="9333660815234032" type="Sprite_Computer_Text_Command">
+                <condition id="2" name="Is playing" sid="9333660815234032" type="Sprite_Text_Computer_Press">
                     <param id="0" name="Animation">&quot;ponto&quot;</param>
                 </condition>
             </conditions>
@@ -55,7 +55,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="9386763458854698" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="9386763458854698" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;a&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -74,7 +74,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="8280559846167142" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="8280559846167142" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;b&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -93,7 +93,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="8945930302678879" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="8945930302678879" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;c&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -112,7 +112,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="9317810808914443" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="9317810808914443" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;d&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -131,7 +131,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="9866639358470017" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="9866639358470017" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;e&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -150,7 +150,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="8590210788756407" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="8590210788756407" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;f&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -169,7 +169,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="5535977614120311" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="5535977614120311" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;g&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -188,7 +188,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="5989917463159749" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="5989917463159749" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;h&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -207,7 +207,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="1418995453237515" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="1418995453237515" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;i&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -226,7 +226,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="2412615614911938" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="2412615614911938" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;j&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -237,7 +237,7 @@
                             <param id="1" name="Tag (optional)">&quot;j&quot;</param>
                         </action>
                         <action id="-10" name="Add to" sid="6283092338874649" type="System">
-                            <param id="0" name="Variable">mudarlayout</param>
+                            <param id="0" name="Variable">ChangeLayout</param>
                             <param id="1" name="Value">1</param>
                         </action>
                     </actions>
@@ -249,7 +249,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="9284625624430723" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="9284625624430723" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;k&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -268,7 +268,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="4649175846217314" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="4649175846217314" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;l&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -287,7 +287,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="3914344002759663" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="3914344002759663" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;m&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -306,7 +306,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="7534020231327782" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="7534020231327782" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;n&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -325,7 +325,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="8992969629117046" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="8992969629117046" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;o&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -344,7 +344,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="7370222839437323" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="7370222839437323" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;p&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -363,7 +363,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="13093536411107" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="13093536411107" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;q&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -382,7 +382,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="2383347563393588" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="2383347563393588" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;r&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -401,7 +401,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="1386051604141874" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="1386051604141874" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;s&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -420,7 +420,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="4237024397234884" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="4237024397234884" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;t&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -439,7 +439,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="5439363462757606" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="5439363462757606" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;u&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -458,7 +458,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="7787060083211677" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="7787060083211677" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;v&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -477,7 +477,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="6800674212972037" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="6800674212972037" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;w&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -496,7 +496,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="1307010900487268" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="1307010900487268" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;x&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -515,7 +515,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="2036548173339478" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="2036548173339478" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;y&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -534,7 +534,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="886596117244339" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="886596117244339" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;z&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -553,7 +553,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="658355056356785" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="658355056356785" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -566,7 +566,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="4597496500054796" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="4597496500054796" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -579,7 +579,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="8023732447879265" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="8023732447879265" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -592,7 +592,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="1540344562661863" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="1540344562661863" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -605,7 +605,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="2829171879762201" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="2829171879762201" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -618,7 +618,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="130813439235485" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="130813439235485" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -631,7 +631,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="7711583445920548" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="7711583445920548" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -644,7 +644,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="3814159784712195" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="3814159784712195" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -657,7 +657,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="6427875290490943" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="6427875290490943" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -670,7 +670,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="4771533910328082" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="4771533910328082" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -683,7 +683,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="1357431539806795" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="1357431539806795" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -696,7 +696,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="4674146952439124" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="4674146952439124" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -709,7 +709,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="982147763922251" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="982147763922251" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -722,7 +722,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="7550804006700615" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="7550804006700615" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -735,7 +735,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="1408682959070177" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="1408682959070177" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -748,7 +748,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="3007751464041052" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="3007751464041052" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -761,7 +761,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="5627289678432485" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="5627289678432485" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -774,7 +774,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="4560094755929033" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="4560094755929033" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -787,7 +787,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="3355956194146701" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="3355956194146701" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -800,7 +800,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="4199646747062831" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="4199646747062831" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -813,7 +813,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="6885879194666916" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="6885879194666916" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -826,7 +826,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="5874749433291212" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="5874749433291212" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -839,7 +839,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="3932556078799515" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="3932556078799515" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -852,7 +852,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="952542601718153" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="952542601718153" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -865,7 +865,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="5783186146148393" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="5783186146148393" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -878,7 +878,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="8523257060417026" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="8523257060417026" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -891,7 +891,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="7295311075564456" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="7295311075564456" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -904,7 +904,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="2877461265836845" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="2877461265836845" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -917,7 +917,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="3082669301406128" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="3082669301406128" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -930,7 +930,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="9624139837560786" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="9624139837560786" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -943,7 +943,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="1663535888450794" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="1663535888450794" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -956,7 +956,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="5671644509715221" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="5671644509715221" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -969,7 +969,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="7311518213130224" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="7311518213130224" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -982,7 +982,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="3660062067732051" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="3660062067732051" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -995,7 +995,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="6670567198341216" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="6670567198341216" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -1008,7 +1008,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="8869294746980254" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="8869294746980254" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -1021,7 +1021,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="8805185005548528" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="8805185005548528" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -1034,7 +1034,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="1359033786020958" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="1359033786020958" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -1047,7 +1047,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="982211306823551" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="982211306823551" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -1060,7 +1060,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="8400436753616011" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="8400436753616011" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -1073,7 +1073,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="4675379160399571" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="4675379160399571" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -1086,7 +1086,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="911261701903799" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="911261701903799" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -1099,7 +1099,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="3918141405721973" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="3918141405721973" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -1112,7 +1112,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="3139651504272644" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="3139651504272644" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -1125,7 +1125,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="2846798531273178" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="2846798531273178" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -1138,7 +1138,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="8187325597529643" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="8187325597529643" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -1151,7 +1151,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="7616625201800462" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="7616625201800462" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -1164,7 +1164,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="8619467205443787" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="8619467205443787" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -1177,7 +1177,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="792921816624086" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="792921816624086" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -1190,7 +1190,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="1677397533226775" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="1677397533226775" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -1203,7 +1203,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="7486194726660899" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="7486194726660899" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -1216,7 +1216,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="1045461111263059" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="1045461111263059" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -1229,7 +1229,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="936633346961905" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="936633346961905" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -1242,7 +1242,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="6245856654720237" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="6245856654720237" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -1255,7 +1255,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="1364610868679519" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="1364610868679519" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -1268,7 +1268,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="895015917415837" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="895015917415837" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -1281,7 +1281,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="9995206777159063" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="9995206777159063" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -1294,7 +1294,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="5795362590474055" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="5795362590474055" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -1307,7 +1307,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="4963148940420604" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="4963148940420604" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -1320,7 +1320,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="9796648861981535" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="9796648861981535" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -1333,7 +1333,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="3180596667129381" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="3180596667129381" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -1346,7 +1346,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="1014307366620554" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="1014307366620554" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -1359,7 +1359,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="7103752017637882" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="7103752017637882" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -1372,7 +1372,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="8352897921302663" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="8352897921302663" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -1385,7 +1385,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="7423934138656296" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="7423934138656296" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -1398,7 +1398,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="6237493038845699" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="6237493038845699" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -1411,7 +1411,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="2197339027026867" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="2197339027026867" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -1424,7 +1424,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="8172177860789641" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="8172177860789641" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -1437,7 +1437,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="7526012887454456" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="7526012887454456" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -1450,7 +1450,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="7971313990506117" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="7971313990506117" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -1463,7 +1463,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="2618284622720034" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="2618284622720034" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -1476,7 +1476,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="6932790635663298" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="6932790635663298" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -1489,7 +1489,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="6078469008606988" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="6078469008606988" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -1502,7 +1502,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="6946652368947785" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="6946652368947785" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -1515,7 +1515,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="755696684573347" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="755696684573347" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -1528,7 +1528,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="7886782272486737" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="7886782272486737" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -1541,7 +1541,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="1109830839087776" type="Sprite_Computer_Text_Command">
+                        <action id="4" name="Set animation" sid="1109830839087776" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;erro&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -1551,7 +1551,7 @@
         </event-block>
         <event-block sid="1085685742092476">
             <conditions>
-                <condition id="4" name="On finished" sid="6135560897876549" type="Sprite_Computer_Text_Command">
+                <condition id="4" name="On finished" sid="6135560897876549" type="Sprite_Text_Computer_Press">
                     <param id="0" name="Animation">&quot;j&quot;</param>
                 </condition>
             </conditions>
@@ -1567,7 +1567,7 @@
         </event-block>
         <event-block sid="1676520044054967">
             <conditions>
-                <condition id="4" name="On finished" sid="3579855077743246" type="Sprite_Computer_Text_Command">
+                <condition id="4" name="On finished" sid="3579855077743246" type="Sprite_Text_Computer_Press">
                     <param id="0" name="Animation">&quot;a&quot;</param>
                 </condition>
             </conditions>
@@ -1583,7 +1583,7 @@
         </event-block>
         <event-block sid="6082656300624543">
             <conditions>
-                <condition id="4" name="On finished" sid="5981797581063755" type="Sprite_Computer_Text_Command">
+                <condition id="4" name="On finished" sid="5981797581063755" type="Sprite_Text_Computer_Press">
                     <param id="0" name="Animation">&quot;b&quot;</param>
                 </condition>
             </conditions>
@@ -1599,7 +1599,7 @@
         </event-block>
         <event-block sid="5650359726698463">
             <conditions>
-                <condition id="4" name="On finished" sid="720847244381415" type="Sprite_Computer_Text_Command">
+                <condition id="4" name="On finished" sid="720847244381415" type="Sprite_Text_Computer_Press">
                     <param id="0" name="Animation">&quot;c&quot;</param>
                 </condition>
             </conditions>
@@ -1615,7 +1615,7 @@
         </event-block>
         <event-block sid="4185864754780752">
             <conditions>
-                <condition id="4" name="On finished" sid="742944805085281" type="Sprite_Computer_Text_Command">
+                <condition id="4" name="On finished" sid="742944805085281" type="Sprite_Text_Computer_Press">
                     <param id="0" name="Animation">&quot;d&quot;</param>
                 </condition>
             </conditions>
@@ -1631,7 +1631,7 @@
         </event-block>
         <event-block sid="8383791783470138">
             <conditions>
-                <condition id="4" name="On finished" sid="3844168792986085" type="Sprite_Computer_Text_Command">
+                <condition id="4" name="On finished" sid="3844168792986085" type="Sprite_Text_Computer_Press">
                     <param id="0" name="Animation">&quot;f&quot;</param>
                 </condition>
             </conditions>
@@ -1647,7 +1647,7 @@
         </event-block>
         <event-block sid="7987355510939643">
             <conditions>
-                <condition id="4" name="On finished" sid="9272223339074392" type="Sprite_Computer_Text_Command">
+                <condition id="4" name="On finished" sid="9272223339074392" type="Sprite_Text_Computer_Press">
                     <param id="0" name="Animation">&quot;g&quot;</param>
                 </condition>
             </conditions>
@@ -1663,7 +1663,7 @@
         </event-block>
         <event-block sid="2348750606111101">
             <conditions>
-                <condition id="4" name="On finished" sid="6286547296920615" type="Sprite_Computer_Text_Command">
+                <condition id="4" name="On finished" sid="6286547296920615" type="Sprite_Text_Computer_Press">
                     <param id="0" name="Animation">&quot;h&quot;</param>
                 </condition>
             </conditions>
@@ -1679,7 +1679,7 @@
         </event-block>
         <event-block sid="1507604941460754">
             <conditions>
-                <condition id="4" name="On finished" sid="6573675796685673" type="Sprite_Computer_Text_Command">
+                <condition id="4" name="On finished" sid="6573675796685673" type="Sprite_Text_Computer_Press">
                     <param id="0" name="Animation">&quot;i&quot;</param>
                 </condition>
             </conditions>
@@ -1695,7 +1695,7 @@
         </event-block>
         <event-block sid="3829900566666311">
             <conditions>
-                <condition id="4" name="On finished" sid="9520223136952801" type="Sprite_Computer_Text_Command">
+                <condition id="4" name="On finished" sid="9520223136952801" type="Sprite_Text_Computer_Press">
                     <param id="0" name="Animation">&quot;k&quot;</param>
                 </condition>
             </conditions>
@@ -1711,7 +1711,7 @@
         </event-block>
         <event-block sid="7678412224517977">
             <conditions>
-                <condition id="4" name="On finished" sid="5930381238165929" type="Sprite_Computer_Text_Command">
+                <condition id="4" name="On finished" sid="5930381238165929" type="Sprite_Text_Computer_Press">
                     <param id="0" name="Animation">&quot;l&quot;</param>
                 </condition>
             </conditions>
@@ -1727,7 +1727,7 @@
         </event-block>
         <event-block sid="4534901900410241">
             <conditions>
-                <condition id="4" name="On finished" sid="8809199128284683" type="Sprite_Computer_Text_Command">
+                <condition id="4" name="On finished" sid="8809199128284683" type="Sprite_Text_Computer_Press">
                     <param id="0" name="Animation">&quot;m&quot;</param>
                 </condition>
             </conditions>
@@ -1743,7 +1743,7 @@
         </event-block>
         <event-block sid="9453848834561296">
             <conditions>
-                <condition id="4" name="On finished" sid="8879544409494855" type="Sprite_Computer_Text_Command">
+                <condition id="4" name="On finished" sid="8879544409494855" type="Sprite_Text_Computer_Press">
                     <param id="0" name="Animation">&quot;n&quot;</param>
                 </condition>
             </conditions>
@@ -1759,7 +1759,7 @@
         </event-block>
         <event-block sid="4671049152230843">
             <conditions>
-                <condition id="4" name="On finished" sid="6765942173824642" type="Sprite_Computer_Text_Command">
+                <condition id="4" name="On finished" sid="6765942173824642" type="Sprite_Text_Computer_Press">
                     <param id="0" name="Animation">&quot;o&quot;</param>
                 </condition>
             </conditions>
@@ -1775,7 +1775,7 @@
         </event-block>
         <event-block sid="4550366769834083">
             <conditions>
-                <condition id="4" name="On finished" sid="8794336725210182" type="Sprite_Computer_Text_Command">
+                <condition id="4" name="On finished" sid="8794336725210182" type="Sprite_Text_Computer_Press">
                     <param id="0" name="Animation">&quot;p&quot;</param>
                 </condition>
             </conditions>
@@ -1791,7 +1791,7 @@
         </event-block>
         <event-block sid="7125316933609157">
             <conditions>
-                <condition id="4" name="On finished" sid="6561121144725282" type="Sprite_Computer_Text_Command">
+                <condition id="4" name="On finished" sid="6561121144725282" type="Sprite_Text_Computer_Press">
                     <param id="0" name="Animation">&quot;q&quot;</param>
                 </condition>
             </conditions>
@@ -1807,7 +1807,7 @@
         </event-block>
         <event-block sid="8671537387402621">
             <conditions>
-                <condition id="4" name="On finished" sid="5192687949026183" type="Sprite_Computer_Text_Command">
+                <condition id="4" name="On finished" sid="5192687949026183" type="Sprite_Text_Computer_Press">
                     <param id="0" name="Animation">&quot;r&quot;</param>
                 </condition>
             </conditions>
@@ -1823,7 +1823,7 @@
         </event-block>
         <event-block sid="127023753839509">
             <conditions>
-                <condition id="4" name="On finished" sid="930384445986611" type="Sprite_Computer_Text_Command">
+                <condition id="4" name="On finished" sid="930384445986611" type="Sprite_Text_Computer_Press">
                     <param id="0" name="Animation">&quot;s&quot;</param>
                 </condition>
             </conditions>
@@ -1839,7 +1839,7 @@
         </event-block>
         <event-block sid="2377535222625385">
             <conditions>
-                <condition id="4" name="On finished" sid="2321912658684838" type="Sprite_Computer_Text_Command">
+                <condition id="4" name="On finished" sid="2321912658684838" type="Sprite_Text_Computer_Press">
                     <param id="0" name="Animation">&quot;t&quot;</param>
                 </condition>
             </conditions>
@@ -1855,7 +1855,7 @@
         </event-block>
         <event-block sid="8498484567569825">
             <conditions>
-                <condition id="4" name="On finished" sid="9683982906535509" type="Sprite_Computer_Text_Command">
+                <condition id="4" name="On finished" sid="9683982906535509" type="Sprite_Text_Computer_Press">
                     <param id="0" name="Animation">&quot;u&quot;</param>
                 </condition>
             </conditions>
@@ -1871,7 +1871,7 @@
         </event-block>
         <event-block sid="5951950977497003">
             <conditions>
-                <condition id="4" name="On finished" sid="253523609957162" type="Sprite_Computer_Text_Command">
+                <condition id="4" name="On finished" sid="253523609957162" type="Sprite_Text_Computer_Press">
                     <param id="0" name="Animation">&quot;v&quot;</param>
                 </condition>
             </conditions>
@@ -1887,7 +1887,7 @@
         </event-block>
         <event-block sid="5403942806804122">
             <conditions>
-                <condition id="4" name="On finished" sid="4864113917092375" type="Sprite_Computer_Text_Command">
+                <condition id="4" name="On finished" sid="4864113917092375" type="Sprite_Text_Computer_Press">
                     <param id="0" name="Animation">&quot;w&quot;</param>
                 </condition>
             </conditions>
@@ -1903,7 +1903,7 @@
         </event-block>
         <event-block sid="1482472176335169">
             <conditions>
-                <condition id="4" name="On finished" sid="8384506858195288" type="Sprite_Computer_Text_Command">
+                <condition id="4" name="On finished" sid="8384506858195288" type="Sprite_Text_Computer_Press">
                     <param id="0" name="Animation">&quot;x&quot;</param>
                 </condition>
             </conditions>
@@ -1919,7 +1919,7 @@
         </event-block>
         <event-block sid="5475860815949949">
             <conditions>
-                <condition id="4" name="On finished" sid="7850749843723402" type="Sprite_Computer_Text_Command">
+                <condition id="4" name="On finished" sid="7850749843723402" type="Sprite_Text_Computer_Press">
                     <param id="0" name="Animation">&quot;y&quot;</param>
                 </condition>
             </conditions>
@@ -1935,7 +1935,7 @@
         </event-block>
         <event-block sid="292408515715453">
             <conditions>
-                <condition id="4" name="On finished" sid="9089970112245712" type="Sprite_Computer_Text_Command">
+                <condition id="4" name="On finished" sid="9089970112245712" type="Sprite_Text_Computer_Press">
                     <param id="0" name="Animation">&quot;z&quot;</param>
                 </condition>
             </conditions>
@@ -1951,7 +1951,7 @@
         </event-block>
         <event-block sid="676067822834999">
             <conditions>
-                <condition id="4" name="On finished" sid="3773357286972455" type="Sprite_Computer_Text_Command">
+                <condition id="4" name="On finished" sid="3773357286972455" type="Sprite_Text_Computer_Press">
                     <param id="0" name="Animation">&quot;erro&quot;</param>
                 </condition>
             </conditions>
@@ -1972,7 +1972,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="829556902512443" type="Sprite_Computer_Text_Command">
+                <action id="4" name="Set animation" sid="829556902512443" type="Sprite_Text_Computer_Press">
                     <param id="0" name="Animation">&quot;default&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -1988,7 +1988,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="4321574083681964" type="Sprite_Computer_Text_Command">
+                <action id="4" name="Set animation" sid="4321574083681964" type="Sprite_Text_Computer_Press">
                     <param id="0" name="Animation">&quot;default&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -2004,7 +2004,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="5666491613663006" type="Sprite_Computer_Text_Command">
+                <action id="4" name="Set animation" sid="5666491613663006" type="Sprite_Text_Computer_Press">
                     <param id="0" name="Animation">&quot;default&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -2020,7 +2020,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="5477632524836536" type="Sprite_Computer_Text_Command">
+                <action id="4" name="Set animation" sid="5477632524836536" type="Sprite_Text_Computer_Press">
                     <param id="0" name="Animation">&quot;default&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -2036,7 +2036,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="9509169903439627" type="Sprite_Computer_Text_Command">
+                <action id="4" name="Set animation" sid="9509169903439627" type="Sprite_Text_Computer_Press">
                     <param id="0" name="Animation">&quot;default&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -2052,7 +2052,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="8352359574761428" type="Sprite_Computer_Text_Command">
+                <action id="4" name="Set animation" sid="8352359574761428" type="Sprite_Text_Computer_Press">
                     <param id="0" name="Animation">&quot;default&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -2068,7 +2068,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="5170005660880704" type="Sprite_Computer_Text_Command">
+                <action id="4" name="Set animation" sid="5170005660880704" type="Sprite_Text_Computer_Press">
                     <param id="0" name="Animation">&quot;fim&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -2084,7 +2084,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="3431114912919986" type="Sprite_Computer_Text_Command">
+                <action id="4" name="Set animation" sid="3431114912919986" type="Sprite_Text_Computer_Press">
                     <param id="0" name="Animation">&quot;default&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -2095,7 +2095,7 @@
         </event-block>
         <event-block sid="4179265939536681">
             <conditions>
-                <condition id="2" name="Is playing" sid="5570436296507884" type="Sprite_Computer_Text_Command">
+                <condition id="2" name="Is playing" sid="5570436296507884" type="Sprite_Text_Computer_Press">
                     <param id="0" name="Animation">&quot;default&quot;</param>
                 </condition>
             </conditions>
@@ -2108,11 +2108,11 @@
         </event-block>
         <event-block sid="8638690317549408">
             <conditions>
-                <condition id="3" name="Compare frame" sid="4916336495575091" type="Sprite_Computer_Text_Command">
+                <condition id="3" name="Compare frame" sid="4916336495575091" type="Sprite_Text_Computer_Press">
                     <param id="0" name="Comparison">4</param>
                     <param id="1" name="Number">9</param>
                 </condition>
-                <condition id="2" name="Is playing" sid="4133664276438633" type="Sprite_Computer_Text_Command">
+                <condition id="2" name="Is playing" sid="4133664276438633" type="Sprite_Text_Computer_Press">
                     <param id="0" name="Animation">&quot;default&quot;</param>
                 </condition>
             </conditions>
@@ -2125,7 +2125,7 @@
         </event-block>
         <event-block sid="3078058936688882">
             <conditions>
-                <condition id="2" name="Is playing" sid="6519412872081041" type="Sprite_Computer_Text_Command">
+                <condition id="2" name="Is playing" sid="6519412872081041" type="Sprite_Text_Computer_Press">
                     <param id="0" name="Animation">&quot;fim&quot;</param>
                 </condition>
             </conditions>
@@ -2138,11 +2138,11 @@
         </event-block>
         <event-block sid="4613667313885933">
             <conditions>
-                <condition id="3" name="Compare frame" sid="9752607298417148" type="Sprite_Computer_Text_Command">
+                <condition id="3" name="Compare frame" sid="9752607298417148" type="Sprite_Text_Computer_Press">
                     <param id="0" name="Comparison">4</param>
                     <param id="1" name="Number">9</param>
                 </condition>
-                <condition id="2" name="Is playing" sid="2619934658174442" type="Sprite_Computer_Text_Command">
+                <condition id="2" name="Is playing" sid="2619934658174442" type="Sprite_Text_Computer_Press">
                     <param id="0" name="Animation">&quot;fim&quot;</param>
                 </condition>
             </conditions>
@@ -2396,13 +2396,13 @@
         </event-block>
         <event-block sid="8267000293119544">
             <conditions>
-                <condition id="2" name="Is playing" sid="3269536311472044" type="Sprite_Computer_Text_Command">
+                <condition id="2" name="Is playing" sid="3269536311472044" type="Sprite_Text_Computer_Press">
                     <param id="0" name="Animation">&quot;default&quot;</param>
                 </condition>
                 <condition id="5" inverted="1" name="Is tag playing" sid="9757084903617378" type="Audio">
                     <param id="0" name="Tag">&quot;hd&quot;</param>
                 </condition>
-                <condition id="3" name="Compare frame" sid="6479562281611102" type="Sprite_Computer_Text_Command">
+                <condition id="3" name="Compare frame" sid="6479562281611102" type="Sprite_Text_Computer_Press">
                     <param id="0" name="Comparison">3</param>
                     <param id="1" name="Number">9</param>
                 </condition>
@@ -2419,7 +2419,7 @@
         </event-block>
         <event-block sid="3203945842124105">
             <conditions>
-                <condition id="3" name="Compare frame" sid="6682045959156241" type="Sprite_Computer_Text_Command">
+                <condition id="3" name="Compare frame" sid="6682045959156241" type="Sprite_Text_Computer_Press">
                     <param id="0" name="Comparison">5</param>
                     <param id="1" name="Number">10</param>
                 </condition>
@@ -2432,13 +2432,13 @@
         </event-block>
         <event-block sid="915974215611171">
             <conditions>
-                <condition id="2" name="Is playing" sid="3864054215043097" type="Sprite_Computer_Text_Command">
+                <condition id="2" name="Is playing" sid="3864054215043097" type="Sprite_Text_Computer_Press">
                     <param id="0" name="Animation">&quot;fim&quot;</param>
                 </condition>
                 <condition id="5" inverted="1" name="Is tag playing" sid="5630062597052919" type="Audio">
                     <param id="0" name="Tag">&quot;hd&quot;</param>
                 </condition>
-                <condition id="3" name="Compare frame" sid="305001079829347" type="Sprite_Computer_Text_Command">
+                <condition id="3" name="Compare frame" sid="305001079829347" type="Sprite_Text_Computer_Press">
                     <param id="0" name="Comparison">3</param>
                     <param id="1" name="Number">9</param>
                 </condition>
@@ -2455,10 +2455,10 @@
         </event-block>
         <event-block sid="366724678412777">
             <conditions>
-                <condition id="2" name="Is playing" sid="2646794567294055" type="Sprite_Computer_Text_Command">
+                <condition id="2" name="Is playing" sid="2646794567294055" type="Sprite_Text_Computer_Press">
                     <param id="0" name="Animation">&quot;fim&quot;</param>
                 </condition>
-                <condition id="3" name="Compare frame" sid="9605306486896352" type="Sprite_Computer_Text_Command">
+                <condition id="3" name="Compare frame" sid="9605306486896352" type="Sprite_Text_Computer_Press">
                     <param id="0" name="Comparison">0</param>
                     <param id="1" name="Number">64</param>
                 </condition>
@@ -2467,7 +2467,7 @@
             <sub-events>
                 <event-block sid="1343211097738863">
                     <conditions>
-                        <condition id="6" name="On frame changed" sid="2131752659510011" type="Sprite_Computer_Text_Command" />
+                        <condition id="6" name="On frame changed" sid="2131752659510011" type="Sprite_Text_Computer_Press" />
                         <condition id="5" inverted="1" name="Is tag playing" sid="246964775185527" type="Audio">
                             <param id="0" name="Tag">&quot;fim&quot;</param>
                         </condition>
@@ -2485,7 +2485,7 @@
         </event-block>
         <event-block sid="6913307851716344">
             <conditions>
-                <condition id="3" name="Compare frame" sid="9164926936337232" type="Sprite_Computer_Text_Command">
+                <condition id="3" name="Compare frame" sid="9164926936337232" type="Sprite_Text_Computer_Press">
                     <param id="0" name="Comparison">5</param>
                     <param id="1" name="Number">65</param>
                 </condition>
@@ -2529,7 +2529,7 @@
         </event-block>
         <event-block sid="9093949802810611">
             <conditions>
-                <condition id="2" name="Is playing" sid="1699703029959835" type="Sprite_Computer_Text_Command">
+                <condition id="2" name="Is playing" sid="1699703029959835" type="Sprite_Text_Computer_Press">
                     <param id="0" name="Animation">&quot;erro&quot;</param>
                 </condition>
                 <condition id="5" inverted="1" name="Is tag playing" sid="3771807746364177" type="Audio">
@@ -2815,7 +2815,7 @@
         </event-block>
         <event-block sid="7536205579494129">
             <conditions>
-                <condition id="4" name="On finished" sid="9776810965478812" type="Sprite_Computer_Text_Command">
+                <condition id="4" name="On finished" sid="9776810965478812" type="Sprite_Text_Computer_Press">
                     <param id="0" name="Animation">&quot;fim&quot;</param>
                 </condition>
             </conditions>

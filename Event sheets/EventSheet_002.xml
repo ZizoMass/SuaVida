@@ -63,7 +63,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="4545725681121739" type="Sprite_MainCharacter_001">
-                    <param id="0" name="Animation">&quot;caminhando&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_MainCharacter_001_Ani_Walk_001&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -74,7 +74,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="5784488870311019" type="Sprite_MainCharacter_001">
-                    <param id="0" name="Animation">&quot;parado&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_MainCharacter_001_Ani_Idle_001&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -119,7 +119,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="9721379084442312" type="Sprite_MainCharacter_001">
-                    <param id="0" name="Animation">&quot;parado&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_MainCharacter_001_Ani_Idle_001&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -132,13 +132,38 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="912947866097519" type="Sprite_MainCharacter_001">
-                    <param id="0" name="Animation">&quot;parado&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_MainCharacter_001_Ani_Idle_001&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
         </event-block>
         <event-group description="" sid="5086077326425014" title="Level_001">
             <sub-events>
+                <event-block sid="6344402280512704">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="8568389314512521" type="System" />
+                        <condition id="-14" name="Compare variable" sid="8957619067586649" type="System">
+                            <param id="0" name="Variable">Layout</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Play (by name)" sid="2315108090984571" type="Audio">
+                            <param id="0" name="Folder">0</param>
+                            <param id="1" name="Audio file name">&quot;BG_CalmWind_001&quot;</param>
+                            <param id="3" name="Loop">1</param>
+                            <param id="4" name="Volume">0</param>
+                            <param id="2" name="Tag (optional)">&quot;amb1&quot;</param>
+                        </action>
+                        <action id="0" name="Play" sid="1021617055354872" type="Audio">
+                            <param id="0" name="Audio file">BG_Suburb_001</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;amb1&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="6855364115649728">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="1701875851997167" type="Sprite_MainCharacter_001">
@@ -170,7 +195,7 @@
                             <param id="1" name="Value">495</param>
                         </action>
                         <action id="-9" name="Set value" sid="5010988275699357" type="System">
-                            <param id="0" name="Variable">layout</param>
+                            <param id="0" name="Variable">Layout</param>
                             <param id="1" name="Value">2</param>
                         </action>
                         <action id="6" name="Stop" sid="7802469330564297" type="Audio">
@@ -182,31 +207,6 @@
                         <action id="-9" name="Set value" sid="4969205654206783" type="System">
                             <param id="0" name="Variable">tutorial</param>
                             <param id="1" name="Value">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="6344402280512704">
-                    <conditions>
-                        <condition id="-2" name="On start of layout" sid="8568389314512521" type="System" />
-                        <condition id="-14" name="Compare variable" sid="8957619067586649" type="System">
-                            <param id="0" name="Variable">layout</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="7" name="Play (by name)" sid="2315108090984571" type="Audio">
-                            <param id="0" name="Folder">0</param>
-                            <param id="1" name="Audio file name">&quot;ventoamb1_01&quot;</param>
-                            <param id="3" name="Loop">1</param>
-                            <param id="4" name="Volume">0</param>
-                            <param id="2" name="Tag (optional)">&quot;amb1&quot;</param>
-                        </action>
-                        <action id="0" name="Play" sid="1021617055354872" type="Audio">
-                            <param id="0" name="Audio file">BG_Suburb_001</param>
-                            <param id="2" name="Loop">1</param>
-                            <param id="3" name="Volume">-10</param>
-                            <param id="1" name="Tag (optional)">&quot;amb1&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -230,7 +230,7 @@
                                     <param id="0" name="Tag">&quot;alr&quot;</param>
                                 </action>
                                 <action id="-9" name="Set value" sid="8362675087398408" type="System">
-                                    <param id="0" name="Variable">alarmeligdesl</param>
+                                    <param id="0" name="Variable">AlarmOff</param>
                                     <param id="1" name="Value">1</param>
                                 </action>
                                 <action id="0" name="Play" sid="2214871659861055" type="Audio">
@@ -278,14 +278,14 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action behavior="Fade" id="1" name="Start fade" sid="4631134244021993" type="Level_001_Text_PlayerRoom_GameTutorial" />
+                        <action behavior="Fade" id="1" name="Start fade" sid="4631134244021993" type="Sprite_Text_PlayerRoom_GameTutorial" />
                     </actions>
                 </event-block>
                 <event-block sid="4658968821110816">
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="3109278971843624" type="System" />
                         <condition id="-14" name="Compare variable" sid="3558468922304318" type="System">
-                            <param id="0" name="Variable">layout</param>
+                            <param id="0" name="Variable">Layout</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">1</param>
                         </condition>
@@ -296,8 +296,8 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="8445716434250932" type="Level_001_Text_PlayerRoom_GameTutorial">
-                            <param id="0" name="Animation">&quot;default&quot;</param>
+                        <action id="4" name="Set animation" sid="8445716434250932" type="Sprite_Text_PlayerRoom_GameTutorial">
+                            <param id="0" name="Animation">&quot;Level_001_Text_PlayerRoom_GameTutorial_Ani_Tutorial_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                     </actions>
@@ -306,7 +306,7 @@
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="5862068679818633" type="System" />
                         <condition id="-14" name="Compare variable" sid="5635287946405972" type="System">
-                            <param id="0" name="Variable">layout</param>
+                            <param id="0" name="Variable">Layout</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">1</param>
                         </condition>
@@ -317,8 +317,8 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="9703503075974792" type="Level_001_Text_PlayerRoom_GameTutorial">
-                            <param id="0" name="Animation">&quot;nada&quot;</param>
+                        <action id="4" name="Set animation" sid="9703503075974792" type="Sprite_Text_PlayerRoom_GameTutorial">
+                            <param id="0" name="Animation">&quot;Level_001_Text_PlayerRoom_GameTutorial_Ani_Idle_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                     </actions>
@@ -326,12 +326,12 @@
                 <event-block sid="7837274803811006">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="5008338739424617" type="System">
-                            <param id="0" name="Variable">layout</param>
+                            <param id="0" name="Variable">Layout</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">1</param>
                         </condition>
                         <condition id="2" name="Is playing" sid="530258512601717" type="Sprite_MainCharacter_001">
-                            <param id="0" name="Animation">&quot;caminhando&quot;</param>
+                            <param id="0" name="Animation">&quot;Sprite_MainCharacter_001_Ani_Walk_001&quot;</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -355,7 +355,7 @@
                                     <actions>
                                         <action id="7" name="Play (by name)" sid="9057280406314109" type="Audio">
                                             <param id="0" name="Folder">0</param>
-                                            <param id="1" name="Audio file name">choose(&quot;d1&quot;,&quot;d2&quot;,&quot;d3&quot;,&quot;d4&quot;,&quot;d5&quot;,&quot;d6&quot;,&quot;d7&quot;,&quot;d8&quot;,&quot;d9&quot;,&quot;d10&quot;)</param>
+                                            <param id="1" name="Audio file name">choose(&quot;FLY_StepsOnASphaltFlor_001&quot;,&quot;FLY_StepsOnASphaltFlor_002&quot;,&quot;FLY_StepsOnASphaltFlor_003&quot;,&quot;FLY_StepsOnASphaltFlor_004&quot;,&quot;FLY_StepsOnASphaltFlor_005&quot;,&quot;FLY_StepsOnASphaltFlor_006&quot;,&quot;FLY_StepsOnASphaltFlor_007&quot;,&quot;FLY_StepsOnASphaltFlor_008&quot;,&quot;FLY_StepsOnASphaltFlor_009&quot;,&quot;FLY_StepsOnASphaltFlor_010&quot;)</param>
                                             <param id="3" name="Loop">0</param>
                                             <param id="4" name="Volume">-35</param>
                                             <param id="2" name="Tag (optional)">&quot;pd&quot;</param>
@@ -391,7 +391,7 @@
                                     <actions>
                                         <action id="7" name="Play (by name)" sid="7241231874960725" type="Audio">
                                             <param id="0" name="Folder">0</param>
-                                            <param id="1" name="Audio file name">choose(&quot;e1&quot;,&quot;e2&quot;,&quot;e3&quot;,&quot;e4&quot;,&quot;e5&quot;,&quot;e6&quot;,&quot;e7&quot;,&quot;e8&quot;,&quot;e9&quot;,&quot;e10&quot;)</param>
+                                            <param id="1" name="Audio file name">choose(&quot;FLY_StepsOnASphaltFlor_001&quot;,&quot;FLY_StepsOnASphaltFlor_002&quot;,&quot;FLY_StepsOnASphaltFlor_003&quot;,&quot;FLY_StepsOnASphaltFlor_004&quot;,&quot;FLY_StepsOnASphaltFlor_005&quot;,&quot;FLY_StepsOnASphaltFlor_006&quot;,&quot;FLY_StepsOnASphaltFlor_007&quot;,&quot;FLY_StepsOnASphaltFlor_008&quot;,&quot;FLY_StepsOnASphaltFlor_009&quot;,&quot;FLY_StepsOnASphaltFlor_010&quot;)</param>
                                             <param id="3" name="Loop">0</param>
                                             <param id="4" name="Volume">-28</param>
                                             <param id="2" name="Tag (optional)">&quot;pe&quot;</param>
@@ -414,12 +414,129 @@
         </event-group>
         <event-group description="" sid="3059306868940041" title="Level_002">
             <sub-events>
+                <event-block sid="4019629096778632">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="5488202967225642" type="System" />
+                        <condition id="-14" name="Compare variable" sid="8336245191296209" type="System">
+                            <param id="0" name="Variable">Layout</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="6338492036460692" type="Audio">
+                            <param id="0" name="Audio file">BG_RefrigeratorEngine_001</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">-8</param>
+                            <param id="1" name="Tag (optional)">&quot;amb2&quot;</param>
+                        </action>
+                        <action id="0" name="Play" sid="1995301353216756" type="Audio">
+                            <param id="0" name="Audio file">BG_TelevisionNoise_001</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;amb2&quot;</param>
+                        </action>
+                        <action id="0" name="Play" sid="7698461826751292" type="Audio">
+                            <param id="0" name="Audio file">BG_TelevisionNoise_002</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">-6</param>
+                            <param id="1" name="Tag (optional)">&quot;amb2&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4760270445341662">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="5614169079215037" type="System">
+                            <param id="0" name="Variable">Layout</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                        <condition id="2" name="Is playing" sid="6743268387133075" type="Sprite_MainCharacter_001">
+                            <param id="0" name="Animation">&quot;Sprite_MainCharacter_001_Ani_Walk_001&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="3227498164983375">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="2092669350329617" type="Sprite_MainCharacter_001">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">1</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="2024648169966861">
+                                    <conditions>
+                                        <condition id="6" name="On frame changed" sid="4082514565963067" type="Sprite_MainCharacter_001" />
+                                        <condition id="5" inverted="1" name="Is tag playing" sid="1362814435869324" type="Audio">
+                                            <param id="0" name="Tag">&quot;pd&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="7" name="Play (by name)" sid="7239373618317421" type="Audio">
+                                            <param id="0" name="Folder">0</param>
+                                            <param id="1" name="Audio file name">choose(&quot;FLY_StepsOnParcelainFlor_001&quot;,&quot;FLY_StepsOnParcelainFlor_002&quot;,&quot;FLY_StepsOnParcelainFlor_003&quot;,&quot;FLY_StepsOnParcelainFlor_004&quot;,&quot;FLY_StepsOnParcelainFlor_005&quot;,&quot;FLY_StepsOnParcelainFlor_006&quot;,&quot;FLY_StepsOnParcelainFlor_007&quot;,&quot;FLY_StepsOnParcelainFlor_008&quot;,&quot;FLY_StepsOnParcelainFlor_009&quot;,&quot;FLY_StepsOnParcelainFlor_010&quot;)</param>
+                                            <param id="3" name="Loop">0</param>
+                                            <param id="4" name="Volume">-35</param>
+                                            <param id="2" name="Tag (optional)">&quot;pd&quot;</param>
+                                        </action>
+                                        <action id="19" name="Add compressor effect" sid="9873916678662567" type="Audio">
+                                            <param id="0" name="Tag">&quot;pd&quot;</param>
+                                            <param id="1" name="Threshold">-24</param>
+                                            <param id="2" name="Knee">350</param>
+                                            <param id="3" name="Ratio">0</param>
+                                            <param id="4" name="Attack">1</param>
+                                            <param id="5" name="Release">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="5026000086755678">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="2730906227879104" type="Sprite_MainCharacter_001">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">6</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="6938931762463497">
+                                    <conditions>
+                                        <condition id="6" name="On frame changed" sid="2226290676714233" type="Sprite_MainCharacter_001" />
+                                        <condition id="5" inverted="1" name="Is tag playing" sid="2081870369770304" type="Audio">
+                                            <param id="0" name="Tag">&quot;pe&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="7" name="Play (by name)" sid="454312535875964" type="Audio">
+                                            <param id="0" name="Folder">0</param>
+                                            <param id="1" name="Audio file name">choose(&quot;FLY_StepsOnParcelainFlor_001&quot;,&quot;FLY_StepsOnParcelainFlor_002&quot;,&quot;FLY_StepsOnParcelainFlor_003&quot;,&quot;FLY_StepsOnParcelainFlor_004&quot;,&quot;FLY_StepsOnParcelainFlor_005&quot;,&quot;FLY_StepsOnParcelainFlor_006&quot;,&quot;FLY_StepsOnParcelainFlor_007&quot;,&quot;FLY_StepsOnParcelainFlor_008&quot;,&quot;FLY_StepsOnParcelainFlor_009&quot;,&quot;FLY_StepsOnParcelainFlor_010&quot;)</param>
+                                            <param id="3" name="Loop">0</param>
+                                            <param id="4" name="Volume">-28</param>
+                                            <param id="2" name="Tag (optional)">&quot;pe&quot;</param>
+                                        </action>
+                                        <action id="19" name="Add compressor effect" sid="5186166562406197" type="Audio">
+                                            <param id="0" name="Tag">&quot;pd&quot;</param>
+                                            <param id="1" name="Threshold">-24</param>
+                                            <param id="2" name="Knee">350</param>
+                                            <param id="3" name="Ratio">0</param>
+                                            <param id="4" name="Attack">1</param>
+                                            <param id="5" name="Release">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
                 <event-group description="" sid="299353410146655" title="mulher">
                     <sub-events>
                         <event-block sid="7043403239149771">
                             <conditions>
                                 <condition id="2" name="Is playing" sid="2924287781300895" type="Sprite_NPC_Wife_001">
-                                    <param id="0" name="Animation">&quot;ani&quot;</param>
+                                    <param id="0" name="Animation">&quot;Sprite_NPC_Wife_001_Ani_TelephoneTalk_001&quot;</param>
                                 </condition>
                                 <condition id="5" inverted="1" name="Is tag playing" sid="6013287537381363" type="Audio">
                                     <param id="0" name="Tag">&quot;voz&quot;</param>
@@ -428,7 +545,7 @@
                             <actions>
                                 <action id="7" name="Play (by name)" sid="2396664053431524" type="Audio">
                                     <param id="0" name="Folder">0</param>
-                                    <param id="1" name="Audio file name">choose(&quot;v1&quot;,&quot;v2&quot;,&quot;v3&quot;,&quot;v4&quot;,&quot;v5&quot;,&quot;v6&quot;,&quot;7&quot;,&quot;v8&quot;,&quot;v9&quot;)</param>
+                                    <param id="1" name="Audio file name">choose(&quot;FOL_WifeVoice_001&quot;,&quot;FOL_WifeVoice_002&quot;,&quot;FOL_WifeVoice_003&quot;,&quot;FOL_WifeVoice_004&quot;,&quot;FOL_WifeVoice_005&quot;,&quot;FOL_WifeVoice_006&quot;,&quot;FOL_WifeVoice_007&quot;,&quot;FOL_WifeVoice_008&quot;,&quot;FOL_WifeVoice_009&quot;,&quot;FOL_WifeVoice_010&quot;,&quot;FOL_WifeVoice_011&quot;,&quot;FOL_WifeVoice_012&quot;)</param>
                                     <param id="3" name="Loop">0</param>
                                     <param id="4" name="Volume">-15</param>
                                     <param id="2" name="Tag (optional)">&quot;voz&quot;</param>
@@ -441,7 +558,7 @@
                         <event-block sid="9394311965541202">
                             <conditions>
                                 <condition id="2" name="Is playing" sid="7112361736910815" type="Sprite_NPC_Wife_001">
-                                    <param id="0" name="Animation">&quot;a1&quot;</param>
+                                    <param id="0" name="Animation">&quot;Sprite_NPC_Wife_001_Ani_TelephoneTalk_002&quot;</param>
                                 </condition>
                                 <condition id="5" inverted="1" name="Is tag playing" sid="5449601635180594" type="Audio">
                                     <param id="0" name="Tag">&quot;voz&quot;</param>
@@ -450,7 +567,7 @@
                             <actions>
                                 <action id="7" name="Play (by name)" sid="7584038760466951" type="Audio">
                                     <param id="0" name="Folder">0</param>
-                                    <param id="1" name="Audio file name">choose(&quot;v1&quot;,&quot;v2&quot;,&quot;v3&quot;,&quot;v4&quot;,&quot;v5&quot;,&quot;v6&quot;,&quot;7&quot;,&quot;v8&quot;,&quot;v9&quot;)</param>
+                                    <param id="1" name="Audio file name">choose(&quot;FOL_WifeVoice_001&quot;,&quot;FOL_WifeVoice_002&quot;,&quot;FOL_WifeVoice_003&quot;,&quot;FOL_WifeVoice_004&quot;,&quot;FOL_WifeVoice_005&quot;,&quot;FOL_WifeVoice_006&quot;,&quot;FOL_WifeVoice_007&quot;,&quot;FOL_WifeVoice_008&quot;,&quot;FOL_WifeVoice_009&quot;,&quot;FOL_WifeVoice_010&quot;,&quot;FOL_WifeVoice_011&quot;,&quot;FOL_WifeVoice_012&quot;)</param>
                                     <param id="3" name="Loop">0</param>
                                     <param id="4" name="Volume">-15</param>
                                     <param id="2" name="Tag (optional)">&quot;voz&quot;</param>
@@ -463,7 +580,7 @@
                         <event-block sid="2568387322523436">
                             <conditions>
                                 <condition id="2" name="Is playing" sid="1615482360775546" type="Sprite_NPC_Wife_001">
-                                    <param id="0" name="Animation">&quot;a2&quot;</param>
+                                    <param id="0" name="Animation">&quot;Sprite_NPC_Wife_001_Ani_TelephoneTalk_003&quot;</param>
                                 </condition>
                                 <condition id="5" inverted="1" name="Is tag playing" sid="2177602519670412" type="Audio">
                                     <param id="0" name="Tag">&quot;voz&quot;</param>
@@ -472,7 +589,7 @@
                             <actions>
                                 <action id="7" name="Play (by name)" sid="4985635273646722" type="Audio">
                                     <param id="0" name="Folder">0</param>
-                                    <param id="1" name="Audio file name">choose(&quot;v1&quot;,&quot;v2&quot;,&quot;v3&quot;,&quot;v4&quot;,&quot;v5&quot;,&quot;v6&quot;,&quot;7&quot;,&quot;v8&quot;,&quot;v9&quot;)</param>
+                                    <param id="1" name="Audio file name">choose(&quot;FOL_WifeVoice_001&quot;,&quot;FOL_WifeVoice_002&quot;,&quot;FOL_WifeVoice_003&quot;,&quot;FOL_WifeVoice_004&quot;,&quot;FOL_WifeVoice_005&quot;,&quot;FOL_WifeVoice_006&quot;,&quot;FOL_WifeVoice_007&quot;,&quot;FOL_WifeVoice_008&quot;,&quot;FOL_WifeVoice_009&quot;,&quot;FOL_WifeVoice_010&quot;,&quot;FOL_WifeVoice_011&quot;,&quot;FOL_WifeVoice_012&quot;)</param>
                                     <param id="3" name="Loop">0</param>
                                     <param id="4" name="Volume">-15</param>
                                     <param id="2" name="Tag (optional)">&quot;voz&quot;</param>
@@ -485,7 +602,7 @@
                         <event-block sid="8433468878979903">
                             <conditions>
                                 <condition id="2" name="Is playing" sid="1306229776628365" type="Sprite_NPC_Wife_001">
-                                    <param id="0" name="Animation">&quot;a3&quot;</param>
+                                    <param id="0" name="Animation">&quot;Sprite_NPC_Wife_001_Ani_TelephoneTalk_004&quot;</param>
                                 </condition>
                                 <condition id="5" inverted="1" name="Is tag playing" sid="5825288969689227" type="Audio">
                                     <param id="0" name="Tag">&quot;voz&quot;</param>
@@ -494,7 +611,7 @@
                             <actions>
                                 <action id="7" name="Play (by name)" sid="8535392016823839" type="Audio">
                                     <param id="0" name="Folder">0</param>
-                                    <param id="1" name="Audio file name">choose(&quot;v1&quot;,&quot;v2&quot;,&quot;v3&quot;,&quot;v4&quot;,&quot;v5&quot;,&quot;v6&quot;,&quot;7&quot;,&quot;v8&quot;,&quot;v9&quot;)</param>
+                                    <param id="1" name="Audio file name">choose(&quot;FOL_WifeVoice_001&quot;,&quot;FOL_WifeVoice_002&quot;,&quot;FOL_WifeVoice_003&quot;,&quot;FOL_WifeVoice_004&quot;,&quot;FOL_WifeVoice_005&quot;,&quot;FOL_WifeVoice_006&quot;,&quot;FOL_WifeVoice_007&quot;,&quot;FOL_WifeVoice_008&quot;,&quot;FOL_WifeVoice_009&quot;,&quot;FOL_WifeVoice_010&quot;,&quot;FOL_WifeVoice_011&quot;,&quot;FOL_WifeVoice_012&quot;)</param>
                                     <param id="3" name="Loop">0</param>
                                     <param id="4" name="Volume">-15</param>
                                     <param id="2" name="Tag (optional)">&quot;voz&quot;</param>
@@ -507,7 +624,7 @@
                         <event-block sid="8188555808621196">
                             <conditions>
                                 <condition id="2" name="Is playing" sid="1327905488004419" type="Sprite_NPC_Wife_001">
-                                    <param id="0" name="Animation">&quot;a4&quot;</param>
+                                    <param id="0" name="Animation">&quot;Sprite_NPC_Wife_001_Ani_TelephoneTalk_005&quot;</param>
                                 </condition>
                                 <condition id="5" inverted="1" name="Is tag playing" sid="862104576230881" type="Audio">
                                     <param id="0" name="Tag">&quot;riso&quot;</param>
@@ -516,7 +633,7 @@
                             <actions>
                                 <action id="7" name="Play (by name)" sid="5292731544680032" type="Audio">
                                     <param id="0" name="Folder">0</param>
-                                    <param id="1" name="Audio file name">choose(&quot;r1&quot;,&quot;r2&quot;,&quot;r3&quot;,&quot;r4&quot;,&quot;r5&quot;)</param>
+                                    <param id="1" name="Audio file name">choose(&quot;FOL_Laugh_001&quot;,&quot;FOL_Laugh_002&quot;,&quot;FOL_Laugh_003&quot;,&quot;FOL_Laugh_004&quot;,&quot;FOL_Laugh_005&quot;)</param>
                                     <param id="3" name="Loop">0</param>
                                     <param id="4" name="Volume">-15</param>
                                     <param id="2" name="Tag (optional)">&quot;riso&quot;</param>
@@ -529,12 +646,12 @@
                         <event-block sid="4241483604090325">
                             <conditions>
                                 <condition id="4" name="On finished" sid="7456913154122518" type="Sprite_NPC_Wife_001">
-                                    <param id="0" name="Animation">&quot;ani&quot;</param>
+                                    <param id="0" name="Animation">&quot;Sprite_NPC_Wife_001_Ani_TelephoneTalk_001&quot;</param>
                                 </condition>
                             </conditions>
                             <actions>
                                 <action id="4" name="Set animation" sid="1068743780264948" type="Sprite_NPC_Wife_001">
-                                    <param id="0" name="Animation">choose(&quot;a1&quot;, &quot;a2&quot;, &quot;a3&quot;, &quot;a4&quot;) </param>
+                                    <param id="0" name="Animation">choose(&quot;Sprite_NPC_Wife_001_Ani_TelephoneTalk_002&quot;,&quot;Sprite_NPC_Wife_001_Ani_TelephoneTalk_003&quot;,&quot;Sprite_NPC_Wife_001_Ani_TelephoneTalk_004&quot;&quot;Sprite_NPC_Wife_001_Ani_TelephoneTalk_005&quot;)</param>
                                     <param id="1" name="From">1</param>
                                 </action>
                             </actions>
@@ -542,12 +659,12 @@
                         <event-block sid="141128413717653">
                             <conditions>
                                 <condition id="4" name="On finished" sid="655392275392139" type="Sprite_NPC_Wife_001">
-                                    <param id="0" name="Animation">&quot;a1&quot;</param>
+                                    <param id="0" name="Animation">&quot;Sprite_NPC_Wife_001_Ani_TelephoneTalk_002&quot;</param>
                                 </condition>
                             </conditions>
                             <actions>
                                 <action id="4" name="Set animation" sid="6298147828769998" type="Sprite_NPC_Wife_001">
-                                    <param id="0" name="Animation">&quot;ani&quot;</param>
+                                    <param id="0" name="Animation">&quot;Sprite_NPC_Wife_001_Ani_TelephoneTalk_001&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
                             </actions>
@@ -555,12 +672,12 @@
                         <event-block sid="5591872387732258">
                             <conditions>
                                 <condition id="4" name="On finished" sid="2412262583335972" type="Sprite_NPC_Wife_001">
-                                    <param id="0" name="Animation">&quot;a2&quot;</param>
+                                    <param id="0" name="Animation">&quot;Sprite_NPC_Wife_001_Ani_TelephoneTalk_003&quot;</param>
                                 </condition>
                             </conditions>
                             <actions>
                                 <action id="4" name="Set animation" sid="3098344708370817" type="Sprite_NPC_Wife_001">
-                                    <param id="0" name="Animation">&quot;ani&quot;</param>
+                                    <param id="0" name="Animation">&quot;Sprite_NPC_Wife_001_Ani_TelephoneTalk_001&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
                             </actions>
@@ -568,12 +685,12 @@
                         <event-block sid="8606938975979367">
                             <conditions>
                                 <condition id="4" name="On finished" sid="5461532026257065" type="Sprite_NPC_Wife_001">
-                                    <param id="0" name="Animation">&quot;a3&quot;</param>
+                                    <param id="0" name="Animation">&quot;Sprite_NPC_Wife_001_Ani_TelephoneTalk_004&quot;</param>
                                 </condition>
                             </conditions>
                             <actions>
                                 <action id="4" name="Set animation" sid="3403199196781346" type="Sprite_NPC_Wife_001">
-                                    <param id="0" name="Animation">&quot;ani&quot;</param>
+                                    <param id="0" name="Animation">&quot;Sprite_NPC_Wife_001_Ani_TelephoneTalk_001&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
                             </actions>
@@ -581,12 +698,12 @@
                         <event-block sid="4793072475503365">
                             <conditions>
                                 <condition id="4" name="On finished" sid="5595594598193159" type="Sprite_NPC_Wife_001">
-                                    <param id="0" name="Animation">&quot;a4&quot;</param>
+                                    <param id="0" name="Animation">&quot;Sprite_NPC_Wife_001_Ani_TelephoneTalk_005&quot;</param>
                                 </condition>
                             </conditions>
                             <actions>
                                 <action id="4" name="Set animation" sid="7130114882045709" type="Sprite_NPC_Wife_001">
-                                    <param id="0" name="Animation">&quot;ani&quot;</param>
+                                    <param id="0" name="Animation">&quot;Sprite_NPC_Wife_001_Ani_TelephoneTalk_001&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
                             </actions>
@@ -594,12 +711,12 @@
                         <event-block sid="9656706826061226">
                             <conditions>
                                 <condition id="4" name="On finished" sid="4127186133203506" type="Sprite_NPC_Son">
-                                    <param id="0" name="Animation">&quot;ani&quot;</param>
+                                    <param id="0" name="Animation">&quot;Sprite_NPC_Son_Ani_Idle_001&quot;</param>
                                 </condition>
                             </conditions>
                             <actions>
                                 <action id="4" name="Set animation" sid="5902660936488384" type="Sprite_NPC_Son">
-                                    <param id="0" name="Animation">choose(&quot;an1&quot;, &quot;an2&quot;, &quot;an3&quot;, &quot;an4&quot;) </param>
+                                    <param id="0" name="Animation">choose(&quot;Sprite_NPC_Son_Ani_Cellphone_001&quot;,&quot;Sprite_NPC_Son_Ani_Cellphone_002&quot;,&quot;Sprite_NPC_Son_Ani_Cellphone_003&quot;,&quot;Sprite_NPC_Son_Ani_Cellphone_004&quot;) </param>
                                     <param id="1" name="From">1</param>
                                 </action>
                             </actions>
@@ -607,12 +724,12 @@
                         <event-block sid="2650937082659932">
                             <conditions>
                                 <condition id="4" name="On finished" sid="9799521198800986" type="Sprite_NPC_Son">
-                                    <param id="0" name="Animation">&quot;an1&quot;</param>
+                                    <param id="0" name="Animation">&quot;Sprite_NPC_Son_Ani_Cellphone_001&quot;</param>
                                 </condition>
                             </conditions>
                             <actions>
                                 <action id="4" name="Set animation" sid="7541786812171973" type="Sprite_NPC_Son">
-                                    <param id="0" name="Animation">&quot;ani&quot;</param>
+                                    <param id="0" name="Animation">&quot;Sprite_NPC_Son_Ani_Idle_001&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
                             </actions>
@@ -620,12 +737,12 @@
                         <event-block sid="869588908743142">
                             <conditions>
                                 <condition id="4" name="On finished" sid="964089892264751" type="Sprite_NPC_Son">
-                                    <param id="0" name="Animation">&quot;an2&quot;</param>
+                                    <param id="0" name="Animation">&quot;Sprite_NPC_Son_Ani_Cellphone_002&quot;</param>
                                 </condition>
                             </conditions>
                             <actions>
                                 <action id="4" name="Set animation" sid="1522322863900425" type="Sprite_NPC_Son">
-                                    <param id="0" name="Animation">&quot;ani&quot;</param>
+                                    <param id="0" name="Animation">&quot;Sprite_NPC_Son_Ani_Idle_001&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
                             </actions>
@@ -633,12 +750,12 @@
                         <event-block sid="7441818603695238">
                             <conditions>
                                 <condition id="4" name="On finished" sid="5374307197759526" type="Sprite_NPC_Son">
-                                    <param id="0" name="Animation">&quot;an3&quot;</param>
+                                    <param id="0" name="Animation">&quot;Sprite_NPC_Son_Ani_Cellphone_003&quot;</param>
                                 </condition>
                             </conditions>
                             <actions>
                                 <action id="4" name="Set animation" sid="2231182479370526" type="Sprite_NPC_Son">
-                                    <param id="0" name="Animation">&quot;ani&quot;</param>
+                                    <param id="0" name="Animation">&quot;Sprite_NPC_Son_Ani_Idle_001&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
                             </actions>
@@ -646,12 +763,12 @@
                         <event-block sid="5368499693830023">
                             <conditions>
                                 <condition id="4" name="On finished" sid="2000861119457908" type="Sprite_NPC_Son">
-                                    <param id="0" name="Animation">&quot;an4&quot;</param>
+                                    <param id="0" name="Animation">&quot;Sprite_NPC_Son_Ani_Cellphone_004&quot;</param>
                                 </condition>
                             </conditions>
                             <actions>
                                 <action id="4" name="Set animation" sid="1460305788759635" type="Sprite_NPC_Son">
-                                    <param id="0" name="Animation">&quot;ani&quot;</param>
+                                    <param id="0" name="Animation">&quot;Sprite_NPC_Son_Ani_Idle_001&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
                             </actions>
@@ -663,7 +780,7 @@
                         <event-block sid="9152412066704768">
                             <conditions>
                                 <condition id="2" name="Is playing" sid="9498991646140268" type="Sprite_NPC_Son">
-                                    <param id="0" name="Animation">&quot;an1&quot;</param>
+                                    <param id="0" name="Animation">&quot;Sprite_NPC_Son_Ani_Cellphone_001&quot;</param>
                                 </condition>
                             </conditions>
                             <actions />
@@ -682,7 +799,7 @@
                                     <actions>
                                         <action id="7" name="Play (by name)" sid="4617332384625493" type="Audio">
                                             <param id="0" name="Folder">0</param>
-                                            <param id="1" name="Audio file name">choose(&quot;cel1&quot;,&quot;cel2&quot;,&quot;cel3&quot;,&quot;cel4&quot;,&quot;cel5&quot;)</param>
+                                            <param id="1" name="Audio file name">choose(&quot;SFX_CellphoneMessageRingtone_001&quot;,&quot;SFX_CellphoneMessageRingtone_002&quot;,&quot;SFX_CellphoneMessageRingtone_003&quot;,&quot;SFX_CellphoneMessageRingtone_004&quot;,&quot;SFX_CellphoneMessageRingtone_005&quot;)</param>
                                             <param id="3" name="Loop">0</param>
                                             <param id="4" name="Volume">-5</param>
                                             <param id="2" name="Tag (optional)">&quot;celrec&quot;</param>
@@ -694,7 +811,7 @@
                         <event-block sid="2601301758262876">
                             <conditions>
                                 <condition id="2" name="Is playing" sid="7701086813316451" type="Sprite_NPC_Son">
-                                    <param id="0" name="Animation">&quot;an2&quot;</param>
+                                    <param id="0" name="Animation">&quot;Sprite_NPC_Son_Ani_Cellphone_002&quot;</param>
                                 </condition>
                             </conditions>
                             <actions />
@@ -713,7 +830,7 @@
                                     <actions>
                                         <action id="7" name="Play (by name)" sid="6254177720638108" type="Audio">
                                             <param id="0" name="Folder">0</param>
-                                            <param id="1" name="Audio file name">choose(&quot;cel1&quot;,&quot;cel2&quot;,&quot;cel3&quot;,&quot;cel4&quot;,&quot;cel5&quot;)</param>
+                                            <param id="1" name="Audio file name">choose(&quot;SFX_CellphoneMessageRingtone_001&quot;,&quot;SFX_CellphoneMessageRingtone_002&quot;,&quot;SFX_CellphoneMessageRingtone_003&quot;,&quot;SFX_CellphoneMessageRingtone_004&quot;,&quot;SFX_CellphoneMessageRingtone_005&quot;)</param>
                                             <param id="3" name="Loop">0</param>
                                             <param id="4" name="Volume">-5</param>
                                             <param id="2" name="Tag (optional)">&quot;celrec&quot;</param>
@@ -725,7 +842,7 @@
                         <event-block sid="4809402902289502">
                             <conditions>
                                 <condition id="2" name="Is playing" sid="9616092185664211" type="Sprite_NPC_Son">
-                                    <param id="0" name="Animation">&quot;an3&quot;</param>
+                                    <param id="0" name="Animation">&quot;Sprite_NPC_Son_Ani_Cellphone_003&quot;</param>
                                 </condition>
                             </conditions>
                             <actions />
@@ -744,7 +861,7 @@
                                     <actions>
                                         <action id="7" name="Play (by name)" sid="3925257964661928" type="Audio">
                                             <param id="0" name="Folder">0</param>
-                                            <param id="1" name="Audio file name">choose(&quot;cel1&quot;,&quot;cel2&quot;,&quot;cel3&quot;,&quot;cel4&quot;,&quot;cel5&quot;)</param>
+                                            <param id="1" name="Audio file name">choose(&quot;SFX_CellphoneMessageRingtone_001&quot;,&quot;SFX_CellphoneMessageRingtone_002&quot;,&quot;SFX_CellphoneMessageRingtone_003&quot;,&quot;SFX_CellphoneMessageRingtone_004&quot;,&quot;SFX_CellphoneMessageRingtone_005&quot;)</param>
                                             <param id="3" name="Loop">0</param>
                                             <param id="4" name="Volume">-5</param>
                                             <param id="2" name="Tag (optional)">&quot;celrec&quot;</param>
@@ -756,7 +873,7 @@
                         <event-block sid="7586248774249185">
                             <conditions>
                                 <condition id="2" name="Is playing" sid="5741668624441545" type="Sprite_NPC_Son">
-                                    <param id="0" name="Animation">&quot;an4&quot;</param>
+                                    <param id="0" name="Animation">&quot;Sprite_NPC_Son_Ani_Cellphone_004&quot;</param>
                                 </condition>
                             </conditions>
                             <actions />
@@ -775,7 +892,7 @@
                                     <actions>
                                         <action id="7" name="Play (by name)" sid="1178070601655412" type="Audio">
                                             <param id="0" name="Folder">0</param>
-                                            <param id="1" name="Audio file name">choose(&quot;cel1&quot;,&quot;cel2&quot;,&quot;cel3&quot;,&quot;cel4&quot;,&quot;cel5&quot;)</param>
+                                            <param id="1" name="Audio file name">choose(&quot;SFX_CellphoneMessageRingtone_001&quot;,&quot;SFX_CellphoneMessageRingtone_002&quot;,&quot;SFX_CellphoneMessageRingtone_003&quot;,&quot;SFX_CellphoneMessageRingtone_004&quot;,&quot;SFX_CellphoneMessageRingtone_005&quot;)</param>
                                             <param id="3" name="Loop">0</param>
                                             <param id="4" name="Volume">-5</param>
                                             <param id="2" name="Tag (optional)">&quot;celrec&quot;</param>
@@ -787,7 +904,7 @@
                         <event-block sid="1007120980093942">
                             <conditions>
                                 <condition id="2" name="Is playing" sid="5327704571763233" type="Sprite_NPC_Son">
-                                    <param id="0" name="Animation">&quot;an1&quot;</param>
+                                    <param id="0" name="Animation">&quot;Sprite_NPC_Son_Ani_Cellphone_001&quot;</param>
                                 </condition>
                             </conditions>
                             <actions />
@@ -832,7 +949,7 @@
                         <event-block sid="307632358894607">
                             <conditions>
                                 <condition id="2" name="Is playing" sid="2738856423078976" type="Sprite_NPC_Son">
-                                    <param id="0" name="Animation">&quot;an2&quot;</param>
+                                    <param id="0" name="Animation">&quot;Sprite_NPC_Son_Ani_Cellphone_002&quot;</param>
                                 </condition>
                             </conditions>
                             <actions />
@@ -877,7 +994,7 @@
                         <event-block sid="8592250243439269">
                             <conditions>
                                 <condition id="2" name="Is playing" sid="2499727117659792" type="Sprite_NPC_Son">
-                                    <param id="0" name="Animation">&quot;an3&quot;</param>
+                                    <param id="0" name="Animation">&quot;Sprite_NPC_Son_Ani_Cellphone_003&quot;</param>
                                 </condition>
                             </conditions>
                             <actions />
@@ -922,7 +1039,7 @@
                         <event-block sid="6547656733627184">
                             <conditions>
                                 <condition id="2" name="Is playing" sid="9462559284437616" type="Sprite_NPC_Son">
-                                    <param id="0" name="Animation">&quot;an4&quot;</param>
+                                    <param id="0" name="Animation">&quot;Sprite_NPC_Son_Ani_Cellphone_004&quot;</param>
                                 </condition>
                             </conditions>
                             <actions />
@@ -967,7 +1084,7 @@
                         <event-block sid="3690059106533919">
                             <conditions>
                                 <condition id="2" name="Is playing" sid="7388690993505234" type="Sprite_NPC_Son">
-                                    <param id="0" name="Animation">&quot;an1&quot;</param>
+                                    <param id="0" name="Animation">&quot;Sprite_NPC_Son_Ani_Cellphone_001&quot;</param>
                                 </condition>
                             </conditions>
                             <actions />
@@ -997,7 +1114,7 @@
                         <event-block sid="3701055436318987">
                             <conditions>
                                 <condition id="2" name="Is playing" sid="1148165203322612" type="Sprite_NPC_Son">
-                                    <param id="0" name="Animation">&quot;an2&quot;</param>
+                                    <param id="0" name="Animation">&quot;Sprite_NPC_Son_Ani_Cellphone_002&quot;</param>
                                 </condition>
                             </conditions>
                             <actions />
@@ -1027,7 +1144,7 @@
                         <event-block sid="2396940783646949">
                             <conditions>
                                 <condition id="2" name="Is playing" sid="8468100737345915" type="Sprite_NPC_Son">
-                                    <param id="0" name="Animation">&quot;an3&quot;</param>
+                                    <param id="0" name="Animation">&quot;Sprite_NPC_Son_Ani_Cellphone_003&quot;</param>
                                 </condition>
                             </conditions>
                             <actions />
@@ -1057,7 +1174,7 @@
                         <event-block sid="6630459587894611">
                             <conditions>
                                 <condition id="2" name="Is playing" sid="4183696484557343" type="Sprite_NPC_Son">
-                                    <param id="0" name="Animation">&quot;an4&quot;</param>
+                                    <param id="0" name="Animation">&quot;Sprite_NPC_Son_Ani_Cellphone_004&quot;</param>
                                 </condition>
                             </conditions>
                             <actions />
@@ -1086,130 +1203,13 @@
                         </event-block>
                     </sub-events>
                 </event-group>
-                <event-block sid="4019629096778632">
-                    <conditions>
-                        <condition id="-2" name="On start of layout" sid="5488202967225642" type="System" />
-                        <condition id="-14" name="Compare variable" sid="8336245191296209" type="System">
-                            <param id="0" name="Variable">layout</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">2</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Play" sid="6338492036460692" type="Audio">
-                            <param id="0" name="Audio file">BG_RefrigeratorEngine_001</param>
-                            <param id="2" name="Loop">1</param>
-                            <param id="3" name="Volume">-8</param>
-                            <param id="1" name="Tag (optional)">&quot;amb2&quot;</param>
-                        </action>
-                        <action id="0" name="Play" sid="1995301353216756" type="Audio">
-                            <param id="0" name="Audio file">BG_TelevisionNoise_001</param>
-                            <param id="2" name="Loop">1</param>
-                            <param id="3" name="Volume">-10</param>
-                            <param id="1" name="Tag (optional)">&quot;amb2&quot;</param>
-                        </action>
-                        <action id="0" name="Play" sid="7698461826751292" type="Audio">
-                            <param id="0" name="Audio file">BG_TelevisionNoise_002</param>
-                            <param id="2" name="Loop">1</param>
-                            <param id="3" name="Volume">-6</param>
-                            <param id="1" name="Tag (optional)">&quot;amb2&quot;</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="4760270445341662">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="5614169079215037" type="System">
-                            <param id="0" name="Variable">layout</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">2</param>
-                        </condition>
-                        <condition id="2" name="Is playing" sid="6743268387133075" type="Sprite_MainCharacter_001">
-                            <param id="0" name="Animation">&quot;caminhando&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block sid="3227498164983375">
-                            <conditions>
-                                <condition id="3" name="Compare frame" sid="2092669350329617" type="Sprite_MainCharacter_001">
-                                    <param id="0" name="Comparison">0</param>
-                                    <param id="1" name="Number">1</param>
-                                </condition>
-                            </conditions>
-                            <actions />
-                            <sub-events>
-                                <event-block sid="2024648169966861">
-                                    <conditions>
-                                        <condition id="6" name="On frame changed" sid="4082514565963067" type="Sprite_MainCharacter_001" />
-                                        <condition id="5" inverted="1" name="Is tag playing" sid="1362814435869324" type="Audio">
-                                            <param id="0" name="Tag">&quot;pd&quot;</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="7" name="Play (by name)" sid="7239373618317421" type="Audio">
-                                            <param id="0" name="Folder">0</param>
-                                            <param id="1" name="Audio file name">choose(&quot;d1&quot;,&quot;d2&quot;,&quot;d3&quot;,&quot;d4&quot;,&quot;d5&quot;,&quot;d6&quot;,&quot;d7&quot;,&quot;d8&quot;,&quot;d9&quot;,&quot;d10&quot;)</param>
-                                            <param id="3" name="Loop">0</param>
-                                            <param id="4" name="Volume">-35</param>
-                                            <param id="2" name="Tag (optional)">&quot;pd&quot;</param>
-                                        </action>
-                                        <action id="19" name="Add compressor effect" sid="9873916678662567" type="Audio">
-                                            <param id="0" name="Tag">&quot;pd&quot;</param>
-                                            <param id="1" name="Threshold">-24</param>
-                                            <param id="2" name="Knee">350</param>
-                                            <param id="3" name="Ratio">0</param>
-                                            <param id="4" name="Attack">1</param>
-                                            <param id="5" name="Release">0</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                            </sub-events>
-                        </event-block>
-                        <event-block sid="5026000086755678">
-                            <conditions>
-                                <condition id="3" name="Compare frame" sid="2730906227879104" type="Sprite_MainCharacter_001">
-                                    <param id="0" name="Comparison">0</param>
-                                    <param id="1" name="Number">6</param>
-                                </condition>
-                            </conditions>
-                            <actions />
-                            <sub-events>
-                                <event-block sid="6938931762463497">
-                                    <conditions>
-                                        <condition id="6" name="On frame changed" sid="2226290676714233" type="Sprite_MainCharacter_001" />
-                                        <condition id="5" inverted="1" name="Is tag playing" sid="2081870369770304" type="Audio">
-                                            <param id="0" name="Tag">&quot;pe&quot;</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="7" name="Play (by name)" sid="454312535875964" type="Audio">
-                                            <param id="0" name="Folder">0</param>
-                                            <param id="1" name="Audio file name">choose(&quot;e1&quot;,&quot;e2&quot;,&quot;e3&quot;,&quot;e4&quot;,&quot;e5&quot;,&quot;e6&quot;,&quot;e7&quot;,&quot;e8&quot;,&quot;e9&quot;,&quot;e10&quot;)</param>
-                                            <param id="3" name="Loop">0</param>
-                                            <param id="4" name="Volume">-28</param>
-                                            <param id="2" name="Tag (optional)">&quot;pe&quot;</param>
-                                        </action>
-                                        <action id="19" name="Add compressor effect" sid="5186166562406197" type="Audio">
-                                            <param id="0" name="Tag">&quot;pd&quot;</param>
-                                            <param id="1" name="Threshold">-24</param>
-                                            <param id="2" name="Knee">350</param>
-                                            <param id="3" name="Ratio">0</param>
-                                            <param id="4" name="Attack">1</param>
-                                            <param id="5" name="Release">0</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                            </sub-events>
-                        </event-block>
-                    </sub-events>
-                </event-block>
                 <event-block sid="1077570431227751">
                     <conditions>
                         <condition id="1" name="Is overlapping another object" sid="482364476502158" type="Sprite_MainCharacter_001">
                             <param id="0" name="Object">Sprite_Trigger_PlayerHome_SonTalk</param>
                         </condition>
                         <condition id="2" name="Is playing" sid="1925158464764137" type="Sprite_NPC_Son_Mouth">
-                            <param id="0" name="Animation">&quot;default&quot;</param>
+                            <param id="0" name="Animation">&quot;Sprite_NPC_Son_Mouth_Ani_Idle_001&quot;</param>
                         </condition>
                         <condition id="-9" inverted="1" name="Is visible" sid="9752050201248477" type="Sprite_Text_Son_PlayerHome" />
                         <condition id="-9" inverted="1" name="Is visible" sid="2712481137128651" type="Sprite_Text_Daughter_PlayerHome" />
@@ -1225,14 +1225,14 @@
                             </conditions>
                             <actions>
                                 <action id="4" name="Set animation" sid="5092703049867067" type="Sprite_NPC_Son_Mouth">
-                                    <param id="0" name="Animation">&quot;fala&quot;</param>
+                                    <param id="0" name="Animation">&quot;Sprite_NPC_Son_Mouth_Ani_Speaking_001&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
                                 <action id="-15" name="Set visible" sid="8232848329220736" type="Sprite_Text_Son_PlayerHome">
                                     <param id="0" name="Visibility">1</param>
                                 </action>
                                 <action id="4" name="Set animation" sid="8559969671973385" type="Sprite_Text_Son_PlayerHome">
-                                    <param id="0" name="Animation">choose(&quot;fe1&quot;,&quot;fe2&quot;,&quot;fe3&quot;,&quot;fe4&quot;,&quot;fe5&quot;) </param>
+                                    <param id="0" name="Animation">choose(&quot;Sprite_Text_Son_PlayerHome_Ani_Dialogue_001&quot;, &quot;Sprite_Text_Son_PlayerHome_Ani_Dialogue_002&quot;, &quot;Sprite_Text_Son_PlayerHome_Ani_Dialogue_003&quot;,&quot;Sprite_Text_Son_PlayerHome_Ani_Dialogue_004&quot;,&quot;Sprite_Text_Son_PlayerHome_Ani_Dialogue_005&quot;)</param>
                                     <param id="1" name="From">1</param>
                                 </action>
                             </actions>
@@ -1253,7 +1253,7 @@
                     <conditions />
                     <actions>
                         <action id="4" name="Set animation" sid="1311283378421709" type="Sprite_NPC_Son_Mouth">
-                            <param id="0" name="Animation">&quot;default&quot;</param>
+                            <param id="0" name="Animation">&quot;Sprite_NPC_Son_Mouth_Ani_Idle_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                     </actions>
@@ -1280,7 +1280,7 @@
                                     <param id="0" name="Visibility">1</param>
                                 </action>
                                 <action id="4" name="Set animation" sid="9722894198614085" type="Sprite_Text_Wife_PlayerHome">
-                                    <param id="0" name="Animation">choose(&quot;fe1&quot;,&quot;fe2&quot;,&quot;fe3&quot;,&quot;fe4&quot;,&quot;fe5&quot;, &quot;fe6&quot;,&quot;fe7&quot;) </param>
+                                    <param id="0" name="Animation">choose(&quot;Sprite_Text_Wife_PlayerHome_Ani_Dialogue_001&quot;,&quot;Sprite_Text_Wife_PlayerHome_Ani_Dialogue_002&quot;,&quot;Sprite_Text_Wife_PlayerHome_Ani_Dialogue_003&quot;,&quot;Sprite_Text_Wife_PlayerHome_Ani_Dialogue_004&quot;,&quot;Sprite_Text_Wife_PlayerHome_Ani_Dialogue_005&quot;,&quot;Sprite_Text_Wife_PlayerHome_Ani_Dialogue_006&quot;,&quot;Sprite_Text_Wife_PlayerHome_Ani_Dialogue_007&quot;)</param>
                                     <param id="1" name="From">1</param>
                                 </action>
                             </actions>
@@ -1319,11 +1319,11 @@
                                     <param id="0" name="Visibility">1</param>
                                 </action>
                                 <action id="4" name="Set animation" sid="7290467738465473" type="Sprite_NPC_Daughter">
-                                    <param id="0" name="Animation">choose(&quot;ani1&quot;, &quot;ani2&quot;) </param>
+                                    <param id="0" name="Animation">choose(&quot;Sprite_NPC_Daughter_Ani_Speaking_001&quot;,&quot;Sprite_NPC_Daughter_Ani_Speaking_002&quot;)</param>
                                     <param id="1" name="From">1</param>
                                 </action>
                                 <action id="4" name="Set animation" sid="874482779522174" type="Sprite_Text_Daughter_PlayerHome">
-                                    <param id="0" name="Animation">choose(&quot;fe1&quot;,&quot;fe2&quot;,&quot;fe3&quot;,&quot;fe4&quot;,&quot;fe5&quot;, &quot;fe6&quot;)</param>
+                                    <param id="0" name="Animation">choose(&quot;Sprite_Text_Daughter_PlayerHome_Ani_Dialogue_001&quot;,&quot;Sprite_Text_Daughter_PlayerHome_Ani_Dialogue_002&quot;,&quot;Sprite_Text_Daughter_PlayerHome_Ani_Dialogue_003&quot;,&quot;Sprite_Text_Daughter_PlayerHome_Ani_Dialogue_004&quot;,&quot;Sprite_Text_Daughter_PlayerHome_Ani_Dialogue_005&quot;,&quot;Sprite_Text_Daughter_PlayerHome_Ani_Dialogue_006&quot;)</param>
                                     <param id="1" name="From">1</param>
                                 </action>
                             </actions>
@@ -1339,7 +1339,7 @@
                             <param id="0" name="Visibility">0</param>
                         </action>
                         <action id="4" name="Set animation" sid="1604339128307505" type="Sprite_NPC_Daughter">
-                            <param id="0" name="Animation">&quot;ani&quot;</param>
+                            <param id="0" name="Animation">&quot;Sprite_NPC_Daughter_Ani_Idle_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                     </actions>
@@ -1363,7 +1363,7 @@
                             <param id="1" name="Value"> 489.416</param>
                         </action>
                         <action id="-9" name="Set value" sid="4165415005084324" type="System">
-                            <param id="0" name="Variable">layout</param>
+                            <param id="0" name="Variable">Layout</param>
                             <param id="1" name="Value">1</param>
                         </action>
                         <action id="33" name="Stop all" sid="6363780305906535" type="Audio" />
@@ -1372,7 +1372,7 @@
                         <event-block sid="4679661316471313">
                             <conditions>
                                 <condition id="-14" name="Compare variable" sid="8374740026371805" type="System">
-                                    <param id="0" name="Variable">alarmeligdesl</param>
+                                    <param id="0" name="Variable">AlarmOff</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">0</param>
                                 </condition>
@@ -1424,7 +1424,7 @@
                                     <param id="0" name="State">1</param>
                                 </action>
                                 <action id="-9" name="Set value" sid="3241823020512241" type="System">
-                                    <param id="0" name="Variable">layout</param>
+                                    <param id="0" name="Variable">Layout</param>
                                     <param id="1" name="Value">3</param>
                                 </action>
                                 <action id="0" name="Play" sid="5703718714000923" type="Audio">
@@ -1467,7 +1467,7 @@
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="5564474170944676" type="System" />
                         <condition id="-14" name="Compare variable" sid="6380125899509659" type="System">
-                            <param id="0" name="Variable">layout</param>
+                            <param id="0" name="Variable">Layout</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">6</param>
                         </condition>
@@ -1497,7 +1497,7 @@
                             </conditions>
                             <actions>
                                 <action id="4" name="Set animation" sid="2070707019675457" type="Sprite_Elevator_GroundFloor">
-                                    <param id="0" name="Animation">&quot;descendo&quot;</param>
+                                    <param id="0" name="Animation">&quot;Sprite_Elevator_GroundFloor_Ani_GoingDown_001&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
                                 <action id="-9" name="Destroy" sid="1625404863876817" type="Sprite_Trigger_Elevator_GroundFloor_Button" />
@@ -1514,7 +1514,7 @@
                 <event-block sid="5275540152905438">
                     <conditions>
                         <condition id="4" name="On finished" sid="8754850020092161" type="Sprite_Elevator_GroundFloor">
-                            <param id="0" name="Animation">&quot;descendo&quot;</param>
+                            <param id="0" name="Animation">&quot;Sprite_Elevator_GroundFloor_Ani_GoingDown_001&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -1540,7 +1540,7 @@
                     </conditions>
                     <actions>
                         <action id="4" name="Set animation" sid="1791826957862026" type="Sprite_Elevator_GroundFloor">
-                            <param id="0" name="Animation">&quot;subir&quot;</param>
+                            <param id="0" name="Animation">&quot;Sprite_Elevator_GroundFloor_Ani_DoorClose_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                         <action behavior="Solid" id="0" name="Set enabled" sid="8384699686049888" type="Sprite_CollisionContainer_Elevator_GroundFloor_Closed">
@@ -1552,7 +1552,7 @@
                 <event-block sid="6878540215080183">
                     <conditions>
                         <condition id="4" name="On finished" sid="1794774546009868" type="Sprite_Elevator_GroundFloor">
-                            <param id="0" name="Animation">&quot;subir&quot;</param>
+                            <param id="0" name="Animation">&quot;Sprite_Elevator_GroundFloor_Ani_DoorClose_001&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -1560,7 +1560,7 @@
                             <param id="0" name="Layout">Level_007</param>
                         </action>
                         <action id="-9" name="Set value" sid="7204605773455026" type="System">
-                            <param id="0" name="Variable">layout</param>
+                            <param id="0" name="Variable">Layout</param>
                             <param id="1" name="Value">7</param>
                         </action>
                         <action id="33" name="Stop all" sid="8679382421663809" type="Audio" />
@@ -1569,12 +1569,12 @@
                 <event-block sid="7261641676681645">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="3222536424397317" type="System">
-                            <param id="0" name="Variable">layout</param>
+                            <param id="0" name="Variable">Layout</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">6</param>
                         </condition>
                         <condition id="2" name="Is playing" sid="6107113022952474" type="Sprite_MainCharacter_001">
-                            <param id="0" name="Animation">&quot;caminhando&quot;</param>
+                            <param id="0" name="Animation">&quot;Sprite_MainCharacter_001_Ani_Walk_001&quot;</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -1598,7 +1598,7 @@
                                     <actions>
                                         <action id="7" name="Play (by name)" sid="9958029411155093" type="Audio">
                                             <param id="0" name="Folder">0</param>
-                                            <param id="1" name="Audio file name">choose(&quot;d1&quot;,&quot;d2&quot;,&quot;d3&quot;,&quot;d4&quot;,&quot;d5&quot;,&quot;d6&quot;,&quot;d7&quot;,&quot;d8&quot;,&quot;d9&quot;,&quot;d10&quot;)</param>
+                                            <param id="1" name="Audio file name">choose(&quot;FLY_StepsOnParcelainFlor_001&quot;,&quot;FLY_StepsOnParcelainFlor_002&quot;,&quot;FLY_StepsOnParcelainFlor_003&quot;,&quot;FLY_StepsOnParcelainFlor_004&quot;,&quot;FLY_StepsOnParcelainFlor_005&quot;,&quot;FLY_StepsOnParcelainFlor_006&quot;,&quot;FLY_StepsOnParcelainFlor_007&quot;,&quot;FLY_StepsOnParcelainFlor_008&quot;,&quot;FLY_StepsOnParcelainFlor_009&quot;,&quot;FLY_StepsOnParcelainFlor_010&quot;)</param>
                                             <param id="3" name="Loop">0</param>
                                             <param id="4" name="Volume">-25</param>
                                             <param id="2" name="Tag (optional)">&quot;pd&quot;</param>
@@ -1634,7 +1634,7 @@
                                     <actions>
                                         <action id="7" name="Play (by name)" sid="1067765895220554" type="Audio">
                                             <param id="0" name="Folder">0</param>
-                                            <param id="1" name="Audio file name">choose(&quot;e1&quot;,&quot;e2&quot;,&quot;e3&quot;,&quot;e4&quot;,&quot;e5&quot;,&quot;e6&quot;,&quot;e7&quot;,&quot;e8&quot;,&quot;e9&quot;,&quot;e10&quot;)</param>
+                                            <param id="1" name="Audio file name">choose(&quot;FLY_StepsOnParcelainFlor_001&quot;,&quot;FLY_StepsOnParcelainFlor_002&quot;,&quot;FLY_StepsOnParcelainFlor_003&quot;,&quot;FLY_StepsOnParcelainFlor_004&quot;,&quot;FLY_StepsOnParcelainFlor_005&quot;,&quot;FLY_StepsOnParcelainFlor_006&quot;,&quot;FLY_StepsOnParcelainFlor_007&quot;,&quot;FLY_StepsOnParcelainFlor_008&quot;,&quot;FLY_StepsOnParcelainFlor_009&quot;,&quot;FLY_StepsOnParcelainFlor_010&quot;)</param>
                                             <param id="3" name="Loop">0</param>
                                             <param id="4" name="Volume">-25</param>
                                             <param id="2" name="Tag (optional)">&quot;pe&quot;</param>
@@ -1660,12 +1660,12 @@
                 <event-block sid="9037414391866766">
                     <conditions>
                         <condition id="4" name="On finished" sid="1866729258343962" type="Sprite_Elevator_OfficeFloor">
-                            <param id="0" name="Animation">&quot;sobe&quot;</param>
+                            <param id="0" name="Animation">&quot;Sprite_Elevator_OfficeFloor_Ani_GoingUp_001&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
                         <action id="4" name="Set animation" sid="301746622465951" type="Sprite_Elevator_OfficeFloor">
-                            <param id="0" name="Animation">&quot;abrindo&quot;</param>
+                            <param id="0" name="Animation">&quot;Sprite_Elevator_OfficeFloor_Ani_DoorOpening_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                         <action id="-9" name="Set value" sid="1084290519704872" type="System">
@@ -1686,12 +1686,12 @@
                 <event-block sid="7571694345244138">
                     <conditions>
                         <condition id="4" name="On finished" sid="5511550767678079" type="Sprite_Elevator_OfficeFloor">
-                            <param id="0" name="Animation">&quot;desce&quot;</param>
+                            <param id="0" name="Animation">&quot;Sprite_Elevator_OfficeFloor_Ani_GoingDown_001&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
                         <action id="4" name="Set animation" sid="3156814674322073" type="Sprite_Elevator_OfficeFloor">
-                            <param id="0" name="Animation">&quot;abrindo&quot;</param>
+                            <param id="0" name="Animation">&quot;Sprite_Elevator_OfficeFloor_Ani_DoorOpening_002&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                         <action id="-9" name="Set value" sid="366782384881083" type="System">
@@ -1722,7 +1722,7 @@
                     </conditions>
                     <actions>
                         <action id="4" name="Set animation" sid="4048875479094504" type="Sprite_Elevator_OfficeFloor">
-                            <param id="0" name="Animation">&quot;fechando&quot;</param>
+                            <param id="0" name="Animation">&quot;Sprite_Elevator_OfficeFloor_Ani_DoorClosing_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                         <action id="-9" name="Set value" sid="3462395720059059" type="System">
@@ -1755,7 +1755,7 @@
                             </conditions>
                             <actions>
                                 <action id="4" name="Set animation" sid="4688964658962686" type="Sprite_Elevator_OfficeFloor">
-                                    <param id="0" name="Animation">choose(&quot;sobe&quot;,&quot;desce&quot;) </param>
+                                    <param id="0" name="Animation">choose(&quot;Sprite_Elevator_OfficeFloor_Ani_GoingDown_001&quot;,&quot;Sprite_Elevator_OfficeFloor_Ani_GoingUp_001&quot;)</param>
                                     <param id="1" name="From">1</param>
                                 </action>
                                 <action id="-9" name="Set value" sid="106481133816273" type="System">
@@ -1787,8 +1787,8 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-25" name="Go to layout (by name)" sid="5711432234800532" type="System">
-                                    <param id="0" name="Layout">&quot;fase09&quot;</param>
+                                <action id="-2" name="Go to layout" sid="5711432234800532" type="System">
+                                    <param id="0" name="Layout">Level_009</param>
                                 </action>
                                 <action id="-9" name="Set value" sid="4496583218774436" type="System">
                                     <param id="0" name="Variable">SpanwX</param>
@@ -1799,7 +1799,7 @@
                                     <param id="1" name="Value"> 549.529</param>
                                 </action>
                                 <action id="-9" name="Set value" sid="6964489760200129" type="System">
-                                    <param id="0" name="Variable">layout</param>
+                                    <param id="0" name="Variable">Layout</param>
                                     <param id="1" name="Value">9</param>
                                 </action>
                                 <action id="6" name="Stop" sid="6471661181733339" type="Audio">
@@ -1812,7 +1812,7 @@
                 <event-block sid="5987377230428197">
                     <conditions>
                         <condition id="4" name="On finished" sid="4889002801149514" type="Sprite_Elevator_OfficeFloor">
-                            <param id="0" name="Animation">&quot;subindo&quot;</param>
+                            <param id="0" name="Animation">&quot;Sprite_Elevator_OfficeFloor_Ani_GoingUp_001&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -1825,14 +1825,14 @@
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="752886451409095" type="System" />
                         <condition id="-14" name="Compare variable" sid="9080364690896934" type="System">
-                            <param id="0" name="Variable">layout</param>
+                            <param id="0" name="Variable">Layout</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">8</param>
                         </condition>
                     </conditions>
                     <actions>
                         <action id="4" name="Set animation" sid="6266558739704925" type="Sprite_Elevator_OfficeFloor">
-                            <param id="0" name="Animation">&quot;sobe&quot;</param>
+                            <param id="0" name="Animation">&quot;Sprite_Elevator_OfficeFloor_Ani_GoingUp_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                         <action id="0" name="Play" sid="3100915774522569" type="Audio">
@@ -1872,7 +1872,7 @@
                 <event-block sid="4485544159788005">
                     <conditions>
                         <condition id="2" name="Is playing" sid="3886856854640764" type="Sprite_NPC_Boss_001">
-                            <param id="0" name="Animation">&quot;fala&quot;</param>
+                            <param id="0" name="Animation">&quot;Sprite_NPC_Boss_001_Ani_Speaking_001&quot;</param>
                         </condition>
                         <condition id="-9" name="Is visible" sid="7807462558606653" type="Sprite_Text_Boss" />
                     </conditions>
@@ -1920,11 +1920,11 @@
                     </conditions>
                     <actions>
                         <action id="4" name="Set animation" sid="6756703766923642" type="Sprite_NPC_Boss_001">
-                            <param id="0" name="Animation">&quot;para&quot;</param>
+                            <param id="0" name="Animation">&quot;Sprite_NPC_Boss_001_Ani_Idle_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                         <action id="4" name="Set animation" sid="6309757278475172" type="Sprite_NPC_Boss_001_Mouth">
-                            <param id="0" name="Animation">&quot;para&quot;</param>
+                            <param id="0" name="Animation">&quot;Sprite_NPC_Boss_001_Mouth_Ani_Idle_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                         <action id="-15" name="Set visible" sid="1557302605841751" type="Sprite_Text_Boss">
@@ -1945,11 +1945,11 @@
                     </conditions>
                     <actions>
                         <action id="4" name="Set animation" sid="8230048189275279" type="Sprite_NPC_Boss_001">
-                            <param id="0" name="Animation">&quot;fala&quot;</param>
+                            <param id="0" name="Animation">&quot;Sprite_NPC_Boss_001_Ani_Speaking_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                         <action id="4" name="Set animation" sid="9294804627736414" type="Sprite_NPC_Boss_001_Mouth">
-                            <param id="0" name="Animation">&quot;fala&quot;</param>
+                            <param id="0" name="Animation">&quot;Sprite_NPC_Boss_001_Mouth_Ani_Speaking_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                         <action id="-15" name="Set visible" sid="6345952839035769" type="Sprite_Text_Boss">
@@ -1960,12 +1960,12 @@
                         <event-block sid="9107669372804046">
                             <conditions>
                                 <condition id="4" name="On finished" sid="3433767243881955" type="Sprite_Text_Boss">
-                                    <param id="0" name="Animation">&quot;c1&quot;</param>
+                                    <param id="0" name="Animation">&quot;Sprite_Text_Boss_Ani_Dialogue_001&quot;</param>
                                 </condition>
                             </conditions>
                             <actions>
                                 <action id="4" name="Set animation" sid="5630465518956291" type="Sprite_Text_Boss">
-                                    <param id="0" name="Animation">choose(&quot;c10&quot;,&quot;c1&quot;,&quot;c2&quot;,&quot;c3,&quot;&quot;c4&quot;,&quot;c5&quot;,&quot;c6&quot;,&quot;c7&quot;,&quot;c8&quot;,&quot;c9&quot;)</param>
+                                    <param id="0" name="Animation">choose(&quot;Sprite_Text_Boss_Ani_Dialogue_001&quot;,&quot;Sprite_Text_Boss_Ani_Dialogue_002&quot;,&quot;Sprite_Text_Boss_Ani_Dialogue_003&quot;,&quot;Sprite_Text_Boss_Ani_Dialogue_004&quot;,&quot;Sprite_Text_Boss_Ani_Dialogue_005&quot;,&quot;Sprite_Text_Boss_Ani_Dialogue_006&quot;,&quot;Sprite_Text_Boss_Ani_Dialogue_007&quot;,&quot;Sprite_Text_Boss_Ani_Dialogue_008&quot;,&quot;Sprite_Text_Boss_Ani_Dialogue_009&quot;,&quot;Sprite_Text_Boss_Ani_Dialogue_010&quot;)</param>
                                     <param id="1" name="From">1</param>
                                 </action>
                             </actions>
@@ -1976,7 +1976,7 @@
                             </conditions>
                             <actions>
                                 <action id="4" name="Set animation" sid="2716014292833625" type="Sprite_Text_Boss">
-                                    <param id="0" name="Animation">choose(&quot;c10&quot;,&quot;c1&quot;,&quot;c2&quot;,&quot;c3,&quot;&quot;c4&quot;,&quot;c5&quot;,&quot;c6&quot;,&quot;c7&quot;,&quot;c8&quot;,&quot;c9&quot;)</param>
+                                    <param id="0" name="Animation">choose(&quot;Sprite_Text_Boss_Ani_Dialogue_001&quot;,&quot;Sprite_Text_Boss_Ani_Dialogue_002&quot;,&quot;Sprite_Text_Boss_Ani_Dialogue_003&quot;,&quot;Sprite_Text_Boss_Ani_Dialogue_004&quot;,&quot;Sprite_Text_Boss_Ani_Dialogue_005&quot;,&quot;Sprite_Text_Boss_Ani_Dialogue_006&quot;,&quot;Sprite_Text_Boss_Ani_Dialogue_007&quot;,&quot;Sprite_Text_Boss_Ani_Dialogue_008&quot;,&quot;Sprite_Text_Boss_Ani_Dialogue_009&quot;,&quot;Sprite_Text_Boss_Ani_Dialogue_010&quot;)</param>
                                     <param id="1" name="From">1</param>
                                 </action>
                             </actions>
@@ -1986,12 +1986,12 @@
                 <event-block sid="7908633341859607">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="8608617108087421" type="System">
-                            <param id="0" name="Variable">layout</param>
+                            <param id="0" name="Variable">Layout</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">8</param>
                         </condition>
                         <condition id="2" name="Is playing" sid="3817708556272783" type="Sprite_MainCharacter_001">
-                            <param id="0" name="Animation">&quot;caminhando&quot;</param>
+                            <param id="0" name="Animation">&quot;Sprite_MainCharacter_001_Ani_Walk_001&quot;</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -2015,7 +2015,7 @@
                                     <actions>
                                         <action id="7" name="Play (by name)" sid="8425709103632134" type="Audio">
                                             <param id="0" name="Folder">0</param>
-                                            <param id="1" name="Audio file name">choose(&quot;d1&quot;,&quot;d2&quot;,&quot;d3&quot;,&quot;d4&quot;,&quot;d5&quot;,&quot;d6&quot;,&quot;d7&quot;,&quot;d8&quot;,&quot;d9&quot;,&quot;d10&quot;)</param>
+                                            <param id="1" name="Audio file name">choose(&quot;FLY_StepsOnParcelainFlor_001&quot;,&quot;FLY_StepsOnParcelainFlor_002&quot;,&quot;FLY_StepsOnParcelainFlor_003&quot;,&quot;FLY_StepsOnParcelainFlor_004&quot;,&quot;FLY_StepsOnParcelainFlor_005&quot;,&quot;FLY_StepsOnParcelainFlor_006&quot;,&quot;FLY_StepsOnParcelainFlor_007&quot;,&quot;FLY_StepsOnParcelainFlor_008&quot;,&quot;FLY_StepsOnParcelainFlor_009&quot;,&quot;FLY_StepsOnParcelainFlor_010&quot;)</param>
                                             <param id="3" name="Loop">0</param>
                                             <param id="4" name="Volume">-35</param>
                                             <param id="2" name="Tag (optional)">&quot;pd&quot;</param>
@@ -2051,7 +2051,7 @@
                                     <actions>
                                         <action id="7" name="Play (by name)" sid="9785444573320355" type="Audio">
                                             <param id="0" name="Folder">0</param>
-                                            <param id="1" name="Audio file name">choose(&quot;e1&quot;,&quot;e2&quot;,&quot;e3&quot;,&quot;e4&quot;,&quot;e5&quot;,&quot;e6&quot;,&quot;e7&quot;,&quot;e8&quot;,&quot;e9&quot;,&quot;e10&quot;)</param>
+                                            <param id="1" name="Audio file name">choose(&quot;FLY_StepsOnParcelainFlor_001&quot;,&quot;FLY_StepsOnParcelainFlor_002&quot;,&quot;FLY_StepsOnParcelainFlor_003&quot;,&quot;FLY_StepsOnParcelainFlor_004&quot;,&quot;FLY_StepsOnParcelainFlor_005&quot;,&quot;FLY_StepsOnParcelainFlor_006&quot;,&quot;FLY_StepsOnParcelainFlor_007&quot;,&quot;FLY_StepsOnParcelainFlor_008&quot;,&quot;FLY_StepsOnParcelainFlor_009&quot;,&quot;FLY_StepsOnParcelainFlor_010&quot;)</param>
                                             <param id="3" name="Loop">0</param>
                                             <param id="4" name="Volume">-28</param>
                                             <param id="2" name="Tag (optional)">&quot;pe&quot;</param>
@@ -2103,10 +2103,10 @@
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="5578308805038515" type="System" />
                         <condition id="2" name="Is playing" sid="8388189270663924" type="Sprite_PlayerOfficeLamp">
-                            <param id="0" name="Animation">&quot;default&quot;</param>
+                            <param id="0" name="Animation">&quot;Sprite_PlayerOfficeLamp_Ani_Idle_001&quot;</param>
                         </condition>
                         <condition id="-14" name="Compare variable" sid="914574038249225" type="System">
-                            <param id="0" name="Variable">layout</param>
+                            <param id="0" name="Variable">Layout</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">9</param>
                         </condition>
@@ -2135,8 +2135,8 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-25" name="Go to layout (by name)" sid="6952594785795177" type="System">
-                                    <param id="0" name="Layout">&quot;fase10&quot;</param>
+                                <action id="-2" name="Go to layout" sid="6952594785795177" type="System">
+                                    <param id="0" name="Layout">Level_010</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -2145,12 +2145,12 @@
                 <event-block sid="6844217345521567">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="7031742309186395" type="System">
-                            <param id="0" name="Variable">layout</param>
+                            <param id="0" name="Variable">Layout</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">9</param>
                         </condition>
                         <condition id="2" name="Is playing" sid="6678992797626803" type="Sprite_MainCharacter_001">
-                            <param id="0" name="Animation">&quot;caminhando&quot;</param>
+                            <param id="0" name="Animation">&quot;Sprite_MainCharacter_001_Ani_Walk_001&quot;</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -2174,7 +2174,7 @@
                                     <actions>
                                         <action id="7" name="Play (by name)" sid="9187336886525857" type="Audio">
                                             <param id="0" name="Folder">0</param>
-                                            <param id="1" name="Audio file name">choose(&quot;d1&quot;,&quot;d2&quot;,&quot;d3&quot;,&quot;d4&quot;,&quot;d5&quot;,&quot;d6&quot;,&quot;d7&quot;,&quot;d8&quot;,&quot;d9&quot;,&quot;d10&quot;)</param>
+                                            <param id="1" name="Audio file name">choose(&quot;FLY_StepsOnParcelainFlor_001&quot;,&quot;FLY_StepsOnParcelainFlor_002&quot;,&quot;FLY_StepsOnParcelainFlor_003&quot;,&quot;FLY_StepsOnParcelainFlor_004&quot;,&quot;FLY_StepsOnParcelainFlor_005&quot;,&quot;FLY_StepsOnParcelainFlor_006&quot;,&quot;FLY_StepsOnParcelainFlor_007&quot;,&quot;FLY_StepsOnParcelainFlor_008&quot;,&quot;FLY_StepsOnParcelainFlor_009&quot;,&quot;FLY_StepsOnParcelainFlor_010&quot;)</param>
                                             <param id="3" name="Loop">0</param>
                                             <param id="4" name="Volume">-50</param>
                                             <param id="2" name="Tag (optional)">&quot;pd&quot;</param>
@@ -2202,7 +2202,7 @@
                                     <actions>
                                         <action id="7" name="Play (by name)" sid="9807761435292272" type="Audio">
                                             <param id="0" name="Folder">0</param>
-                                            <param id="1" name="Audio file name">choose(&quot;e1&quot;,&quot;e2&quot;,&quot;e3&quot;,&quot;e4&quot;,&quot;e5&quot;,&quot;e6&quot;,&quot;e7&quot;,&quot;e8&quot;,&quot;e9&quot;,&quot;e10&quot;)</param>
+                                            <param id="1" name="Audio file name">choose(&quot;FLY_StepsOnParcelainFlor_001&quot;,&quot;FLY_StepsOnParcelainFlor_002&quot;,&quot;FLY_StepsOnParcelainFlor_003&quot;,&quot;FLY_StepsOnParcelainFlor_004&quot;,&quot;FLY_StepsOnParcelainFlor_005&quot;,&quot;FLY_StepsOnParcelainFlor_006&quot;,&quot;FLY_StepsOnParcelainFlor_007&quot;,&quot;FLY_StepsOnParcelainFlor_008&quot;,&quot;FLY_StepsOnParcelainFlor_009&quot;,&quot;FLY_StepsOnParcelainFlor_010&quot;)</param>
                                             <param id="3" name="Loop">0</param>
                                             <param id="4" name="Volume">-40</param>
                                             <param id="2" name="Tag (optional)">&quot;pe&quot;</param>
@@ -2224,8 +2224,8 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-25" name="Go to layout (by name)" sid="8066426380045921" type="System">
-                            <param id="0" name="Layout">&quot;fase14&quot;</param>
+                        <action id="-2" name="Go to layout" sid="8066426380045921" type="System">
+                            <param id="0" name="Layout">Level_014</param>
                         </action>
                         <action id="6" name="Stop" sid="4442247177031972" type="Audio">
                             <param id="0" name="Tag">&quot;lamp&quot;</param>
@@ -2239,7 +2239,7 @@
                             <param id="1" name="Value">532.046</param>
                         </action>
                         <action id="-9" name="Set value" sid="9076327617343041" type="System">
-                            <param id="0" name="Variable">layout</param>
+                            <param id="0" name="Variable">Layout</param>
                             <param id="1" name="Value">14</param>
                         </action>
                     </actions>
@@ -2282,12 +2282,12 @@
                 <event-block sid="7208351353480282">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="1387118316711612" type="System">
-                            <param id="0" name="Variable">layout</param>
+                            <param id="0" name="Variable">Layout</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">13</param>
                         </condition>
                         <condition id="2" name="Is playing" sid="1207747606971021" type="Sprite_MainCharacter_001">
-                            <param id="0" name="Animation">&quot;caminhando&quot;</param>
+                            <param id="0" name="Animation">&quot;Sprite_MainCharacter_001_Ani_Walk_001&quot;</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -2311,7 +2311,7 @@
                                     <actions>
                                         <action id="7" name="Play (by name)" sid="9669572295453685" type="Audio">
                                             <param id="0" name="Folder">0</param>
-                                            <param id="1" name="Audio file name">choose(&quot;d1&quot;,&quot;d2&quot;,&quot;d3&quot;,&quot;d4&quot;,&quot;d5&quot;,&quot;d6&quot;,&quot;d7&quot;,&quot;d8&quot;,&quot;d9&quot;,&quot;d10&quot;)</param>
+                                            <param id="1" name="Audio file name">choose(&quot;FLY_StepsOnParcelainFlor_001&quot;,&quot;FLY_StepsOnParcelainFlor_002&quot;,&quot;FLY_StepsOnParcelainFlor_003&quot;,&quot;FLY_StepsOnParcelainFlor_004&quot;,&quot;FLY_StepsOnParcelainFlor_005&quot;,&quot;FLY_StepsOnParcelainFlor_006&quot;,&quot;FLY_StepsOnParcelainFlor_007&quot;,&quot;FLY_StepsOnParcelainFlor_008&quot;,&quot;FLY_StepsOnParcelainFlor_009&quot;,&quot;FLY_StepsOnParcelainFlor_010&quot;)</param>
                                             <param id="3" name="Loop">0</param>
                                             <param id="4" name="Volume">-50</param>
                                             <param id="2" name="Tag (optional)">&quot;pd&quot;</param>
@@ -2339,7 +2339,7 @@
                                     <actions>
                                         <action id="7" name="Play (by name)" sid="9938091343099953" type="Audio">
                                             <param id="0" name="Folder">0</param>
-                                            <param id="1" name="Audio file name">choose(&quot;e1&quot;,&quot;e2&quot;,&quot;e3&quot;,&quot;e4&quot;,&quot;e5&quot;,&quot;e6&quot;,&quot;e7&quot;,&quot;e8&quot;,&quot;e9&quot;,&quot;e10&quot;)</param>
+                                            <param id="1" name="Audio file name">choose(&quot;FLY_StepsOnParcelainFlor_001&quot;,&quot;FLY_StepsOnParcelainFlor_002&quot;,&quot;FLY_StepsOnParcelainFlor_003&quot;,&quot;FLY_StepsOnParcelainFlor_004&quot;,&quot;FLY_StepsOnParcelainFlor_005&quot;,&quot;FLY_StepsOnParcelainFlor_006&quot;,&quot;FLY_StepsOnParcelainFlor_007&quot;,&quot;FLY_StepsOnParcelainFlor_008&quot;,&quot;FLY_StepsOnParcelainFlor_009&quot;,&quot;FLY_StepsOnParcelainFlor_010&quot;)</param>
                                             <param id="3" name="Loop">0</param>
                                             <param id="4" name="Volume">-40</param>
                                             <param id="2" name="Tag (optional)">&quot;pe&quot;</param>
@@ -2358,7 +2358,7 @@
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="9395131627539926" type="System" />
                         <condition id="-14" name="Compare variable" sid="3416472743980692" type="System">
-                            <param id="0" name="Variable">layout</param>
+                            <param id="0" name="Variable">Layout</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">14</param>
                         </condition>
@@ -2389,22 +2389,22 @@
                             <param id="0" name="Visibility">1</param>
                         </action>
                         <action id="4" name="Set animation" sid="5139505226415408" type="Sprite_Text_Boss_PlayerFired">
-                            <param id="0" name="Animation">&quot;default&quot;</param>
+                            <param id="0" name="Animation">&quot;Sprite_Text_Boss_PlayerFired_Ani_Speaking_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                         <action id="4" name="Set animation" sid="4066988560008805" type="Sprite_NPC_Boss_002_Mouth">
-                            <param id="0" name="Animation">&quot;fala&quot;</param>
+                            <param id="0" name="Animation">&quot;Sprite_NPC_Boss_002_Mouth_Ani_Speaking_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                         <action behavior="Platform" id="0" name="Set ignoring input" sid="787552590317434" type="Sprite_MainCharacter_001">
                             <param id="0" name="Input">1</param>
                         </action>
                         <action id="4" name="Set animation" sid="6171297865750677" type="Sprite_MainCharacter_001">
-                            <param id="0" name="Animation">&quot;parado&quot;</param>
+                            <param id="0" name="Animation">&quot;Sprite_MainCharacter_001_Ani_Idle_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                         <action id="1" name="Set looping" sid="6360250296288117" type="Audio">
-                            <param id="0" name="Tag">&quot;msc4&quot;</param>
+                            <param id="0" name="Tag">&quot;MX_EndlessCorridor&quot;</param>
                             <param id="1" name="State">1</param>
                         </action>
                     </actions>
@@ -2412,21 +2412,21 @@
                 <event-block sid="3068847008667983">
                     <conditions>
                         <condition id="4" name="On finished" sid="3053514813806958" type="Sprite_Text_Boss_PlayerFired">
-                            <param id="0" name="Animation">&quot;default&quot;</param>
+                            <param id="0" name="Animation">&quot;Sprite_Text_Boss_PlayerFired_Ani_Speaking_001&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="7868176651192034" type="Sprite_Trigger_PlayerGetFired" />
                         <action id="-9" name="Destroy" sid="39735120691094" type="Sprite_Text_Boss_PlayerFired" />
                         <action id="4" name="Set animation" sid="409354543668943" type="Sprite_NPC_Boss_002_Mouth">
-                            <param id="0" name="Animation">&quot;para&quot;</param>
+                            <param id="0" name="Animation">&quot;Sprite_NPC_Boss_002_Mouth_Ani_Idle_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                         <action behavior="Platform" id="0" name="Set ignoring input" sid="2531590889096045" type="Sprite_MainCharacter_001">
                             <param id="0" name="Input">0</param>
                         </action>
                         <action id="1" name="Set looping" sid="5415305724906998" type="Audio">
-                            <param id="0" name="Tag">&quot;msc4&quot;</param>
+                            <param id="0" name="Tag">&quot;MX_EndlessCorridor&quot;</param>
                             <param id="1" name="State">1</param>
                         </action>
                     </actions>
@@ -2434,7 +2434,7 @@
                 <event-block sid="1939124517435947">
                     <conditions>
                         <condition id="2" name="Is playing" sid="8299893966099555" type="Sprite_Text_Boss_PlayerFired">
-                            <param id="0" name="Animation">&quot;default&quot;</param>
+                            <param id="0" name="Animation">&quot;Sprite_Text_Boss_PlayerFired_Ani_Idle_001&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -2442,7 +2442,7 @@
                             <param id="0" name="State">0</param>
                         </action>
                         <action id="4" name="Set animation" sid="221618395965577" type="Sprite_MainCharacter_001">
-                            <param id="0" name="Animation">&quot;parado&quot;</param>
+                            <param id="0" name="Animation">&quot;Sprite_MainCharacter_001_Ani_Idle_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                     </actions>
@@ -2455,7 +2455,7 @@
                     </conditions>
                     <actions>
                         <action id="4" name="Set animation" sid="8165270442107265" type="Sprite_Elevator_OfficeFloor">
-                            <param id="0" name="Animation">&quot;fechando2&quot;</param>
+                            <param id="0" name="Animation">&quot;Sprite_Elevator_OfficeFloor_Ani_DoorClosing_002&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                         <action behavior="Solid" id="0" name="Set enabled" sid="8652043201209042" type="Sprite_CollisionContainer_Elevator_OfficeFloor_Closed">
@@ -2466,15 +2466,15 @@
                 <event-block sid="9126928296577419">
                     <conditions>
                         <condition id="4" name="On finished" sid="5834419814553863" type="Sprite_Elevator_OfficeFloor">
-                            <param id="0" name="Animation">&quot;fechando2&quot;</param>
+                            <param id="0" name="Animation">&quot;Sprite_Elevator_OfficeFloor_Ani_DoorClosing_002&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-25" name="Go to layout (by name)" sid="1763390894891644" type="System">
-                            <param id="0" name="Layout">&quot;fase15&quot;</param>
+                        <action id="-2" name="Go to layout" sid="1763390894891644" type="System">
+                            <param id="0" name="Layout">Level_015</param>
                         </action>
                         <action id="-9" name="Set value" sid="5594671156445162" type="System">
-                            <param id="0" name="Variable">layout</param>
+                            <param id="0" name="Variable">Layout</param>
                             <param id="1" name="Value">15</param>
                         </action>
                         <action id="6" name="Stop" sid="8528258659049413" type="Audio">
@@ -2488,12 +2488,12 @@
                 <event-block sid="4578252874268525">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="9559397889177395" type="System">
-                            <param id="0" name="Variable">layout</param>
+                            <param id="0" name="Variable">Layout</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">14</param>
                         </condition>
                         <condition id="2" name="Is playing" sid="8584657410113434" type="Sprite_MainCharacter_001">
-                            <param id="0" name="Animation">&quot;caminhando&quot;</param>
+                            <param id="0" name="Animation">&quot;Sprite_MainCharacter_001_Ani_Walk_001&quot;</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -2517,7 +2517,7 @@
                                     <actions>
                                         <action id="7" name="Play (by name)" sid="7549823225404236" type="Audio">
                                             <param id="0" name="Folder">0</param>
-                                            <param id="1" name="Audio file name">choose(&quot;d1&quot;,&quot;d2&quot;,&quot;d3&quot;,&quot;d4&quot;,&quot;d5&quot;,&quot;d6&quot;,&quot;d7&quot;,&quot;d8&quot;,&quot;d9&quot;,&quot;d10&quot;)</param>
+                                            <param id="1" name="Audio file name">choose(&quot;FLY_StepsOnParcelainFlor_001&quot;,&quot;FLY_StepsOnParcelainFlor_002&quot;,&quot;FLY_StepsOnParcelainFlor_003&quot;,&quot;FLY_StepsOnParcelainFlor_004&quot;,&quot;FLY_StepsOnParcelainFlor_005&quot;,&quot;FLY_StepsOnParcelainFlor_006&quot;,&quot;FLY_StepsOnParcelainFlor_007&quot;,&quot;FLY_StepsOnParcelainFlor_008&quot;,&quot;FLY_StepsOnParcelainFlor_009&quot;,&quot;FLY_StepsOnParcelainFlor_010&quot;)</param>
                                             <param id="3" name="Loop">0</param>
                                             <param id="4" name="Volume">-60</param>
                                             <param id="2" name="Tag (optional)">&quot;pd&quot;</param>
@@ -2545,7 +2545,7 @@
                                     <actions>
                                         <action id="7" name="Play (by name)" sid="7658280886899359" type="Audio">
                                             <param id="0" name="Folder">0</param>
-                                            <param id="1" name="Audio file name">choose(&quot;e1&quot;,&quot;e2&quot;,&quot;e3&quot;,&quot;e4&quot;,&quot;e5&quot;,&quot;e6&quot;,&quot;e7&quot;,&quot;e8&quot;,&quot;e9&quot;,&quot;e10&quot;)</param>
+                                            <param id="1" name="Audio file name">choose(&quot;FLY_StepsOnParcelainFlor_001&quot;,&quot;FLY_StepsOnParcelainFlor_002&quot;,&quot;FLY_StepsOnParcelainFlor_003&quot;,&quot;FLY_StepsOnParcelainFlor_004&quot;,&quot;FLY_StepsOnParcelainFlor_005&quot;,&quot;FLY_StepsOnParcelainFlor_006&quot;,&quot;FLY_StepsOnParcelainFlor_007&quot;,&quot;FLY_StepsOnParcelainFlor_008&quot;,&quot;FLY_StepsOnParcelainFlor_009&quot;,&quot;FLY_StepsOnParcelainFlor_010&quot;)</param>
                                             <param id="3" name="Loop">0</param>
                                             <param id="4" name="Volume">-50</param>
                                             <param id="2" name="Tag (optional)">&quot;pe&quot;</param>
@@ -2564,14 +2564,14 @@
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="3967923663589424" type="System" />
                         <condition id="-14" name="Compare variable" sid="7740691847021016" type="System">
-                            <param id="0" name="Variable">layout</param>
+                            <param id="0" name="Variable">Layout</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">16</param>
                         </condition>
                     </conditions>
                     <actions>
                         <action id="0" name="Play" sid="2253705233210685" type="Audio">
-                            <param id="0" name="Audio file">BG_RefrigeratorEngine_001</param>
+                            <param id="0" name="Audio file">BG_Elevator_001</param>
                             <param id="2" name="Loop">0</param>
                             <param id="3" name="Volume">-0</param>
                             <param id="1" name="Tag (optional)">&quot;elev&quot;</param>
@@ -2581,10 +2581,10 @@
                 <event-block sid="2415218517869846">
                     <conditions>
                         <condition id="4" name="On finished" sid="7842682946663989" type="Sprite_Elevator_GroundFloor">
-                            <param id="0" name="Animation">&quot;descendo&quot;</param>
+                            <param id="0" name="Animation">&quot;Sprite_Elevator_GroundFloor_Ani_GoingDown_001&quot;</param>
                         </condition>
                         <condition id="-14" name="Compare variable" sid="6479455791500253" type="System">
-                            <param id="0" name="Variable">layout</param>
+                            <param id="0" name="Variable">Layout</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">16</param>
                         </condition>
@@ -2602,8 +2602,8 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-25" name="Go to layout (by name)" sid="6743118286401027" type="System">
-                            <param id="0" name="Layout">&quot;fase17&quot;</param>
+                        <action id="-2" name="Go to layout" sid="6743118286401027" type="System">
+                            <param id="0" name="Layout">Level_017</param>
                         </action>
                         <action id="-9" name="Set value" sid="5536108123783727" type="System">
                             <param id="0" name="Variable">SpanwX</param>
@@ -2614,7 +2614,7 @@
                             <param id="1" name="Value">708.589</param>
                         </action>
                         <action id="-9" name="Set value" sid="134444332945376" type="System">
-                            <param id="0" name="Variable">layout</param>
+                            <param id="0" name="Variable">Layout</param>
                             <param id="1" name="Value">17</param>
                         </action>
                     </actions>
@@ -2625,12 +2625,12 @@
                             <param id="0" name="Object">Sprite_Trigger_Elevator_GoinDown</param>
                         </condition>
                         <condition id="2" name="Is playing" sid="2993756810780489" type="Sprite_Elevator_GroundFloor">
-                            <param id="0" name="Animation">&quot;parado&quot;</param>
+                            <param id="0" name="Animation">&quot;Sprite_Elevator_GroundFloor_Ani_Idle_001&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
                         <action id="4" name="Set animation" sid="3278463917290453" type="Sprite_Elevator_GroundFloor">
-                            <param id="0" name="Animation">&quot;descendo&quot;</param>
+                            <param id="0" name="Animation">&quot;Sprite_Elevator_GroundFloor_Ani_GoingDown_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                     </actions>
@@ -2638,12 +2638,12 @@
                 <event-block sid="3394561246603585">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="2900331060441635" type="System">
-                            <param id="0" name="Variable">layout</param>
+                            <param id="0" name="Variable">Layout</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">16</param>
                         </condition>
                         <condition id="2" name="Is playing" sid="4102749986449936" type="Sprite_MainCharacter_001">
-                            <param id="0" name="Animation">&quot;caminhando&quot;</param>
+                            <param id="0" name="Animation">&quot;Sprite_MainCharacter_001_Ani_Walk_001&quot;</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -2667,7 +2667,7 @@
                                     <actions>
                                         <action id="7" name="Play (by name)" sid="3571398588302442" type="Audio">
                                             <param id="0" name="Folder">0</param>
-                                            <param id="1" name="Audio file name">choose(&quot;d1&quot;,&quot;d2&quot;,&quot;d3&quot;,&quot;d4&quot;,&quot;d5&quot;,&quot;d6&quot;,&quot;d7&quot;,&quot;d8&quot;,&quot;d9&quot;,&quot;d10&quot;)</param>
+                                            <param id="1" name="Audio file name">choose(&quot;FLY_StepsOnParcelainFlor_001&quot;,&quot;FLY_StepsOnParcelainFlor_002&quot;,&quot;FLY_StepsOnParcelainFlor_003&quot;,&quot;FLY_StepsOnParcelainFlor_004&quot;,&quot;FLY_StepsOnParcelainFlor_005&quot;,&quot;FLY_StepsOnParcelainFlor_006&quot;,&quot;FLY_StepsOnParcelainFlor_007&quot;,&quot;FLY_StepsOnParcelainFlor_008&quot;,&quot;FLY_StepsOnParcelainFlor_009&quot;,&quot;FLY_StepsOnParcelainFlor_010&quot;)</param>
                                             <param id="3" name="Loop">0</param>
                                             <param id="4" name="Volume">-20</param>
                                             <param id="2" name="Tag (optional)">&quot;pd&quot;</param>
@@ -2695,7 +2695,7 @@
                                     <actions>
                                         <action id="7" name="Play (by name)" sid="3170487643352334" type="Audio">
                                             <param id="0" name="Folder">0</param>
-                                            <param id="1" name="Audio file name">choose(&quot;e1&quot;,&quot;e2&quot;,&quot;e3&quot;,&quot;e4&quot;,&quot;e5&quot;,&quot;e6&quot;,&quot;e7&quot;,&quot;e8&quot;,&quot;e9&quot;,&quot;e10&quot;)</param>
+                                            <param id="1" name="Audio file name">choose(&quot;FLY_StepsOnParcelainFlor_001&quot;,&quot;FLY_StepsOnParcelainFlor_002&quot;,&quot;FLY_StepsOnParcelainFlor_003&quot;,&quot;FLY_StepsOnParcelainFlor_004&quot;,&quot;FLY_StepsOnParcelainFlor_005&quot;,&quot;FLY_StepsOnParcelainFlor_006&quot;,&quot;FLY_StepsOnParcelainFlor_007&quot;,&quot;FLY_StepsOnParcelainFlor_008&quot;,&quot;FLY_StepsOnParcelainFlor_009&quot;,&quot;FLY_StepsOnParcelainFlor_010&quot;)</param>
                                             <param id="3" name="Loop">0</param>
                                             <param id="4" name="Volume">-24</param>
                                             <param id="2" name="Tag (optional)">&quot;pe&quot;</param>
@@ -2737,7 +2737,7 @@
                             <param id="0" name="Input">1</param>
                         </action>
                         <action id="4" name="Set animation" sid="1423055251752957" type="Sprite_MainCharacter_001">
-                            <param id="0" name="Animation">&quot;parado&quot;</param>
+                            <param id="0" name="Animation">&quot;Sprite_MainCharacter_001_Ani_Idle_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                         <action id="-16" name="Set opacity" sid="2983747085948151" type="Sprite_Spotlight_001_Vignette">
@@ -2757,14 +2757,14 @@
                 <event-block sid="3907436864919659">
                     <conditions>
                         <condition id="4" name="On finished" sid="6306279635166635" type="Sprite_Text_Wife_Breakdown">
-                            <param id="0" name="Animation">&quot;default&quot;</param>
+                            <param id="0" name="Animation">&quot;Sprite_Text_Wife_Breakdown_Ani_Dialogue_001&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="5817932487292336" type="Sprite_Trigger_PlayerHome_WifeTalk_002" />
                         <action id="-9" name="Destroy" sid="835579915165799" type="Sprite_Text_Wife_Breakdown" />
                         <action id="4" name="Set animation" sid="5762370764537199" type="Sprite_NPC_Wife_002_Mouth">
-                            <param id="0" name="Animation">&quot;para&quot;</param>
+                            <param id="0" name="Animation">&quot;Sprite_NPC_Wife_002_Mouth_Ani_Idle_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                         <action behavior="Platform" id="0" name="Set ignoring input" sid="4532485379031877" type="Sprite_MainCharacter_001">
@@ -2801,7 +2801,7 @@
                             <param id="0" name="State">0</param>
                         </action>
                         <action id="4" name="Set animation" sid="2693362226859453" type="Sprite_MainCharacter_001">
-                            <param id="0" name="Animation">&quot;parado&quot;</param>
+                            <param id="0" name="Animation">&quot;Sprite_MainCharacter_001_Ani_Idle_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                     </actions>
@@ -2821,11 +2821,11 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-25" name="Go to layout (by name)" sid="3030857474344197" type="System">
-                                    <param id="0" name="Layout">&quot;fase21&quot;</param>
+                                <action id="-2" name="Go to layout" sid="3030857474344197" type="System">
+                                    <param id="0" name="Layout">Level_021</param>
                                 </action>
                                 <action id="-9" name="Set value" sid="9880415956001004" type="System">
-                                    <param id="0" name="Variable">layout</param>
+                                    <param id="0" name="Variable">Layout</param>
                                     <param id="1" name="Value">21</param>
                                 </action>
                                 <action id="6" name="Stop" sid="8187778346945022" type="Audio">
@@ -2845,12 +2845,12 @@
                     <conditions>
                         <condition id="5" name="On any finished" sid="1703535107379051" type="Sprite_NPC_Wife_002" />
                         <condition id="2" name="Is playing" sid="8366538211409114" type="Sprite_NPC_Wife_002_Mouth">
-                            <param id="0" name="Animation">&quot;para&quot;</param>
+                            <param id="0" name="Animation">&quot;Sprite_NPC_Wife_002_Mouth_Ani_Idle_001&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
                         <action id="4" name="Set animation" sid="6306140355188756" type="Sprite_NPC_Wife_002">
-                            <param id="0" name="Animation">choose(&quot;e1&quot;,&quot;e2&quot;,&quot;e3&quot;,&quot;e4&quot;,&quot;e5&quot;,&quot;e6 &quot;) </param>
+                            <param id="0" name="Animation">choose(&quot;Sprite_NPC_Wife_002_Ani_Drinking_001 &quot;,&quot;Sprite_NPC_Wife_002_Ani_GlassMoving_001&quot;,&quot;Sprite_NPC_Wife_002_Ani_GlassMoving_002&quot;,&quot;Sprite_NPC_Wife_002_Ani_Idle_001&quot;,&quot;Sprite_NPC_Wife_002_Ani_Idle_002&quot;,&quot;Sprite_NPC_Wife_002_Ani_Idle_003&quot;)</param>
                             <param id="1" name="From">1</param>
                         </action>
                     </actions>
@@ -2859,12 +2859,12 @@
                     <conditions>
                         <condition id="5" name="On any finished" sid="5005684757780966" type="Sprite_NPC_Wife_002" />
                         <condition id="2" name="Is playing" sid="4188590732752963" type="Sprite_NPC_Wife_002_Mouth">
-                            <param id="0" name="Animation">&quot;fala&quot;</param>
+                            <param id="0" name="Animation">&quot;Sprite_NPC_Wife_002_Mouth_Ani_Speaking_001&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
                         <action id="4" name="Set animation" sid="5187361424939657" type="Sprite_NPC_Wife_002">
-                            <param id="0" name="Animation">choose(&quot;e1&quot;,&quot;e2&quot;,&quot;e3&quot;,&quot;e4&quot;,&quot;e5&quot;) </param>
+                            <param id="0" name="Animation">choose(&quot;Sprite_NPC_Wife_002_Ani_Drinking_001 &quot;,&quot;Sprite_NPC_Wife_002_Ani_GlassMoving_001&quot;,&quot;Sprite_NPC_Wife_002_Ani_GlassMoving_002&quot;,&quot;Sprite_NPC_Wife_002_Ani_Idle_001&quot;,&quot;Sprite_NPC_Wife_002_Ani_Idle_002&quot;,&quot;Sprite_NPC_Wife_002_Ani_Idle_003&quot;)</param>
                             <param id="1" name="From">1</param>
                         </action>
                     </actions>
@@ -2873,14 +2873,14 @@
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="9946465843798598" type="System" />
                         <condition id="-14" name="Compare variable" sid="412374071329694" type="System">
-                            <param id="0" name="Variable">layout</param>
+                            <param id="0" name="Variable">Layout</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">20</param>
                         </condition>
                     </conditions>
                     <actions>
                         <action id="4" name="Set animation" sid="2041544660704054" type="Sprite_NPC_Wife_002">
-                            <param id="0" name="Animation">choose(&quot;e1&quot;,&quot;e2&quot;,&quot;e3&quot;,&quot;e4&quot;,&quot;e5&quot;,&quot;e6 &quot;) </param>
+                            <param id="0" name="Animation">choose(&quot;Sprite_NPC_Wife_002_Ani_Drinking_001 &quot;,&quot;Sprite_NPC_Wife_002_Ani_GlassMoving_001&quot;,&quot;Sprite_NPC_Wife_002_Ani_GlassMoving_002&quot;,&quot;Sprite_NPC_Wife_002_Ani_Idle_001&quot;,&quot;Sprite_NPC_Wife_002_Ani_Idle_002&quot;,&quot;Sprite_NPC_Wife_002_Ani_Idle_003&quot;)</param>
                             <param id="1" name="From">1</param>
                         </action>
                         <action id="0" name="Play" sid="796162554133612" type="Audio">
@@ -2902,28 +2902,28 @@
                             <param id="0" name="Visibility">1</param>
                         </action>
                         <action id="4" name="Set animation" sid="5601044869303919" type="Sprite_Text_Wife_Breakdown">
-                            <param id="0" name="Animation">&quot;default&quot;</param>
+                            <param id="0" name="Animation">&quot;Sprite_Text_Wife_Breakdown_Ani_Dialogue_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                         <action id="4" name="Set animation" sid="6274691218884204" type="Sprite_NPC_Wife_002_Mouth">
-                            <param id="0" name="Animation">&quot;fala&quot;</param>
+                            <param id="0" name="Animation">&quot;Sprite_NPC_Wife_002_Mouth_Ani_Speaking_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                     </actions>
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="1056263859473446">
+        <event-block sid="191745408429149">
             <conditions>
-                <condition id="0" name="On key pressed" sid="2842244049162089" type="Keyboard">
+                <condition id="0" name="On key pressed" sid="520352745705096" type="Keyboard">
                     <param id="0" name="Key">27</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="33" name="Stop all" sid="9190650626126996" type="Audio" />
-                <action id="-21" name="Reset global variables" sid="1451272481937983" type="System" />
-                <action id="-25" name="Go to layout (by name)" sid="9097416074414418" type="System">
-                    <param id="0" name="Layout">&quot;inicio&quot;</param>
+                <action id="33" name="Stop all" sid="714491793931996" type="Audio" />
+                <action id="-21" name="Reset global variables" sid="414952259405807" type="System" />
+                <action id="-2" name="Go to layout" sid="253358530501173" type="System">
+                    <param id="0" name="Layout">MainMenu</param>
                 </action>
             </actions>
         </event-block>

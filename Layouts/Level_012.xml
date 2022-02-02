@@ -98,7 +98,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite_Computer_Text_Command" uid="215">
+                <instance type="Sprite_Text_Computer_Press" uid="215">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>default</initial-animation>
@@ -133,10 +133,10 @@
                         <x>653.604064941</x>
                         <y>288.526306152</y>
                         <z>0</z>
-                        <width>482.237213135</width>
-                        <height>57.280426025</height>
+                        <width>64.504707336</width>
+                        <height>64.504981995</height>
                         <depth>0</depth>
-                        <hotspotX>0.500267506</hotspotX>
+                        <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
