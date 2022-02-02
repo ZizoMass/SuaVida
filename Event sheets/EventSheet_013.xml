@@ -8,7 +8,7 @@
             <conditions>
                 <condition id="-2" name="On start of layout" sid="3779192151976938" type="System" />
                 <condition id="-14" name="Compare variable" sid="8975352024574726" type="System">
-                    <param id="0" name="Variable">Layout</param>
+                    <param id="0" name="Variable">LevelLayout</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">19</param>
                 </condition>
@@ -26,45 +26,55 @@
                     <param id="3" name="Volume">10</param>
                     <param id="1" name="Tag (optional)">&quot;mtr&quot;</param>
                 </action>
+                <action id="-28" name="Set canvas size" sid="240929487631466" type="System">
+                    <param id="0" name="Width">970</param>
+                    <param id="1" name="Height">720</param>
+                </action>
+                <action id="-9" name="Set value" sid="123026149272300" type="System">
+                    <param id="0" name="Variable">SpanwX</param>
+                    <param id="1" name="Value">1042</param>
+                </action>
+                <action id="-9" name="Set value" sid="385454340808778" type="System">
+                    <param id="0" name="Variable">SpanwY</param>
+                    <param id="1" name="Value">501</param>
+                </action>
             </actions>
-            <sub-events>
-                <event-block sid="6420178671312362">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="9320793831548539" type="System">
-                            <param id="0" name="Variable">olhandodireita</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">0</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="7" name="Set mirrored" sid="5390265940422355" type="Sprite_MainCharacter_001">
-                            <param id="0" name="State">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="7318951007808943">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="2963672183467608" type="System">
-                            <param id="0" name="Variable">olhandodireita</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="7" name="Set mirrored" sid="3679967510843668" type="Sprite_MainCharacter_001">
-                            <param id="0" name="State">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
+        </event-block>
+        <event-block sid="6420178671312362">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="9320793831548539" type="System">
+                    <param id="0" name="Variable">PlayerMirrored</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="5390265940422355" type="Sprite_MainCharacter_001">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7318951007808943">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="2963672183467608" type="System">
+                    <param id="0" name="Variable">PlayerMirrored</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="3679967510843668" type="Sprite_MainCharacter_001">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
         </event-block>
         <event-block sid="9140968943539259">
             <conditions>
                 <condition behavior="Platform" id="0" name="Is moving" sid="1137724260279449" type="Sprite_PlayerCar_005" />
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="252334484015317" type="Sprite_PlayerCar_001">
-                    <param id="0" name="Animation">&quot;Sprite_PlayerCar_001_Ani_Moving_001&quot;</param>
+                <action id="4" name="Set animation" sid="252334484015317" type="Sprite_PlayerCar_004">
+                    <param id="0" name="Animation">&quot;Sprite_PlayerCar_005_Ani_Moving_001&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -74,8 +84,8 @@
                 <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="62689538580125" type="Sprite_PlayerCar_005" />
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="7464339100603108" type="Sprite_PlayerCar_001">
-                    <param id="0" name="Animation">&quot;Sprite_PlayerCar_001_Ani_MotorOn_001&quot;</param>
+                <action id="4" name="Set animation" sid="7464339100603108" type="Sprite_PlayerCar_004">
+                    <param id="0" name="Animation">&quot;Sprite_PlayerCar_005_Ani_MotorOn_001&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -113,8 +123,8 @@
                     <param id="0" name="State">0</param>
                 </action>
                 <action id="-9" name="Set value" sid="5441262141626973" type="System">
-                    <param id="0" name="Variable">olhandodireita</param>
-                    <param id="1" name="Value">0</param>
+                    <param id="0" name="Variable">PlayerMirrored</param>
+                    <param id="1" name="Value">1</param>
                 </action>
             </actions>
         </event-block>
@@ -129,8 +139,8 @@
                     <param id="0" name="State">1</param>
                 </action>
                 <action id="-9" name="Set value" sid="5347431217916213" type="System">
-                    <param id="0" name="Variable">olhandodireita</param>
-                    <param id="1" name="Value">1</param>
+                    <param id="0" name="Variable">PlayerMirrored</param>
+                    <param id="1" name="Value">0</param>
                 </action>
             </actions>
         </event-block>
@@ -278,7 +288,7 @@
                             <param id="1" name="Value">485</param>
                         </action>
                         <action id="-9" name="Set value" sid="120140968535676" type="System">
-                            <param id="0" name="Variable">Layout</param>
+                            <param id="0" name="Variable">LevelLayout</param>
                             <param id="1" name="Value">20</param>
                         </action>
                         <action id="0" name="Play" sid="4090514609979035" type="Audio">

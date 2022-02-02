@@ -3293,7 +3293,7 @@
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Sprite_MegaCorpBuilding_Ani_Idle_001" pingpong="0" repeatcount="1" repeatto="0" sid="1229994579301648" speed="5">
-                        <frame duration="1" hotspotX="0.500256" hotspotY="0.5" original-source="C:\Users\ZiZo\Desktop\levels\level5\empresa.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ZiZo\Desktop\levels\level5\empresa.png">
                             <collision-poly>
                                 <point x="0.829831" y="0.276563" />
                                 <point x="0.499744" y="0.276563" />
@@ -17040,9 +17040,9 @@
         <event-sheet>EventSheet_004.xml</event-sheet>
         <event-sheet>EventSheet_005.xml</event-sheet>
         <event-sheet>EventSheet_006.xml</event-sheet>
-        <event-sheet>EventSheet_007.xml</event-sheet>
+        <event-sheet>EventSheet_OldComputerScript.xml</event-sheet>
         <event-sheet>EventSheet_008.xml</event-sheet>
-        <event-sheet>EventSheet_009.xml</event-sheet>
+        <event-sheet>EventSheet_Delete.xml</event-sheet>
         <event-sheet>EventSheet_010.xml</event-sheet>
         <event-sheet>EventSheet_011.xml</event-sheet>
         <event-sheet>EventSheet_012.xml</event-sheet>

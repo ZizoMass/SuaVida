@@ -7,7 +7,7 @@
         <event-block sid="3396246072321537">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="7420089678004518" type="System">
-                    <param id="0" name="Variable">olhandodireita</param>
+                    <param id="0" name="Variable">PlayerMirrored</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">0</param>
                 </condition>
@@ -21,7 +21,7 @@
         <event-block sid="8274015311321177">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="9033955626694711" type="System">
-                    <param id="0" name="Variable">olhandodireita</param>
+                    <param id="0" name="Variable">PlayerMirrored</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">1</param>
                 </condition>
@@ -65,7 +65,7 @@
                     <param id="0" name="State">0</param>
                 </action>
                 <action id="-9" name="Set value" sid="7794779988616749" type="System">
-                    <param id="0" name="Variable">olhandodireita</param>
+                    <param id="0" name="Variable">PlayerMirrored</param>
                     <param id="1" name="Value">0</param>
                 </action>
             </actions>
@@ -81,7 +81,7 @@
                     <param id="0" name="State">1</param>
                 </action>
                 <action id="-9" name="Set value" sid="4044886723720116" type="System">
-                    <param id="0" name="Variable">olhandodireita</param>
+                    <param id="0" name="Variable">PlayerMirrored</param>
                     <param id="1" name="Value">1</param>
                 </action>
             </actions>
@@ -115,7 +115,7 @@
         <event-block sid="7091788824989483">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="4405228251203084" type="System">
-                    <param id="0" name="Variable">olhandodireita</param>
+                    <param id="0" name="Variable">PlayerMirrored</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">0</param>
                 </condition>
@@ -129,7 +129,7 @@
         <event-block sid="5485486450410049">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="5469166123899642" type="System">
-                    <param id="0" name="Variable">olhandodireita</param>
+                    <param id="0" name="Variable">PlayerMirrored</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">1</param>
                 </condition>
@@ -173,7 +173,7 @@
                     <param id="0" name="State">0</param>
                 </action>
                 <action id="-9" name="Set value" sid="1879434554318252" type="System">
-                    <param id="0" name="Variable">olhandodireita</param>
+                    <param id="0" name="Variable">PlayerMirrored</param>
                     <param id="1" name="Value">0</param>
                 </action>
             </actions>
@@ -189,7 +189,7 @@
                     <param id="0" name="State">1</param>
                 </action>
                 <action id="-9" name="Set value" sid="6172329612008709" type="System">
-                    <param id="0" name="Variable">olhandodireita</param>
+                    <param id="0" name="Variable">PlayerMirrored</param>
                     <param id="1" name="Value">1</param>
                 </action>
             </actions>
@@ -223,7 +223,7 @@
         <event-block sid="7431171348995785">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="9034052872128431" type="System">
-                    <param id="0" name="Variable">olhandodireita</param>
+                    <param id="0" name="Variable">PlayerMirrored</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">0</param>
                 </condition>
@@ -237,7 +237,7 @@
         <event-block sid="5845763058811678">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="3112297951029504" type="System">
-                    <param id="0" name="Variable">olhandodireita</param>
+                    <param id="0" name="Variable">PlayerMirrored</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">1</param>
                 </condition>
@@ -281,7 +281,7 @@
                     <param id="0" name="State">0</param>
                 </action>
                 <action id="-9" name="Set value" sid="7809336487565461" type="System">
-                    <param id="0" name="Variable">olhandodireita</param>
+                    <param id="0" name="Variable">PlayerMirrored</param>
                     <param id="1" name="Value">0</param>
                 </action>
             </actions>
@@ -297,7 +297,7 @@
                     <param id="0" name="State">1</param>
                 </action>
                 <action id="-9" name="Set value" sid="2106072629847093" type="System">
-                    <param id="0" name="Variable">olhandodireita</param>
+                    <param id="0" name="Variable">PlayerMirrored</param>
                     <param id="1" name="Value">1</param>
                 </action>
             </actions>
@@ -318,7 +318,7 @@
         <event-block sid="4849207639205727">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="109318973314463" type="System">
-                    <param id="0" name="Variable">olhandodireita</param>
+                    <param id="0" name="Variable">PlayerMirrored</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">0</param>
                 </condition>
@@ -332,7 +332,7 @@
         <event-block sid="4886898915893259">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="2646321044313599" type="System">
-                    <param id="0" name="Variable">olhandodireita</param>
+                    <param id="0" name="Variable">PlayerMirrored</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">1</param>
                 </condition>
@@ -376,7 +376,7 @@
                     <param id="0" name="State">0</param>
                 </action>
                 <action id="-9" name="Set value" sid="5897642999749571" type="System">
-                    <param id="0" name="Variable">olhandodireita</param>
+                    <param id="0" name="Variable">PlayerMirrored</param>
                     <param id="1" name="Value">0</param>
                 </action>
             </actions>
@@ -392,7 +392,7 @@
                     <param id="0" name="State">1</param>
                 </action>
                 <action id="-9" name="Set value" sid="4976688970690954" type="System">
-                    <param id="0" name="Variable">olhandodireita</param>
+                    <param id="0" name="Variable">PlayerMirrored</param>
                     <param id="1" name="Value">1</param>
                 </action>
             </actions>
@@ -564,7 +564,7 @@
                     <param id="0" name="Layout">Level_023</param>
                 </action>
                 <action id="-9" name="Set value" sid="6593711379992284" type="System">
-                    <param id="0" name="Variable">Layout</param>
+                    <param id="0" name="Variable">LevelLayout</param>
                     <param id="1" name="Value">23</param>
                 </action>
             </actions>
@@ -719,6 +719,20 @@
                     <param id="2" name="Loop">1</param>
                     <param id="3" name="Volume">0</param>
                     <param id="1" name="Tag (optional)">&quot;msc23&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="527578976715766">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="333505869289279" type="Keyboard">
+                    <param id="0" name="Key">27</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="293174092357851" type="Audio" />
+                <action id="-21" name="Reset global variables" sid="708977062194860" type="System" />
+                <action id="-2" name="Go to layout" sid="857207998828585" type="System">
+                    <param id="0" name="Layout">MainMenu</param>
                 </action>
             </actions>
         </event-block>

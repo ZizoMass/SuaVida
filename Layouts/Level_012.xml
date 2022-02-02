@@ -2,7 +2,7 @@
 <c2layout>
     <name>Level_012</name>
     <sid>525231277887771</sid>
-    <event-sheet>EventSheet_009</event-sheet>
+    <event-sheet>EventSheet_OldComputerScript</event-sheet>
     <size>
         <width>1280</width>
         <height>720</height>
@@ -54,7 +54,7 @@
                 <instance type="Sprite_Text_Computer_Intro" uid="213">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
+                        <initial-animation>Sprite_Computer_Intro_Ani_Idle_001</initial-animation>
                         <initial-frame>93</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -79,7 +79,7 @@
                 <instance type="Sprite_Text_Computer_Starting" uid="214">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>funci</initial-animation>
+                        <initial-animation>Sprite_Text_Computer_Starting_Ani_EmployeeNumber_001</initial-animation>
                         <initial-frame>53</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>

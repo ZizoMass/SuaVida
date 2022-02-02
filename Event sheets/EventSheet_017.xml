@@ -109,5 +109,19 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="789061545023017">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="899730745514240" type="Keyboard">
+                    <param id="0" name="Key">27</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="934126333842781" type="Audio" />
+                <action id="-21" name="Reset global variables" sid="860110279030815" type="System" />
+                <action id="-2" name="Go to layout" sid="678271001549355" type="System">
+                    <param id="0" name="Layout">MainMenu</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

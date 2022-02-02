@@ -3,7 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>EventSheet_005</name>
     <events>
-        <variable constant="0" name="estacionado" sid="9498519648501622" static="0" type="number">0</variable>
+        <variable comment="Definy if the car is parked" constant="0" name="CarParked" sid="9498519648501622" static="0" type="number">0</variable>
         <event-block sid="2134422794895054">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="3420902395356252" type="System" />
@@ -21,6 +21,10 @@
                     <param id="3" name="Volume">10</param>
                     <param id="1" name="Tag (optional)">&quot;crrm&quot;</param>
                 </action>
+                <action id="-28" name="Set canvas size" sid="220639996587999" type="System">
+                    <param id="0" name="Width">1135</param>
+                    <param id="1" name="Height">720</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="5831733432313693">
@@ -29,7 +33,7 @@
                     <param id="0" name="Object">Sprite_Trigger_CarParkiing_Entering</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="3953275759853242" type="System">
-                    <param id="0" name="Variable">estacionado</param>
+                    <param id="0" name="Variable">CarParked</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">0</param>
                 </condition>
@@ -45,7 +49,7 @@
                     <param id="0" name="From">1</param>
                 </action>
                 <action id="-9" name="Set value" sid="8937247315204232" type="System">
-                    <param id="0" name="Variable">estacionado</param>
+                    <param id="0" name="Variable">CarParked</param>
                     <param id="1" name="Value">1</param>
                 </action>
                 <action id="-3" name="Set position" sid="707516166908273" type="Sprite_PlayerCar_003">
@@ -60,7 +64,7 @@
                     <param id="0" name="Object">Sprite_Trigger_CarParkiing_Leaving</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="9480453259532053" type="System">
-                    <param id="0" name="Variable">estacionado</param>
+                    <param id="0" name="Variable">CarParked</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">1</param>
                 </condition>
@@ -77,7 +81,7 @@
                     <param id="1" name="From">1</param>
                 </action>
                 <action id="-9" name="Set value" sid="8209330909070795" type="System">
-                    <param id="0" name="Variable">estacionado</param>
+                    <param id="0" name="Variable">CarParked</param>
                     <param id="1" name="Value">0</param>
                 </action>
             </actions>
@@ -88,7 +92,7 @@
                     <param id="0" name="Key">32</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="6132283999409719" type="System">
-                    <param id="0" name="Variable">estacionado</param>
+                    <param id="0" name="Variable">CarParked</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">1</param>
                 </condition>
@@ -107,7 +111,7 @@
                     <param id="0" name="State">0</param>
                 </action>
                 <action id="-9" name="Set value" sid="4811806098650862" type="System">
-                    <param id="0" name="Variable">estacionado</param>
+                    <param id="0" name="Variable">CarParked</param>
                     <param id="1" name="Value">1.2</param>
                 </action>
             </actions>
@@ -115,7 +119,7 @@
         <event-block sid="678759724606996">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="9667704757067807" type="System">
-                    <param id="0" name="Variable">estacionado</param>
+                    <param id="0" name="Variable">CarParked</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">1.5</param>
                 </condition>
@@ -139,7 +143,7 @@
                 </action>
                 <action id="-9" name="Set value" sid="9603120205310443" type="System">
                     <param id="0" name="Variable">SpanwX</param>
-                    <param id="1" name="Value">690.21</param>
+                    <param id="1" name="Value">603.36</param>
                 </action>
                 <action id="-9" name="Set value" sid="9288678205589083" type="System">
                     <param id="0" name="Variable">SpanwY</param>
@@ -152,7 +156,7 @@
                     <param id="0" name="Y">SpanwY</param>
                 </action>
                 <action id="-9" name="Set value" sid="4822382933063372" type="System">
-                    <param id="0" name="Variable">estacionado</param>
+                    <param id="0" name="Variable">CarParked</param>
                     <param id="1" name="Value">2</param>
                 </action>
                 <action id="1" name="Set looping" sid="5111197191792094" type="Audio">
@@ -194,7 +198,7 @@
                     <param id="0" name="State">0</param>
                 </action>
                 <action id="-9" name="Set value" sid="6834590928354937" type="System">
-                    <param id="0" name="Variable">olhandodireita</param>
+                    <param id="0" name="Variable">PlayerMirrored</param>
                     <param id="1" name="Value">0</param>
                 </action>
             </actions>
@@ -210,7 +214,7 @@
                     <param id="0" name="State">1</param>
                 </action>
                 <action id="-9" name="Set value" sid="8655406821005318" type="System">
-                    <param id="0" name="Variable">olhandodireita</param>
+                    <param id="0" name="Variable">PlayerMirrored</param>
                     <param id="1" name="Value">1</param>
                 </action>
             </actions>
@@ -244,7 +248,7 @@
         <event-block sid="4146593603725776">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="5529185595192483" type="System">
-                    <param id="0" name="Variable">olhandodireita</param>
+                    <param id="0" name="Variable">PlayerMirrored</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">0</param>
                 </condition>
@@ -258,7 +262,7 @@
         <event-block sid="3143258194579603">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="915166548313782" type="System">
-                    <param id="0" name="Variable">olhandodireita</param>
+                    <param id="0" name="Variable">PlayerMirrored</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">1</param>
                 </condition>
@@ -309,27 +313,27 @@
                 <action id="-2" name="Go to layout" sid="2987522970181861" type="System">
                     <param id="0" name="Layout">Level_006</param>
                 </action>
-                <action id="-9" name="Set value" sid="9948858445024829" type="System">
-                    <param id="0" name="Variable">SpanwX</param>
-                    <param id="1" name="Value">29</param>
-                </action>
-                <action id="-9" name="Set value" sid="2674190784082355" type="System">
-                    <param id="0" name="Variable">SpanwY</param>
-                    <param id="1" name="Value">518</param>
-                </action>
                 <action id="6" name="Stop" sid="3743664289184025" type="Audio">
                     <param id="0" name="Tag">&quot;amb5&quot;</param>
                 </action>
                 <action id="-9" name="Set value" sid="4998046758452299" type="System">
-                    <param id="0" name="Variable">Layout</param>
+                    <param id="0" name="Variable">LevelLayout</param>
                     <param id="1" name="Value">6</param>
+                </action>
+                <action id="-9" name="Set value" sid="602165121042870" type="System">
+                    <param id="0" name="Variable">SpanwX</param>
+                    <param id="1" name="Value">29</param>
+                </action>
+                <action id="-9" name="Set value" sid="350060700297610" type="System">
+                    <param id="0" name="Variable">SpanwY</param>
+                    <param id="1" name="Value">518</param>
                 </action>
             </actions>
         </event-block>
         <event-block sid="8013200700038128">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="2254076631349433" type="System">
-                    <param id="0" name="Variable">estacionado</param>
+                    <param id="0" name="Variable">CarParked</param>
                     <param id="1" name="Comparison">2</param>
                     <param id="2" name="Value">1</param>
                 </condition>
@@ -359,7 +363,7 @@
                     <param id="0" name="Tag">&quot;cdsl&quot;</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="5386219264738105" type="System">
-                    <param id="0" name="Variable">estacionado</param>
+                    <param id="0" name="Variable">CarParked</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">1.2</param>
                 </condition>
@@ -374,7 +378,7 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Set value" sid="6632784500361797" type="System">
-                            <param id="0" name="Variable">estacionado</param>
+                            <param id="0" name="Variable">CarParked</param>
                             <param id="1" name="Value">1.5</param>
                         </action>
                         <action id="0" name="Play" sid="7030617899395945" type="Audio">

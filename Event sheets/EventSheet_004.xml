@@ -3,9 +3,9 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>EventSheet_004</name>
     <events>
-        <variable constant="0" name="mensagns" sid="9340286485211384" static="0" type="number">0</variable>
-        <variable constant="0" name="carroproximo" sid="664467448659959" static="0" type="number">0</variable>
-        <variable constant="0" name="carMaxVel2" sid="6380397073477003" static="0" type="number">5</variable>
+        <variable comment="Define the number of unread messages" constant="0" name="MessageNumber" sid="9340286485211384" static="0" type="number">0</variable>
+        <variable comment="Check if another car is close" constant="0" name="CarClose" sid="664467448659959" static="0" type="number">0</variable>
+        <variable comment="Defines the max velocity of the player car" constant="0" name="CarMaxVelocity" sid="6380397073477003" static="0" type="number">5</variable>
         <event-block sid="4759163893654426">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="1935484343184929" type="System" />
@@ -22,6 +22,10 @@
                     <param id="2" name="Loop">1</param>
                     <param id="3" name="Volume">0</param>
                     <param id="1" name="Tag (optional)">&quot;msc2&quot;</param>
+                </action>
+                <action id="-28" name="Set canvas size" sid="774352803203600" type="System">
+                    <param id="0" name="Width">1280</param>
+                    <param id="1" name="Height">720</param>
                 </action>
             </actions>
         </event-block>
@@ -773,7 +777,7 @@
             </conditions>
             <actions>
                 <action id="-10" name="Add to" sid="276035286851259" type="System">
-                    <param id="0" name="Variable">mensagns</param>
+                    <param id="0" name="Variable">MessageNumber</param>
                     <param id="1" name="Value">1</param>
                 </action>
                 <action id="0" name="Play" sid="9546488304969839" type="Audio">
@@ -797,7 +801,7 @@
             </conditions>
             <actions>
                 <action id="-10" name="Add to" sid="9531161128120001" type="System">
-                    <param id="0" name="Variable">mensagns</param>
+                    <param id="0" name="Variable">MessageNumber</param>
                     <param id="1" name="Value">1</param>
                 </action>
                 <action id="0" name="Play" sid="6271488749110162" type="Audio">
@@ -821,7 +825,7 @@
             </conditions>
             <actions>
                 <action id="-10" name="Add to" sid="1230610840041155" type="System">
-                    <param id="0" name="Variable">mensagns</param>
+                    <param id="0" name="Variable">MessageNumber</param>
                     <param id="1" name="Value">1</param>
                 </action>
                 <action id="0" name="Play" sid="567722113774877" type="Audio">
@@ -845,7 +849,7 @@
             </conditions>
             <actions>
                 <action id="-10" name="Add to" sid="3818779100801137" type="System">
-                    <param id="0" name="Variable">mensagns</param>
+                    <param id="0" name="Variable">MessageNumber</param>
                     <param id="1" name="Value">1</param>
                 </action>
                 <action id="0" name="Play" sid="3470318869702926" type="Audio">
@@ -869,7 +873,7 @@
             </conditions>
             <actions>
                 <action id="-10" name="Add to" sid="6539927797410231" type="System">
-                    <param id="0" name="Variable">mensagns</param>
+                    <param id="0" name="Variable">MessageNumber</param>
                     <param id="1" name="Value">1</param>
                 </action>
                 <action id="0" name="Play" sid="8631161583295898" type="Audio">
@@ -893,7 +897,7 @@
             </conditions>
             <actions>
                 <action id="-10" name="Add to" sid="4203219697770068" type="System">
-                    <param id="0" name="Variable">mensagns</param>
+                    <param id="0" name="Variable">MessageNumber</param>
                     <param id="1" name="Value">1</param>
                 </action>
                 <action id="0" name="Play" sid="3945809709267392" type="Audio">
@@ -917,7 +921,7 @@
             </conditions>
             <actions>
                 <action id="-10" name="Add to" sid="6637981438803714" type="System">
-                    <param id="0" name="Variable">mensagns</param>
+                    <param id="0" name="Variable">MessageNumber</param>
                     <param id="1" name="Value">1</param>
                 </action>
                 <action id="0" name="Play" sid="9227869775635603" type="Audio">
@@ -941,7 +945,7 @@
             </conditions>
             <actions>
                 <action id="-10" name="Add to" sid="4773344568792185" type="System">
-                    <param id="0" name="Variable">mensagns</param>
+                    <param id="0" name="Variable">MessageNumber</param>
                     <param id="1" name="Value">1</param>
                 </action>
                 <action id="0" name="Play" sid="7485407365779656" type="Audio">
@@ -965,7 +969,7 @@
             </conditions>
             <actions>
                 <action id="-10" name="Add to" sid="4782637696027194" type="System">
-                    <param id="0" name="Variable">mensagns</param>
+                    <param id="0" name="Variable">MessageNumber</param>
                     <param id="1" name="Value">1</param>
                 </action>
                 <action id="0" name="Play" sid="6178158648987576" type="Audio">
@@ -989,7 +993,7 @@
             </conditions>
             <actions>
                 <action id="-10" name="Add to" sid="757044092992485" type="System">
-                    <param id="0" name="Variable">mensagns</param>
+                    <param id="0" name="Variable">MessageNumber</param>
                     <param id="1" name="Value">1</param>
                 </action>
                 <action id="0" name="Play" sid="4847706277028293" type="Audio">
@@ -1008,7 +1012,7 @@
         <event-block sid="6643092814288189">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="124258395110392" type="System">
-                    <param id="0" name="Variable">mensagns</param>
+                    <param id="0" name="Variable">MessageNumber</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">0</param>
                 </condition>
@@ -1022,7 +1026,7 @@
         <event-block sid="3796885257457182">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="5824136245469023" type="System">
-                    <param id="0" name="Variable">mensagns</param>
+                    <param id="0" name="Variable">MessageNumber</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">1</param>
                 </condition>
@@ -1037,7 +1041,7 @@
         <event-block sid="9442133733917258">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="1284828629736748" type="System">
-                    <param id="0" name="Variable">mensagns</param>
+                    <param id="0" name="Variable">MessageNumber</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">2</param>
                 </condition>
@@ -1052,7 +1056,7 @@
         <event-block sid="9602962271894066">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="1488274650301792" type="System">
-                    <param id="0" name="Variable">mensagns</param>
+                    <param id="0" name="Variable">MessageNumber</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">3</param>
                 </condition>
@@ -1067,7 +1071,7 @@
         <event-block sid="5247191561718304">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="4758784387734839" type="System">
-                    <param id="0" name="Variable">mensagns</param>
+                    <param id="0" name="Variable">MessageNumber</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">4</param>
                 </condition>
@@ -1082,7 +1086,7 @@
         <event-block sid="4911596945600194">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="8048905813736273" type="System">
-                    <param id="0" name="Variable">mensagns</param>
+                    <param id="0" name="Variable">MessageNumber</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">5</param>
                 </condition>
@@ -1097,7 +1101,7 @@
         <event-block sid="1447970917968466">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="6129126211151739" type="System">
-                    <param id="0" name="Variable">mensagns</param>
+                    <param id="0" name="Variable">MessageNumber</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">6</param>
                 </condition>
@@ -1112,7 +1116,7 @@
         <event-block sid="7099071825086679">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="2702772809404725" type="System">
-                    <param id="0" name="Variable">mensagns</param>
+                    <param id="0" name="Variable">MessageNumber</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">7</param>
                 </condition>
@@ -1127,7 +1131,7 @@
         <event-block sid="7738307240569996">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="1839093096892779" type="System">
-                    <param id="0" name="Variable">mensagns</param>
+                    <param id="0" name="Variable">MessageNumber</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">8</param>
                 </condition>
@@ -1142,7 +1146,7 @@
         <event-block sid="9730291648139915">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="6027371003701468" type="System">
-                    <param id="0" name="Variable">mensagns</param>
+                    <param id="0" name="Variable">MessageNumber</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">9</param>
                 </condition>
@@ -1157,7 +1161,7 @@
         <event-block sid="8798895405008767">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="5926423173487615" type="System">
-                    <param id="0" name="Variable">mensagns</param>
+                    <param id="0" name="Variable">MessageNumber</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">10</param>
                 </condition>
@@ -1172,7 +1176,7 @@
         <event-block sid="5441717534835264">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="92732949818731" type="System">
-                    <param id="0" name="Variable">mensagns</param>
+                    <param id="0" name="Variable">MessageNumber</param>
                     <param id="1" name="Comparison">4</param>
                     <param id="2" name="Value">0</param>
                 </condition>
@@ -1206,7 +1210,7 @@
                             <param id="1" name="Tag (optional)">&quot;bt&quot;</param>
                         </action>
                         <action id="-11" name="Subtract from" sid="8258132301034545" type="System">
-                            <param id="0" name="Variable">mensagns</param>
+                            <param id="0" name="Variable">MessageNumber</param>
                             <param id="1" name="Value">1</param>
                         </action>
                     </actions>
@@ -1234,7 +1238,7 @@
                     <param id="0" name="Layout">Level_005</param>
                 </action>
                 <action id="-9" name="Set value" sid="4237412640100705" type="System">
-                    <param id="0" name="Variable">Layout</param>
+                    <param id="0" name="Variable">LevelLayout</param>
                     <param id="1" name="Value">5</param>
                 </action>
                 <action id="6" name="Stop" sid="9868618588869035" type="Audio">

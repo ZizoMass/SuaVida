@@ -4,8 +4,8 @@
     <sid>8812255382085093</sid>
     <event-sheet>EventSheet_002</event-sheet>
     <size>
-        <width>1708</width>
-        <height>960</height>
+        <width>1280</width>
+        <height>720</height>
     </size>
     <margins>
         <horizontal>500</horizontal>
@@ -15,7 +15,7 @@
     <layers>
         <layer name="Layer 0" sid="9334676152195167">
             <initially-visible>1</initially-visible>
-            <background-color>255,255,255</background-color>
+            <background-color>255,255,254</background-color>
             <transparent>0</transparent>
             <parallax>
                 <x>1</x>
@@ -39,8 +39,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>638.656982422</x>
-                        <y>361.212005615</y>
+                        <x>642</x>
+                        <y>365</y>
                         <z>0</z>
                         <width>1283.409057617</width>
                         <height>421.536987305</height>
@@ -61,8 +61,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1212.528686523</x>
-                        <y>428.250854492</y>
+                        <x>1216</x>
+                        <y>432</y>
                         <z>0</z>
                         <width>81.866104126</width>
                         <height>178.094680786</height>
@@ -90,8 +90,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>556.804077148</x>
-                        <y>544.409301758</y>
+                        <x>560</x>
+                        <y>548</y>
                         <z>0</z>
                         <width>48</width>
                         <height>1654</height>
@@ -119,8 +119,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-120</x>
-                        <y>251</y>
+                        <x>-117</x>
+                        <y>255</y>
                         <z>0</z>
                         <width>48</width>
                         <height>646</height>
@@ -148,8 +148,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1303</x>
-                        <y>234</y>
+                        <x>1306</x>
+                        <y>238</y>
                         <z>0</z>
                         <width>48</width>
                         <height>646</height>
@@ -203,8 +203,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1258</x>
-                        <y>514</y>
+                        <x>1261</x>
+                        <y>518</y>
                         <z>0</z>
                         <width>42</width>
                         <height>126</height>
@@ -225,8 +225,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>621.35949707</x>
-                        <y>360.629821777</y>
+                        <x>624</x>
+                        <y>364</y>
                         <z>0</z>
                         <width>50.483261108</width>
                         <height>421.536987305</height>
@@ -254,8 +254,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1194.82824707</x>
-                        <y>424.287750244</y>
+                        <x>1198</x>
+                        <y>428</y>
                         <z>0</z>
                         <width>70.497924805</width>
                         <height>240.969543457</height>
@@ -276,8 +276,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1314.288696289</x>
-                        <y>491.543640137</y>
+                        <x>1317</x>
+                        <y>495</y>
                         <z>0</z>
                         <width>170.192504883</width>
                         <height>53.758483887</height>
@@ -298,8 +298,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-109</x>
-                        <y>411</y>
+                        <x>-86</x>
+                        <y>415</y>
                         <z>0</z>
                         <width>158</width>
                         <height>250</height>
@@ -320,8 +320,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>737</x>
-                        <y>114</y>
+                        <x>740</x>
+                        <y>118</y>
                         <z>0</z>
                         <width>1776.050048828</width>
                         <height>999.028137207</height>
@@ -342,8 +342,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>737</x>
-                        <y>114</y>
+                        <x>740</x>
+                        <y>118</y>
                         <z>0</z>
                         <width>1776.050048828</width>
                         <height>999.028015137</height>
@@ -352,6 +352,93 @@
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>0.150000006</opacity>
+                    </world>
+                </instance>
+            </instances>
+            <effects />
+        </layer>
+        <layer name="Layer 1" sid="943229466252319">
+            <initially-visible>1</initially-visible>
+            <background-color>0,0,0</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="Sprite_EndFadeOut_Black" uid="18">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>8</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Timer" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>739</x>
+                        <y>-34</y>
+                        <z>0</z>
+                        <width>1814</width>
+                        <height>379</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Sprite_EndFadeOut_Black" uid="40">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>8</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Timer" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>733</x>
+                        <y>759</y>
+                        <z>0</z>
+                        <width>1814</width>
+                        <height>379</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
                     </world>
                 </instance>
             </instances>

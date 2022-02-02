@@ -7,7 +7,7 @@
             <conditions>
                 <condition id="-2" name="On start of layout" sid="2380197584848093" type="System" />
                 <condition id="-14" name="Compare variable" sid="8148429239522236" type="System">
-                    <param id="0" name="Variable">Layout</param>
+                    <param id="0" name="Variable">LevelLayout</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">3</param>
                 </condition>
@@ -18,6 +18,39 @@
                     <param id="2" name="Loop">1</param>
                     <param id="3" name="Volume">-10</param>
                     <param id="1" name="Tag (optional)">&quot;amb3&quot;</param>
+                </action>
+                <action id="-28" name="Set canvas size" sid="720569978726120" type="System">
+                    <param id="0" name="Width">970</param>
+                    <param id="1" name="Height">720</param>
+                </action>
+                <action id="-9" name="Set value" sid="125552391689026" type="System">
+                    <param id="0" name="Variable">SpanwX</param>
+                    <param id="1" name="Value">237</param>
+                </action>
+                <action id="-9" name="Set value" sid="650944474769617" type="System">
+                    <param id="0" name="Variable">SpanwY</param>
+                    <param id="1" name="Value">663</param>
+                </action>
+                <action behavior="Platform" id="11" name="Set enabled" sid="256404345137192" type="Sprite_MainCharacter_001">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action behavior="8Direction" id="8" name="Set enabled" sid="100246476512002" type="Sprite_MainCharacter_001">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="320673886292267" type="Sprite_MainCharacter_001">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="0" name="Play" sid="312231022679301" type="Audio">
+                    <param id="0" name="Audio file">BG_HeavyTraffic_001</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">-26</param>
+                    <param id="1" name="Tag (optional)">&quot;amb&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="248366949805051" type="Audio">
+                    <param id="0" name="Audio file">SFX_WoodDoor_Open_001</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;prt&quot;</param>
                 </action>
             </actions>
         </event-block>
@@ -63,11 +96,11 @@
                             <param id="0" name="Acceleration">200</param>
                         </action>
                         <action id="-9" name="Set value" sid="6464915642398693" type="System">
-                            <param id="0" name="Variable">velocidadefase03</param>
+                            <param id="0" name="Variable">PlayerVelocity</param>
                             <param id="1" name="Value">0</param>
                         </action>
                         <action id="-9" name="Set value" sid="8900421802230407" type="System">
-                            <param id="0" name="Variable">Layout</param>
+                            <param id="0" name="Variable">LevelLayout</param>
                             <param id="1" name="Value">2</param>
                         </action>
                         <action id="0" name="Play" sid="8001345758922345" type="Audio">
@@ -116,7 +149,7 @@
                     <param id="0" name="State">0</param>
                 </action>
                 <action id="-9" name="Set value" sid="2173066691924879" type="System">
-                    <param id="0" name="Variable">olhandodireita</param>
+                    <param id="0" name="Variable">PlayerMirrored</param>
                     <param id="1" name="Value">0</param>
                 </action>
             </actions>
@@ -132,7 +165,7 @@
                     <param id="0" name="State">1</param>
                 </action>
                 <action id="-9" name="Set value" sid="9987924196047128" type="System">
-                    <param id="0" name="Variable">olhandodireita</param>
+                    <param id="0" name="Variable">PlayerMirrored</param>
                     <param id="1" name="Value">1</param>
                 </action>
             </actions>
@@ -143,7 +176,7 @@
                     <param id="0" name="Object">Sprite_Trigger_GetInCar</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="4621303007250499" type="System">
-                    <param id="0" name="Variable">dentrodocarro</param>
+                    <param id="0" name="Variable">InsideCar</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">0</param>
                 </condition>
@@ -189,7 +222,7 @@
         <event-block sid="1357518027710375">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="1451668296103139" type="System">
-                    <param id="0" name="Variable">dentrodocarro</param>
+                    <param id="0" name="Variable">InsideCar</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">1</param>
                 </condition>
@@ -203,12 +236,12 @@
                 <event-block sid="6113258373196924">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="5959696339476679" type="System">
-                            <param id="0" name="Variable">ligarCarro</param>
+                            <param id="0" name="Variable">CarEngine</param>
                             <param id="1" name="Comparison">2</param>
                             <param id="2" name="Value">20</param>
                         </condition>
                         <condition id="-14" name="Compare variable" sid="3246481378721605" type="System">
-                            <param id="0" name="Variable">ligarCarro</param>
+                            <param id="0" name="Variable">CarEngine</param>
                             <param id="1" name="Comparison">5</param>
                             <param id="2" name="Value">0</param>
                         </condition>
@@ -223,7 +256,7 @@
                             </conditions>
                             <actions>
                                 <action id="-10" name="Add to" sid="6304084592430398" type="System">
-                                    <param id="0" name="Variable">ligarCarro</param>
+                                    <param id="0" name="Variable">CarEngine</param>
                                     <param id="1" name="Value">1</param>
                                 </action>
                             </actions>
@@ -259,19 +292,19 @@
                         <event-block sid="7330253723216903">
                             <conditions>
                                 <condition id="-14" name="Compare variable" sid="1577755344515695" type="System">
-                                    <param id="0" name="Variable">ligarCarro</param>
+                                    <param id="0" name="Variable">CarEngine</param>
                                     <param id="1" name="Comparison">2</param>
                                     <param id="2" name="Value">20</param>
                                 </condition>
                                 <condition id="-14" name="Compare variable" sid="2370442503102436" type="System">
-                                    <param id="0" name="Variable">ligarCarro</param>
+                                    <param id="0" name="Variable">CarEngine</param>
                                     <param id="1" name="Comparison">4</param>
                                     <param id="2" name="Value">0</param>
                                 </condition>
                             </conditions>
                             <actions>
                                 <action id="-11" name="Subtract from" sid="245885456721349" type="System">
-                                    <param id="0" name="Variable">ligarCarro</param>
+                                    <param id="0" name="Variable">CarEngine</param>
                                     <param id="1" name="Value">5</param>
                                 </action>
                             </actions>
@@ -281,14 +314,14 @@
                 <event-block sid="3976293230631563">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="6626508966921032" type="System">
-                            <param id="0" name="Variable">ligarCarro</param>
+                            <param id="0" name="Variable">CarEngine</param>
                             <param id="1" name="Comparison">5</param>
                             <param id="2" name="Value">20</param>
                         </condition>
                     </conditions>
                     <actions>
                         <action id="-9" name="Set value" sid="7486810789603762" type="System">
-                            <param id="0" name="Variable">ligarCarro</param>
+                            <param id="0" name="Variable">CarEngine</param>
                             <param id="1" name="Value">20</param>
                         </action>
                     </actions>
@@ -296,7 +329,7 @@
                 <event-block sid="4385424469892543">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="1351831332797253" type="System">
-                            <param id="0" name="Variable">ligarCarro</param>
+                            <param id="0" name="Variable">CarEngine</param>
                             <param id="1" name="Comparison">5</param>
                             <param id="2" name="Value">5</param>
                         </condition>
@@ -308,14 +341,14 @@
                 <event-block sid="5080980039838915">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="7749076527218351" type="System">
-                            <param id="0" name="Variable">ligarCarro</param>
+                            <param id="0" name="Variable">CarEngine</param>
                             <param id="1" name="Comparison">3</param>
                             <param id="2" name="Value">0</param>
                         </condition>
                     </conditions>
                     <actions>
                         <action id="-9" name="Set value" sid="4450283164108844" type="System">
-                            <param id="0" name="Variable">ligarCarro</param>
+                            <param id="0" name="Variable">CarEngine</param>
                             <param id="1" name="Value">0</param>
                         </action>
                     </actions>
@@ -323,7 +356,7 @@
                 <event-block sid="2585562957984196">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="5818464943703125" type="System">
-                            <param id="0" name="Variable">ligarCarro</param>
+                            <param id="0" name="Variable">CarEngine</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">20</param>
                         </condition>
@@ -331,7 +364,7 @@
                             <param id="0" name="Tag">&quot;ing&quot;</param>
                         </condition>
                         <condition id="-14" name="Compare variable" sid="1862060755169872" type="System">
-                            <param id="0" name="Variable">dentrodocarro</param>
+                            <param id="0" name="Variable">InsideCar</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">1</param>
                         </condition>
@@ -347,7 +380,7 @@
                             <param id="1" name="Tag (optional)">&quot;ing&quot;</param>
                         </action>
                         <action id="-9" name="Set value" sid="6170911997621689" type="System">
-                            <param id="0" name="Variable">dentrodocarro</param>
+                            <param id="0" name="Variable">InsideCar</param>
                             <param id="1" name="Value">2</param>
                         </action>
                         <action id="6" name="Stop" sid="2256559829689327" type="Audio">
@@ -387,7 +420,7 @@
                     <param id="0" name="Tag">&quot;ing&quot;</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="3608165436562963" type="System">
-                    <param id="0" name="Variable">dentrodocarro</param>
+                    <param id="0" name="Variable">InsideCar</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">2</param>
                 </condition>
@@ -404,7 +437,7 @@
         <event-block sid="4527016640480068">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="1173051098758648" type="System">
-                    <param id="0" name="Variable">ligarCarro</param>
+                    <param id="0" name="Variable">CarEngine</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">20</param>
                 </condition>
@@ -473,7 +506,7 @@
         <event-block sid="6521438270252153">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="1238872387813958" type="System">
-                    <param id="0" name="Variable">dentrodocarro</param>
+                    <param id="0" name="Variable">InsideCar</param>
                     <param id="1" name="Comparison">5</param>
                     <param id="2" name="Value">1</param>
                 </condition>
@@ -505,7 +538,7 @@
             </conditions>
             <actions>
                 <action id="-9" name="Set value" sid="2051498521319096" type="System">
-                    <param id="0" name="Variable">dentrodocarro</param>
+                    <param id="0" name="Variable">InsideCar</param>
                     <param id="1" name="Value">1</param>
                 </action>
             </actions>
@@ -521,7 +554,7 @@
                     <param id="0" name="Layout">Level_004</param>
                 </action>
                 <action id="-9" name="Set value" sid="8459461123134751" type="System">
-                    <param id="0" name="Variable">Layout</param>
+                    <param id="0" name="Variable">LevelLayout</param>
                     <param id="1" name="Value">4</param>
                 </action>
                 <action id="6" name="Stop" sid="5042870509981775" type="Audio">

@@ -22,7 +22,7 @@
         <event-block sid="7661572056867908">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="750401086035648" type="System">
-                    <param id="0" name="Variable">olhandodireita</param>
+                    <param id="0" name="Variable">PlayerMirrored</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">0</param>
                 </condition>
@@ -36,7 +36,7 @@
         <event-block sid="6182741055653178">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="1882869566543003" type="System">
-                    <param id="0" name="Variable">olhandodireita</param>
+                    <param id="0" name="Variable">PlayerMirrored</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">1</param>
                 </condition>
@@ -80,7 +80,7 @@
                     <param id="0" name="State">0</param>
                 </action>
                 <action id="-9" name="Set value" sid="4781991316881158" type="System">
-                    <param id="0" name="Variable">olhandodireita</param>
+                    <param id="0" name="Variable">PlayerMirrored</param>
                     <param id="1" name="Value">0</param>
                 </action>
             </actions>
@@ -96,7 +96,7 @@
                     <param id="0" name="State">1</param>
                 </action>
                 <action id="-9" name="Set value" sid="1580162112898366" type="System">
-                    <param id="0" name="Variable">olhandodireita</param>
+                    <param id="0" name="Variable">PlayerMirrored</param>
                     <param id="1" name="Value">1</param>
                 </action>
             </actions>
@@ -130,7 +130,7 @@
         <event-block sid="4235108872188746">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="2790487303281495" type="System">
-                    <param id="0" name="Variable">olhandodireita</param>
+                    <param id="0" name="Variable">PlayerMirrored</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">0</param>
                 </condition>
@@ -144,7 +144,7 @@
         <event-block sid="5272217028746094">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="9797582663169911" type="System">
-                    <param id="0" name="Variable">olhandodireita</param>
+                    <param id="0" name="Variable">PlayerMirrored</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">1</param>
                 </condition>
@@ -188,7 +188,7 @@
                     <param id="0" name="State">0</param>
                 </action>
                 <action id="-9" name="Set value" sid="5763505902608335" type="System">
-                    <param id="0" name="Variable">olhandodireita</param>
+                    <param id="0" name="Variable">PlayerMirrored</param>
                     <param id="1" name="Value">0</param>
                 </action>
             </actions>
@@ -204,7 +204,7 @@
                     <param id="0" name="State">1</param>
                 </action>
                 <action id="-9" name="Set value" sid="2843240678476471" type="System">
-                    <param id="0" name="Variable">olhandodireita</param>
+                    <param id="0" name="Variable">PlayerMirrored</param>
                     <param id="1" name="Value">1</param>
                 </action>
             </actions>
@@ -246,7 +246,7 @@
                     <param id="0" name="Layout">Level_025</param>
                 </action>
                 <action id="-9" name="Set value" sid="1656010747168663" type="System">
-                    <param id="0" name="Variable">Layout</param>
+                    <param id="0" name="Variable">LevelLayout</param>
                     <param id="1" name="Value">25</param>
                 </action>
             </actions>
@@ -417,7 +417,7 @@
                     <param id="0" name="Object">Sprite_Trigger_ShowEndText_001</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="2274128314543463" type="System">
-                    <param id="0" name="Variable">Layout</param>
+                    <param id="0" name="Variable">LevelLayout</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">23</param>
                 </condition>
@@ -440,7 +440,7 @@
                     <param id="0" name="Object">Sprite_Trigger_ShowEndText_002</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="2581935924327331" type="System">
-                    <param id="0" name="Variable">Layout</param>
+                    <param id="0" name="Variable">LevelLayout</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">23</param>
                 </condition>
@@ -505,7 +505,7 @@
                     <param id="0" name="Object">Sprite_Trigger_ShowEndText_001</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="3553963927956623" type="System">
-                    <param id="0" name="Variable">Layout</param>
+                    <param id="0" name="Variable">LevelLayout</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">24</param>
                 </condition>
@@ -528,7 +528,7 @@
                     <param id="0" name="Object">Sprite_Trigger_ShowEndText_003</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="8253050341126668" type="System">
-                    <param id="0" name="Variable">Layout</param>
+                    <param id="0" name="Variable">LevelLayout</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">24</param>
                 </condition>
@@ -547,7 +547,7 @@
                     <param id="0" name="Object">Sprite_Trigger_ShowEndText_002</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="2109873862133515" type="System">
-                    <param id="0" name="Variable">Layout</param>
+                    <param id="0" name="Variable">LevelLayout</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">24</param>
                 </condition>
@@ -566,7 +566,7 @@
                     <param id="0" name="Object">Sprite_Trigger_ShowEndText_004</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="1536544821538165" type="System">
-                    <param id="0" name="Variable">Layout</param>
+                    <param id="0" name="Variable">LevelLayout</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">24</param>
                 </condition>
@@ -585,7 +585,7 @@
                     <param id="0" name="Object">Sprite_Trigger_ShowEndText_008</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="9660667887545671" type="System">
-                    <param id="0" name="Variable">Layout</param>
+                    <param id="0" name="Variable">LevelLayout</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">26</param>
                 </condition>
@@ -604,7 +604,7 @@
                     <param id="0" name="Object">Sprite_Trigger_ShowEndText_009</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="1058171710114456" type="System">
-                    <param id="0" name="Variable">Layout</param>
+                    <param id="0" name="Variable">LevelLayout</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">26</param>
                 </condition>
@@ -623,7 +623,7 @@
                     <param id="0" name="Object">Sprite_Trigger_ShowEndText_007</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="1389929770236205" type="System">
-                    <param id="0" name="Variable">Layout</param>
+                    <param id="0" name="Variable">LevelLayout</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">26</param>
                 </condition>
@@ -642,7 +642,7 @@
                     <param id="0" name="Object">Sprite_Trigger_ShowEndText_010</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="6389379594877808" type="System">
-                    <param id="0" name="Variable">Layout</param>
+                    <param id="0" name="Variable">LevelLayout</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">26</param>
                 </condition>
@@ -661,7 +661,7 @@
                     <param id="0" name="Object">Sprite_Trigger_ShowEndText_011</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="9713476808661114" type="System">
-                    <param id="0" name="Variable">Layout</param>
+                    <param id="0" name="Variable">LevelLayout</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">26</param>
                 </condition>
@@ -680,7 +680,7 @@
                     <param id="0" name="Object">Sprite_Trigger_ShowEndText_005</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="7040193850498802" type="System">
-                    <param id="0" name="Variable">Layout</param>
+                    <param id="0" name="Variable">LevelLayout</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">25</param>
                 </condition>
@@ -699,7 +699,7 @@
                     <param id="0" name="Object">Sprite_Trigger_ShowEndText_006</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="9731212477654001" type="System">
-                    <param id="0" name="Variable">Layout</param>
+                    <param id="0" name="Variable">LevelLayout</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">25</param>
                 </condition>
@@ -1072,7 +1072,7 @@
                     <param id="0" name="Layout">Level_024</param>
                 </action>
                 <action id="-9" name="Set value" sid="2840282316007796" type="System">
-                    <param id="0" name="Variable">Layout</param>
+                    <param id="0" name="Variable">LevelLayout</param>
                     <param id="1" name="Value">24</param>
                 </action>
             </actions>
@@ -1088,7 +1088,7 @@
                     <param id="0" name="Layout">Level_026</param>
                 </action>
                 <action id="-9" name="Set value" sid="9705846187440525" type="System">
-                    <param id="0" name="Variable">Layout</param>
+                    <param id="0" name="Variable">LevelLayout</param>
                     <param id="1" name="Value">26</param>
                 </action>
             </actions>
@@ -1503,7 +1503,7 @@
         <event-block sid="9314486655273205">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="7747042598908252" type="System">
-                    <param id="0" name="Variable">Layout</param>
+                    <param id="0" name="Variable">LevelLayout</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">26</param>
                 </condition>
@@ -1857,6 +1857,20 @@
                     </actions>
                 </event-block>
             </sub-events>
+        </event-block>
+        <event-block sid="626324889438669">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="826167021842642" type="Keyboard">
+                    <param id="0" name="Key">27</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="895288781970490" type="Audio" />
+                <action id="-21" name="Reset global variables" sid="529712007244624" type="System" />
+                <action id="-2" name="Go to layout" sid="605088092452559" type="System">
+                    <param id="0" name="Layout">MainMenu</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>

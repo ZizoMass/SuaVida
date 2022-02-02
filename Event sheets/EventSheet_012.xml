@@ -8,6 +8,10 @@
                 <condition id="-2" name="On start of layout" sid="2740527668287075" type="System" />
             </conditions>
             <actions>
+                <action id="-28" name="Set canvas size" sid="318022727441017" type="System">
+                    <param id="0" name="Width">1280</param>
+                    <param id="1" name="Height">720</param>
+                </action>
                 <action id="6" name="Play" sid="4246965236521523" type="Video_Ani_StuckInTraffic" />
                 <action id="4" name="Set volume" sid="6315292032852071" type="Video_Ani_StuckInTraffic">
                     <param id="0" name="Volume">0</param>
@@ -24,14 +28,14 @@
                 </action>
                 <action id="-9" name="Set value" sid="4411716488720068" type="System">
                     <param id="0" name="Variable">SpanwX</param>
-                    <param id="1" name="Value">1258</param>
+                    <param id="1" name="Value">1042</param>
                 </action>
                 <action id="-9" name="Set value" sid="3903664696529955" type="System">
                     <param id="0" name="Variable">SpanwY</param>
-                    <param id="1" name="Value"> 514</param>
+                    <param id="1" name="Value">501</param>
                 </action>
                 <action id="-9" name="Set value" sid="5572651727093496" type="System">
-                    <param id="0" name="Variable">Layout</param>
+                    <param id="0" name="Variable">LevelLayout</param>
                     <param id="1" name="Value">19</param>
                 </action>
             </actions>

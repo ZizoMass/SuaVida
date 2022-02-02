@@ -3,10 +3,34 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>EventSheet_014</name>
     <events>
+        <event-block sid="7157025055309275">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="7541161714109885" type="System" />
+                <condition id="-14" name="Compare variable" sid="3942532665761116" type="System">
+                    <param id="0" name="Variable">LevelLayout</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">21</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="9877020675671974" type="Audio">
+                    <param id="0" name="Audio file">BG_HeavyWind_001</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">-15</param>
+                    <param id="1" name="Tag (optional)">&quot;vento&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="6090951578019605" type="Audio">
+                    <param id="0" name="Audio file">BG_ThunderStorm_001</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-15</param>
+                    <param id="1" name="Tag (optional)">&quot;vento&quot;</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="5230678702491713">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="2770933604021395" type="System">
-                    <param id="0" name="Variable">olhandodireita</param>
+                    <param id="0" name="Variable">PlayerMirrored</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">0</param>
                 </condition>
@@ -20,7 +44,7 @@
         <event-block sid="7915148662567931">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="4999441455111571" type="System">
-                    <param id="0" name="Variable">olhandodireita</param>
+                    <param id="0" name="Variable">PlayerMirrored</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">1</param>
                 </condition>
@@ -64,7 +88,7 @@
                     <param id="0" name="State">0</param>
                 </action>
                 <action id="-9" name="Set value" sid="8422796853146111" type="System">
-                    <param id="0" name="Variable">olhandodireita</param>
+                    <param id="0" name="Variable">PlayerMirrored</param>
                     <param id="1" name="Value">0</param>
                 </action>
             </actions>
@@ -80,7 +104,7 @@
                     <param id="0" name="State">1</param>
                 </action>
                 <action id="-9" name="Set value" sid="7833926193943279" type="System">
-                    <param id="0" name="Variable">olhandodireita</param>
+                    <param id="0" name="Variable">PlayerMirrored</param>
                     <param id="1" name="Value">1</param>
                 </action>
             </actions>
@@ -169,32 +193,8 @@
                     <param id="0" name="Layout">Level_022</param>
                 </action>
                 <action id="-9" name="Set value" sid="5959165732414124" type="System">
-                    <param id="0" name="Variable">Layout</param>
+                    <param id="0" name="Variable">LevelLayout</param>
                     <param id="1" name="Value">22</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="7157025055309275">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="7541161714109885" type="System" />
-                <condition id="-14" name="Compare variable" sid="3942532665761116" type="System">
-                    <param id="0" name="Variable">Layout</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">21</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="0" name="Play" sid="9877020675671974" type="Audio">
-                    <param id="0" name="Audio file">BG_HeavyWind_001</param>
-                    <param id="2" name="Loop">1</param>
-                    <param id="3" name="Volume">-15</param>
-                    <param id="1" name="Tag (optional)">&quot;vento&quot;</param>
-                </action>
-                <action id="0" name="Play" sid="6090951578019605" type="Audio">
-                    <param id="0" name="Audio file">BG_ThunderStorm_001</param>
-                    <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">-10</param>
-                    <param id="1" name="Tag (optional)">&quot;vento&quot;</param>
                 </action>
             </actions>
         </event-block>

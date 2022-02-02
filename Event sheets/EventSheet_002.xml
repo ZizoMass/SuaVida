@@ -3,59 +3,58 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>EventSheet_002</name>
     <events>
-        <variable constant="0" name="chefe" sid="2112756947576822" static="0" type="number">0</variable>
-        <variable constant="0" name="tutorial" sid="3373665232463157" static="0" type="number">0</variable>
-        <variable comment="interruptor porta elevador" constant="0" name="elevadorfechado" sid="562456577116531" static="0" type="number">0</variable>
-        <variable constant="0" name="velocidadefase03" sid="5253508076119031" static="0" type="number">0</variable>
-        <variable constant="0" name="ligarCarro" sid="6199134499512875" static="0" type="number">0</variable>
-        <variable constant="0" name="dentrodocarro" sid="2984977848088106" static="0" type="number">0</variable>
-        <variable constant="0" name="olhandodireita" sid="5224958011432281" static="0" type="number">1</variable>
-        <variable constant="0" name="SpanwY" sid="8507449476094685" static="0" type="number">435.313</variable>
-        <variable constant="0" name="SpanwX" sid="7667651062714734" static="0" type="number">474.982</variable>
-        <variable constant="0" name="voltarfase1" sid="6445337931568545" static="0" type="number">0</variable>
-        <variable constant="0" name="irfase2" sid="8185579001232899" static="0" type="number">0</variable>
+        <variable comment="Check if the player can turn the Main Character" constant="0" name="PlayerCanMirror" sid="652469269846714" static="0" type="number">1</variable>
+        <variable constant="0" name="BossTrigger" sid="2112756947576822" static="0" type="number">0</variable>
+        <variable constant="0" name="Tutorial" sid="3373665232463157" static="0" type="number">0</variable>
+        <variable comment="interruptor porta elevador" constant="0" name="ElevatorClosed" sid="562456577116531" static="0" type="number">1</variable>
+        <variable constant="0" name="PlayerVelocity" sid="5253508076119031" static="0" type="number">0</variable>
+        <variable constant="0" name="CarEngine" sid="6199134499512875" static="0" type="number">0</variable>
+        <variable comment="Check if the player is inside the car" constant="0" name="InsideCar" sid="2984977848088106" static="0" type="number">0</variable>
+        <variable constant="0" name="PlayerMirrored" sid="5224958011432281" static="0" type="number">1</variable>
+        <variable constant="0" name="SpanwY" sid="8507449476094685" static="0" type="number">518</variable>
+        <variable constant="0" name="SpanwX" sid="7667651062714734" static="0" type="number">29</variable>
+        <variable constant="0" name="GoLevel001" sid="6445337931568545" static="0" type="number">0</variable>
+        <variable constant="0" name="GoLevel002" sid="8185579001232899" static="0" type="number">0</variable>
         <event-block sid="4725423205510593">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="4042731089709146" type="System" />
             </conditions>
             <actions>
-                <action id="-1" name="Set X" sid="9053898066901398" type="Sprite_MainCharacter_001">
+                <action disabled="1" id="-1" name="Set X" sid="9053898066901398" type="Sprite_MainCharacter_001">
                     <param id="0" name="X">SpanwX</param>
                 </action>
-                <action id="-2" name="Set Y" sid="5980465040273205" type="Sprite_MainCharacter_001">
+                <action disabled="1" id="-2" name="Set Y" sid="5980465040273205" type="Sprite_MainCharacter_001">
                     <param id="0" name="Y">SpanwY</param>
                 </action>
             </actions>
-            <sub-events>
-                <event-block sid="1734360555902305">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="7102943482677493" type="System">
-                            <param id="0" name="Variable">olhandodireita</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">0</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="7" name="Set mirrored" sid="4582845564894991" type="Sprite_MainCharacter_001">
-                            <param id="0" name="State">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="3112105185068583">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="2588728966752168" type="System">
-                            <param id="0" name="Variable">olhandodireita</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="7" name="Set mirrored" sid="7864384439299839" type="Sprite_MainCharacter_001">
-                            <param id="0" name="State">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
+        </event-block>
+        <event-block sid="1734360555902305">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="7102943482677493" type="System">
+                    <param id="0" name="Variable">PlayerMirrored</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="4582845564894991" type="Sprite_MainCharacter_001">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3112105185068583">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="2588728966752168" type="System">
+                    <param id="0" name="Variable">PlayerMirrored</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="7864384439299839" type="Sprite_MainCharacter_001">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
         </event-block>
         <event-block sid="6775679684711248">
             <conditions>
@@ -84,13 +83,18 @@
                 <condition id="2" name="Key is down" sid="2399648427832958" type="Keyboard">
                     <param id="0" name="Key">37</param>
                 </condition>
+                <condition id="-14" name="Compare variable" sid="966042637841723" type="System">
+                    <param id="0" name="Variable">PlayerCanMirror</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="7" name="Set mirrored" sid="3482834299176025" type="Sprite_MainCharacter_001">
                     <param id="0" name="State">0</param>
                 </action>
                 <action id="-9" name="Set value" sid="3310954852689336" type="System">
-                    <param id="0" name="Variable">olhandodireita</param>
+                    <param id="0" name="Variable">PlayerMirrored</param>
                     <param id="1" name="Value">0</param>
                 </action>
             </actions>
@@ -100,13 +104,18 @@
                 <condition id="2" name="Key is down" sid="4070524243941034" type="Keyboard">
                     <param id="0" name="Key">39</param>
                 </condition>
+                <condition id="-14" name="Compare variable" sid="180412037827495" type="System">
+                    <param id="0" name="Variable">PlayerCanMirror</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="7" name="Set mirrored" sid="866500402583173" type="Sprite_MainCharacter_001">
                     <param id="0" name="State">1</param>
                 </action>
                 <action id="-9" name="Set value" sid="3443040714171598" type="System">
-                    <param id="0" name="Variable">olhandodireita</param>
+                    <param id="0" name="Variable">PlayerMirrored</param>
                     <param id="1" name="Value">1</param>
                 </action>
             </actions>
@@ -143,7 +152,7 @@
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="8568389314512521" type="System" />
                         <condition id="-14" name="Compare variable" sid="8957619067586649" type="System">
-                            <param id="0" name="Variable">Layout</param>
+                            <param id="0" name="Variable">LevelLayout</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">1</param>
                         </condition>
@@ -195,7 +204,7 @@
                             <param id="1" name="Value">495</param>
                         </action>
                         <action id="-9" name="Set value" sid="5010988275699357" type="System">
-                            <param id="0" name="Variable">Layout</param>
+                            <param id="0" name="Variable">LevelLayout</param>
                             <param id="1" name="Value">2</param>
                         </action>
                         <action id="6" name="Stop" sid="7802469330564297" type="Audio">
@@ -205,7 +214,7 @@
                             <param id="0" name="Tag">&quot;alr&quot;</param>
                         </action>
                         <action id="-9" name="Set value" sid="4969205654206783" type="System">
-                            <param id="0" name="Variable">tutorial</param>
+                            <param id="0" name="Variable">Tutorial</param>
                             <param id="1" name="Value">1</param>
                         </action>
                     </actions>
@@ -285,12 +294,12 @@
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="3109278971843624" type="System" />
                         <condition id="-14" name="Compare variable" sid="3558468922304318" type="System">
-                            <param id="0" name="Variable">Layout</param>
+                            <param id="0" name="Variable">LevelLayout</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">1</param>
                         </condition>
                         <condition id="-14" name="Compare variable" sid="9264097112498132" type="System">
-                            <param id="0" name="Variable">tutorial</param>
+                            <param id="0" name="Variable">Tutorial</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">0</param>
                         </condition>
@@ -306,12 +315,12 @@
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="5862068679818633" type="System" />
                         <condition id="-14" name="Compare variable" sid="5635287946405972" type="System">
-                            <param id="0" name="Variable">Layout</param>
+                            <param id="0" name="Variable">LevelLayout</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">1</param>
                         </condition>
                         <condition id="-14" name="Compare variable" sid="2154716345459631" type="System">
-                            <param id="0" name="Variable">tutorial</param>
+                            <param id="0" name="Variable">Tutorial</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">1</param>
                         </condition>
@@ -326,7 +335,7 @@
                 <event-block sid="7837274803811006">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="5008338739424617" type="System">
-                            <param id="0" name="Variable">Layout</param>
+                            <param id="0" name="Variable">LevelLayout</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">1</param>
                         </condition>
@@ -340,7 +349,7 @@
                             <conditions>
                                 <condition id="3" name="Compare frame" sid="3730066518025557" type="Sprite_MainCharacter_001">
                                     <param id="0" name="Comparison">0</param>
-                                    <param id="1" name="Number">1</param>
+                                    <param id="1" name="Number">0</param>
                                 </condition>
                             </conditions>
                             <actions />
@@ -376,7 +385,7 @@
                             <conditions>
                                 <condition id="3" name="Compare frame" sid="8184798952350401" type="Sprite_MainCharacter_001">
                                     <param id="0" name="Comparison">0</param>
-                                    <param id="1" name="Number">6</param>
+                                    <param id="1" name="Number">5</param>
                                 </condition>
                             </conditions>
                             <actions />
@@ -418,7 +427,7 @@
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="5488202967225642" type="System" />
                         <condition id="-14" name="Compare variable" sid="8336245191296209" type="System">
-                            <param id="0" name="Variable">Layout</param>
+                            <param id="0" name="Variable">LevelLayout</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">2</param>
                         </condition>
@@ -447,7 +456,7 @@
                 <event-block sid="4760270445341662">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="5614169079215037" type="System">
-                            <param id="0" name="Variable">Layout</param>
+                            <param id="0" name="Variable">LevelLayout</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">2</param>
                         </condition>
@@ -461,7 +470,7 @@
                             <conditions>
                                 <condition id="3" name="Compare frame" sid="2092669350329617" type="Sprite_MainCharacter_001">
                                     <param id="0" name="Comparison">0</param>
-                                    <param id="1" name="Number">1</param>
+                                    <param id="1" name="Number">0</param>
                                 </condition>
                             </conditions>
                             <actions />
@@ -497,7 +506,7 @@
                             <conditions>
                                 <condition id="3" name="Compare frame" sid="2730906227879104" type="Sprite_MainCharacter_001">
                                     <param id="0" name="Comparison">0</param>
-                                    <param id="1" name="Number">6</param>
+                                    <param id="1" name="Number">5</param>
                                 </condition>
                             </conditions>
                             <actions />
@@ -1363,7 +1372,7 @@
                             <param id="1" name="Value"> 489.416</param>
                         </action>
                         <action id="-9" name="Set value" sid="4165415005084324" type="System">
-                            <param id="0" name="Variable">Layout</param>
+                            <param id="0" name="Variable">LevelLayout</param>
                             <param id="1" name="Value">1</param>
                         </action>
                         <action id="33" name="Stop all" sid="6363780305906535" type="Audio" />
@@ -1406,41 +1415,12 @@
                                 <action id="-2" name="Go to layout" sid="4704591407546934" type="System">
                                     <param id="0" name="Layout">Level_003</param>
                                 </action>
-                                <action id="-9" name="Set value" sid="296693737550314" type="System">
-                                    <param id="0" name="Variable">SpanwX</param>
-                                    <param id="1" name="Value">237</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="4811327199503732" type="System">
-                                    <param id="0" name="Variable">SpanwY</param>
-                                    <param id="1" name="Value">663</param>
-                                </action>
-                                <action behavior="Platform" id="11" name="Set enabled" sid="7616860752450135" type="Sprite_MainCharacter_001">
-                                    <param id="0" name="State">0</param>
-                                </action>
-                                <action behavior="8Direction" id="8" name="Set enabled" sid="1873255173546697" type="Sprite_MainCharacter_001">
-                                    <param id="0" name="State">1</param>
-                                </action>
-                                <action id="7" name="Set mirrored" sid="3173337273699539" type="Sprite_MainCharacter_001">
-                                    <param id="0" name="State">1</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="3241823020512241" type="System">
-                                    <param id="0" name="Variable">Layout</param>
+                                <action id="-9" name="Set value" sid="155928373213393" type="System">
+                                    <param id="0" name="Variable">LevelLayout</param>
                                     <param id="1" name="Value">3</param>
-                                </action>
-                                <action id="0" name="Play" sid="5703718714000923" type="Audio">
-                                    <param id="0" name="Audio file">BG_HeavyTraffic_001</param>
-                                    <param id="2" name="Loop">1</param>
-                                    <param id="3" name="Volume">-26</param>
-                                    <param id="1" name="Tag (optional)">&quot;amb&quot;</param>
                                 </action>
                                 <action id="6" name="Stop" sid="9319655748745885" type="Audio">
                                     <param id="0" name="Tag">&quot;amb2&quot;</param>
-                                </action>
-                                <action id="0" name="Play" sid="6334618375086265" type="Audio">
-                                    <param id="0" name="Audio file">SFX_WoodDoor_Open_001</param>
-                                    <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">0</param>
-                                    <param id="1" name="Tag (optional)">&quot;prt&quot;</param>
                                 </action>
                                 <action id="6" name="Stop" sid="3665095625258688" type="Audio">
                                     <param id="0" name="Tag">&quot;dgt&quot;</param>
@@ -1467,7 +1447,7 @@
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="5564474170944676" type="System" />
                         <condition id="-14" name="Compare variable" sid="6380125899509659" type="System">
-                            <param id="0" name="Variable">Layout</param>
+                            <param id="0" name="Variable">LevelLayout</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">6</param>
                         </condition>
@@ -1560,7 +1540,7 @@
                             <param id="0" name="Layout">Level_007</param>
                         </action>
                         <action id="-9" name="Set value" sid="7204605773455026" type="System">
-                            <param id="0" name="Variable">Layout</param>
+                            <param id="0" name="Variable">LevelLayout</param>
                             <param id="1" name="Value">7</param>
                         </action>
                         <action id="33" name="Stop all" sid="8679382421663809" type="Audio" />
@@ -1569,7 +1549,7 @@
                 <event-block sid="7261641676681645">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="3222536424397317" type="System">
-                            <param id="0" name="Variable">Layout</param>
+                            <param id="0" name="Variable">LevelLayout</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">6</param>
                         </condition>
@@ -1583,7 +1563,7 @@
                             <conditions>
                                 <condition id="3" name="Compare frame" sid="2755598551610511" type="Sprite_MainCharacter_001">
                                     <param id="0" name="Comparison">0</param>
-                                    <param id="1" name="Number">1</param>
+                                    <param id="1" name="Number">0</param>
                                 </condition>
                             </conditions>
                             <actions />
@@ -1619,7 +1599,7 @@
                             <conditions>
                                 <condition id="3" name="Compare frame" sid="7684120541046884" type="Sprite_MainCharacter_001">
                                     <param id="0" name="Comparison">0</param>
-                                    <param id="1" name="Number">6</param>
+                                    <param id="1" name="Number">5</param>
                                 </condition>
                             </conditions>
                             <actions />
@@ -1657,6 +1637,38 @@
         </event-group>
         <event-group description="" sid="5068158209836322" title="Level_008">
             <sub-events>
+                <event-block sid="7054024082948158">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="752886451409095" type="System" />
+                        <condition id="-14" name="Compare variable" sid="9080364690896934" type="System">
+                            <param id="0" name="Variable">LevelLayout</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">8</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="6266558739704925" type="Sprite_Elevator_OfficeFloor">
+                            <param id="0" name="Animation">&quot;Sprite_Elevator_OfficeFloor_Ani_GoingUp_001&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="3100915774522569" type="Audio">
+                            <param id="0" name="Audio file">BG_ClosedOfficeRoom_001</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">-15</param>
+                            <param id="1" name="Tag (optional)">&quot;amb7&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="447244124560320" type="System">
+                            <param id="0" name="Variable">ElevatorClosed</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action behavior="Platform" id="8" name="Set vector X" sid="900073442784551" type="Sprite_MainCharacter_001">
+                            <param id="0" name="Vector X">-40.926</param>
+                        </action>
+                        <action behavior="Platform" id="9" name="Set vector Y" sid="720016180214246" type="Sprite_MainCharacter_001">
+                            <param id="0" name="Vector Y">530.992</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="9037414391866766">
                     <conditions>
                         <condition id="4" name="On finished" sid="1866729258343962" type="Sprite_Elevator_OfficeFloor">
@@ -1667,13 +1679,6 @@
                         <action id="4" name="Set animation" sid="301746622465951" type="Sprite_Elevator_OfficeFloor">
                             <param id="0" name="Animation">&quot;Sprite_Elevator_OfficeFloor_Ani_DoorOpening_001&quot;</param>
                             <param id="1" name="From">1</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="1084290519704872" type="System">
-                            <param id="0" name="Variable">elevadorfechado</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                        <action behavior="Solid" id="0" name="Set enabled" sid="1866685036406287" type="Sprite_CollisionContainer_Elevator_OfficeFloor_Closed">
-                            <param id="0" name="State">0</param>
                         </action>
                         <action id="0" name="Play" sid="3586650371080614" type="Audio">
                             <param id="0" name="Audio file">SFX_ElevatorBell_001</param>
@@ -1694,18 +1699,43 @@
                             <param id="0" name="Animation">&quot;Sprite_Elevator_OfficeFloor_Ani_DoorOpening_002&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
-                        <action id="-9" name="Set value" sid="366782384881083" type="System">
-                            <param id="0" name="Variable">elevadorfechado</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                        <action behavior="Solid" id="0" name="Set enabled" sid="4817204497771288" type="Sprite_CollisionContainer_Elevator_OfficeFloor_Closed">
-                            <param id="0" name="State">0</param>
-                        </action>
                         <action id="0" name="Play" sid="6641276055713143" type="Audio">
                             <param id="0" name="Audio file">SFX_ElevatorBell_001</param>
                             <param id="2" name="Loop">0</param>
                             <param id="3" name="Volume">-15</param>
                             <param id="1" name="Tag (optional)">&quot;abr&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="763392686099229">
+                    <conditions>
+                        <condition id="4" name="On finished" sid="491249011921558" type="Sprite_Elevator_OfficeFloor">
+                            <param id="0" name="Animation">&quot;Sprite_Elevator_OfficeFloor_Ani_DoorOpening_001&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="157928034215396" type="System">
+                            <param id="0" name="Variable">ElevatorClosed</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action behavior="Solid" id="0" name="Set enabled" sid="800474057361363" type="Sprite_CollisionContainer_Elevator_OfficeFloor_Closed">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="320159614289962">
+                    <conditions>
+                        <condition id="4" name="On finished" sid="227666623648210" type="Sprite_Elevator_OfficeFloor">
+                            <param id="0" name="Animation">&quot;Sprite_Elevator_OfficeFloor_Ani_DoorOpening_002&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="466868333300358" type="System">
+                            <param id="0" name="Variable">ElevatorClosed</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action behavior="Solid" id="0" name="Set enabled" sid="717668654239077" type="Sprite_CollisionContainer_Elevator_OfficeFloor_Closed">
+                            <param id="0" name="State">0</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1715,7 +1745,7 @@
                             <param id="0" name="Object">Sprite_Trigger_Elevator_OfficeFloor_CloseDoor</param>
                         </condition>
                         <condition id="-14" name="Compare variable" sid="5088939883823839" type="System">
-                            <param id="0" name="Variable">elevadorfechado</param>
+                            <param id="0" name="Variable">ElevatorClosed</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">0</param>
                         </condition>
@@ -1726,7 +1756,7 @@
                             <param id="1" name="From">1</param>
                         </action>
                         <action id="-9" name="Set value" sid="3462395720059059" type="System">
-                            <param id="0" name="Variable">elevadorfechado</param>
+                            <param id="0" name="Variable">ElevatorClosed</param>
                             <param id="1" name="Value">1</param>
                         </action>
                         <action behavior="Solid" id="0" name="Set enabled" sid="3082642849332215" type="Sprite_CollisionContainer_Elevator_OfficeFloor_Closed">
@@ -1740,7 +1770,7 @@
                             <param id="0" name="Object">Sprite_Trigger_Elevator_OfficeFloor_OpenDoor</param>
                         </condition>
                         <condition id="-14" name="Compare variable" sid="1499334564051092" type="System">
-                            <param id="0" name="Variable">elevadorfechado</param>
+                            <param id="0" name="Variable">ElevatorClosed</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">1</param>
                         </condition>
@@ -1759,7 +1789,7 @@
                                     <param id="1" name="From">1</param>
                                 </action>
                                 <action id="-9" name="Set value" sid="106481133816273" type="System">
-                                    <param id="0" name="Variable">elevadorfechado</param>
+                                    <param id="0" name="Variable">ElevatorClosed</param>
                                     <param id="1" name="Value">2</param>
                                 </action>
                                 <action id="0" name="Play" sid="1722241184733317" type="Audio">
@@ -1790,16 +1820,8 @@
                                 <action id="-2" name="Go to layout" sid="5711432234800532" type="System">
                                     <param id="0" name="Layout">Level_009</param>
                                 </action>
-                                <action id="-9" name="Set value" sid="4496583218774436" type="System">
-                                    <param id="0" name="Variable">SpanwX</param>
-                                    <param id="1" name="Value">384.608</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="7649684849556511" type="System">
-                                    <param id="0" name="Variable">SpanwY</param>
-                                    <param id="1" name="Value"> 549.529</param>
-                                </action>
                                 <action id="-9" name="Set value" sid="6964489760200129" type="System">
-                                    <param id="0" name="Variable">Layout</param>
+                                    <param id="0" name="Variable">LevelLayout</param>
                                     <param id="1" name="Value">9</param>
                                 </action>
                                 <action id="6" name="Stop" sid="6471661181733339" type="Audio">
@@ -1809,40 +1831,6 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-block sid="5987377230428197">
-                    <conditions>
-                        <condition id="4" name="On finished" sid="4889002801149514" type="Sprite_Elevator_OfficeFloor">
-                            <param id="0" name="Animation">&quot;Sprite_Elevator_OfficeFloor_Ani_GoingUp_001&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="Solid" id="0" name="Set enabled" sid="8432719379338933" type="Sprite_CollisionContainer_Elevator_OfficeFloor_Closed">
-                            <param id="0" name="State">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="7054024082948158">
-                    <conditions>
-                        <condition id="-2" name="On start of layout" sid="752886451409095" type="System" />
-                        <condition id="-14" name="Compare variable" sid="9080364690896934" type="System">
-                            <param id="0" name="Variable">Layout</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">8</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="4" name="Set animation" sid="6266558739704925" type="Sprite_Elevator_OfficeFloor">
-                            <param id="0" name="Animation">&quot;Sprite_Elevator_OfficeFloor_Ani_GoingUp_001&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                        <action id="0" name="Play" sid="3100915774522569" type="Audio">
-                            <param id="0" name="Audio file">BG_ClosedOfficeRoom_001</param>
-                            <param id="2" name="Loop">1</param>
-                            <param id="3" name="Volume">-15</param>
-                            <param id="1" name="Tag (optional)">&quot;amb7&quot;</param>
-                        </action>
-                    </actions>
-                </event-block>
                 <event-block sid="2965399968052468">
                     <conditions>
                         <condition id="1" name="Is overlapping another object" sid="7098020354704909" type="Sprite_MainCharacter_001">
@@ -1851,7 +1839,7 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Set value" sid="8483612606094975" type="System">
-                            <param id="0" name="Variable">chefe</param>
+                            <param id="0" name="Variable">BossTrigger</param>
                             <param id="1" name="Value">1</param>
                         </action>
                     </actions>
@@ -1864,7 +1852,7 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Set value" sid="3334931915106373" type="System">
-                            <param id="0" name="Variable">chefe</param>
+                            <param id="0" name="Variable">BossTrigger</param>
                             <param id="1" name="Value">0</param>
                         </action>
                     </actions>
@@ -1913,7 +1901,7 @@
                 <event-block sid="5582982734941255">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="1825442120564729" type="System">
-                            <param id="0" name="Variable">chefe</param>
+                            <param id="0" name="Variable">BossTrigger</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">0</param>
                         </condition>
@@ -1938,7 +1926,7 @@
                 <event-block sid="3572661293008872">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="8263284661224506" type="System">
-                            <param id="0" name="Variable">chefe</param>
+                            <param id="0" name="Variable">BossTrigger</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">1</param>
                         </condition>
@@ -1986,7 +1974,7 @@
                 <event-block sid="7908633341859607">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="8608617108087421" type="System">
-                            <param id="0" name="Variable">Layout</param>
+                            <param id="0" name="Variable">LevelLayout</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">8</param>
                         </condition>
@@ -2000,7 +1988,7 @@
                             <conditions>
                                 <condition id="3" name="Compare frame" sid="6597509559181949" type="Sprite_MainCharacter_001">
                                     <param id="0" name="Comparison">0</param>
-                                    <param id="1" name="Number">1</param>
+                                    <param id="1" name="Number">0</param>
                                 </condition>
                             </conditions>
                             <actions />
@@ -2036,7 +2024,7 @@
                             <conditions>
                                 <condition id="3" name="Compare frame" sid="9034941289865252" type="Sprite_MainCharacter_001">
                                     <param id="0" name="Comparison">0</param>
-                                    <param id="1" name="Number">6</param>
+                                    <param id="1" name="Number">5</param>
                                 </condition>
                             </conditions>
                             <actions />
@@ -2074,6 +2062,36 @@
         </event-group>
         <event-group description="" sid="4743612450341861" title="Level_009">
             <sub-events>
+                <event-block sid="7051906247136802">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="5578308805038515" type="System" />
+                        <condition id="-14" name="Compare variable" sid="914574038249225" type="System">
+                            <param id="0" name="Variable">LevelLayout</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">9</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="4999815961433228" type="Audio">
+                            <param id="0" name="Audio file">BG_OldPhosphorescentLamp_001</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;lamp&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="880403821283376" type="System">
+                            <param id="0" name="Variable">SpanwX</param>
+                            <param id="1" name="Value">-41.883</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="206750410862283" type="System">
+                            <param id="0" name="Variable">SpanwY</param>
+                            <param id="1" name="Value"> 549.529</param>
+                        </action>
+                        <action id="-28" name="Set canvas size" sid="181938486424511" type="System">
+                            <param id="0" name="Width">480</param>
+                            <param id="1" name="Height">720</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="1417319925604595">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="2511481030596062" type="Sprite_MainCharacter_001">
@@ -2099,27 +2117,6 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="7051906247136802">
-                    <conditions>
-                        <condition id="-2" name="On start of layout" sid="5578308805038515" type="System" />
-                        <condition id="2" name="Is playing" sid="8388189270663924" type="Sprite_PlayerOfficeLamp">
-                            <param id="0" name="Animation">&quot;Sprite_PlayerOfficeLamp_Ani_Idle_001&quot;</param>
-                        </condition>
-                        <condition id="-14" name="Compare variable" sid="914574038249225" type="System">
-                            <param id="0" name="Variable">Layout</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">9</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Play" sid="4999815961433228" type="Audio">
-                            <param id="0" name="Audio file">BG_OldPhosphorescentLamp_001</param>
-                            <param id="2" name="Loop">1</param>
-                            <param id="3" name="Volume">-10</param>
-                            <param id="1" name="Tag (optional)">&quot;lamp&quot;</param>
-                        </action>
-                    </actions>
-                </event-block>
                 <event-block sid="2190546139680351">
                     <conditions>
                         <condition id="1" name="Is overlapping another object" sid="5628168279232594" type="Sprite_MainCharacter_001">
@@ -2138,6 +2135,10 @@
                                 <action id="-2" name="Go to layout" sid="6952594785795177" type="System">
                                     <param id="0" name="Layout">Level_010</param>
                                 </action>
+                                <action id="-9" name="Set value" sid="360915587908128" type="System">
+                                    <param id="0" name="Variable">LevelLayout</param>
+                                    <param id="1" name="Value">10</param>
+                                </action>
                             </actions>
                         </event-block>
                     </sub-events>
@@ -2145,7 +2146,7 @@
                 <event-block sid="6844217345521567">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="7031742309186395" type="System">
-                            <param id="0" name="Variable">Layout</param>
+                            <param id="0" name="Variable">LevelLayout</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">9</param>
                         </condition>
@@ -2159,7 +2160,7 @@
                             <conditions>
                                 <condition id="3" name="Compare frame" sid="6286278916416584" type="Sprite_MainCharacter_001">
                                     <param id="0" name="Comparison">0</param>
-                                    <param id="1" name="Number">1</param>
+                                    <param id="1" name="Number">0</param>
                                 </condition>
                             </conditions>
                             <actions />
@@ -2187,7 +2188,7 @@
                             <conditions>
                                 <condition id="3" name="Compare frame" sid="3879762986737837" type="Sprite_MainCharacter_001">
                                     <param id="0" name="Comparison">0</param>
-                                    <param id="1" name="Number">6</param>
+                                    <param id="1" name="Number">5</param>
                                 </condition>
                             </conditions>
                             <actions />
@@ -2217,6 +2218,36 @@
         </event-group>
         <event-group description="" sid="7079574429480348" title="Level_013">
             <sub-events>
+                <event-block sid="782216121249014">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="775394259852031" type="System" />
+                        <condition id="-14" name="Compare variable" sid="302622991531499" type="System">
+                            <param id="0" name="Variable">LevelLayout</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">13</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="749612484072077" type="Audio">
+                            <param id="0" name="Audio file">BG_OldPhosphorescentLamp_001</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;lamp&quot;</param>
+                        </action>
+                        <action id="-28" name="Set canvas size" sid="775973754286944" type="System">
+                            <param id="0" name="Width">480</param>
+                            <param id="1" name="Height">720</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="545387451536872" type="System">
+                            <param id="0" name="Variable">SpanwX</param>
+                            <param id="1" name="Value">703.608</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="714850465401086" type="System">
+                            <param id="0" name="Variable">SpanwY</param>
+                            <param id="1" name="Value">556.529</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="3809367166920433">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="4960430210169937" type="Sprite_MainCharacter_001">
@@ -2239,7 +2270,7 @@
                             <param id="1" name="Value">532.046</param>
                         </action>
                         <action id="-9" name="Set value" sid="9076327617343041" type="System">
-                            <param id="0" name="Variable">Layout</param>
+                            <param id="0" name="Variable">LevelLayout</param>
                             <param id="1" name="Value">14</param>
                         </action>
                     </actions>
@@ -2282,7 +2313,7 @@
                 <event-block sid="7208351353480282">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="1387118316711612" type="System">
-                            <param id="0" name="Variable">Layout</param>
+                            <param id="0" name="Variable">LevelLayout</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">13</param>
                         </condition>
@@ -2296,7 +2327,7 @@
                             <conditions>
                                 <condition id="3" name="Compare frame" sid="3876075250144683" type="Sprite_MainCharacter_001">
                                     <param id="0" name="Comparison">0</param>
-                                    <param id="1" name="Number">1</param>
+                                    <param id="1" name="Number">0</param>
                                 </condition>
                             </conditions>
                             <actions />
@@ -2324,7 +2355,7 @@
                             <conditions>
                                 <condition id="3" name="Compare frame" sid="1047381898384977" type="Sprite_MainCharacter_001">
                                     <param id="0" name="Comparison">0</param>
-                                    <param id="1" name="Number">6</param>
+                                    <param id="1" name="Number">5</param>
                                 </condition>
                             </conditions>
                             <actions />
@@ -2358,7 +2389,7 @@
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="9395131627539926" type="System" />
                         <condition id="-14" name="Compare variable" sid="3416472743980692" type="System">
-                            <param id="0" name="Variable">Layout</param>
+                            <param id="0" name="Variable">LevelLayout</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">14</param>
                         </condition>
@@ -2373,15 +2404,27 @@
                         <action id="0" name="Play" sid="2126535119277382" type="Audio">
                             <param id="0" name="Audio file">MX_EndlessCorridor</param>
                             <param id="2" name="Loop">1</param>
-                            <param id="3" name="Volume">-5</param>
+                            <param id="3" name="Volume">-8</param>
                             <param id="1" name="Tag (optional)">&quot;msc4&quot;</param>
+                        </action>
+                        <action id="-28" name="Set canvas size" sid="360658138371794" type="System">
+                            <param id="0" name="Width">1280</param>
+                            <param id="1" name="Height">720</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="530330483018993" type="System">
+                            <param id="0" name="Variable">SpanwX</param>
+                            <param id="1" name="Value">6423.838</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="733344640694754" type="System">
+                            <param id="0" name="Variable">SpanwY</param>
+                            <param id="1" name="Value">532.046</param>
                         </action>
                     </actions>
                 </event-block>
                 <event-block sid="2769856703827528">
                     <conditions>
-                        <condition id="0" name="On collision with another object" sid="2607503694322255" type="Sprite_MainCharacter_001">
-                            <param id="0" name="Object">Sprite_Trigger_PlayerGetFired</param>
+                        <condition id="1" name="Is overlapping another object" sid="2607503694322255" type="Sprite_Trigger_PlayerGetFired">
+                            <param id="0" name="Object">Sprite_MainCharacter_001</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -2407,6 +2450,10 @@
                             <param id="0" name="Tag">&quot;MX_EndlessCorridor&quot;</param>
                             <param id="1" name="State">1</param>
                         </action>
+                        <action id="-9" name="Set value" sid="238718581154698" type="System">
+                            <param id="0" name="Variable">PlayerCanMirror</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="3068847008667983">
@@ -2428,6 +2475,10 @@
                         <action id="1" name="Set looping" sid="5415305724906998" type="Audio">
                             <param id="0" name="Tag">&quot;MX_EndlessCorridor&quot;</param>
                             <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="299004386124179" type="System">
+                            <param id="0" name="Variable">PlayerCanMirror</param>
+                            <param id="1" name="Value">1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -2474,7 +2525,7 @@
                             <param id="0" name="Layout">Level_015</param>
                         </action>
                         <action id="-9" name="Set value" sid="5594671156445162" type="System">
-                            <param id="0" name="Variable">Layout</param>
+                            <param id="0" name="Variable">LevelLayout</param>
                             <param id="1" name="Value">15</param>
                         </action>
                         <action id="6" name="Stop" sid="8528258659049413" type="Audio">
@@ -2488,7 +2539,7 @@
                 <event-block sid="4578252874268525">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="9559397889177395" type="System">
-                            <param id="0" name="Variable">Layout</param>
+                            <param id="0" name="Variable">LevelLayout</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">14</param>
                         </condition>
@@ -2502,7 +2553,7 @@
                             <conditions>
                                 <condition id="3" name="Compare frame" sid="4574492315170604" type="Sprite_MainCharacter_001">
                                     <param id="0" name="Comparison">0</param>
-                                    <param id="1" name="Number">1</param>
+                                    <param id="1" name="Number">0</param>
                                 </condition>
                             </conditions>
                             <actions />
@@ -2530,7 +2581,7 @@
                             <conditions>
                                 <condition id="3" name="Compare frame" sid="9649290640120326" type="Sprite_MainCharacter_001">
                                     <param id="0" name="Comparison">0</param>
-                                    <param id="1" name="Number">6</param>
+                                    <param id="1" name="Number">5</param>
                                 </condition>
                             </conditions>
                             <actions />
@@ -2564,7 +2615,7 @@
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="3967923663589424" type="System" />
                         <condition id="-14" name="Compare variable" sid="7740691847021016" type="System">
-                            <param id="0" name="Variable">Layout</param>
+                            <param id="0" name="Variable">LevelLayout</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">16</param>
                         </condition>
@@ -2576,6 +2627,17 @@
                             <param id="3" name="Volume">-0</param>
                             <param id="1" name="Tag (optional)">&quot;elev&quot;</param>
                         </action>
+                        <action id="-9" name="Set value" sid="525294533050899" type="System">
+                            <param id="0" name="Variable">SpanwX</param>
+                            <param id="1" name="Value">1261</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="821522612954898" type="System">
+                            <param id="0" name="Variable">SpanwY</param>
+                            <param id="1" name="Value"> 518</param>
+                        </action>
+                        <action behavior="Platform" id="0" name="Set ignoring input" sid="961248925006824" type="Sprite_MainCharacter_001">
+                            <param id="0" name="Input">1</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="2415218517869846">
@@ -2584,7 +2646,7 @@
                             <param id="0" name="Animation">&quot;Sprite_Elevator_GroundFloor_Ani_GoingDown_001&quot;</param>
                         </condition>
                         <condition id="-14" name="Compare variable" sid="6479455791500253" type="System">
-                            <param id="0" name="Variable">Layout</param>
+                            <param id="0" name="Variable">LevelLayout</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">16</param>
                         </condition>
@@ -2592,6 +2654,9 @@
                     <actions>
                         <action id="6" name="Stop" sid="1316735212363655" type="Audio">
                             <param id="0" name="Tag">&quot;elev&quot;</param>
+                        </action>
+                        <action behavior="Platform" id="0" name="Set ignoring input" sid="338403185987552" type="Sprite_MainCharacter_001">
+                            <param id="0" name="Input">0</param>
                         </action>
                     </actions>
                 </event-block>
@@ -2607,14 +2672,14 @@
                         </action>
                         <action id="-9" name="Set value" sid="5536108123783727" type="System">
                             <param id="0" name="Variable">SpanwX</param>
-                            <param id="1" name="Value">1131.507</param>
+                            <param id="1" name="Value">1043.004</param>
                         </action>
                         <action id="-9" name="Set value" sid="8632969192873551" type="System">
                             <param id="0" name="Variable">SpanwY</param>
                             <param id="1" name="Value">708.589</param>
                         </action>
                         <action id="-9" name="Set value" sid="134444332945376" type="System">
-                            <param id="0" name="Variable">Layout</param>
+                            <param id="0" name="Variable">LevelLayout</param>
                             <param id="1" name="Value">17</param>
                         </action>
                     </actions>
@@ -2638,7 +2703,7 @@
                 <event-block sid="3394561246603585">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="2900331060441635" type="System">
-                            <param id="0" name="Variable">Layout</param>
+                            <param id="0" name="Variable">LevelLayout</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">16</param>
                         </condition>
@@ -2652,7 +2717,7 @@
                             <conditions>
                                 <condition id="3" name="Compare frame" sid="6460236202892484" type="Sprite_MainCharacter_001">
                                     <param id="0" name="Comparison">0</param>
-                                    <param id="1" name="Number">1</param>
+                                    <param id="1" name="Number">0</param>
                                 </condition>
                             </conditions>
                             <actions />
@@ -2680,7 +2745,7 @@
                             <conditions>
                                 <condition id="3" name="Compare frame" sid="5139266430002493" type="Sprite_MainCharacter_001">
                                     <param id="0" name="Comparison">0</param>
-                                    <param id="1" name="Number">6</param>
+                                    <param id="1" name="Number">5</param>
                                 </condition>
                             </conditions>
                             <actions />
@@ -2710,6 +2775,61 @@
         </event-group>
         <event-group description="" sid="7481869777264461" title="Level_020">
             <sub-events>
+                <event-block sid="905225539857906">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="193074241621765" type="System" />
+                        <condition id="-14" name="Compare variable" sid="105224869191427" type="System">
+                            <param id="0" name="Variable">LevelLayout</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">20</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-28" name="Set canvas size" sid="630856592138152" type="System">
+                            <param id="0" name="Width">1280</param>
+                            <param id="1" name="Height">720</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="881325403083839" type="System">
+                            <param id="0" name="Variable">SpanwX</param>
+                            <param id="1" name="Value">939</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="730688958761908" type="System">
+                            <param id="0" name="Variable">SpanwY</param>
+                            <param id="1" name="Value">485</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="261151624435460" type="Sprite_NPC_Wife_002">
+                            <param id="0" name="Animation">choose(&quot;Sprite_NPC_Wife_002_Ani_Drinking_001 &quot;,&quot;Sprite_NPC_Wife_002_Ani_GlassMoving_001&quot;,&quot;Sprite_NPC_Wife_002_Ani_GlassMoving_002&quot;,&quot;Sprite_NPC_Wife_002_Ani_Idle_001&quot;,&quot;Sprite_NPC_Wife_002_Ani_Idle_002&quot;,&quot;Sprite_NPC_Wife_002_Ani_Idle_003&quot;)</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="189469927597362" type="Audio">
+                            <param id="0" name="Audio file">BG_RefrigeratorEngine_001</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;gel&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="176150207874952" type="System">
+                            <param id="0" name="Variable">PlayerMirrored</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9420957673638273">
+                    <conditions>
+                        <condition id="-10" name="Compare opacity" sid="8210781218261522" type="Sprite_Spotlight_001_Vignette">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Opacity">100</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="62632312710271" type="Sprite_MainCharacter_001">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="2693362226859453" type="Sprite_MainCharacter_001">
+                            <param id="0" name="Animation">&quot;Sprite_MainCharacter_001_Ani_Idle_001&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="6766236236357129">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="3870631612451657" type="Sprite_MainCharacter_001">
@@ -2752,6 +2872,27 @@
                             <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;luz&quot;</param>
                         </action>
+                        <action id="-9" name="Set value" sid="191761294125740" type="System">
+                            <param id="0" name="Variable">PlayerCanMirror</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6629717530458693">
+                    <conditions>
+                        <condition id="0" name="On ended" sid="9902556341681163" type="Audio">
+                            <param id="0" name="Tag">&quot;luz&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="5601044869303919" type="Sprite_Text_Wife_Breakdown">
+                            <param id="0" name="Animation">&quot;Sprite_Text_Wife_Breakdown_Ani_Dialogue_001&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="6274691218884204" type="Sprite_NPC_Wife_002_Mouth">
+                            <param id="0" name="Animation">&quot;Sprite_NPC_Wife_002_Mouth_Ani_Speaking_001&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="3907436864919659">
@@ -2787,59 +2928,11 @@
                             <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;luz1&quot;</param>
                         </action>
-                    </actions>
-                </event-block>
-                <event-block sid="9420957673638273">
-                    <conditions>
-                        <condition id="-10" name="Compare opacity" sid="8210781218261522" type="Sprite_Spotlight_001_Vignette">
-                            <param id="0" name="Comparison">0</param>
-                            <param id="1" name="Opacity">100</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="7" name="Set mirrored" sid="62632312710271" type="Sprite_MainCharacter_001">
-                            <param id="0" name="State">0</param>
-                        </action>
-                        <action id="4" name="Set animation" sid="2693362226859453" type="Sprite_MainCharacter_001">
-                            <param id="0" name="Animation">&quot;Sprite_MainCharacter_001_Ani_Idle_001&quot;</param>
-                            <param id="1" name="From">1</param>
+                        <action id="-9" name="Set value" sid="792636704968300" type="System">
+                            <param id="0" name="Variable">PlayerCanMirror</param>
+                            <param id="1" name="Value">1</param>
                         </action>
                     </actions>
-                </event-block>
-                <event-block sid="8925479776405562">
-                    <conditions>
-                        <condition id="1" name="Is overlapping another object" sid="3157369161524315" type="Sprite_MainCharacter_001">
-                            <param id="0" name="Object">Sprite_Trigger_Level_020_Go_Level_021</param>
-                        </condition>
-                    </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block sid="7687757374834319">
-                            <conditions>
-                                <condition id="0" name="On key pressed" sid="7910664801763071" type="Keyboard">
-                                    <param id="0" name="Key">32</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-2" name="Go to layout" sid="3030857474344197" type="System">
-                                    <param id="0" name="Layout">Level_021</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="9880415956001004" type="System">
-                                    <param id="0" name="Variable">Layout</param>
-                                    <param id="1" name="Value">21</param>
-                                </action>
-                                <action id="6" name="Stop" sid="8187778346945022" type="Audio">
-                                    <param id="0" name="Tag">&quot;gel&quot;</param>
-                                </action>
-                                <action id="0" name="Play" sid="8172199143262438" type="Audio">
-                                    <param id="0" name="Audio file">SFX_WoodDoor_Open_001</param>
-                                    <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">-10</param>
-                                    <param id="1" name="Tag (optional)">&quot;prt&quot;</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
                 </event-block>
                 <event-block sid="8261912525940109">
                     <conditions>
@@ -2869,47 +2962,40 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="327347071113679">
+                <event-block sid="8925479776405562">
                     <conditions>
-                        <condition id="-2" name="On start of layout" sid="9946465843798598" type="System" />
-                        <condition id="-14" name="Compare variable" sid="412374071329694" type="System">
-                            <param id="0" name="Variable">Layout</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">20</param>
+                        <condition id="1" name="Is overlapping another object" sid="3157369161524315" type="Sprite_MainCharacter_001">
+                            <param id="0" name="Object">Sprite_Trigger_Level_020_Go_Level_021</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action id="4" name="Set animation" sid="2041544660704054" type="Sprite_NPC_Wife_002">
-                            <param id="0" name="Animation">choose(&quot;Sprite_NPC_Wife_002_Ani_Drinking_001 &quot;,&quot;Sprite_NPC_Wife_002_Ani_GlassMoving_001&quot;,&quot;Sprite_NPC_Wife_002_Ani_GlassMoving_002&quot;,&quot;Sprite_NPC_Wife_002_Ani_Idle_001&quot;,&quot;Sprite_NPC_Wife_002_Ani_Idle_002&quot;,&quot;Sprite_NPC_Wife_002_Ani_Idle_003&quot;)</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                        <action id="0" name="Play" sid="796162554133612" type="Audio">
-                            <param id="0" name="Audio file">BG_RefrigeratorEngine_001</param>
-                            <param id="2" name="Loop">1</param>
-                            <param id="3" name="Volume">-10</param>
-                            <param id="1" name="Tag (optional)">&quot;gel&quot;</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="6629717530458693">
-                    <conditions>
-                        <condition id="0" name="On ended" sid="9902556341681163" type="Audio">
-                            <param id="0" name="Tag">&quot;luz&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-15" name="Set visible" sid="4583706653415185" type="Sprite_Text_Wife_Breakdown">
-                            <param id="0" name="Visibility">1</param>
-                        </action>
-                        <action id="4" name="Set animation" sid="5601044869303919" type="Sprite_Text_Wife_Breakdown">
-                            <param id="0" name="Animation">&quot;Sprite_Text_Wife_Breakdown_Ani_Dialogue_001&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                        <action id="4" name="Set animation" sid="6274691218884204" type="Sprite_NPC_Wife_002_Mouth">
-                            <param id="0" name="Animation">&quot;Sprite_NPC_Wife_002_Mouth_Ani_Speaking_001&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                    </actions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="7687757374834319">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="7910664801763071" type="Keyboard">
+                                    <param id="0" name="Key">32</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="3030857474344197" type="System">
+                                    <param id="0" name="Layout">Level_021</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="9880415956001004" type="System">
+                                    <param id="0" name="Variable">LevelLayout</param>
+                                    <param id="1" name="Value">21</param>
+                                </action>
+                                <action id="6" name="Stop" sid="8187778346945022" type="Audio">
+                                    <param id="0" name="Tag">&quot;gel&quot;</param>
+                                </action>
+                                <action id="0" name="Play" sid="8172199143262438" type="Audio">
+                                    <param id="0" name="Audio file">SFX_WoodDoor_Open_001</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">-10</param>
+                                    <param id="1" name="Tag (optional)">&quot;prt&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>

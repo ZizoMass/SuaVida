@@ -8,8 +8,8 @@
         <height>720</height>
     </size>
     <margins>
-        <horizontal>500</horizontal>
-        <vertical>500</vertical>
+        <horizontal>10</horizontal>
+        <vertical>10</vertical>
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
@@ -173,7 +173,7 @@
                                 <active-on-start>Yes</active-on-start>
                                 <movement>Size</movement>
                                 <wave>Sine</wave>
-                                <period>0.01</period>
+                                <period>1</period>
                                 <period-random>0.1</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0</period-offset-random>
@@ -186,7 +186,7 @@
                                 <active-on-start>Yes</active-on-start>
                                 <movement>Width</movement>
                                 <wave>Sine</wave>
-                                <period>0.02</period>
+                                <period>5</period>
                                 <period-random>0.1</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0</period-offset-random>
@@ -212,7 +212,7 @@
                                 <active-on-start>Yes</active-on-start>
                                 <movement>Height</movement>
                                 <wave>Sine</wave>
-                                <period>0.02</period>
+                                <period>5</period>
                                 <period-random>0.1</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0</period-offset-random>

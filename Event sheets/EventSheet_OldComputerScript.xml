@@ -1,34 +1,86 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
-    <name>EventSheet_007</name>
+    <name>EventSheet_OldComputerScript</name>
     <events>
-        <variable constant="0" name="ChangeLayout" sid="4413390731970477" static="0" type="number">0</variable>
+        <variable constant="0" name="JPressedAmount" sid="4413390731970477" static="0" type="number">0</variable>
         <event-block sid="4037183714847548">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="9180606292262197" type="System" />
             </conditions>
             <actions>
-                <action id="3" name="Set volume" sid="4722240375838139" type="Audio">
-                    <param id="0" name="Tag">&quot;lamp&quot;</param>
-                    <param id="1" name="dB">-20</param>
+                <action id="0" name="Play" sid="169095360151050" type="Audio">
+                    <param id="0" name="Audio file">BG_OldPhosphorescentLamp_001</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">-20</param>
+                    <param id="1" name="Tag (optional)">&quot;lamp&quot;</param>
                 </action>
-                <action id="2" name="Stop" sid="6790134811846862" type="Sprite_Text_Computer_Press" />
-                <action id="2" name="Stop" sid="9828294647888329" type="Sprite_Text_Computer_Loading" />
-                <action id="2" name="Stop" sid="195893993117266" type="Sprite_Text_Computer_Starting" />
-                <action id="2" name="Stop" sid="2774026629261198" type="Sprite_Text_Computer_Intro" />
-                <action id="0" name="Play" sid="5026760822852487" type="Audio">
-                    <param id="0" name="Audio file">SFX_OldComputer_StartUp_001</param>
-                    <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;ini1&quot;</param>
+                <action id="-28" name="Set canvas size" sid="895113221557179" type="System">
+                    <param id="0" name="Width">1280</param>
+                    <param id="1" name="Height">720</param>
                 </action>
             </actions>
+            <sub-events>
+                <event-block sid="370273119580309">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="563157123841948" type="System">
+                            <param id="0" name="Variable">LevelLayout</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">10</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Stop" sid="858532833604983" type="Sprite_Text_Computer_Press" />
+                        <action id="2" name="Stop" sid="933803577409084" type="Sprite_Text_Computer_Loading" />
+                        <action id="2" name="Stop" sid="884441336344546" type="Sprite_Text_Computer_Starting" />
+                        <action id="2" name="Stop" sid="873848342069137" type="Sprite_Text_Computer_Intro" />
+                        <action id="0" name="Play" sid="569899210749781" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_StartUp_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;ini1&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="809122019024927">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="658483272727351" type="System">
+                            <param id="0" name="Variable">LevelLayout</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">12</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Stop" sid="539318401801703" type="Sprite_Text_Computer_Loading" />
+                        <action id="4" name="Set animation" sid="397292289550743" type="Sprite_Text_Computer_Press">
+                            <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Loading_001&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="595567979658073" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_StartUp_074</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;inic&quot;</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="149178483698846" type="Sprite_Text_Computer_Intro">
+                            <param id="0" name="Frame number">93</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="949139139179919" type="Sprite_Text_Computer_Starting">
+                            <param id="0" name="Frame number">53</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="9128499372645521">
             <conditions>
                 <condition id="4" name="On finished" sid="9796582921905767" type="Sprite_Text_Computer_Intro">
                     <param id="0" name="Animation">&quot;Sprite_Computer_Intro_Ani_Idle_001&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="405360119044575" type="System">
+                    <param id="0" name="Variable">LevelLayout</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">10</param>
                 </condition>
             </conditions>
             <actions>
@@ -114,7 +166,7 @@
                             <param id="0" name="Audio file">SFX_OldComputer_Bip_ButtonPress_001</param>
                             <param id="2" name="Loop">0</param>
                             <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;botão&quot;</param>
+                            <param id="1" name="Tag (optional)">&quot;OldComputerBipSound&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -133,7 +185,7 @@
                             <param id="0" name="Audio file">SFX_OldComputer_Bip_ButtonPress_001</param>
                             <param id="2" name="Loop">0</param>
                             <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;botão&quot;</param>
+                            <param id="1" name="Tag (optional)">&quot;OldComputerBipSound&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -152,7 +204,7 @@
                             <param id="0" name="Audio file">SFX_OldComputer_Bip_ButtonPress_001</param>
                             <param id="2" name="Loop">0</param>
                             <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;botão&quot;</param>
+                            <param id="1" name="Tag (optional)">&quot;OldComputerBipSound&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -171,7 +223,7 @@
                             <param id="0" name="Audio file">SFX_OldComputer_Bip_ButtonPress_001</param>
                             <param id="2" name="Loop">0</param>
                             <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;botão&quot;</param>
+                            <param id="1" name="Tag (optional)">&quot;OldComputerBipSound&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -190,7 +242,7 @@
                             <param id="0" name="Audio file">SFX_OldComputer_Bip_ButtonPress_001</param>
                             <param id="2" name="Loop">0</param>
                             <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;botão&quot;</param>
+                            <param id="1" name="Tag (optional)">&quot;OldComputerBipSound&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -209,7 +261,7 @@
                             <param id="0" name="Audio file">SFX_OldComputer_Bip_ButtonPress_001</param>
                             <param id="2" name="Loop">0</param>
                             <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;botão&quot;</param>
+                            <param id="1" name="Tag (optional)">&quot;OldComputerBipSound&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -228,7 +280,7 @@
                             <param id="0" name="Audio file">SFX_OldComputer_Bip_ButtonPress_001</param>
                             <param id="2" name="Loop">0</param>
                             <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;botão&quot;</param>
+                            <param id="1" name="Tag (optional)">&quot;OldComputerBipSound&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -247,7 +299,7 @@
                             <param id="0" name="Audio file">SFX_OldComputer_Bip_ButtonPress_001</param>
                             <param id="2" name="Loop">0</param>
                             <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;botão&quot;</param>
+                            <param id="1" name="Tag (optional)">&quot;OldComputerBipSound&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -266,7 +318,7 @@
                             <param id="0" name="Audio file">SFX_OldComputer_Bip_ButtonPress_001</param>
                             <param id="2" name="Loop">0</param>
                             <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;botão&quot;</param>
+                            <param id="1" name="Tag (optional)">&quot;OldComputerBipSound&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -288,7 +340,7 @@
                             <param id="1" name="Tag (optional)">&quot;j&quot;</param>
                         </action>
                         <action id="-10" name="Add to" sid="9599689331076622" type="System">
-                            <param id="0" name="Variable">ChangeLayout</param>
+                            <param id="0" name="Variable">JPressedAmount</param>
                             <param id="1" name="Value">1</param>
                         </action>
                     </actions>
@@ -308,7 +360,7 @@
                             <param id="0" name="Audio file">SFX_OldComputer_Bip_ButtonPress_001</param>
                             <param id="2" name="Loop">0</param>
                             <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;botão&quot;</param>
+                            <param id="1" name="Tag (optional)">&quot;OldComputerBipSound&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -327,7 +379,7 @@
                             <param id="0" name="Audio file">SFX_OldComputer_Bip_ButtonPress_001</param>
                             <param id="2" name="Loop">0</param>
                             <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;botão&quot;</param>
+                            <param id="1" name="Tag (optional)">&quot;OldComputerBipSound&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -346,7 +398,7 @@
                             <param id="0" name="Audio file">SFX_OldComputer_Bip_ButtonPress_001</param>
                             <param id="2" name="Loop">0</param>
                             <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;botão&quot;</param>
+                            <param id="1" name="Tag (optional)">&quot;OldComputerBipSound&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -365,7 +417,7 @@
                             <param id="0" name="Audio file">SFX_OldComputer_Bip_ButtonPress_001</param>
                             <param id="2" name="Loop">0</param>
                             <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;botão&quot;</param>
+                            <param id="1" name="Tag (optional)">&quot;OldComputerBipSound&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -384,7 +436,7 @@
                             <param id="0" name="Audio file">SFX_OldComputer_Bip_ButtonPress_001</param>
                             <param id="2" name="Loop">0</param>
                             <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;botão&quot;</param>
+                            <param id="1" name="Tag (optional)">&quot;OldComputerBipSound&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -403,7 +455,7 @@
                             <param id="0" name="Audio file">SFX_OldComputer_Bip_ButtonPress_001</param>
                             <param id="2" name="Loop">0</param>
                             <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;botão&quot;</param>
+                            <param id="1" name="Tag (optional)">&quot;OldComputerBipSound&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -422,7 +474,7 @@
                             <param id="0" name="Audio file">SFX_OldComputer_Bip_ButtonPress_001</param>
                             <param id="2" name="Loop">0</param>
                             <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;botão&quot;</param>
+                            <param id="1" name="Tag (optional)">&quot;OldComputerBipSound&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -441,7 +493,7 @@
                             <param id="0" name="Audio file">SFX_OldComputer_Bip_ButtonPress_001</param>
                             <param id="2" name="Loop">0</param>
                             <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;botão&quot;</param>
+                            <param id="1" name="Tag (optional)">&quot;OldComputerBipSound&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -460,7 +512,7 @@
                             <param id="0" name="Audio file">SFX_OldComputer_Bip_ButtonPress_001</param>
                             <param id="2" name="Loop">0</param>
                             <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;botão&quot;</param>
+                            <param id="1" name="Tag (optional)">&quot;OldComputerBipSound&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -479,7 +531,7 @@
                             <param id="0" name="Audio file">SFX_OldComputer_Bip_ButtonPress_001</param>
                             <param id="2" name="Loop">0</param>
                             <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;botão&quot;</param>
+                            <param id="1" name="Tag (optional)">&quot;OldComputerBipSound&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -498,7 +550,7 @@
                             <param id="0" name="Audio file">SFX_OldComputer_Bip_ButtonPress_001</param>
                             <param id="2" name="Loop">0</param>
                             <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;botão&quot;</param>
+                            <param id="1" name="Tag (optional)">&quot;OldComputerBipSound&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -517,7 +569,7 @@
                             <param id="0" name="Audio file">SFX_OldComputer_Bip_ButtonPress_001</param>
                             <param id="2" name="Loop">0</param>
                             <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;botão&quot;</param>
+                            <param id="1" name="Tag (optional)">&quot;OldComputerBipSound&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -536,7 +588,7 @@
                             <param id="0" name="Audio file">SFX_OldComputer_Bip_ButtonPress_001</param>
                             <param id="2" name="Loop">0</param>
                             <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;botão&quot;</param>
+                            <param id="1" name="Tag (optional)">&quot;OldComputerBipSound&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -555,7 +607,7 @@
                             <param id="0" name="Audio file">SFX_OldComputer_Bip_ButtonPress_001</param>
                             <param id="2" name="Loop">0</param>
                             <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;botão&quot;</param>
+                            <param id="1" name="Tag (optional)">&quot;OldComputerBipSound&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -574,7 +626,7 @@
                             <param id="0" name="Audio file">SFX_OldComputer_Bip_ButtonPress_001</param>
                             <param id="2" name="Loop">0</param>
                             <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;botão&quot;</param>
+                            <param id="1" name="Tag (optional)">&quot;OldComputerBipSound&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -593,7 +645,7 @@
                             <param id="0" name="Audio file">SFX_OldComputer_Bip_ButtonPress_001</param>
                             <param id="2" name="Loop">0</param>
                             <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;botão&quot;</param>
+                            <param id="1" name="Tag (optional)">&quot;OldComputerBipSound&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -608,6 +660,12 @@
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="0" name="Play" sid="838462925918610" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="7421145340076369">
@@ -620,6 +678,12 @@
                         <action id="4" name="Set animation" sid="8523036411937928" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="667036738635882" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -634,6 +698,12 @@
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="0" name="Play" sid="330777461026474" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="8402071832649506">
@@ -646,6 +716,12 @@
                         <action id="4" name="Set animation" sid="8510650436872723" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="554692926630043" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -660,6 +736,12 @@
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="0" name="Play" sid="210884678458017" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="1280911180373529">
@@ -672,6 +754,12 @@
                         <action id="4" name="Set animation" sid="9179221734159521" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="882815703774450" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -686,6 +774,12 @@
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="0" name="Play" sid="563011720989726" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="5019536347383096">
@@ -698,6 +792,12 @@
                         <action id="4" name="Set animation" sid="6514143540166518" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="260765923850350" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -712,6 +812,12 @@
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="0" name="Play" sid="318943440979202" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="3788904378034238">
@@ -724,6 +830,12 @@
                         <action id="4" name="Set animation" sid="6497170361501334" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="911353050392301" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -738,6 +850,12 @@
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="0" name="Play" sid="962044932273128" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="2991553362608686">
@@ -750,6 +868,12 @@
                         <action id="4" name="Set animation" sid="2317434355362558" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="742622991658556" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -764,6 +888,12 @@
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="0" name="Play" sid="140193758789471" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="1367608814401429">
@@ -776,6 +906,12 @@
                         <action id="4" name="Set animation" sid="1610019722348533" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="832084940226929" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -790,6 +926,12 @@
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="0" name="Play" sid="832176914751905" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="4880527298560698">
@@ -802,6 +944,12 @@
                         <action id="4" name="Set animation" sid="7643950942543599" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="181241436594658" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -816,6 +964,12 @@
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="0" name="Play" sid="673467646446186" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="5506236191522248">
@@ -828,6 +982,12 @@
                         <action id="4" name="Set animation" sid="7504367995451548" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="722370273281249" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -842,6 +1002,12 @@
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="0" name="Play" sid="220011379517372" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="527860740347635">
@@ -854,6 +1020,12 @@
                         <action id="4" name="Set animation" sid="4874735346406989" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="204398008585821" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -868,6 +1040,12 @@
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="0" name="Play" sid="756006852793256" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="9351730704446373">
@@ -880,6 +1058,12 @@
                         <action id="4" name="Set animation" sid="5707257496591938" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="524950891984150" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -894,6 +1078,12 @@
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="0" name="Play" sid="524661175488126" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="3338856696685497">
@@ -906,6 +1096,12 @@
                         <action id="4" name="Set animation" sid="9384363744447512" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="942680470189631" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -920,6 +1116,12 @@
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="0" name="Play" sid="797704921653128" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="1400388000965893">
@@ -932,6 +1134,12 @@
                         <action id="4" name="Set animation" sid="5356720018002308" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="630681835705249" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -946,6 +1154,12 @@
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="0" name="Play" sid="112717470643588" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="9755635486261996">
@@ -958,6 +1172,12 @@
                         <action id="4" name="Set animation" sid="1435105793330431" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="789994523350757" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -972,6 +1192,12 @@
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="0" name="Play" sid="125392739260448" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="1866369415789227">
@@ -984,6 +1210,12 @@
                         <action id="4" name="Set animation" sid="5825113692517698" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="726226808364158" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -998,6 +1230,12 @@
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="0" name="Play" sid="436877740397375" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="6888123460211445">
@@ -1010,6 +1248,12 @@
                         <action id="4" name="Set animation" sid="7302311309211775" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="216583732223989" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1024,6 +1268,12 @@
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="0" name="Play" sid="877370231297164" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="1813079036663554">
@@ -1036,6 +1286,12 @@
                         <action id="4" name="Set animation" sid="9996700318054109" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="841165271388188" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1050,6 +1306,12 @@
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="0" name="Play" sid="153198409876169" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="1007903908287812">
@@ -1062,6 +1324,12 @@
                         <action id="4" name="Set animation" sid="2273577013120061" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="494065890933723" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1076,6 +1344,12 @@
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="0" name="Play" sid="187685753252547" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="2519620201400452">
@@ -1088,6 +1362,12 @@
                         <action id="4" name="Set animation" sid="2217342073081485" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="771160709404952" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1102,6 +1382,12 @@
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="0" name="Play" sid="369314297842147" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="5641375324908343">
@@ -1114,6 +1400,12 @@
                         <action id="4" name="Set animation" sid="118781211488752" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="766382329374547" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1128,6 +1420,12 @@
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="0" name="Play" sid="356196686353535" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="549023338324451">
@@ -1140,6 +1438,12 @@
                         <action id="4" name="Set animation" sid="770217267959785" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="140426659194488" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1154,6 +1458,12 @@
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="0" name="Play" sid="701285424665832" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="7519426578157643">
@@ -1166,6 +1476,12 @@
                         <action id="4" name="Set animation" sid="6233439514950602" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="797591705395601" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1180,6 +1496,12 @@
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="0" name="Play" sid="710474462365267" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="5526957789765089">
@@ -1192,6 +1514,12 @@
                         <action id="4" name="Set animation" sid="8083809609025201" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="774200116070884" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1206,6 +1534,12 @@
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="0" name="Play" sid="516942385983754" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="4289972848650281">
@@ -1218,6 +1552,12 @@
                         <action id="4" name="Set animation" sid="3370278227912491" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="545482434430810" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1232,6 +1572,12 @@
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="0" name="Play" sid="384778521699407" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="4264494016702901">
@@ -1244,6 +1590,12 @@
                         <action id="4" name="Set animation" sid="6456279196071547" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="599642437314639" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1258,6 +1610,12 @@
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="0" name="Play" sid="729264595424763" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="9284229833130029">
@@ -1270,6 +1628,12 @@
                         <action id="4" name="Set animation" sid="9351287946710812" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="358403145950446" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1284,6 +1648,12 @@
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="0" name="Play" sid="635626751956526" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="7539492820485543">
@@ -1296,6 +1666,12 @@
                         <action id="4" name="Set animation" sid="7779382098418756" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="211697787242414" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1310,6 +1686,12 @@
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="0" name="Play" sid="221142556092576" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="4178836245486367">
@@ -1322,6 +1704,12 @@
                         <action id="4" name="Set animation" sid="9927949303237254" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="562922301369242" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1336,6 +1724,12 @@
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="0" name="Play" sid="752478913693141" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="4548415313282245">
@@ -1348,6 +1742,12 @@
                         <action id="4" name="Set animation" sid="68220999986619" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="735526690709413" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1362,6 +1762,12 @@
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="0" name="Play" sid="677860185507909" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="7789454406452073">
@@ -1374,6 +1780,12 @@
                         <action id="4" name="Set animation" sid="6004351946018967" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="569546863071200" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1388,6 +1800,12 @@
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="0" name="Play" sid="987230985845867" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="1759781970170219">
@@ -1400,6 +1818,12 @@
                         <action id="4" name="Set animation" sid="9742284216101542" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="239729274967548" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1414,6 +1838,12 @@
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="0" name="Play" sid="345569021587376" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="8270824710577023">
@@ -1426,6 +1856,12 @@
                         <action id="4" name="Set animation" sid="4312879306986758" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="434630593197840" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1440,6 +1876,12 @@
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="0" name="Play" sid="940247182629366" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="129615717893198">
@@ -1452,6 +1894,12 @@
                         <action id="4" name="Set animation" sid="6158256884480306" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="586682788832611" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1466,6 +1914,12 @@
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="0" name="Play" sid="398228833111815" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="2641533586098831">
@@ -1478,6 +1932,12 @@
                         <action id="4" name="Set animation" sid="8256843623366231" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="664352722395797" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1492,6 +1952,12 @@
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="0" name="Play" sid="872787709560736" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="6476641380909912">
@@ -1504,6 +1970,12 @@
                         <action id="4" name="Set animation" sid="3739542051046518" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="393418410388629" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1518,6 +1990,12 @@
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="0" name="Play" sid="416131529933176" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="7153030326803465">
@@ -1530,6 +2008,12 @@
                         <action id="4" name="Set animation" sid="8758250908544684" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="398976887113841" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1544,6 +2028,12 @@
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="0" name="Play" sid="142065008994950" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="6931955635319424">
@@ -1556,6 +2046,12 @@
                         <action id="4" name="Set animation" sid="1584110179079074" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="395553741935680" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1570,6 +2066,12 @@
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="0" name="Play" sid="158307474670621" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="7374254705045167">
@@ -1582,6 +2084,12 @@
                         <action id="4" name="Set animation" sid="4044402915778276" type="Sprite_Text_Computer_Press">
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="946457290442393" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1596,6 +2104,12 @@
                             <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="0" name="Play" sid="998125666456368" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
@@ -1603,7 +2117,7 @@
         <event-block sid="9024862203132989">
             <conditions>
                 <condition id="4" name="On finished" sid="4306252047753256" type="Sprite_Text_Computer_Press">
-                    <param id="0" name="Animation">&quot;j&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_J_Pressed_001&quot;</param>
                 </condition>
             </conditions>
             <actions>
@@ -1611,7 +2125,7 @@
                     <param id="0" name="Visibility">1</param>
                 </action>
                 <action id="4" name="Set animation" sid="1611186196664516" type="Sprite_Text_Computer_Loading">
-                    <param id="0" name="Animation">&quot;Sprite_Text_Computer_Loading_Ani_Loading_Success_001&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Text_Computer_Loading_Ani_Success_001&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -2014,6 +2528,22 @@
                     <param id="0" name="Animation">&quot;Sprite_Text_Computer_Loading_Ani_Error_001&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
+                <action id="0" name="Play" sid="601126937275284" type="Audio">
+                    <param id="0" name="Audio file">SFX_OldComputer_Error_002</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;erro2&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="151094681562226">
+            <conditions>
+                <condition id="-9" name="Is visible" sid="667590306539450" type="Sprite_Text_Computer_Loading" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="725531529413053" type="Sprite_Text_Computer_Press">
+                    <param id="0" name="Visibility">0</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="8472361200645207">
@@ -2027,6 +2557,9 @@
                 </action>
                 <action id="-15" name="Set visible" sid="4799057154476343" type="Sprite_Text_Computer_Loading">
                     <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="221887107293174" type="Sprite_Text_Computer_Press">
+                    <param id="0" name="Visibility">1</param>
                 </action>
             </actions>
         </event-block>
@@ -4313,11 +4846,11 @@
                     <param id="0" name="Audio file">SFX_OldComputer_StartUp_073</param>
                     <param id="2" name="Loop">0</param>
                     <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;inic75&quot;</param>
+                    <param id="1" name="Tag (optional)">&quot;inic74&quot;</param>
                 </action>
             </actions>
         </event-block>
-        <event-block disabled="1" sid="7385292234921133">
+        <event-block sid="7385292234921133">
             <conditions>
                 <condition id="5" name="Is tag playing" sid="8646227194447315" type="Audio">
                     <param id="0" name="Tag">&quot;inic74&quot;</param>
@@ -4330,7 +4863,7 @@
                 </action>
             </actions>
         </event-block>
-        <event-block disabled="1" sid="2281553287330809">
+        <event-block sid="2281553287330809">
             <conditions>
                 <condition id="0" name="On ended" sid="8671502372932412" type="Audio">
                     <param id="0" name="Tag">&quot;inic74&quot;</param>
@@ -4369,7 +4902,7 @@
                     <param id="0" name="Audio file">SFX_OldComputer_StartUp_074</param>
                     <param id="2" name="Loop">1</param>
                     <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;inic76&quot;</param>
+                    <param id="1" name="Tag (optional)">&quot;OldComputer_FanNoise&quot;</param>
                 </action>
             </actions>
         </event-block>
@@ -4440,6 +4973,72 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="876337560480851">
+            <conditions>
+                <condition id="2" name="Is playing" sid="205546972204907" type="Sprite_Text_Computer_Press">
+                    <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_OrderEnd_001&quot;</param>
+                </condition>
+                <condition id="5" inverted="1" name="Is tag playing" sid="555500490079869" type="Audio">
+                    <param id="0" name="Tag">&quot;hd&quot;</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="519879454830579" type="Sprite_Text_Computer_Press">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="Number">9</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Play (by name)" sid="858102864475220" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">choose (&quot;SFX_OldComputer_HardDriveRead_001&quot;,&quot;SFX_OldComputer_HardDriveRead_002&quot;,&quot;SFX_OldComputer_HardDriveRead_003&quot;,&quot;SFX_OldComputer_HardDriveRead_004&quot;,&quot;SFX_OldComputer_HardDriveRead_005&quot;,&quot;SFX_OldComputer_HardDriveRead_006&quot;,&quot;SFX_OldComputer_HardDriveRead_007&quot;,&quot;SFX_OldComputer_HardDriveRead_008&quot;,&quot;SFX_OldComputer_HardDriveRead_009&quot;,&quot;SFX_OldComputer_HardDriveRead_010&quot;,&quot;SFX_OldComputer_HardDriveRead_011&quot;,&quot;SFX_OldComputer_HardDriveRead_012&quot;,&quot;SFX_OldComputer_HardDriveRead_013&quot;)</param>
+                    <param id="3" name="Loop">0</param>
+                    <param id="4" name="Volume">-17</param>
+                    <param id="2" name="Tag (optional)">&quot;hd&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="519918941266115">
+            <conditions>
+                <condition id="2" name="Is playing" sid="752636499093481" type="Sprite_Text_Computer_Press">
+                    <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_OrderEnd_001&quot;</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="697125295011777" type="Sprite_Text_Computer_Press">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">64</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="333473012320628">
+                    <conditions>
+                        <condition id="6" name="On frame changed" sid="517600695925771" type="Sprite_Text_Computer_Press" />
+                        <condition id="5" inverted="1" name="Is tag playing" sid="620128721504536" type="Audio">
+                            <param id="0" name="Tag">&quot;fim&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="474829360467315" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_ButtonPress_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;fim&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="593049411615121">
+            <conditions>
+                <condition id="3" name="Compare frame" sid="503006770648043" type="Sprite_Text_Computer_Press">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="Number">65</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="556003166945435" type="Audio">
+                    <param id="0" name="Tag">&quot;fim&quot;</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="2252212484110967">
             <conditions>
                 <condition id="2" name="Is playing" sid="8141288221003523" type="Sprite_Led_Blue">
@@ -4471,24 +5070,6 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="8683150565558844">
-            <conditions>
-                <condition id="2" name="Is playing" sid="6475826574544093" type="Sprite_Text_Computer_Press">
-                    <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_Error_001&quot;</param>
-                </condition>
-                <condition id="5" inverted="1" name="Is tag playing" sid="8900491033717662" type="Audio">
-                    <param id="0" name="Tag">&quot;erro&quot;</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="0" name="Play" sid="1660659443644563" type="Audio">
-                    <param id="0" name="Audio file">SFX_OldComputer_Bip_Error_001</param>
-                    <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;erro&quot;</param>
-                </action>
-            </actions>
-        </event-block>
         <event-block sid="2793408651943115">
             <conditions>
                 <condition id="-9" name="Is visible" sid="8049254904527387" type="Sprite_Text_Computer_Loading" />
@@ -4496,24 +5077,6 @@
             <actions>
                 <action id="6" name="Stop" sid="5208129165292963" type="Audio">
                     <param id="0" name="Tag">&quot;erro&quot;</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="1470044809904328">
-            <conditions>
-                <condition id="2" name="Is playing" sid="3653523360165402" type="Sprite_Text_Computer_Loading">
-                    <param id="0" name="Animation">&quot;Sprite_Text_Computer_Loading_Ani_Error_001&quot;</param>
-                </condition>
-                <condition id="5" inverted="1" name="Is tag playing" sid="910471212181551" type="Audio">
-                    <param id="0" name="Tag">&quot;erro2&quot;</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="0" name="Play" sid="3522859757231292" type="Audio">
-                    <param id="0" name="Audio file">SFX_OldComputer_Error_002</param>
-                    <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;erro2&quot;</param>
                 </action>
             </actions>
         </event-block>
@@ -4762,15 +5325,117 @@
                 <condition id="4" name="On finished" sid="1152573025209928" type="Sprite_Text_Computer_Loading">
                     <param id="0" name="Animation">&quot;Sprite_Text_Computer_Loading_Ani_Success_001&quot;</param>
                 </condition>
-                <condition id="-14" name="Compare variable" sid="4980011234736355" type="System">
-                    <param id="0" name="Variable">ChangeLayout</param>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="306986651921900">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="861527996888522" type="System">
+                            <param id="0" name="Variable">LevelLayout</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">10</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="951167887382481" type="System">
+                            <param id="0" name="Variable">JPressedAmount</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="299838734975999" type="System">
+                            <param id="0" name="Layout">Level_011</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="825285719813739" type="System">
+                            <param id="0" name="Variable">LevelLayout</param>
+                            <param id="1" name="Value">11</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="818874906769073">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="796457967369570" type="System">
+                            <param id="0" name="Variable">LevelLayout</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">12</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="102392216337151" type="Sprite_Text_Computer_Press">
+                            <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_OrderEnd_001&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="173956589125770" type="Sprite_Text_Computer_Loading">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="619280666046568">
+            <conditions>
+                <condition id="4" name="On finished" sid="895330491574556" type="Sprite_Text_Computer_Press">
+                    <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_OrderEnd_001&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="357115450846810" type="System">
+                    <param id="0" name="Variable">LevelLayout</param>
                     <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">2</param>
+                    <param id="2" name="Value">12</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-2" name="Go to layout" sid="3277894547199038" type="System">
-                    <param id="0" name="Layout">Level_011</param>
+                <action id="-9" name="Set value" sid="991623069004474" type="System">
+                    <param id="0" name="Variable">SpanwX</param>
+                    <param id="1" name="Value">703.608</param>
+                </action>
+                <action id="-9" name="Set value" sid="515368231600738" type="System">
+                    <param id="0" name="Variable">SpanwY</param>
+                    <param id="1" name="Value">556.529</param>
+                </action>
+                <action id="6" name="Stop" sid="924801204306882" type="Audio">
+                    <param id="0" name="Tag">&quot;inic&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="729293499404582" type="Audio">
+                    <param id="0" name="Audio file">SFX_OldComputer_TurningOff_001</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;des&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="885991275031755" type="System">
+                    <param id="0" name="Variable">LevelLayout</param>
+                    <param id="1" name="Value">13</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="949455347125880" type="System">
+                    <param id="0" name="Layout">Level_013</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="895294242705049">
+            <conditions>
+                <condition id="2" name="Is playing" sid="197055725016796" type="Sprite_Text_Computer_Press">
+                    <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_OrderEnd_001&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="320858719195234" type="Sprite_Led_Brown">
+                    <param id="0" name="Animation">&quot;Sprite_Led_Brown_Ani_On_001&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="368541076638924">
+            <conditions>
+                <condition id="3" name="Compare frame" sid="255090406799223" type="Sprite_Text_Computer_Press">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Number">9</param>
+                </condition>
+                <condition id="2" name="Is playing" sid="490017194890495" type="Sprite_Text_Computer_Press">
+                    <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_OrderEnd_001&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="576895698462652" type="Sprite_Led_Brown">
+                    <param id="0" name="Animation">&quot;Sprite_Led_Brown_Ani_Off_001&quot;</param>
+                    <param id="1" name="From">1</param>
                 </action>
             </actions>
         </event-block>

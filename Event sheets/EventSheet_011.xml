@@ -3,13 +3,12 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>EventSheet_011</name>
     <events>
-        <variable constant="0" name="dentrocarro" sid="5301153803732025" static="0" type="number">0</variable>
-        <variable constant="0" name="carrosaindo" sid="1584608139235724" static="0" type="number">0</variable>
+        <variable comment="Check if the player car is leaving the parking spot" constant="0" name="CarLeaving" sid="1584608139235724" static="0" type="number">0</variable>
         <event-block sid="9048303893177496">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="2891527613215294" type="System" />
                 <condition id="-14" name="Compare variable" sid="1266831528846204" type="System">
-                    <param id="0" name="Variable">Layout</param>
+                    <param id="0" name="Variable">LevelLayout</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">17</param>
                 </condition>
@@ -21,6 +20,26 @@
                     <param id="3" name="Volume">0</param>
                     <param id="1" name="Tag (optional)">&quot;amb17&quot;</param>
                 </action>
+                <action id="-9" name="Set value" sid="717600787925369" type="System">
+                    <param id="0" name="Variable">InsideCar</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-28" name="Set canvas size" sid="169649202604371" type="System">
+                    <param id="0" name="Width">1135</param>
+                    <param id="1" name="Height">720</param>
+                </action>
+                <action id="-9" name="Set value" sid="768552731991445" type="System">
+                    <param id="0" name="Variable">SpanwX</param>
+                    <param id="1" name="Value">1043.004</param>
+                </action>
+                <action id="-9" name="Set value" sid="188731209822072" type="System">
+                    <param id="0" name="Variable">SpanwY</param>
+                    <param id="1" name="Value">708.589</param>
+                </action>
+                <action id="-9" name="Set value" sid="729277842843318" type="System">
+                    <param id="0" name="Variable">PlayerMirrored</param>
+                    <param id="1" name="Value">1</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="1557513133187525">
@@ -29,7 +48,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="856200294224657" type="Sprite_MainCharacter_001">
-                    <param id="0" name="Animation">&quot;caminhando&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_MainCharacter_001_Ani_Walk_001&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -40,7 +59,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="3412089491611535" type="Sprite_MainCharacter_001">
-                    <param id="0" name="Animation">&quot;parado&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_MainCharacter_001_Ani_Idle_001&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -56,8 +75,8 @@
                     <param id="0" name="State">0</param>
                 </action>
                 <action id="-9" name="Set value" sid="1971388083912406" type="System">
-                    <param id="0" name="Variable">olhandodireita</param>
-                    <param id="1" name="Value">0</param>
+                    <param id="0" name="Variable">PlayerMirrored</param>
+                    <param id="1" name="Value">1</param>
                 </action>
             </actions>
         </event-block>
@@ -72,8 +91,8 @@
                     <param id="0" name="State">1</param>
                 </action>
                 <action id="-9" name="Set value" sid="4099513738865084" type="System">
-                    <param id="0" name="Variable">olhandodireita</param>
-                    <param id="1" name="Value">1</param>
+                    <param id="0" name="Variable">PlayerMirrored</param>
+                    <param id="1" name="Value">0</param>
                 </action>
             </actions>
         </event-block>
@@ -85,7 +104,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="1837442697480866" type="Sprite_MainCharacter_001">
-                    <param id="0" name="Animation">&quot;parado&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_MainCharacter_001_Ani_Idle_001&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -98,7 +117,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="6816139921166711" type="Sprite_MainCharacter_001">
-                    <param id="0" name="Animation">&quot;parado&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_MainCharacter_001_Ani_Idle_001&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -106,28 +125,28 @@
         <event-block sid="9559542303727171">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="458936356992805" type="System">
-                    <param id="0" name="Variable">olhandodireita</param>
+                    <param id="0" name="Variable">PlayerMirrored</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">0</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="7" name="Set mirrored" sid="2498168452790835" type="Sprite_MainCharacter_001">
-                    <param id="0" name="State">0</param>
+                    <param id="0" name="State">1</param>
                 </action>
             </actions>
         </event-block>
         <event-block sid="6000799533110831">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="3080276825121449" type="System">
-                    <param id="0" name="Variable">olhandodireita</param>
+                    <param id="0" name="Variable">PlayerMirrored</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">1</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="7" name="Set mirrored" sid="2221890468127727" type="Sprite_MainCharacter_001">
-                    <param id="0" name="State">1</param>
+                    <param id="0" name="State">0</param>
                 </action>
             </actions>
         </event-block>
@@ -148,7 +167,7 @@
                     <actions>
                         <action id="-9" name="Destroy" sid="5916656486405798" type="Sprite_MainCharacter_001" />
                         <action id="4" name="Set animation" sid="3069327659023909" type="Sprite_PlayerCarParking">
-                            <param id="0" name="Animation">&quot;ocupado&quot;</param>
+                            <param id="0" name="Animation">&quot;Sprite_PlayerCarParking_Ani_PlayerInside_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                         <action id="0" name="Play" sid="3579638712558713" type="Audio">
@@ -158,7 +177,7 @@
                             <param id="1" name="Tag (optional)">&quot;cpf&quot;</param>
                         </action>
                         <action id="-9" name="Set value" sid="5881026829402745" type="System">
-                            <param id="0" name="Variable">dentrocarro</param>
+                            <param id="0" name="Variable">InsideCar</param>
                             <param id="1" name="Value">1</param>
                         </action>
                     </actions>
@@ -173,7 +192,7 @@
             </conditions>
             <actions>
                 <action id="-9" name="Set value" sid="8970002298440714" type="System">
-                    <param id="0" name="Variable">carrosaindo</param>
+                    <param id="0" name="Variable">CarLeaving</param>
                     <param id="1" name="Value">0.4</param>
                 </action>
             </actions>
@@ -181,7 +200,7 @@
         <event-block sid="2633557175607505">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="2246011786810582" type="System">
-                    <param id="0" name="Variable">carrosaindo</param>
+                    <param id="0" name="Variable">CarLeaving</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">0.4</param>
                 </condition>
@@ -196,7 +215,7 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Set value" sid="144497360924467" type="System">
-                            <param id="0" name="Variable">carrosaindo</param>
+                            <param id="0" name="Variable">CarLeaving</param>
                             <param id="1" name="Value">0.8</param>
                         </action>
                         <action id="0" name="Play" sid="2620110490050748" type="Audio">
@@ -215,14 +234,14 @@
                     <param id="0" name="Tag">&quot;igni&quot;</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="4071758573497688" type="System">
-                    <param id="0" name="Variable">carrosaindo</param>
+                    <param id="0" name="Variable">CarLeaving</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">0.8</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="-9" name="Set value" sid="7844581770421975" type="System">
-                    <param id="0" name="Variable">carrosaindo</param>
+                    <param id="0" name="Variable">CarLeaving</param>
                     <param id="1" name="Value">1</param>
                 </action>
                 <action id="0" name="Play" sid="7009586730776236" type="Audio">
@@ -236,10 +255,10 @@
         <event-block sid="3264148284773541">
             <conditions>
                 <condition id="2" name="Is playing" sid="7798588119885039" type="Sprite_PlayerCarParking">
-                    <param id="0" name="Animation">&quot;ocupado&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_PlayerCarParking_Ani_PlayerInside_001&quot;</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="7039979649315343" type="System">
-                    <param id="0" name="Variable">carrosaindo</param>
+                    <param id="0" name="Variable">CarLeaving</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">1</param>
                 </condition>
@@ -254,7 +273,7 @@
                     </conditions>
                     <actions>
                         <action id="4" name="Set animation" sid="4618040973426415" type="Sprite_PlayerCarParking">
-                            <param id="0" name="Animation">&quot;saindo&quot;</param>
+                            <param id="0" name="Animation">&quot;Sprite_PlayerCarParking_Ani_ParkingGettingOut_001&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                     </actions>
@@ -264,7 +283,7 @@
         <event-block sid="1553624546746296">
             <conditions>
                 <condition id="4" name="On finished" sid="1978365772266664" type="Sprite_PlayerCarParking">
-                    <param id="0" name="Animation">&quot;saindo&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_PlayerCarParking_Ani_ParkingGettingOut_001&quot;</param>
                 </condition>
             </conditions>
             <actions>
@@ -287,11 +306,11 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-25" name="Go to layout (by name)" sid="9858934572433316" type="System">
-                    <param id="0" name="Layout">&quot;fase18&quot;</param>
+                <action id="-2" name="Go to layout" sid="9858934572433316" type="System">
+                    <param id="0" name="Layout">Level_018</param>
                 </action>
                 <action id="-9" name="Set value" sid="8455649038367947" type="System">
-                    <param id="0" name="Variable">Layout</param>
+                    <param id="0" name="Variable">LevelLayout</param>
                     <param id="1" name="Value">18</param>
                 </action>
                 <action id="6" name="Stop" sid="1054470078357919" type="Audio">
@@ -308,7 +327,7 @@
                     <param id="0" name="Key">32</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="2991388923034779" type="System">
-                    <param id="0" name="Variable">dentrocarro</param>
+                    <param id="0" name="Variable">InsideCar</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">1</param>
                 </condition>
@@ -334,8 +353,8 @@
             <actions>
                 <action id="33" name="Stop all" sid="922819338715813" type="Audio" />
                 <action id="-21" name="Reset global variables" sid="5460015803874803" type="System" />
-                <action id="-25" name="Go to layout (by name)" sid="6084576458872028" type="System">
-                    <param id="0" name="Layout">&quot;inicio&quot;</param>
+                <action id="-2" name="Go to layout" sid="669122397220350" type="System">
+                    <param id="0" name="Layout">MainMenu</param>
                 </action>
             </actions>
         </event-block>

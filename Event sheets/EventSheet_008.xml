@@ -19,6 +19,10 @@
                 <action id="-2" name="Go to layout" sid="2723437515120197" type="System">
                     <param id="0" name="Layout">Level_012</param>
                 </action>
+                <action id="-9" name="Set value" sid="555433227097594" type="System">
+                    <param id="0" name="Variable">LevelLayout</param>
+                    <param id="1" name="Value">12</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="4208280299515201">

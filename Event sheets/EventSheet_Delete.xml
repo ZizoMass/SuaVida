@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
-    <name>EventSheet_009</name>
+    <name>EventSheet_Delete</name>
     <events>
         <event-block sid="4054290082858423">
             <conditions>
@@ -237,7 +237,7 @@
                             <param id="1" name="Tag (optional)">&quot;j&quot;</param>
                         </action>
                         <action id="-10" name="Add to" sid="6283092338874649" type="System">
-                            <param id="0" name="Variable">ChangeLayout</param>
+                            <param id="0" name="Variable">JPressedAmount</param>
                             <param id="1" name="Value">1</param>
                         </action>
                     </actions>
@@ -2816,7 +2816,7 @@
         <event-block sid="7536205579494129">
             <conditions>
                 <condition id="4" name="On finished" sid="9776810965478812" type="Sprite_Text_Computer_Press">
-                    <param id="0" name="Animation">&quot;fim&quot;</param>
+                    <param id="0" name="Animation">&quot;Sprite_Computer_Press_J_Ani_OrderEnd_001&quot;</param>
                 </condition>
             </conditions>
             <actions>

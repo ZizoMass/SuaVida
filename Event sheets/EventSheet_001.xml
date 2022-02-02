@@ -3,7 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>EventSheet_001</name>
     <events>
-        <variable constant="0" name="Layout" sid="4526098781896856" static="0" type="number">0</variable>
+        <variable comment="Definy the layout according to the Level number" constant="0" name="LevelLayout" sid="4526098781896856" static="0" type="number">19</variable>
         <variable constant="0" name="AlarmOff" sid="1973978356182805" static="0" type="number">0</variable>
         <variable constant="0" name="SpacePress" sid="5051248682840914" static="0" type="number">0</variable>
         <variable constant="0" name="Alarm" sid="5772218289386508" static="0" type="number">0</variable>
@@ -22,7 +22,7 @@
                     <param id="2" name="Tag (optional)">&quot;int&quot;</param>
                 </action>
                 <action behavior="Timer" id="0" name="Start timer" sid="7381243062291862" type="Sprite_Logo">
-                    <param id="0" name="Duration">8</param>
+                    <param id="0" name="Duration">2</param>
                     <param id="1" name="Type">0</param>
                     <param id="2" name="Tag">&quot;esp&quot;</param>
                 </action>
@@ -251,7 +251,7 @@
                     <param id="0" name="Layout">Level_001</param>
                 </action>
                 <action id="-9" name="Set value" sid="5016639882876382" type="System">
-                    <param id="0" name="Variable">Layout</param>
+                    <param id="0" name="Variable">LevelLayout</param>
                     <param id="1" name="Value">1</param>
                 </action>
                 <action id="-9" name="Set value" sid="8093528220988382" type="System">
