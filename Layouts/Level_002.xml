@@ -2,7 +2,7 @@
 <c2layout>
     <name>Level_002</name>
     <sid>4188365673521918</sid>
-    <event-sheet>EventSheet_002</event-sheet>
+    <event-sheet>EventSheet_MainCharacter_001_System</event-sheet>
     <size>
         <width>1280</width>
         <height>720</height>

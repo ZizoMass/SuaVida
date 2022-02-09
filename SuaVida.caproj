@@ -13245,6 +13245,9 @@
                     <behavior-type name="Platform" sid="8386663480856935">
                         <behavior id="Platform" />
                     </behavior-type>
+                    <behavior-type name="ScrollTo" sid="954125421988997">
+                        <behavior id="scrollto" />
+                    </behavior-type>
                 </behaviors>
                 <effects>
                     <effect-type name="AdjustHSL">
@@ -13269,7 +13272,7 @@
             <object-type name="Sprite_RainEffect_001" sid="3578858733777301">
                 <plugin id="Sprite" />
                 <animation-folder>
-                    <animation framecount="3" loop="1" name="Sprite_RainEffect_001_Ani_Raining_001" pingpong="0" repeatcount="1" repeatto="0" sid="664444852497729" speed="10">
+                    <animation framecount="3" loop="1" name="Sprite_RainEffect_001_Ani_Raining_001" pingpong="0" repeatcount="1" repeatto="0" sid="664444852497729" speed="7">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.502532">
                             <collision-poly>
                                 <point x="0.0102686" y="0.021519" />
@@ -15355,12 +15358,12 @@
                 </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Sprite_Text_FinalDialogue_009_Ani_Idle_001" pingpong="0" repeatcount="1" repeatto="0" sid="5595278100924485" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ZiZo\Desktop\levels\level23\FRASES\fdf10-01.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\ZiZo\Desktop\levels\level23\FRASES\fdf10-01.png">
                             <collision-poly>
-                                <point x="0.411719" y="0.731944" />
-                                <point x="0.5" y="0.725" />
-                                <point x="0.592188" y="0.725" />
-                                <point x="0.5" y="0.7875" />
+                                <point x="0.323152" y="0.127653" />
+                                <point x="0.504823" y="0.0212766" />
+                                <point x="0.694535" y="0.0212766" />
+                                <point x="0.504823" y="0.978723" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -15375,12 +15378,12 @@
                 </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Sprite_Text_FinalDialogue_010_Ani_Idle_001" pingpong="0" repeatcount="1" repeatto="0" sid="4919630583683996" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ZiZo\Desktop\levels\level23\FRASES\FDF11-01.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\ZiZo\Desktop\levels\level23\FRASES\FDF11-01.png">
                             <collision-poly>
-                                <point x="0.439063" y="0.780556" />
-                                <point x="0.5" y="0.725" />
-                                <point x="0.574219" y="0.756944" />
-                                <point x="0.5" y="0.7875" />
+                                <point x="0.401576" y="0.907698" />
+                                <point x="0.503937" y="0.292308" />
+                                <point x="0.628609" y="0.646149" />
+                                <point x="0.503937" y="0.984615" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -15395,7 +15398,7 @@
                 </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Sprite_Text_FinalDialogue_011_Ani_Idle_001" pingpong="0" repeatcount="1" repeatto="0" sid="7365721776125366" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ZiZo\Desktop\levels\level23\FRASES\FDF12-01.png" />
+                        <frame duration="1" hotspotX="0.50079" hotspotY="1" original-source="C:\Users\ZiZo\Desktop\levels\level23\FRASES\FDF12-01.png" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -15408,12 +15411,12 @@
                 </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Sprite_Text_FinalDialogue_012_Ani_Idle_001" pingpong="0" repeatcount="1" repeatto="0" sid="9778255616637512" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ZiZo\Desktop\levels\level23\FRASES\FDF13-01.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\ZiZo\Desktop\levels\level23\FRASES\FDF13-01.png">
                             <collision-poly>
-                                <point x="0.398438" y="0.708333" />
-                                <point x="0.5" y="0.741667" />
-                                <point x="0.584375" y="0.738889" />
-                                <point x="0.5" y="0.7875" />
+                                <point x="0.295821" y="0.107689" />
+                                <point x="0.504823" y="0.476927" />
+                                <point x="0.678457" y="0.446155" />
+                                <point x="0.504823" y="0.984615" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -15428,12 +15431,12 @@
                 </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Sprite_Text_FinalDialogue_013_Ani_Idle_001" pingpong="0" repeatcount="1" repeatto="0" sid="4017949786829308" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ZiZo\Desktop\levels\level23\FRASES\fdf9.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\ZiZo\Desktop\levels\level23\FRASES\fdf9.png">
                             <collision-poly>
-                                <point x="0.407813" y="0.725" />
-                                <point x="0.5" y="0.725" />
-                                <point x="0.589063" y="0.730556" />
-                                <point x="0.5" y="0.7875" />
+                                <point x="0.327845" y="0.0212766" />
+                                <point x="0.504491" y="0.0212766" />
+                                <point x="0.675151" y="0.106389" />
+                                <point x="0.504491" y="0.978723" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -16958,6 +16961,10 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Particles3" sid="113758799019914">
+            <plugin id="Particles" />
+            <texture />
+        </object-type>
     </object-folder>
     <families>
         <family name="FamalyInstanceVariables" plugin-id="Sprite" sid="9212781974156993">
@@ -17002,11 +17009,11 @@
     </layout-folder>
     <event-folder>
         <event-sheet>EventSheet_MainMenu.xml</event-sheet>
-        <event-sheet>EventSheet_003.xml</event-sheet>
-        <event-sheet>EventSheet_002.xml</event-sheet>
-        <event-sheet>EventSheet_004.xml</event-sheet>
+        <event-sheet>EventSheet_CarSystem.xml</event-sheet>
+        <event-sheet>EventSheet_MainCharacter_001_System.xml</event-sheet>
+        <event-sheet>EventSheet_CityTrafficSystem.xml</event-sheet>
         <event-sheet>EventSheet_005.xml</event-sheet>
-        <event-sheet>EventSheet_006.xml</event-sheet>
+        <event-sheet>EventSheet_VideoSystem.xml</event-sheet>
         <event-sheet>EventSheet_OldComputerScript.xml</event-sheet>
         <event-sheet>EventSheet_008.xml</event-sheet>
         <event-sheet>EventSheet_Delete.xml</event-sheet>
@@ -17016,7 +17023,7 @@
         <event-sheet>EventSheet_013.xml</event-sheet>
         <event-sheet>EventSheet_014.xml</event-sheet>
         <event-sheet>EventSheet_015.xml</event-sheet>
-        <event-sheet>EventSheet_016.xml</event-sheet>
+        <event-sheet>EventSheet_Delete2.xml</event-sheet>
         <event-sheet>EventSheet_Credits.xml</event-sheet>
     </event-folder>
     <global-instances>

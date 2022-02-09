@@ -23272,6 +23272,11 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="ScrollTo">
+                            <properties>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
                     </behavior-instances>
                     <effect-instances>
                         <effect-instance type="AdjustHSL">
@@ -23358,7 +23363,7 @@
                 <instance type="Sprite_Lightning_001" uid="1046">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>nada</initial-animation>
+                        <initial-animation>Sprite_Lightning_001_Ani_Idle_001</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -23368,8 +23373,8 @@
                         <x>646</x>
                         <y>270</y>
                         <z>0</z>
-                        <width>1995.607666016</width>
-                        <height>2052.083251953</height>
+                        <width>249.450958252</width>
+                        <height>256.510406494</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>

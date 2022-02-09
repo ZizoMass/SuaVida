@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>EventSheet_VideoSystem</name>
+    <events>
+        <event-block sid="7898779118989492">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="9465547214689303" type="System" />
+            </conditions>
+            <actions>
+                <action id="6" name="Play" sid="8055977538006483" type="Video_Ani_ElevatorsGoingUp" />
+                <action id="0" name="Play" sid="4769817120319857" type="Audio">
+                    <param id="0" name="Audio file">BG_Elevator_001</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;elev&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3881072136681489">
+            <conditions>
+                <condition id="2" name="Has ended" sid="1293644972375272" type="Video_Ani_ElevatorsGoingUp" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="7302086904105869" type="System">
+                    <param id="0" name="Layout">Level_008</param>
+                </action>
+                <action id="-9" name="Set value" sid="1265165049682088" type="System">
+                    <param id="0" name="Variable">SpanwX</param>
+                    <param id="1" name="Value">-68.908</param>
+                </action>
+                <action id="-9" name="Set value" sid="9875151508516101" type="System">
+                    <param id="0" name="Variable">SpanwY</param>
+                    <param id="1" name="Value">528.635</param>
+                </action>
+                <action behavior="ScrollTo" id="1" name="Set enabled" sid="1186543374021837" type="Sprite_MainCharacter_001">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="2857129136907014" type="System">
+                    <param id="0" name="Variable">LevelLayout</param>
+                    <param id="1" name="Value">8</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2117434135385148">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="8278420001350834" type="Keyboard">
+                    <param id="0" name="Key">27</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="7456165114403763" type="Audio" />
+                <action id="-21" name="Reset global variables" sid="573414605886112" type="System" />
+                <action id="-2" name="Go to layout" sid="5072039477203222" type="System">
+                    <param id="0" name="Layout">MainMenu</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

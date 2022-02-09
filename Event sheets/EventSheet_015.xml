@@ -1311,6 +1311,330 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-group description="" sid="507287751777857" title="Level_026">
+            <sub-events>
+                <event-block sid="391613841505864">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="292558434663617" type="System">
+                            <param id="0" name="Variable">LevelLayout</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">26</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-28" name="Set effect parameter" sid="885702349235448" type="Sprite_MainCharacter_002">
+                            <param id="0" name="Effect">&quot;AdjustHSL&quot;</param>
+                            <param id="1" name="Parameter index">1</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="723045534664273" type="Sprite_MainCharacter_002">
+                            <param id="0" name="Effect">&quot;AdjustHSL&quot;</param>
+                            <param id="1" name="Parameter index">2</param>
+                            <param id="2" name="Value">600</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="283200031092523" type="Sprite_MainCharacter_005">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="832058821239811">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="576668872507319" type="Sprite_MainCharacter_002">
+                                    <param id="0" name="Object">Sprite_Trigger_MainCharacter_Accelerate</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="1" name="Set max speed" sid="483861955953735" type="Sprite_MainCharacter_002">
+                                    <param id="0" name="Max Speed">5000</param>
+                                </action>
+                                <action behavior="Platform" id="2" name="Set acceleration" sid="216720736319834" type="Sprite_MainCharacter_002">
+                                    <param id="0" name="Acceleration">30</param>
+                                </action>
+                                <action behavior="ScrollTo" id="1" name="Set enabled" sid="968434351122094" type="Sprite_MainCharacter_002">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="343578519417691">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="349875766786502" type="Sprite_MainCharacter_002">
+                                    <param id="0" name="Object">Sprite_Trigger_MainCharacter_Stop</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="1" name="Set max speed" sid="309394021825781" type="Sprite_MainCharacter_002">
+                                    <param id="0" name="Max Speed">60</param>
+                                </action>
+                                <action behavior="Platform" id="2" name="Set acceleration" sid="896020336812791" type="Sprite_MainCharacter_002">
+                                    <param id="0" name="Acceleration">100</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="526278711739176">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="738892592060769" type="Sprite_MainCharacter_002">
+                                    <param id="0" name="Object">Sprite_Trigger_ShowEndText_001</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="444633357670789" type="Sprite_Lightning_001">
+                                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_001&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="699895404390713" type="Sprite_Trigger_ShowEndText_001" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="464742644593020">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="460619095331379" type="Sprite_MainCharacter_002">
+                                    <param id="0" name="Object">Sprite_Trigger_ShowEndText_002</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="972148228228733" type="Sprite_Lightning_001">
+                                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_002&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="601330581730286" type="Sprite_Trigger_ShowEndText_002" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="294324976069343">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="776710822993981" type="Sprite_MainCharacter_002">
+                                    <param id="0" name="Object">Sprite_Trigger_ShowEndText_007</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="708951052824721" type="Sprite_Trigger_ShowEndText_007" />
+                                <action id="-15" name="Set visible" sid="216376911742225" type="Sprite_Text_FinalDialogue_013">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action behavior="Fade" id="1" name="Start fade" sid="964652952546771" type="Sprite_Text_FinalDialogue_013" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="395387379374269">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="763621278691813" type="Sprite_MainCharacter_002">
+                                    <param id="0" name="Object">Sprite_Trigger_ShowEndText_008</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="518390906846347" type="Sprite_Trigger_ShowEndText_008" />
+                                <action id="-15" name="Set visible" sid="244000327699047" type="Sprite_Text_FinalDialogue_009">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action behavior="Fade" id="1" name="Start fade" sid="407958065177730" type="Sprite_Text_FinalDialogue_009" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="848342045430393">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="868398832792583" type="Sprite_MainCharacter_002">
+                                    <param id="0" name="Object">Sprite_Trigger_ShowEndText_009</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="179485220351122" type="Sprite_Trigger_ShowEndText_009" />
+                                <action id="-15" name="Set visible" sid="277257576285994" type="Sprite_Text_FinalDialogue_010">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action behavior="Fade" id="1" name="Start fade" sid="647650313744829" type="Sprite_Text_FinalDialogue_010" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="270197010424131">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="623494689540100" type="Sprite_MainCharacter_002">
+                                    <param id="0" name="Object">Sprite_Trigger_ShowEndText_010</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="120736864688046" type="Sprite_Trigger_ShowEndText_010" />
+                                <action id="-15" name="Set visible" sid="898369650760621" type="Sprite_Text_FinalDialogue_011">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action behavior="Fade" id="1" name="Start fade" sid="527473281281402" type="Sprite_Text_FinalDialogue_011" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="838470840150790">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="686650762652751" type="Sprite_MainCharacter_002">
+                                    <param id="0" name="Object">Sprite_Trigger_ShowEndText_011</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="235870138016726" type="Sprite_Trigger_ShowEndText_011" />
+                                <action id="-15" name="Set visible" sid="623361177187810" type="Sprite_Text_FinalDialogue_012">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action behavior="Fade" id="1" name="Start fade" sid="128737825441549" type="Sprite_Text_FinalDialogue_012" />
+                            </actions>
+                        </event-block>
+                        <event-group description="" sid="756173787776058" title="Collapse End Sequence">
+                            <sub-events>
+                                <event-block sid="593886941850838">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="637071922381671" type="Sprite_MainCharacter_002">
+                                            <param id="0" name="Object">Sprite_Trigger_End_Collapse</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="403600790693003" type="System">
+                                            <param id="0" name="Variable">EndType</param>
+                                            <param id="1" name="Value">4</param>
+                                        </action>
+                                        <action id="4" name="Set animation" sid="515295694588491" type="Sprite_Lightning_001">
+                                            <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_002&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="3" name="Set volume" sid="799765804408435" type="Audio">
+                                            <param id="0" name="Tag">&quot;chuva&quot;</param>
+                                            <param id="1" name="dB">-25</param>
+                                        </action>
+                                        <action id="3" name="Set volume" sid="488324430498552" type="Audio">
+                                            <param id="0" name="Tag">&quot;vento&quot;</param>
+                                            <param id="1" name="dB">-20</param>
+                                        </action>
+                                        <action id="6" name="Stop" sid="847619664343209" type="Audio">
+                                            <param id="0" name="Tag">&quot;msc23&quot;</param>
+                                        </action>
+                                        <action behavior="Platform" id="0" name="Set ignoring input" sid="973542284062715" type="Sprite_MainCharacter_002">
+                                            <param id="0" name="Input">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="422147773507375">
+                                    <conditions>
+                                        <condition id="4" name="On finished" sid="610956647741931" type="Sprite_Lightning_001">
+                                            <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_002&quot;</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="210064461046455" type="System">
+                                            <param id="0" name="Variable">EndType</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">4</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="631982677420819" type="Sprite_MainCharacter_002" />
+                                        <action id="-9" name="Destroy" sid="553444868878867" type="Sprite_MainCharacter_005" />
+                                        <action behavior="ScrollTo" id="1" name="Set enabled" sid="572591951450344" type="Sprite_Collapse_001">
+                                            <param id="0" name="State">1</param>
+                                        </action>
+                                        <action id="4" name="Set animation" sid="485190568179409" type="Sprite_Collapse_001">
+                                            <param id="0" name="Animation">&quot;Sprite_Collapse_001_Ani_End_001&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="4" name="Set animation" sid="733635060668866" type="Sprite_Collapse_002">
+                                            <param id="0" name="Animation">&quot;Sprite_Collapse_002_Ani_End_001&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="-9" name="Destroy" sid="548291729303769" type="Sprite_PlayerHome_TransictionVignette" />
+                                        <action id="3" name="Set volume" sid="661902585917211" type="Audio">
+                                            <param id="0" name="Tag">&quot;tro&quot;</param>
+                                            <param id="1" name="dB">-5</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="560626776795215">
+                                    <conditions>
+                                        <condition id="6" name="On frame changed" sid="980170643920628" type="Sprite_Collapse_001" />
+                                        <condition id="3" name="Compare frame" sid="466167476931494" type="Sprite_Collapse_001">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="Number">8</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="476205963337942" type="Sprite_Lightning_001">
+                                            <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_002&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="262703771122941">
+                                    <conditions>
+                                        <condition id="6" name="On frame changed" sid="459552305017629" type="Sprite_Collapse_001" />
+                                        <condition id="3" name="Compare frame" sid="382598977218088" type="Sprite_Collapse_001">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="Number">12</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="929696513847673" type="Sprite_Lightning_001">
+                                            <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_004&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="467953153291606">
+                                    <conditions>
+                                        <condition id="6" name="On frame changed" sid="439675947123359" type="Sprite_Collapse_001" />
+                                        <condition id="3" name="Compare frame" sid="608322991604754" type="Sprite_Collapse_001">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="Number">25</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="507335498405809" type="Sprite_Lightning_001">
+                                            <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_001&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="112787082597836">
+                                    <conditions>
+                                        <condition id="6" name="On frame changed" sid="172934827487320" type="Sprite_Collapse_001" />
+                                        <condition id="3" name="Compare frame" sid="743233099401353" type="Sprite_Collapse_001">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="Number">59</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="819684762815975" type="Sprite_Lightning_001">
+                                            <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_003&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="655432957292268">
+                                    <conditions>
+                                        <condition id="4" name="On finished" sid="269966626535230" type="Sprite_Collapse_002">
+                                            <param id="0" name="Animation">&quot;Sprite_Collapse_002_Ani_End_001&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="205642419766419" type="Sprite_Collapse_002" />
+                                    </actions>
+                                </event-block>
+                                <event-block sid="122017254310968">
+                                    <conditions>
+                                        <condition id="4" name="On finished" sid="681111554759104" type="Sprite_Collapse_001">
+                                            <param id="0" name="Animation">&quot;Sprite_Collapse_001_Ani_End_001&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="223040681132472" type="Sprite_Lightning_001">
+                                            <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_001&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action behavior="Fade" id="1" name="Start fade" sid="739485538192974" type="Sprite_EndFadeOut_Black" />
+                                        <action id="-15" name="Set visible" sid="868301475669868" type="Sprite_EndFadeOut_Black">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                        <action behavior="Timer" id="0" name="Start timer" sid="172532063052367" type="Sprite_EndFadeOut_Black">
+                                            <param id="0" name="Duration">14.0</param>
+                                            <param id="1" name="Type">0</param>
+                                            <param id="2" name="Tag">&quot;fim&quot;</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="190482193468258" type="System">
+                                            <param id="0" name="Variable">EndFinished</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
         <event-block sid="923134311446975">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="653689371304079" type="System">

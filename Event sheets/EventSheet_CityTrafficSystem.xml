@@ -1,0 +1,1264 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>EventSheet_CityTrafficSystem</name>
+    <events>
+        <variable comment="Define the number of unread messages" constant="0" name="MessageNumber" sid="9340286485211384" static="0" type="number">0</variable>
+        <variable comment="Check if another car is close" constant="0" name="CarClose" sid="664467448659959" static="0" type="number">0</variable>
+        <variable comment="Defines the max velocity of the player car" constant="0" name="CarMaxVelocity" sid="6380397073477003" static="0" type="number">5</variable>
+        <event-block sid="4759163893654426">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="1935484343184929" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="7649327085314085" type="Audio">
+                    <param id="0" name="Audio file">BG_DistantTraffic_002</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;amb4&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="8622734915855637" type="Audio">
+                    <param id="0" name="Audio file">MX_LockedOnTrafic</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;msc2&quot;</param>
+                </action>
+                <action id="-28" name="Set canvas size" sid="774352803203600" type="System">
+                    <param id="0" name="Width">1280</param>
+                    <param id="1" name="Height">720</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3320709722028806">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="4351394451171522" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="6718721870279071" type="Sprite_PlayerCar_002">
+                    <param id="0" name="Object">Sprite_CollisionContainer_PlayerCar</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="4084165445060722" type="Sprite_CollisionContainer_PlayerCar">
+                    <param id="0" name="Pin to">Sprite_PlayerCar_002</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="4940521512231324" type="Sprite_PlayerCar_002">
+                    <param id="0" name="Object">Sprite_Trigger_StopCarNPC</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="1857618336104206" type="Sprite_Trigger_StopCarNPC">
+                    <param id="0" name="Pin to">Sprite_PlayerCar_002</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7885453633368064">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="2344268170537066" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="1772199881235201" type="Sprite_SpawnBox_RespawnCityCarNPC_001">
+                    <param id="0" name="Object">Sprite_CollisionContainer_PlayerCar</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="6405373719823548" type="Sprite_CollisionContainer_PlayerCar">
+                    <param id="0" name="Pin to">Sprite_CityCarNPC</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="1197136891067918" type="Sprite_SpawnBox_RespawnCityCarNPC_001">
+                    <param id="0" name="Object">Sprite_Trigger_StopCarNPC</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="6729967550743177" type="Sprite_Trigger_StopCarNPC">
+                    <param id="0" name="Pin to">Sprite_CityCarNPC</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6231018907860984">
+            <conditions>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="2994907288789917" type="Sprite_SpawnBox_RespawnCityCarNPC_001">
+                    <param id="0" name="Object">Sprite_CityCarNPC</param>
+                </condition>
+                <condition id="-6" name="Every X seconds" sid="9013237752168501" type="System">
+                    <param id="0" name="Interval (seconds)">0.1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="4996622804154915" type="Sprite_SpawnBox_RespawnCityCarNPC_001">
+                    <param id="0" name="Object">Sprite_CityCarNPC</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="5" name="Set frame" sid="1962657994647592" type="Sprite_CityCarNPC">
+                    <param id="0" name="Frame number">random(6)</param>
+                </action>
+                <action behavior="Bullet" id="0" name="Set speed" sid="6570570684584332" type="Sprite_CityCarNPC">
+                    <param id="0" name="Speed">random(25)+10</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="9777638277274337" type="Sprite_SpawnBox_RespawnCityCarNPC_001">
+                    <param id="0" name="Object">Sprite_CollisionContainer_PlayerCar</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="4058163057106886" type="Sprite_CollisionContainer_PlayerCar">
+                    <param id="0" name="Pin to">Sprite_CityCarNPC</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="7439850794056584" type="Sprite_SpawnBox_RespawnCityCarNPC_001">
+                    <param id="0" name="Object">Sprite_Trigger_StopCarNPC</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="2332632625975092" type="Sprite_Trigger_StopCarNPC">
+                    <param id="0" name="Pin to">Sprite_CityCarNPC</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7318309496154205">
+            <conditions>
+                <condition id="-4" name="Trigger once while true" sid="9417202915790864" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="2192024298369545" type="Sprite_SpawnBox_CityCarNPC_002">
+                    <param id="0" name="Object">Sprite_CityCarNPC</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="5971213478215928" type="Sprite_CityCarNPC">
+                    <param id="0" name="Animation">choose(&quot;Sprite_CityCarNPC_Ani_Style_002&quot;,&quot;Sprite_CityCarNPC_Ani_Style_003&quot;,&quot;Sprite_CityCarNPC_Ani_Style_004&quot;,&quot;Sprite_CityCarNPC_Ani_Style_005&quot;,&quot;Sprite_CityCarNPC_Ani_Style_006&quot;,&quot;Sprite_CityCarNPC_Ani_Style_007&quot;,&quot;Sprite_CityCarNPC_Ani_Style_008&quot;)</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action behavior="Bullet" id="0" name="Set speed" sid="5520064202091961" type="Sprite_CityCarNPC">
+                    <param id="0" name="Speed">random(15)+5</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="5275400510431811" type="Sprite_SpawnBox_CityCarNPC_002">
+                    <param id="0" name="Object">Sprite_CollisionContainer_PlayerCar</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="5865623490964875" type="Sprite_CollisionContainer_PlayerCar">
+                    <param id="0" name="Pin to">Sprite_CityCarNPC</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="7237826223127951" type="Sprite_SpawnBox_CityCarNPC_002">
+                    <param id="0" name="Object">Sprite_Trigger_StopCarNPC</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="1736189099167673" type="Sprite_Trigger_StopCarNPC">
+                    <param id="0" name="Pin to">Sprite_CityCarNPC</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7998931937502167">
+            <conditions>
+                <condition id="-4" name="Trigger once while true" sid="1466080754611379" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="4379272085420065" type="Sprite_SpawnBox_CityCarNPC_001">
+                    <param id="0" name="Object">Sprite_CityCarNPC</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Bullet" id="0" name="Set speed" sid="4145771016214807" type="Sprite_CityCarNPC">
+                    <param id="0" name="Speed">random(15)+5</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="3976581323959975" type="Sprite_SpawnBox_CityCarNPC_001">
+                    <param id="0" name="Object">Sprite_CollisionContainer_PlayerCar</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="451281134173062" type="Sprite_SpawnBox_CityCarNPC_001">
+                    <param id="0" name="Object">Sprite_Trigger_StopCarNPC</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="7212325084734171" type="Sprite_CollisionContainer_PlayerCar">
+                    <param id="0" name="Pin to">Sprite_CityCarNPC</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="5581342400030185" type="Sprite_Trigger_StopCarNPC">
+                    <param id="0" name="Pin to">Sprite_CityCarNPC</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="9295097853723375" type="Sprite_CityCarNPC">
+                    <param id="0" name="Animation">choose(&quot;Sprite_CityCarNPC_Ani_Style_002&quot;,&quot;Sprite_CityCarNPC_Ani_Style_003&quot;,&quot;Sprite_CityCarNPC_Ani_Style_004&quot;,&quot;Sprite_CityCarNPC_Ani_Style_005&quot;,&quot;Sprite_CityCarNPC_Ani_Style_006&quot;,&quot;Sprite_CityCarNPC_Ani_Style_007&quot;,&quot;Sprite_CityCarNPC_Ani_Style_008&quot;)</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="483631862004825">
+            <conditions>
+                <condition id="-4" name="Trigger once while true" sid="1171136795355326" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="9005245703202013" type="Sprite_SpawnBox_CityCarNPC_003">
+                    <param id="0" name="Object">Sprite_CityCarNPC</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Bullet" id="0" name="Set speed" sid="4874839564899971" type="Sprite_CityCarNPC">
+                    <param id="0" name="Speed">random(15)+5</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="5079675097302673" type="Sprite_SpawnBox_CityCarNPC_003">
+                    <param id="0" name="Object">Sprite_CollisionContainer_PlayerCar</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="3236075482919338" type="Sprite_CollisionContainer_PlayerCar">
+                    <param id="0" name="Pin to">Sprite_CityCarNPC</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="4287458879408012" type="Sprite_SpawnBox_CityCarNPC_003">
+                    <param id="0" name="Object">Sprite_Trigger_StopCarNPC</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="1318456449379795" type="Sprite_Trigger_StopCarNPC">
+                    <param id="0" name="Pin to">Sprite_CityCarNPC</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="1759861100243383" type="Sprite_CityCarNPC">
+                    <param id="0" name="Animation">choose(&quot;Sprite_CityCarNPC_Ani_Style_002&quot;,&quot;Sprite_CityCarNPC_Ani_Style_003&quot;,&quot;Sprite_CityCarNPC_Ani_Style_004&quot;,&quot;Sprite_CityCarNPC_Ani_Style_005&quot;,&quot;Sprite_CityCarNPC_Ani_Style_006&quot;,&quot;Sprite_CityCarNPC_Ani_Style_007&quot;,&quot;Sprite_CityCarNPC_Ani_Style_008&quot;)</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6257851972954222">
+            <conditions>
+                <condition id="-4" name="Trigger once while true" sid="5733028289261339" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="8585047484809537" type="Sprite_SpawnBox_CityCarNPC_004">
+                    <param id="0" name="Object">Sprite_CityCarNPC</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Bullet" id="0" name="Set speed" sid="875829251856478" type="Sprite_CityCarNPC">
+                    <param id="0" name="Speed">random(15)+5</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="4243399993348893" type="Sprite_SpawnBox_CityCarNPC_004">
+                    <param id="0" name="Object">Sprite_CollisionContainer_PlayerCar</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="4961178626161554" type="Sprite_CollisionContainer_PlayerCar">
+                    <param id="0" name="Pin to">Sprite_CityCarNPC</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="5537757482732942" type="Sprite_SpawnBox_CityCarNPC_004">
+                    <param id="0" name="Object">Sprite_Trigger_StopCarNPC</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="2173019076065698" type="Sprite_Trigger_StopCarNPC">
+                    <param id="0" name="Pin to">Sprite_CityCarNPC</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="3900118669012956" type="Sprite_CityCarNPC">
+                    <param id="0" name="Animation">choose(&quot;Sprite_CityCarNPC_Ani_Style_002&quot;,&quot;Sprite_CityCarNPC_Ani_Style_003&quot;,&quot;Sprite_CityCarNPC_Ani_Style_004&quot;,&quot;Sprite_CityCarNPC_Ani_Style_005&quot;,&quot;Sprite_CityCarNPC_Ani_Style_006&quot;,&quot;Sprite_CityCarNPC_Ani_Style_007&quot;,&quot;Sprite_CityCarNPC_Ani_Style_008&quot;)</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7981277837642652">
+            <conditions>
+                <condition id="-4" name="Trigger once while true" sid="8156722550811118" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="9369841502256519" type="Sprite_SpawnBox_CityCarNPC_005">
+                    <param id="0" name="Object">Sprite_CityCarNPC</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Bullet" id="0" name="Set speed" sid="1092701946124938" type="Sprite_CityCarNPC">
+                    <param id="0" name="Speed">random(15)+5</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="9254190963811781" type="Sprite_SpawnBox_CityCarNPC_005">
+                    <param id="0" name="Object">Sprite_CollisionContainer_PlayerCar</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="5964697628879605" type="Sprite_CollisionContainer_PlayerCar">
+                    <param id="0" name="Pin to">Sprite_CityCarNPC</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="2673835334555027" type="Sprite_SpawnBox_CityCarNPC_005">
+                    <param id="0" name="Object">Sprite_Trigger_StopCarNPC</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="5385922337286715" type="Sprite_Trigger_StopCarNPC">
+                    <param id="0" name="Pin to">Sprite_CityCarNPC</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="8611237941011266" type="Sprite_CityCarNPC">
+                    <param id="0" name="Animation">choose(&quot;Sprite_CityCarNPC_Ani_Style_002&quot;,&quot;Sprite_CityCarNPC_Ani_Style_003&quot;,&quot;Sprite_CityCarNPC_Ani_Style_004&quot;,&quot;Sprite_CityCarNPC_Ani_Style_005&quot;,&quot;Sprite_CityCarNPC_Ani_Style_006&quot;,&quot;Sprite_CityCarNPC_Ani_Style_007&quot;,&quot;Sprite_CityCarNPC_Ani_Style_008&quot;)</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3985706283832564">
+            <conditions>
+                <condition id="-4" name="Trigger once while true" sid="785310271367699" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="1199926754890423" type="Sprite_SpawnBox_CityCarNPC_006">
+                    <param id="0" name="Object">Sprite_CityCarNPC</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Bullet" id="0" name="Set speed" sid="4567801746503135" type="Sprite_CityCarNPC">
+                    <param id="0" name="Speed">random(15)+5</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="634339981729068" type="Sprite_SpawnBox_CityCarNPC_006">
+                    <param id="0" name="Object">Sprite_CollisionContainer_PlayerCar</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="1771259579966431" type="Sprite_CollisionContainer_PlayerCar">
+                    <param id="0" name="Pin to">Sprite_CityCarNPC</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="5097038007993648" type="Sprite_SpawnBox_CityCarNPC_006">
+                    <param id="0" name="Object">Sprite_Trigger_StopCarNPC</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="6132424128879947" type="Sprite_Trigger_StopCarNPC">
+                    <param id="0" name="Pin to">Sprite_CityCarNPC</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="6284378523772195" type="Sprite_CityCarNPC">
+                    <param id="0" name="Animation">choose(&quot;Sprite_CityCarNPC_Ani_Style_002&quot;,&quot;Sprite_CityCarNPC_Ani_Style_003&quot;,&quot;Sprite_CityCarNPC_Ani_Style_004&quot;,&quot;Sprite_CityCarNPC_Ani_Style_005&quot;,&quot;Sprite_CityCarNPC_Ani_Style_006&quot;,&quot;Sprite_CityCarNPC_Ani_Style_007&quot;,&quot;Sprite_CityCarNPC_Ani_Style_008&quot;)</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7036111333117778">
+            <conditions>
+                <condition id="-4" name="Trigger once while true" sid="9007383144161816" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="3384696041284774" type="Sprite_SpawnBox_CityCarNPC_007">
+                    <param id="0" name="Object">Sprite_CityCarNPC</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Bullet" id="0" name="Set speed" sid="1748697766482232" type="Sprite_CityCarNPC">
+                    <param id="0" name="Speed">random(15)+5</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="3153351097739284" type="Sprite_SpawnBox_CityCarNPC_007">
+                    <param id="0" name="Object">Sprite_CollisionContainer_PlayerCar</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="7348233858390146" type="Sprite_CollisionContainer_PlayerCar">
+                    <param id="0" name="Pin to">Sprite_CityCarNPC</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="6347400677110537" type="Sprite_SpawnBox_CityCarNPC_007">
+                    <param id="0" name="Object">Sprite_Trigger_StopCarNPC</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="2713176612067131" type="Sprite_Trigger_StopCarNPC">
+                    <param id="0" name="Pin to">Sprite_CityCarNPC</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="4338745570839306" type="Sprite_CityCarNPC">
+                    <param id="0" name="Animation">choose(&quot;Sprite_CityCarNPC_Ani_Style_002&quot;,&quot;Sprite_CityCarNPC_Ani_Style_003&quot;,&quot;Sprite_CityCarNPC_Ani_Style_004&quot;,&quot;Sprite_CityCarNPC_Ani_Style_005&quot;,&quot;Sprite_CityCarNPC_Ani_Style_006&quot;,&quot;Sprite_CityCarNPC_Ani_Style_007&quot;,&quot;Sprite_CityCarNPC_Ani_Style_008&quot;)</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="104136026877837">
+            <conditions>
+                <condition id="-4" name="Trigger once while true" sid="8453229463055118" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="8753781379090938" type="Sprite_SpawnBox_CityCarNPC_008">
+                    <param id="0" name="Object">Sprite_CityCarNPC</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Bullet" id="0" name="Set speed" sid="7863803709771264" type="Sprite_CityCarNPC">
+                    <param id="0" name="Speed">random(15)+5</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="6721459099068878" type="Sprite_SpawnBox_CityCarNPC_008">
+                    <param id="0" name="Object">Sprite_CollisionContainer_PlayerCar</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="844942091891912" type="Sprite_CollisionContainer_PlayerCar">
+                    <param id="0" name="Pin to">Sprite_CityCarNPC</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="6731230517041604" type="Sprite_SpawnBox_CityCarNPC_008">
+                    <param id="0" name="Object">Sprite_Trigger_StopCarNPC</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="9830719308662823" type="Sprite_Trigger_StopCarNPC">
+                    <param id="0" name="Pin to">Sprite_CityCarNPC</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="4867190606298496" type="Sprite_CityCarNPC">
+                    <param id="0" name="Animation">choose(&quot;Sprite_CityCarNPC_Ani_Style_002&quot;,&quot;Sprite_CityCarNPC_Ani_Style_003&quot;,&quot;Sprite_CityCarNPC_Ani_Style_004&quot;,&quot;Sprite_CityCarNPC_Ani_Style_005&quot;,&quot;Sprite_CityCarNPC_Ani_Style_006&quot;,&quot;Sprite_CityCarNPC_Ani_Style_007&quot;,&quot;Sprite_CityCarNPC_Ani_Style_008&quot;)</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1135147193721174">
+            <conditions>
+                <condition id="-4" name="Trigger once while true" sid="5052656137890215" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="4427262718263078" type="Sprite_SpawnBox_CityCarNPC_009">
+                    <param id="0" name="Object">Sprite_CityCarNPC</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Bullet" id="0" name="Set speed" sid="7655369507006737" type="Sprite_CityCarNPC">
+                    <param id="0" name="Speed">random(15)+5</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="2260540483117198" type="Sprite_SpawnBox_CityCarNPC_009">
+                    <param id="0" name="Object">Sprite_CollisionContainer_PlayerCar</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="1654104074620869" type="Sprite_CollisionContainer_PlayerCar">
+                    <param id="0" name="Pin to">Sprite_CityCarNPC</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="2899768867889134" type="Sprite_SpawnBox_CityCarNPC_009">
+                    <param id="0" name="Object">Sprite_Trigger_StopCarNPC</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="7880800713815134" type="Sprite_Trigger_StopCarNPC">
+                    <param id="0" name="Pin to">Sprite_CityCarNPC</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="5132478015728259" type="Sprite_CityCarNPC">
+                    <param id="0" name="Animation">choose(&quot;Sprite_CityCarNPC_Ani_Style_002&quot;,&quot;Sprite_CityCarNPC_Ani_Style_003&quot;,&quot;Sprite_CityCarNPC_Ani_Style_004&quot;,&quot;Sprite_CityCarNPC_Ani_Style_005&quot;,&quot;Sprite_CityCarNPC_Ani_Style_006&quot;,&quot;Sprite_CityCarNPC_Ani_Style_007&quot;,&quot;Sprite_CityCarNPC_Ani_Style_008&quot;)</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1599972175489252">
+            <conditions>
+                <condition id="-4" name="Trigger once while true" sid="1953938361386141" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="8621711620253961" type="Sprite_SpawnBox_CityCarNPC_010">
+                    <param id="0" name="Object">Sprite_CityCarNPC</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Bullet" id="0" name="Set speed" sid="2626265008428796" type="Sprite_CityCarNPC">
+                    <param id="0" name="Speed">random(15)+5</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="1542319622598236" type="Sprite_SpawnBox_CityCarNPC_010">
+                    <param id="0" name="Object">Sprite_CollisionContainer_PlayerCar</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="3712794129589985" type="Sprite_CollisionContainer_PlayerCar">
+                    <param id="0" name="Pin to">Sprite_CityCarNPC</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="927593948661673" type="Sprite_SpawnBox_CityCarNPC_010">
+                    <param id="0" name="Object">Sprite_Trigger_StopCarNPC</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="1737148196410938" type="Sprite_Trigger_StopCarNPC">
+                    <param id="0" name="Pin to">Sprite_CityCarNPC</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="3972999814221178" type="Sprite_CityCarNPC">
+                    <param id="0" name="Animation">choose(&quot;Sprite_CityCarNPC_Ani_Style_002&quot;,&quot;Sprite_CityCarNPC_Ani_Style_003&quot;,&quot;Sprite_CityCarNPC_Ani_Style_004&quot;,&quot;Sprite_CityCarNPC_Ani_Style_005&quot;,&quot;Sprite_CityCarNPC_Ani_Style_006&quot;,&quot;Sprite_CityCarNPC_Ani_Style_007&quot;,&quot;Sprite_CityCarNPC_Ani_Style_008&quot;)</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2554752724712821">
+            <conditions>
+                <condition id="-4" name="Trigger once while true" sid="5091049622066789" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="9706291877182794" type="Sprite_SpawnBox_CityCarNPC_011">
+                    <param id="0" name="Object">Sprite_CityCarNPC</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Bullet" id="0" name="Set speed" sid="2341816786425146" type="Sprite_CityCarNPC">
+                    <param id="0" name="Speed">random(15)+5</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="4431061433064917" type="Sprite_SpawnBox_CityCarNPC_011">
+                    <param id="0" name="Object">Sprite_CollisionContainer_PlayerCar</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="2948074967291237" type="Sprite_CollisionContainer_PlayerCar">
+                    <param id="0" name="Pin to">Sprite_CityCarNPC</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="8969090199941026" type="Sprite_SpawnBox_CityCarNPC_011">
+                    <param id="0" name="Object">Sprite_Trigger_StopCarNPC</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="1927891217268825" type="Sprite_Trigger_StopCarNPC">
+                    <param id="0" name="Pin to">Sprite_CityCarNPC</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="1879597728455566" type="Sprite_CityCarNPC">
+                    <param id="0" name="Animation">choose(&quot;Sprite_CityCarNPC_Ani_Style_002&quot;,&quot;Sprite_CityCarNPC_Ani_Style_003&quot;,&quot;Sprite_CityCarNPC_Ani_Style_004&quot;,&quot;Sprite_CityCarNPC_Ani_Style_005&quot;,&quot;Sprite_CityCarNPC_Ani_Style_006&quot;,&quot;Sprite_CityCarNPC_Ani_Style_007&quot;,&quot;Sprite_CityCarNPC_Ani_Style_008&quot;)</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6747578112321413">
+            <conditions>
+                <condition id="-4" name="Trigger once while true" sid="444307936071141" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="4055199631581998" type="Sprite_SpawnBox_CityCarNPCAssemble">
+                    <param id="0" name="Object">Sprite_CityCarNPC</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Bullet" id="0" name="Set speed" sid="5184533092246563" type="Sprite_CityCarNPC">
+                    <param id="0" name="Speed">random(15)+5</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="4383181349537612" type="Sprite_SpawnBox_CityCarNPCAssemble">
+                    <param id="0" name="Object">Sprite_CollisionContainer_PlayerCar</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="8483888802172048" type="Sprite_CollisionContainer_PlayerCar">
+                    <param id="0" name="Pin to">Sprite_CityCarNPC</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="1617678259469267" type="Sprite_SpawnBox_CityCarNPCAssemble">
+                    <param id="0" name="Object">Sprite_Trigger_StopCarNPC</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="7967890251524506" type="Sprite_Trigger_StopCarNPC">
+                    <param id="0" name="Pin to">Sprite_CityCarNPC</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="9161341361472029" type="Sprite_CityCarNPC">
+                    <param id="0" name="Animation">choose(&quot;Sprite_CityCarNPC_Ani_Style_002&quot;,&quot;Sprite_CityCarNPC_Ani_Style_003&quot;,&quot;Sprite_CityCarNPC_Ani_Style_004&quot;,&quot;Sprite_CityCarNPC_Ani_Style_005&quot;,&quot;Sprite_CityCarNPC_Ani_Style_006&quot;,&quot;Sprite_CityCarNPC_Ani_Style_007&quot;,&quot;Sprite_CityCarNPC_Ani_Style_008&quot;)</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8462859822690698">
+            <conditions>
+                <condition id="-4" name="Trigger once while true" sid="4050236381114772" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="8341283446387145" type="Sprite_SpawnBox_CityCarNPC_012">
+                    <param id="0" name="Object">Sprite_CityCarNPC</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Bullet" id="0" name="Set speed" sid="2975875415111806" type="Sprite_CityCarNPC">
+                    <param id="0" name="Speed">random(15)+5</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="7152739094385864" type="Sprite_SpawnBox_CityCarNPC_012">
+                    <param id="0" name="Object">Sprite_CollisionContainer_PlayerCar</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="3552081019792744" type="Sprite_CollisionContainer_PlayerCar">
+                    <param id="0" name="Pin to">Sprite_CityCarNPC</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="5620801734992507" type="Sprite_SpawnBox_CityCarNPC_012">
+                    <param id="0" name="Object">Sprite_Trigger_StopCarNPC</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="694094155497291" type="Sprite_Trigger_StopCarNPC">
+                    <param id="0" name="Pin to">Sprite_CityCarNPC</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="4703736135289154" type="Sprite_CityCarNPC">
+                    <param id="0" name="Animation">choose(&quot;Sprite_CityCarNPC_Ani_Style_002&quot;,&quot;Sprite_CityCarNPC_Ani_Style_003&quot;,&quot;Sprite_CityCarNPC_Ani_Style_004&quot;,&quot;Sprite_CityCarNPC_Ani_Style_005&quot;,&quot;Sprite_CityCarNPC_Ani_Style_006&quot;,&quot;Sprite_CityCarNPC_Ani_Style_007&quot;,&quot;Sprite_CityCarNPC_Ani_Style_008&quot;)</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7227749779436011">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="5052009573291294" type="Sprite_CityCarNPC">
+                    <param id="0" name="Object">Sprite_CollisionContainer_PlayerCar</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="1" name="Set acceleration" sid="4645695577462814" type="Sprite_CityCarNPC">
+                    <param id="0" name="Acceleration">-43</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2929453833909952">
+            <conditions>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="9917941280151765" type="Sprite_CityCarNPC">
+                    <param id="0" name="Object">Sprite_CollisionContainer_PlayerCar</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="1" name="Set acceleration" sid="7899003063854326" type="Sprite_CityCarNPC">
+                    <param id="0" name="Acceleration">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block disabled="1" sid="1809767210537516">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="8471693347544706" type="Sprite_CityCarNPC">
+                    <param id="0" name="Object">Sprite_Trigger_StopCarNPC</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="0" name="Set speed" sid="9493630987551685" type="Sprite_CityCarNPC">
+                    <param id="0" name="Speed">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block disabled="1" sid="5314630944099491">
+            <conditions>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="6551201752729069" type="Sprite_CityCarNPC">
+                    <param id="0" name="Object">Sprite_Trigger_StopCarNPC</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="0" name="Set speed" sid="9251280534790469" type="Sprite_CityCarNPC">
+                    <param id="0" name="Speed">random(15)+5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8945372955550948">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="3078113496155586" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set position to another object" sid="1783650750809602" type="Sprite_CollisionContainer_PlayerCar">
+                    <param id="0" name="Object">Sprite_PlayerCar_002</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="6723372368664995" type="Sprite_CollisionContainer_PlayerCar">
+                    <param id="0" name="Pin to">Sprite_PlayerCar_002</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="4291859760845553" type="Sprite_Trigger_StopCarNPC">
+                    <param id="0" name="Pin to">Sprite_PlayerCar_002</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7155974082322047">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="9552038896970969" type="System" />
+                <condition behavior="Bullet" id="0" name="Compare speed" sid="7851081336368684" type="Sprite_CityCarNPC">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Speed">40</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="0" name="Set speed" sid="507521995083813" type="Sprite_CityCarNPC">
+                    <param id="0" name="Speed">40</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7724757266949034">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="4194450180371441" type="Sprite_PlayerCar_002">
+                    <param id="0" name="Object">Sprite_CollisionContainer_PlayerCar</param>
+                </condition>
+                <condition behavior="Pin" id="0" name="Is pinned" sid="6027196102079234" type="Sprite_CollisionContainer_PlayerCar" />
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="0" name="Set ignoring input" sid="6871137042245094" type="Sprite_PlayerCar_002">
+                    <param id="0" name="Input">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3202511885162236">
+            <conditions>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="4307102968862454" type="Sprite_PlayerCar_002">
+                    <param id="0" name="Object">Sprite_CollisionContainer_PlayerCar</param>
+                </condition>
+                <condition behavior="Pin" id="0" name="Is pinned" sid="1877862828862655" type="Sprite_CollisionContainer_PlayerCar" />
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="0" name="Set ignoring input" sid="7722786157931119" type="Sprite_PlayerCar_002">
+                    <param id="0" name="Input">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3054623488889586">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="5287724955914664" type="Sprite_CityCarNPC">
+                    <param id="0" name="Object">Sprite_Trigger_CityCarNPCAccelerator</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="0" name="Set speed" sid="6153367328987244" type="Sprite_CityCarNPC">
+                    <param id="0" name="Speed">10</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4344774355451461">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="1659252666081429" type="Sprite_CityCarNPC">
+                    <param id="0" name="Object">Sprite_Trigger_CityCarNPCDestroyer</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="5871309785406284" type="Sprite_CityCarNPC" />
+            </actions>
+        </event-block>
+        <event-block sid="7206165566911123">
+            <conditions>
+                <condition id="2" name="Key is down" sid="3114530486428981" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="0" name="Set ignoring input" sid="7798674742778253" type="Sprite_PlayerCar_002">
+                    <param id="0" name="Input">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6267069902327189">
+            <conditions>
+                <condition id="3" name="On key released" sid="8712817494548956" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="0" name="Set ignoring input" sid="5843850337417831" type="Sprite_PlayerCar_002">
+                    <param id="0" name="Input">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="583146908083885">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="1468216126728204" type="Keyboard">
+                    <param id="0" name="Key">32</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="5675711208621828" type="Audio">
+                    <param id="0" name="Audio file">SFX_CarHorn_001</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-22</param>
+                    <param id="1" name="Tag (optional)">&quot;buz&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2396927108873258">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="9973873732067816" type="Sprite_PlayerCar_002">
+                    <param id="0" name="Object">Sprite_SpawnBox_CityCarNPC_002</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="276035286851259" type="System">
+                    <param id="0" name="Variable">MessageNumber</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Play" sid="9546488304969839" type="Audio">
+                    <param id="0" name="Audio file">SFX_CellphoneCallRingtone_001</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;cche&quot;</param>
+                </action>
+                <action behavior="Flash" id="0" name="Flash" sid="9898573900808587" type="Sprite_Text_MessageNumber">
+                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                    <param id="2" name="Duration">0.5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8416529498317679">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="5278833523901473" type="Sprite_PlayerCar_002">
+                    <param id="0" name="Object">Sprite_SpawnBox_CityCarNPC_003</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="9531161128120001" type="System">
+                    <param id="0" name="Variable">MessageNumber</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Play" sid="6271488749110162" type="Audio">
+                    <param id="0" name="Audio file">SFX_CellphoneCallRingtone_001</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;cche&quot;</param>
+                </action>
+                <action behavior="Flash" id="0" name="Flash" sid="8154206117938649" type="Sprite_Text_MessageNumber">
+                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                    <param id="2" name="Duration">0.5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4960628697121277">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="6694062692335001" type="Sprite_PlayerCar_002">
+                    <param id="0" name="Object">Sprite_SpawnBox_CityCarNPC_004</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="1230610840041155" type="System">
+                    <param id="0" name="Variable">MessageNumber</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Play" sid="567722113774877" type="Audio">
+                    <param id="0" name="Audio file">SFX_CellphoneCallRingtone_001</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;cche&quot;</param>
+                </action>
+                <action behavior="Flash" id="0" name="Flash" sid="4468541603986721" type="Sprite_Text_MessageNumber">
+                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                    <param id="2" name="Duration">0.5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8599360344933752">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="3734152982483071" type="Sprite_PlayerCar_002">
+                    <param id="0" name="Object">Sprite_SpawnBox_CityCarNPC_005</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="3818779100801137" type="System">
+                    <param id="0" name="Variable">MessageNumber</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Play" sid="3470318869702926" type="Audio">
+                    <param id="0" name="Audio file">SFX_CellphoneCallRingtone_001</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;cche&quot;</param>
+                </action>
+                <action behavior="Flash" id="0" name="Flash" sid="8279233347422649" type="Sprite_Text_MessageNumber">
+                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                    <param id="2" name="Duration">0.5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4321452700729193">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="7586608497927975" type="Sprite_PlayerCar_002">
+                    <param id="0" name="Object">Sprite_SpawnBox_CityCarNPC_006</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="6539927797410231" type="System">
+                    <param id="0" name="Variable">MessageNumber</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Play" sid="8631161583295898" type="Audio">
+                    <param id="0" name="Audio file">SFX_CellphoneCallRingtone_001</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;cche&quot;</param>
+                </action>
+                <action behavior="Flash" id="0" name="Flash" sid="3705305556414808" type="Sprite_Text_MessageNumber">
+                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                    <param id="2" name="Duration">0.5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4716739289281327">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="917922179590451" type="Sprite_PlayerCar_002">
+                    <param id="0" name="Object">Sprite_SpawnBox_CityCarNPC_007</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="4203219697770068" type="System">
+                    <param id="0" name="Variable">MessageNumber</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Play" sid="3945809709267392" type="Audio">
+                    <param id="0" name="Audio file">SFX_CellphoneCallRingtone_001</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;cche&quot;</param>
+                </action>
+                <action behavior="Flash" id="0" name="Flash" sid="5132997509754982" type="Sprite_Text_MessageNumber">
+                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                    <param id="2" name="Duration">0.5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8401159290106131">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="892688883366852" type="Sprite_PlayerCar_002">
+                    <param id="0" name="Object">Sprite_SpawnBox_CityCarNPC_008</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="6637981438803714" type="System">
+                    <param id="0" name="Variable">MessageNumber</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Play" sid="9227869775635603" type="Audio">
+                    <param id="0" name="Audio file">SFX_CellphoneCallRingtone_001</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;cche&quot;</param>
+                </action>
+                <action behavior="Flash" id="0" name="Flash" sid="6856370569626836" type="Sprite_Text_MessageNumber">
+                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                    <param id="2" name="Duration">0.5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1288037730786969">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="7002944918777728" type="Sprite_PlayerCar_002">
+                    <param id="0" name="Object">Sprite_SpawnBox_CityCarNPC_009</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="4773344568792185" type="System">
+                    <param id="0" name="Variable">MessageNumber</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Play" sid="7485407365779656" type="Audio">
+                    <param id="0" name="Audio file">SFX_CellphoneCallRingtone_001</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;cche&quot;</param>
+                </action>
+                <action behavior="Flash" id="0" name="Flash" sid="1522103383276423" type="Sprite_Text_MessageNumber">
+                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                    <param id="2" name="Duration">0.5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3089826406208029">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="2470951248023492" type="Sprite_PlayerCar_002">
+                    <param id="0" name="Object">Sprite_SpawnBox_CityCarNPC_010</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="4782637696027194" type="System">
+                    <param id="0" name="Variable">MessageNumber</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Play" sid="6178158648987576" type="Audio">
+                    <param id="0" name="Audio file">SFX_CellphoneCallRingtone_001</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;cche&quot;</param>
+                </action>
+                <action behavior="Flash" id="0" name="Flash" sid="6465358784420947" type="Sprite_Text_MessageNumber">
+                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                    <param id="2" name="Duration">0.5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6271847468926929">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="5381514921800627" type="Sprite_PlayerCar_002">
+                    <param id="0" name="Object">Sprite_SpawnBox_CityCarNPC_011</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="757044092992485" type="System">
+                    <param id="0" name="Variable">MessageNumber</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Play" sid="4847706277028293" type="Audio">
+                    <param id="0" name="Audio file">SFX_CellphoneCallRingtone_001</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;cche&quot;</param>
+                </action>
+                <action behavior="Flash" id="0" name="Flash" sid="2133826089732726" type="Sprite_Text_MessageNumber">
+                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                    <param id="2" name="Duration">0.5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6643092814288189">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="124258395110392" type="System">
+                    <param id="0" name="Variable">MessageNumber</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="7616343361406613" type="Sprite_Text_MessageNumber">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3796885257457182">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="5824136245469023" type="System">
+                    <param id="0" name="Variable">MessageNumber</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="6327951795310236" type="Sprite_Text_MessageNumber">
+                    <param id="0" name="Animation">&quot;Sprite_Text_MessageNumber_Ani_Numbers_001&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9442133733917258">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="1284828629736748" type="System">
+                    <param id="0" name="Variable">MessageNumber</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="8198437387700916" type="Sprite_Text_MessageNumber">
+                    <param id="0" name="Animation">&quot;Sprite_Text_MessageNumber_Ani_Numbers_002&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9602962271894066">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="1488274650301792" type="System">
+                    <param id="0" name="Variable">MessageNumber</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="6448127266664467" type="Sprite_Text_MessageNumber">
+                    <param id="0" name="Animation">&quot;Sprite_Text_MessageNumber_Ani_Numbers_003&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5247191561718304">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="4758784387734839" type="System">
+                    <param id="0" name="Variable">MessageNumber</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="5191311973548552" type="Sprite_Text_MessageNumber">
+                    <param id="0" name="Animation">&quot;Sprite_Text_MessageNumber_Ani_Numbers_004&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4911596945600194">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="8048905813736273" type="System">
+                    <param id="0" name="Variable">MessageNumber</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="4761368030895622" type="Sprite_Text_MessageNumber">
+                    <param id="0" name="Animation">&quot;Sprite_Text_MessageNumber_Ani_Numbers_005&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1447970917968466">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="6129126211151739" type="System">
+                    <param id="0" name="Variable">MessageNumber</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">6</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="2967789994981511" type="Sprite_Text_MessageNumber">
+                    <param id="0" name="Animation">&quot;Sprite_Text_MessageNumber_Ani_Numbers_006&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7099071825086679">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="2702772809404725" type="System">
+                    <param id="0" name="Variable">MessageNumber</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">7</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="1636048083973196" type="Sprite_Text_MessageNumber">
+                    <param id="0" name="Animation">&quot;Sprite_Text_MessageNumber_Ani_Numbers_007&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7738307240569996">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="1839093096892779" type="System">
+                    <param id="0" name="Variable">MessageNumber</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">8</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="1503071177418781" type="Sprite_Text_MessageNumber">
+                    <param id="0" name="Animation">&quot;Sprite_Text_MessageNumber_Ani_Numbers_008&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9730291648139915">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="6027371003701468" type="System">
+                    <param id="0" name="Variable">MessageNumber</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">9</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="4058230052201396" type="Sprite_Text_MessageNumber">
+                    <param id="0" name="Animation">&quot;Sprite_Text_MessageNumber_Ani_Numbers_009&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8798895405008767">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="5926423173487615" type="System">
+                    <param id="0" name="Variable">MessageNumber</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">10</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="1112373475610265" type="Sprite_Text_MessageNumber">
+                    <param id="0" name="Animation">&quot;Sprite_Text_MessageNumber_Ani_Numbers_010&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5441717534835264">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="92732949818731" type="System">
+                    <param id="0" name="Variable">MessageNumber</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-9" inverted="1" name="Is visible" sid="781262278150431" type="Sprite_Text_SMSMessage" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="3883988223558219">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="5565707615575969" type="Keyboard">
+                            <param id="0" name="Key">40</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="7905069975180596" type="Sprite_Text_SMSMessage">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="4692658692716844" type="Sprite_Text_SMSMessage">
+                            <param id="0" name="Animation">choose(&quot;Sprite_Text_SMSMessage_Ani_SMS_001&quot;,&quot;Sprite_Text_SMSMessage_Ani_SMS_002&quot;,&quot;Sprite_Text_SMSMessage_Ani_SMS_003&quot;,&quot;Sprite_Text_SMSMessage_Ani_SMS_004&quot;,&quot;Sprite_Text_SMSMessage_Ani_SMS_005&quot;,&quot;Sprite_Text_SMSMessage_Ani_SMS_006&quot;,&quot;Sprite_Text_SMSMessage_Ani_SMS_007&quot;,&quot;Sprite_Text_SMSMessage_Ani_SMS_008&quot;,&quot;Sprite_Text_SMSMessage_Ani_SMS_009&quot;,&quot;Sprite_Text_SMSMessage_Ani_SMS_010&quot;,&quot;Sprite_Text_SMSMessage_Ani_SMS_011&quot;)</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action behavior="Flash" id="0" name="Flash" sid="538137345107" type="Sprite_Text_SMSMessage">
+                            <param id="0" name="&apos;On&apos; time">0.1</param>
+                            <param id="1" name="&apos;Off&apos; time">0.1</param>
+                            <param id="2" name="Duration">0.3</param>
+                        </action>
+                        <action id="0" name="Play" sid="5427574740105486" type="Audio">
+                            <param id="0" name="Audio file">SFX_OldComputer_Bip_ButtonPress_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-15</param>
+                            <param id="1" name="Tag (optional)">&quot;bt&quot;</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="8258132301034545" type="System">
+                            <param id="0" name="Variable">MessageNumber</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="8871884260894122">
+            <conditions>
+                <condition id="5" name="On any finished" sid="2722207898191872" type="Sprite_Text_SMSMessage" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="7458948643188268" type="Sprite_Text_SMSMessage">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5022317722573377">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="6552873498363539" type="Sprite_PlayerCar_002">
+                    <param id="0" name="Object">Sprite_Trigger_Level_004_Go_Level_005</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="9155229237926158" type="System">
+                    <param id="0" name="Layout">Level_005</param>
+                </action>
+                <action id="-9" name="Set value" sid="4237412640100705" type="System">
+                    <param id="0" name="Variable">LevelLayout</param>
+                    <param id="1" name="Value">5</param>
+                </action>
+                <action id="6" name="Stop" sid="9868618588869035" type="Audio">
+                    <param id="0" name="Tag">&quot;amb4&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4194935860098801">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="273249006268567" type="Keyboard">
+                    <param id="0" name="Key">27</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="4177157967470441" type="Audio" />
+                <action id="-21" name="Reset global variables" sid="3616824876902128" type="System" />
+                <action id="-2" name="Go to layout" sid="5941381996755769" type="System">
+                    <param id="0" name="Layout">MainMenu</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
