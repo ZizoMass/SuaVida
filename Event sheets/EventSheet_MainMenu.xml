@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
-    <name>EventSheet_001</name>
+    <name>EventSheet_MainMenu</name>
     <events>
-        <variable comment="Definy the layout according to the Level number" constant="0" name="LevelLayout" sid="4526098781896856" static="0" type="number">23</variable>
+        <variable comment="Definy the layout according to the Level number" constant="0" name="LevelLayout" sid="4526098781896856" static="0" type="number">24</variable>
         <variable constant="0" name="AlarmOff" sid="1973978356182805" static="0" type="number">0</variable>
         <variable constant="0" name="SpacePress" sid="5051248682840914" static="0" type="number">0</variable>
         <variable constant="0" name="Alarm" sid="5772218289386508" static="0" type="number">0</variable>

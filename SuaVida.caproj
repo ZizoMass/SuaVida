@@ -17001,7 +17001,7 @@
         <layout>Credits.xml</layout>
     </layout-folder>
     <event-folder>
-        <event-sheet>EventSheet_001.xml</event-sheet>
+        <event-sheet>EventSheet_MainMenu.xml</event-sheet>
         <event-sheet>EventSheet_003.xml</event-sheet>
         <event-sheet>EventSheet_002.xml</event-sheet>
         <event-sheet>EventSheet_004.xml</event-sheet>
@@ -17017,7 +17017,7 @@
         <event-sheet>EventSheet_014.xml</event-sheet>
         <event-sheet>EventSheet_015.xml</event-sheet>
         <event-sheet>EventSheet_016.xml</event-sheet>
-        <event-sheet>EventSheet_017.xml</event-sheet>
+        <event-sheet>EventSheet_Credits.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="10" />

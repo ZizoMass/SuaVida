@@ -15,13 +15,15 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="4">Level_022</layout>
         <layout order="6">Level_023</layout>
         <layout order="10">Level_024</layout>
-        <layout active="1" order="11">Level_025</layout>
+        <layout order="11">Level_025</layout>
+        <layout order="12">Credits</layout>
         <event-sheet order="1">EventSheet_002</event-sheet>
         <event-sheet order="3">EventSheet_014</event-sheet>
-        <event-sheet order="5">EventSheet_015</event-sheet>
+        <event-sheet active="1" order="5">EventSheet_015</event-sheet>
         <event-sheet order="7">EventSheet_016</event-sheet>
         <event-sheet order="8">EventSheet_Delete</event-sheet>
-        <event-sheet order="9">EventSheet_001</event-sheet>
+        <event-sheet order="9">EventSheet_MainMenu</event-sheet>
+        <event-sheet order="13">EventSheet_Credits</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -46,8 +48,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="file-folder/Animations/" />
         <folder expanded="0" path="sound-folder/BG/" />
         <folder expanded="0" path="sound-folder/FLY/" />
-        <folder expanded="0" path="sound-folder/FOL/" />
-        <folder expanded="1" path="sound-folder/SFX/" />
+        <folder expanded="1" path="sound-folder/FOL/" />
+        <folder expanded="0" path="sound-folder/SFX/" />
         <folder expanded="1" path="animation-folder/Sprite_Logo/" />
         <folder expanded="1" path="animation-folder/Sprite_Text_MainMenuOptions/" />
         <folder expanded="1" path="animation-folder/Sprite_BG_PlayerHome/" />

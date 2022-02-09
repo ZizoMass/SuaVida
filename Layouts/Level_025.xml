@@ -2,7 +2,7 @@
 <c2layout>
     <name>Level_025</name>
     <sid>7266953148424831</sid>
-    <event-sheet>EventSheet_016</event-sheet>
+    <event-sheet>EventSheet_015</event-sheet>
     <size>
         <width>1280</width>
         <height>720</height>
@@ -437,55 +437,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>606</x>
-                        <y>326.5</y>
+                        <x>2882</x>
+                        <y>1152</y>
                         <z>0</z>
                         <width>1666</width>
                         <height>1062</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Sprite_Trigger_ShowEndText_005" uid="200">
-                    <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>213.117324829</x>
-                        <y>409.089538574</y>
-                        <z>0</z>
-                        <width>92.234649658</width>
-                        <height>239.820953369</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Sprite_Trigger_ShowEndText_006" uid="254">
-                    <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>817</x>
-                        <y>402</y>
-                        <z>0</z>
-                        <width>250</width>
-                        <height>250</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
