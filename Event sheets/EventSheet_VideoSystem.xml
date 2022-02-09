@@ -3,55 +3,207 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>EventSheet_VideoSystem</name>
     <events>
-        <event-block sid="7898779118989492">
+        <event-block sid="637774859097019">
             <conditions>
-                <condition id="-2" name="On start of layout" sid="9465547214689303" type="System" />
-            </conditions>
-            <actions>
-                <action id="6" name="Play" sid="8055977538006483" type="Video_Ani_ElevatorsGoingUp" />
-                <action id="0" name="Play" sid="4769817120319857" type="Audio">
-                    <param id="0" name="Audio file">BG_Elevator_001</param>
-                    <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;elev&quot;</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="3881072136681489">
-            <conditions>
-                <condition id="2" name="Has ended" sid="1293644972375272" type="Video_Ani_ElevatorsGoingUp" />
-            </conditions>
-            <actions>
-                <action id="-2" name="Go to layout" sid="7302086904105869" type="System">
-                    <param id="0" name="Layout">Level_008</param>
-                </action>
-                <action id="-9" name="Set value" sid="1265165049682088" type="System">
-                    <param id="0" name="Variable">SpanwX</param>
-                    <param id="1" name="Value">-68.908</param>
-                </action>
-                <action id="-9" name="Set value" sid="9875151508516101" type="System">
-                    <param id="0" name="Variable">SpanwY</param>
-                    <param id="1" name="Value">528.635</param>
-                </action>
-                <action behavior="ScrollTo" id="1" name="Set enabled" sid="1186543374021837" type="Sprite_MainCharacter_001">
-                    <param id="0" name="State">1</param>
-                </action>
-                <action id="-9" name="Set value" sid="2857129136907014" type="System">
+                <condition id="-14" name="Compare variable" sid="205381475876759" type="System">
                     <param id="0" name="Variable">LevelLayout</param>
-                    <param id="1" name="Value">8</param>
-                </action>
-            </actions>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">7</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="695931168570798">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="231039517119672" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="6" name="Play" sid="838868207008503" type="Video_Ani_ElevatorsGoingUp" />
+                        <action id="0" name="Play" sid="957701965761068" type="Audio">
+                            <param id="0" name="Audio file">BG_Elevator_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;elev&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3881072136681489">
+                    <conditions>
+                        <condition id="2" name="Has ended" sid="1293644972375272" type="Video_Ani_ElevatorsGoingUp" />
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="7302086904105869" type="System">
+                            <param id="0" name="Layout">Level_008</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="1265165049682088" type="System">
+                            <param id="0" name="Variable">SpanwX</param>
+                            <param id="1" name="Value">-68.908</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="9875151508516101" type="System">
+                            <param id="0" name="Variable">SpanwY</param>
+                            <param id="1" name="Value">528.635</param>
+                        </action>
+                        <action behavior="ScrollTo" id="1" name="Set enabled" sid="1186543374021837" type="Sprite_MainCharacter_001">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="2857129136907014" type="System">
+                            <param id="0" name="Variable">LevelLayout</param>
+                            <param id="1" name="Value">8</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
-        <event-block sid="2117434135385148">
+        <event-block sid="118094237332695">
             <conditions>
-                <condition id="0" name="On key pressed" sid="8278420001350834" type="Keyboard">
+                <condition id="-14" name="Compare variable" sid="262153071212004" type="System">
+                    <param id="0" name="Variable">LevelLayout</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">11</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="7898779118989492">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="9465547214689303" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="808645325674886" type="Audio" />
+                    </actions>
+                </event-block>
+                <event-block sid="537101757704223">
+                    <conditions>
+                        <condition id="2" name="Has ended" sid="513600141455886" type="Video_Ani_WorkingTimeLapse" />
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="267570957264085" type="System">
+                            <param id="0" name="Layout">Level_012</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="297872024929678" type="System">
+                            <param id="0" name="Variable">LevelLayout</param>
+                            <param id="1" name="Value">12</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="596857767535789">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="679337825655556" type="System">
+                    <param id="0" name="Variable">LevelLayout</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">15</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="372627155120631">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="565828547665966" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="6" name="Play" sid="866401592633958" type="Video_Ani_ElevatorGoingDown" />
+                    </actions>
+                </event-block>
+                <event-block sid="967332444845469">
+                    <conditions>
+                        <condition id="2" name="Has ended" sid="282794354564212" type="Video_Ani_ElevatorGoingDown" />
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="584230355593136" type="System">
+                            <param id="0" name="Layout">Level_016</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="400016599989115" type="System">
+                            <param id="0" name="Variable">SpanwX</param>
+                            <param id="1" name="Value">1258</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="649172461585619" type="System">
+                            <param id="0" name="Variable">SpanwY</param>
+                            <param id="1" name="Value"> 514</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="238366958328872" type="System">
+                            <param id="0" name="Variable">LevelLayout</param>
+                            <param id="1" name="Value">16</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="479507313450076">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="414454628958426" type="System">
+                    <param id="0" name="Variable">LevelLayout</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">18</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="739817248621547">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="714422619489482" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-28" name="Set canvas size" sid="547813541818275" type="System">
+                            <param id="0" name="Width">1280</param>
+                            <param id="1" name="Height">720</param>
+                        </action>
+                        <action id="6" name="Play" sid="291184501937248" type="Video_Ani_StuckInTraffic" />
+                        <action id="4" name="Set volume" sid="845246799817623" type="Video_Ani_StuckInTraffic">
+                            <param id="0" name="Volume">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="289916261553668">
+                    <conditions>
+                        <condition id="2" name="Has ended" sid="644248984203355" type="Video_Ani_StuckInTraffic" />
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="108324691799528" type="System">
+                            <param id="0" name="Layout">Level_019</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="699280013243630" type="System">
+                            <param id="0" name="Variable">SpanwX</param>
+                            <param id="1" name="Value">1042</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="723403848279564" type="System">
+                            <param id="0" name="Variable">SpanwY</param>
+                            <param id="1" name="Value">501</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="972702214345205" type="System">
+                            <param id="0" name="Variable">LevelLayout</param>
+                            <param id="1" name="Value">19</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="170472964799418">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="961769931535106" type="Keyboard">
+                            <param id="0" name="Key">32</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="784353552875905" type="Audio">
+                            <param id="0" name="Audio file">SFX_CarHorn_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-12</param>
+                            <param id="1" name="Tag (optional)">&quot;buz&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="462462169411522">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="905318845576817" type="Keyboard">
                     <param id="0" name="Key">27</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="33" name="Stop all" sid="7456165114403763" type="Audio" />
-                <action id="-21" name="Reset global variables" sid="573414605886112" type="System" />
-                <action id="-2" name="Go to layout" sid="5072039477203222" type="System">
+                <action id="33" name="Stop all" sid="248184457652380" type="Audio" />
+                <action id="-21" name="Reset global variables" sid="875856822682231" type="System" />
+                <action id="-2" name="Go to layout" sid="931304994405119" type="System">
                     <param id="0" name="Layout">MainMenu</param>
                 </action>
             </actions>

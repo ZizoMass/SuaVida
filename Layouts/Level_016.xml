@@ -54,7 +54,7 @@
                 <instance type="Sprite_Elevator_GroundFloor" uid="255">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>descendo</initial-animation>
+                        <initial-animation>Sprite_Elevator_GroundFloor_Ani_GoingDown_001</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -204,7 +204,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>1261</x>
-                        <y>518</y>
+                        <y>524</y>
                         <z>0</z>
                         <width>42</width>
                         <height>126</height>
@@ -298,10 +298,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-86</x>
+                        <x>-99</x>
                         <y>415</y>
                         <z>0</z>
-                        <width>158</width>
+                        <width>132</width>
                         <height>250</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>

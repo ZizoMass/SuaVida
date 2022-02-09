@@ -1,0 +1,475 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>EventSheet_Delete3</name>
+    <events>
+        <variable constant="0" name="CarGoingBack" sid="9710458083711126" static="0" type="number">0</variable>
+        <event-block sid="616246836275064">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="3779192151976938" type="System" />
+                <condition id="-14" name="Compare variable" sid="8975352024574726" type="System">
+                    <param id="0" name="Variable">LevelLayout</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">19</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="4770166427087666" type="Audio">
+                    <param id="0" name="Audio file">BG_ScaryWind_001</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">10</param>
+                    <param id="1" name="Tag (optional)">&quot;amb19&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="7494803503138932" type="Audio">
+                    <param id="0" name="Audio file">SFX_CarEgineNeutral_002</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">10</param>
+                    <param id="1" name="Tag (optional)">&quot;mtr&quot;</param>
+                </action>
+                <action id="-28" name="Set canvas size" sid="240929487631466" type="System">
+                    <param id="0" name="Width">970</param>
+                    <param id="1" name="Height">720</param>
+                </action>
+                <action id="-9" name="Set value" sid="123026149272300" type="System">
+                    <param id="0" name="Variable">SpanwX</param>
+                    <param id="1" name="Value">1042</param>
+                </action>
+                <action id="-9" name="Set value" sid="385454340808778" type="System">
+                    <param id="0" name="Variable">SpanwY</param>
+                    <param id="1" name="Value">501</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6420178671312362">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="9320793831548539" type="System">
+                    <param id="0" name="Variable">PlayerMirrored</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="5390265940422355" type="Sprite_MainCharacter_001">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7318951007808943">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="2963672183467608" type="System">
+                    <param id="0" name="Variable">PlayerMirrored</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="3679967510843668" type="Sprite_MainCharacter_001">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9140968943539259">
+            <conditions>
+                <condition behavior="Platform" id="0" name="Is moving" sid="1137724260279449" type="Sprite_PlayerCar_005" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="252334484015317" type="Sprite_PlayerCar_004">
+                    <param id="0" name="Animation">&quot;Sprite_PlayerCar_005_Ani_Moving_001&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1535243833058718">
+            <conditions>
+                <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="62689538580125" type="Sprite_PlayerCar_005" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="7464339100603108" type="Sprite_PlayerCar_004">
+                    <param id="0" name="Animation">&quot;Sprite_PlayerCar_005_Ani_MotorOn_001&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="957484877192077">
+            <conditions>
+                <condition behavior="8Direction" id="0" name="Is moving" sid="7290987345507112" type="Sprite_MainCharacter_001" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="9060136345174991" type="Sprite_MainCharacter_001">
+                    <param id="0" name="Animation">&quot;Sprite_MainCharacter_001_Ani_Walk_001&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1079586889347153">
+            <conditions>
+                <condition behavior="8Direction" id="0" inverted="1" name="Is moving" sid="4559086286305358" type="Sprite_MainCharacter_001" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="8365094311445854" type="Sprite_MainCharacter_001">
+                    <param id="0" name="Animation">&quot;Sprite_MainCharacter_001_Ani_Idle_001&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7918525432921108">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="4703369044185687" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="668736103358206" type="Sprite_MainCharacter_001">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="5441262141626973" type="System">
+                    <param id="0" name="Variable">PlayerMirrored</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1072554240434398">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="8926400170643818" type="Keyboard">
+                    <param id="0" name="Key">39</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="5585850988632063" type="Sprite_MainCharacter_001">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="5347431217916213" type="System">
+                    <param id="0" name="Variable">PlayerMirrored</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="128241395355345">
+            <conditions>
+                <condition id="2" name="Is playing" sid="787895642354202" type="Sprite_MainCharacter_001">
+                    <param id="0" name="Animation">&quot;Sprite_MainCharacter_001_Ani_Walk_001&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="251908641786969">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="481746084565856" type="Sprite_MainCharacter_001">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">0</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="851181669030602">
+                            <conditions>
+                                <condition id="6" name="On frame changed" sid="898411167199365" type="Sprite_MainCharacter_001" />
+                                <condition id="5" inverted="1" name="Is tag playing" sid="816358081826120" type="Audio">
+                                    <param id="0" name="Tag">&quot;pd&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="7" name="Play (by name)" sid="325225886412840" type="Audio">
+                                    <param id="0" name="Folder">0</param>
+                                    <param id="1" name="Audio file name">choose(&quot;FLY_StepsOnASphaltFlor_001&quot;,&quot;FLY_StepsOnASphaltFlor_002&quot;,&quot;FLY_StepsOnASphaltFlor_003&quot;,&quot;FLY_StepsOnASphaltFlor_004&quot;,&quot;FLY_StepsOnASphaltFlor_005&quot;,&quot;FLY_StepsOnASphaltFlor_006&quot;,&quot;FLY_StepsOnASphaltFlor_007&quot;,&quot;FLY_StepsOnASphaltFlor_008&quot;,&quot;FLY_StepsOnASphaltFlor_009&quot;,&quot;FLY_StepsOnASphaltFlor_010&quot;)</param>
+                                    <param id="3" name="Loop">0</param>
+                                    <param id="4" name="Volume">-20</param>
+                                    <param id="2" name="Tag (optional)">&quot;pd&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="333059500879836">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="776822733739847" type="Sprite_MainCharacter_001">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">5</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="409391120907502">
+                            <conditions>
+                                <condition id="6" name="On frame changed" sid="251088667298079" type="Sprite_MainCharacter_001" />
+                                <condition id="5" inverted="1" name="Is tag playing" sid="642658292338207" type="Audio">
+                                    <param id="0" name="Tag">&quot;pe&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="7" name="Play (by name)" sid="452264530020509" type="Audio">
+                                    <param id="0" name="Folder">0</param>
+                                    <param id="1" name="Audio file name">choose(&quot;FLY_StepsOnASphaltFlor_001&quot;,&quot;FLY_StepsOnASphaltFlor_002&quot;,&quot;FLY_StepsOnASphaltFlor_003&quot;,&quot;FLY_StepsOnASphaltFlor_004&quot;,&quot;FLY_StepsOnASphaltFlor_005&quot;,&quot;FLY_StepsOnASphaltFlor_006&quot;,&quot;FLY_StepsOnASphaltFlor_007&quot;,&quot;FLY_StepsOnASphaltFlor_008&quot;,&quot;FLY_StepsOnASphaltFlor_009&quot;,&quot;FLY_StepsOnASphaltFlor_010&quot;)</param>
+                                    <param id="3" name="Loop">0</param>
+                                    <param id="4" name="Volume">-24</param>
+                                    <param id="2" name="Tag (optional)">&quot;pe&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="7661282698343517">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="3079493871742574" type="Sprite_PlayerCar_005">
+                    <param id="0" name="Object">Sprite_Trigger_GetInCar</param>
+                </condition>
+                <condition id="2" name="Is playing" sid="8723570409081207" type="Sprite_PlayerCar_005">
+                    <param id="0" name="Animation">&quot;Sprite_PlayerCar_005_Ani_MotorOn_001&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="5494273298600613" type="System">
+                    <param id="0" name="Variable">CarGoingBack</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="9450557724316524">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="1668173629690295" type="Keyboard">
+                            <param id="0" name="Key">32</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="0" name="Set ignoring input" sid="4109963713591807" type="Sprite_PlayerCar_005">
+                            <param id="0" name="Input">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="8248119783818498" type="Sprite_PlayerCar_005">
+                            <param id="0" name="Animation">&quot;Sprite_PlayerCar_005_Ani_MotorOff_001&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="3601482416402523" type="Audio">
+                            <param id="0" name="Audio file">SFX_CarEgineShotDown_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;desl&quot;</param>
+                        </action>
+                        <action id="6" name="Stop" sid="6751011316563912" type="Audio">
+                            <param id="0" name="Tag">&quot;mtr&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="9820430236785139" type="System">
+                            <param id="0" name="Variable">CarGoingBack</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="6" name="Stop" sid="1586514843036879" type="Audio">
+                            <param id="0" name="Tag">&quot;acl&quot;</param>
+                        </action>
+                        <action id="6" name="Stop" sid="8400639681287889" type="Audio">
+                            <param id="0" name="Tag">&quot;acl1&quot;</param>
+                        </action>
+                        <action id="6" name="Stop" sid="4221975872174032" type="Audio">
+                            <param id="0" name="Tag">&quot;acl2&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="114945337248734">
+            <conditions>
+                <condition id="2" name="Is playing" sid="6775216946503399" type="Sprite_PlayerCar_005">
+                    <param id="0" name="Animation">&quot;Sprite_PlayerCar_005_Ani_MotorOff_001&quot;</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="8932597466672401" type="Sprite_PlayerCar_005">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">1</param>
+                </condition>
+                <condition id="5" inverted="1" name="Is tag playing" sid="8082664499542037" type="Audio">
+                    <param id="0" name="Tag">&quot;desl&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="2552558484727814" type="System">
+                    <param id="0" name="Variable">CarGoingBack</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="6148567407301933">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="5227047961905184" type="Keyboard">
+                            <param id="0" name="Key">32</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="8" name="Set enabled" sid="9459297367854099" type="Sprite_MainCharacter_001">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="-4" name="Set position to another object" sid="8763554120236285" type="Sprite_MainCharacter_001">
+                            <param id="0" name="Object">Sprite_PlayerCar_005</param>
+                            <param id="1" name="Image point (optional)">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="5975951831348743" type="Sprite_PlayerCar_005">
+                            <param id="0" name="Animation">&quot;Sprite_PlayerCar_005_Ani_Idle_001&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action behavior="Solid" id="0" name="Set enabled" sid="3696704278364994" type="Sprite_CollisionContainer_CarFloorLimiter_001">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="Solid" id="0" name="Set enabled" sid="1791648119875884" type="Sprite_CollisionContainer_PlayerCharacterLimiter_001">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action behavior="Platform" id="11" name="Set enabled" sid="7340174373735722" type="Sprite_PlayerCar_005">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="0" name="Play" sid="6096255566538505" type="Audio">
+                            <param id="0" name="Audio file">SFX_CarDoorClose_003</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;port&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="1892679632236753" type="System">
+                            <param id="0" name="Variable">CarGoingBack</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="1234965745890683">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="1723183429835727" type="Sprite_MainCharacter_001">
+                    <param id="0" name="Object">Sprite_Trigger_Level_019_Go_Level_020</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="5283259859260999">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="8829509535172655" type="Keyboard">
+                            <param id="0" name="Key">32</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="9000736215836654" type="System">
+                            <param id="0" name="Layout">Level_020</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="2072810260609957" type="System">
+                            <param id="0" name="Variable">SpanwX</param>
+                            <param id="1" name="Value">939</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="1354207991722418" type="System">
+                            <param id="0" name="Variable">SpanwY</param>
+                            <param id="1" name="Value">485</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="120140968535676" type="System">
+                            <param id="0" name="Variable">LevelLayout</param>
+                            <param id="1" name="Value">20</param>
+                        </action>
+                        <action id="0" name="Play" sid="4090514609979035" type="Audio">
+                            <param id="0" name="Audio file">SFX_CarDoorClose_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;porta&quot;</param>
+                        </action>
+                        <action id="6" name="Stop" sid="3032805406660938" type="Audio">
+                            <param id="0" name="Tag">&quot;amb19&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="5836231781235242">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="9728998782907336" type="Keyboard">
+                    <param id="0" name="Key">32</param>
+                </condition>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="703187093043034" type="Sprite_PlayerCar_005">
+                    <param id="0" name="Object">Sprite_Trigger_GetInCar</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="5026261315834359" type="Audio">
+                    <param id="0" name="Audio file">SFX_CarHorn_001</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-15</param>
+                    <param id="1" name="Tag (optional)">&quot;buz&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4953236852406435">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="787418438524434" type="System">
+                    <param id="0" name="Variable">CarGoingBack</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="4611620119272503">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="9113197182900802" type="Keyboard">
+                            <param id="0" name="Key">37</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="743476469433955" type="Audio">
+                            <param id="0" name="Audio file">SFX_CarAcceleration_002</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-19</param>
+                            <param id="1" name="Tag (optional)">&quot;acl&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7216999310649778">
+                    <conditions>
+                        <condition id="0" name="On ended" sid="3489405371369889" type="Audio">
+                            <param id="0" name="Tag">&quot;acl&quot;</param>
+                        </condition>
+                        <condition id="2" name="Key is down" sid="5030128391322575" type="Keyboard">
+                            <param id="0" name="Key">37</param>
+                        </condition>
+                        <condition id="5" inverted="1" name="Is tag playing" sid="6208877151579999" type="Audio">
+                            <param id="0" name="Tag">&quot;acl&quot;</param>
+                        </condition>
+                        <condition id="5" inverted="1" name="Is tag playing" sid="6825923536010465" type="Audio">
+                            <param id="0" name="Tag">&quot;acl2&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="8775524967217864" type="Audio">
+                            <param id="0" name="Audio file">SFX_CarAcceleration_003</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">-19</param>
+                            <param id="1" name="Tag (optional)">&quot;acl1&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9633464101609675">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="2364428079328592" type="Keyboard">
+                            <param id="0" name="Key">37</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="6655280912103617" type="Audio">
+                            <param id="0" name="Audio file">SFX_CarAcceleration_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-19</param>
+                            <param id="1" name="Tag (optional)">&quot;acl2&quot;</param>
+                        </action>
+                        <action id="6" name="Stop" sid="478496852023094" type="Audio">
+                            <param id="0" name="Tag">&quot;acl1&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2252435400482575">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="6825021906565901" type="Keyboard">
+                            <param id="0" name="Key">27</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="7658744019791263" type="Audio" />
+                        <action id="-21" name="Reset global variables" sid="3494136741387826" type="System" />
+                        <action id="-2" name="Go to layout" sid="6984127986658192" type="System">
+                            <param id="0" name="Layout">MainMenu</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

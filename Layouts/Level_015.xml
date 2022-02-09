@@ -2,7 +2,7 @@
 <c2layout>
     <name>Level_015</name>
     <sid>4324066801437302</sid>
-    <event-sheet>EventSheet_010</event-sheet>
+    <event-sheet>EventSheet_VideoSystem</event-sheet>
     <size>
         <width>1280</width>
         <height>720</height>

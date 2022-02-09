@@ -17,23 +17,37 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="21">Level_015</layout>
         <layout order="22">Level_018</layout>
         <layout order="23">Level_017</layout>
-        <event-sheet order="1">EventSheet_015</event-sheet>
-        <event-sheet order="2">EventSheet_MainMenu</event-sheet>
+        <layout order="24">MainMenu</layout>
+        <layout order="25">Level_002</layout>
+        <layout order="26">Level_003</layout>
+        <layout order="27">Level_019</layout>
+        <layout order="28">Level_001</layout>
+        <layout order="29">Level_006</layout>
+        <layout order="30">Level_007</layout>
+        <layout order="31">Level_008</layout>
+        <layout order="32">Level_009</layout>
+        <layout order="33">Level_010</layout>
+        <layout order="34">Level_011</layout>
+        <layout order="35">Level_013</layout>
+        <layout order="36">Level_016</layout>
+        <layout order="37">Level_021</layout>
+        <event-sheet active="1" order="1">EventSheet_MainCharacter_002_System</event-sheet>
+        <event-sheet order="2">EventSheet_GameLauncher</event-sheet>
         <event-sheet order="4">EventSheet_Delete2</event-sheet>
         <event-sheet order="5">EventSheet_Credits</event-sheet>
         <event-sheet order="6">EventSheet_MainCharacter_001_System</event-sheet>
-        <event-sheet order="7">EventSheet_CarSystem</event-sheet>
+        <event-sheet order="7">EventSheet_CarStartSystem</event-sheet>
         <event-sheet order="8">EventSheet_CityTrafficSystem</event-sheet>
-        <event-sheet active="1" order="9">EventSheet_005</event-sheet>
+        <event-sheet order="9">EventSheet_CarParkingSystem</event-sheet>
         <event-sheet order="10">EventSheet_VideoSystem</event-sheet>
-        <event-sheet order="11">EventSheet_008</event-sheet>
-        <event-sheet order="12">EventSheet_010</event-sheet>
-        <event-sheet order="13">EventSheet_011</event-sheet>
-        <event-sheet order="14">EventSheet_012</event-sheet>
-        <event-sheet order="15">EventSheet_013</event-sheet>
-        <event-sheet order="16">EventSheet_014</event-sheet>
+        <event-sheet order="11">EventSheet_Delete4</event-sheet>
+        <event-sheet order="12">EventSheet_Delete5</event-sheet>
+        <event-sheet order="13">EventSheet_Delete7</event-sheet>
+        <event-sheet order="14">EventSheet_Delete6</event-sheet>
+        <event-sheet order="15">EventSheet_Delete3</event-sheet>
+        <event-sheet order="16">EventSheet_Delete8</event-sheet>
         <event-sheet order="17">EventSheet_Delete</event-sheet>
-        <event-sheet order="18">EventSheet_OldComputerScript</event-sheet>
+        <event-sheet order="18">EventSheet_OldComputerSystem</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -45,7 +59,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <family expanded="1" name="FamalyInstanceVariables" />
     </families-expanded>
     <folders-expanded>
-        <folder expanded="1" path="object-folder/" />
+        <folder expanded="0" path="object-folder/" />
         <folder expanded="1" path="object-folder/Sprite/" />
         <folder expanded="0" path="object-folder/Video/" />
         <folder expanded="0" path="object-folder/Tiled Background/" />
@@ -58,8 +72,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="file-folder/Animations/" />
         <folder expanded="0" path="sound-folder/BG/" />
         <folder expanded="0" path="sound-folder/FLY/" />
-        <folder expanded="1" path="sound-folder/FOL/" />
-        <folder expanded="0" path="sound-folder/SFX/" />
+        <folder expanded="0" path="sound-folder/FOL/" />
+        <folder expanded="1" path="sound-folder/SFX/" />
         <folder expanded="1" path="animation-folder/Sprite_Logo/" />
         <folder expanded="1" path="animation-folder/Sprite_Text_MainMenuOptions/" />
         <folder expanded="1" path="animation-folder/Sprite_BG_PlayerHome/" />

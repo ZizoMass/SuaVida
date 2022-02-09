@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>EventSheet_Delete8</name>
+    <events>
+        <event-block sid="7157025055309275">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="7541161714109885" type="System" />
+                <condition id="-14" name="Compare variable" sid="3942532665761116" type="System">
+                    <param id="0" name="Variable">LevelLayout</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">21</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="9877020675671974" type="Audio">
+                    <param id="0" name="Audio file">BG_HeavyWind_001</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">-15</param>
+                    <param id="1" name="Tag (optional)">&quot;vento&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="6090951578019605" type="Audio">
+                    <param id="0" name="Audio file">BG_ThunderStorm_001</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-15</param>
+                    <param id="1" name="Tag (optional)">&quot;vento&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5230678702491713">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="2770933604021395" type="System">
+                    <param id="0" name="Variable">PlayerMirrored</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="5660165219799115" type="Sprite_MainCharacter_002">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7915148662567931">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="4999441455111571" type="System">
+                    <param id="0" name="Variable">PlayerMirrored</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="4943141838240013" type="Sprite_MainCharacter_002">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5069968157110358">
+            <conditions>
+                <condition behavior="Platform" id="0" name="Is moving" sid="5355664527567152" type="Sprite_MainCharacter_002" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="5145262720008009" type="Sprite_MainCharacter_002">
+                    <param id="0" name="Animation">&quot;Sprite_MainCharacter_002_Ani_Walk_001&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5742369069259067">
+            <conditions>
+                <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="4477165005426319" type="Sprite_MainCharacter_002" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="4823907140132924" type="Sprite_MainCharacter_002">
+                    <param id="0" name="Animation">&quot;Sprite_MainCharacter_002_Ani_Idle_001&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2016686115559455">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="5330143604928587" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="9995867982599812" type="Sprite_MainCharacter_002">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="8422796853146111" type="System">
+                    <param id="0" name="Variable">PlayerMirrored</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2190803275047553">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="6781138473018736" type="Keyboard">
+                    <param id="0" name="Key">39</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="1261927315481409" type="Sprite_MainCharacter_002">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="7833926193943279" type="System">
+                    <param id="0" name="Variable">PlayerMirrored</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9022670221774751">
+            <conditions>
+                <condition behavior="Platform" id="10" name="Is by wall" sid="4564811993454554" type="Sprite_MainCharacter_002">
+                    <param id="0" name="Side">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="8279436523440018" type="Sprite_MainCharacter_002">
+                    <param id="0" name="Animation">&quot;Sprite_MainCharacter_002_Ani_Idle_001&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="523050010394668">
+            <conditions>
+                <condition behavior="Platform" id="10" name="Is by wall" sid="6512527621936471" type="Sprite_MainCharacter_002">
+                    <param id="0" name="Side">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="182150882230865" type="Sprite_MainCharacter_002">
+                    <param id="0" name="Animation">&quot;Sprite_MainCharacter_002_Ani_Idle_001&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1567778806085689">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="2338781330604041" type="Sprite_MainCharacter_002">
+                    <param id="0" name="Object">Sprite_Trigger_LightningStart_001</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="5002915672270314" type="Sprite_Lightning_001">
+                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_001&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="9227406425655732" type="Sprite_Lightning_001">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="8405486805738495" type="Sprite_RainEffect_001">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Play" sid="8771944660294609" type="Audio">
+                    <param id="0" name="Audio file">BG_CalmRain_001</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">-18</param>
+                    <param id="1" name="Tag (optional)">&quot;chuva&quot;</param>
+                </action>
+                <action id="-9" name="Destroy" sid="2092830429412953" type="Sprite_Trigger_LightningStart_001" />
+            </actions>
+            <sub-events>
+                <event-block sid="4648970221229676">
+                    <conditions>
+                        <condition id="2" name="Is playing" sid="2413516211790579" type="Sprite_Lightning_001">
+                            <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_001&quot;</param>
+                        </condition>
+                        <condition id="5" inverted="1" name="Is tag playing" sid="4283955501550647" type="Audio">
+                            <param id="0" name="Tag">&quot;tro&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Play (by name)" sid="1231100926543989" type="Audio">
+                            <param id="0" name="Folder">0</param>
+                            <param id="1" name="Audio file name">choose(&quot;SFX_Thunder_007&quot;,&quot;SFX_Thunder_008&quot;,&quot;SFX_Thunder_009&quot;,&quot;SFX_Thunder_010&quot;,&quot;SFX_Thunder_011&quot;)</param>
+                            <param id="3" name="Loop">0</param>
+                            <param id="4" name="Volume">0</param>
+                            <param id="2" name="Tag (optional)">&quot;tro&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="6427727953465348">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="5858223482031359" type="Sprite_MainCharacter_002">
+                    <param id="0" name="Object">Sprite_Trigger_Level_021_Go_Level_022</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="9399500572475695" type="System">
+                    <param id="0" name="Layout">Level_022</param>
+                </action>
+                <action id="-9" name="Set value" sid="5959165732414124" type="System">
+                    <param id="0" name="Variable">LevelLayout</param>
+                    <param id="1" name="Value">22</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9389627952495441">
+            <conditions>
+                <condition id="2" name="Is playing" sid="6500311859760195" type="Sprite_Lightning_001">
+                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Transition_001&quot;</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="2035249880916433" type="Sprite_Lightning_001">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Play (by name)" sid="9992003465534178" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">choose(&quot;SFX_Thunder_007&quot;,&quot;SFX_Thunder_008&quot;,&quot;SFX_Thunder_009&quot;,&quot;SFX_Thunder_010&quot;,&quot;SFX_Thunder_011&quot;)</param>
+                    <param id="3" name="Loop">0</param>
+                    <param id="4" name="Volume">0</param>
+                    <param id="2" name="Tag (optional)">&quot;tro&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3945577962714147">
+            <conditions>
+                <condition id="2" name="Is playing" sid="5478986600923228" type="Sprite_Lightning_001">
+                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_002&quot;</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="7136596172047274" type="Sprite_Lightning_001">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Play (by name)" sid="7349970384822153" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">choose(&quot;SFX_Thunder_007&quot;,&quot;SFX_Thunder_008&quot;,&quot;SFX_Thunder_009&quot;,&quot;SFX_Thunder_010&quot;,&quot;SFX_Thunder_011&quot;)</param>
+                    <param id="3" name="Loop">0</param>
+                    <param id="4" name="Volume">0</param>
+                    <param id="2" name="Tag (optional)">&quot;tro&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="938616155929204">
+            <conditions>
+                <condition id="2" name="Is playing" sid="1772094858959354" type="Sprite_Lightning_001">
+                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_001&quot;</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="1673285448809277" type="Sprite_Lightning_001">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Play (by name)" sid="2831638311614278" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">choose(&quot;SFX_Thunder_007&quot;,&quot;SFX_Thunder_008&quot;,&quot;SFX_Thunder_009&quot;,&quot;SFX_Thunder_010&quot;,&quot;SFX_Thunder_011&quot;)</param>
+                    <param id="3" name="Loop">0</param>
+                    <param id="4" name="Volume">0</param>
+                    <param id="2" name="Tag (optional)">&quot;tro&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3820284389670712">
+            <conditions>
+                <condition id="2" name="Is playing" sid="3427524662586801" type="Sprite_Lightning_001">
+                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_003&quot;</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="9431754149992293" type="Sprite_Lightning_001">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Play (by name)" sid="1584948518261487" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">choose(&quot;SFX_Thunder_007&quot;,&quot;SFX_Thunder_008&quot;,&quot;SFX_Thunder_009&quot;,&quot;SFX_Thunder_010&quot;,&quot;SFX_Thunder_011&quot;)</param>
+                    <param id="3" name="Loop">0</param>
+                    <param id="4" name="Volume">0</param>
+                    <param id="2" name="Tag (optional)">&quot;tro&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9348473052824299">
+            <conditions>
+                <condition id="2" name="Is playing" sid="1692947467491999" type="Sprite_Lightning_001">
+                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_004&quot;</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="955667683483385" type="Sprite_Lightning_001">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Play (by name)" sid="3181484325800784" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">choose(&quot;SFX_Thunder_007&quot;,&quot;SFX_Thunder_008&quot;,&quot;SFX_Thunder_009&quot;,&quot;SFX_Thunder_010&quot;,&quot;SFX_Thunder_011&quot;)</param>
+                    <param id="3" name="Loop">0</param>
+                    <param id="4" name="Volume">0</param>
+                    <param id="2" name="Tag (optional)">&quot;tro&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5225797904093965">
+            <conditions>
+                <condition id="2" name="Is playing" sid="9393844291060879" type="Sprite_Lightning_001">
+                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_005&quot;</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="1790955609844215" type="Sprite_Lightning_001">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Play (by name)" sid="5707472558559656" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">choose(&quot;SFX_Thunder_007&quot;,&quot;SFX_Thunder_008&quot;,&quot;SFX_Thunder_009&quot;,&quot;SFX_Thunder_010&quot;,&quot;SFX_Thunder_011&quot;)</param>
+                    <param id="3" name="Loop">0</param>
+                    <param id="4" name="Volume">0</param>
+                    <param id="2" name="Tag (optional)">&quot;tro&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6108300208147576">
+            <conditions>
+                <condition id="2" name="Is playing" sid="1753898304193339" type="Sprite_Lightning_001">
+                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Transition_002&quot;</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="2661010195486575" type="Sprite_Lightning_001">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Play (by name)" sid="3444568407483593" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">choose(&quot;SFX_Thunder_007&quot;,&quot;SFX_Thunder_008&quot;,&quot;SFX_Thunder_009&quot;,&quot;SFX_Thunder_010&quot;,&quot;SFX_Thunder_011&quot;)</param>
+                    <param id="3" name="Loop">0</param>
+                    <param id="4" name="Volume">0</param>
+                    <param id="2" name="Tag (optional)">&quot;tro&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9151747597601442">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="4903564799176639" type="Keyboard">
+                    <param id="0" name="Key">27</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="133069526371248" type="Audio" />
+                <action id="-21" name="Reset global variables" sid="2418709205219726" type="System" />
+                <action id="-2" name="Go to layout" sid="1078925944781928" type="System">
+                    <param id="0" name="Layout">MainMenu</param>
+                </action>
+                <action id="-28" name="Set canvas size" sid="909907838595617" type="System">
+                    <param id="0" name="Width">1280</param>
+                    <param id="1" name="Height">720</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

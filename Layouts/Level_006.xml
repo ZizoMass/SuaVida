@@ -29,6 +29,28 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
+                <instance type="Sprite_Trigger_Elevator_GroundFloor_Button" uid="133">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1255.771484375</x>
+                        <y>459.623168945</y>
+                        <z>0</z>
+                        <width>91</width>
+                        <height>232</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
                 <instance type="Sprite_BG_MegaCorpEntrance_Day" uid="130">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -47,50 +69,6 @@
                         <depth>0</depth>
                         <hotspotX>0.500281692</hotspotX>
                         <hotspotY>0.500857651</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Sprite_Elevator_GroundFloor" uid="132">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>1212.528686523</x>
-                        <y>428.250854492</y>
-                        <z>0</z>
-                        <width>81.866104126</width>
-                        <height>178.094680786</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Sprite_Trigger_Elevator_GroundFloor_Button" uid="133">
-                    <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>1253.535766602</x>
-                        <y>498.691955566</y>
-                        <z>0</z>
-                        <width>95.470962524</width>
-                        <height>153.996139526</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -170,7 +148,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1303</x>
+                        <x>1339</x>
                         <y>234</y>
                         <z>0</z>
                         <width>48</width>
@@ -199,15 +177,59 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1286.376831055</x>
-                        <y>395.324920654</y>
+                        <x>1232.178588867</x>
+                        <y>459.98260498</y>
                         <z>0</z>
-                        <width>270</width>
-                        <height>126</height>
+                        <width>20.608154297</width>
+                        <height>231.076934814</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
-                        <angle>-1.570796371</angle>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Sprite_Trigger_Level_006_Go_Level_007" uid="140">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1303.544311523</x>
+                        <y>468.725067139</y>
+                        <z>0</z>
+                        <width>76.605224609</width>
+                        <height>80.658599854</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Sprite_Elevator_GroundFloor" uid="132">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1212.528686523</x>
+                        <y>428.250854492</y>
+                        <z>0</z>
+                        <width>81.866104126</width>
+                        <height>178.094680786</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
@@ -277,64 +299,13 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>621.35949707</x>
-                        <y>360.629821777</y>
+                        <y>361.014587402</y>
                         <z>0</z>
                         <width>50.483261108</width>
-                        <height>421.536987305</height>
+                        <height>420.766143799</height>
                         <depth>0</depth>
                         <hotspotX>-12.044117928</hotspotX>
                         <hotspotY>0.500857651</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Sprite_Trigger_Level_006_Go_Level_007" uid="140">
-                    <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>1301.235107422</x>
-                        <y>468.725067139</y>
-                        <z>0</z>
-                        <width>81.223388672</width>
-                        <height>80.658599854</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Sprite_CollisionContainer_Elevator_GroundFloor_Closed" uid="141">
-                    <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Solid">
-                            <properties>
-                                <initial-state>Disabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>1194.82824707</x>
-                        <y>424.287750244</y>
-                        <z>0</z>
-                        <width>70.497924805</width>
-                        <height>240.969543457</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

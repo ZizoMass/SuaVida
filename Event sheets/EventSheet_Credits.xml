@@ -13,6 +13,10 @@
                     <param id="1" name="Type">0</param>
                     <param id="2" name="Tag">&quot;in&quot;</param>
                 </action>
+                <action id="-28" name="Set canvas size" sid="310398102338346" type="System">
+                    <param id="0" name="Width">1280</param>
+                    <param id="1" name="Height">720</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="1998296433168549">
@@ -120,6 +124,10 @@
                 <action id="-21" name="Reset global variables" sid="860110279030815" type="System" />
                 <action id="-2" name="Go to layout" sid="678271001549355" type="System">
                     <param id="0" name="Layout">MainMenu</param>
+                </action>
+                <action id="-28" name="Set canvas size" sid="800978645154841" type="System">
+                    <param id="0" name="Width">1280</param>
+                    <param id="1" name="Height">720</param>
                 </action>
             </actions>
         </event-block>

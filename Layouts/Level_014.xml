@@ -1599,7 +1599,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>386</x>
+                        <x>698</x>
                         <y>546</y>
                         <z>0</z>
                         <width>29</width>
@@ -1658,7 +1658,7 @@
                 <instance type="Sprite_NPC_Boss_002" uid="446">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>para</initial-animation>
+                        <initial-animation>Sprite_NPC_Boss_002_Ani_Idle_001</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -1702,7 +1702,7 @@
                 <instance type="Sprite_NPC_Boss_002_Mouth" uid="447">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>para</initial-animation>
+                        <initial-animation>Sprite_NPC_Boss_002_Mouth_Ani_Idle_001</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -1713,10 +1713,10 @@
                         <y>401</y>
                         <z>0</z>
                         <width>9</width>
-                        <height>4</height>
+                        <height>3</height>
                         <depth>0</depth>
                         <hotspotX>-0.333333343</hotspotX>
-                        <hotspotY>21.5</hotspotY>
+                        <hotspotY>28.333333969</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -1764,7 +1764,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1136</x>
+                        <x>565</x>
                         <y>523</y>
                         <z>0</z>
                         <width>78</width>
@@ -1779,7 +1779,7 @@
                 <instance type="Sprite_Text_Boss_PlayerFired" uid="448">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>nada</initial-animation>
+                        <initial-animation>Sprite_Text_Boss_PlayerFired_Ani_Idle_001</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -1789,11 +1789,11 @@
                         <x>683.46685791</x>
                         <y>586.877807617</y>
                         <z>0</z>
-                        <width>243</width>
-                        <height>22</height>
+                        <width>250</width>
+                        <height>250</height>
                         <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0.545454562</hotspotY>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
