@@ -93,59 +93,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite_MainCharacter_004" uid="1100">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Platform">
-                            <properties>
-                                <max-speed>60</max-speed>
-                                <acceleration>100</acceleration>
-                                <deceleration>150</deceleration>
-                                <jump-strength>0</jump-strength>
-                                <gravity>1500</gravity>
-                                <max-fall-speed>1000</max-fall-speed>
-                                <double-jump>Disabled</double-jump>
-                                <jump-sustain>0</jump-sustain>
-                                <default-controls>Yes</default-controls>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="Flash" />
-                        <behavior-instance type="ScrollTo">
-                            <properties>
-                                <initial-state>Disabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <effect-instances>
-                        <effect-instance type="AdjustHSL">
-                            <parameters>
-                                <hue>0</hue>
-                                <luminosity>6</luminosity>
-                                <saturation>1</saturation>
-                            </parameters>
-                        </effect-instance>
-                    </effect-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>30.127998352</x>
-                        <y>368.783905029</y>
-                        <z>0</z>
-                        <width>22.056999207</width>
-                        <height>91.128997803</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>1</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="Sprite_BG_End_BridgeEnd" uid="1073">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>

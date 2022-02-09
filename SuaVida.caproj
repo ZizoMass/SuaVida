@@ -13391,39 +13391,6 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="Sprite_MainCharacter_004" sid="5478632038348429">
-                <plugin id="Sprite" />
-                <behaviors>
-                    <behavior-type name="Platform" sid="3342643671711908">
-                        <behavior id="Platform" />
-                    </behavior-type>
-                    <behavior-type name="Flash" sid="2936688402534768">
-                        <behavior id="Flash" />
-                    </behavior-type>
-                    <behavior-type name="ScrollTo" sid="2205028639657882">
-                        <behavior id="scrollto" />
-                    </behavior-type>
-                </behaviors>
-                <effects>
-                    <effect-type name="AdjustHSL">
-                        <effect id="hsladjust" />
-                    </effect-type>
-                </effects>
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Sprite_MainCharacter_004_Ani_Idle_001" pingpong="0" repeatcount="1" repeatto="0" sid="5516472825512774" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
-                    </animation>
-                    <animation framecount="7" loop="0" name="Sprite_MainCharacter_004_Ani_Walk_001" pingpong="0" repeatcount="1" repeatto="0" sid="5734128594852823" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="1" />
-                    </animation>
-                </animation-folder>
-            </object-type>
             <object-type name="Sprite_MainCharacter_005" sid="9830738181350194">
                 <plugin id="Sprite" />
                 <behaviors>

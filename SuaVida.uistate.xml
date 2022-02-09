@@ -12,8 +12,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <open-tabs>
         <layout order="0">Level_020</layout>
         <layout order="2">Level_021</layout>
-        <event-sheet active="1" order="1">EventSheet_002</event-sheet>
+        <layout active="1" order="4">Level_022</layout>
+        <event-sheet order="1">EventSheet_002</event-sheet>
         <event-sheet order="3">EventSheet_014</event-sheet>
+        <event-sheet order="5">EventSheet_015</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -218,7 +220,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Sprite_BG_CityRoad_2D_002/" />
         <folder expanded="1" path="animation-folder/Sprite_BG_CityRoad_2D_003/" />
         <folder expanded="1" path="animation-folder/Sprite_MainCharacter_003/" />
-        <folder expanded="1" path="animation-folder/Sprite_MainCharacter_004/" />
         <folder expanded="1" path="animation-folder/Sprite_MainCharacter_005/" />
         <folder expanded="1" path="animation-folder/Sprite_Text_FinalDialogue_001/" />
         <folder expanded="1" path="animation-folder/Sprite_Text_FinalDialogue_002/" />

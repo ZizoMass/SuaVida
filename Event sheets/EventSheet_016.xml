@@ -12,12 +12,7 @@
             <conditions>
                 <condition id="-2" name="On start of layout" sid="1581515906829845" type="System" />
             </conditions>
-            <actions>
-                <action behavior="Pin" id="0" name="Pin to object" sid="4503863481907367" type="Sprite_MainCharacter_005">
-                    <param id="0" name="Pin to">Sprite_MainCharacter_004</param>
-                    <param id="1" name="Mode">0</param>
-                </action>
-            </actions>
+            <actions />
         </event-block>
         <event-block sid="7661572056867908">
             <conditions>
@@ -27,11 +22,7 @@
                     <param id="2" name="Value">0</param>
                 </condition>
             </conditions>
-            <actions>
-                <action id="7" name="Set mirrored" sid="757353895668901" type="Sprite_MainCharacter_004">
-                    <param id="0" name="State">0</param>
-                </action>
-            </actions>
+            <actions />
         </event-block>
         <event-block sid="6182741055653178">
             <conditions>
@@ -41,33 +32,7 @@
                     <param id="2" name="Value">1</param>
                 </condition>
             </conditions>
-            <actions>
-                <action id="7" name="Set mirrored" sid="5197039128609757" type="Sprite_MainCharacter_004">
-                    <param id="0" name="State">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="2960559189807729">
-            <conditions>
-                <condition behavior="Platform" id="0" name="Is moving" sid="3071228539410452" type="Sprite_MainCharacter_004" />
-            </conditions>
-            <actions>
-                <action id="4" name="Set animation" sid="4633603429599539" type="Sprite_MainCharacter_004">
-                    <param id="0" name="Animation">&quot;Sprite_MainCharacter_004_Ani_Walk_001&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="1700369656200942">
-            <conditions>
-                <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="1892896245868762" type="Sprite_MainCharacter_004" />
-            </conditions>
-            <actions>
-                <action id="4" name="Set animation" sid="5695793597746188" type="Sprite_MainCharacter_004">
-                    <param id="0" name="Animation">&quot;Sprite_MainCharacter_004_Ani_Idle_001&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-            </actions>
+            <actions />
         </event-block>
         <event-block sid="3288206264995902">
             <conditions>
@@ -76,9 +41,6 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="7" name="Set mirrored" sid="7818379400902465" type="Sprite_MainCharacter_004">
-                    <param id="0" name="State">0</param>
-                </action>
                 <action id="-9" name="Set value" sid="4781991316881158" type="System">
                     <param id="0" name="Variable">PlayerMirrored</param>
                     <param id="1" name="Value">0</param>
@@ -92,38 +54,9 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="7" name="Set mirrored" sid="5718623172084495" type="Sprite_MainCharacter_004">
-                    <param id="0" name="State">1</param>
-                </action>
                 <action id="-9" name="Set value" sid="1580162112898366" type="System">
                     <param id="0" name="Variable">PlayerMirrored</param>
                     <param id="1" name="Value">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="6289731614352547">
-            <conditions>
-                <condition behavior="Platform" id="10" name="Is by wall" sid="9302009744996689" type="Sprite_MainCharacter_004">
-                    <param id="0" name="Side">0</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="4" name="Set animation" sid="3663459933953957" type="Sprite_MainCharacter_004">
-                    <param id="0" name="Animation">&quot;Sprite_MainCharacter_004_Ani_Idle_001&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="3894071619394871">
-            <conditions>
-                <condition behavior="Platform" id="10" name="Is by wall" sid="9291721589593017" type="Sprite_MainCharacter_004">
-                    <param id="0" name="Side">1</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="4" name="Set animation" sid="7480385724292233" type="Sprite_MainCharacter_004">
-                    <param id="0" name="Animation">&quot;Sprite_MainCharacter_004_Ani_Idle_001&quot;</param>
-                    <param id="1" name="From">1</param>
                 </action>
             </actions>
         </event-block>
@@ -156,9 +89,7 @@
             </actions>
         </event-block>
         <event-block sid="4348906886267322">
-            <conditions>
-                <condition behavior="Platform" id="0" name="Is moving" sid="3748844699392464" type="Sprite_MainCharacter_004" />
-            </conditions>
+            <conditions />
             <actions>
                 <action id="4" name="Set animation" sid="1364283602150816" type="Sprite_MainCharacter_005">
                     <param id="0" name="Animation">&quot;Sprite_MainCharacter_005_Ani_Walk_001&quot;</param>
@@ -167,9 +98,7 @@
             </actions>
         </event-block>
         <event-block sid="3071644472898353">
-            <conditions>
-                <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="537390217838647" type="Sprite_MainCharacter_004" />
-            </conditions>
+            <conditions />
             <actions>
                 <action id="4" name="Set animation" sid="2582877933299928" type="Sprite_MainCharacter_005">
                     <param id="0" name="Animation">&quot;Sprite_MainCharacter_005_Ani_Idle_001&quot;</param>
@@ -210,11 +139,7 @@
             </actions>
         </event-block>
         <event-block sid="6662768632343109">
-            <conditions>
-                <condition behavior="Platform" id="10" name="Is by wall" sid="4777622134016847" type="Sprite_MainCharacter_004">
-                    <param id="0" name="Side">0</param>
-                </condition>
-            </conditions>
+            <conditions />
             <actions>
                 <action id="4" name="Set animation" sid="264040150090852" type="Sprite_MainCharacter_005">
                     <param id="0" name="Animation">&quot;Sprite_MainCharacter_005_Ani_Idle_001&quot;</param>
@@ -223,11 +148,7 @@
             </actions>
         </event-block>
         <event-block sid="1468739233876118">
-            <conditions>
-                <condition behavior="Platform" id="10" name="Is by wall" sid="7480393674167796" type="Sprite_MainCharacter_004">
-                    <param id="0" name="Side">1</param>
-                </condition>
-            </conditions>
+            <conditions />
             <actions>
                 <action id="4" name="Set animation" sid="9433958903954858" type="Sprite_MainCharacter_005">
                     <param id="0" name="Animation">&quot;Sprite_MainCharacter_005_Ani_Idle_001&quot;</param>
@@ -236,11 +157,7 @@
             </actions>
         </event-block>
         <event-block sid="7989754132256093">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="219485407797505" type="Sprite_MainCharacter_004">
-                    <param id="0" name="Object">Sprite_Trigger_Level_024_Go_Level_025</param>
-                </condition>
-            </conditions>
+            <conditions />
             <actions>
                 <action id="-2" name="Go to layout" sid="3301693255673898" type="System">
                     <param id="0" name="Layout">Level_025</param>
@@ -252,21 +169,8 @@
             </actions>
         </event-block>
         <event-block sid="3034912880681408">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="388151963245375" type="Sprite_MainCharacter_004">
-                    <param id="0" name="Object">Sprite_Trigger_MainCharacter_Accelerate</param>
-                </condition>
-            </conditions>
+            <conditions />
             <actions>
-                <action behavior="Platform" id="1" name="Set max speed" sid="1488386388119512" type="Sprite_MainCharacter_004">
-                    <param id="0" name="Max Speed">5000</param>
-                </action>
-                <action behavior="Platform" id="2" name="Set acceleration" sid="9569773451116356" type="Sprite_MainCharacter_004">
-                    <param id="0" name="Acceleration">30</param>
-                </action>
-                <action behavior="ScrollTo" id="1" name="Set enabled" sid="6502346731675504" type="Sprite_MainCharacter_004">
-                    <param id="0" name="State">1</param>
-                </action>
                 <action behavior="Platform" id="1" name="Set max speed" sid="1522031742056087" type="Sprite_MainCharacter_005">
                     <param id="0" name="Max Speed">5000</param>
                 </action>
@@ -276,21 +180,8 @@
             </actions>
         </event-block>
         <event-block sid="4006156864159849">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="929247153804904" type="Sprite_MainCharacter_004">
-                    <param id="0" name="Object">Sprite_Trigger_MainCharacter_Stop</param>
-                </condition>
-            </conditions>
+            <conditions />
             <actions>
-                <action behavior="Platform" id="1" name="Set max speed" sid="7863147263671265" type="Sprite_MainCharacter_004">
-                    <param id="0" name="Max Speed">60</param>
-                </action>
-                <action behavior="Platform" id="2" name="Set acceleration" sid="612007700036605" type="Sprite_MainCharacter_004">
-                    <param id="0" name="Acceleration">100</param>
-                </action>
-                <action behavior="ScrollTo" id="1" name="Set enabled" sid="1646192620807937" type="Sprite_MainCharacter_004">
-                    <param id="0" name="State">1</param>
-                </action>
                 <action behavior="Platform" id="1" name="Set max speed" sid="752182180198019" type="Sprite_MainCharacter_005">
                     <param id="0" name="Max Speed">60</param>
                 </action>
@@ -300,11 +191,7 @@
             </actions>
         </event-block>
         <event-block sid="5882869282267492">
-            <conditions>
-                <condition id="1" name="Is overlapping another object" sid="4573913887912788" type="Sprite_MainCharacter_004">
-                    <param id="0" name="Object">Sprite_Trigger_End_Rope</param>
-                </condition>
-            </conditions>
+            <conditions />
             <actions />
             <sub-events>
                 <event-block sid="5120090255673723">
@@ -390,7 +277,6 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-9" name="Destroy" sid="2077483891339132" type="Sprite_MainCharacter_004" />
                 <action id="-9" name="Destroy" sid="6682452489215063" type="Sprite_MainCharacter_005" />
                 <action id="4" name="Set animation" sid="3338058963694625" type="Sprite_Rope_002">
                     <param id="0" name="Animation">&quot;Sprite_Rope_002_Ani_End_001&quot;</param>
@@ -413,9 +299,6 @@
         </event-block>
         <event-block sid="4764074569405275">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="8808205701870712" type="Sprite_MainCharacter_004">
-                    <param id="0" name="Object">Sprite_Trigger_ShowEndText_001</param>
-                </condition>
                 <condition id="-14" name="Compare variable" sid="2274128314543463" type="System">
                     <param id="0" name="Variable">LevelLayout</param>
                     <param id="1" name="Comparison">0</param>
@@ -436,9 +319,6 @@
         </event-block>
         <event-block sid="4146782839047436">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="370836663878765" type="Sprite_MainCharacter_004">
-                    <param id="0" name="Object">Sprite_Trigger_ShowEndText_002</param>
-                </condition>
                 <condition id="-14" name="Compare variable" sid="2581935924327331" type="System">
                     <param id="0" name="Variable">LevelLayout</param>
                     <param id="1" name="Comparison">0</param>
@@ -458,11 +338,7 @@
             </actions>
         </event-block>
         <event-block sid="9970820716543827">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="8978682698296445" type="Sprite_MainCharacter_004">
-                    <param id="0" name="Object">Sprite_Trigger_ShowEndText_001</param>
-                </condition>
-            </conditions>
+            <conditions />
             <actions>
                 <action id="4" name="Set animation" sid="9168907407921382" type="Sprite_Lightning_001">
                     <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_001&quot;</param>
@@ -472,11 +348,7 @@
             </actions>
         </event-block>
         <event-block sid="257740697803312">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="1330162651130653" type="Sprite_MainCharacter_004">
-                    <param id="0" name="Object">Sprite_Trigger_ShowEndText_002</param>
-                </condition>
-            </conditions>
+            <conditions />
             <actions>
                 <action id="4" name="Set animation" sid="2276223474209237" type="Sprite_Lightning_001">
                     <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_002&quot;</param>
@@ -501,9 +373,6 @@
         </event-block>
         <event-block sid="768947712561103">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="1592480604968716" type="Sprite_MainCharacter_004">
-                    <param id="0" name="Object">Sprite_Trigger_ShowEndText_001</param>
-                </condition>
                 <condition id="-14" name="Compare variable" sid="3553963927956623" type="System">
                     <param id="0" name="Variable">LevelLayout</param>
                     <param id="1" name="Comparison">0</param>
@@ -524,9 +393,6 @@
         </event-block>
         <event-block sid="3551700580821104">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="8743058011438869" type="Sprite_MainCharacter_004">
-                    <param id="0" name="Object">Sprite_Trigger_ShowEndText_003</param>
-                </condition>
                 <condition id="-14" name="Compare variable" sid="8253050341126668" type="System">
                     <param id="0" name="Variable">LevelLayout</param>
                     <param id="1" name="Comparison">0</param>
@@ -543,9 +409,6 @@
         </event-block>
         <event-block sid="7653765882672536">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="6023855755460505" type="Sprite_MainCharacter_004">
-                    <param id="0" name="Object">Sprite_Trigger_ShowEndText_002</param>
-                </condition>
                 <condition id="-14" name="Compare variable" sid="2109873862133515" type="System">
                     <param id="0" name="Variable">LevelLayout</param>
                     <param id="1" name="Comparison">0</param>
@@ -562,9 +425,6 @@
         </event-block>
         <event-block sid="7777447920011491">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="732847768294846" type="Sprite_MainCharacter_004">
-                    <param id="0" name="Object">Sprite_Trigger_ShowEndText_004</param>
-                </condition>
                 <condition id="-14" name="Compare variable" sid="1536544821538165" type="System">
                     <param id="0" name="Variable">LevelLayout</param>
                     <param id="1" name="Comparison">0</param>
@@ -581,9 +441,6 @@
         </event-block>
         <event-block sid="972209362746935">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="5066575469184966" type="Sprite_MainCharacter_004">
-                    <param id="0" name="Object">Sprite_Trigger_ShowEndText_008</param>
-                </condition>
                 <condition id="-14" name="Compare variable" sid="9660667887545671" type="System">
                     <param id="0" name="Variable">LevelLayout</param>
                     <param id="1" name="Comparison">0</param>
@@ -600,9 +457,6 @@
         </event-block>
         <event-block sid="5138111651228585">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="7098363242925289" type="Sprite_MainCharacter_004">
-                    <param id="0" name="Object">Sprite_Trigger_ShowEndText_009</param>
-                </condition>
                 <condition id="-14" name="Compare variable" sid="1058171710114456" type="System">
                     <param id="0" name="Variable">LevelLayout</param>
                     <param id="1" name="Comparison">0</param>
@@ -619,9 +473,6 @@
         </event-block>
         <event-block sid="6543564222228918">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="7723334733199243" type="Sprite_MainCharacter_004">
-                    <param id="0" name="Object">Sprite_Trigger_ShowEndText_007</param>
-                </condition>
                 <condition id="-14" name="Compare variable" sid="1389929770236205" type="System">
                     <param id="0" name="Variable">LevelLayout</param>
                     <param id="1" name="Comparison">0</param>
@@ -638,9 +489,6 @@
         </event-block>
         <event-block sid="4210172211672554">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="4643401592039541" type="Sprite_MainCharacter_004">
-                    <param id="0" name="Object">Sprite_Trigger_ShowEndText_010</param>
-                </condition>
                 <condition id="-14" name="Compare variable" sid="6389379594877808" type="System">
                     <param id="0" name="Variable">LevelLayout</param>
                     <param id="1" name="Comparison">0</param>
@@ -657,9 +505,6 @@
         </event-block>
         <event-block sid="4327700889244722">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="9638338691518292" type="Sprite_MainCharacter_004">
-                    <param id="0" name="Object">Sprite_Trigger_ShowEndText_011</param>
-                </condition>
                 <condition id="-14" name="Compare variable" sid="9713476808661114" type="System">
                     <param id="0" name="Variable">LevelLayout</param>
                     <param id="1" name="Comparison">0</param>
@@ -676,9 +521,6 @@
         </event-block>
         <event-block sid="9332224465856907">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="724905706995817" type="Sprite_MainCharacter_004">
-                    <param id="0" name="Object">Sprite_Trigger_ShowEndText_005</param>
-                </condition>
                 <condition id="-14" name="Compare variable" sid="7040193850498802" type="System">
                     <param id="0" name="Variable">LevelLayout</param>
                     <param id="1" name="Comparison">0</param>
@@ -695,9 +537,6 @@
         </event-block>
         <event-block sid="2509694417686571">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="8583578188384915" type="Sprite_MainCharacter_004">
-                    <param id="0" name="Object">Sprite_Trigger_ShowEndText_006</param>
-                </condition>
                 <condition id="-14" name="Compare variable" sid="9731212477654001" type="System">
                     <param id="0" name="Variable">LevelLayout</param>
                     <param id="1" name="Comparison">0</param>
@@ -713,11 +552,7 @@
             </actions>
         </event-block>
         <event-block sid="64917930802064">
-            <conditions>
-                <condition id="1" name="Is overlapping another object" sid="1809773401643146" type="Sprite_MainCharacter_004">
-                    <param id="0" name="Object">Sprite_Trigger_End_Gun</param>
-                </condition>
-            </conditions>
+            <conditions />
             <actions />
             <sub-events>
                 <event-block sid="5338848740548822">
@@ -762,7 +597,6 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-9" name="Destroy" sid="9142897565525362" type="Sprite_MainCharacter_004" />
                 <action id="-9" name="Destroy" sid="7595482086212672" type="Sprite_MainCharacter_005" />
                 <action id="4" name="Set animation" sid="1531922130342824" type="Sprite_Gun_002">
                     <param id="0" name="Animation">&quot;Sprite_Gun_002_Ani_End_001&quot;</param>
@@ -890,11 +724,7 @@
             </actions>
         </event-block>
         <event-block sid="3311787933185222">
-            <conditions>
-                <condition id="1" name="Is overlapping another object" sid="1656215787453374" type="Sprite_MainCharacter_004">
-                    <param id="0" name="Object">Sprite_Trigger_End_Jump</param>
-                </condition>
-            </conditions>
+            <conditions />
             <actions />
             <sub-events>
                 <event-block sid="1048742242144228">
@@ -939,7 +769,6 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-9" name="Destroy" sid="5865744438515288" type="Sprite_MainCharacter_004" />
                 <action id="-9" name="Destroy" sid="8222520571400994" type="Sprite_MainCharacter_005" />
                 <action id="4" name="Set animation" sid="3733751290704032" type="Sprite_Bridge">
                     <param id="0" name="Animation">&quot;Sprite_Bridge_Ani_End_001&quot;</param>
@@ -1062,11 +891,7 @@
             </actions>
         </event-block>
         <event-block sid="505262537478524">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="4127001584984099" type="Sprite_MainCharacter_004">
-                    <param id="0" name="Object">Sprite_Trigger_Level_023_Go_Level_024</param>
-                </condition>
-            </conditions>
+            <conditions />
             <actions>
                 <action id="-2" name="Go to layout" sid="9341750043253993" type="System">
                     <param id="0" name="Layout">Level_024</param>
@@ -1078,11 +903,7 @@
             </actions>
         </event-block>
         <event-block sid="5355101337654995">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="5241105968654951" type="Sprite_MainCharacter_004">
-                    <param id="0" name="Object">Sprite_Trigger_Level_025_Go_Level_026</param>
-                </condition>
-            </conditions>
+            <conditions />
             <actions>
                 <action id="-2" name="Go to layout" sid="766954067340634" type="System">
                     <param id="0" name="Layout">Level_026</param>
@@ -1094,11 +915,7 @@
             </actions>
         </event-block>
         <event-block sid="530593668275816">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="5801011379222152" type="Sprite_MainCharacter_004">
-                    <param id="0" name="Object">Sprite_Trigger_End_Collapse</param>
-                </condition>
-            </conditions>
+            <conditions />
             <actions>
                 <action id="-9" name="Set value" sid="3829199520456507" type="System">
                     <param id="0" name="Variable">End4</param>
@@ -1107,9 +924,6 @@
                 <action id="4" name="Set animation" sid="8953034953630183" type="Sprite_Lightning_001">
                     <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_002&quot;</param>
                     <param id="1" name="From">1</param>
-                </action>
-                <action behavior="Platform" id="0" name="Set ignoring input" sid="6949098326539034" type="Sprite_MainCharacter_004">
-                    <param id="0" name="Input">1</param>
                 </action>
                 <action id="6" name="Stop" sid="483409069954611" type="Audio">
                     <param id="0" name="Tag">&quot;msc23&quot;</param>
@@ -1125,7 +939,6 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-9" name="Destroy" sid="3846915504645796" type="Sprite_MainCharacter_004" />
                 <action id="-9" name="Destroy" sid="2720454678896532" type="Sprite_MainCharacter_005" />
                 <action behavior="ScrollTo" id="1" name="Set enabled" sid="9697942739013654" type="Sprite_Collapse_001">
                     <param id="0" name="State">1</param>
@@ -1511,31 +1324,19 @@
             <actions />
             <sub-events>
                 <event-block sid="9118725213164779">
-                    <conditions>
-                        <condition id="0" name="On collision with another object" sid="1317418989626212" type="Sprite_MainCharacter_004">
-                            <param id="0" name="Object">Sprite_Trigger_ShowEndText_001</param>
-                        </condition>
-                    </conditions>
+                    <conditions />
                     <actions>
                         <action id="-9" name="Destroy" sid="1499767158169763" type="Sprite_Trigger_ShowEndText_001" />
                     </actions>
                 </event-block>
                 <event-block sid="9314731090854397">
-                    <conditions>
-                        <condition id="0" name="On collision with another object" sid="1232084746174165" type="Sprite_MainCharacter_004">
-                            <param id="0" name="Object">Sprite_Trigger_ShowEndText_002</param>
-                        </condition>
-                    </conditions>
+                    <conditions />
                     <actions>
                         <action id="-9" name="Destroy" sid="1186864756769279" type="Sprite_Trigger_ShowEndText_002" />
                     </actions>
                 </event-block>
                 <event-block sid="2747109667459562">
-                    <conditions>
-                        <condition id="0" name="On collision with another object" sid="1148506368720115" type="Sprite_MainCharacter_004">
-                            <param id="0" name="Object">Sprite_Trigger_MainCharacter_Stop</param>
-                        </condition>
-                    </conditions>
+                    <conditions />
                     <actions>
                         <action id="-9" name="Destroy" sid="3833228412658632" type="Sprite_Trigger_MainCharacter_Stop" />
                         <action id="-9" name="Set value" sid="6387786880140923" type="System">
