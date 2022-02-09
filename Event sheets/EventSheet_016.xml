@@ -3,34 +3,12 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>EventSheet_016</name>
     <events>
-        <variable constant="0" name="EndType" sid="4439158370304458" static="0" type="number">0</variable>
         <variable constant="0" name="End4" sid="7422174144763725" static="0" type="number">0</variable>
         <variable constant="0" name="End3" sid="9489930312089385" static="0" type="number">0</variable>
         <variable constant="0" name="End2" sid="8185898858197709" static="0" type="number">0</variable>
-        <variable constant="0" name="End1" sid="6450662354512657" static="0" type="number">0</variable>
         <event-block sid="3045535967595418">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="1581515906829845" type="System" />
-            </conditions>
-            <actions />
-        </event-block>
-        <event-block sid="7661572056867908">
-            <conditions>
-                <condition id="-14" name="Compare variable" sid="750401086035648" type="System">
-                    <param id="0" name="Variable">PlayerMirrored</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">0</param>
-                </condition>
-            </conditions>
-            <actions />
-        </event-block>
-        <event-block sid="6182741055653178">
-            <conditions>
-                <condition id="-14" name="Compare variable" sid="1882869566543003" type="System">
-                    <param id="0" name="Variable">PlayerMirrored</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">1</param>
-                </condition>
             </conditions>
             <actions />
         </event-block>
@@ -202,7 +180,7 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Set value" sid="6605115359298165" type="System">
-                            <param id="0" name="Variable">End1</param>
+                            <param id="0" name="Variable">EndFinished</param>
                             <param id="1" name="Value">1</param>
                         </action>
                         <action id="4" name="Set animation" sid="3566823940621859" type="Sprite_Lightning_001">
@@ -271,7 +249,7 @@
                     <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_002&quot;</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="3475383119937347" type="System">
-                    <param id="0" name="Variable">End1</param>
+                    <param id="0" name="Variable">EndFinished</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">1</param>
                 </condition>
@@ -287,7 +265,7 @@
                     <param id="1" name="From">1</param>
                 </action>
                 <action id="-9" name="Set value" sid="5752005112775119" type="System">
-                    <param id="0" name="Variable">End1</param>
+                    <param id="0" name="Variable">EndFinished</param>
                     <param id="1" name="Value">2</param>
                 </action>
                 <action id="-9" name="Destroy" sid="4090203092982449" type="Sprite_Rope_001" />
@@ -1350,7 +1328,7 @@
         <event-block sid="5015294833875027">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="515414284826714" type="System">
-                    <param id="0" name="Variable">End1</param>
+                    <param id="0" name="Variable">EndFinished</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">2</param>
                 </condition>
@@ -1370,7 +1348,7 @@
                         </action>
                         <action behavior="Fade" id="1" name="Start fade" sid="7905530137847351" type="Sprite_EndFadeOut_Black" />
                         <action id="-9" name="Set value" sid="1552237229352081" type="System">
-                            <param id="0" name="Variable">End1</param>
+                            <param id="0" name="Variable">EndFinished</param>
                             <param id="1" name="Value">3</param>
                         </action>
                         <action id="-15" name="Set visible" sid="6955625367212881" type="Sprite_EndFadeOut_Black">
@@ -1538,7 +1516,7 @@
         <event-block sid="4194332240166516">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="2193291194196306" type="System">
-                    <param id="0" name="Variable">End1</param>
+                    <param id="0" name="Variable">EndFinished</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">3</param>
                 </condition>

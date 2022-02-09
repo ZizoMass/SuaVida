@@ -3,6 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>EventSheet_015</name>
     <events>
+        <variable constant="0" name="EndFinished" sid="6450662354512657" static="0" type="number">0</variable>
+        <variable constant="0" name="EndType" sid="4439158370304458" static="0" type="number">0</variable>
         <variable constant="0" name="LightningFlash" sid="5510192094645904" static="0" type="number">0</variable>
         <event-block sid="7587881051459913">
             <conditions>
@@ -150,178 +152,6 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="2612887758901298">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="9720639961264608" type="Sprite_MainCharacter_002">
-                    <param id="0" name="Object">Sprite_Trigger_ShowEndText_001</param>
-                </condition>
-                <condition id="-14" name="Compare variable" sid="984443101625968" type="System">
-                    <param id="0" name="Variable">LightningFlash</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">0</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-15" name="Set visible" sid="9185171397192071" type="Sprite_BG_CityRoad_2D_002">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-                <action id="4" name="Set animation" sid="9057769764508177" type="Sprite_Lightning_001">
-                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Transition_001&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-                <action id="-15" name="Set visible" sid="8731880854471721" type="Sprite_Lightning_001">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-                <action id="-9" name="Set value" sid="8161149296889248" type="System">
-                    <param id="0" name="Variable">LightningFlash</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-                <action behavior="Flash" id="0" name="Flash" sid="1865963398367803" type="Sprite_MainCharacter_005">
-                    <param id="0" name="&apos;On&apos; time">0.1</param>
-                    <param id="1" name="&apos;Off&apos; time">0.1</param>
-                    <param id="2" name="Duration">1.0</param>
-                </action>
-                <action id="-16" name="Set opacity" sid="2282023897088437" type="Sprite_MainCharacter_005">
-                    <param id="0" name="Opacity">30</param>
-                </action>
-                <action behavior="Fade" id="1" name="Start fade" sid="2872259247760257" type="Sprite_Text_FinalDialogue_001" />
-                <action id="-15" name="Set visible" sid="8037133778367792" type="Sprite_Text_FinalDialogue_001">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="9753773896656568">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="5955953704797973" type="Sprite_MainCharacter_002">
-                    <param id="0" name="Object">Sprite_Trigger_ShowEndText_002</param>
-                </condition>
-                <condition id="-14" name="Compare variable" sid="736543653181947" type="System">
-                    <param id="0" name="Variable">LightningFlash</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">1</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-15" name="Set visible" sid="8741815473649727" type="Sprite_BG_CityRoad_2D_003">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-                <action id="4" name="Set animation" sid="161399464518238" type="Sprite_Lightning_001">
-                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Transition_002&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-                <action id="-15" name="Set visible" sid="8970981383075874" type="Sprite_Lightning_001">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-                <action id="-9" name="Set value" sid="8195321456310122" type="System">
-                    <param id="0" name="Variable">LightningFlash</param>
-                    <param id="1" name="Value">2</param>
-                </action>
-                <action behavior="Flash" id="0" name="Flash" sid="489735968945947" type="Sprite_MainCharacter_005">
-                    <param id="0" name="&apos;On&apos; time">0.1</param>
-                    <param id="1" name="&apos;Off&apos; time">0.1</param>
-                    <param id="2" name="Duration">1.0</param>
-                </action>
-                <action id="-16" name="Set opacity" sid="3737556418314532" type="Sprite_MainCharacter_005">
-                    <param id="0" name="Opacity">100</param>
-                </action>
-                <action behavior="Fade" id="1" name="Start fade" sid="3006213309710846" type="Sprite_Text_FinalDialogue_002" />
-                <action id="-15" name="Set visible" sid="4655023932064112" type="Sprite_Text_FinalDialogue_002">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="3547002334173315">
-            <conditions>
-                <condition id="2" name="Is playing" sid="347288910814863" type="Sprite_Lightning_001">
-                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Transition_001&quot;</param>
-                </condition>
-                <condition id="3" name="Compare frame" sid="157059157708397" type="Sprite_Lightning_001">
-                    <param id="0" name="Comparison">0</param>
-                    <param id="1" name="Number">3</param>
-                </condition>
-                <condition id="-14" name="Compare variable" sid="710462769674955" type="System">
-                    <param id="0" name="Variable">LightningFlash</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">1</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-28" name="Set effect parameter" sid="380035604799210" type="Sprite_MainCharacter_002">
-                    <param id="0" name="Effect">&quot;AdjustHSL&quot;</param>
-                    <param id="1" name="Parameter index">1</param>
-                    <param id="2" name="Value">500</param>
-                </action>
-                <action id="-28" name="Set effect parameter" sid="630956239859186" type="Sprite_MainCharacter_002">
-                    <param id="0" name="Effect">&quot;AdjustHSL&quot;</param>
-                    <param id="1" name="Parameter index">2</param>
-                    <param id="2" name="Value">150</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="3009275557085782">
-            <conditions>
-                <condition id="2" name="Is playing" sid="563106554766588" type="Sprite_Lightning_001">
-                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Transition_002&quot;</param>
-                </condition>
-                <condition id="3" name="Compare frame" sid="595568263073902" type="Sprite_Lightning_001">
-                    <param id="0" name="Comparison">0</param>
-                    <param id="1" name="Number">3</param>
-                </condition>
-                <condition id="-14" name="Compare variable" sid="183994980055700" type="System">
-                    <param id="0" name="Variable">LightningFlash</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">2</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-28" name="Set effect parameter" sid="897459282991174" type="Sprite_MainCharacter_002">
-                    <param id="0" name="Effect">&quot;AdjustHSL&quot;</param>
-                    <param id="1" name="Parameter index">1</param>
-                    <param id="2" name="Value">100</param>
-                </action>
-                <action id="-28" name="Set effect parameter" sid="928710266555291" type="Sprite_MainCharacter_002">
-                    <param id="0" name="Effect">&quot;AdjustHSL&quot;</param>
-                    <param id="1" name="Parameter index">2</param>
-                    <param id="2" name="Value">600</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="276969001751581">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="316044538030782" type="Sprite_MainCharacter_002">
-                    <param id="0" name="Object">Sprite_Trigger_Level_022_Go_Level_023</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-2" name="Go to layout" sid="310893191669964" type="System">
-                    <param id="0" name="Layout">Level_023</param>
-                </action>
-                <action id="-9" name="Set value" sid="339082760411812" type="System">
-                    <param id="0" name="Variable">LevelLayout</param>
-                    <param id="1" name="Value">23</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="359621558403293">
-            <conditions>
-                <condition id="2" name="Is playing" sid="8447778706173051" type="Sprite_Lightning_001">
-                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Transition_001&quot;</param>
-                </condition>
-                <condition id="3" name="Compare frame" sid="4220219724350419" type="Sprite_Lightning_001">
-                    <param id="0" name="Comparison">0</param>
-                    <param id="1" name="Number">0</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="7" name="Play (by name)" sid="256625848302713" type="Audio">
-                    <param id="0" name="Folder">0</param>
-                    <param id="1" name="Audio file name">choose(&quot;SFX_Thunder_007&quot;,&quot;SFX_Thunder_008&quot;,&quot;SFX_Thunder_009&quot;,&quot;SFX_Thunder_010&quot;,&quot;SFX_Thunder_011&quot;)</param>
-                    <param id="3" name="Loop">0</param>
-                    <param id="4" name="Volume">0</param>
-                    <param id="2" name="Tag (optional)">&quot;tro&quot;</param>
-                </action>
-            </actions>
-        </event-block>
         <event-block sid="9504720411796652">
             <conditions>
                 <condition id="2" name="Is playing" sid="241599001100543" type="Sprite_Lightning_001">
@@ -337,7 +167,7 @@
                     <param id="0" name="Folder">0</param>
                     <param id="1" name="Audio file name">choose(&quot;SFX_Thunder_007&quot;,&quot;SFX_Thunder_008&quot;,&quot;SFX_Thunder_009&quot;,&quot;SFX_Thunder_010&quot;,&quot;SFX_Thunder_011&quot;)</param>
                     <param id="3" name="Loop">0</param>
-                    <param id="4" name="Volume">0</param>
+                    <param id="4" name="Volume">-5</param>
                     <param id="2" name="Tag (optional)">&quot;tro&quot;</param>
                 </action>
             </actions>
@@ -357,7 +187,7 @@
                     <param id="0" name="Folder">0</param>
                     <param id="1" name="Audio file name">choose(&quot;SFX_Thunder_007&quot;,&quot;SFX_Thunder_008&quot;,&quot;SFX_Thunder_009&quot;,&quot;SFX_Thunder_010&quot;,&quot;SFX_Thunder_011&quot;)</param>
                     <param id="3" name="Loop">0</param>
-                    <param id="4" name="Volume">0</param>
+                    <param id="4" name="Volume">-5</param>
                     <param id="2" name="Tag (optional)">&quot;tro&quot;</param>
                 </action>
             </actions>
@@ -377,7 +207,7 @@
                     <param id="0" name="Folder">0</param>
                     <param id="1" name="Audio file name">choose(&quot;SFX_Thunder_007&quot;,&quot;SFX_Thunder_008&quot;,&quot;SFX_Thunder_009&quot;,&quot;SFX_Thunder_010&quot;,&quot;SFX_Thunder_011&quot;)</param>
                     <param id="3" name="Loop">0</param>
-                    <param id="4" name="Volume">0</param>
+                    <param id="4" name="Volume">-5</param>
                     <param id="2" name="Tag (optional)">&quot;tro&quot;</param>
                 </action>
             </actions>
@@ -397,7 +227,7 @@
                     <param id="0" name="Folder">0</param>
                     <param id="1" name="Audio file name">choose(&quot;SFX_Thunder_007&quot;,&quot;SFX_Thunder_008&quot;,&quot;SFX_Thunder_009&quot;,&quot;SFX_Thunder_010&quot;,&quot;SFX_Thunder_011&quot;)</param>
                     <param id="3" name="Loop">0</param>
-                    <param id="4" name="Volume">0</param>
+                    <param id="4" name="Volume">-5</param>
                     <param id="2" name="Tag (optional)">&quot;tro&quot;</param>
                 </action>
             </actions>
@@ -417,7 +247,27 @@
                     <param id="0" name="Folder">0</param>
                     <param id="1" name="Audio file name">choose(&quot;SFX_Thunder_007&quot;,&quot;SFX_Thunder_008&quot;,&quot;SFX_Thunder_009&quot;,&quot;SFX_Thunder_010&quot;,&quot;SFX_Thunder_011&quot;)</param>
                     <param id="3" name="Loop">0</param>
-                    <param id="4" name="Volume">0</param>
+                    <param id="4" name="Volume">-5</param>
+                    <param id="2" name="Tag (optional)">&quot;tro&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="359621558403293">
+            <conditions>
+                <condition id="2" name="Is playing" sid="8447778706173051" type="Sprite_Lightning_001">
+                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Transition_001&quot;</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="4220219724350419" type="Sprite_Lightning_001">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Play (by name)" sid="256625848302713" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">choose(&quot;SFX_Thunder_007&quot;,&quot;SFX_Thunder_008&quot;,&quot;SFX_Thunder_009&quot;,&quot;SFX_Thunder_010&quot;,&quot;SFX_Thunder_011&quot;)</param>
+                    <param id="3" name="Loop">0</param>
+                    <param id="4" name="Volume">-5</param>
                     <param id="2" name="Tag (optional)">&quot;tro&quot;</param>
                 </action>
             </actions>
@@ -437,11 +287,499 @@
                     <param id="0" name="Folder">0</param>
                     <param id="1" name="Audio file name">choose(&quot;SFX_Thunder_007&quot;,&quot;SFX_Thunder_008&quot;,&quot;SFX_Thunder_009&quot;,&quot;SFX_Thunder_010&quot;,&quot;SFX_Thunder_011&quot;)</param>
                     <param id="3" name="Loop">0</param>
-                    <param id="4" name="Volume">0</param>
+                    <param id="4" name="Volume">-5</param>
                     <param id="2" name="Tag (optional)">&quot;tro&quot;</param>
                 </action>
             </actions>
         </event-block>
+        <event-group description="" sid="451106618127068" title="Level_022">
+            <sub-events>
+                <event-block sid="600735308513607">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="140275246734582" type="System">
+                            <param id="0" name="Variable">LevelLayout</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">22</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="2612887758901298">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="9720639961264608" type="Sprite_MainCharacter_002">
+                                    <param id="0" name="Object">Sprite_Trigger_ShowEndText_001</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="984443101625968" type="System">
+                                    <param id="0" name="Variable">LightningFlash</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="9185171397192071" type="Sprite_BG_CityRoad_2D_002">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="9057769764508177" type="Sprite_Lightning_001">
+                                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Transition_001&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="8731880854471721" type="Sprite_Lightning_001">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="8161149296889248" type="System">
+                                    <param id="0" name="Variable">LightningFlash</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action behavior="Flash" id="0" name="Flash" sid="1865963398367803" type="Sprite_MainCharacter_005">
+                                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                                    <param id="2" name="Duration">1.0</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="2282023897088437" type="Sprite_MainCharacter_005">
+                                    <param id="0" name="Opacity">30</param>
+                                </action>
+                                <action behavior="Fade" id="1" name="Start fade" sid="2872259247760257" type="Sprite_Text_FinalDialogue_001" />
+                                <action id="-15" name="Set visible" sid="8037133778367792" type="Sprite_Text_FinalDialogue_001">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="9753773896656568">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="5955953704797973" type="Sprite_MainCharacter_002">
+                                    <param id="0" name="Object">Sprite_Trigger_ShowEndText_002</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="736543653181947" type="System">
+                                    <param id="0" name="Variable">LightningFlash</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="8741815473649727" type="Sprite_BG_CityRoad_2D_003">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="161399464518238" type="Sprite_Lightning_001">
+                                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Transition_002&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="8970981383075874" type="Sprite_Lightning_001">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="8195321456310122" type="System">
+                                    <param id="0" name="Variable">LightningFlash</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                                <action behavior="Flash" id="0" name="Flash" sid="489735968945947" type="Sprite_MainCharacter_005">
+                                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                                    <param id="2" name="Duration">1.0</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="3737556418314532" type="Sprite_MainCharacter_005">
+                                    <param id="0" name="Opacity">100</param>
+                                </action>
+                                <action behavior="Fade" id="1" name="Start fade" sid="3006213309710846" type="Sprite_Text_FinalDialogue_002" />
+                                <action id="-15" name="Set visible" sid="4655023932064112" type="Sprite_Text_FinalDialogue_002">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="3547002334173315">
+                            <conditions>
+                                <condition id="2" name="Is playing" sid="347288910814863" type="Sprite_Lightning_001">
+                                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Transition_001&quot;</param>
+                                </condition>
+                                <condition id="3" name="Compare frame" sid="157059157708397" type="Sprite_Lightning_001">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">3</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="710462769674955" type="System">
+                                    <param id="0" name="Variable">LightningFlash</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-28" name="Set effect parameter" sid="380035604799210" type="Sprite_MainCharacter_002">
+                                    <param id="0" name="Effect">&quot;AdjustHSL&quot;</param>
+                                    <param id="1" name="Parameter index">1</param>
+                                    <param id="2" name="Value">500</param>
+                                </action>
+                                <action id="-28" name="Set effect parameter" sid="630956239859186" type="Sprite_MainCharacter_002">
+                                    <param id="0" name="Effect">&quot;AdjustHSL&quot;</param>
+                                    <param id="1" name="Parameter index">2</param>
+                                    <param id="2" name="Value">150</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="3009275557085782">
+                            <conditions>
+                                <condition id="2" name="Is playing" sid="563106554766588" type="Sprite_Lightning_001">
+                                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Transition_002&quot;</param>
+                                </condition>
+                                <condition id="3" name="Compare frame" sid="595568263073902" type="Sprite_Lightning_001">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">3</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="183994980055700" type="System">
+                                    <param id="0" name="Variable">LightningFlash</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-28" name="Set effect parameter" sid="897459282991174" type="Sprite_MainCharacter_002">
+                                    <param id="0" name="Effect">&quot;AdjustHSL&quot;</param>
+                                    <param id="1" name="Parameter index">1</param>
+                                    <param id="2" name="Value">100</param>
+                                </action>
+                                <action id="-28" name="Set effect parameter" sid="928710266555291" type="Sprite_MainCharacter_002">
+                                    <param id="0" name="Effect">&quot;AdjustHSL&quot;</param>
+                                    <param id="1" name="Parameter index">2</param>
+                                    <param id="2" name="Value">600</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="276969001751581">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="316044538030782" type="Sprite_MainCharacter_002">
+                                    <param id="0" name="Object">Sprite_Trigger_Level_022_Go_Level_023</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="310893191669964" type="System">
+                                    <param id="0" name="Layout">Level_023</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="339082760411812" type="System">
+                                    <param id="0" name="Variable">LevelLayout</param>
+                                    <param id="1" name="Value">23</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="212345315042152" title="Level_023">
+            <sub-events>
+                <event-block sid="618080665711136">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="217705756889175" type="System">
+                            <param id="0" name="Variable">LevelLayout</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">23</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-28" name="Set effect parameter" sid="400294050979253" type="Sprite_MainCharacter_002">
+                            <param id="0" name="Effect">&quot;AdjustHSL&quot;</param>
+                            <param id="1" name="Parameter index">1</param>
+                            <param id="2" name="Value">100</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="722383801674342" type="Sprite_MainCharacter_002">
+                            <param id="0" name="Effect">&quot;AdjustHSL&quot;</param>
+                            <param id="1" name="Parameter index">2</param>
+                            <param id="2" name="Value">600</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="969250940405484" type="Sprite_MainCharacter_005">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="765158119259665">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="722099868419720" type="Sprite_MainCharacter_002">
+                                    <param id="0" name="Object">Sprite_Trigger_End_Rope</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="560580267849577">
+                                    <conditions>
+                                        <condition id="0" name="On key pressed" sid="150271801769765" type="Keyboard">
+                                            <param id="0" name="Key">32</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="575051509873104" type="System">
+                                            <param id="0" name="Variable">EndType</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="4" name="Set animation" sid="910587362771014" type="Sprite_Lightning_001">
+                                            <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Transition_001&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="3" name="Set volume" sid="650817544660739" type="Audio">
+                                            <param id="0" name="Tag">&quot;chuva&quot;</param>
+                                            <param id="1" name="dB">-25</param>
+                                        </action>
+                                        <action id="3" name="Set volume" sid="382343909681585" type="Audio">
+                                            <param id="0" name="Tag">&quot;vento&quot;</param>
+                                            <param id="1" name="dB">-20</param>
+                                        </action>
+                                        <action id="6" name="Stop" sid="349549095857062" type="Audio">
+                                            <param id="0" name="Tag">&quot;msc23&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="299649278695318">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="659310440875320" type="Sprite_MainCharacter_002">
+                                    <param id="0" name="Object">Sprite_Trigger_ShowEndText_001</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="678959203655994" type="Sprite_Lightning_001">
+                                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_001&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="911915398551330" type="Sprite_Trigger_ShowEndText_001" />
+                                <action behavior="Fade" id="1" name="Start fade" sid="493929583999293" type="Sprite_Text_FinalDialogue_003" />
+                                <action id="-15" name="Set visible" sid="946150310111067" type="Sprite_Text_FinalDialogue_003">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="320711811332012">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="429755096265294" type="Sprite_MainCharacter_002">
+                                    <param id="0" name="Object">Sprite_Trigger_ShowEndText_002</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="742476838390484" type="Sprite_Lightning_001">
+                                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_002&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="568403832317370" type="Sprite_Trigger_ShowEndText_002" />
+                                <action behavior="Fade" id="1" name="Start fade" sid="617450002067590" type="Sprite_Text_FinalDialogue_004" />
+                                <action id="-15" name="Set visible" sid="978132594165246" type="Sprite_Text_FinalDialogue_004">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-group description="" sid="629771938254800" title="Rope End Sequence">
+                            <sub-events>
+                                <event-block sid="298183810720788">
+                                    <conditions>
+                                        <condition id="4" name="On finished" sid="654086165142283" type="Sprite_Lightning_001">
+                                            <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Transition_001&quot;</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="760087148075912" type="System">
+                                            <param id="0" name="Variable">EndType</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="806157267923910" type="Sprite_MainCharacter_002" />
+                                        <action id="-9" name="Destroy" sid="954459190182408" type="Sprite_MainCharacter_005" />
+                                        <action id="4" name="Set animation" sid="120600470737416" type="Sprite_Rope_002">
+                                            <param id="0" name="Animation">&quot;Sprite_Rope_002_Ani_End_001&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="4" name="Set animation" sid="196524076475735" type="Sprite_Rope_003">
+                                            <param id="0" name="Animation">&quot;Sprite_Rope_003_Ani_End_001&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="-9" name="Destroy" sid="816926096612321" type="Sprite_Rope_001" />
+                                        <action id="3" name="Set volume" sid="370122210964679" type="Audio">
+                                            <param id="0" name="Tag">&quot;tro&quot;</param>
+                                            <param id="1" name="dB">-5</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="642527288830143">
+                                    <conditions>
+                                        <condition id="3" name="Compare frame" sid="951173333604487" type="Sprite_Rope_002">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="Number">67</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="270184390324270" type="Sprite_Lightning_001">
+                                            <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_003&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="573206422179822">
+                                    <conditions>
+                                        <condition id="3" name="Compare frame" sid="113197382987398" type="Sprite_Rope_002">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="Number">85</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="271157835596320" type="Sprite_Lightning_001">
+                                            <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_002&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="446754785686294">
+                                    <conditions>
+                                        <condition id="4" name="On finished" sid="135206230501191" type="Sprite_Rope_002">
+                                            <param id="0" name="Animation">&quot;Sprite_Rope_002_Ani_End_001&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="277613344594078" type="System">
+                                            <param id="0" name="Variable">EndFinished</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="4" name="Set animation" sid="698659976556981" type="Sprite_Lightning_001">
+                                            <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_001&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="397852324378752">
+                                    <conditions>
+                                        <condition id="2" name="Is playing" sid="763144983131662" type="Sprite_Rope_002">
+                                            <param id="0" name="Animation">&quot;Sprite_Rope_002_Ani_End_001&quot;</param>
+                                        </condition>
+                                        <condition id="5" inverted="1" name="Is tag playing" sid="182553771339025" type="Audio">
+                                            <param id="0" name="Tag">&quot;alma&quot;</param>
+                                        </condition>
+                                        <condition id="3" name="Compare frame" sid="806937067826567" type="Sprite_Rope_002">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="Number">67</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Play" sid="824171798117086" type="Audio">
+                                            <param id="0" name="Audio file">FOL_ScarySoulBreath_001</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;alma&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="283218551856975">
+                                    <conditions>
+                                        <condition id="2" name="Is playing" sid="544687018469011" type="Sprite_Rope_002">
+                                            <param id="0" name="Animation">&quot;Sprite_Rope_002_Ani_End_001&quot;</param>
+                                        </condition>
+                                        <condition id="5" inverted="1" name="Is tag playing" sid="495157702887014" type="Audio">
+                                            <param id="0" name="Tag">&quot;drama&quot;</param>
+                                        </condition>
+                                        <condition id="3" name="Compare frame" sid="729737764174268" type="Sprite_Rope_002">
+                                            <param id="0" name="Comparison">2</param>
+                                            <param id="1" name="Number">65</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Play" sid="966492965145283" type="Audio">
+                                            <param id="0" name="Audio file">SFX_BassDramaticShock_001</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;drama&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="744521883330611">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="521500189938881" type="System">
+                                            <param id="0" name="Variable">EndFinished</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="519851478716075">
+                                            <conditions>
+                                                <condition id="4" name="On finished" sid="502102427862675" type="Sprite_Rope_002">
+                                                    <param id="0" name="Animation">&quot;Sprite_Rope_002_Ani_End_001&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="638429297088573" type="Sprite_Lightning_001">
+                                                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_001&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                                <action behavior="Fade" id="1" name="Start fade" sid="807304548931210" type="Sprite_EndFadeOut_Black" />
+                                                <action id="-9" name="Set value" sid="523208567066541" type="System">
+                                                    <param id="0" name="Variable">EndFinished</param>
+                                                    <param id="1" name="Value">2</param>
+                                                </action>
+                                                <action id="-15" name="Set visible" sid="595720767882331" type="Sprite_EndFadeOut_Black">
+                                                    <param id="0" name="Visibility">1</param>
+                                                </action>
+                                                <action behavior="Timer" id="0" name="Start timer" sid="561888266021887" type="Sprite_EndFadeOut_Black">
+                                                    <param id="0" name="Duration">14.0</param>
+                                                    <param id="1" name="Type">0</param>
+                                                    <param id="2" name="Tag">&quot;fim&quot;</param>
+                                                </action>
+                                                <action id="6" name="Stop" sid="900900955877209" type="Audio">
+                                                    <param id="0" name="Tag">&quot;vento&quot;</param>
+                                                </action>
+                                                <action id="0" name="Play" sid="634756721685922" type="Audio">
+                                                    <param id="0" name="Audio file">BG_CalmRain_001</param>
+                                                    <param id="2" name="Loop">1</param>
+                                                    <param id="3" name="Volume">-18</param>
+                                                    <param id="1" name="Tag (optional)">&quot;chuva&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="658812340212476">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="284043407152754" type="System">
+                                            <param id="0" name="Variable">EndFinished</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="154525815365290">
+                                            <conditions>
+                                                <condition behavior="Timer" id="0" name="On timer" sid="910995707108850" type="Sprite_EndFadeOut_Black">
+                                                    <param id="0" name="Tag">&quot;fim&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-2" name="Go to layout" sid="959890108549098" type="System">
+                                                    <param id="0" name="Layout">Credits</param>
+                                                </action>
+                                                <action id="6" name="Stop" sid="525094832786394" type="Audio">
+                                                    <param id="0" name="Tag">&quot;vento&quot;</param>
+                                                </action>
+                                                <action id="3" name="Set volume" sid="813610692730571" type="Audio">
+                                                    <param id="0" name="Tag">&quot;chuva&quot;</param>
+                                                    <param id="1" name="dB">-10</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                        <event-block sid="471914760829618">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="327579147894012" type="Sprite_MainCharacter_002">
+                                    <param id="0" name="Object">Sprite_Trigger_Level_023_Go_Level_024</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="977053446738213" type="System">
+                                    <param id="0" name="Layout">Level_024</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="126255574123610" type="System">
+                                    <param id="0" name="Variable">LevelLayout</param>
+                                    <param id="1" name="Value">24</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
         <event-block sid="527578976715766">
             <conditions>
                 <condition id="0" name="On key pressed" sid="333505869289279" type="Keyboard">

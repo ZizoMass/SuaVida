@@ -2,7 +2,7 @@
 <c2layout>
     <name>Level_023</name>
     <sid>6732546032036629</sid>
-    <event-sheet>EventSheet_016</event-sheet>
+    <event-sheet>EventSheet_015</event-sheet>
     <size>
         <width>1280</width>
         <height>720</height>
@@ -54,7 +54,7 @@
                 <instance type="Sprite_Rope_002" uid="1123">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>nada</initial-animation>
+                        <initial-animation>Sprite_Rope_002_Ani_Idle_001</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -64,8 +64,8 @@
                         <x>640</x>
                         <y>360</y>
                         <z>0</z>
-                        <width>1280</width>
-                        <height>720</height>
+                        <width>250</width>
+                        <height>250</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -76,7 +76,7 @@
                 <instance type="Sprite_Rope_003" uid="1124">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>nada</initial-animation>
+                        <initial-animation>Sprite_Rope_003_Ani_Idle_001</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -95,8 +95,8 @@
                         <x>640</x>
                         <y>360</y>
                         <z>0</z>
-                        <width>1280</width>
-                        <height>720</height>
+                        <width>250</width>
+                        <height>250</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -185,11 +185,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>639</x>
-                        <y>62</y>
+                        <x>638.999938965</x>
+                        <y>63.111206055</y>
                         <z>0</z>
                         <width>1278.857788086</width>
-                        <height>596.450012207</height>
+                        <height>598.661254883</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.502531648</hotspotY>
@@ -424,6 +424,53 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="Sprite_MainCharacter_002" uid="41">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Platform">
+                            <properties>
+                                <max-speed>60</max-speed>
+                                <acceleration>100</acceleration>
+                                <deceleration>150</deceleration>
+                                <jump-strength>0</jump-strength>
+                                <gravity>1500</gravity>
+                                <max-fall-speed>1000</max-fall-speed>
+                                <double-jump>Disabled</double-jump>
+                                <jump-sustain>0</jump-sustain>
+                                <default-controls>Yes</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <effect-instances>
+                        <effect-instance type="AdjustHSL">
+                            <parameters>
+                                <hue>0</hue>
+                                <luminosity>1</luminosity>
+                                <saturation>1</saturation>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>19.604000092</x>
+                        <y>359.808990479</y>
+                        <z>0</z>
+                        <width>22.05667305</width>
+                        <height>91.128883362</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>1</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
                 <instance type="Sprite_EndFadeOut_Black" uid="195">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
@@ -446,8 +493,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>673</x>
-                        <y>373</y>
+                        <x>645</x>
+                        <y>365</y>
                         <z>0</z>
                         <width>1814</width>
                         <height>1027</height>
