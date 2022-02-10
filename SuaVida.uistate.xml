@@ -31,8 +31,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="35">Level_013</layout>
         <layout order="36">Level_016</layout>
         <layout order="37">Level_021</layout>
-        <layout order="83">Level_012</layout>
-        <layout order="84">Level_024</layout>
+        <layout order="38">Level_012</layout>
+        <layout order="39">Level_024</layout>
         <event-sheet order="1">EventSheet_MainCharacter_002_System</event-sheet>
         <event-sheet order="2">EventSheet_GameLauncher</event-sheet>
         <event-sheet order="4">EventSheet_Delete2</event-sheet>
