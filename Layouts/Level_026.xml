@@ -15,7 +15,7 @@
     <layers>
         <layer name="Layer 0" sid="7758813416025581">
             <initially-visible>1</initially-visible>
-            <background-color>255,255,255</background-color>
+            <background-color>0,0,0</background-color>
             <transparent>0</transparent>
             <parallax>
                 <x>1</x>
@@ -40,10 +40,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>15718</x>
-                        <y>327</y>
+                        <y>248.522399902</y>
                         <z>0</z>
                         <width>31506</width>
-                        <height>876</height>
+                        <height>719.044799805</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -82,10 +82,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>30221</x>
-                        <y>220</y>
+                        <y>351.160766602</y>
                         <z>0</z>
                         <width>2131</width>
-                        <height>700</height>
+                        <height>961</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.502531648</hotspotY>
@@ -1226,7 +1226,7 @@
         </layer>
         <layer name="Layer 1" sid="8653382817013841">
             <initially-visible>1</initially-visible>
-            <background-color>255,255,255</background-color>
+            <background-color>0,0,0</background-color>
             <transparent>1</transparent>
             <parallax>
                 <x>0</x>
@@ -1495,7 +1495,7 @@
         </layer>
         <layer name="Layer 2" sid="889709893323438">
             <initially-visible>1</initially-visible>
-            <background-color>255,255,255</background-color>
+            <background-color>0,0,0</background-color>
             <transparent>1</transparent>
             <parallax>
                 <x>1</x>
@@ -1520,10 +1520,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>-48.1277771</x>
-                        <y>607</y>
+                        <y>622.522338867</y>
                         <z>0</z>
                         <width>286.744445801</width>
-                        <height>567</height>
+                        <height>598.044799805</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -1541,11 +1541,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-553</x>
-                        <y>510</y>
+                        <x>-955.946533203</x>
+                        <y>625.90246582</y>
                         <z>0</z>
-                        <width>1296.660888672</width>
-                        <height>371.299987793</height>
+                        <width>2101.868164063</width>
+                        <height>601.871765137</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.502531648</hotspotY>

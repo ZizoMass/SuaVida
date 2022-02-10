@@ -10,7 +10,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Level_026</layout>
+        <layout active="1" order="0">Level_026</layout>
         <layout order="3">Level_025</layout>
         <layout order="19">Level_005</layout>
         <layout order="20">Level_014</layout>
@@ -31,7 +31,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="35">Level_013</layout>
         <layout order="36">Level_016</layout>
         <layout order="37">Level_021</layout>
-        <event-sheet active="1" order="1">EventSheet_MainCharacter_002_System</event-sheet>
+        <layout order="83">Level_012</layout>
+        <layout order="84">Level_024</layout>
+        <event-sheet order="1">EventSheet_MainCharacter_002_System</event-sheet>
         <event-sheet order="2">EventSheet_GameLauncher</event-sheet>
         <event-sheet order="4">EventSheet_Delete2</event-sheet>
         <event-sheet order="5">EventSheet_Credits</event-sheet>

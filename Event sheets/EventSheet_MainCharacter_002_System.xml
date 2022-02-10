@@ -15,12 +15,6 @@
                     <param id="0" name="Pin to">Sprite_MainCharacter_002</param>
                     <param id="1" name="Mode">0</param>
                 </action>
-                <action id="0" name="Play" sid="921679004818880" type="Audio">
-                    <param id="0" name="Audio file">MX_CoorporativeMeat</param>
-                    <param id="2" name="Loop">1</param>
-                    <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;msc23&quot;</param>
-                </action>
                 <action behavior="Platform" id="5" name="Set gravity" sid="465814463027984" type="Sprite_MainCharacter_002">
                     <param id="0" name="Gravity">0</param>
                 </action>
@@ -167,7 +161,7 @@
                     <param id="0" name="Folder">0</param>
                     <param id="1" name="Audio file name">choose(&quot;SFX_Thunder_007&quot;,&quot;SFX_Thunder_008&quot;,&quot;SFX_Thunder_009&quot;,&quot;SFX_Thunder_010&quot;,&quot;SFX_Thunder_011&quot;)</param>
                     <param id="3" name="Loop">0</param>
-                    <param id="4" name="Volume">-8</param>
+                    <param id="4" name="Volume">-5</param>
                     <param id="2" name="Tag (optional)">&quot;tro&quot;</param>
                 </action>
             </actions>
@@ -183,11 +177,11 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="7" name="Play (by name)" sid="5799114364190249" type="Audio">
+                <action id="7" name="Play (by name)" sid="603180194285422" type="Audio">
                     <param id="0" name="Folder">0</param>
                     <param id="1" name="Audio file name">choose(&quot;SFX_Thunder_007&quot;,&quot;SFX_Thunder_008&quot;,&quot;SFX_Thunder_009&quot;,&quot;SFX_Thunder_010&quot;,&quot;SFX_Thunder_011&quot;)</param>
                     <param id="3" name="Loop">0</param>
-                    <param id="4" name="Volume">-8</param>
+                    <param id="4" name="Volume">-5</param>
                     <param id="2" name="Tag (optional)">&quot;tro&quot;</param>
                 </action>
             </actions>
@@ -203,11 +197,11 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="7" name="Play (by name)" sid="4435812988462382" type="Audio">
+                <action id="7" name="Play (by name)" sid="754771913678094" type="Audio">
                     <param id="0" name="Folder">0</param>
                     <param id="1" name="Audio file name">choose(&quot;SFX_Thunder_007&quot;,&quot;SFX_Thunder_008&quot;,&quot;SFX_Thunder_009&quot;,&quot;SFX_Thunder_010&quot;,&quot;SFX_Thunder_011&quot;)</param>
                     <param id="3" name="Loop">0</param>
-                    <param id="4" name="Volume">-8</param>
+                    <param id="4" name="Volume">-5</param>
                     <param id="2" name="Tag (optional)">&quot;tro&quot;</param>
                 </action>
             </actions>
@@ -223,11 +217,11 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="7" name="Play (by name)" sid="6613962385863677" type="Audio">
+                <action id="7" name="Play (by name)" sid="497055717740946" type="Audio">
                     <param id="0" name="Folder">0</param>
                     <param id="1" name="Audio file name">choose(&quot;SFX_Thunder_007&quot;,&quot;SFX_Thunder_008&quot;,&quot;SFX_Thunder_009&quot;,&quot;SFX_Thunder_010&quot;,&quot;SFX_Thunder_011&quot;)</param>
                     <param id="3" name="Loop">0</param>
-                    <param id="4" name="Volume">-8</param>
+                    <param id="4" name="Volume">-5</param>
                     <param id="2" name="Tag (optional)">&quot;tro&quot;</param>
                 </action>
             </actions>
@@ -243,11 +237,11 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="7" name="Play (by name)" sid="4384871766826758" type="Audio">
+                <action id="7" name="Play (by name)" sid="833565202033042" type="Audio">
                     <param id="0" name="Folder">0</param>
                     <param id="1" name="Audio file name">choose(&quot;SFX_Thunder_007&quot;,&quot;SFX_Thunder_008&quot;,&quot;SFX_Thunder_009&quot;,&quot;SFX_Thunder_010&quot;,&quot;SFX_Thunder_011&quot;)</param>
                     <param id="3" name="Loop">0</param>
-                    <param id="4" name="Volume">-8</param>
+                    <param id="4" name="Volume">-5</param>
                     <param id="2" name="Tag (optional)">&quot;tro&quot;</param>
                 </action>
             </actions>
@@ -263,11 +257,11 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="7" name="Play (by name)" sid="256625848302713" type="Audio">
+                <action id="7" name="Play (by name)" sid="952721527367280" type="Audio">
                     <param id="0" name="Folder">0</param>
                     <param id="1" name="Audio file name">choose(&quot;SFX_Thunder_007&quot;,&quot;SFX_Thunder_008&quot;,&quot;SFX_Thunder_009&quot;,&quot;SFX_Thunder_010&quot;,&quot;SFX_Thunder_011&quot;)</param>
                     <param id="3" name="Loop">0</param>
-                    <param id="4" name="Volume">-8</param>
+                    <param id="4" name="Volume">-5</param>
                     <param id="2" name="Tag (optional)">&quot;tro&quot;</param>
                 </action>
             </actions>
@@ -283,11 +277,11 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="7" name="Play (by name)" sid="149537259903253" type="Audio">
+                <action id="7" name="Play (by name)" sid="511099877229851" type="Audio">
                     <param id="0" name="Folder">0</param>
                     <param id="1" name="Audio file name">choose(&quot;SFX_Thunder_007&quot;,&quot;SFX_Thunder_008&quot;,&quot;SFX_Thunder_009&quot;,&quot;SFX_Thunder_010&quot;,&quot;SFX_Thunder_011&quot;)</param>
                     <param id="3" name="Loop">0</param>
-                    <param id="4" name="Volume">-8</param>
+                    <param id="4" name="Volume">-5</param>
                     <param id="2" name="Tag (optional)">&quot;tro&quot;</param>
                 </action>
             </actions>
@@ -352,27 +346,6 @@
                                 </action>
                                 <action id="-9" name="Destroy" sid="396421548772438" type="Sprite_Trigger_LightningStart_001" />
                             </actions>
-                            <sub-events>
-                                <event-block sid="667198745467432">
-                                    <conditions>
-                                        <condition id="2" name="Is playing" sid="252233909211816" type="Sprite_Lightning_001">
-                                            <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_001&quot;</param>
-                                        </condition>
-                                        <condition id="5" inverted="1" name="Is tag playing" sid="658560449437111" type="Audio">
-                                            <param id="0" name="Tag">&quot;tro&quot;</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="7" name="Play (by name)" sid="358100551281070" type="Audio">
-                                            <param id="0" name="Folder">0</param>
-                                            <param id="1" name="Audio file name">choose(&quot;SFX_Thunder_007&quot;,&quot;SFX_Thunder_008&quot;,&quot;SFX_Thunder_009&quot;,&quot;SFX_Thunder_010&quot;,&quot;SFX_Thunder_011&quot;)</param>
-                                            <param id="3" name="Loop">0</param>
-                                            <param id="4" name="Volume">0</param>
-                                            <param id="2" name="Tag (optional)">&quot;tro&quot;</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                            </sub-events>
                         </event-block>
                         <event-block sid="981940496539301">
                             <conditions>
@@ -387,146 +360,6 @@
                                 <action id="-9" name="Set value" sid="990930707470136" type="System">
                                     <param id="0" name="Variable">LevelLayout</param>
                                     <param id="1" name="Value">22</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="814036634285190">
-                            <conditions>
-                                <condition id="2" name="Is playing" sid="514967539782758" type="Sprite_Lightning_001">
-                                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Transition_001&quot;</param>
-                                </condition>
-                                <condition id="3" name="Compare frame" sid="704804206896094" type="Sprite_Lightning_001">
-                                    <param id="0" name="Comparison">0</param>
-                                    <param id="1" name="Number">0</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="7" name="Play (by name)" sid="621900404551838" type="Audio">
-                                    <param id="0" name="Folder">0</param>
-                                    <param id="1" name="Audio file name">choose(&quot;SFX_Thunder_007&quot;,&quot;SFX_Thunder_008&quot;,&quot;SFX_Thunder_009&quot;,&quot;SFX_Thunder_010&quot;,&quot;SFX_Thunder_011&quot;)</param>
-                                    <param id="3" name="Loop">0</param>
-                                    <param id="4" name="Volume">0</param>
-                                    <param id="2" name="Tag (optional)">&quot;tro&quot;</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="553288495307066">
-                            <conditions>
-                                <condition id="2" name="Is playing" sid="125470356753747" type="Sprite_Lightning_001">
-                                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_002&quot;</param>
-                                </condition>
-                                <condition id="3" name="Compare frame" sid="795838439075330" type="Sprite_Lightning_001">
-                                    <param id="0" name="Comparison">0</param>
-                                    <param id="1" name="Number">0</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="7" name="Play (by name)" sid="731637351773295" type="Audio">
-                                    <param id="0" name="Folder">0</param>
-                                    <param id="1" name="Audio file name">choose(&quot;SFX_Thunder_007&quot;,&quot;SFX_Thunder_008&quot;,&quot;SFX_Thunder_009&quot;,&quot;SFX_Thunder_010&quot;,&quot;SFX_Thunder_011&quot;)</param>
-                                    <param id="3" name="Loop">0</param>
-                                    <param id="4" name="Volume">0</param>
-                                    <param id="2" name="Tag (optional)">&quot;tro&quot;</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="640105483203932">
-                            <conditions>
-                                <condition id="2" name="Is playing" sid="480938318867996" type="Sprite_Lightning_001">
-                                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_001&quot;</param>
-                                </condition>
-                                <condition id="3" name="Compare frame" sid="735106241235410" type="Sprite_Lightning_001">
-                                    <param id="0" name="Comparison">0</param>
-                                    <param id="1" name="Number">0</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="7" name="Play (by name)" sid="547418575894216" type="Audio">
-                                    <param id="0" name="Folder">0</param>
-                                    <param id="1" name="Audio file name">choose(&quot;SFX_Thunder_007&quot;,&quot;SFX_Thunder_008&quot;,&quot;SFX_Thunder_009&quot;,&quot;SFX_Thunder_010&quot;,&quot;SFX_Thunder_011&quot;)</param>
-                                    <param id="3" name="Loop">0</param>
-                                    <param id="4" name="Volume">0</param>
-                                    <param id="2" name="Tag (optional)">&quot;tro&quot;</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="817983241424390">
-                            <conditions>
-                                <condition id="2" name="Is playing" sid="202568421119901" type="Sprite_Lightning_001">
-                                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_003&quot;</param>
-                                </condition>
-                                <condition id="3" name="Compare frame" sid="656786322435289" type="Sprite_Lightning_001">
-                                    <param id="0" name="Comparison">0</param>
-                                    <param id="1" name="Number">0</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="7" name="Play (by name)" sid="527292265469314" type="Audio">
-                                    <param id="0" name="Folder">0</param>
-                                    <param id="1" name="Audio file name">choose(&quot;SFX_Thunder_007&quot;,&quot;SFX_Thunder_008&quot;,&quot;SFX_Thunder_009&quot;,&quot;SFX_Thunder_010&quot;,&quot;SFX_Thunder_011&quot;)</param>
-                                    <param id="3" name="Loop">0</param>
-                                    <param id="4" name="Volume">0</param>
-                                    <param id="2" name="Tag (optional)">&quot;tro&quot;</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="526040864219943">
-                            <conditions>
-                                <condition id="2" name="Is playing" sid="747529434769179" type="Sprite_Lightning_001">
-                                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_004&quot;</param>
-                                </condition>
-                                <condition id="3" name="Compare frame" sid="970362147997635" type="Sprite_Lightning_001">
-                                    <param id="0" name="Comparison">0</param>
-                                    <param id="1" name="Number">0</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="7" name="Play (by name)" sid="995055518651262" type="Audio">
-                                    <param id="0" name="Folder">0</param>
-                                    <param id="1" name="Audio file name">choose(&quot;SFX_Thunder_007&quot;,&quot;SFX_Thunder_008&quot;,&quot;SFX_Thunder_009&quot;,&quot;SFX_Thunder_010&quot;,&quot;SFX_Thunder_011&quot;)</param>
-                                    <param id="3" name="Loop">0</param>
-                                    <param id="4" name="Volume">0</param>
-                                    <param id="2" name="Tag (optional)">&quot;tro&quot;</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="906174226199380">
-                            <conditions>
-                                <condition id="2" name="Is playing" sid="571845167011307" type="Sprite_Lightning_001">
-                                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Flash_005&quot;</param>
-                                </condition>
-                                <condition id="3" name="Compare frame" sid="940899478912638" type="Sprite_Lightning_001">
-                                    <param id="0" name="Comparison">0</param>
-                                    <param id="1" name="Number">0</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="7" name="Play (by name)" sid="838240279450293" type="Audio">
-                                    <param id="0" name="Folder">0</param>
-                                    <param id="1" name="Audio file name">choose(&quot;SFX_Thunder_007&quot;,&quot;SFX_Thunder_008&quot;,&quot;SFX_Thunder_009&quot;,&quot;SFX_Thunder_010&quot;,&quot;SFX_Thunder_011&quot;)</param>
-                                    <param id="3" name="Loop">0</param>
-                                    <param id="4" name="Volume">0</param>
-                                    <param id="2" name="Tag (optional)">&quot;tro&quot;</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="965887711965081">
-                            <conditions>
-                                <condition id="2" name="Is playing" sid="419842073780905" type="Sprite_Lightning_001">
-                                    <param id="0" name="Animation">&quot;Sprite_Lightning_001_Ani_Transition_002&quot;</param>
-                                </condition>
-                                <condition id="3" name="Compare frame" sid="952153593818482" type="Sprite_Lightning_001">
-                                    <param id="0" name="Comparison">0</param>
-                                    <param id="1" name="Number">0</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="7" name="Play (by name)" sid="935072109528206" type="Audio">
-                                    <param id="0" name="Folder">0</param>
-                                    <param id="1" name="Audio file name">choose(&quot;SFX_Thunder_007&quot;,&quot;SFX_Thunder_008&quot;,&quot;SFX_Thunder_009&quot;,&quot;SFX_Thunder_010&quot;,&quot;SFX_Thunder_011&quot;)</param>
-                                    <param id="3" name="Loop">0</param>
-                                    <param id="4" name="Volume">0</param>
-                                    <param id="2" name="Tag (optional)">&quot;tro&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -546,6 +379,19 @@
                     </conditions>
                     <actions />
                     <sub-events>
+                        <event-block sid="616156026241358">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="908682272728808" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="510803942515332" type="Audio">
+                                    <param id="0" name="Audio file">MX_CoorporativeMeat</param>
+                                    <param id="2" name="Loop">1</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;msc23&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
                         <event-block sid="2612887758901298">
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="9720639961264608" type="Sprite_MainCharacter_002">
@@ -829,7 +675,7 @@
                                         <action id="-9" name="Destroy" sid="816926096612321" type="Sprite_Rope_001" />
                                         <action id="3" name="Set volume" sid="370122210964679" type="Audio">
                                             <param id="0" name="Tag">&quot;tro&quot;</param>
-                                            <param id="1" name="dB">-5</param>
+                                            <param id="1" name="dB">-10</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -1089,7 +935,7 @@
                                         <action id="-9" name="Destroy" sid="166115954319512" type="Sprite_Gun_001" />
                                         <action id="3" name="Set volume" sid="655923508636773" type="Audio">
                                             <param id="0" name="Tag">&quot;tro&quot;</param>
-                                            <param id="1" name="dB">-5</param>
+                                            <param id="1" name="dB">-10</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -1382,7 +1228,7 @@
                                         </action>
                                         <action id="3" name="Set volume" sid="362563690760219" type="Audio">
                                             <param id="0" name="Tag">&quot;tro&quot;</param>
-                                            <param id="1" name="dB">-5</param>
+                                            <param id="1" name="dB">-10</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -1771,7 +1617,7 @@
                                         <action id="-9" name="Destroy" sid="548291729303769" type="Sprite_PlayerHome_TransictionVignette" />
                                         <action id="3" name="Set volume" sid="661902585917211" type="Audio">
                                             <param id="0" name="Tag">&quot;tro&quot;</param>
-                                            <param id="1" name="dB">-5</param>
+                                            <param id="1" name="dB">-10</param>
                                         </action>
                                     </actions>
                                 </event-block>

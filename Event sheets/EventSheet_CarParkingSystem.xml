@@ -16,6 +16,72 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="677319108145647">
+            <conditions>
+                <condition id="2" name="Is playing" sid="431554657461231" type="Sprite_MainCharacter_001">
+                    <param id="0" name="Animation">&quot;Sprite_MainCharacter_001_Ani_Walk_001&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="726238104446490">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="352542646071465" type="Sprite_MainCharacter_001">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="416763756094312">
+                            <conditions>
+                                <condition id="6" name="On frame changed" sid="490281334371649" type="Sprite_MainCharacter_001" />
+                                <condition id="5" inverted="1" name="Is tag playing" sid="639451954012972" type="Audio">
+                                    <param id="0" name="Tag">&quot;pd&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="7" name="Play (by name)" sid="751949163137006" type="Audio">
+                                    <param id="0" name="Folder">0</param>
+                                    <param id="1" name="Audio file name">choose(&quot;FLY_StepsOnASphaltFlor_001&quot;,&quot;FLY_StepsOnASphaltFlor_002&quot;,&quot;FLY_StepsOnASphaltFlor_003&quot;,&quot;FLY_StepsOnASphaltFlor_004&quot;,&quot;FLY_StepsOnASphaltFlor_005&quot;,&quot;FLY_StepsOnASphaltFlor_006&quot;,&quot;FLY_StepsOnASphaltFlor_007&quot;,&quot;FLY_StepsOnASphaltFlor_008&quot;,&quot;FLY_StepsOnASphaltFlor_009&quot;,&quot;FLY_StepsOnASphaltFlor_010&quot;)</param>
+                                    <param id="3" name="Loop">0</param>
+                                    <param id="4" name="Volume">-40</param>
+                                    <param id="2" name="Tag (optional)">&quot;pd&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="725729367262200">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="433797284712134" type="Sprite_MainCharacter_001">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">6</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="396259008440807">
+                            <conditions>
+                                <condition id="6" name="On frame changed" sid="470477676508440" type="Sprite_MainCharacter_001" />
+                                <condition id="5" inverted="1" name="Is tag playing" sid="742736135608276" type="Audio">
+                                    <param id="0" name="Tag">&quot;pe&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="7" name="Play (by name)" sid="619587650143451" type="Audio">
+                                    <param id="0" name="Folder">0</param>
+                                    <param id="1" name="Audio file name">choose(&quot;FLY_StepsOnASphaltFlor_001&quot;,&quot;FLY_StepsOnASphaltFlor_002&quot;,&quot;FLY_StepsOnASphaltFlor_003&quot;,&quot;FLY_StepsOnASphaltFlor_004&quot;,&quot;FLY_StepsOnASphaltFlor_005&quot;,&quot;FLY_StepsOnASphaltFlor_006&quot;,&quot;FLY_StepsOnASphaltFlor_007&quot;,&quot;FLY_StepsOnASphaltFlor_008&quot;,&quot;FLY_StepsOnASphaltFlor_009&quot;,&quot;FLY_StepsOnASphaltFlor_010&quot;)</param>
+                                    <param id="3" name="Loop">0</param>
+                                    <param id="4" name="Volume">-40</param>
+                                    <param id="2" name="Tag (optional)">&quot;pe&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
         <event-block sid="6991220948417584">
             <conditions>
                 <condition behavior="Platform" id="0" name="Is moving" sid="3824637692678173" type="Sprite_MainCharacter_001" />
