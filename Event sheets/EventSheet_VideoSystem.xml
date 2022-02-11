@@ -50,6 +50,7 @@
                             <param id="0" name="Variable">LevelLayout</param>
                             <param id="1" name="Value">8</param>
                         </action>
+                        <action id="-9" name="Destroy" sid="320456852820342" type="Video_Ani_ElevatorsGoingUp" />
                     </actions>
                 </event-block>
             </sub-events>
@@ -70,6 +71,9 @@
                     </conditions>
                     <actions>
                         <action id="33" name="Stop all" sid="808645325674886" type="Audio" />
+                        <action id="4" name="Set volume" sid="630743752987416" type="Video_Ani_WorkingTimeLapse">
+                            <param id="0" name="Volume">-5</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="537101757704223">
@@ -84,6 +88,7 @@
                             <param id="0" name="Variable">LevelLayout</param>
                             <param id="1" name="Value">12</param>
                         </action>
+                        <action id="-9" name="Destroy" sid="345551807173124" type="Video_Ani_WorkingTimeLapse" />
                     </actions>
                 </event-block>
             </sub-events>
@@ -126,6 +131,7 @@
                             <param id="0" name="Variable">LevelLayout</param>
                             <param id="1" name="Value">16</param>
                         </action>
+                        <action id="-9" name="Destroy" sid="589653946639626" type="Video_Ani_ElevatorGoingDown" />
                     </actions>
                 </event-block>
             </sub-events>
@@ -175,6 +181,7 @@
                             <param id="0" name="Variable">LevelLayout</param>
                             <param id="1" name="Value">19</param>
                         </action>
+                        <action id="-9" name="Destroy" sid="466635953448261" type="Video_Ani_StuckInTraffic" />
                     </actions>
                 </event-block>
                 <event-block sid="170472964799418">

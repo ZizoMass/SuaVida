@@ -214,7 +214,7 @@
                         <action id="0" name="Play" sid="4264744510780789" type="Audio">
                             <param id="0" name="Audio file">SFX_CarEgineNeutral_002</param>
                             <param id="2" name="Loop">1</param>
-                            <param id="3" name="Volume">10</param>
+                            <param id="3" name="Volume">15</param>
                             <param id="1" name="Tag (optional)">&quot;crrm&quot;</param>
                         </action>
                     </actions>
@@ -539,7 +539,7 @@
                                 <action id="0" name="Play" sid="909273667865839" type="Audio">
                                     <param id="0" name="Audio file">SFX_CarDoorClose_003</param>
                                     <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">-20</param>
+                                    <param id="3" name="Volume">-15</param>
                                     <param id="1" name="Tag (optional)">&quot;cpf&quot;</param>
                                 </action>
                                 <action id="-9" name="Set value" sid="389122659540045" type="System">
@@ -587,7 +587,7 @@
                                 <action id="0" name="Play" sid="522393296472769" type="Audio">
                                     <param id="0" name="Audio file">SFX_CarIgnition_Success_001</param>
                                     <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">-20</param>
+                                    <param id="3" name="Volume">-17</param>
                                     <param id="1" name="Tag (optional)">&quot;igni&quot;</param>
                                 </action>
                             </actions>
@@ -613,7 +613,7 @@
                         <action id="0" name="Play" sid="930939868992750" type="Audio">
                             <param id="0" name="Audio file">SFX_CarEgineNeutral_001</param>
                             <param id="2" name="Loop">1</param>
-                            <param id="3" name="Volume">-17</param>
+                            <param id="3" name="Volume">-13</param>
                             <param id="1" name="Tag (optional)">&quot;prd&quot;</param>
                         </action>
                     </actions>

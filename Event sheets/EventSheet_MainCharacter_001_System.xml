@@ -18,10 +18,10 @@
                 <condition id="-2" name="On start of layout" sid="4042731089709146" type="System" />
             </conditions>
             <actions>
-                <action id="-1" name="Set X" sid="9053898066901398" type="Sprite_MainCharacter_001">
+                <action disabled="1" id="-1" name="Set X" sid="9053898066901398" type="Sprite_MainCharacter_001">
                     <param id="0" name="X">SpanwX</param>
                 </action>
-                <action id="-2" name="Set Y" sid="5980465040273205" type="Sprite_MainCharacter_001">
+                <action disabled="1" id="-2" name="Set Y" sid="5980465040273205" type="Sprite_MainCharacter_001">
                     <param id="0" name="Y">SpanwY</param>
                 </action>
             </actions>
@@ -259,6 +259,11 @@
                             <param id="0" name="Input">1</param>
                         </action>
                         <action id="2" name="Stop" sid="775190064598630" type="Sprite_Elevator_GroundFloor" />
+                        <action behavior="Timer" id="0" name="Start timer" sid="806294453774897" type="Sprite_Elevator_GroundFloor">
+                            <param id="0" name="Duration">12</param>
+                            <param id="1" name="Type">0</param>
+                            <param id="2" name="Tag">&quot;GoingDown&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="388090803989220">
@@ -276,11 +281,11 @@
                         </action>
                         <action id="-9" name="Set value" sid="693404552837713" type="System">
                             <param id="0" name="Variable">SpanwX</param>
-                            <param id="1" name="Value">939</param>
+                            <param id="1" name="Value">931</param>
                         </action>
                         <action id="-9" name="Set value" sid="854682228555213" type="System">
                             <param id="0" name="Variable">SpanwY</param>
-                            <param id="1" name="Value">485</param>
+                            <param id="1" name="Value">482</param>
                         </action>
                         <action id="4" name="Set animation" sid="164551089417474" type="Sprite_NPC_Wife_002">
                             <param id="0" name="Animation">choose(&quot;Sprite_NPC_Wife_002_Ani_Drinking_001 &quot;,&quot;Sprite_NPC_Wife_002_Ani_GlassMoving_001&quot;,&quot;Sprite_NPC_Wife_002_Ani_GlassMoving_002&quot;,&quot;Sprite_NPC_Wife_002_Ani_Idle_001&quot;,&quot;Sprite_NPC_Wife_002_Ani_Idle_002&quot;,&quot;Sprite_NPC_Wife_002_Ani_Idle_003&quot;)</param>
@@ -2319,6 +2324,34 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
+                        <event-block sid="691630655772305">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="851545442069274" type="Sprite_MainCharacter_001">
+                                    <param id="0" name="Object">Sprite_Trigger_Door_Open</param>
+                                </condition>
+                                <condition id="5" inverted="1" name="Is tag playing" sid="521304512788292" type="Audio">
+                                    <param id="0" name="Tag">&quot;mario&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="613358224556766">
+                                    <conditions>
+                                        <condition id="0" name="On key pressed" sid="676968310304903" type="Keyboard">
+                                            <param id="0" name="Key">32</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Play" sid="611253214756106" type="Audio">
+                                            <param id="0" name="Audio file">SFX_ClosetDoor_Locked_001</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;mario&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
                         <event-block sid="6844217345521567">
                             <conditions>
                                 <condition id="2" name="Is playing" sid="6678992797626803" type="Sprite_MainCharacter_001">
@@ -2348,7 +2381,7 @@
                                                     <param id="0" name="Folder">0</param>
                                                     <param id="1" name="Audio file name">choose(&quot;FLY_StepsOnParcelainFlor_001&quot;,&quot;FLY_StepsOnParcelainFlor_002&quot;,&quot;FLY_StepsOnParcelainFlor_003&quot;,&quot;FLY_StepsOnParcelainFlor_004&quot;,&quot;FLY_StepsOnParcelainFlor_005&quot;,&quot;FLY_StepsOnParcelainFlor_006&quot;,&quot;FLY_StepsOnParcelainFlor_007&quot;,&quot;FLY_StepsOnParcelainFlor_008&quot;,&quot;FLY_StepsOnParcelainFlor_009&quot;,&quot;FLY_StepsOnParcelainFlor_010&quot;)</param>
                                                     <param id="3" name="Loop">0</param>
-                                                    <param id="4" name="Volume">-30</param>
+                                                    <param id="4" name="Volume">-20</param>
                                                     <param id="2" name="Tag (optional)">&quot;pd&quot;</param>
                                                 </action>
                                             </actions>
@@ -2376,7 +2409,7 @@
                                                     <param id="0" name="Folder">0</param>
                                                     <param id="1" name="Audio file name">choose(&quot;FLY_StepsOnParcelainFlor_001&quot;,&quot;FLY_StepsOnParcelainFlor_002&quot;,&quot;FLY_StepsOnParcelainFlor_003&quot;,&quot;FLY_StepsOnParcelainFlor_004&quot;,&quot;FLY_StepsOnParcelainFlor_005&quot;,&quot;FLY_StepsOnParcelainFlor_006&quot;,&quot;FLY_StepsOnParcelainFlor_007&quot;,&quot;FLY_StepsOnParcelainFlor_008&quot;,&quot;FLY_StepsOnParcelainFlor_009&quot;,&quot;FLY_StepsOnParcelainFlor_010&quot;)</param>
                                                     <param id="3" name="Loop">0</param>
-                                                    <param id="4" name="Volume">-30</param>
+                                                    <param id="4" name="Volume">-20</param>
                                                     <param id="2" name="Tag (optional)">&quot;pe&quot;</param>
                                                 </action>
                                             </actions>
@@ -2430,7 +2463,7 @@
                                                     <param id="0" name="Folder">0</param>
                                                     <param id="1" name="Audio file name">choose(&quot;FLY_StepsOnParcelainFlor_001&quot;,&quot;FLY_StepsOnParcelainFlor_002&quot;,&quot;FLY_StepsOnParcelainFlor_003&quot;,&quot;FLY_StepsOnParcelainFlor_004&quot;,&quot;FLY_StepsOnParcelainFlor_005&quot;,&quot;FLY_StepsOnParcelainFlor_006&quot;,&quot;FLY_StepsOnParcelainFlor_007&quot;,&quot;FLY_StepsOnParcelainFlor_008&quot;,&quot;FLY_StepsOnParcelainFlor_009&quot;,&quot;FLY_StepsOnParcelainFlor_010&quot;)</param>
                                                     <param id="3" name="Loop">0</param>
-                                                    <param id="4" name="Volume">-30</param>
+                                                    <param id="4" name="Volume">-20</param>
                                                     <param id="2" name="Tag (optional)">&quot;pd&quot;</param>
                                                 </action>
                                             </actions>
@@ -2458,7 +2491,7 @@
                                                     <param id="0" name="Folder">0</param>
                                                     <param id="1" name="Audio file name">choose(&quot;FLY_StepsOnParcelainFlor_001&quot;,&quot;FLY_StepsOnParcelainFlor_002&quot;,&quot;FLY_StepsOnParcelainFlor_003&quot;,&quot;FLY_StepsOnParcelainFlor_004&quot;,&quot;FLY_StepsOnParcelainFlor_005&quot;,&quot;FLY_StepsOnParcelainFlor_006&quot;,&quot;FLY_StepsOnParcelainFlor_007&quot;,&quot;FLY_StepsOnParcelainFlor_008&quot;,&quot;FLY_StepsOnParcelainFlor_009&quot;,&quot;FLY_StepsOnParcelainFlor_010&quot;)</param>
                                                     <param id="3" name="Loop">0</param>
-                                                    <param id="4" name="Volume">-30</param>
+                                                    <param id="4" name="Volume">-20</param>
                                                     <param id="2" name="Tag (optional)">&quot;pe&quot;</param>
                                                 </action>
                                             </actions>
@@ -2498,34 +2531,40 @@
                                             <param id="3" name="Volume">-15</param>
                                             <param id="1" name="Tag (optional)">&quot;do&quot;</param>
                                         </action>
+                                        <action behavior="Platform" id="0" name="Set ignoring input" sid="878990546046139" type="Sprite_MainCharacter_001">
+                                            <param id="0" name="Input">1</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block sid="3809367166920433">
+                        <event-block sid="604714758821537">
                             <conditions>
-                                <condition id="0" name="On collision with another object" sid="4960430210169937" type="Sprite_MainCharacter_001">
-                                    <param id="0" name="Object">Sprite_Trigger_Level_013_Go_Level_014</param>
+                                <condition id="0" name="On ended" sid="121495879045226" type="Audio">
+                                    <param id="0" name="Tag">&quot;do&quot;</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-2" name="Go to layout" sid="8066426380045921" type="System">
+                                <action id="-2" name="Go to layout" sid="642123503873771" type="System">
                                     <param id="0" name="Layout">Level_014</param>
                                 </action>
-                                <action id="6" name="Stop" sid="4442247177031972" type="Audio">
+                                <action id="6" name="Stop" sid="848883605132478" type="Audio">
                                     <param id="0" name="Tag">&quot;lamp&quot;</param>
                                 </action>
-                                <action id="-9" name="Set value" sid="4134562979514855" type="System">
+                                <action id="-9" name="Set value" sid="174973319149760" type="System">
                                     <param id="0" name="Variable">SpanwX</param>
                                     <param id="1" name="Value">6423.838</param>
                                 </action>
-                                <action id="-9" name="Set value" sid="2086821212444163" type="System">
+                                <action id="-9" name="Set value" sid="754022799502004" type="System">
                                     <param id="0" name="Variable">SpanwY</param>
                                     <param id="1" name="Value">532.046</param>
                                 </action>
-                                <action id="-9" name="Set value" sid="9076327617343041" type="System">
+                                <action id="-9" name="Set value" sid="521683216996233" type="System">
                                     <param id="0" name="Variable">LevelLayout</param>
                                     <param id="1" name="Value">14</param>
+                                </action>
+                                <action behavior="Platform" id="0" name="Set ignoring input" sid="165190250168881" type="Sprite_MainCharacter_001">
+                                    <param id="0" name="Input">0</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -2704,7 +2743,7 @@
                                                     <param id="0" name="Folder">0</param>
                                                     <param id="1" name="Audio file name">choose(&quot;FLY_StepsOnParcelainFlor_001&quot;,&quot;FLY_StepsOnParcelainFlor_002&quot;,&quot;FLY_StepsOnParcelainFlor_003&quot;,&quot;FLY_StepsOnParcelainFlor_004&quot;,&quot;FLY_StepsOnParcelainFlor_005&quot;,&quot;FLY_StepsOnParcelainFlor_006&quot;,&quot;FLY_StepsOnParcelainFlor_007&quot;,&quot;FLY_StepsOnParcelainFlor_008&quot;,&quot;FLY_StepsOnParcelainFlor_009&quot;,&quot;FLY_StepsOnParcelainFlor_010&quot;)</param>
                                                     <param id="3" name="Loop">0</param>
-                                                    <param id="4" name="Volume">-40</param>
+                                                    <param id="4" name="Volume">-10</param>
                                                     <param id="2" name="Tag (optional)">&quot;pd&quot;</param>
                                                 </action>
                                             </actions>
@@ -2732,7 +2771,7 @@
                                                     <param id="0" name="Folder">0</param>
                                                     <param id="1" name="Audio file name">choose(&quot;FLY_StepsOnParcelainFlor_001&quot;,&quot;FLY_StepsOnParcelainFlor_002&quot;,&quot;FLY_StepsOnParcelainFlor_003&quot;,&quot;FLY_StepsOnParcelainFlor_004&quot;,&quot;FLY_StepsOnParcelainFlor_005&quot;,&quot;FLY_StepsOnParcelainFlor_006&quot;,&quot;FLY_StepsOnParcelainFlor_007&quot;,&quot;FLY_StepsOnParcelainFlor_008&quot;,&quot;FLY_StepsOnParcelainFlor_009&quot;,&quot;FLY_StepsOnParcelainFlor_010&quot;)</param>
                                                     <param id="3" name="Loop">0</param>
-                                                    <param id="4" name="Volume">-40</param>
+                                                    <param id="4" name="Volume">-10</param>
                                                     <param id="2" name="Tag (optional)">&quot;pe&quot;</param>
                                                 </action>
                                             </actions>
@@ -2757,7 +2796,20 @@
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="462482251122264">
+                        <event-block sid="499156409462620">
+                            <conditions>
+                                <condition behavior="Timer" id="0" name="On timer" sid="664958406661496" type="Sprite_Elevator_GroundFloor">
+                                    <param id="0" name="Tag">&quot;GoingDown&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="473633759005325" type="Sprite_Elevator_GroundFloor">
+                                    <param id="0" name="Animation">&quot;Sprite_Elevator_GroundFloor_Ani_GoingDown_001&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block disabled="1" sid="462482251122264">
                             <conditions>
                                 <condition id="0" name="On ended" sid="159808158992760" type="Audio">
                                     <param id="0" name="Tag">&quot;elev&quot;</param>
@@ -3017,18 +3069,22 @@
                                     <param id="0" name="Variable">PlayerCanMirror</param>
                                     <param id="1" name="Value">1</param>
                                 </action>
+                                <action id="4" name="Set animation" sid="869957426685106" type="Sprite_Text_Wife_Breakdown">
+                                    <param id="0" name="Animation">&quot;Sprite_Text_Wife_Breakdown_Ani_Idle_001&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="8261912525940109">
                             <conditions>
                                 <condition id="5" name="On any finished" sid="1703535107379051" type="Sprite_NPC_Wife_002" />
-                                <condition id="2" name="Is playing" sid="8366538211409114" type="Sprite_NPC_Wife_002_Mouth">
+                                <condition id="2" name="Is playing" sid="835029610240071" type="Sprite_NPC_Wife_002_Mouth">
                                     <param id="0" name="Animation">&quot;Sprite_NPC_Wife_002_Mouth_Ani_Idle_001&quot;</param>
                                 </condition>
                             </conditions>
                             <actions>
                                 <action id="4" name="Set animation" sid="6306140355188756" type="Sprite_NPC_Wife_002">
-                                    <param id="0" name="Animation">choose(&quot;Sprite_NPC_Wife_002_Ani_Drinking_001 &quot;,&quot;Sprite_NPC_Wife_002_Ani_GlassMoving_001&quot;,&quot;Sprite_NPC_Wife_002_Ani_GlassMoving_002&quot;,&quot;Sprite_NPC_Wife_002_Ani_Idle_001&quot;,&quot;Sprite_NPC_Wife_002_Ani_Idle_002&quot;,&quot;Sprite_NPC_Wife_002_Ani_Idle_003&quot;)</param>
+                                    <param id="0" name="Animation">choose(&quot;Sprite_NPC_Wife_002_Ani_GlassMoving_001&quot;,&quot;Sprite_NPC_Wife_002_Ani_GlassMoving_002&quot;)</param>
                                     <param id="1" name="From">1</param>
                                 </action>
                             </actions>
@@ -3042,7 +3098,7 @@
                             </conditions>
                             <actions>
                                 <action id="4" name="Set animation" sid="5187361424939657" type="Sprite_NPC_Wife_002">
-                                    <param id="0" name="Animation">choose(&quot;Sprite_NPC_Wife_002_Ani_Drinking_001 &quot;,&quot;Sprite_NPC_Wife_002_Ani_GlassMoving_001&quot;,&quot;Sprite_NPC_Wife_002_Ani_GlassMoving_002&quot;,&quot;Sprite_NPC_Wife_002_Ani_Idle_001&quot;,&quot;Sprite_NPC_Wife_002_Ani_Idle_002&quot;,&quot;Sprite_NPC_Wife_002_Ani_Idle_003&quot;)</param>
+                                    <param id="0" name="Animation">choose(&quot;Sprite_NPC_Wife_002_Ani_GlassMoving_001&quot;,&quot;Sprite_NPC_Wife_002_Ani_GlassMoving_002&quot;,&quot;Sprite_NPC_Wife_002_Ani_Idle_001&quot;)</param>
                                     <param id="1" name="From">1</param>
                                 </action>
                             </actions>

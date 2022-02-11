@@ -188,7 +188,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite_MainCharacter_005" uid="1101">
+                <instance type="Sprite_MainCharacter_003" uid="1101">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1033,7 +1033,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>30731</x>
+                        <x>30718.35546875</x>
                         <y>307</y>
                         <z>0</z>
                         <width>250</width>
@@ -1089,7 +1089,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite_Trigger_ShowEndText_007" uid="321">
+                <instance type="Sprite_Trigger_ShowEndText_003" uid="321">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1111,7 +1111,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite_Trigger_ShowEndText_008" uid="331">
+                <instance type="Sprite_Trigger_ShowEndText_004" uid="331">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1133,7 +1133,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite_Trigger_ShowEndText_009" uid="332">
+                <instance type="Sprite_Trigger_ShowEndText_005" uid="332">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1155,7 +1155,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite_Trigger_ShowEndText_010" uid="333">
+                <instance type="Sprite_Trigger_ShowEndText_006" uid="333">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1177,7 +1177,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite_Trigger_ShowEndText_011" uid="334">
+                <instance type="Sprite_Trigger_ShowEndText_007" uid="334">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>

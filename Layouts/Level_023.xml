@@ -126,7 +126,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite_MainCharacter_005" uid="1070">
+                <instance type="Sprite_MainCharacter_003" uid="1070">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>

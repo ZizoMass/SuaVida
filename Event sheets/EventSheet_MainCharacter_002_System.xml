@@ -11,7 +11,7 @@
                 <condition id="-2" name="On start of layout" sid="5789440549856817" type="System" />
             </conditions>
             <actions>
-                <action behavior="Pin" id="0" name="Pin to object" sid="2183365348628155" type="Sprite_MainCharacter_005">
+                <action behavior="Pin" id="0" name="Pin to object" sid="2183365348628155" type="Sprite_MainCharacter_003">
                     <param id="0" name="Pin to">Sprite_MainCharacter_002</param>
                     <param id="1" name="Mode">0</param>
                 </action>
@@ -78,7 +78,7 @@
                 <action id="7" name="Set mirrored" sid="2681582290982947" type="Sprite_MainCharacter_002">
                     <param id="0" name="State">0</param>
                 </action>
-                <action id="7" name="Set mirrored" sid="481433281566176" type="Sprite_MainCharacter_005">
+                <action id="7" name="Set mirrored" sid="481433281566176" type="Sprite_MainCharacter_003">
                     <param id="0" name="State">0</param>
                 </action>
             </actions>
@@ -95,7 +95,7 @@
                 <action id="7" name="Set mirrored" sid="3553273245817264" type="Sprite_MainCharacter_002">
                     <param id="0" name="State">1</param>
                 </action>
-                <action id="7" name="Set mirrored" sid="994750363549190" type="Sprite_MainCharacter_005">
+                <action id="7" name="Set mirrored" sid="994750363549190" type="Sprite_MainCharacter_003">
                     <param id="0" name="State">1</param>
                 </action>
             </actions>
@@ -109,7 +109,7 @@
                     <param id="0" name="Animation">&quot;Sprite_MainCharacter_002_Ani_Walk_001&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
-                <action id="4" name="Set animation" sid="871005240516627" type="Sprite_MainCharacter_005">
+                <action id="4" name="Set animation" sid="871005240516627" type="Sprite_MainCharacter_003">
                     <param id="0" name="Animation">&quot;Sprite_MainCharacter_005_Ani_Walk_001&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -124,7 +124,7 @@
                     <param id="0" name="Animation">&quot;Sprite_MainCharacter_002_Ani_Idle_001&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
-                <action id="4" name="Set animation" sid="865175643303955" type="Sprite_MainCharacter_005">
+                <action id="4" name="Set animation" sid="865175643303955" type="Sprite_MainCharacter_003">
                     <param id="0" name="Animation">&quot;Sprite_MainCharacter_005_Ani_Idle_001&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -144,7 +144,7 @@
                 <action id="7" name="Set mirrored" sid="4789639939680754" type="Sprite_MainCharacter_002">
                     <param id="0" name="State">0</param>
                 </action>
-                <action id="7" name="Set mirrored" sid="269936743752513" type="Sprite_MainCharacter_005">
+                <action id="7" name="Set mirrored" sid="269936743752513" type="Sprite_MainCharacter_003">
                     <param id="0" name="State">0</param>
                 </action>
             </actions>
@@ -163,7 +163,7 @@
                 <action id="7" name="Set mirrored" sid="4271176381705625" type="Sprite_MainCharacter_002">
                     <param id="0" name="State">1</param>
                 </action>
-                <action id="7" name="Set mirrored" sid="444398604678991" type="Sprite_MainCharacter_005">
+                <action id="7" name="Set mirrored" sid="444398604678991" type="Sprite_MainCharacter_003">
                     <param id="0" name="State">1</param>
                 </action>
             </actions>
@@ -182,7 +182,7 @@
                     <param id="0" name="Animation">&quot;Sprite_MainCharacter_002_Ani_Idle_001&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
-                <action id="4" name="Set animation" sid="527178766265754" type="Sprite_MainCharacter_005">
+                <action id="4" name="Set animation" sid="527178766265754" type="Sprite_MainCharacter_003">
                     <param id="0" name="Animation">&quot;Sprite_MainCharacter_005_Ani_Idle_001&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
@@ -424,12 +424,12 @@
                                     <param id="0" name="Variable">LightningFlash</param>
                                     <param id="1" name="Value">1</param>
                                 </action>
-                                <action behavior="Flash" id="0" name="Flash" sid="1865963398367803" type="Sprite_MainCharacter_005">
+                                <action behavior="Flash" id="0" name="Flash" sid="1865963398367803" type="Sprite_MainCharacter_003">
                                     <param id="0" name="&apos;On&apos; time">0.1</param>
                                     <param id="1" name="&apos;Off&apos; time">0.1</param>
                                     <param id="2" name="Duration">1.0</param>
                                 </action>
-                                <action id="-16" name="Set opacity" sid="2282023897088437" type="Sprite_MainCharacter_005">
+                                <action id="-16" name="Set opacity" sid="2282023897088437" type="Sprite_MainCharacter_003">
                                     <param id="0" name="Opacity">30</param>
                                 </action>
                                 <action behavior="Fade" id="1" name="Start fade" sid="2872259247760257" type="Sprite_Text_FinalDialogue_001" />
@@ -464,12 +464,12 @@
                                     <param id="0" name="Variable">LightningFlash</param>
                                     <param id="1" name="Value">2</param>
                                 </action>
-                                <action behavior="Flash" id="0" name="Flash" sid="489735968945947" type="Sprite_MainCharacter_005">
+                                <action behavior="Flash" id="0" name="Flash" sid="489735968945947" type="Sprite_MainCharacter_003">
                                     <param id="0" name="&apos;On&apos; time">0.1</param>
                                     <param id="1" name="&apos;Off&apos; time">0.1</param>
                                     <param id="2" name="Duration">1.0</param>
                                 </action>
-                                <action id="-16" name="Set opacity" sid="3737556418314532" type="Sprite_MainCharacter_005">
+                                <action id="-16" name="Set opacity" sid="3737556418314532" type="Sprite_MainCharacter_003">
                                     <param id="0" name="Opacity">100</param>
                                 </action>
                                 <action behavior="Fade" id="1" name="Start fade" sid="3006213309710846" type="Sprite_Text_FinalDialogue_002" />
@@ -575,7 +575,7 @@
                             <param id="1" name="Parameter index">2</param>
                             <param id="2" name="Value">600</param>
                         </action>
-                        <action id="-16" name="Set opacity" sid="969250940405484" type="Sprite_MainCharacter_005">
+                        <action id="-16" name="Set opacity" sid="969250940405484" type="Sprite_MainCharacter_003">
                             <param id="0" name="Opacity">100</param>
                         </action>
                     </actions>
@@ -669,7 +669,7 @@
                                     </conditions>
                                     <actions>
                                         <action id="-9" name="Destroy" sid="806157267923910" type="Sprite_MainCharacter_002" />
-                                        <action id="-9" name="Destroy" sid="954459190182408" type="Sprite_MainCharacter_005" />
+                                        <action id="-9" name="Destroy" sid="954459190182408" type="Sprite_MainCharacter_003" />
                                         <action id="4" name="Set animation" sid="120600470737416" type="Sprite_Rope_002">
                                             <param id="0" name="Animation">&quot;Sprite_Rope_002_Ani_End_001&quot;</param>
                                             <param id="1" name="From">1</param>
@@ -835,7 +835,7 @@
                             <param id="1" name="Parameter index">2</param>
                             <param id="2" name="Value">600</param>
                         </action>
-                        <action id="-16" name="Set opacity" sid="852003763577320" type="Sprite_MainCharacter_005">
+                        <action id="-16" name="Set opacity" sid="852003763577320" type="Sprite_MainCharacter_003">
                             <param id="0" name="Opacity">100</param>
                         </action>
                     </actions>
@@ -929,7 +929,7 @@
                                     </conditions>
                                     <actions>
                                         <action id="-9" name="Destroy" sid="890278241449613" type="Sprite_MainCharacter_002" />
-                                        <action id="-9" name="Destroy" sid="514279639236042" type="Sprite_MainCharacter_005" />
+                                        <action id="-9" name="Destroy" sid="514279639236042" type="Sprite_MainCharacter_003" />
                                         <action id="4" name="Set animation" sid="689307119432367" type="Sprite_Gun_002">
                                             <param id="0" name="Animation">&quot;Sprite_Gun_002_Ani_End_001&quot;</param>
                                             <param id="1" name="From">1</param>
@@ -1133,7 +1133,7 @@
                             <param id="1" name="Parameter index">2</param>
                             <param id="2" name="Value">600</param>
                         </action>
-                        <action id="-16" name="Set opacity" sid="884104329773909" type="Sprite_MainCharacter_005">
+                        <action id="-16" name="Set opacity" sid="884104329773909" type="Sprite_MainCharacter_003">
                             <param id="0" name="Opacity">100</param>
                         </action>
                     </actions>
@@ -1227,7 +1227,7 @@
                                     </conditions>
                                     <actions>
                                         <action id="-9" name="Destroy" sid="665464257256158" type="Sprite_MainCharacter_002" />
-                                        <action id="-9" name="Destroy" sid="134829123930044" type="Sprite_MainCharacter_005" />
+                                        <action id="-9" name="Destroy" sid="134829123930044" type="Sprite_MainCharacter_003" />
                                         <action id="4" name="Set animation" sid="713637416157151" type="Sprite_Bridge">
                                             <param id="0" name="Animation">&quot;Sprite_Bridge_Ani_End_001&quot;</param>
                                             <param id="1" name="From">1</param>
@@ -1426,7 +1426,7 @@
                             <param id="1" name="Parameter index">2</param>
                             <param id="2" name="Value">600</param>
                         </action>
-                        <action id="-16" name="Set opacity" sid="283200031092523" type="Sprite_MainCharacter_005">
+                        <action id="-16" name="Set opacity" sid="283200031092523" type="Sprite_MainCharacter_003">
                             <param id="0" name="Opacity">100</param>
                         </action>
                     </actions>
@@ -1495,11 +1495,11 @@
                         <event-block sid="294324976069343">
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="776710822993981" type="Sprite_MainCharacter_002">
-                                    <param id="0" name="Object">Sprite_Trigger_ShowEndText_007</param>
+                                    <param id="0" name="Object">Sprite_Trigger_ShowEndText_003</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-9" name="Destroy" sid="708951052824721" type="Sprite_Trigger_ShowEndText_007" />
+                                <action id="-9" name="Destroy" sid="708951052824721" type="Sprite_Trigger_ShowEndText_003" />
                                 <action id="-15" name="Set visible" sid="216376911742225" type="Sprite_Text_FinalDialogue_013">
                                     <param id="0" name="Visibility">1</param>
                                 </action>
@@ -1509,11 +1509,11 @@
                         <event-block sid="395387379374269">
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="763621278691813" type="Sprite_MainCharacter_002">
-                                    <param id="0" name="Object">Sprite_Trigger_ShowEndText_008</param>
+                                    <param id="0" name="Object">Sprite_Trigger_ShowEndText_004</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-9" name="Destroy" sid="518390906846347" type="Sprite_Trigger_ShowEndText_008" />
+                                <action id="-9" name="Destroy" sid="518390906846347" type="Sprite_Trigger_ShowEndText_004" />
                                 <action id="-15" name="Set visible" sid="244000327699047" type="Sprite_Text_FinalDialogue_009">
                                     <param id="0" name="Visibility">1</param>
                                 </action>
@@ -1523,11 +1523,11 @@
                         <event-block sid="848342045430393">
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="868398832792583" type="Sprite_MainCharacter_002">
-                                    <param id="0" name="Object">Sprite_Trigger_ShowEndText_009</param>
+                                    <param id="0" name="Object">Sprite_Trigger_ShowEndText_005</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-9" name="Destroy" sid="179485220351122" type="Sprite_Trigger_ShowEndText_009" />
+                                <action id="-9" name="Destroy" sid="179485220351122" type="Sprite_Trigger_ShowEndText_005" />
                                 <action id="-15" name="Set visible" sid="277257576285994" type="Sprite_Text_FinalDialogue_010">
                                     <param id="0" name="Visibility">1</param>
                                 </action>
@@ -1537,11 +1537,11 @@
                         <event-block sid="270197010424131">
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="623494689540100" type="Sprite_MainCharacter_002">
-                                    <param id="0" name="Object">Sprite_Trigger_ShowEndText_010</param>
+                                    <param id="0" name="Object">Sprite_Trigger_ShowEndText_006</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-9" name="Destroy" sid="120736864688046" type="Sprite_Trigger_ShowEndText_010" />
+                                <action id="-9" name="Destroy" sid="120736864688046" type="Sprite_Trigger_ShowEndText_006" />
                                 <action id="-15" name="Set visible" sid="898369650760621" type="Sprite_Text_FinalDialogue_011">
                                     <param id="0" name="Visibility">1</param>
                                 </action>
@@ -1551,11 +1551,11 @@
                         <event-block sid="838470840150790">
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="686650762652751" type="Sprite_MainCharacter_002">
-                                    <param id="0" name="Object">Sprite_Trigger_ShowEndText_011</param>
+                                    <param id="0" name="Object">Sprite_Trigger_ShowEndText_007</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-9" name="Destroy" sid="235870138016726" type="Sprite_Trigger_ShowEndText_011" />
+                                <action id="-9" name="Destroy" sid="235870138016726" type="Sprite_Trigger_ShowEndText_007" />
                                 <action id="-15" name="Set visible" sid="623361177187810" type="Sprite_Text_FinalDialogue_012">
                                     <param id="0" name="Visibility">1</param>
                                 </action>
@@ -1608,7 +1608,7 @@
                                     </conditions>
                                     <actions>
                                         <action id="-9" name="Destroy" sid="631982677420819" type="Sprite_MainCharacter_002" />
-                                        <action id="-9" name="Destroy" sid="553444868878867" type="Sprite_MainCharacter_005" />
+                                        <action id="-9" name="Destroy" sid="553444868878867" type="Sprite_MainCharacter_003" />
                                         <action behavior="ScrollTo" id="1" name="Set enabled" sid="572591951450344" type="Sprite_Collapse_001">
                                             <param id="0" name="State">1</param>
                                         </action>
