@@ -12,70 +12,68 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <open-tabs>
         <layout active="1" order="0">Level_026</layout>
         <layout order="3">Level_025</layout>
-        <layout order="19">Level_005</layout>
-        <layout order="20">Level_014</layout>
-        <layout order="21">Level_015</layout>
-        <layout order="22">Level_018</layout>
-        <layout order="23">Level_017</layout>
-        <layout order="24">MainMenu</layout>
-        <layout order="25">Level_002</layout>
-        <layout order="26">Level_003</layout>
-        <layout order="27">Level_019</layout>
-        <layout order="28">Level_001</layout>
-        <layout order="29">Level_006</layout>
-        <layout order="30">Level_007</layout>
-        <layout order="31">Level_008</layout>
-        <layout order="32">Level_009</layout>
-        <layout order="33">Level_010</layout>
-        <layout order="34">Level_011</layout>
-        <layout order="35">Level_013</layout>
-        <layout order="36">Level_016</layout>
-        <layout order="37">Level_021</layout>
-        <layout order="38">Level_012</layout>
-        <layout order="39">Level_024</layout>
+        <layout order="11">Level_005</layout>
+        <layout order="12">Level_014</layout>
+        <layout order="13">Level_015</layout>
+        <layout order="14">Level_018</layout>
+        <layout order="15">Level_017</layout>
+        <layout order="16">MainMenu</layout>
+        <layout order="17">Level_002</layout>
+        <layout order="18">Level_003</layout>
+        <layout order="19">Level_019</layout>
+        <layout order="20">Level_001</layout>
+        <layout order="21">Level_006</layout>
+        <layout order="22">Level_007</layout>
+        <layout order="23">Level_008</layout>
+        <layout order="24">Level_009</layout>
+        <layout order="25">Level_010</layout>
+        <layout order="26">Level_011</layout>
+        <layout order="27">Level_013</layout>
+        <layout order="28">Level_016</layout>
+        <layout order="29">Level_021</layout>
+        <layout order="30">Level_012</layout>
+        <layout order="31">Level_024</layout>
+        <layout order="32">Credits</layout>
+        <layout order="33">Level_004</layout>
+        <layout order="34">Level_020</layout>
+        <layout order="35">Level_022</layout>
+        <layout order="36">Level_023</layout>
         <event-sheet order="1">EventSheet_MainCharacter_002_System</event-sheet>
         <event-sheet order="2">EventSheet_GameLauncher</event-sheet>
-        <event-sheet order="4">EventSheet_Delete2</event-sheet>
-        <event-sheet order="5">EventSheet_Credits</event-sheet>
-        <event-sheet order="6">EventSheet_MainCharacter_001_System</event-sheet>
-        <event-sheet order="7">EventSheet_CarStartSystem</event-sheet>
-        <event-sheet order="8">EventSheet_CityTrafficSystem</event-sheet>
-        <event-sheet order="9">EventSheet_CarParkingSystem</event-sheet>
-        <event-sheet order="10">EventSheet_VideoSystem</event-sheet>
-        <event-sheet order="11">EventSheet_Delete4</event-sheet>
-        <event-sheet order="12">EventSheet_Delete5</event-sheet>
-        <event-sheet order="13">EventSheet_Delete7</event-sheet>
-        <event-sheet order="14">EventSheet_Delete6</event-sheet>
-        <event-sheet order="15">EventSheet_Delete3</event-sheet>
-        <event-sheet order="16">EventSheet_Delete8</event-sheet>
-        <event-sheet order="17">EventSheet_Delete</event-sheet>
-        <event-sheet order="18">EventSheet_OldComputerSystem</event-sheet>
+        <event-sheet order="4">EventSheet_Credits</event-sheet>
+        <event-sheet order="5">EventSheet_MainCharacter_001_System</event-sheet>
+        <event-sheet order="6">EventSheet_CarStartSystem</event-sheet>
+        <event-sheet order="7">EventSheet_CityTrafficSystem</event-sheet>
+        <event-sheet order="8">EventSheet_CarParkingSystem</event-sheet>
+        <event-sheet order="9">EventSheet_VideoSystem</event-sheet>
+        <event-sheet order="10">EventSheet_OldComputerSystem</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
         <property expanded="1" name="Project settings" />
-        <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Window Size" />
         <property expanded="1" name="Configuration Settings" />
     </properties>
     <families-expanded root="0">
         <family expanded="1" name="FamalyInstanceVariables" />
     </families-expanded>
     <folders-expanded>
-        <folder expanded="0" path="object-folder/" />
+        <folder expanded="1" path="object-folder/" />
         <folder expanded="1" path="object-folder/Sprite/" />
-        <folder expanded="0" path="object-folder/Video/" />
+        <folder expanded="1" path="object-folder/Video/" />
         <folder expanded="0" path="object-folder/Tiled Background/" />
+        <folder expanded="0" path="object-folder/System Objects/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="0" path="file-folder/" />
-        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="0" path="sound-folder/" />
         <folder expanded="0" path="music-folder/" />
-        <folder expanded="1" path="file-folder/Icons/" />
-        <folder expanded="1" path="file-folder/Animations/" />
-        <folder expanded="0" path="sound-folder/BG/" />
+        <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="0" path="file-folder/Animations/" />
+        <folder expanded="1" path="sound-folder/BG/" />
         <folder expanded="0" path="sound-folder/FLY/" />
         <folder expanded="0" path="sound-folder/FOL/" />
-        <folder expanded="1" path="sound-folder/SFX/" />
+        <folder expanded="0" path="sound-folder/SFX/" />
         <folder expanded="1" path="animation-folder/Sprite_Logo/" />
         <folder expanded="1" path="animation-folder/Sprite_Text_MainMenuOptions/" />
         <folder expanded="1" path="animation-folder/Sprite_BG_PlayerHome/" />
@@ -143,7 +141,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Sprite_Trigger_Level_004_Go_Level_005/" />
         <folder expanded="1" path="animation-folder/Sprite_Trigger_StopCarNPC/" />
         <folder expanded="1" path="animation-folder/Sprite_BG_CityCenter/" />
-        <folder expanded="1" path="animation-folder/Sprite_MegaCorpBuilding/" />
         <folder expanded="1" path="animation-folder/Sprite_MegaCorpDoor_Closed/" />
         <folder expanded="1" path="animation-folder/Sprite_MegaCorpDoor_Opened/" />
         <folder expanded="1" path="animation-folder/Sprite_MegaCorpDoors/" />
@@ -254,7 +251,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Sprite_BG_CityRoad_2D_002/" />
         <folder expanded="1" path="animation-folder/Sprite_BG_CityRoad_2D_003/" />
         <folder expanded="1" path="animation-folder/Sprite_MainCharacter_003/" />
-        <folder expanded="1" path="animation-folder/Sprite_MainCharacter_005/" />
         <folder expanded="1" path="animation-folder/Sprite_Text_FinalDialogue_001/" />
         <folder expanded="1" path="animation-folder/Sprite_Text_FinalDialogue_002/" />
         <folder expanded="1" path="animation-folder/Sprite_Trigger_Level_022_Go_Level_023/" />
@@ -278,20 +274,15 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Sprite_BG_Red_Mask/" />
         <folder expanded="1" path="animation-folder/Sprite_Trigger_End_Gun/" />
         <folder expanded="1" path="animation-folder/Sprite_Trigger_Level_024_Go_Level_025/" />
-        <folder expanded="1" path="animation-folder/Sprite_Trigger_ShowEndText_003/" />
-        <folder expanded="1" path="animation-folder/Sprite_Trigger_ShowEndText_004/" />
         <folder expanded="1" path="animation-folder/Sprite_BG_End_Bridge/" />
         <folder expanded="1" path="animation-folder/Sprite_Bridge/" />
         <folder expanded="1" path="animation-folder/Sprite_Text_FinalDialogue_007/" />
         <folder expanded="1" path="animation-folder/Sprite_Text_FinalDialogue_008/" />
         <folder expanded="1" path="animation-folder/Sprite_Trigger_End_Jump/" />
         <folder expanded="1" path="animation-folder/Sprite_Trigger_Level_025_Go_Level_026/" />
-        <folder expanded="1" path="animation-folder/Sprite_Trigger_ShowEndText_005/" />
-        <folder expanded="1" path="animation-folder/Sprite_Trigger_ShowEndText_006/" />
         <folder expanded="1" path="animation-folder/Sprite_BG_End_BridgeEnd/" />
         <folder expanded="1" path="animation-folder/Sprite_Collapse_001/" />
         <folder expanded="1" path="animation-folder/Sprite_Collapse_002/" />
-        <folder expanded="1" path="animation-folder/Sprite_Text_FinalDialogue_009/" />
         <folder expanded="1" path="animation-folder/Sprite_Text_FinalDialogue_010/" />
         <folder expanded="1" path="animation-folder/Sprite_Text_FinalDialogue_011/" />
         <folder expanded="1" path="animation-folder/Sprite_Text_FinalDialogue_012/" />
@@ -299,74 +290,16 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Sprite_Trigger_End_Collapse/" />
         <folder expanded="1" path="animation-folder/Sprite_Trigger_MainCharacter_Accelerate/" />
         <folder expanded="1" path="animation-folder/Sprite_Trigger_MainCharacter_Stop/" />
+        <folder expanded="1" path="animation-folder/Sprite_Trigger_ShowEndText_003/" />
+        <folder expanded="1" path="animation-folder/Sprite_Trigger_ShowEndText_004/" />
+        <folder expanded="1" path="animation-folder/Sprite_Trigger_ShowEndText_005/" />
+        <folder expanded="1" path="animation-folder/Sprite_Trigger_ShowEndText_006/" />
         <folder expanded="1" path="animation-folder/Sprite_Trigger_ShowEndText_007/" />
-        <folder expanded="1" path="animation-folder/Sprite_Trigger_ShowEndText_008/" />
-        <folder expanded="1" path="animation-folder/Sprite_Trigger_ShowEndText_009/" />
-        <folder expanded="1" path="animation-folder/Sprite_Trigger_ShowEndText_010/" />
-        <folder expanded="1" path="animation-folder/Sprite_Trigger_ShowEndText_011/" />
         <folder expanded="1" path="animation-folder/Sprite_RainEffect_002/" />
         <folder expanded="1" path="animation-folder/Sprite_Text_Credits_CreditText_001/" />
         <folder expanded="1" path="animation-folder/Sprite_Text_Credits_CreditText_002/" />
         <folder expanded="1" path="animation-folder/Sprite_Text_Credits_CreditText_003/" />
         <folder expanded="1" path="animation-folder/Sprite_Text_Credits_CreditText_004/" />
-        <folder expanded="1" path="animation-folder/Sprite3/" />
-        <folder expanded="1" path="animation-folder/curtina/" />
-        <folder expanded="1" path="animation-folder/Sprite6/" />
-        <folder expanded="1" path="animation-folder/Sprite7/" />
-        <folder expanded="1" path="animation-folder/fundo/" />
-        <folder expanded="1" path="animation-folder/Sprite/" />
-        <folder expanded="1" path="animation-folder/Sprite11/" />
-        <folder expanded="1" path="animation-folder/Sprite13/" />
-        <folder expanded="1" path="animation-folder/nuvens/" />
-        <folder expanded="1" path="animation-folder/caminhao/" />
-        <folder expanded="1" path="animation-folder/compacto/" />
-        <folder expanded="1" path="animation-folder/guincho/" />
-        <folder expanded="1" path="animation-folder/hat/" />
-        <folder expanded="1" path="animation-folder/vanG/" />
-        <folder expanded="1" path="animation-folder/van/" />
-        <folder expanded="1" path="animation-folder/seda/" />
-        <folder expanded="1" path="animation-folder/Sprite5/" />
-        <folder expanded="1" path="animation-folder/chao2/" />
-        <folder expanded="1" path="animation-folder/player2/" />
-        <folder expanded="1" path="animation-folder/parando/" />
-        <folder expanded="1" path="animation-folder/portas/" />
-        <folder expanded="1" path="animation-folder/portas2/" />
-        <folder expanded="1" path="animation-folder/portas3/" />
-        <folder expanded="1" path="animation-folder/porta/" />
-        <folder expanded="1" path="animation-folder/portafren/" />
-        <folder expanded="1" path="animation-folder/empresa/" />
-        <folder expanded="1" path="animation-folder/portafren2/" />
-        <folder expanded="1" path="animation-folder/elevadorparado/" />
-        <folder expanded="1" path="animation-folder/SemTítulo/" />
-        <folder expanded="1" path="animation-folder/elevadorparado2/" />
-        <folder expanded="1" path="animation-folder/SemTítulo2/" />
-        <folder expanded="1" path="animation-folder/voltarfase05/" />
-        <folder expanded="1" path="animation-folder/fundofase/" />
-        <folder expanded="1" path="animation-folder/fundofase2/" />
-        <folder expanded="1" path="animation-folder/elevador2/" />
-        <folder expanded="1" path="animation-folder/fase5/" />
-        <folder expanded="1" path="animation-folder/fase6/" />
-        <folder expanded="1" path="animation-folder/fase7/" />
-        <folder expanded="1" path="animation-folder/fase8/" />
-        <folder expanded="1" path="animation-folder/fase3/" />
-        <folder expanded="1" path="animation-folder/fase4/" />
-        <folder expanded="1" path="animation-folder/fase10/" />
-        <folder expanded="1" path="animation-folder/fundofase3/" />
-        <folder expanded="1" path="animation-folder/level/" />
-        <folder expanded="1" path="animation-folder/porta2/" />
-        <folder expanded="1" path="animation-folder/Sprite10/" />
-        <folder expanded="1" path="animation-folder/som/" />
-        <folder expanded="1" path="animation-folder/nuvens15/" />
-        <folder expanded="1" path="animation-folder/conversa/" />
-        <folder expanded="1" path="animation-folder/conversa2/" />
-        <folder expanded="1" path="animation-folder/fim/" />
-        <folder expanded="1" path="animation-folder/comandos/" />
-        <folder expanded="1" path="animation-folder/cima/" />
-        <folder expanded="1" path="animation-folder/titulo/" />
-        <folder expanded="1" path="animation-folder/titulo2/" />
-        <folder expanded="1" path="animation-folder/somporta/" />
-        <folder expanded="1" path="animation-folder/ff10/" />
-        <folder expanded="1" path="animation-folder/ff11/" />
-        <folder expanded="1" path="animation-folder/frzs1/" />
+        <folder expanded="1" path="animation-folder/Sprite_Text_FinalDialogue_009/" />
     </folders-expanded>
 </c2uistate>
