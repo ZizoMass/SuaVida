@@ -18,10 +18,10 @@
                 <condition id="-2" name="On start of layout" sid="4042731089709146" type="System" />
             </conditions>
             <actions>
-                <action disabled="1" id="-1" name="Set X" sid="9053898066901398" type="Sprite_MainCharacter_001">
+                <action id="-1" name="Set X" sid="9053898066901398" type="Sprite_MainCharacter_001">
                     <param id="0" name="X">SpanwX</param>
                 </action>
-                <action disabled="1" id="-2" name="Set Y" sid="5980465040273205" type="Sprite_MainCharacter_001">
+                <action id="-2" name="Set Y" sid="5980465040273205" type="Sprite_MainCharacter_001">
                     <param id="0" name="Y">SpanwY</param>
                 </action>
             </actions>

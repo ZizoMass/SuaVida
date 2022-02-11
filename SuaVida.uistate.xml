@@ -10,7 +10,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="0">Level_026</layout>
+        <layout order="0">Level_026</layout>
         <layout order="3">Level_025</layout>
         <layout order="11">Level_005</layout>
         <layout order="12">Level_014</layout>
@@ -41,7 +41,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <event-sheet order="1">EventSheet_MainCharacter_002_System</event-sheet>
         <event-sheet order="2">EventSheet_GameLauncher</event-sheet>
         <event-sheet order="4">EventSheet_Credits</event-sheet>
-        <event-sheet order="5">EventSheet_MainCharacter_001_System</event-sheet>
+        <event-sheet active="1" order="5">EventSheet_MainCharacter_001_System</event-sheet>
         <event-sheet order="6">EventSheet_CarStartSystem</event-sheet>
         <event-sheet order="7">EventSheet_CityTrafficSystem</event-sheet>
         <event-sheet order="8">EventSheet_CarParkingSystem</event-sheet>
@@ -58,12 +58,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <family expanded="1" name="FamalyInstanceVariables" />
     </families-expanded>
     <folders-expanded>
-        <folder expanded="1" path="object-folder/" />
-        <folder expanded="1" path="object-folder/Sprite/" />
-        <folder expanded="1" path="object-folder/Video/" />
+        <folder expanded="0" path="object-folder/" />
+        <folder expanded="0" path="object-folder/Sprite/" />
+        <folder expanded="0" path="object-folder/Video/" />
         <folder expanded="0" path="object-folder/Tiled Background/" />
         <folder expanded="0" path="object-folder/System Objects/" />
-        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="0" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="0" path="file-folder/" />
         <folder expanded="0" path="sound-folder/" />
