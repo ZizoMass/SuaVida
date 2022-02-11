@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>EventSheet_CarStartSystem</name>
     <events>
+        <variable constant="0" name="CarGoingBack" sid="9710458083711126" static="0" type="number">0</variable>
         <variable comment="Check if the player is inside the car" constant="0" name="InsideCar" sid="2984977848088106" static="0" type="number">0</variable>
         <variable constant="0" name="CarEngine" sid="6199134499512875" static="0" type="number">0</variable>
         <event-block sid="2645125155009018">
@@ -130,7 +131,7 @@
                 <action id="7" name="Set mirrored" sid="94511138548313" type="Sprite_MainCharacter_001">
                     <param id="0" name="State">1</param>
                 </action>
-                <action id="-9" name="Set value" sid="9987924196047128" type="System">
+                <action id="-9" name="Set value" sid="896180742423925" type="System">
                     <param id="0" name="Variable">PlayerMirrored</param>
                     <param id="1" name="Value">0</param>
                 </action>

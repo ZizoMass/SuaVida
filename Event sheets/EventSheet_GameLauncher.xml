@@ -269,6 +269,7 @@
                 <action id="-15" name="Set visible" sid="3373855242565041" type="Sprite_Text_PlayerRoom_GameTutorial">
                     <param id="0" name="Visibility">1</param>
                 </action>
+                <action id="1" name="Close" sid="358311666655739" type="Browser" />
             </actions>
         </event-block>
     </events>

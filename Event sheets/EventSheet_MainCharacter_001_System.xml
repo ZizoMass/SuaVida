@@ -25,6 +25,280 @@
                     <param id="0" name="Y">SpanwY</param>
                 </action>
             </actions>
+            <sub-events>
+                <event-block sid="401465817459686">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="793345729412770" type="System">
+                            <param id="0" name="Variable">LevelLayout</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Play (by name)" sid="848489644309197" type="Audio">
+                            <param id="0" name="Folder">0</param>
+                            <param id="1" name="Audio file name">&quot;BG_CalmWind_001&quot;</param>
+                            <param id="3" name="Loop">1</param>
+                            <param id="4" name="Volume">0</param>
+                            <param id="2" name="Tag (optional)">&quot;amb1&quot;</param>
+                        </action>
+                        <action id="0" name="Play" sid="732341172159022" type="Audio">
+                            <param id="0" name="Audio file">BG_Suburb_001</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;amb1&quot;</param>
+                        </action>
+                        <action id="-28" name="Set canvas size" sid="772119271612486" type="System">
+                            <param id="0" name="Width">1280</param>
+                            <param id="1" name="Height">720</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="147856147433022">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="385904468023962" type="System">
+                            <param id="0" name="Variable">LevelLayout</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="363774369417201" type="Audio">
+                            <param id="0" name="Audio file">BG_RefrigeratorEngine_001</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">-8</param>
+                            <param id="1" name="Tag (optional)">&quot;amb2&quot;</param>
+                        </action>
+                        <action id="0" name="Play" sid="876568247175966" type="Audio">
+                            <param id="0" name="Audio file">BG_TelevisionNoise_001</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;amb2&quot;</param>
+                        </action>
+                        <action id="0" name="Play" sid="439300187898597" type="Audio">
+                            <param id="0" name="Audio file">BG_TelevisionNoise_002</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">-6</param>
+                            <param id="1" name="Tag (optional)">&quot;amb2&quot;</param>
+                        </action>
+                        <action id="-28" name="Set canvas size" sid="702829907107088" type="System">
+                            <param id="0" name="Width">1280</param>
+                            <param id="1" name="Height">720</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="106359398314437">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="179618820745812" type="System">
+                            <param id="0" name="Variable">LevelLayout</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="235702957138405" type="Audio">
+                            <param id="0" name="Audio file">BG_BusyOffice_001</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">-0</param>
+                            <param id="1" name="Tag (optional)">&quot;amb6&quot;</param>
+                        </action>
+                        <action id="-28" name="Set canvas size" sid="351758490389181" type="System">
+                            <param id="0" name="Width">1280</param>
+                            <param id="1" name="Height">720</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="839228195496522">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="630625641836747" type="System">
+                            <param id="0" name="Variable">LevelLayout</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">8</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="460552573218837" type="Sprite_Elevator_OfficeFloor">
+                            <param id="0" name="Animation">&quot;Sprite_Elevator_OfficeFloor_Ani_GoingUp_001&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="782559454753206" type="Audio">
+                            <param id="0" name="Audio file">BG_ClosedOfficeRoom_001</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">-15</param>
+                            <param id="1" name="Tag (optional)">&quot;amb7&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="941960246086478" type="System">
+                            <param id="0" name="Variable">ElevatorClosed</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action behavior="Platform" id="8" name="Set vector X" sid="270599080293540" type="Sprite_MainCharacter_001">
+                            <param id="0" name="Vector X">-40.926</param>
+                        </action>
+                        <action behavior="Platform" id="9" name="Set vector Y" sid="460983317014392" type="Sprite_MainCharacter_001">
+                            <param id="0" name="Vector Y">530.992</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="750095827993701">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="937911555719581" type="System">
+                            <param id="0" name="Variable">LevelLayout</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">9</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="199540467853488" type="Audio">
+                            <param id="0" name="Audio file">BG_OldPhosphorescentLamp_001</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;lamp&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="344191662083799" type="System">
+                            <param id="0" name="Variable">SpanwX</param>
+                            <param id="1" name="Value">-41.883</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="311636330858888" type="System">
+                            <param id="0" name="Variable">SpanwY</param>
+                            <param id="1" name="Value"> 549.529</param>
+                        </action>
+                        <action id="-28" name="Set canvas size" sid="202989393970116" type="System">
+                            <param id="0" name="Width">480</param>
+                            <param id="1" name="Height">720</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="943718821158821">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="575619866092863" type="System">
+                            <param id="0" name="Variable">LevelLayout</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">13</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="961816372647869" type="Audio">
+                            <param id="0" name="Audio file">BG_OldPhosphorescentLamp_001</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;lamp&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="356511945079070" type="System">
+                            <param id="0" name="Variable">SpanwX</param>
+                            <param id="1" name="Value">276.1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="853115115083415" type="System">
+                            <param id="0" name="Variable">SpanwY</param>
+                            <param id="1" name="Value">556.529</param>
+                        </action>
+                        <action id="-28" name="Set canvas size" sid="662746030204840" type="System">
+                            <param id="0" name="Width">480</param>
+                            <param id="1" name="Height">720</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="718647812297609">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="619343275774489" type="System">
+                            <param id="0" name="Variable">LevelLayout</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">14</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="532105652423613" type="Audio">
+                            <param id="0" name="Audio file">BG_DistantTraffic_003</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">-6</param>
+                            <param id="1" name="Tag (optional)">&quot;amb14&quot;</param>
+                        </action>
+                        <action id="0" name="Play" sid="242087704950783" type="Audio">
+                            <param id="0" name="Audio file">MX_EndlessCorridor</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">-8</param>
+                            <param id="1" name="Tag (optional)">&quot;msc4&quot;</param>
+                        </action>
+                        <action id="-28" name="Set canvas size" sid="696621480320813" type="System">
+                            <param id="0" name="Width">1280</param>
+                            <param id="1" name="Height">720</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="196980664118415" type="System">
+                            <param id="0" name="Variable">SpanwX</param>
+                            <param id="1" name="Value">6423.838</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="971299490277779" type="System">
+                            <param id="0" name="Variable">SpanwY</param>
+                            <param id="1" name="Value">532.046</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="567632906194336">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="963622002035747" type="System">
+                            <param id="0" name="Variable">LevelLayout</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">16</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="851199092261174" type="Audio">
+                            <param id="0" name="Audio file">BG_Elevator_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-0</param>
+                            <param id="1" name="Tag (optional)">&quot;elev&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="940251436295710" type="System">
+                            <param id="0" name="Variable">SpanwX</param>
+                            <param id="1" name="Value">1261</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="989522948366342" type="System">
+                            <param id="0" name="Variable">SpanwY</param>
+                            <param id="1" name="Value"> 518</param>
+                        </action>
+                        <action behavior="Platform" id="0" name="Set ignoring input" sid="926699777425978" type="Sprite_MainCharacter_001">
+                            <param id="0" name="Input">1</param>
+                        </action>
+                        <action id="2" name="Stop" sid="775190064598630" type="Sprite_Elevator_GroundFloor" />
+                    </actions>
+                </event-block>
+                <event-block sid="388090803989220">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="103570934669946" type="System">
+                            <param id="0" name="Variable">LevelLayout</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">20</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-28" name="Set canvas size" sid="743617984115858" type="System">
+                            <param id="0" name="Width">1280</param>
+                            <param id="1" name="Height">720</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="693404552837713" type="System">
+                            <param id="0" name="Variable">SpanwX</param>
+                            <param id="1" name="Value">939</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="854682228555213" type="System">
+                            <param id="0" name="Variable">SpanwY</param>
+                            <param id="1" name="Value">485</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="164551089417474" type="Sprite_NPC_Wife_002">
+                            <param id="0" name="Animation">choose(&quot;Sprite_NPC_Wife_002_Ani_Drinking_001 &quot;,&quot;Sprite_NPC_Wife_002_Ani_GlassMoving_001&quot;,&quot;Sprite_NPC_Wife_002_Ani_GlassMoving_002&quot;,&quot;Sprite_NPC_Wife_002_Ani_Idle_001&quot;,&quot;Sprite_NPC_Wife_002_Ani_Idle_002&quot;,&quot;Sprite_NPC_Wife_002_Ani_Idle_003&quot;)</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="853205832266665" type="Audio">
+                            <param id="0" name="Audio file">BG_RefrigeratorEngine_001</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;gel&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="684700462502212" type="System">
+                            <param id="0" name="Variable">PlayerMirrored</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="1734360555902305">
             <conditions>
@@ -299,30 +573,6 @@
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="766847991310493">
-                            <conditions>
-                                <condition id="-2" name="On start of layout" sid="892726097116476" type="System" />
-                            </conditions>
-                            <actions>
-                                <action id="7" name="Play (by name)" sid="855946080217363" type="Audio">
-                                    <param id="0" name="Folder">0</param>
-                                    <param id="1" name="Audio file name">&quot;BG_CalmWind_001&quot;</param>
-                                    <param id="3" name="Loop">1</param>
-                                    <param id="4" name="Volume">0</param>
-                                    <param id="2" name="Tag (optional)">&quot;amb1&quot;</param>
-                                </action>
-                                <action id="0" name="Play" sid="588937081409864" type="Audio">
-                                    <param id="0" name="Audio file">BG_Suburb_001</param>
-                                    <param id="2" name="Loop">1</param>
-                                    <param id="3" name="Volume">-10</param>
-                                    <param id="1" name="Tag (optional)">&quot;amb1&quot;</param>
-                                </action>
-                                <action id="-28" name="Set canvas size" sid="200923454111067" type="System">
-                                    <param id="0" name="Width">1280</param>
-                                    <param id="1" name="Height">720</param>
-                                </action>
-                            </actions>
-                        </event-block>
                         <event-block sid="6855364115649728">
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="1701875851997167" type="Sprite_MainCharacter_001">
@@ -580,35 +830,6 @@
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="4019629096778632">
-                            <conditions>
-                                <condition id="-2" name="On start of layout" sid="5488202967225642" type="System" />
-                            </conditions>
-                            <actions>
-                                <action id="0" name="Play" sid="6338492036460692" type="Audio">
-                                    <param id="0" name="Audio file">BG_RefrigeratorEngine_001</param>
-                                    <param id="2" name="Loop">1</param>
-                                    <param id="3" name="Volume">-8</param>
-                                    <param id="1" name="Tag (optional)">&quot;amb2&quot;</param>
-                                </action>
-                                <action id="0" name="Play" sid="1995301353216756" type="Audio">
-                                    <param id="0" name="Audio file">BG_TelevisionNoise_001</param>
-                                    <param id="2" name="Loop">1</param>
-                                    <param id="3" name="Volume">-10</param>
-                                    <param id="1" name="Tag (optional)">&quot;amb2&quot;</param>
-                                </action>
-                                <action id="0" name="Play" sid="7698461826751292" type="Audio">
-                                    <param id="0" name="Audio file">BG_TelevisionNoise_002</param>
-                                    <param id="2" name="Loop">1</param>
-                                    <param id="3" name="Volume">-6</param>
-                                    <param id="1" name="Tag (optional)">&quot;amb2&quot;</param>
-                                </action>
-                                <action id="-28" name="Set canvas size" sid="601674093042198" type="System">
-                                    <param id="0" name="Width">1280</param>
-                                    <param id="1" name="Height">720</param>
-                                </action>
-                            </actions>
-                        </event-block>
                         <event-block sid="4760270445341662">
                             <conditions>
                                 <condition id="2" name="Is playing" sid="6743268387133075" type="Sprite_MainCharacter_001">
@@ -1601,23 +1822,6 @@
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="850908282742499">
-                            <conditions>
-                                <condition id="-2" name="On start of layout" sid="644566379400578" type="System" />
-                            </conditions>
-                            <actions>
-                                <action id="0" name="Play" sid="3145985436373924" type="Audio">
-                                    <param id="0" name="Audio file">BG_BusyOffice_001</param>
-                                    <param id="2" name="Loop">1</param>
-                                    <param id="3" name="Volume">-0</param>
-                                    <param id="1" name="Tag (optional)">&quot;amb6&quot;</param>
-                                </action>
-                                <action id="-28" name="Set canvas size" sid="730961235705704" type="System">
-                                    <param id="0" name="Width">1280</param>
-                                    <param id="1" name="Height">720</param>
-                                </action>
-                            </actions>
-                        </event-block>
                         <event-block sid="7381244832308609">
                             <conditions>
                                 <condition id="1" name="Is overlapping another object" sid="7394816960438288" type="Sprite_MainCharacter_001">
@@ -1797,33 +2001,6 @@
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="777831444265173">
-                            <conditions>
-                                <condition id="-2" name="On start of layout" sid="129468692880544" type="System" />
-                            </conditions>
-                            <actions>
-                                <action id="4" name="Set animation" sid="509460807440108" type="Sprite_Elevator_OfficeFloor">
-                                    <param id="0" name="Animation">&quot;Sprite_Elevator_OfficeFloor_Ani_GoingUp_001&quot;</param>
-                                    <param id="1" name="From">1</param>
-                                </action>
-                                <action id="0" name="Play" sid="347415028336825" type="Audio">
-                                    <param id="0" name="Audio file">BG_ClosedOfficeRoom_001</param>
-                                    <param id="2" name="Loop">1</param>
-                                    <param id="3" name="Volume">-15</param>
-                                    <param id="1" name="Tag (optional)">&quot;amb7&quot;</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="327372118897615" type="System">
-                                    <param id="0" name="Variable">ElevatorClosed</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                                <action behavior="Platform" id="8" name="Set vector X" sid="101246182143427" type="Sprite_MainCharacter_001">
-                                    <param id="0" name="Vector X">-40.926</param>
-                                </action>
-                                <action behavior="Platform" id="9" name="Set vector Y" sid="389201752575915" type="Sprite_MainCharacter_001">
-                                    <param id="0" name="Vector Y">530.992</param>
-                                </action>
-                            </actions>
-                        </event-block>
                         <event-block sid="2376557936114661">
                             <conditions>
                                 <condition id="1" name="Is overlapping another object" sid="5218079776562986" type="Sprite_MainCharacter_001">
@@ -2091,31 +2268,6 @@
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="734000590442449">
-                            <conditions>
-                                <condition id="-2" name="On start of layout" sid="789952892863165" type="System" />
-                            </conditions>
-                            <actions>
-                                <action id="0" name="Play" sid="520651587008468" type="Audio">
-                                    <param id="0" name="Audio file">BG_OldPhosphorescentLamp_001</param>
-                                    <param id="2" name="Loop">1</param>
-                                    <param id="3" name="Volume">-10</param>
-                                    <param id="1" name="Tag (optional)">&quot;lamp&quot;</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="903685613732480" type="System">
-                                    <param id="0" name="Variable">SpanwX</param>
-                                    <param id="1" name="Value">-41.883</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="761430632171923" type="System">
-                                    <param id="0" name="Variable">SpanwY</param>
-                                    <param id="1" name="Value"> 549.529</param>
-                                </action>
-                                <action id="-28" name="Set canvas size" sid="263867078667544" type="System">
-                                    <param id="0" name="Width">480</param>
-                                    <param id="1" name="Height">720</param>
-                                </action>
-                            </actions>
-                        </event-block>
                         <event-block sid="1417319925604595">
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="2511481030596062" type="Sprite_MainCharacter_001">
@@ -2249,31 +2401,6 @@
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="371614044421677">
-                            <conditions>
-                                <condition id="-2" name="On start of layout" sid="724634980677664" type="System" />
-                            </conditions>
-                            <actions>
-                                <action id="0" name="Play" sid="502285973371210" type="Audio">
-                                    <param id="0" name="Audio file">BG_OldPhosphorescentLamp_001</param>
-                                    <param id="2" name="Loop">1</param>
-                                    <param id="3" name="Volume">-10</param>
-                                    <param id="1" name="Tag (optional)">&quot;lamp&quot;</param>
-                                </action>
-                                <action id="-28" name="Set canvas size" sid="916229854391128" type="System">
-                                    <param id="0" name="Width">480</param>
-                                    <param id="1" name="Height">720</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="912355628798262" type="System">
-                                    <param id="0" name="Variable">SpanwX</param>
-                                    <param id="1" name="Value">276.1</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="658909286534243" type="System">
-                                    <param id="0" name="Variable">SpanwY</param>
-                                    <param id="1" name="Value">556.529</param>
-                                </action>
-                            </actions>
-                        </event-block>
                         <event-block sid="7208351353480282">
                             <conditions>
                                 <condition id="2" name="Is playing" sid="1207747606971021" type="Sprite_MainCharacter_001">
@@ -2630,31 +2757,6 @@
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="828345376003827">
-                            <conditions>
-                                <condition id="-2" name="On start of layout" sid="592146603661015" type="System" />
-                            </conditions>
-                            <actions>
-                                <action id="0" name="Play" sid="691990391393494" type="Audio">
-                                    <param id="0" name="Audio file">BG_Elevator_001</param>
-                                    <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">-0</param>
-                                    <param id="1" name="Tag (optional)">&quot;elev&quot;</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="903308611212423" type="System">
-                                    <param id="0" name="Variable">SpanwX</param>
-                                    <param id="1" name="Value">1261</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="458716709087577" type="System">
-                                    <param id="0" name="Variable">SpanwY</param>
-                                    <param id="1" name="Value"> 518</param>
-                                </action>
-                                <action behavior="Platform" id="0" name="Set ignoring input" sid="681309227708468" type="Sprite_MainCharacter_001">
-                                    <param id="0" name="Input">1</param>
-                                </action>
-                                <action id="2" name="Stop" sid="958692738153500" type="Sprite_Elevator_GroundFloor" />
-                            </actions>
-                        </event-block>
                         <event-block sid="462482251122264">
                             <conditions>
                                 <condition id="0" name="On ended" sid="159808158992760" type="Audio">
@@ -2796,39 +2898,6 @@
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="487825708208641">
-                            <conditions>
-                                <condition id="-2" name="On start of layout" sid="369801656779938" type="System" />
-                            </conditions>
-                            <actions>
-                                <action id="-28" name="Set canvas size" sid="865663737912457" type="System">
-                                    <param id="0" name="Width">1280</param>
-                                    <param id="1" name="Height">720</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="749841326333040" type="System">
-                                    <param id="0" name="Variable">SpanwX</param>
-                                    <param id="1" name="Value">939</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="104517637111235" type="System">
-                                    <param id="0" name="Variable">SpanwY</param>
-                                    <param id="1" name="Value">485</param>
-                                </action>
-                                <action id="4" name="Set animation" sid="366909613138451" type="Sprite_NPC_Wife_002">
-                                    <param id="0" name="Animation">choose(&quot;Sprite_NPC_Wife_002_Ani_Drinking_001 &quot;,&quot;Sprite_NPC_Wife_002_Ani_GlassMoving_001&quot;,&quot;Sprite_NPC_Wife_002_Ani_GlassMoving_002&quot;,&quot;Sprite_NPC_Wife_002_Ani_Idle_001&quot;,&quot;Sprite_NPC_Wife_002_Ani_Idle_002&quot;,&quot;Sprite_NPC_Wife_002_Ani_Idle_003&quot;)</param>
-                                    <param id="1" name="From">1</param>
-                                </action>
-                                <action id="0" name="Play" sid="297078063282537" type="Audio">
-                                    <param id="0" name="Audio file">BG_RefrigeratorEngine_001</param>
-                                    <param id="2" name="Loop">1</param>
-                                    <param id="3" name="Volume">-10</param>
-                                    <param id="1" name="Tag (optional)">&quot;gel&quot;</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="846328525003781" type="System">
-                                    <param id="0" name="Variable">PlayerMirrored</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
                         <event-block sid="9420957673638273">
                             <conditions>
                                 <condition id="-10" name="Compare opacity" sid="8210781218261522" type="Sprite_Spotlight_001_Vignette">

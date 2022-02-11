@@ -2,7 +2,7 @@
 <c2layout>
     <name>Level_021</name>
     <sid>6052534907758985</sid>
-    <event-sheet>EventSheet_Delete8</event-sheet>
+    <event-sheet>EventSheet_MainCharacter_002_System</event-sheet>
     <size>
         <width>1280</width>
         <height>720</height>
@@ -23290,43 +23290,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>70.452644348</x>
-                        <y>588.894165039</y>
+                        <x>70.45300293</x>
+                        <y>594.893981934</y>
                         <z>0</z>
                         <width>38</width>
                         <height>157</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>1</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Sprite_CollisionContainer_PlayerMovement_001" uid="1039">
-                    <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Solid">
-                            <properties>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>697.102294922</x>
-                        <y>607.565368652</y>
-                        <z>0</z>
-                        <width>1457</width>
-                        <height>25</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.519999981</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -23487,6 +23458,35 @@
                         <hotspotY>0.500436664</hotspotY>
                         <angle>0</angle>
                         <opacity>0.449999988</opacity>
+                    </world>
+                </instance>
+                <instance type="Sprite_CollisionContainer_PlayerMovement_001" uid="1039">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>697.102294922</x>
+                        <y>607.565368652</y>
+                        <z>0</z>
+                        <width>1457</width>
+                        <height>25</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.519999981</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
                     </world>
                 </instance>
             </instances>

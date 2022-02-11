@@ -18,11 +18,53 @@
                 <action behavior="Platform" id="5" name="Set gravity" sid="465814463027984" type="Sprite_MainCharacter_002">
                     <param id="0" name="Gravity">0</param>
                 </action>
-                <action id="-9" name="Set value" sid="526327667188965" type="System">
+                <action id="-9" name="Set value" sid="505136482458415" type="System">
                     <param id="0" name="Variable">PlayerMirrored</param>
                     <param id="1" name="Value">0</param>
                 </action>
             </actions>
+            <sub-events>
+                <event-block sid="933948521695039">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="949412297579604" type="System">
+                            <param id="0" name="Variable">LevelLayout</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">21</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="793385436790517" type="Audio">
+                            <param id="0" name="Audio file">BG_HeavyWind_001</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">-15</param>
+                            <param id="1" name="Tag (optional)">&quot;vento&quot;</param>
+                        </action>
+                        <action id="0" name="Play" sid="221728055572937" type="Audio">
+                            <param id="0" name="Audio file">BG_ThunderStorm_001</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-15</param>
+                            <param id="1" name="Tag (optional)">&quot;vento&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="967970298247024">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="248518435790162" type="System">
+                            <param id="0" name="Variable">LevelLayout</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">22</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="422683006271137" type="Audio">
+                            <param id="0" name="Audio file">MX_CoorporativeMeat</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;msc23&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="3396246072321537">
             <conditions>
@@ -298,29 +340,6 @@
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="101900625703189">
-                            <conditions>
-                                <condition id="-2" name="On start of layout" sid="561598726783844" type="System" />
-                            </conditions>
-                            <actions>
-                                <action id="0" name="Play" sid="213031807264654" type="Audio">
-                                    <param id="0" name="Audio file">BG_HeavyWind_001</param>
-                                    <param id="2" name="Loop">1</param>
-                                    <param id="3" name="Volume">-15</param>
-                                    <param id="1" name="Tag (optional)">&quot;vento&quot;</param>
-                                </action>
-                                <action id="0" name="Play" sid="507737814405327" type="Audio">
-                                    <param id="0" name="Audio file">BG_ThunderStorm_001</param>
-                                    <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">-15</param>
-                                    <param id="1" name="Tag (optional)">&quot;vento&quot;</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="116150929764483" type="System">
-                                    <param id="0" name="Variable">PlayerMirrored</param>
-                                    <param id="1" name="Value">0</param>
-                                </action>
-                            </actions>
-                        </event-block>
                         <event-block sid="772017818116775">
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="380496055477282" type="Sprite_MainCharacter_002">
@@ -379,19 +398,6 @@
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="616156026241358">
-                            <conditions>
-                                <condition id="-2" name="On start of layout" sid="908682272728808" type="System" />
-                            </conditions>
-                            <actions>
-                                <action id="0" name="Play" sid="510803942515332" type="Audio">
-                                    <param id="0" name="Audio file">MX_CoorporativeMeat</param>
-                                    <param id="2" name="Loop">1</param>
-                                    <param id="3" name="Volume">0</param>
-                                    <param id="1" name="Tag (optional)">&quot;msc23&quot;</param>
-                                </action>
-                            </actions>
-                        </event-block>
                         <event-block sid="2612887758901298">
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="9720639961264608" type="Sprite_MainCharacter_002">

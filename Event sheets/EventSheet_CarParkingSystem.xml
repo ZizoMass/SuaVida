@@ -355,6 +355,12 @@
                             <param id="0" name="Tag">&quot;msc2&quot;</param>
                             <param id="1" name="State">1</param>
                         </action>
+                        <action id="0" name="Play" sid="7030617899395945" type="Audio">
+                            <param id="0" name="Audio file">SFX_CarDoorClose_003</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;pcf&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="9137721392560893">
@@ -464,12 +470,6 @@
                                 <action id="-9" name="Set value" sid="6632784500361797" type="System">
                                     <param id="0" name="Variable">CarParked</param>
                                     <param id="1" name="Value">1.5</param>
-                                </action>
-                                <action id="0" name="Play" sid="7030617899395945" type="Audio">
-                                    <param id="0" name="Audio file">SFX_CarDoorClose_003</param>
-                                    <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">-10</param>
-                                    <param id="1" name="Tag (optional)">&quot;pcf&quot;</param>
                                 </action>
                             </actions>
                         </event-block>

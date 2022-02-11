@@ -26,6 +26,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <nest>15</nest>
     </condition-namecolumns>
     <events>
+        <event collapsed="1" sid="188160126616719" />
         <event collapsed="1" sid="8353075988920701" />
     </events>
 </c2uistate>

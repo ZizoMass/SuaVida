@@ -11,6 +11,7 @@
     <saved-with-version>28000</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
@@ -16964,6 +16965,9 @@
             <plugin id="Particles" />
             <texture />
         </object-type>
+        <object-type name="Browser" sid="310329298374787">
+            <plugin id="Browser" />
+        </object-type>
     </object-folder>
     <families>
         <family name="FamalyInstanceVariables" plugin-id="Sprite" sid="9212781974156993">
@@ -17014,15 +17018,7 @@
         <event-sheet>EventSheet_CarParkingSystem.xml</event-sheet>
         <event-sheet>EventSheet_VideoSystem.xml</event-sheet>
         <event-sheet>EventSheet_OldComputerSystem.xml</event-sheet>
-        <event-sheet>EventSheet_Delete4.xml</event-sheet>
-        <event-sheet>EventSheet_Delete.xml</event-sheet>
-        <event-sheet>EventSheet_Delete5.xml</event-sheet>
-        <event-sheet>EventSheet_Delete7.xml</event-sheet>
-        <event-sheet>EventSheet_Delete6.xml</event-sheet>
-        <event-sheet>EventSheet_Delete3.xml</event-sheet>
-        <event-sheet>EventSheet_Delete8.xml</event-sheet>
         <event-sheet>EventSheet_MainCharacter_002_System.xml</event-sheet>
-        <event-sheet>EventSheet_Delete2.xml</event-sheet>
         <event-sheet>EventSheet_Credits.xml</event-sheet>
     </event-folder>
     <global-instances>
@@ -17041,6 +17037,7 @@
                 <roll-off-factor>1</roll-off-factor>
             </properties>
         </global-instance>
+        <global-instance type="Browser" uid="141" />
     </global-instances>
     <sounds-folder>
         <sound-folder name="BG">
